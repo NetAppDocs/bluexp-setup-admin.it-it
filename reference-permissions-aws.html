@@ -1,0 +1,4046 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head class="at-element-marker">
+  <title>Autorizzazioni AWS per il connettore | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Autorizzazioni AWS per il connettore | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/it-it/cloud-manager-setup-admin/reference-permissions-aws.html" />
+	<meta property="og:description" content="Quando BlueXP avvia l"istanza del connettore in AWS, allega un criterio all"istanza che fornisce al connettore le autorizzazioni per gestire le risorse e i p..." />
+  <meta property="og:image" content="https://docs.netapp.com/it-it/cloud-manager-setup-admin/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Quando BlueXP avvia l"istanza del connettore in AWS, allega un criterio all"istanza che fornisce al connettore le autorizzazioni per gestire le risorse e i p...">
+  <meta name="keywords" content=" permissions, actions, aws, aws permissions"><!-- Icons -->
+  <link rel="icon" href="/it-it/cloud-manager-setup-admin/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/it-it/cloud-manager-setup-admin/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/it-it/cloud-manager-setup-admin/css/netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/it-it/cloud-manager-setup-admin/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/it-it/cloud-manager-setup-admin/css/tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/it-it/cloud-manager-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/cloud-manager-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/cloud-manager-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/cloud-manager-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/cloud-manager-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/cloud-manager-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/cloud-manager-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/cloud-manager-setup-admin/reference-permissions-aws.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/cloud-manager-setup-admin/reference-permissions-aws.html" />
+  <link rel='stylesheet' href='/it-it/cloud-manager-setup-admin/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    function addAdobeLaunch(adobeId) {
+      var head = document.getElementsByTagName('head')[0];
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/"+adobeId+".min.js";
+      head.appendChild(adobe);
+    }
+
+    function addGoogleAnalytics(gtagId) {
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id="+gtagId;
+      var head = document.getElementsByTagName('head')[0];
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', gtagId);
+    }
+
+    function addConsent(consentId) {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/"+consentId+"/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = consentId;
+      head.appendChild(onetrustScript);
+    }addConsent("72570c5c-fe30-465f-b0e0-b77f7fb4ae34");
+    addAdobeLaunch("launch-e9ff3acac59f");
+    addGoogleAnalytics("UA-81697994-3");function OptanonWrapper() { }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/it-it/cloud-manager-setup-admin/js/na-search.js'></script><script src='/it-it/cloud-manager-setup-admin/js/na-pagenav.js'></script><script src='/it-it/cloud-manager-setup-admin/js/na-utility.js'></script>
+ <!--  
+  <link rel='stylesheet' href='/it-it/cloud-manager-setup-admin/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/it-it/cloud-manager-setup-admin/css/prism-netapp.css' type='text/css'>
+ -->
+
+  <!-- <script src='/it-it/cloud-manager-setup-admin/js/na-utility.js'></script> -->
+  <script src='/it-it/cloud-manager-setup-admin/js/clouddocs.js'></script>
+  <script src='/it-it/cloud-manager-setup-admin/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- <script src='/it-it/cloud-manager-setup-admin/js/toc.js'></script> -->
+  <!-- <script src='/it-it/cloud-manager-setup-admin/js/customscripts.js'></script> --><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/it-it/cloud-manager-setup-admin"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script>
+  <script src='/it-it/cloud-manager-setup-admin/js/custom-dropdown.js'></script>
+  <script src='/it-it/cloud-manager-setup-admin/js/FileSaver.min.js'></script>
+  <script src='/it-it/cloud-manager-setup-admin/js/jszip-utils.min.js'></script>
+  <script src='/it-it/cloud-manager-setup-admin/js/jszip.min.js'></script>
+  <!-- <script src='/it-it/cloud-manager-setup-admin/js/pdf-ux.js'></script> -->
+</head>
+
+
+  <body class role="document" data-flavor="">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-setup-admin.it-it/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/it-it/cloud-manager-setup-admin/reference-permissions-aws.html&page-title=Autorizzazioni AWS per il connettore" class="page-nav-contribute-link" role="button"><img src="/it-it/cloud-manager-setup-admin/images/discuss-sm.svg" alt="" class="github-icon" />Richiedi modifiche alla documentazione</a><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-setup-admin/blob/main/reference-permissions-aws.adoc" class="page-nav-contribute-link" role="button"><img src="/it-it/cloud-manager-setup-admin/images/edit-sm.svg" alt="" class="github-icon" />Modifica questa pagina</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/it-it/cloud-manager-setup-admin/images/article-sm.svg" alt="" class="github-icon" />Scopri come collaborare</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">IN QUESTA PAGINA</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">Prodotto e soluzioni</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">Supporto e training</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">Community</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">Blog</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">Testimonianze dei clienti</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/company/contact-us/" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contatto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/it-it/cloud-manager-setup-admin/search.html"
+          data-type="widget" 
+          data-placeholder="Esplora la documentazione"
+          data-no-results-found="Nessun risultato per {query}"
+          data-did-you-mean="Cerca {suggestion}."
+          data-no-results-found-did-you-mean="Nessun risultato per {query}. Intendi {suggestion}?"
+          data-results-found="{hitCount} risultati trovati"
+          data-error-message="Si è verificato un problema durante il recupero dei risultati. Riprova."
+          data-error-reset="Reimposta ricerca"
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">Italiano</span>
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/it-it/cloud-manager-setup-admin/reference-permissions-aws.html" target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/cloud-manager-setup-admin/reference-permissions-aws.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/cloud-manager-setup-admin/reference-permissions-aws.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/cloud-manager-setup-admin/reference-permissions-aws.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/cloud-manager-setup-admin/reference-permissions-aws.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/cloud-manager-setup-admin/reference-permissions-aws.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/es-es/cloud-manager-setup-admin/reference-permissions-aws.html" target="_self"><span translate="no" class="notranslate">Español</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/cloud-manager-setup-admin/reference-permissions-aws.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
+    </div>
+    <!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <button id="btn-sidebar-collapse" onclick="hideSidebar()"><img src="/it-it/cloud-manager-setup-admin/images/collapse.png" alt="Comprimi pannello di navigazione"></button>
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>PDF disponibili<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
+        <a target="_blank" href="/it-it/cloud-manager-setup-admin/pdfs/fullsite-sidebar/Documentazione_di_installazione_e_amministrazione_di_BlueXP.pdf" >
+          <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>PDF del sito di questa documentazione</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Note_di_rilascio.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Note di rilascio
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Inizia_subito.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Inizia subito
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Scopri_le_nozioni_di_base.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Scopri le nozioni di base
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Inizia_con_la_modalità_standard.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Inizia con la modalità standard
+          </a>
+          
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Creare_un_connettore.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Creare un connettore
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/AWS.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            AWS
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Azure.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Azure
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Google_Cloud.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Google Cloud
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/On_premise.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            On-premise
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Inizia_con_la_modalità_limitata.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Inizia con la modalità limitata
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Inizia_con_la_modalità_privata.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Inizia con la modalità privata
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Amministrare_BlueXP.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Amministrare BlueXP
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/BlueXP.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            BlueXP
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Connettori.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Connettori
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Credenziali.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Credenziali
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Gestire_le_credenziali_AWS.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Gestire le credenziali AWS
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Gestire_le_credenziali_Azure.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Gestire le credenziali Azure
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Gestire_le_credenziali_Google_Cloud.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Gestire le credenziali Google Cloud
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Scoperta_dello_storage_cloud.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Scoperta dello storage cloud
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Riferimento.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Riferimento
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Permessi.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Permessi
+          </a>
+          
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Porte.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Porte
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Conoscenza_e_supporto.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Conoscenza e supporto
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/it-it/cloud-manager-setup-admin/images/pdf-zip.png" alt="" width="16" height="16"/>
+      <pre>Raccolta di documenti PDF separati<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="prod-nav" id="product-nav">
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/it-it/cloud-manager-family/"><img src="/it-it/cloud-manager-setup-admin/images/left_arrow.png" alt=""><pre>Tutta la documentazione BlueXP</pre></a>
+</div><div class="sidebar-nav-container" id="mysidebardiv">
+  <ul id="mysidebar" class="nav"><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Documenti di installazione e amministrazione"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/index.html">
+        Documenti di installazione e amministrazione
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Note di rilascio"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Note di rilascio</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Novità"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/whats-new.html">
+        Novità
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Limitazioni"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-limitations.html">
+        Limitazioni
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Inizia subito"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Inizia subito</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Scopri le nozioni di base"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Scopri le nozioni di base</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Panoramica di BlueXP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-overview.html">
+        Panoramica di BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Account"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-netapp-accounts.html">
+        Account
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connettori"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-connectors.html">
+        Connettori
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Modalità di implementazione"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-modes.html">
+        Modalità di implementazione
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Inizia con la modalità standard"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Inizia con la modalità standard</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Avvio rapido"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-quick-start-standard-mode.html">
+        Avvio rapido
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Rete per l'accesso alla console"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-networking-saas-console.html">
+        Rete per l'accesso alla console
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Iscriviti a BlueXP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-sign-up-saas.html">
+        Iscriviti a BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Accedere a BlueXP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-logging-in.html">
+        Accedere a BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Creare un connettore"
+      data-li-level="3" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Creare un connettore</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="4" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> AWS</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Avvio rapido"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-quick-start-connector-aws.html">
+        Avvio rapido
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Opzioni di installazione"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-install-options-aws.html">
+        Opzioni di installazione
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configurare la rete"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-set-up-networking-aws.html">
+        Configurare la rete
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Esaminare i requisiti dell'host"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-host-requirements-aws.html">
+        Esaminare i requisiti dell'host
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Impostare le autorizzazioni AWS"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-set-up-permissions-aws.html">
+        Impostare le autorizzazioni AWS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Creare il connettore"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-install-connector-aws.html">
+        Creare il connettore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Fornire le autorizzazioni a BlueXP"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-provide-permissions-aws.html">
+        Fornire le autorizzazioni a BlueXP
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure"
+      data-li-level="4" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Azure</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Avvio rapido"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-quick-start-connector-azure.html">
+        Avvio rapido
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Opzioni di installazione"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-install-options-azure.html">
+        Opzioni di installazione
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configurare la rete"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-set-up-networking-azure.html">
+        Configurare la rete
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Esaminare i requisiti dell'host"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-host-requirements-azure.html">
+        Esaminare i requisiti dell'host
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Impostare le autorizzazioni Azure"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-set-up-permissions-azure.html">
+        Impostare le autorizzazioni Azure
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Creare il connettore"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-install-connector-azure.html">
+        Creare il connettore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Fornire le autorizzazioni a BlueXP"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-provide-permissions-azure.html">
+        Fornire le autorizzazioni a BlueXP
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud"
+      data-li-level="4" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Google Cloud</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Avvio rapido"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-quick-start-connector-google.html">
+        Avvio rapido
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Opzioni di installazione"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-install-options-google.html">
+        Opzioni di installazione
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configurare la rete"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-set-up-networking-google.html">
+        Configurare la rete
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Esaminare i requisiti dell'host"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-host-requirements-google.html">
+        Esaminare i requisiti dell'host
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Impostare le autorizzazioni di Google Cloud"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-set-up-permissions-google.html">
+        Impostare le autorizzazioni di Google Cloud
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Abilitare le API di Google Cloud"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-enable-apis-google.html">
+        Abilitare le API di Google Cloud
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Creare il connettore"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-install-connector-google.html">
+        Creare il connettore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Fornire le autorizzazioni a BlueXP"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-provide-permissions-google.html">
+        Fornire le autorizzazioni a BlueXP
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="On-premise"
+      data-li-level="4" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> On-premise</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Avvio rapido"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html">
+        Avvio rapido
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configurare la rete"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-set-up-networking-on-prem.html">
+        Configurare la rete
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Esaminare i requisiti dell'host"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-host-requirements-on-prem.html">
+        Esaminare i requisiti dell'host
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Impostare le autorizzazioni cloud"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-set-up-permissions-on-prem.html">
+        Impostare le autorizzazioni cloud
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Creare il connettore"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-install-connector-on-prem.html">
+        Creare il connettore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Fornire le autorizzazioni a BlueXP"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-provide-permissions-on-prem.html">
+        Fornire le autorizzazioni a BlueXP
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Iscriviti a BlueXP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-subscribe-standard-mode.html">
+        Iscriviti a BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cosa fare in seguito"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-whats-next.html">
+        Cosa fare in seguito
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Inizia con la modalità limitata"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Inizia con la modalità limitata</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Avvio rapido"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-quick-start-restricted-mode.html">
+        Avvio rapido
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Prepararsi per l'implementazione"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-prepare-restricted-mode.html">
+        Prepararsi per l'implementazione
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Implementare il connettore"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-install-restricted-mode.html">
+        Implementare il connettore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Accedere a BlueXP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-log-in-restricted-mode.html">
+        Accedere a BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Iscriviti a BlueXP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-subscribe-restricted-mode.html">
+        Iscriviti a BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cosa fare in seguito"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-whats-next-restricted-mode.html">
+        Cosa fare in seguito
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Inizia con la modalità privata"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Inizia con la modalità privata</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Avvio rapido"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-quick-start-private-mode.html">
+        Avvio rapido
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Prepararsi per l'implementazione"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-prepare-private-mode.html">
+        Prepararsi per l'implementazione
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Implementare il connettore"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-install-private-mode.html">
+        Implementare il connettore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Accedere a BlueXP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-log-in-private-mode.html">
+        Accedere a BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cosa fare in seguito"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-whats-next-private-mode.html">
+        Cosa fare in seguito
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Amministrare BlueXP"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Amministrare BlueXP</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Federazione delle identità"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-federation.html">
+        Federazione delle identità
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> BlueXP</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestisci il tuo account"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-managing-netapp-accounts.html">
+        Gestisci il tuo account
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Monitorare le operazioni nell'account"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-monitor-cm-operations.html">
+        Monitorare le operazioni nell'account
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Creare un altro account"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-create-account.html">
+        Creare un altro account
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Ruoli utente"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-user-roles.html">
+        Ruoli utente
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connettori"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Connettori</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Individuare l'ID di sistema di un connettore"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-finding-system-id.html">
+        Individuare l'ID di sistema di un connettore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire i connettori esistenti"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-managing-connectors.html">
+        Gestire i connettori esistenti
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Installare un certificato HTTPS"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-installing-https-cert.html">
+        Installare un certificato HTTPS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configurare le impostazioni del proxy"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-configuring-proxy.html">
+        Configurare le impostazioni del proxy
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configurazione predefinita"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-connector-default-config.html">
+        Configurazione predefinita
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Credenziali"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Credenziali</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire le credenziali AWS"
+      data-li-level="3" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Gestire le credenziali AWS</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Panoramica"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-accounts-aws.html">
+        Panoramica
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire credenziali e sottoscrizioni"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-adding-aws-accounts.html">
+        Gestire credenziali e sottoscrizioni
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire le credenziali Azure"
+      data-li-level="3" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Gestire le credenziali Azure</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Panoramica"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-accounts-azure.html">
+        Panoramica
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire credenziali e sottoscrizioni"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-adding-azure-accounts.html">
+        Gestire credenziali e sottoscrizioni
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire le credenziali Google Cloud"
+      data-li-level="3" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Gestire le credenziali Google Cloud</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Panoramica"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-accounts-gcp.html">
+        Panoramica
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire credenziali e sottoscrizioni"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-adding-gcp-accounts.html">
+        Gestire credenziali e sottoscrizioni
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire le credenziali NSS associate a un account BlueXP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-adding-nss-accounts.html">
+        Gestire le credenziali NSS associate a un account BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire le credenziali associate all'accesso a BlueXP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-manage-user-credentials.html">
+        Gestire le credenziali associate all'accesso a BlueXP
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Scoperta dello storage cloud"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Scoperta dello storage cloud</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestisci i bucket Amazon S3"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-viewing-amazon-s3.html">
+        Gestisci i bucket Amazon S3
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Visualizza i tuoi account Azure Blob"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-viewing-azure-blob.html">
+        Visualizza i tuoi account Azure Blob
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Visualizza i bucket di storage Google Cloud"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-viewing-gcp-storage.html">
+        Visualizza i bucket di storage Google Cloud
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Riferimento"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Riferimento</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Permessi"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Permessi</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Riepilogo delle autorizzazioni"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-permissions.html">
+        Riepilogo delle autorizzazioni
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Autorizzazioni AWS per il connettore"
+      data-li-level="3#" 
+      class="  active "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-permissions-aws.html">
+        Autorizzazioni AWS per il connettore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Autorizzazioni Azure per il connettore"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-permissions-azure.html">
+        Autorizzazioni Azure per il connettore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Permessi Google Cloud per il connettore"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-permissions-gcp.html">
+        Permessi Google Cloud per il connettore
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Porte"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Porte</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Regole del gruppo di sicurezza in AWS"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-ports-aws.html">
+        Regole del gruppo di sicurezza in AWS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Regole del gruppo di sicurezza in Azure"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-ports-azure.html">
+        Regole del gruppo di sicurezza in Azure
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Regole del firewall in Google Cloud"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-ports-gcp.html">
+        Regole del firewall in Google Cloud
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Porte per il connettore on-premise"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-ports-on-prem.html">
+        Porte per il connettore on-premise
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Conoscenza e supporto"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Conoscenza e supporto</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Registrati per ricevere assistenza"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-support-registration.html">
+        Registrati per ricevere assistenza
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Richiedi assistenza"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-get-help.html">
+        Richiedi assistenza
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Note legali"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/legal-notices.html">
+        Note legali
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
+
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <div class="ie-utility">
+  <button id="btn-sidebar-expand" onclick="showSidebar()"><img src="/it-it/cloud-manager-setup-admin/images/expand.png" alt="Espandi pannello di navigazione"></button>
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com/us-en/cloud/">Documentazione Cloud</a>
+        </li>
+        
+
+        
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com/it-it/cloud-manager-family/">BlueXP</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/it-it/cloud-manager-setup-admin/">Setup&nbsp;and&nbsp;administration</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> La versione in lingua italiana fornita proviene da una traduzione automatica. Per eventuali incoerenze, fare riferimento alla versione in lingua inglese. </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">Autorizzazioni AWS per il connettore</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2023-05-23 19:36:43 +0000">05/23/2023</time>
+    
+  
+
+<span>Collaboratori
+</span>
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>Quando BlueXP avvia l&#8217;istanza del connettore in AWS, allega un criterio all&#8217;istanza che fornisce al connettore le autorizzazioni per gestire le risorse e i processi all&#8217;interno di tale account AWS. Il connettore utilizza le autorizzazioni per effettuare chiamate API a diversi servizi AWS, tra cui EC2, S3, CloudFormation, IAM, Il servizio di gestione delle chiavi (KMS) e molto altro ancora.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="policy-iam">Policy IAM</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Le policy IAM disponibili di seguito forniscono le autorizzazioni necessarie a un connettore per gestire risorse e processi all&#8217;interno del tuo ambiente di cloud pubblico in base alla tua regione AWS.</p>
+</div>
+<div class="paragraph">
+<p>Tenere presente quanto segue:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Se si crea un connettore in una regione AWS standard direttamente da BlueXP, BlueXP applica automaticamente i criteri al connettore. In questo caso, non è necessario eseguire alcuna operazione.</p>
+</li>
+<li>
+<p>È necessario impostare autonomamente i criteri se si implementa il connettore da AWS Marketplace, se si installa manualmente il connettore su un host Linux o se si desidera aggiungere ulteriori credenziali AWS a BlueXP.</p>
+</li>
+<li>
+<p>Inoltre, è necessario assicurarsi che i criteri siano aggiornati quando vengono aggiunte nuove autorizzazioni nelle release successive.</p>
+</li>
+<li>
+<p>Se necessario, è possibile limitare le policy IAM utilizzando il modulo IAM <code>Condition</code> elemento. <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html" target="_blank" rel="noopener">"Documentazione AWS: Elemento Condition"</a></p>
+</li>
+<li>
+<p>Per visualizzare istruzioni dettagliate sull&#8217;utilizzo di questi criteri, fare riferimento alle seguenti pagine:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="task-set-up-permissions-aws.html">"Impostazione delle autorizzazioni per l&#8217;installazione del connettore in AWS (modalità standard)"</a></p>
+</li>
+<li>
+<p><a href="task-set-up-permissions-on-prem.html">"Impostazione delle autorizzazioni per l&#8217;installazione on-premise del connettore (modalità standard)"</a></p>
+</li>
+<li>
+<p><a href="task-prepare-restricted-mode.html#prepare-cloud-permissions">"Impostare le autorizzazioni per la modalità limitata"</a></p>
+</li>
+<li>
+<p><a href="task-prepare-private-mode.html#prepare-cloud-permissions">"Impostare le autorizzazioni per la modalità privata"</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Selezionare la propria regione per visualizzare le policy richieste:</p>
+</div>
+<details>
+<summary class="title">Regioni standard</summary>
+<div class="content">
+<div class="paragraph">
+<p>Per le regioni standard, le autorizzazioni sono distribuite in due policy. Sono necessarie due policy a causa di un limite massimo di dimensioni dei caratteri per le policy gestite in AWS.</p>
+</div>
+<div class="paragraph">
+<p>Il primo criterio fornisce le autorizzazioni per i seguenti servizi:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Discovery bucket Amazon S3</p>
+</li>
+<li>
+<p>Backup e recovery</p>
+</li>
+<li>
+<p>Classificazione</p>
+</li>
+<li>
+<p>Cloud Volumes ONTAP</p>
+</li>
+<li>
+<p>FSX per ONTAP</p>
+</li>
+<li>
+<p>Tiering</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Il secondo criterio fornisce le autorizzazioni per i seguenti servizi:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Caching edge</p>
+</li>
+<li>
+<p>Kubernetes</p>
+</li>
+<li>
+<p>Risoluzione dei problemi</p>
+</li>
+</ul>
+</div>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">Policy n. 1</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:DescribeInstanceAttribute",
+                "ec2:DescribeRouteTables",
+                "ec2:DescribeImages",
+                "ec2:CreateTags",
+                "ec2:CreateVolume",
+                "ec2:DescribeVolumes",
+                "ec2:ModifyVolumeAttribute",
+                "ec2:CreateSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeDhcpOptions",
+                "ec2:CreateSnapshot",
+                "ec2:DescribeSnapshots",
+                "ec2:GetConsoleOutput",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DescribeTags",
+                "ec2:AssociateIamInstanceProfile",
+                "ec2:DescribeIamInstanceProfileAssociations",
+                "ec2:DisassociateIamInstanceProfile",
+                "ec2:CreatePlacementGroup",
+                "ec2:DescribeReservedInstancesOfferings",
+                "ec2:AssignPrivateIpAddresses",
+                "ec2:CreateRoute",
+                "ec2:DescribeVpcs",
+                "ec2:ReplaceRoute",
+                "ec2:UnassignPrivateIpAddresses",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DeleteNetworkInterface",
+                "ec2:DeleteSnapshot",
+                "ec2:DeleteTags",
+                "ec2:DeleteRoute",
+                "ec2:DeletePlacementGroup",
+                "ec2:DescribePlacementGroups",
+                "ec2:DescribeVolumesModifications",
+                "ec2:ModifyVolume",
+                "cloudformation:CreateStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:ValidateTemplate",
+                "cloudformation:DeleteStack",
+                "iam:PassRole",
+                "iam:CreateRole",
+                "iam:PutRolePolicy",
+                "iam:CreateInstanceProfile",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:ListInstanceProfiles",
+                "iam:DeleteRole",
+                "iam:DeleteRolePolicy",
+                "iam:DeleteInstanceProfile",
+                "iam:GetRolePolicy",
+                "iam:GetRole",
+                "sts:DecodeAuthorizationMessage",
+                "sts:AssumeRole",
+                "s3:GetBucketTagging",
+                "s3:GetBucketLocation",
+                "s3:ListBucket",
+                "s3:CreateBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:ListBucketVersions",
+                "s3:GetBucketPolicyStatus",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:GetBucketPolicy",
+                "s3:GetBucketAcl",
+                "s3:PutObjectTagging",
+                "s3:GetObjectTagging",
+                "s3:DeleteObject",
+                "s3:DeleteObjectVersion",
+                "s3:PutObject",
+                "s3:ListAllMyBuckets",
+                "s3:GetObject",
+                "s3:GetEncryptionConfiguration",
+                "kms:List*",
+                "kms:ReEncrypt*",
+                "kms:Describe*",
+                "kms:CreateGrant",
+                "ce:GetReservationUtilization",
+                "ce:GetDimensionValues",
+                "ce:GetCostAndUsage",
+                "ce:GetTags",
+                "fsx:Describe*",
+                "fsx:List*"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "cvoServicePolicy"
+        },
+        {
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:DescribeInstances",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:TerminateInstances",
+                "ec2:DescribeInstanceAttribute",
+                "ec2:DescribeImages",
+                "ec2:CreateTags",
+                "ec2:CreateVolume",
+                "ec2:CreateSecurityGroup",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeRegions",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "kms:List*",
+                "kms:Describe*",
+                "ec2:DescribeVpcEndpoints",
+                "kms:ListAliases",
+                "athena:StartQueryExecution",
+                "athena:GetQueryResults",
+                "athena:GetQueryExecution",
+                "glue:GetDatabase",
+                "glue:GetTable",
+                "glue:CreateTable",
+                "glue:CreateDatabase",
+                "glue:GetPartitions",
+                "glue:BatchCreatePartition",
+                "glue:BatchDeletePartition"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "backupPolicy"
+        },
+        {
+            "Action": [
+                "s3:GetBucketLocation",
+                "s3:ListAllMyBuckets",
+                "s3:ListBucket",
+                "s3:CreateBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions",
+                "s3:GetBucketAcl",
+                "s3:PutBucketPublicAccessBlock",
+                "s3:GetObject",
+                "s3:PutEncryptionConfiguration",
+                "s3:DeleteObject",
+                "s3:DeleteObjectVersion",
+                "s3:ListBucketMultipartUploads",
+                "s3:PutObject",
+                "s3:PutBucketAcl",
+                "s3:AbortMultipartUpload",
+                "s3:ListMultipartUploadParts",
+                "s3:DeleteBucket",
+                "s3:GetObjectVersionTagging",
+                "s3:GetObjectVersionAcl",
+                "s3:GetObjectRetention",
+                "s3:GetObjectTagging",
+                "s3:GetObjectVersion",
+                "s3:PutObjectVersionTagging",
+                "s3:PutObjectRetention",
+                "s3:DeleteObjectTagging",
+                "s3:DeleteObjectVersionTagging",
+                "s3:GetBucketObjectLockConfiguration",
+                "s3:GetBucketVersioning",
+                "s3:PutBucketObjectLockConfiguration",
+                "s3:PutBucketVersioning",
+                "s3:BypassGovernanceRetention",
+                "s3:PutBucketPolicy",
+                "s3:PutBucketOwnershipControls"
+            ],
+            "Resource": [
+                "arn:aws:s3:::netapp-backup-*"
+            ],
+            "Effect": "Allow",
+            "Sid": "backupS3Policy"
+        },
+        {
+            "Action": [
+                "s3:CreateBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions",
+                "s3:GetBucketPolicyStatus",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:GetBucketAcl",
+                "s3:GetBucketPolicy",
+                "s3:PutBucketPublicAccessBlock",
+                "s3:DeleteBucket"
+            ],
+            "Resource": [
+                "arn:aws:s3:::fabric-pool*"
+            ],
+            "Effect": "Allow",
+            "Sid": "fabricPoolS3Policy"
+        },
+        {
+            "Action": [
+                "ec2:DescribeRegions"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "fabricPoolPolicy"
+        },
+        {
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/netapp-adc-manager": "*"
+                }
+            },
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:TerminateInstances"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/WorkingEnvironment": "*"
+                }
+            },
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume",
+                "ec2:StopInstances",
+                "ec2:DeleteVolume"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/WorkingEnvironment": "*"
+                }
+            },
+            "Action": [
+                "ec2:DeleteVolume"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:volume/*"
+            ],
+            "Effect": "Allow"
+        }
+    ]
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">Policy n. 2</div>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "ec2:DescribeRegions",
+                "eks:ListClusters",
+                "eks:DescribeCluster",
+                "iam:GetInstanceProfile"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "K8sServicePolicy"
+        },
+        {
+            "Action": [
+                "cloudformation:DescribeStacks",
+                "cloudwatch:GetMetricStatistics",
+                "cloudformation:ListStacks"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "GFCservicePolicy"
+        },
+        {
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/GFCInstance": "*"
+                }
+            },
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "ec2:CreateTags",
+                "ec2:DeleteTags",
+                "ec2:DescribeTags",
+                "tag:getResources",
+                "tag:getTagKeys",
+                "tag:getTagValues",
+                "tag:TagResources",
+                "tag:UntagResources"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "tagServicePolicy"
+        }
+    ]
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">Regioni di GovCloud (USA)</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:ListInstanceProfiles",
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:PutRolePolicy",
+                "iam:CreateInstanceProfile",
+                "iam:DeleteRolePolicy",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "ec2:ModifyVolumeAttribute",
+                "sts:DecodeAuthorizationMessage",
+                "ec2:DescribeImages",
+                "ec2:DescribeRouteTables",
+                "ec2:DescribeInstances",
+                "iam:PassRole",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:CreateTags",
+                "ec2:CreateVolume",
+                "ec2:DescribeVolumes",
+                "ec2:DeleteVolume",
+                "ec2:CreateSecurityGroup",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DeleteNetworkInterface",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeDhcpOptions",
+                "ec2:CreateSnapshot",
+                "ec2:DeleteSnapshot",
+                "ec2:DescribeSnapshots",
+                "ec2:StopInstances",
+                "ec2:GetConsoleOutput",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DeleteTags",
+                "ec2:DescribeTags",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:ValidateTemplate",
+                "s3:GetObject",
+                "s3:ListBucket",
+                "s3:ListAllMyBuckets",
+                "s3:GetBucketTagging",
+                "s3:GetBucketLocation",
+                "s3:CreateBucket",
+                "s3:GetBucketPolicyStatus",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:GetBucketAcl",
+                "s3:GetBucketPolicy",
+                "kms:List*",
+                "kms:ReEncrypt*",
+                "kms:Describe*",
+                "kms:CreateGrant",
+                "ec2:AssociateIamInstanceProfile",
+                "ec2:DescribeIamInstanceProfileAssociations",
+                "ec2:DisassociateIamInstanceProfile",
+                "ec2:DescribeInstanceAttribute",
+                "ce:GetReservationUtilization",
+                "ce:GetDimensionValues",
+                "ce:GetCostAndUsage",
+                "ce:GetTags",
+                "ec2:CreatePlacementGroup",
+                "ec2:DeletePlacementGroup"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "fabricPoolPolicy",
+            "Effect": "Allow",
+            "Action": [
+                "s3:DeleteBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions",
+                "s3:GetBucketPolicyStatus",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:GetBucketAcl",
+                "s3:GetBucketPolicy",
+                "s3:PutBucketPublicAccessBlock"
+            ],
+            "Resource": [
+                "arn:aws-us-gov:s3:::fabric-pool*"
+            ]
+        },
+        {
+            "Sid": "backupPolicy",
+            "Effect": "Allow",
+            "Action": [
+                "s3:DeleteBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions",
+                "s3:GetObject",
+                "s3:ListBucket",
+                "s3:ListAllMyBuckets",
+                "s3:GetBucketTagging",
+                "s3:GetBucketLocation",
+                "s3:GetBucketPolicyStatus",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:GetBucketAcl",
+                "s3:GetBucketPolicy",
+                "s3:PutBucketPublicAccessBlock"
+            ],
+            "Resource": [
+                "arn:aws-us-gov:s3:::netapp-backup-*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/WorkingEnvironment": "*"
+                }
+            },
+            "Resource": [
+                "arn:aws-us-gov:ec2:*:*:instance/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws-us-gov:ec2:*:*:volume/*"
+            ]
+        }
+    ]
+}</code></pre>
+</div>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">Ambiente C2S</summary>
+<div class="content">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">{
+    "Version": "2012-10-17",
+    "Statement": [{
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances",
+                "ec2:DescribeInstanceStatus",
+                "ec2:RunInstances",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:DescribeRouteTables",
+                "ec2:DescribeImages",
+                "ec2:CreateTags",
+                "ec2:CreateVolume",
+                "ec2:DescribeVolumes",
+                "ec2:ModifyVolumeAttribute",
+                "ec2:DeleteVolume",
+                "ec2:CreateSecurityGroup",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DescribeSecurityGroups",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DeleteNetworkInterface",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeDhcpOptions",
+                "ec2:CreateSnapshot",
+                "ec2:DeleteSnapshot",
+                "ec2:DescribeSnapshots",
+                "ec2:GetConsoleOutput",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeRegions",
+                "ec2:DeleteTags",
+                "ec2:DescribeTags",
+                "cloudformation:CreateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:ValidateTemplate",
+                "iam:PassRole",
+                "iam:CreateRole",
+                "iam:DeleteRole",
+                "iam:PutRolePolicy",
+                "iam:CreateInstanceProfile",
+                "iam:DeleteRolePolicy",
+                "iam:AddRoleToInstanceProfile",
+                "iam:RemoveRoleFromInstanceProfile",
+                "iam:DeleteInstanceProfile",
+                "s3:GetObject",
+                "s3:ListBucket",
+                "s3:GetBucketTagging",
+                "s3:GetBucketLocation",
+                "s3:ListAllMyBuckets",
+                "kms:List*",
+                "kms:Describe*",
+                "ec2:AssociateIamInstanceProfile",
+                "ec2:DescribeIamInstanceProfileAssociations",
+                "ec2:DisassociateIamInstanceProfile",
+                "ec2:DescribeInstanceAttribute",
+                "ec2:CreatePlacementGroup",
+                "ec2:DeletePlacementGroup",
+                "iam:ListinstanceProfiles"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "fabricPoolPolicy",
+            "Effect": "Allow",
+            "Action": [
+                "s3:DeleteBucket",
+                "s3:GetLifecycleConfiguration",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutBucketTagging",
+                "s3:ListBucketVersions"
+            ],
+            "Resource": [
+                "arn:aws-iso:s3:::fabric-pool*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:StopInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/WorkingEnvironment": "*"
+                }
+            },
+            "Resource": [
+                "arn:aws-iso:ec2:*:*:instance/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws-iso:ec2:*:*:volume/*"
+            ]
+        }
+    ]
+}</code></pre>
+</div>
+</div>
+</div>
+</details>
+</div>
+</div>
+<div class="sect1">
+<h2 id="modalità-di-utilizzo-delle-autorizzazioni-aws">Modalità di utilizzo delle autorizzazioni AWS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Le sezioni seguenti descrivono come utilizzare le autorizzazioni per ciascun servizio BlueXP. Queste informazioni possono essere utili se le policy aziendali impongono che le autorizzazioni vengano fornite solo se necessario.</p>
+</div>
+<div class="sect2">
+<h3 id="amazon-fsx-per-ontap">Amazon FSX per ONTAP</h3>
+<div class="paragraph">
+<p>Il connettore effettua le seguenti richieste API per gestire Amazon FSX per ONTAP:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ec2:DescripbeInstances</p>
+</li>
+<li>
+<p>ec2:DescripbeInstanceStatus</p>
+</li>
+<li>
+<p>ec2:DescripbeInstanceAttribute</p>
+</li>
+<li>
+<p>ec2:DescripteRouteTable</p>
+</li>
+<li>
+<p>ec2:DescripteImages</p>
+</li>
+<li>
+<p>ec2:CreateTag</p>
+</li>
+<li>
+<p>ec2:DescripteVolumes</p>
+</li>
+<li>
+<p>ec2:DescripteSecurityGroups</p>
+</li>
+<li>
+<p>ec2:DescripteNetworkInterfaces</p>
+</li>
+<li>
+<p>ec2:DescripteSubnet</p>
+</li>
+<li>
+<p>ec2:DescripteVpcs</p>
+</li>
+<li>
+<p>ec2:DescripbeDhcpOptions</p>
+</li>
+<li>
+<p>ec2:DescripteSnapshot</p>
+</li>
+<li>
+<p>ec2:DescripteKeyPairs</p>
+</li>
+<li>
+<p>ec2:DescripteRegions</p>
+</li>
+<li>
+<p>ec2:DescripteTag</p>
+</li>
+<li>
+<p>ec2:DescripteIamInstanceProfileAssociations</p>
+</li>
+<li>
+<p>ec2:DescripteReservedInstancesOfferings</p>
+</li>
+<li>
+<p>ec2:DescripteVpcEndpoint</p>
+</li>
+<li>
+<p>ec2:DescripteVpcs</p>
+</li>
+<li>
+<p>ec2:DescripteVolumesModificazioni</p>
+</li>
+<li>
+<p>ec2:DescriptePlacementGroups</p>
+</li>
+<li>
+<p>Km: Elenco*</p>
+</li>
+<li>
+<p>Km:descrivere*</p>
+</li>
+<li>
+<p>Km: CreateGrant</p>
+</li>
+<li>
+<p>Km:ListAlias</p>
+</li>
+<li>
+<p>fsx:descrivere*</p>
+</li>
+<li>
+<p>fsx: Elenco*</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="discovery-bucket-amazon-s3">Discovery bucket Amazon S3</h3>
+<div class="paragraph">
+<p>Il connettore effettua la seguente richiesta API per scoprire i bucket Amazon S3:</p>
+</div>
+<div class="paragraph">
+<p>s3:GetEncryptionConfiguration</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="backup-e-recovery">Backup e recovery</h3>
+<div class="paragraph">
+<p>Il connettore effettua le seguenti richieste API per implementare l&#8217;istanza di ripristino per il backup e ripristino BlueXP:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ec2:StartInstances</p>
+</li>
+<li>
+<p>ec2:StopInstances</p>
+</li>
+<li>
+<p>ec2:DescripbeInstances</p>
+</li>
+<li>
+<p>ec2:DescripbeInstanceStatus</p>
+</li>
+<li>
+<p>ec2:RunInstances</p>
+</li>
+<li>
+<p>ec2:installazioni terminate</p>
+</li>
+<li>
+<p>ec2:DescripbeInstanceAttribute</p>
+</li>
+<li>
+<p>ec2:DescripteImages</p>
+</li>
+<li>
+<p>ec2:CreateTag</p>
+</li>
+<li>
+<p>ec2:CreateVolume</p>
+</li>
+<li>
+<p>ec2:CreateSecurityGroup</p>
+</li>
+<li>
+<p>ec2:DescripteSubnet</p>
+</li>
+<li>
+<p>ec2:DescripteVpcs</p>
+</li>
+<li>
+<p>ec2:DescripteRegions</p>
+</li>
+<li>
+<p>Cloud formation: CreateStack</p>
+</li>
+<li>
+<p>Cloud formation:DeleteStack</p>
+</li>
+<li>
+<p>Cloudformation:DescripteStack</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Il connettore effettua le seguenti richieste API per gestire i backup in Amazon S3:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>s3:GetBucketLocation</p>
+</li>
+<li>
+<p>s3:ListAllMyBucket</p>
+</li>
+<li>
+<p>s3:ListBucket</p>
+</li>
+<li>
+<p>s3:CreateBucket</p>
+</li>
+<li>
+<p>s3:GetLifecycleConfiguration</p>
+</li>
+<li>
+<p>s3:PutLifecycleConfiguration</p>
+</li>
+<li>
+<p>s3:PutBucketTagging</p>
+</li>
+<li>
+<p>s3:ListBucketVersions</p>
+</li>
+<li>
+<p>s3:GetBucketAcl</p>
+</li>
+<li>
+<p>s3:PutBucketPublicAccessBlock</p>
+</li>
+<li>
+<p>Km: Elenco*</p>
+</li>
+<li>
+<p>Km:descrivere*</p>
+</li>
+<li>
+<p>s3:GetObject</p>
+</li>
+<li>
+<p>ec2:DescripteVpcEndpoint</p>
+</li>
+<li>
+<p>Km:ListAlias</p>
+</li>
+<li>
+<p>s3:PutEncryptionConfiguration</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Il connettore effettua le seguenti richieste API quando si utilizza il metodo Search &amp; Restore per ripristinare volumi e file:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>s3:CreateBucket</p>
+</li>
+<li>
+<p>s3:DeleteObject</p>
+</li>
+<li>
+<p>s3:DeleteObjectVersion</p>
+</li>
+<li>
+<p>s3:GetBucketAcl</p>
+</li>
+<li>
+<p>s3:ListBucket</p>
+</li>
+<li>
+<p>s3:ListBucketVersions</p>
+</li>
+<li>
+<p>s3:ListBucketMultipartUploads</p>
+</li>
+<li>
+<p>s3:PutObject</p>
+</li>
+<li>
+<p>s3:PutBucketAcl</p>
+</li>
+<li>
+<p>s3:PutLifecycleConfiguration</p>
+</li>
+<li>
+<p>s3:PutBucketPublicAccessBlock</p>
+</li>
+<li>
+<p>s3:AbortMultipartUpload</p>
+</li>
+<li>
+<p>s3:ListMultipartUploadParts</p>
+</li>
+<li>
+<p>athena:StartQueryExecutionc</p>
+</li>
+<li>
+<p>athena: GetQueryResults</p>
+</li>
+<li>
+<p>athena:GetQueryExecution</p>
+</li>
+<li>
+<p>athena:StopQueryExecution</p>
+</li>
+<li>
+<p>Incolla: CreateDatabase</p>
+</li>
+<li>
+<p>Incolla: CreateTable</p>
+</li>
+<li>
+<p>Incolla: BatchDeletePartition</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Il connettore esegue le seguenti richieste API quando si utilizza la protezione DataLock e ransomware per i backup dei volumi:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>s3:GetObjectVersionTagging</p>
+</li>
+<li>
+<p>s3:GetBucketObjectLockConfiguration</p>
+</li>
+<li>
+<p>s3:GetObjectVersionAcl</p>
+</li>
+<li>
+<p>s3:PutObjectTagging</p>
+</li>
+<li>
+<p>s3:DeleteObject</p>
+</li>
+<li>
+<p>s3:DeleteObjectTagging</p>
+</li>
+<li>
+<p>s3:GetObjectRetention</p>
+</li>
+<li>
+<p>s3:DeleteObjectVersionTagging</p>
+</li>
+<li>
+<p>s3:PutObject</p>
+</li>
+<li>
+<p>s3:GetObject</p>
+</li>
+<li>
+<p>s3:PutBucketObjectLockConfiguration</p>
+</li>
+<li>
+<p>s3:GetLifecycleConfiguration</p>
+</li>
+<li>
+<p>s3:ListBucketByTags</p>
+</li>
+<li>
+<p>s3:GetBucketTagging</p>
+</li>
+<li>
+<p>s3:DeleteObjectVersion</p>
+</li>
+<li>
+<p>s3:ListBucketVersions</p>
+</li>
+<li>
+<p>s3:ListBucket</p>
+</li>
+<li>
+<p>s3:PutBucketTagging</p>
+</li>
+<li>
+<p>s3:GetObjectTagging</p>
+</li>
+<li>
+<p>s3:PutBucketVersioning</p>
+</li>
+<li>
+<p>s3:PutObjectVersionTagging</p>
+</li>
+<li>
+<p>s3:GetBucketVersioning</p>
+</li>
+<li>
+<p>s3:GetBucketAcl</p>
+</li>
+<li>
+<p>s3:BypassGovernanceRetention</p>
+</li>
+<li>
+<p>s3:PutObjectRetention</p>
+</li>
+<li>
+<p>s3:GetBucketLocation</p>
+</li>
+<li>
+<p>s3:GetObjectVersion</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Il connettore effettua le seguenti richieste API se si utilizza un account AWS diverso per i backup Cloud Volumes ONTAP rispetto a quello utilizzato per i volumi di origine:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>s3:PutBucketPolicy</p>
+</li>
+<li>
+<p>s3:PutBucketOwnershipControls</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="classificazione">Classificazione</h3>
+<div class="paragraph">
+<p>Il connettore effettua le seguenti richieste API per implementare l&#8217;istanza di classificazione BlueXP:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ec2:DescripbeInstances</p>
+</li>
+<li>
+<p>ec2:DescripbeInstanceStatus</p>
+</li>
+<li>
+<p>ec2:RunInstances</p>
+</li>
+<li>
+<p>ec2:installazioni terminate</p>
+</li>
+<li>
+<p>ec2:CreateTag</p>
+</li>
+<li>
+<p>ec2:CreateVolume</p>
+</li>
+<li>
+<p>ec2:AttachVolume</p>
+</li>
+<li>
+<p>ec2:CreateSecurityGroup</p>
+</li>
+<li>
+<p>ec2:DeleteSecurityGroup</p>
+</li>
+<li>
+<p>ec2:DescripteSecurityGroups</p>
+</li>
+<li>
+<p>ec2:CreateNetworkInterface</p>
+</li>
+<li>
+<p>ec2:DescripteNetworkInterfaces</p>
+</li>
+<li>
+<p>ec2:DeleteNetworkInterface</p>
+</li>
+<li>
+<p>ec2:DescripteSubnet</p>
+</li>
+<li>
+<p>ec2:DescripteVpcs</p>
+</li>
+<li>
+<p>ec2:CreateSnapshot</p>
+</li>
+<li>
+<p>ec2:DescripteRegions</p>
+</li>
+<li>
+<p>Cloud formation: CreateStack</p>
+</li>
+<li>
+<p>Cloud formation:DeleteStack</p>
+</li>
+<li>
+<p>Cloudformation:DescripteStack</p>
+</li>
+<li>
+<p>Cloudformation:DescripbeStackEvents</p>
+</li>
+<li>
+<p>iam:AddRoleToInstanceProfile</p>
+</li>
+<li>
+<p>ec2:AssociateIamInstanceProfile</p>
+</li>
+<li>
+<p>ec2:DescripteIamInstanceProfileAssociations</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Il connettore effettua le seguenti richieste API per eseguire la scansione dei bucket S3 quando si utilizza la classificazione BlueXP:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>iam:AddRoleToInstanceProfile</p>
+</li>
+<li>
+<p>ec2:AssociateIamInstanceProfile</p>
+</li>
+<li>
+<p>ec2:DescripteIamInstanceProfileAssociations</p>
+</li>
+<li>
+<p>s3:GetBucketTagging</p>
+</li>
+<li>
+<p>s3:GetBucketLocation</p>
+</li>
+<li>
+<p>s3:ListAllMyBucket</p>
+</li>
+<li>
+<p>s3:ListBucket</p>
+</li>
+<li>
+<p>s3:GetBucketPolicyStatus</p>
+</li>
+<li>
+<p>s3:GetBucketPolicy</p>
+</li>
+<li>
+<p>s3:GetBucketAcl</p>
+</li>
+<li>
+<p>s3:GetObject</p>
+</li>
+<li>
+<p>iam: GetRole</p>
+</li>
+<li>
+<p>s3:DeleteObject</p>
+</li>
+<li>
+<p>s3:DeleteObjectVersion</p>
+</li>
+<li>
+<p>s3:PutObject</p>
+</li>
+<li>
+<p>sts: AssumeRole</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="cloud-volumes-ontap">Cloud Volumes ONTAP</h3>
+<div class="paragraph">
+<p>Il connettore effettua le seguenti richieste API per implementare e gestire Cloud Volumes ONTAP in AWS.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Scopo</th>
+<th class="tableblock halign-left valign-top">Azione</th>
+<th class="tableblock halign-left valign-top">Utilizzato per l&#8217;implementazione?</th>
+<th class="tableblock halign-left valign-top">Utilizzato per le operazioni quotidiane?</th>
+<th class="tableblock halign-left valign-top">Utilizzato per l&#8217;eliminazione?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="13"><p class="tableblock">Creare e gestire i ruoli IAM e i profili di istanza per le istanze di Cloud Volumes ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam:ListInstanceProfiles</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam: CreateRole</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam: DeleteRole</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam:PutRolePolicy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam:CreateInstanceProfile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam:DeleteRolePolicy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam:AddRoleToInstanceProfile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam:RemoveRoleFromInstanceProfile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam:DeleteInstanceProfile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iam: PassRole</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:AssociateIamInstanceProfile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescripteIamInstanceProfileAssociations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DisassociateIamInstanceProfile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Decodificare i messaggi di stato dell&#8217;autorizzazione</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sts:DecodeAuthorizationMessage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descrivere le immagini specificate (Amis) disponibili per l&#8217;account</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescripteImages</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descrivere le tabelle di percorso in un VPC (richiesto solo per le coppie ha)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescripteRouteTable</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Arrestare, avviare e monitorare le istanze</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:StartInstances</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:StopInstances</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescripbeInstances</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescripbeInstanceStatus</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:RunInstances</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:installazioni terminate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:ModifyInstanceAttribute</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verificare che la rete avanzata sia abilitata per i tipi di istanze supportati</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescripbeInstanceAttribute</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contrassegnare le risorse con i tag "WorkingEnvironment" e "WorkingEnvironmentId" utilizzati per la manutenzione e l&#8217;allocazione dei costi</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:CreateTag</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="6"><p class="tableblock">Gestire i volumi EBS utilizzati da Cloud Volumes ONTAP come storage back-end</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:CreateVolume</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescripteVolumes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:ModifyVolumeAttribute</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:AttachVolume</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DeleteVolume</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DetachVolume</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Creare e gestire gruppi di sicurezza per Cloud Volumes ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:CreateSecurityGroup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DeleteSecurityGroup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescripteSecurityGroups</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:RevokeSecurityGroupErgress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:AuthorizeSecurityGroupErgress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:AuthorizeSecurityGroupIngress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:RevokeSecurityGroupIngress</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="4"><p class="tableblock">Creare e gestire le interfacce di rete per Cloud Volumes ONTAP nella subnet di destinazione</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:CreateNetworkInterface</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescripteNetworkInterfaces</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DeleteNetworkInterface</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:ModifyNetworkInterfaceAttribute</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">Ottenere l&#8217;elenco delle subnet di destinazione e dei gruppi di protezione</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescripteSubnet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescripteVpcs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ottenere i server DNS e il nome di dominio predefinito per le istanze di Cloud Volumes ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescripbeDhcpOptions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">Snapshot dei volumi EBS per Cloud Volumes ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:CreateSnapshot</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DeleteSnapshot</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescripteSnapshot</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Acquisire la console Cloud Volumes ONTAP, che è allegata ai messaggi AutoSupport</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:GetConsoleOutput</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ottieni l&#8217;elenco delle coppie di chiavi disponibili</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescripteKeyPairs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ottieni l&#8217;elenco delle regioni AWS disponibili</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescripteRegions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">Gestire i tag per le risorse associate alle istanze di Cloud Volumes ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DeleteMags</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescripteTag</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="5"><p class="tableblock">Creare e gestire gli stack per i modelli di AWS CloudFormation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud formation: CreateStack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud formation:DeleteStack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloudformation:DescripteStack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloudformation:DescripbeStackEvents</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud formation:ValidateTemplate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="15"><p class="tableblock">Creare e gestire un bucket S3 che un sistema Cloud Volumes ONTAP utilizza come Tier di capacità per il tiering dei dati</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:CreateBucket</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:Deletebucket</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:GetLifecycleConfiguration</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:PutLifecycleConfiguration</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:PutBucketTagging</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:ListBucketVersions</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:GetBucketPolicyStatus</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:GetBucketPublicAccessBlock</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:GetBucketAcl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:GetBucketPolicy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:PutBucketPublicAccessBlock</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:GetBucketTagging</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:GetBucketLocation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:ListAllMyBucket</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">s3:ListBucket</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="4"><p class="tableblock">Abilitare la crittografia dei dati di Cloud Volumes ONTAP utilizzando il servizio di gestione delle chiavi AWS (KMS)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Km: Elenco*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kms: ReEncrypt*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Km:descrivere*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Km: CreateGrant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="4"><p class="tableblock">Ottenere i dati sui costi AWS per Cloud Volumes ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ce: GetReservationUtilization</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ce:GetDimensionValues</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ce:GetCostAndUsage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ce:GetTags</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">Creare e gestire un gruppo di posizionamento AWS Spread per due nodi ha e il mediatore in una singola AWS Availability zone</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:CreatePlacementGroup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DeletePlacementGroup</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">Creare report</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fsx:descrivere*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fsx: Elenco*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">Crea e gestisci aggregati che supportano la funzionalità Amazon EBS Elastic Volumes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:DescripteVolumesModificazioni</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ec2:ModifyVolume</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="caching-edge">Caching edge</h3>
+<div class="paragraph">
+<p>Il connettore effettua le seguenti richieste API per implementare istanze di caching edge BlueXP durante l&#8217;implementazione:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Cloudformation:DescripteStack</p>
+</li>
+<li>
+<p>Cloudwatch:GetMetricStatistics</p>
+</li>
+<li>
+<p>Cloudformation:ListStack</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="kubernetes">Kubernetes</h3>
+<div class="paragraph">
+<p>Il connettore effettua le seguenti richieste API per rilevare e gestire i cluster Amazon EKS:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ec2:DescripteRegions</p>
+</li>
+<li>
+<p>eks:ListClusters</p>
+</li>
+<li>
+<p>eks: DescripbeCluster</p>
+</li>
+<li>
+<p>iam:GetInstanceProfile</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="risoluzione-dei-problemi">Risoluzione dei problemi</h3>
+<div class="paragraph">
+<p>Il connettore effettua le seguenti richieste API per gestire i tag sulle risorse AWS quando si utilizza la soluzione BlueXP:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ec2:CreateTag</p>
+</li>
+<li>
+<p>ec2:DeleteMags</p>
+</li>
+<li>
+<p>ec2:DescripteTag</p>
+</li>
+<li>
+<p>Tag:getResources</p>
+</li>
+<li>
+<p>Tag:getTagKeys</p>
+</li>
+<li>
+<p>Tag:getTagValues</p>
+</li>
+<li>
+<p>Tag:tagResources</p>
+</li>
+<li>
+<p>Tag:UntagResources</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="registro-delle-modifiche">Registro delle modifiche</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Man mano che le autorizzazioni vengono aggiunte e rimosse, le annoteremo nelle sezioni seguenti.</p>
+</div>
+<div class="sect2">
+<h3 id="14-febbraio-2023">14 febbraio 2023</h3>
+<div class="paragraph">
+<p>Per il tiering BlueXP è ora richiesta la seguente autorizzazione:</p>
+</div>
+<div class="paragraph">
+<p>ec2:DescripteVpcEndpoint</p>
+</div>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/copyright/">© 2023 NetApp, Inc.</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Condizioni per l'utilizzo</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Direttiva sulla privacy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Direttiva sui Cookie</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Impostazioni cookie</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a target="_self" href="javascript:netapp_mailto()">Invia feedback su questa pagina</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/it-it/cloud-manager-setup-admin/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/it-it/cloud-manager-setup-admin/js/prism.js'></script>
+      <script type="text/javascript" src='/it-it/cloud-manager-setup-admin/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/it-it/cloud-manager-setup-admin/js/tabbed-blocks.js'></script>
+    <script src='/it-it/cloud-manager-setup-admin/js/sidebar.js'></script>
+  </body></html>

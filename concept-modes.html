@@ -1,0 +1,2853 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head class="at-element-marker">
+  <title>Scopri le modalità di implementazione di BlueXP | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Scopri le modalità di implementazione di BlueXP | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/it-it/cloud-manager-setup-admin/concept-modes.html" />
+	<meta property="og:description" content="BlueXP offre diverse modalità di implementazione che consentono di utilizzare BlueXP in modo da soddisfare i requisiti di sicurezza e di business. La modalit..." />
+  <meta property="og:image" content="https://docs.netapp.com/it-it/cloud-manager-setup-admin/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="BlueXP offre diverse modalità di implementazione che consentono di utilizzare BlueXP in modo da soddisfare i requisiti di sicurezza e di business. La modalit...">
+  <meta name="keywords" content=" dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region"><!-- Icons -->
+  <link rel="icon" href="/it-it/cloud-manager-setup-admin/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/it-it/cloud-manager-setup-admin/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/it-it/cloud-manager-setup-admin/css/netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/it-it/cloud-manager-setup-admin/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/it-it/cloud-manager-setup-admin/css/tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/it-it/cloud-manager-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/cloud-manager-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/cloud-manager-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/cloud-manager-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/cloud-manager-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/cloud-manager-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/cloud-manager-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/cloud-manager-setup-admin/concept-modes.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/cloud-manager-setup-admin/concept-modes.html" />
+  <link rel='stylesheet' href='/it-it/cloud-manager-setup-admin/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    function addAdobeLaunch(adobeId) {
+      var head = document.getElementsByTagName('head')[0];
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/"+adobeId+".min.js";
+      head.appendChild(adobe);
+    }
+
+    function addGoogleAnalytics(gtagId) {
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id="+gtagId;
+      var head = document.getElementsByTagName('head')[0];
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', gtagId);
+    }
+
+    function addConsent(consentId) {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/"+consentId+"/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = consentId;
+      head.appendChild(onetrustScript);
+    }addConsent("72570c5c-fe30-465f-b0e0-b77f7fb4ae34");
+    addAdobeLaunch("launch-e9ff3acac59f");
+    addGoogleAnalytics("UA-81697994-3");function OptanonWrapper() { }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/it-it/cloud-manager-setup-admin/js/na-search.js'></script><script src='/it-it/cloud-manager-setup-admin/js/na-pagenav.js'></script><script src='/it-it/cloud-manager-setup-admin/js/na-utility.js'></script>
+ <!--  
+  <link rel='stylesheet' href='/it-it/cloud-manager-setup-admin/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/it-it/cloud-manager-setup-admin/css/prism-netapp.css' type='text/css'>
+ -->
+
+  <!-- <script src='/it-it/cloud-manager-setup-admin/js/na-utility.js'></script> -->
+  <script src='/it-it/cloud-manager-setup-admin/js/clouddocs.js'></script>
+  <script src='/it-it/cloud-manager-setup-admin/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- <script src='/it-it/cloud-manager-setup-admin/js/toc.js'></script> -->
+  <!-- <script src='/it-it/cloud-manager-setup-admin/js/customscripts.js'></script> --><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/it-it/cloud-manager-setup-admin"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script>
+  <script src='/it-it/cloud-manager-setup-admin/js/custom-dropdown.js'></script>
+  <script src='/it-it/cloud-manager-setup-admin/js/FileSaver.min.js'></script>
+  <script src='/it-it/cloud-manager-setup-admin/js/jszip-utils.min.js'></script>
+  <script src='/it-it/cloud-manager-setup-admin/js/jszip.min.js'></script>
+  <!-- <script src='/it-it/cloud-manager-setup-admin/js/pdf-ux.js'></script> -->
+</head>
+
+
+  <body class role="document" data-flavor="">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-setup-admin.it-it/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/it-it/cloud-manager-setup-admin/concept-modes.html&page-title=Scopri le modalità di implementazione di BlueXP" class="page-nav-contribute-link" role="button"><img src="/it-it/cloud-manager-setup-admin/images/discuss-sm.svg" alt="" class="github-icon" />Richiedi modifiche alla documentazione</a><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-setup-admin/blob/main/concept-modes.adoc" class="page-nav-contribute-link" role="button"><img src="/it-it/cloud-manager-setup-admin/images/edit-sm.svg" alt="" class="github-icon" />Modifica questa pagina</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/it-it/cloud-manager-setup-admin/images/article-sm.svg" alt="" class="github-icon" />Scopri come collaborare</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">IN QUESTA PAGINA</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">Prodotto e soluzioni</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">Supporto e training</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">Community</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">Blog</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">Testimonianze dei clienti</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/company/contact-us/" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">Contatto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/it-it/cloud-manager-setup-admin/search.html"
+          data-type="widget" 
+          data-placeholder="Esplora la documentazione"
+          data-no-results-found="Nessun risultato per {query}"
+          data-did-you-mean="Cerca {suggestion}."
+          data-no-results-found-did-you-mean="Nessun risultato per {query}. Intendi {suggestion}?"
+          data-results-found="{hitCount} risultati trovati"
+          data-error-message="Si è verificato un problema durante il recupero dei risultati. Riprova."
+          data-error-reset="Reimposta ricerca"
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">Italiano</span>
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/it-it/cloud-manager-setup-admin/concept-modes.html" target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/cloud-manager-setup-admin/concept-modes.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/cloud-manager-setup-admin/concept-modes.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/cloud-manager-setup-admin/concept-modes.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/cloud-manager-setup-admin/concept-modes.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/de-de/cloud-manager-setup-admin/concept-modes.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/es-es/cloud-manager-setup-admin/concept-modes.html" target="_self"><span translate="no" class="notranslate">Español</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/cloud-manager-setup-admin/concept-modes.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
+    </div>
+    <!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <button id="btn-sidebar-collapse" onclick="hideSidebar()"><img src="/it-it/cloud-manager-setup-admin/images/collapse.png" alt="Comprimi pannello di navigazione"></button>
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>PDF disponibili<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
+        <a target="_blank" href="/it-it/cloud-manager-setup-admin/pdfs/fullsite-sidebar/Documentazione_di_installazione_e_amministrazione_di_BlueXP.pdf" >
+          <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>PDF del sito di questa documentazione</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Note_di_rilascio.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Note di rilascio
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Inizia_subito.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Inizia subito
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Scopri_le_nozioni_di_base.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Scopri le nozioni di base
+          </a>
+          
+
+
+
+
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Inizia_con_la_modalità_standard.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Inizia con la modalità standard
+          </a>
+          
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Creare_un_connettore.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Creare un connettore
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/AWS.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            AWS
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Azure.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Azure
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Google_Cloud.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Google Cloud
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/On_premise.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            On-premise
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Inizia_con_la_modalità_limitata.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Inizia con la modalità limitata
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Inizia_con_la_modalità_privata.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Inizia con la modalità privata
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Amministrare_BlueXP.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Amministrare BlueXP
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/BlueXP.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            BlueXP
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Connettori.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Connettori
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Credenziali.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Credenziali
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Gestire_le_credenziali_AWS.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Gestire le credenziali AWS
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Gestire_le_credenziali_Azure.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Gestire le credenziali Azure
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Gestire_le_credenziali_Google_Cloud.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Gestire le credenziali Google Cloud
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Scoperta_dello_storage_cloud.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Scoperta dello storage cloud
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Riferimento.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Riferimento
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Permessi.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Permessi
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Porte.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Porte
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/it-it/cloud-manager-setup-admin/pdfs/sidebar/Conoscenza_e_supporto.pdf" 
+            
+          >
+            <img src="/it-it/cloud-manager-setup-admin/images/pdf.png" alt="" width="16" height="16"/>
+            Conoscenza e supporto
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/it-it/cloud-manager-setup-admin/images/pdf-zip.png" alt="" width="16" height="16"/>
+      <pre>Raccolta di documenti PDF separati<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="prod-nav" id="product-nav">
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/it-it/cloud-manager-family/"><img src="/it-it/cloud-manager-setup-admin/images/left_arrow.png" alt=""><pre>Tutta la documentazione BlueXP</pre></a>
+</div><div class="sidebar-nav-container" id="mysidebardiv">
+  <ul id="mysidebar" class="nav"><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Documenti di installazione e amministrazione"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/index.html">
+        Documenti di installazione e amministrazione
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Note di rilascio"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Note di rilascio</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Novità"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/whats-new.html">
+        Novità
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Limitazioni"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-limitations.html">
+        Limitazioni
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Inizia subito"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Inizia subito</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Scopri le nozioni di base"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Scopri le nozioni di base</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Panoramica di BlueXP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-overview.html">
+        Panoramica di BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Account"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-netapp-accounts.html">
+        Account
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connettori"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-connectors.html">
+        Connettori
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Modalità di implementazione"
+      data-li-level="3#" 
+      class="  active "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-modes.html">
+        Modalità di implementazione
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Inizia con la modalità standard"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Inizia con la modalità standard</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Avvio rapido"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-quick-start-standard-mode.html">
+        Avvio rapido
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Rete per l'accesso alla console"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-networking-saas-console.html">
+        Rete per l'accesso alla console
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Iscriviti a BlueXP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-sign-up-saas.html">
+        Iscriviti a BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Accedere a BlueXP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-logging-in.html">
+        Accedere a BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Creare un connettore"
+      data-li-level="3" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Creare un connettore</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="4" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> AWS</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Avvio rapido"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-quick-start-connector-aws.html">
+        Avvio rapido
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Opzioni di installazione"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-install-options-aws.html">
+        Opzioni di installazione
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configurare la rete"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-set-up-networking-aws.html">
+        Configurare la rete
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Esaminare i requisiti dell'host"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-host-requirements-aws.html">
+        Esaminare i requisiti dell'host
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Impostare le autorizzazioni AWS"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-set-up-permissions-aws.html">
+        Impostare le autorizzazioni AWS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Creare il connettore"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-install-connector-aws.html">
+        Creare il connettore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Fornire le autorizzazioni a BlueXP"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-provide-permissions-aws.html">
+        Fornire le autorizzazioni a BlueXP
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure"
+      data-li-level="4" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Azure</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Avvio rapido"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-quick-start-connector-azure.html">
+        Avvio rapido
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Opzioni di installazione"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-install-options-azure.html">
+        Opzioni di installazione
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configurare la rete"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-set-up-networking-azure.html">
+        Configurare la rete
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Esaminare i requisiti dell'host"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-host-requirements-azure.html">
+        Esaminare i requisiti dell'host
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Impostare le autorizzazioni Azure"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-set-up-permissions-azure.html">
+        Impostare le autorizzazioni Azure
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Creare il connettore"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-install-connector-azure.html">
+        Creare il connettore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Fornire le autorizzazioni a BlueXP"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-provide-permissions-azure.html">
+        Fornire le autorizzazioni a BlueXP
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud"
+      data-li-level="4" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Google Cloud</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Avvio rapido"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-quick-start-connector-google.html">
+        Avvio rapido
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Opzioni di installazione"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-install-options-google.html">
+        Opzioni di installazione
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configurare la rete"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-set-up-networking-google.html">
+        Configurare la rete
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Esaminare i requisiti dell'host"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-host-requirements-google.html">
+        Esaminare i requisiti dell'host
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Impostare le autorizzazioni di Google Cloud"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-set-up-permissions-google.html">
+        Impostare le autorizzazioni di Google Cloud
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Abilitare le API di Google Cloud"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-enable-apis-google.html">
+        Abilitare le API di Google Cloud
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Creare il connettore"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-install-connector-google.html">
+        Creare il connettore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Fornire le autorizzazioni a BlueXP"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-provide-permissions-google.html">
+        Fornire le autorizzazioni a BlueXP
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="On-premise"
+      data-li-level="4" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> On-premise</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Avvio rapido"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html">
+        Avvio rapido
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configurare la rete"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-set-up-networking-on-prem.html">
+        Configurare la rete
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Esaminare i requisiti dell'host"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-host-requirements-on-prem.html">
+        Esaminare i requisiti dell'host
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Impostare le autorizzazioni cloud"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-set-up-permissions-on-prem.html">
+        Impostare le autorizzazioni cloud
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Creare il connettore"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-install-connector-on-prem.html">
+        Creare il connettore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Fornire le autorizzazioni a BlueXP"
+      data-li-level="5#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-provide-permissions-on-prem.html">
+        Fornire le autorizzazioni a BlueXP
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Iscriviti a BlueXP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-subscribe-standard-mode.html">
+        Iscriviti a BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cosa fare in seguito"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-whats-next.html">
+        Cosa fare in seguito
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Inizia con la modalità limitata"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Inizia con la modalità limitata</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Avvio rapido"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-quick-start-restricted-mode.html">
+        Avvio rapido
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Prepararsi per l'implementazione"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-prepare-restricted-mode.html">
+        Prepararsi per l'implementazione
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Implementare il connettore"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-install-restricted-mode.html">
+        Implementare il connettore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Accedere a BlueXP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-log-in-restricted-mode.html">
+        Accedere a BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Iscriviti a BlueXP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-subscribe-restricted-mode.html">
+        Iscriviti a BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cosa fare in seguito"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-whats-next-restricted-mode.html">
+        Cosa fare in seguito
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Inizia con la modalità privata"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Inizia con la modalità privata</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Avvio rapido"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-quick-start-private-mode.html">
+        Avvio rapido
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Prepararsi per l'implementazione"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-prepare-private-mode.html">
+        Prepararsi per l'implementazione
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Implementare il connettore"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-install-private-mode.html">
+        Implementare il connettore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Accedere a BlueXP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-log-in-private-mode.html">
+        Accedere a BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cosa fare in seguito"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-whats-next-private-mode.html">
+        Cosa fare in seguito
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Amministrare BlueXP"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Amministrare BlueXP</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Federazione delle identità"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-federation.html">
+        Federazione delle identità
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> BlueXP</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestisci il tuo account"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-managing-netapp-accounts.html">
+        Gestisci il tuo account
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Monitorare le operazioni nell'account"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-monitor-cm-operations.html">
+        Monitorare le operazioni nell'account
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Creare un altro account"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-create-account.html">
+        Creare un altro account
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Ruoli utente"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-user-roles.html">
+        Ruoli utente
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connettori"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Connettori</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Individuare l'ID di sistema di un connettore"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-finding-system-id.html">
+        Individuare l'ID di sistema di un connettore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire i connettori esistenti"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-managing-connectors.html">
+        Gestire i connettori esistenti
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Installare un certificato HTTPS"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-installing-https-cert.html">
+        Installare un certificato HTTPS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configurare le impostazioni del proxy"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-configuring-proxy.html">
+        Configurare le impostazioni del proxy
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configurazione predefinita"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-connector-default-config.html">
+        Configurazione predefinita
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Credenziali"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Credenziali</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire le credenziali AWS"
+      data-li-level="3" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Gestire le credenziali AWS</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Panoramica"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-accounts-aws.html">
+        Panoramica
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire credenziali e sottoscrizioni"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-adding-aws-accounts.html">
+        Gestire credenziali e sottoscrizioni
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire le credenziali Azure"
+      data-li-level="3" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Gestire le credenziali Azure</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Panoramica"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-accounts-azure.html">
+        Panoramica
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire credenziali e sottoscrizioni"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-adding-azure-accounts.html">
+        Gestire credenziali e sottoscrizioni
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire le credenziali Google Cloud"
+      data-li-level="3" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Gestire le credenziali Google Cloud</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Panoramica"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/concept-accounts-gcp.html">
+        Panoramica
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire credenziali e sottoscrizioni"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-adding-gcp-accounts.html">
+        Gestire credenziali e sottoscrizioni
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire le credenziali NSS associate a un account BlueXP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-adding-nss-accounts.html">
+        Gestire le credenziali NSS associate a un account BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestire le credenziali associate all'accesso a BlueXP"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-manage-user-credentials.html">
+        Gestire le credenziali associate all'accesso a BlueXP
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Scoperta dello storage cloud"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Scoperta dello storage cloud</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestisci i bucket Amazon S3"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-viewing-amazon-s3.html">
+        Gestisci i bucket Amazon S3
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Visualizza i tuoi account Azure Blob"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-viewing-azure-blob.html">
+        Visualizza i tuoi account Azure Blob
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Visualizza i bucket di storage Google Cloud"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-viewing-gcp-storage.html">
+        Visualizza i bucket di storage Google Cloud
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Riferimento"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Riferimento</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Permessi"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Permessi</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Riepilogo delle autorizzazioni"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-permissions.html">
+        Riepilogo delle autorizzazioni
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Autorizzazioni AWS per il connettore"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-permissions-aws.html">
+        Autorizzazioni AWS per il connettore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Autorizzazioni Azure per il connettore"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-permissions-azure.html">
+        Autorizzazioni Azure per il connettore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Permessi Google Cloud per il connettore"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-permissions-gcp.html">
+        Permessi Google Cloud per il connettore
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Porte"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Porte</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Regole del gruppo di sicurezza in AWS"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-ports-aws.html">
+        Regole del gruppo di sicurezza in AWS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Regole del gruppo di sicurezza in Azure"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-ports-azure.html">
+        Regole del gruppo di sicurezza in Azure
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Regole del firewall in Google Cloud"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-ports-gcp.html">
+        Regole del firewall in Google Cloud
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Porte per il connettore on-premise"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/reference-ports-on-prem.html">
+        Porte per il connettore on-premise
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Conoscenza e supporto"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> Conoscenza e supporto</div>
+      </a>
+      <ul style="display: none;">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Registrati per ricevere assistenza"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-support-registration.html">
+        Registrati per ricevere assistenza
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Richiedi assistenza"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/task-get-help.html">
+        Richiedi assistenza
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Note legali"
+      data-li-level="1#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/it-it/cloud-manager-setup-admin/legal-notices.html">
+        Note legali
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
+
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <div class="ie-utility">
+  <button id="btn-sidebar-expand" onclick="showSidebar()"><img src="/it-it/cloud-manager-setup-admin/images/expand.png" alt="Espandi pannello di navigazione"></button>
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com/us-en/cloud/">Documentazione Cloud</a>
+        </li>
+        
+
+        
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com/it-it/cloud-manager-family/">BlueXP</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/it-it/cloud-manager-setup-admin/">Setup&nbsp;and&nbsp;administration</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> La versione in lingua italiana fornita proviene da una traduzione automatica. Per eventuali incoerenze, fare riferimento alla versione in lingua inglese. </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">Scopri le modalità di implementazione di BlueXP</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2023-05-23 19:36:43 +0000">05/23/2023</time>
+    
+  
+
+<span>Collaboratori
+</span>
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>BlueXP offre varie <em>modalità di implementazione</em> che consentono di utilizzare BlueXP in modo da soddisfare i requisiti di sicurezza e di business. <em>Standard mode</em> sfrutta il layer BlueXP SaaS per fornire funzionalità complete, mentre <em>restricted mode</em> e <em>private mode</em> sono disponibili per le organizzazioni con restrizioni di connettività.</p>
+</div>
+<div class="paragraph">
+<p>Mentre BlueXP inibisce il flusso di traffico, comunicazione e dati quando si utilizza la modalità limitata o privata, è tua responsabilità garantire che il tuo ambiente (on-premise e nel cloud) sia conforme alle normative richieste.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="panoramica">Panoramica</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>BlueXP offre le seguenti modalità di implementazione per il tuo account. Ciascuna modalità differisce in termini di requisiti di connettività in uscita, posizione di implementazione, processo di installazione, metodo di autenticazione, servizi di storage e dati disponibili e metodi di addebito.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Modalità standard</dt>
+<dd>
+<p>BlueXP è accessibile agli utenti come servizio cloud dalla console basata su web. A seconda dei servizi BlueXP che intendi utilizzare, un amministratore di BlueXP crea uno o più connettori per gestire i dati all&#8217;interno del tuo ambiente di cloud ibrido.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>Questa modalità utilizza la trasmissione di dati crittografati su Internet pubblico.</p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Modalità limitata</dt>
+<dd>
+<p>Nel cloud viene installato un connettore BlueXP (in un&#8217;area governativa, in un&#8217;area di cloud sovrana o in un&#8217;area commerciale) e la connettività in uscita al layer BlueXP SaaS è limitata. Gli utenti accedono a BlueXP localmente dalla console basata sul web disponibile dal connettore, non dal layer SaaS.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>Questa modalità viene generalmente utilizzata dagli enti pubblici statali e locali e dalle aziende regolamentate.</p>
+</div>
+<div class="paragraph">
+<p><a href="#modalità-limitata">Scopri di più sulla connettività in uscita al livello SaaS</a>.</p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Modalità privata</dt>
+<dd>
+<p>Un connettore BlueXP viene installato on-premise o nel cloud (in un&#8217;area sicura, in un&#8217;area di cloud sovrana o in un&#8217;area commerciale) e dispone di <em>no</em> connettività al layer BlueXP SaaS. Gli utenti accedono a BlueXP localmente dalla console basata sul web disponibile dal connettore, non dal layer SaaS.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>Una regione sicura include <a href="https://aws.amazon.com/federal/us-intelligence-community/" target="_blank" rel="noopener">"AWS C2S E SC2S"</a> e. <a href="https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6" target="_blank" rel="noopener">"Azure IL6"</a></p>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>Nella tabella seguente viene fornito un confronto di queste modalità.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16%;">
+<col style="width: 28%;">
+<col style="width: 28%;">
+<col style="width: 28%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top">Modalità standard</th>
+<th class="tableblock halign-left valign-top">Modalità limitata</th>
+<th class="tableblock halign-left valign-top">Modalità privata</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Connessione richiesta a BlueXP SaaS Layer?</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Solo in uscita</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Connessione richiesta al tuo cloud provider?</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì, all&#8217;interno della regione</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì, all&#8217;interno della regione (se si utilizza Cloud Volumes ONTAP)</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Installazione del connettore</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Da BlueXP, cloud marketplace o installazione manuale</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud marketplace o installazione manuale</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Installazione manuale</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Aggiornamenti del connettore</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aggiornamenti automatici del software NetApp Connector</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aggiornamenti automatici del software NetApp Connector</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">È richiesto l&#8217;aggiornamento manuale</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Accesso all&#8217;interfaccia utente</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dal livello SaaS BlueXP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Localmente dal connettore VM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Localmente dal connettore VM</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Endpoint API</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Il livello BlueXP SaaS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Il livello BlueXP SaaS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Il connettore</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Autenticazione</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tramite SaaS utilizzando auth0, accesso NSS o federazione di identità</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attraverso SaaS utilizzando auth0 o Identity Federation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Autenticazione utente locale</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Storage e servizi dati</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sono supportati tutti</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Molti sono supportati</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ne sono supportati diversi</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Opzioni di licenza</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Abbonamenti Marketplace e BYOL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Abbonamenti Marketplace e BYOL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BYOL</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Leggi le sezioni seguenti per ulteriori informazioni su queste modalità, tra cui le funzionalità e i servizi di BlueXP supportati.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="modalità-standard">Modalità standard</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>L&#8217;immagine seguente è un esempio di implementazione in modalità standard.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/diagram-standard-mode.png" alt="Un&#8217;immagine concettuale che mostra la connessione Internet pubblica in cui sono disponibili la console basata sul web, il layer SaaS e l&#8217;autenticazione auth0, una rete virtuale nel cloud in cui un connettore esegue e gestisce Cloud Volumes ONTAP e un cluster AFF in un data center on-premise."></span></p>
+</div>
+<div class="paragraph">
+<p>BlueXP funziona come segue in modalità standard:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Comunicazione in uscita</dt>
+<dd>
+<p>La connettività è necessaria dal connettore al layer BlueXP SaaS, alle risorse pubblicamente disponibili del tuo cloud provider e ad altri componenti essenziali per le operazioni quotidiane.</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="task-set-up-networking-aws.html#endpoints-contacted-from-the-connector">"Endpoint che il connettore contatta in AWS"</a></p>
+</li>
+<li>
+<p><a href="task-set-up-networking-azure.html#endpoints-contacted-from-the-connector">"Endpoint che il connettore contatta in Azure"</a></p>
+</li>
+<li>
+<p><a href="task-set-up-networking-google.html#endpoints-contacted-from-the-connector">"Endpoint che il connettore contatta in Google Cloud"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Posizione supportata per il connettore</dt>
+<dd>
+<p>In modalità standard, il connettore è supportato nel cloud o on-premise.</p>
+</dd>
+<dt class="hdlist1">Installazione del connettore</dt>
+<dd>
+<p>L&#8217;installazione del connettore è possibile da una procedura di installazione guidata in BlueXP, da AWS o Azure Marketplace, o utilizzando un programma di installazione per installare manualmente il connettore sul proprio host Linux nel data center o nel cloud.</p>
+</dd>
+<dt class="hdlist1">Aggiornamenti del connettore</dt>
+<dd>
+<p>Gli aggiornamenti automatici del software del connettore sono disponibili da BlueXP con aggiornamenti mensili.</p>
+</dd>
+<dt class="hdlist1">Accesso all&#8217;interfaccia utente</dt>
+<dd>
+<p>L&#8217;interfaccia utente è accessibile dalla console basata sul web fornita attraverso il layer SaaS.</p>
+</dd>
+<dt class="hdlist1">Endpoint API</dt>
+<dd>
+<p>Le chiamate API vengono effettuate al seguente endpoint: <a href="https://cloudmanager.cloud.netapp.com" class="bare">https://cloudmanager.cloud.netapp.com</a></p>
+</dd>
+<dt class="hdlist1">Autenticazione</dt>
+<dd>
+<p>L&#8217;autenticazione viene fornita tramite il servizio cloud di BlueXP utilizzando auth0 o tramite gli accessi al NetApp Support Site (NSS). È disponibile la federazione delle identità.</p>
+</dd>
+<dt class="hdlist1">Servizi BlueXP supportati</dt>
+<dd>
+<p>Tutti i servizi BlueXP sono disponibili per gli utenti.</p>
+</dd>
+<dt class="hdlist1">Opzioni di licenza supportate</dt>
+<dd>
+<p>Gli abbonamenti Marketplace e BYOL sono supportati con la modalità standard; tuttavia, le opzioni di licenza supportate dipendono dal servizio BlueXP in uso. Consulta la documentazione relativa a ciascun servizio per ulteriori informazioni sulle opzioni di licenza disponibili.</p>
+</dd>
+<dt class="hdlist1">Come iniziare con la modalità standard</dt>
+<dd>
+<p>Accedere alla <a href="https://console.bluexp.netapp.com" target="_blank" rel="noopener">"Console BlueXP basata su web"</a> e iscriverti.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p><a href="task-quick-start-standard-mode.html">"Scopri come iniziare a utilizzare la modalità standard"</a>.</p>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="modalità-limitata">Modalità limitata</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>L&#8217;immagine seguente è un esempio di implementazione in modalità limitata.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/diagram-restricted-mode.png" alt="Un&#8217;immagine concettuale che mostra la connessione Internet pubblica in cui sono disponibili il layer SaaS e l&#8217;autenticazione auth0, una rete virtuale nel cloud in cui un connettore è in esecuzione e fornisce l&#8217;accesso alla console basata sul web e gestisce Cloud Volumes ONTAP e un cluster AFF in un data center on-premise."></span></p>
+</div>
+<div class="paragraph">
+<p>BlueXP funziona come segue in modalità limitata:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Comunicazione in uscita</dt>
+<dd>
+<p>La connettività in uscita è necessaria dal connettore al livello BlueXP SaaS per utilizzare i servizi dati BlueXP, per abilitare gli aggiornamenti software automatici del connettore, per utilizzare l&#8217;autenticazione basata su auth0 e per inviare metadati a scopo di addebito (nome della VM di storage, capacità allocata e UUID volume, tipo e IOPS).</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>Il layer BlueXP SaaS non avvia la comunicazione con il connettore. Tutte le comunicazioni vengono avviate dal connettore, che può estrarre o trasferire i dati da o verso il layer SaaS secondo necessità.</p>
+</div>
+<div class="paragraph">
+<p>È inoltre necessaria una connessione per le risorse del cloud provider dall&#8217;interno della regione.</p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Posizione supportata per il connettore</dt>
+<dd>
+<p>In modalità limitata, il connettore è supportato nel cloud: In un&#8217;area governativa, in un&#8217;area sovrana o in un&#8217;area commerciale.</p>
+</dd>
+<dt class="hdlist1">Installazione del connettore</dt>
+<dd>
+<p>L&#8217;installazione del connettore è possibile da AWS o Azure Marketplace o da un&#8217;installazione manuale sul proprio host Linux.</p>
+</dd>
+<dt class="hdlist1">Aggiornamenti del connettore</dt>
+<dd>
+<p>Gli aggiornamenti automatici del software del connettore sono disponibili da BlueXP con aggiornamenti mensili.</p>
+</dd>
+<dt class="hdlist1">Accesso all&#8217;interfaccia utente</dt>
+<dd>
+<p>L&#8217;interfaccia utente è accessibile dal connettore implementato nella tua area cloud.</p>
+</dd>
+<dt class="hdlist1">Endpoint API</dt>
+<dd>
+<p>Le chiamate API vengono effettuate al seguente endpoint: <a href="https://cloudmanager.cloud.netapp.com" class="bare">https://cloudmanager.cloud.netapp.com</a></p>
+</dd>
+<dt class="hdlist1">Autenticazione</dt>
+<dd>
+<p>L&#8217;autenticazione viene fornita tramite il servizio cloud di BlueXP utilizzando auth0. È disponibile anche la federazione delle identità.</p>
+</dd>
+<dt class="hdlist1">Servizi BlueXP supportati</dt>
+<dd>
+<p>BlueXP supporta i seguenti servizi di storage e dati in modalità limitata:</p>
+<div class="openblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Servizi supportati</th>
+<th class="tableblock halign-left valign-top">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amazon FSX per ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supporto completo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Azure NetApp Files</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supporto completo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup e recovery</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato in regioni governative e commerciali con modalità limitata. Non supportato nelle regioni sovrane con modalità limitata. Le seguenti funzionalità non sono supportate: Applicazioni, macchine virtuali e Kubernetes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Classificazione</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Supportato nelle regioni governative con modalità limitata. Non supportato in aree commerciali o in aree sovrane con modalità limitata.</p>
+</div>
+<div class="paragraph">
+<p>Si applicano le seguenti limitazioni:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Impossibile eseguire la scansione di account OneDrive, SharePoint e Google Drive.</p>
+</li>
+<li>
+<p>La funzionalità dell&#8217;etichetta AIP (Microsoft Azure Information Protection) non può essere integrata.</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Volumes ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supporto completo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Portafoglio digitale</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Per la modalità limitata, puoi utilizzare il portafoglio digitale con le opzioni di licenza supportate elencate di seguito.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cluster ONTAP on-premise</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sono supportati sia il rilevamento con un connettore che il rilevamento senza un connettore (rilevamento diretto). Quando si rileva un cluster on-premise con un connettore, la visualizzazione avanzata (System Manager) non è supportata.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Replica</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato nelle regioni governative con modalità limitata. Non supportato in aree commerciali o in aree sovrane con modalità limitata.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Opzioni di licenza supportate</dt>
+<dd>
+<p>Con la modalità limitata sono supportate le seguenti opzioni di licenza:</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Abbonamenti al marketplace (contratti orari e annuali)</p>
+<div class="paragraph">
+<p>Tenere presente quanto segue:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Per Cloud Volumes ONTAP, sono supportate solo le licenze basate sulla capacità.</p>
+</li>
+<li>
+<p>In Azure, i contratti annuali non sono supportati dalle regioni governative.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>BYOL</p>
+<div class="paragraph">
+<p>Per Cloud Volumes ONTAP, BYOL supporta sia licenze basate su capacità che licenze basate su nodo.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Come iniziare con la modalità limitata</dt>
+<dd>
+<p>È necessario attivare la modalità limitata quando si crea l&#8217;account BlueXP.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>Se non disponi ancora di un account, ti verrà richiesto di creare il tuo account e attivare la modalità limitata quando accedi a BlueXP per la prima volta da un connettore che hai installato manualmente o che hai creato dal mercato del tuo provider di servizi cloud.</p>
+</div>
+<div class="paragraph">
+<p>Se si dispone già di un account e si desidera crearne un altro, è necessario utilizzare l&#8217;API tenancy.</p>
+</div>
+<div class="paragraph">
+<p>Tenere presente che non è possibile modificare l&#8217;impostazione della modalità limitata dopo la creazione dell&#8217;account da parte di BlueXP. Non puoi attivare la modalità limitata in un secondo momento e non puoi disattivarla in un secondo momento. Deve essere impostato al momento della creazione dell&#8217;account.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="task-quick-start-restricted-mode.html">"Scopri come iniziare a utilizzare la modalità limitata"</a>.</p>
+</li>
+<li>
+<p><a href="task-create-account.html">"Scopri come creare un account BlueXP aggiuntivo"</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="modalità-privata">Modalità privata</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In modalità privata, è possibile installare un connettore on-premise o nel cloud e utilizzare BlueXP per gestire i dati nel cloud ibrido. Non è disponibile alcuna connettività al livello BlueXP SaaS.</p>
+</div>
+<div class="paragraph">
+<p>L&#8217;immagine seguente mostra un esempio di implementazione in modalità privata in cui il connettore è installato nel cloud e gestisce sia Cloud Volumes ONTAP che un cluster ONTAP on-premise.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/diagram-private-mode-cloud.png" alt="Un&#8217;immagine concettuale che mostra una rete virtuale nel cloud in cui è in esecuzione un connettore e fornisce l&#8217;accesso alla console basata sul web, e gestisce Cloud Volumes ONTAP e un cluster AFF in un data center on-premise."></span></p>
+</div>
+<div class="paragraph">
+<p>Nel frattempo, la seconda immagine mostra un esempio di implementazione in modalità privata in cui il connettore viene installato on-premise, gestisce un cluster ONTAP on-premise e fornisce l&#8217;accesso ai servizi dati BlueXP supportati.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/diagram-private-mode-onprem.png" alt="Un&#8217;immagine concettuale che mostra un data center on-premise in cui un connettore è in esecuzione e fornisce accesso alla console basata sul Web, ai servizi dati BlueXP e gestisce un cluster AFF in un data center on-premise."></span></p>
+</div>
+<div class="paragraph">
+<p>BlueXP funziona come segue in modalità privata:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Comunicazione in uscita</dt>
+<dd>
+<p>Non è richiesta alcuna connettività in uscita. Tutti i pacchetti, le dipendenze e i componenti essenziali vengono forniti con il connettore e forniti dalla macchina locale. La connettività alle risorse pubblicamente disponibili del tuo cloud provider è necessaria solo se stai implementando Cloud Volumes ONTAP.</p>
+</dd>
+<dt class="hdlist1">Posizione supportata per il connettore</dt>
+<dd>
+<p>In modalità privata, il connettore è supportato nel cloud o on-premise.</p>
+</dd>
+<dt class="hdlist1">Installazione del connettore</dt>
+<dd>
+<p>Le installazioni manuali del connettore sono supportate sul proprio host Linux nel cloud o on-premise.</p>
+</dd>
+<dt class="hdlist1">Aggiornamenti del connettore</dt>
+<dd>
+<p>È necessario aggiornare manualmente il software del connettore. Il software Connector viene pubblicato sul sito di supporto NetApp a intervalli non definiti.</p>
+</dd>
+<dt class="hdlist1">Accesso all&#8217;interfaccia utente</dt>
+<dd>
+<p>L&#8217;interfaccia utente è accessibile dal connettore implementato nella tua area cloud o on-premise.</p>
+</dd>
+<dt class="hdlist1">Endpoint API</dt>
+<dd>
+<p>Le chiamate API vengono effettuate alla macchina virtuale del connettore.</p>
+</dd>
+<dt class="hdlist1">Autenticazione</dt>
+<dd>
+<p>L&#8217;autenticazione viene fornita attraverso la gestione e l&#8217;accesso degli utenti locali. L&#8217;autenticazione non viene fornita attraverso il servizio cloud di BlueXP.</p>
+</dd>
+<dt class="hdlist1">Servizi BlueXP supportati nelle implementazioni cloud</dt>
+<dd>
+<p>BlueXP supporta i seguenti servizi di storage e dati in modalità privata quando il connettore viene installato nel cloud:</p>
+<div class="openblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Servizi supportati</th>
+<th class="tableblock halign-left valign-top">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup e recovery</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supportato nelle aree commerciali di AWS e Azure. Non supportato in Google Cloud o in <a href="https://aws.amazon.com/federal/us-intelligence-community/" target="_blank" rel="noopener">"AWS C2S/SC2S"</a> oppure <a href="https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6" target="_blank" rel="noopener">"Azure IL6"</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Volumes ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Poiché non è disponibile l&#8217;accesso a Internet, non sono disponibili le seguenti funzionalità: Aggiornamenti software automatici, AutoSupport e informazioni sui costi AWS.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Portafoglio digitale</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">È possibile utilizzare il portafoglio digitale con le opzioni di licenza supportate elencate di seguito per la modalità privata.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cluster ONTAP on-premise</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Richiede la connettività dal cloud (dove è installato il connettore) all&#8217;ambiente on-premise. Il rilevamento senza connettore (rilevamento diretto) non è supportato.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Servizi BlueXP supportati nelle implementazioni on-premise</dt>
+<dd>
+<p>BlueXP supporta i seguenti servizi di storage e dati con modalità privata quando il connettore viene installato in sede:</p>
+<div class="openblock">
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Servizi supportati</th>
+<th class="tableblock halign-left valign-top">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup e recovery</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sono supportati solo il backup e il ripristino dei volumi ONTAP on-premise sui sistemi StorageGRID.https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["Scopri come eseguire il backup on-premise dei dati ONTAP su StorageGRID"^]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Classificazione</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Le uniche origini dati supportate sono quelle che è possibile rilevare localmente.</p>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#supported-data-sources" target="_blank" rel="noopener">"Visualizzare le fonti che è possibile scoprire localmente"</a></p>
+</div>
+</li>
+<li>
+<p>Le funzioni che richiedono l&#8217;accesso a Internet in uscita non sono supportate.</p>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#limitations" target="_blank" rel="noopener">"Visualizza le limitazioni delle funzioni"</a></p>
+</div>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Portafoglio digitale</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">È possibile utilizzare il portafoglio digitale con le opzioni di licenza supportate elencate di seguito per la modalità privata.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cluster ONTAP on-premise</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Il rilevamento senza connettore (rilevamento diretto) non è supportato.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Replica</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supporto completo</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Opzioni di licenza supportate</dt>
+<dd>
+<p>Solo BYOL è supportato in modalità privata.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>Per Cloud Volumes ONTAP BYOL, è supportata solo la licenza basata su nodo. Le licenze basate sulla capacità non sono supportate. Poiché non è disponibile una connessione Internet in uscita, è necessario caricare manualmente il file di licenza Cloud Volumes ONTAP nel portafoglio digitale BlueXP.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses" target="_blank" rel="noopener">"Scopri come aggiungere licenze al portafoglio digitale BlueXP"</a></p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Come iniziare con la modalità privata</dt>
+<dd>
+<p>La modalità privata è disponibile scaricando il programma di installazione "offline" dal NetApp Support Site.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p><a href="task-quick-start-private-mode.html">"Scopri come iniziare a utilizzare la modalità privata"</a>.</p>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="confronto-tra-servizi-e-funzionalità">Confronto tra servizi e funzionalità</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La seguente tabella consente di identificare rapidamente i servizi e le funzionalità di BlueXP supportati in modalità limitata e privata.</p>
+</div>
+<div class="paragraph">
+<p>Alcuni servizi potrebbero essere supportati con limitazioni. Per ulteriori informazioni su come questi servizi sono supportati in modalità limitata e privata, fare riferimento alle sezioni precedenti.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 19%;">
+<col style="width: 27%;">
+<col style="width: 27%;">
+<col style="width: 27%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Area di prodotto</th>
+<th class="tableblock halign-left valign-top">Servizio o funzione BlueXP</th>
+<th class="tableblock halign-left valign-top">Modalità limitata</th>
+<th class="tableblock halign-left valign-top">Modalità privata</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="11"><p class="tableblock"><strong>Ambienti di lavoro</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amazon FSX per ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amazon S3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Azure Blob</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Azure NetApp Files</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Volumes ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Volumes Service per Google Cloud</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Storage Google Cloud</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cluster Kubernetes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cluster ONTAP on-premise</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">E-Series</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">StorageGRID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="13"><p class="tableblock"><strong>Servizi</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Backup e recovery</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Classificazione</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operazioni cloud</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Copia e sincronizzazione</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Consulente digitale</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Portafoglio digitale</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Efficienza economica</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Caching edge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Resilienza operativa</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Protezione ransomware</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Risoluzione dei problemi</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Replica</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tiering</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="4"><p class="tableblock"><strong>Caratteristiche</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Credenziali</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Account NSS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Notifiche</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tempistiche</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/copyright/">© 2023 NetApp, Inc.</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Condizioni per l'utilizzo</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Direttiva sulla privacy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Direttiva sui Cookie</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Impostazioni cookie</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a target="_self" href="javascript:netapp_mailto()">Invia feedback su questa pagina</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/it-it/cloud-manager-setup-admin/images/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/it-it/cloud-manager-setup-admin/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/it-it/cloud-manager-setup-admin/js/prism.js'></script>
+      <script type="text/javascript" src='/it-it/cloud-manager-setup-admin/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/it-it/cloud-manager-setup-admin/js/tabbed-blocks.js'></script>
+    <script src='/it-it/cloud-manager-setup-admin/js/sidebar.js'></script>
+  </body></html>
