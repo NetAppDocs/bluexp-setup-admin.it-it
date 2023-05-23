@@ -1,0 +1,282 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-google.html 
+keywords: install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, manual install, create connector, gcp installation, gcp connector 
+summary: Creare un connettore direttamente dalla console basata sul web BlueXP, utilizzando gcloud o installando il software sul proprio host Linux. 
+---
+= Creare un connettore in Google Cloud
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Creare un connettore direttamente dalla console basata sul web BlueXP, utilizzando gcloud o installando il software sul proprio host Linux.
+
+[role="tabbed-block"]
+====
+.BlueXP
+--
+.Di cosa hai bisogno
+* Le autorizzazioni necessarie per Google Cloud per creare il connettore e un account di servizio per la macchina virtuale del connettore.
++
+link:task-set-up-permissions-google.html["Scopri come impostare le autorizzazioni di Google Cloud"]
+
+* VPC e subnet che soddisfano i requisiti di rete.
++
+link:task-set-up-networking-google.html["Scopri i requisiti di rete"]
+
+* Dettagli su un server proxy, se è richiesto un proxy per l'accesso a Internet dal connettore.
+
+
+.Fasi
+. Fare clic sull'elenco a discesa *Connector* (connettore) e selezionare *Add Connector* (Aggiungi connettore).
++
+image:screenshot_connector_add.gif["Una schermata che mostra l'icona del connettore nell'intestazione e l'azione Add Connector."]
+
+. Scegli *Google Cloud Platform* come tuo cloud provider.
+. Nella pagina *Deploying a Connector* (implementazione di un connettore), consultare i dettagli relativi alle esigenze. Sono disponibili due opzioni:
++
+.. Fare clic su *Continue* (continua) per prepararsi all'implementazione utilizzando la guida all'interno del prodotto. Ogni fase della guida all'interno del prodotto include le informazioni contenute in questa pagina della documentazione.
+.. Fare clic su *Skip to Deployment* (passa alla distribuzione) se si è già pronti seguendo la procedura riportata in questa pagina.
+
+
+. Seguire i passaggi della procedura guidata per creare il connettore:
++
+** Se richiesto, accedere all'account Google, che dovrebbe disporre delle autorizzazioni necessarie per creare l'istanza della macchina virtuale.
++
+Il modulo è di proprietà e ospitato da Google. Le tue credenziali non vengono fornite a NetApp.
+
+** *Dettagli*: Immettere un nome per l'istanza della macchina virtuale, specificare i tag, selezionare un progetto, quindi selezionare l'account del servizio che dispone delle autorizzazioni necessarie (per ulteriori informazioni, fare riferimento alla sezione precedente).
+** *Location*: Specificare una regione, una zona, un VPC e una subnet per l'istanza.
+** *Network* (rete): Scegliere se attivare un indirizzo IP pubblico e, facoltativamente, specificare una configurazione proxy.
+** *Firewall Policy*: Scegliere se creare un nuovo criterio firewall o se selezionare un criterio firewall esistente che consenta di utilizzare le regole in entrata e in uscita richieste.
++
+link:reference-ports-gcp.html["Regole del firewall in Google Cloud"]
+
+** *Revisione*: Controllare le selezioni per verificare che la configurazione sia corretta.
+
+
+. Fare clic su *Aggiungi*.
++
+L'istanza dovrebbe essere pronta in circa 7 minuti. Si consiglia di rimanere sulla pagina fino al completamento del processo.
+
+
+
+.Risultato
+Una volta completato il processo, il connettore è disponibile per l'utilizzo da parte di BlueXP.
+
+--
+.gcloud
+--
+.Di cosa hai bisogno
+* Le autorizzazioni necessarie per Google Cloud per creare il connettore e un account di servizio per la macchina virtuale del connettore.
++
+link:task-set-up-permissions-google.html["Scopri come impostare le autorizzazioni di Google Cloud"]
+
+* VPC e subnet che soddisfano i requisiti di rete.
++
+link:task-set-up-networking-google.html["Scopri i requisiti di rete"]
+
+
+
+.Fasi
+. Accedi a gcloud SDK utilizzando la tua metodologia preferita.
++
+Nei nostri esempi, utilizzeremo una shell locale con gcloud SDK installato, ma è possibile utilizzare Google Cloud Shell nativa nella console di Google Cloud.
+
++
+Per ulteriori informazioni su Google Cloud SDK, visitare il link:https://cloud.google.com/sdk["Pagina della documentazione di Google Cloud SDK"^].
+
+. Verificare di aver effettuato l'accesso come utente con le autorizzazioni richieste definite nella sezione precedente:
++
+[source, bash]
+----
+gcloud auth list
+----
++
+L'output dovrebbe mostrare quanto segue dove l'account utente * è l'account utente desiderato per l'accesso:
+
++
+[listing]
+----
+Credentialed Accounts
+ACTIVE  ACCOUNT
+     some_user_account@domain.com
+*    desired_user_account@domain.com
+To set the active account, run:
+ $ gcloud config set account `ACCOUNT`
+Updates are available for some Cloud SDK components. To install them,
+please run:
+$ gcloud components update
+----
+. Eseguire `gcloud compute instances create` comando:
++
+[source, bash]
+----
+gcloud compute instances create <instance-name>
+  --machine-type=n2-standard-4
+  --image-project=netapp-cloudmanager
+  --image-family=cloudmanager
+  --scopes=cloud-platform
+  --project=<project>
+  --service-account=<service-account>
+  --zone=<zone>
+  --no-address
+  --tags <network-tag>
+  --network <network-path>
+  --subnet <subnet-path>
+  --boot-disk-kms-key <kms-key-path>
+----
++
+nome-istanza:: Il nome dell'istanza desiderata per l'istanza della macchina virtuale.
+progetto:: (Facoltativo) il progetto in cui si desidera implementare la macchina virtuale.
+account-servizio:: L'account del servizio specificato nell'output del passo 2.
+zona:: La zona in cui si desidera implementare la macchina virtuale
+no-address (indirizzo non assegnato):: (Facoltativo) non viene utilizzato alcun indirizzo IP esterno (è necessario un NAT o un proxy cloud per instradare il traffico verso Internet pubblico)
+tag-rete:: (Facoltativo) aggiungere tag di rete per collegare una regola firewall utilizzando tag all'istanza del connettore
+percorso di rete:: (Facoltativo) aggiungere il nome della rete in cui implementare il connettore (per un VPC condiviso, è necessario il percorso completo)
+subnet-path:: (Facoltativo) aggiungere il nome della subnet in cui implementare il connettore (per un VPC condiviso, è necessario il percorso completo)
+percorso-chiave-kms:: (Facoltativo) aggiungere una chiave KMS per crittografare i dischi del connettore (è necessario applicare anche le autorizzazioni IAM)
++
+--
+Per ulteriori informazioni su questi flag, visitare il link:https://cloud.google.com/sdk/gcloud/reference/compute/instances/create["Documentazione di Google Cloud Compute SDK"^].
+
+--
+
+
++
+L'esecuzione del comando implementa il connettore utilizzando l'immagine Golden di NetApp. L'istanza di Connector e il software dovrebbero essere in esecuzione in circa cinque minuti.
+
+. Aprire un browser Web da un host connesso all'istanza del connettore e immettere il seguente URL:
++
+https://_ipaddress_[]
+
+. Dopo aver effettuato l'accesso, configurare il connettore:
++
+.. Specificare l'account BlueXP da associare al connettore.
++
+link:concept-netapp-accounts.html["Scopri di più sugli account BlueXP"].
+
+.. Immettere un nome per il sistema.
+
+
+
+
+.Risultato
+Il connettore è ora installato e configurato con l'account BlueXP.
+
+Aprire un browser Web e accedere a. https://console.bluexp.netapp.com["Console BlueXP"^] Per iniziare a utilizzare il connettore con BlueXP.
+
+--
+.Installazione manuale
+--
+.Di cosa hai bisogno
+* Privilegi root per installare il connettore.
+* Dettagli su un server proxy, se è richiesto un proxy per l'accesso a Internet dal connettore.
++
+È possibile configurare un server proxy dopo l'installazione, ma per farlo è necessario riavviare il connettore.
+
+* Un certificato firmato dalla CA, se il server proxy utilizza HTTPS o se il proxy è un proxy di intercettazione.
+
+
+.A proposito di questa attività
+* L'installazione installa gli strumenti della riga di comando AWS (awscli) per abilitare le procedure di ripristino dal supporto NetApp.
++
+Se viene visualizzato un messaggio che indica che l'installazione di awscli non è riuscita, ignorare il messaggio. Il connettore può funzionare correttamente senza gli strumenti.
+
+* Il programma di installazione disponibile sul NetApp Support Site potrebbe essere una versione precedente. Dopo l'installazione, il connettore si aggiorna automaticamente se è disponibile una nuova versione.
+
+
+.Fasi
+. Verificare che docker sia attivato e in esecuzione.
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+. Se le variabili di sistema _http_proxy_ o _https_proxy_ sono impostate sull'host, rimuoverle:
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+Se non si rimuovono queste variabili di sistema, l'installazione avrà esito negativo.
+
+. Scaricare il software del connettore da https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sito di supporto NetApp"^], Quindi copiarlo sull'host Linux.
++
+È necessario scaricare il programma di installazione del connettore "online" da utilizzare nella rete o nel cloud. Un programma di installazione "offline" separato è disponibile per il connettore, ma è supportato solo con le implementazioni in modalità privata.
+
+. Assegnare le autorizzazioni per eseguire lo script.
++
+[source, cli]
+----
+chmod +x OnCommandCloudManager-<version>
+----
++
+Dove <version> è la versione del connettore scaricato.
+
+. Eseguire lo script di installazione.
++
+[source, cli]
+----
+ ./OnCommandCloudManager-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+I parametri --proxy e --cakert sono facoltativi. Se si dispone di un server proxy, è necessario immettere i parametri come mostrato. Il programma di installazione non richiede di fornire informazioni su un proxy.
+
++
+Ecco un esempio del comando che utilizza entrambi i parametri facoltativi:
+
++
+[source, cli]
+----
+ ./OnCommandCloudManager-V3.9.26 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+----
++
+--proxy configura il connettore per l'utilizzo di un server proxy HTTP o HTTPS utilizzando uno dei seguenti formati:
+
++
+** http://address:port
+** http://username:password@address:port
+** https://address:port
+** https://username:password@address:port
+
+
++
+--cakert specifica un certificato firmato da CA da utilizzare per l'accesso HTTPS tra il connettore e il server proxy. Questo parametro è necessario solo se si specifica un server proxy HTTPS o se il proxy è un proxy di intercettazione.
+
+. Attendere il completamento dell'installazione.
++
+Al termine dell'installazione, il servizio di connessione (occm) viene riavviato due volte se si specifica un server proxy.
+
+. Aprire un browser Web da un host connesso alla macchina virtuale Connector e immettere il seguente URL:
++
+https://_ipaddress_[]
+
+. Dopo aver effettuato l'accesso, configurare il connettore:
++
+.. Specificare l'account BlueXP da associare al connettore.
+.. Immettere un nome per il sistema.
+.. In *stai eseguendo in un ambiente protetto?* Mantieni disattivata la modalità limitata.
++
+La modalità limitata deve essere disattivata perché questa procedura descrive come utilizzare BlueXP in modalità standard. Attivare la modalità limitata solo se si dispone di un ambiente sicuro e si desidera disconnettere questo account dai servizi di back-end BlueXP. In tal caso, link:task-quick-start-restricted-mode.html["Segui i passaggi per iniziare a utilizzare BlueXP in modalità limitata"].
+
+.. Fare clic su *Let's start*.
+
+
+
+
+.Risultato
+Il connettore è ora installato e configurato con l'account BlueXP.
+
+.Quali sono le prossime novità?
+link:task-provide-permissions-google.html["Fornire a BlueXP le autorizzazioni precedentemente configurate"].
+
+--
+====

@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: task-create-account.html 
+keywords: create account, account, create, create another account, tenancy account, tenancy, tenancy account creation 
+summary: 'Quando ti iscrivi a BlueXP, ti viene richiesto di creare un account per la tua organizzazione. Questo account potrebbe essere tutto ciò di cui hai bisogno, ma se la tua azienda richiede più account, dovrai creare altri account utilizzando l"API tenancy.' 
+---
+= Creare un altro account BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Quando ti iscrivi a BlueXP, ti viene richiesto di creare un account per la tua organizzazione. Questo account potrebbe essere tutto ciò di cui hai bisogno, ma se la tua azienda richiede più account, dovrai creare altri account utilizzando l'API tenancy.
+
+Utilizzare la seguente chiamata API per creare un account BlueXP aggiuntivo:
+
+POST `/tenancy/account/{accountName}`
+
+Se si desidera attivare la modalità limitata, è necessario includere quanto segue nel corpo della richiesta:
+
+[source, JSON]
+----
+{
+  "isSaasDisabled": true
+}
+----
+
+NOTE: Non è possibile modificare l'impostazione della modalità limitata dopo che BlueXP ha creato l'account. Non puoi attivare la modalità limitata in un secondo momento e non puoi disattivarla in un secondo momento. Deve essere impostato al momento della creazione dell'account.
+
+https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/post-tenancy-account-.html["Scopri come utilizzare questa chiamata API"^]
+
+.Link correlati
+* link:concept-netapp-accounts.html["Scopri di più sugli account BlueXP"]
+* link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"]
+

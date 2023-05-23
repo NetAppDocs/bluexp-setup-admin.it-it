@@ -1,0 +1,110 @@
+---
+sidebar: sidebar 
+permalink: task-adding-gcp-accounts.html 
+keywords: permissions, gcp, marketplace, gcp subscription, subscription, gcp marketplace, subscribe, data tiering, tiering, setup, requirements, account for data tiering, account for tiering, interoperable, interoperability, interoperable storage access keys, access keys 
+summary: 'È possibile gestire le credenziali Google Cloud associate all"istanza di Connector VM associando un abbonamento al marketplace e risolvendo i problemi del processo di abbonamento. Entrambe queste attività garantiscono che sia possibile utilizzare l"abbonamento al marketplace per pagare i servizi BlueXP.' 
+---
+= Gestire le credenziali e le sottoscrizioni di Google Cloud per BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile gestire le credenziali Google Cloud associate all'istanza di Connector VM associando un abbonamento al marketplace e risolvendo i problemi del processo di abbonamento. Entrambe queste attività garantiscono che sia possibile utilizzare l'abbonamento al marketplace per pagare i servizi BlueXP.
+
+
+
+== Associare un abbonamento Marketplace alle credenziali Google Cloud
+
+Quando si implementa un connettore in Google Cloud, BlueXP crea un set predefinito di credenziali associate all'istanza della macchina virtuale del connettore. In qualsiasi momento, è possibile modificare l'abbonamento Marketplace associato a queste credenziali. L'abbonamento consente di creare un sistema Cloud Volumes ONTAP pay-as-you-go e di utilizzare altri servizi BlueXP.
+
+.Fasi
+. Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
+. Nella pagina *account credentials*, selezionare il menu delle azioni per un set di credenziali, quindi selezionare *associate Subscription*.
++
+image:screenshot_gcp_add_subscription.png["Schermata del menu delle azioni per un set di credenziali esistenti."]
+
+. Per associare le credenziali a un abbonamento esistente, selezionare un progetto e un abbonamento Google Cloud dall'elenco a discesa, quindi selezionare *Associa*.
++
+image:screenshot_gcp_associate.gif["Una schermata di un progetto Google Cloud e di un abbonamento selezionati per le credenziali Google Cloud."]
+
+. Se non disponi già di un abbonamento, seleziona *Aggiungi abbonamento > continua* e segui la procedura in Google Cloud Marketplace.
++
+
+NOTE: Prima di completare i seguenti passaggi, assicurarsi di disporre dei privilegi di Billing Admin nell'account Google Cloud e di un account di accesso BlueXP.
+
++
+.. Dopo essere stati reindirizzati a https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Pagina NetApp BlueXP su Google Cloud Marketplace"^], assicurarsi che il progetto corretto sia selezionato nel menu di navigazione superiore.
++
+image:screenshot_gcp_cvo_marketplace.png["Una schermata della pagina del marketplace Cloud Volumes ONTAP in Google Cloud."]
+
+.. Selezionare *Iscriviti*.
+.. Selezionare l'account di fatturazione appropriato e accettare i termini e le condizioni.
+.. Selezionare *Iscriviti*.
++
+Questa fase invia la richiesta di trasferimento a NetApp.
+
+.. Nella finestra di dialogo a comparsa, selezionare *Registra con NetApp, Inc.*
++
+Questa fase deve essere completata per collegare l'abbonamento a Google Cloud al tuo account BlueXP. Il processo di collegamento di un abbonamento non viene completato fino a quando non si viene reindirizzati da questa pagina e si accede a BlueXP.
+
++
+image:screenshot_gcp_marketplace_register.png["Schermata di una finestra a comparsa di registrazione."]
+
+.. Completare la procedura riportata nella pagina *Subscription Assignment*:
++
+
+NOTE: Se qualcuno della tua organizzazione ha già sottoscritto l'abbonamento a NetApp BlueXP dal tuo account di fatturazione, verrai reindirizzato a. https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["La pagina Cloud Volumes ONTAP sul sito Web di BlueXP"^] invece. In caso di imprevisti, contatta il tuo team di vendita NetApp. Google abilita un solo abbonamento per account di fatturazione Google.
+
++
+*** Seleziona gli account BlueXP a cui desideri associare questo abbonamento.
+*** Nel campo *Sostituisci abbonamento esistente*, scegli se desideri sostituire automaticamente l'abbonamento esistente per un account con questo nuovo abbonamento.
++
+BlueXP sostituisce l'abbonamento esistente per tutte le credenziali dell'account con questo nuovo abbonamento. Se un insieme di credenziali non è mai stato associato a un abbonamento, questo nuovo abbonamento non sarà associato a tali credenziali.
+
++
+Per tutti gli altri account, è necessario associare manualmente l'abbonamento ripetendo questa procedura.
+
+*** Selezionare *Salva*.
++
+Il seguente video mostra i passaggi per iscriversi a Google Cloud Marketplace:
+
++
+video::video-subscribing-google-cloud.mp4[width=848,height=480]
+
+
+.. Una volta completata questa procedura, tornare alla pagina credenziali in BlueXP e selezionare questo nuovo abbonamento.
++
+image:screenshot_gcp_associate.gif["Schermata della pagina di assegnazione dell'abbonamento."]
+
+
+
+
+
+
+
+== Risolvere i problemi relativi alla procedura di iscrizione a Marketplace
+
+A volte, l'iscrizione a BlueXP tramite Google Cloud Marketplace può frammentarsi a causa di autorizzazioni errate o a causa del mancato reindirizzamento al sito Web BlueXP. In tal caso, attenersi alla procedura riportata di seguito per completare la procedura di iscrizione.
+
+.Fasi
+. Passare a. https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Pagina NetApp BlueXP su Google Cloud Marketplace"^] per verificare lo stato dell'ordine. Se la pagina riporta *Gestisci su provider*, scorrere verso il basso e selezionare *Gestisci ordini*.
++
+image:screenshot_gcp_manage_orders.png["Una schermata della pagina Marketplace post subscription."]
+
++
+** Se l'ordine mostra un segno di spunta verde e questo è inaspettato, qualcun altro dell'organizzazione che utilizza lo stesso account di fatturazione potrebbe essere già iscritto. In caso di imprevisti o se si richiedono i dettagli di questo abbonamento, contattare il team di vendita NetApp.
++
+image:screenshot_gcp_green_marketplace.png["Una schermata di un diritto accettato."]
+
+** Se l'ordine mostra un orologio e lo stato *Pending*, torna alla pagina del marketplace e scegli *Manage on Provider* per completare il processo come descritto sopra.
++
+image:screenshot_gcp_pending_marketplace.png["Una schermata di un diritto di mercato in sospeso."]
+
+
+
+

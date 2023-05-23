@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: reference-ports-on-prem.html 
+keywords: networking, network, requirements, ports, on-prem, linux, http, https 
+summary: Il connettore utilizza le porte in entrata se installato manualmente su un host Linux on-premise. Potrebbe essere necessario fare riferimento a queste porte per scopi di pianificazione. 
+---
+= Porte per il connettore on-premise
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Il connettore utilizza porte _inbound_ se installato manualmente su un host Linux on-premise. Potrebbe essere necessario fare riferimento a queste porte per scopi di pianificazione.
+
+Queste regole in entrata si applicano a tutti i modelli di implementazione BlueXP.
+
+[cols="10,10,80"]
+|===
+| Protocollo | Porta | Scopo 
+
+
+| HTTP | 80 | Fornisce l'accesso HTTP dai browser Web client all'interfaccia utente locale 
+
+
+| HTTPS | 443 | Fornisce l'accesso HTTPS dai browser Web client all'interfaccia utente locale 
+|===

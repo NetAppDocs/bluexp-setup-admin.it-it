@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: concept-install-options-aws.html 
+keywords: install connector aws, aws install connector, connector aws, aws connector, installation options, aws marketplace, manual install 
+summary: 'Esistono diversi modi per creare un connettore in AWS. Direttamente da BlueXP è il modo più comune. L"opzione di installazione scelta determina il modo in cui si prepara per l"implementazione.' 
+---
+= Opzioni di installazione del connettore in AWS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Esistono diversi modi per creare un connettore in AWS. Direttamente da BlueXP è il modo più comune. L'opzione di installazione scelta determina il modo in cui si prepara per l'implementazione.
+
+Sono disponibili le seguenti opzioni di installazione:
+
+* Creare il connettore direttamente da BlueXP (opzione standard)
++
+Questa azione avvia un'istanza EC2 che esegue Linux e il software Connector in un VPC a scelta.
+
+* Creare un connettore da AWS Marketplace
++
+Questa azione avvia anche un'istanza EC2 che esegue Linux e il software Connector.
+
+* Scaricare e installare manualmente il software sul proprio host Linux
+
+
+L'opzione di installazione scelta influisce sul modo in cui si prepara l'installazione. Ciò include il modo in cui si forniscono a BlueXP le autorizzazioni necessarie per autenticare e gestire le risorse in AWS.
+
+link:task-install-connector-aws.html["Scopri come installare il connettore in AWS"].

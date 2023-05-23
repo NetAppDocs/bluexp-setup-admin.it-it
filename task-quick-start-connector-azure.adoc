@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start-connector-azure.html 
+keywords: quick start, connector quick start, azure quick start 
+summary: 'Creare un connettore in Azure scegliendo un"opzione di installazione, impostando la rete, preparando le autorizzazioni e molto altro.' 
+---
+= Avvio rapido per creare un connettore in Azure
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Creare un connettore in Azure scegliendo un'opzione di installazione, impostando la rete, preparando le autorizzazioni e molto altro.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Comprendere le opzioni di installazione
+[role="quick-margin-para"]
+Il metodo standard per creare un connettore in Azure è direttamente da BlueXP, ma è anche possibile crearlo da Azure Marketplace oppure installare manualmente il software su un host Linux preesistente.
+
+[role="quick-margin-para"]
+link:concept-install-options-azure.html["Scopri di più sulle opzioni di installazione"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Due"] Configurare la rete
+[role="quick-margin-para"]
+Preparare quanto segue per il connettore:
+
+[role="quick-margin-list"]
+* Un VNET e una subnet
+* Una connessione di rete alle reti in cui si intende creare e gestire gli ambienti di lavoro
+* Accesso a Internet in uscita a endpoint specifici per le operazioni quotidiane
+* L'indirizzo IP, le credenziali e il certificato HTTPS di un server proxy, se necessario per la connessione a Internet in uscita
+
+
+[role="quick-margin-para"]
+link:task-set-up-networking-azure.html["Scopri di più sui requisiti di rete"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tre"] Esaminare i requisiti dell'host
+[role="quick-margin-para"]
+Se si desidera installare manualmente il software del connettore sul proprio host Linux, assicurarsi che l'host soddisfi requisiti specifici. Se stai creando il connettore da BlueXP o da Azure Marketplace, questi requisiti vengono presi in considerazione perché il software viene distribuito da un'immagine.
+
+[role="quick-margin-para"]
+I requisiti principali sono i seguenti:
+
+[role="quick-margin-list"]
+* Un host dedicato che esegue Ubuntu 22.04, CentOS da 7.6 a 7.9 o RHEL da 7.6 a 7.9
+* 4 CPU
+* 14 GB di RAM
+* Docker Engine 19.3.1 o versione successiva
+
+
+[role="quick-margin-para"]
+link:reference-host-requirements-azure.html["Scopri di più su questi requisiti host"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quattro"] Impostare le autorizzazioni Azure
+[role="quick-margin-para"]
+Impostare le autorizzazioni di Azure per l'opzione di installazione che si intende utilizzare:
+
+[role="quick-margin-list"]
+* *Installare da BlueXP*: Creare un ruolo personalizzato e applicarlo al proprio account Azure o a un'entità del servizio Azure ad. BlueXP esegue l'autenticazione con Azure e utilizza queste autorizzazioni per creare l'istanza di Connector per conto dell'utente.
+* *Installa da Azure Marketplace*: Creare un ruolo personalizzato che è possibile associare all'istanza della macchina virtuale del connettore o a un'entità del servizio Azure ad.
+* *Installazione manuale*: Creare un ruolo personalizzato che è possibile associare all'istanza di Connector VM o a un'entità del servizio Azure ad.
+
+
+[role="quick-margin-para"]
+link:task-set-up-permissions-azure.html["Seguire le istruzioni dettagliate per ciascuna di queste opzioni"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Cinque"] Creare il connettore
+[role="quick-margin-para"]
+Creare il connettore utilizzando una delle opzioni di installazione disponibili:
+
+[role="quick-margin-list"]
+* *Da BlueXP*: Fare clic sull'elenco a discesa Connector (connettore), selezionare *Add Connector* (Aggiungi connettore) e seguire le istruzioni.
+* *Da Azure Marketplace*: Andare alla https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Pagina delle macchine virtuali di NetApp Connector in Azure Marketplace"^] E seguire le istruzioni per creare la macchina virtuale del connettore.
+* *Installazione manuale*: Scaricare il software del connettore da https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sito di supporto NetApp"] ed eseguire lo script di installazione.
+
+
+[role="quick-margin-para"]
+link:task-install-connector-azure.html["Seguire le istruzioni dettagliate per ciascuna di queste opzioni"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["Sei"] Fornire a BlueXP le autorizzazioni necessarie
+[role="quick-margin-para"]
+Se il connettore è stato creato da Azure Marketplace o se il software è stato installato manualmente, è necessario fornire a BlueXP le autorizzazioni precedentemente impostate.
+
+[role="quick-margin-para"]
+link:task-provide-permissions-azure.html["Seguire le istruzioni dettagliate"].

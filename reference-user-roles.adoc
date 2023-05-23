@@ -1,0 +1,76 @@
+---
+sidebar: sidebar 
+permalink: reference-user-roles.html 
+keywords: user, users, roles, role, task, permission, permissions, tasks, admin, Account Admin, Workspace Admin, Cloud Compliance Viewer, Cloud Data Sense, SnapCenter Admin 
+summary: 'I ruoli Amministratore account, Amministratore area di lavoro, Visualizzatore conformità e Amministratore SnapCenter forniscono autorizzazioni specifiche agli utenti. È possibile assegnare uno di questi ruoli quando si associa un nuovo utente all"account BlueXP.' 
+---
+= Ruoli
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+I ruoli Amministratore account, Amministratore area di lavoro, Visualizzatore conformità e Amministratore SnapCenter forniscono autorizzazioni specifiche agli utenti. È possibile assegnare uno di questi ruoli quando si associa un nuovo utente all'account BlueXP.
+
+Il ruolo Compliance Viewer è riservato all'accesso in sola lettura alla classificazione BlueXP.
+
+[cols="24,19,19,19,19"]
+|===
+| Attività | Amministratore account | Amministratore dello spazio di lavoro | Compliance Viewer | Amministratore SnapCenter 
+
+
+| Gestire gli ambienti di lavoro | Sì | Sì | No | No 
+
+
+| Abilitare i servizi negli ambienti di lavoro | Sì | Sì | No | No 
+
+
+| Visualizzare lo stato della replica dei dati | Sì | Sì | No | No 
+
+
+| Visualizza la timeline | Sì | Sì | No | No 
+
+
+| Passare da un'area di lavoro all'altra | Sì | Sì | Sì | No 
+
+
+| Visualizzare i risultati della scansione di classificazione BlueXP | Sì | Sì | Sì | No 
+
+
+| Eliminare gli ambienti di lavoro | Sì | No | No | No 
+
+
+| Connettere i cluster Kubernetes agli ambienti di lavoro | Sì | No | No | No 
+
+
+| Ricevere il report Cloud Volumes ONTAP | Sì | No | No | No 
+
+
+| Creare connettori | Sì | No | No | No 
+
+
+| Gestire gli account BlueXP | Sì | No | No | No 
+
+
+| Gestire le credenziali | Sì | No | No | No 
+
+
+| Modificare le impostazioni di BlueXP | Sì | No | No | No 
+
+
+| Visualizza e gestisci la dashboard di supporto | Sì | No | No | No 
+
+
+| Rimuovere gli ambienti di lavoro da BlueXP | Sì | No | No | No 
+
+
+| Installare un certificato HTTPS | Sì | No | No | No 
+|===
+.Link correlati
+* link:task-setting-up-netapp-accounts.html["Impostazione di aree di lavoro e utenti nell'account BlueXP"]
+* link:task-managing-netapp-accounts.html["Gestione delle aree di lavoro e degli utenti nell'account BlueXP"]
+

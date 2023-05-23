@@ -1,0 +1,133 @@
+---
+sidebar: sidebar 
+permalink: task-set-up-networking-aws.html 
+keywords: aws networking, networking, connector networking, ports, proxy server, outbound internet, endpoints, urls, vpc, subnet 
+summary: 'Configura il tuo networking in modo che il connettore possa gestire risorse e processi all"interno del tuo ambiente di cloud ibrido. Ad esempio, è necessario assicurarsi che le connessioni siano disponibili per le reti di destinazione e che sia disponibile l"accesso a Internet in uscita.' 
+---
+= Configurare la rete AWS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Configura il tuo networking in modo che il connettore possa gestire risorse e processi all'interno del tuo ambiente di cloud ibrido. Ad esempio, è necessario assicurarsi che le connessioni siano disponibili per le reti di destinazione e che sia disponibile l'accesso a Internet in uscita.
+
+
+
+== VPC e subnet
+
+Quando si crea il connettore, è necessario specificare il VPC e la subnet in cui deve risiedere il connettore.
+
+
+
+== Connessioni alle reti di destinazione
+
+Un connettore richiede una connessione di rete alla posizione in cui si intende creare e gestire gli ambienti di lavoro.
+
+
+
+== Accesso a Internet in uscita
+
+La posizione di rete in cui si implementa il connettore deve disporre di una connessione Internet in uscita. L'accesso a Internet in uscita è richiesto anche dal browser Web quando si implementa il connettore dalla console BlueXP.
+
+
+
+=== Endpoint contattati dalla console BlueXP
+
+Quando utilizzi la console basata sul web BlueXP fornita attraverso il layer SaaS, contatta diversi endpoint per completare le attività di gestione dei dati. Sono inclusi gli endpoint che vengono contattati per implementare il connettore dalla console BlueXP.
+
+link:reference-networking-saas-console.html["Visualizzare l'elenco degli endpoint contattati dalla console BlueXP"].
+
+
+
+=== Endpoint contattati durante l'installazione manuale
+
+Se si prevede di installare manualmente il connettore sul proprio host Linux, il programma di installazione del connettore richiede l'accesso ai seguenti URL durante il processo di installazione:
+
+* https://support.netapp.com
+* https://mysupport.netapp.com
+* https://cloudmanager.cloud.netapp.com/tenancy
+* https://stream.cloudmanager.cloud.netapp.com
+* https://cloudmanagerinfraprod.azurecr.io
+* https://production-artifacts.cloudmanager.cloud.netapp.com
+* https://*.blob.core.windows.net
+
+
+L'host potrebbe tentare di aggiornare i pacchetti del sistema operativo durante l'installazione. L'host può contattare diversi siti di mirroring per questi pacchetti di sistemi operativi.
+
+
+
+=== Endpoint contattati dal connettore
+
+Il connettore richiede l'accesso a Internet in uscita per contattare i seguenti endpoint al fine di gestire risorse e processi all'interno dell'ambiente di cloud pubblico per le operazioni quotidiane.
+
+[cols="2*"]
+|===
+| Endpoint | Scopo 
+
+
+ a| 
+Servizi AWS (amazonaws.com):
+
+* CloudFormation
+* Elastic Compute Cloud (EC2)
+* Gestione delle identità e degli accessi (IAM)
+* Servizio di gestione delle chiavi (KMS)
+* Servizio token di sicurezza (STS)
+* S3 (Simple Storage Service)
+
+| Per gestire le risorse in AWS. L'endpoint esatto dipende dalla regione in cui viene implementato il connettore. https://docs.aws.amazon.com/general/latest/gr/rande.html["Per ulteriori informazioni, fare riferimento alla documentazione AWS"^] 
+
+
+| https://support.netapp.com | Per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al supporto NetApp. 
+
+
+ a| 
+https://*.api.bluexp.netapp.com
+
+https://api.bluexp.netapp.com
+
+https://*.cloudmanager.cloud.netapp.com
+
+https://cloudmanager.cloud.netapp.com
+ a| 
+Fornire funzionalità e servizi SaaS all'interno di BlueXP.
+
+
+NOTE: Il connettore sta attualmente contattando "cloudmanager.cloud.netapp.com", ma inizierà a contattare "api.bluexp.netapp.com" in una versione successiva.
+
+
+
+| https://cloudmanagerinfraprod.azurecr.io https://*.blob.core.windows.net | Per aggiornare il connettore e i relativi componenti Docker. 
+|===
+
+
+== Server proxy
+
+Se l'organizzazione richiede la distribuzione di un server proxy per tutto il traffico Internet in uscita, ottenere le seguenti informazioni sul proxy HTTP o HTTPS:
+
+* Indirizzo IP
+* Credenziali
+* Certificato HTTPS
+
+
+
+
+== Porte
+
+Non c'è traffico in entrata verso il connettore, a meno che non venga avviato o se il connettore viene utilizzato come proxy per i messaggi AutoSupport.
+
+* HTTP (80) e HTTPS (443) forniscono l'accesso all'interfaccia utente locale, che verrà utilizzata in rare circostanze.
+* SSH (22) è necessario solo se è necessario connettersi all'host per la risoluzione dei problemi.
+* Le connessioni in entrata sulla porta 3128 sono necessarie se si implementano sistemi Cloud Volumes ONTAP in una subnet in cui non è disponibile una connessione Internet in uscita. Se i sistemi Cloud Volumes ONTAP non dispongono di una connessione Internet in uscita per inviare messaggi AutoSupport, BlueXP configura automaticamente i sistemi Cloud Volumes ONTAP in modo che utilizzino un server proxy incluso nel connettore. L'unico requisito è garantire che il gruppo di sicurezza del connettore consenta le connessioni in entrata sulla porta 3128. Dopo aver implementato il connettore, aprire questa porta.
+
+
+
+
+== Limitazione dell'indirizzo IP
+
+È possibile che vi sia un conflitto con gli indirizzi IP nell'intervallo 172. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["Scopri di più su questo limite"].

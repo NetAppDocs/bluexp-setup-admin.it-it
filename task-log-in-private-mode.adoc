@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: task-log-in-private-mode.html 
+keywords: logging in, log in, sign in, signing in, private mode, private mode log in, local log in, connector log in, log in connector 
+summary: 'Quando si utilizza BlueXP in modalità privata, è necessario accedere alla console BlueXP dall"interfaccia utente che viene eseguita localmente sul connettore.' 
+---
+= Accesso a BlueXP (modalità privata)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Quando si utilizza BlueXP in modalità privata, è necessario accedere alla console BlueXP dall'interfaccia utente che viene eseguita localmente sul connettore.
+
+.Opzioni di accesso
+La modalità privata supporta la gestione e l'accesso degli utenti locali. L'autenticazione non viene fornita attraverso il servizio cloud di BlueXP.
+
+.Fasi
+. Aprire un browser Web e immettere il seguente URL:
++
+https://_ipaddress_[]
+
++
+_Ipaddress_ può essere localhost, un indirizzo IP privato o un indirizzo IP pubblico, a seconda della configurazione dell'host in cui è stato installato il connettore. Ad esempio, potrebbe essere necessario inserire un indirizzo IP privato da un host connesso all'host del connettore.
+
+. Immettere il nome utente e la password per accedere.
+
+
+.Risultato
+Ora hai effettuato l'accesso e puoi iniziare a utilizzare BlueXP per gestire la tua infrastruttura multi-cloud ibrida.

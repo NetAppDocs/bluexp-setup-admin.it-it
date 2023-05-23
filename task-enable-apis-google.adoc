@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: task-enable-apis-google.html 
+keywords: aws networking, networking, connector networking, ports, proxy server, outbound internet, endpoints, urls, permissions, cloud permission, aws permissions, iam role, keys, aws keys, aws marketplace, marketplace install, manuall install, connector installer 
+summary: Prima di poter implementare Connector e Cloud Volumes ONTAP in Google Cloud, è necessario attivare diverse API di Google Cloud. 
+---
+= Abilitare le API di Google Cloud
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Prima di poter implementare Connector e Cloud Volumes ONTAP in Google Cloud, è necessario attivare diverse API di Google Cloud.
+
+.Fase
+. Abilita le seguenti API Google Cloud nel tuo progetto:
++
+** API di Cloud Deployment Manager V2
+** API Cloud Logging
+** API Cloud Resource Manager
+** API di Compute Engine
+** API IAM (Identity and Access Management)
+** API di Cloud Key Management Service (KMS)
++
+(Necessario solo se si intende utilizzare il backup e ripristino BlueXP con le chiavi di crittografia gestite dal cliente (CMEK))
+
+
+
+
+
+https://cloud.google.com/apis/docs/getting-started#enabling_apis["Documentazione di Google Cloud: Abilitazione delle API"^]

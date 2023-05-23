@@ -1,0 +1,57 @@
+= 
+:allow-uri-read: 
+
+
+* Un host dedicato che esegue Ubuntu 22.04, CentOS da 7.6 a 7.9 o RHEL da 7.6 a 7.9
+* 4 CPU
+* 14 GB di RAM
+* Docker Engine 19.3.1 o versione successiva
+
+
+Host dedicato:: Il connettore non è supportato su un host condiviso con altre applicazioni. L'host deve essere un host dedicato.
+Sistemi operativi supportati::
++
+--
+* Ubuntu 22.04
+* CentOS 7.6, 7.7, 7.8 e 7.9
+* Red Hat Enterprise Linux 7.6, 7.7, 7.8 e 7.9
++
+L'host deve essere registrato con Red Hat Subscription Management. Se non è registrato, l'host non può accedere ai repository per aggiornare il software di terze parti richiesto durante l'installazione del connettore.
+
++
+Il connettore è supportato dalle versioni in lingua inglese di questi sistemi operativi.
+
+
+
+--
+Hypervisor:: È richiesto un hypervisor bare metal o in hosting certificato per l'esecuzione di Ubuntu, CentOS o Red Hat Enterprise Linux.
++
+--
+https://access.redhat.com/certified-hypervisors["Soluzione Red Hat: Quali hypervisor sono certificati per eseguire Red Hat Enterprise Linux?"^]
+
+--
+CPU:: 4 core o 4 vCPU
+RAM:: 14 GB
+
+
+Tipo di istanza AWS EC2:: Un tipo di istanza che soddisfa i requisiti di CPU e RAM indicati in precedenza. Si consiglia di utilizzare t3.xlarge.
+
+
+Coppia di chiavi:: Quando si crea il connettore da BlueXP o da AWS Marketplace, è necessario selezionare una coppia di chiavi EC2 da utilizzare con l'istanza.
+
+
+Dimensione delle macchine virtuali Azure:: Un tipo di istanza che soddisfa i requisiti di CPU e RAM indicati in precedenza. Si consiglia DS3 v2.
+
+
+Tipo di macchina Google Cloud:: Un tipo di istanza che soddisfa i requisiti di CPU e RAM indicati in precedenza. Consigliamo n2-standard-4.
++
+--
+Il connettore è supportato in Google Cloud su un'istanza di macchina virtuale con un sistema operativo che supporta https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["Funzioni di VM schermate"^]
+
+--
+
+
+Spazio su disco in /opz:: 100 GiB di spazio deve essere disponibile
+Spazio su disco in /var:: 20 GiB di spazio deve essere disponibile
+Motore Docker:: Prima di installare il connettore, è necessario installare Docker Engine versione 19.3.1 o successiva sull'host. https://docs.docker.com/engine/install/["Visualizzare le istruzioni di installazione"^]
+

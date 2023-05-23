@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: reference-whats-next.html 
+keywords: standard mode, what you can do 
+summary: 'Dopo aver effettuato l"accesso e configurato BlueXP in modalità standard, gli utenti possono creare e rilevare ambienti di lavoro e utilizzare i servizi BlueXP.' 
+---
+= Operazioni successive (modalità standard)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Dopo aver effettuato l'accesso e configurato BlueXP in modalità standard, gli utenti possono creare e rilevare ambienti di lavoro e utilizzare i servizi dati BlueXP.
+
+Per assistenza, consultare https://docs.netapp.com/us-en/cloud-manager-family/["home page della documentazione BlueXP"^] Per visualizzare i documenti relativi a tutti i servizi BlueXP.
+
+.Link correlato
+link:concept-modes.html["Modalità di implementazione di BlueXP"]

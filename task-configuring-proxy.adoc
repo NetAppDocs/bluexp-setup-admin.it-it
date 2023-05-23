@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: task-configuring-proxy.html 
+keywords: proxy, proxy server, proxy, internet, HTTP, http, https 
+summary: 'Se le policy aziendali richiedono l"utilizzo di un server proxy per tutte le comunicazioni a Internet, è necessario configurare i connettori in modo che utilizzino tale server proxy. Se non è stato configurato un connettore per l"utilizzo di un server proxy durante l"installazione, è possibile configurare il connettore per l"utilizzo di tale server proxy in qualsiasi momento.' 
+---
+= Configurare un connettore per l'utilizzo di un server proxy
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se le policy aziendali richiedono l'utilizzo di un server proxy per tutte le comunicazioni a Internet, è necessario configurare i connettori in modo che utilizzino tale server proxy. Se non è stato configurato un connettore per l'utilizzo di un server proxy durante l'installazione, è possibile configurare il connettore per l'utilizzo di tale server proxy in qualsiasi momento.
+
+BlueXP supporta HTTP e HTTPS. Il server proxy può trovarsi nel cloud o nella rete.
+
+Se non è disponibile un indirizzo IP pubblico o un gateway NAT, la configurazione del connettore per l'utilizzo di un server proxy fornisce l'accesso a Internet in uscita. Questo server proxy fornisce solo il connettore con una connessione in uscita. Non fornisce alcuna connettività per i sistemi Cloud Volumes ONTAP.
+
+Se i sistemi Cloud Volumes ONTAP non dispongono di una connessione Internet in uscita per inviare messaggi AutoSupport, BlueXP configura automaticamente i sistemi Cloud Volumes ONTAP in modo che utilizzino un server proxy incluso nel connettore. L'unico requisito è garantire che il gruppo di sicurezza del connettore consenta le connessioni in entrata sulla porta 3128. Dopo aver implementato il connettore, aprire questa porta.
+
+
+
+== Attivare un proxy su un connettore
+
+Quando si configura un connettore per l'utilizzo di un server proxy, il connettore e i sistemi Cloud Volumes ONTAP gestiti (inclusi i mediatori ha) utilizzano tutti il server proxy.
+
+Si noti che questa operazione riavvia il connettore. Assicurarsi che il connettore non stia eseguendo alcuna operazione prima di procedere.
+
+.Fasi
+. Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *Impostazioni connettore*.
++
+image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
+
+. In *Generale*, selezionare *Configurazione proxy HTTP*.
+. Configurare il proxy:
++
+.. Selezionare *Enable Proxy* (attiva proxy).
+.. Specificare il server utilizzando la sintassi http://_address:port_[] oppure https://_address:port_[]
+.. Specificare un nome utente e una password se è richiesta l'autenticazione di base per il server
+.. Selezionare *Salva*.
++
+
+NOTE: BlueXP non supporta password che includono il carattere @.
+
+
+
+
+
+
+
+== Abilitare il traffico API diretto
+
+Se un connettore è stato configurato per l'utilizzo di un server proxy, è possibile attivare il traffico API diretto sul connettore per inviare chiamate API direttamente ai servizi del provider cloud senza passare attraverso il proxy. Questa opzione è supportata con i connettori eseguiti in AWS, Azure o Google Cloud.
+
+Se è stato disattivato l'utilizzo dei collegamenti privati di Azure con Cloud Volumes ONTAP e si stanno utilizzando gli endpoint del servizio, è necessario attivare il traffico API diretto. In caso contrario, il traffico non verrà instradato correttamente.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Scopri di più sull'utilizzo di un collegamento privato Azure o di endpoint di servizio con Cloud Volumes ONTAP"^]
+
+.Fasi
+. Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *Impostazioni connettore*.
++
+image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
+
+. In *General*, selezionare *Support Direct API Traffic*.
+. Selezionare la casella di controllo per attivare l'opzione, quindi selezionare *Salva*.
+

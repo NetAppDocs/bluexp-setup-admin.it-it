@@ -1,0 +1,73 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations.html 
+keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, BlueXP, Cloud Volumes ONTAP, days, running, Connectors should remain running, imdsv2, httpstokens 
+summary: Le limitazioni note identificano piattaforme, dispositivi o funzioni non supportate da questa versione del prodotto o che non interagiscono correttamente con esso. Esaminare attentamente queste limitazioni. 
+---
+= Limitazioni note
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le limitazioni note identificano piattaforme, dispositivi o funzioni non supportate da questa versione del prodotto o che non interagiscono correttamente con esso. Esaminare attentamente queste limitazioni.
+
+Queste limitazioni sono specifiche per l'installazione e l'amministrazione di BlueXP: Il connettore, la piattaforma SaaS e molto altro ancora.
+
+
+
+== Limitazioni del connettore
+
+
+
+=== Le impostazioni predefinite dell'istanza EC2 non devono essere modificate
+
+Quando si implementa il connettore in AWS, per impostazione predefinita vengono configurate le seguenti impostazioni dell'istanza EC2:
+
+* IMDSv2 è impostato su opzionale
+* HttpTokens è impostato su opzionale
+
+
+Queste impostazioni non devono essere modificate in obbligatorio. La modifica di queste impostazioni su richiesta influisce sulla disponibilità di connettori e Cloud Volumes ONTAP.
+
+
+
+=== Possibile conflitto con gli indirizzi IP compresi nell'intervallo 172
+
+BlueXP implementa il connettore con due interfacce che hanno indirizzi IP negli intervalli 172.17.0.0/16 e 172.18.0.0/16.
+
+Se la rete dispone di una subnet configurata con uno di questi intervalli, potrebbero verificarsi errori di connettività da BlueXP. Ad esempio, il rilevamento dei cluster ONTAP on-premise in BlueXP potrebbe non riuscire.
+
+Consultare l'articolo della Knowledge base link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/Cloud_Manager_shows_inactive_as_Connector_IP_range_in_172.x.x.x_conflict_with_docker_network["Conflitto IP del connettore BlueXP con la rete esistente"] Per istruzioni su come modificare l'indirizzo IP delle interfacce del connettore.
+
+
+
+=== La decrittografia SSL non è supportata
+
+BlueXP non supporta configurazioni firewall con crittografia SSL attivata. Se la decrittografia SSL è attivata, vengono visualizzati messaggi di errore in BlueXP e l'istanza del connettore viene visualizzata come inattiva.
+
+Per una maggiore sicurezza, è possibile scegliere tra link:task-installing-https-cert.html["Installare un certificato HTTPS firmato da un'autorità di certificazione (CA)"].
+
+
+
+=== Pagina vuota durante il caricamento dell'interfaccia utente locale
+
+Se si carica la console basata su Web in esecuzione su un connettore, l'interfaccia potrebbe non essere visualizzata e viene visualizzata solo una pagina vuota.
+
+Questo problema è correlato a un problema di caching. La soluzione è utilizzare una sessione di browser Web privato o in incognito.
+
+
+
+=== Gli host Linux condivisi non sono supportati
+
+Il connettore non è supportato su una macchina virtuale condivisa con altre applicazioni. La macchina virtuale deve essere dedicata al software del connettore.
+
+
+
+=== agenti ed interni di terze parti
+
+Gli agenti di terze parti o le estensioni delle macchine virtuali non sono supportati sulla macchina virtuale del connettore.

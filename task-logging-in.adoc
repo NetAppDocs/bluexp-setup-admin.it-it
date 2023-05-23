@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: task-logging-in.html 
+keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
+summary: 'Dopo aver effettuato la registrazione a BlueXP, è possibile accedere dalla console basata su Web per iniziare a gestire l"infrastruttura di dati e storage.' 
+---
+= Accesso a BlueXP (modalità standard)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Dopo aver effettuato la registrazione a BlueXP, è possibile accedere dalla console basata su Web per iniziare a gestire l'infrastruttura di dati e storage.
+
+.Opzioni di accesso
+È possibile accedere alla console basata su Web di BlueXP utilizzando una delle seguenti opzioni:
+
+* Le tue credenziali NetApp Support Site (NSS) esistenti
+* Un login cloud NetApp utilizzando il tuo indirizzo e-mail e una password
+* Una connessione federata
++
+È possibile utilizzare il Single Sign-on per accedere utilizzando le credenziali della directory aziendale (identità federata). link:concept-federation.html["Scopri come utilizzare la federazione delle identità con BlueXP"].
+
+
+
+.Fasi
+. Aprire un browser Web e accedere a. https://console.bluexp.netapp.com["Console BlueXP"^]
+. Nella pagina *Log in*, inserire l'indirizzo e-mail associato al login.
+. A seconda del metodo di autenticazione associato all'accesso, viene richiesto di inserire le credenziali:
++
+** Credenziali cloud NetApp: Inserire la password
+** Federated User (utente federato): Immettere le credenziali di identità federated
+** Account NetApp Support Site: Immettere le credenziali del NetApp Support Site
+
+
+
+
+.Risultato
+Ora hai effettuato l'accesso e puoi iniziare a utilizzare BlueXP per gestire la tua infrastruttura multi-cloud ibrida.

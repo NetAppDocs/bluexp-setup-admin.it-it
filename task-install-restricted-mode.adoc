@@ -1,0 +1,457 @@
+---
+sidebar: sidebar 
+permalink: task-install-restricted-mode.html 
+keywords: government region, gov, govcloud, connector, sovereign cloud 
+summary: 'Implementare il connettore in modalità limitata in modo da poter utilizzare BlueXP con connettività in uscita limitata al livello BlueXP SaaS. Per iniziare, installare il connettore, configurare BlueXP accedendo all"interfaccia utente in esecuzione sul connettore, quindi fornire le autorizzazioni cloud precedentemente impostate.' 
+---
+= Implementare il connettore in modalità limitata
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Implementare il connettore in modalità limitata in modo da poter utilizzare BlueXP con connettività in uscita limitata al livello BlueXP SaaS. Per iniziare, installare il connettore, configurare BlueXP accedendo all'interfaccia utente in esecuzione sul connettore, quindi fornire le autorizzazioni cloud precedentemente impostate.
+
+
+
+== Montare il connettore
+
+Installare il connettore dal mercato del provider di servizi cloud o installando manualmente il software sul proprio host Linux.
+
+[role="tabbed-block"]
+====
+.Mercato commerciale AWS
+--
+.Di cosa hai bisogno
+* VPC e subnet che soddisfano i requisiti di rete.
++
+link:task-prepare-restricted-mode.html["Scopri i requisiti di rete"]
+
+* Un ruolo IAM con un criterio allegato che include le autorizzazioni richieste per il connettore.
++
+link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Scopri come impostare le autorizzazioni AWS"]
+
+* Autorizzazioni per iscriversi e annullare l'iscrizione da AWS Marketplace per l'utente IAM.
+* Coppia di chiavi per l'istanza EC2.
+
+
+.Fasi
+. Accedere alla https://aws.amazon.com/marketplace/pp/B018REK8QG["Pagina BlueXP su AWS Marketplace"^]
+. Nella pagina Marketplace, fare clic su *Continue to Subscribe*, quindi fare clic su *Continue to Configuration*.
++
+image:screenshot-subscribe-aws.png["Una schermata che mostra i pulsanti continua a iscriversi e continua a configurazione su AWS Marketplace."]
+
+. Modificare una delle opzioni predefinite e fare clic su *Continue to Launch* (continua fino all'avvio).
+. In *Choose Action* (Scegli azione), selezionare *Launch through EC2* (Avvia tramite EC2*), quindi fare clic su *Launch* (Avvia).
++
+Questi passaggi descrivono come avviare l'istanza dalla console EC2 perché la console consente di associare un ruolo IAM all'istanza del connettore. Ciò non è possibile utilizzando l'azione *Launch from Website* (Avvia dal sito Web).
+
+. Seguire le istruzioni per configurare e implementare l'istanza:
++
+** *Nome e tag*: Immettere un nome e tag per l'istanza.
+** *Immagine dell'applicazione e del sistema operativo*: Saltare questa sezione. Il connettore AMI è già selezionato.
+** *Tipo di istanza*: A seconda della disponibilità della regione, scegliere uno dei tipi di istanza supportati (si consiglia t3.xlarge).
++
+link:task-prepare-restricted-mode.html["Esaminare i requisiti dell'istanza"].
+
+** *Coppia di chiavi (login)*: Selezionare la coppia di chiavi che si desidera utilizzare per connettersi in modo sicuro all'istanza.
+** *Impostazioni di rete*: Modificare le impostazioni di rete in base alle esigenze:
++
+*** Scegliere il VPC e la subnet desiderati.
+*** Specificare se l'istanza deve avere un indirizzo IP pubblico.
+*** Specificare le impostazioni del firewall che abilitano i metodi di connessione richiesti per l'istanza del connettore: SSH, HTTP e HTTPS.
+
+
+** *Configure storage* (Configura storage): Mantenere le opzioni di storage predefinite.
+** *Dettagli avanzati*: In *Profilo istanza IAM*, scegliere il ruolo IAM che include le autorizzazioni richieste per il connettore.
++
+link:task-prepare-restricted-mode.html["Scopri come impostare le autorizzazioni AWS"].
+
+** *Riepilogo*: Esaminare il riepilogo e fare clic su *Avvia istanza*.
+
+
+
+
+.Risultato
+AWS avvia il software con le impostazioni specificate. L'istanza di Connector e il software dovrebbero essere in esecuzione in circa cinque minuti.
+
+.Quali sono le prossime novità?
+Configurare BlueXP.
+
+--
+.Mercato AWS Gov
+--
+.Di cosa hai bisogno
+* VPC e subnet che soddisfano i requisiti di rete.
++
+link:task-prepare-restricted-mode.html["Scopri i requisiti di rete"]
+
+* Un ruolo IAM con un criterio allegato che include le autorizzazioni richieste per il connettore.
++
+link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Scopri come impostare le autorizzazioni AWS"]
+
+* Autorizzazioni per iscriversi e annullare l'iscrizione da AWS Marketplace per l'utente IAM.
+* Coppia di chiavi per l'istanza EC2.
+
+
+.Fasi
+. Vai all'offerta BlueXP in AWS Marketplace.
++
+.. Aprire il servizio EC2 e selezionare *Avvia istanza*.
+.. Selezionare *AWS Marketplace*.
+.. Cercare BlueXP e selezionare l'offerta.
++
+image:screenshot-gov-cloud-mktp.png["Una schermata che mostra l'offerta BlueXP dopo averla cercata in AWS Marketplace"]
+
+.. Fare clic su *continua*.
+
+
+. Seguire le istruzioni per configurare e implementare l'istanza:
++
+** *Scegliere un tipo di istanza*: A seconda della disponibilità della regione, scegliere uno dei tipi di istanza supportati (si consiglia t3.xlarge).
++
+link:task-prepare-restricted-mode.html["Esaminare i requisiti dell'istanza"].
+
+** *Configure Instance Details* (Configura dettagli istanza): Selezionare un VPC e una subnet, scegliere il ruolo IAM creato nel passaggio 1, abilitare la protezione di terminazione (scelta consigliata) e scegliere qualsiasi altra opzione di configurazione che soddisfi i requisiti.
++
+image:screenshot_aws_iam_role.gif["Una schermata che mostra i campi nella pagina Configure Instance (Configura istanza) di AWS. Viene selezionato il ruolo IAM che dovresti aver creato al punto 1."]
+
+** *Add Storage* (Aggiungi storage): Mantenere le opzioni di storage predefinite.
+** *Add Tags* (Aggiungi tag): Se si desidera, inserire i tag per l'istanza.
+** *Configure Security Group* (Configura gruppo di protezione): Specificare i metodi di connessione richiesti per l'istanza del connettore: SSH, HTTP e HTTPS.
+** *Revisione*: Rivedere le selezioni e fare clic su *Avvia*.
+
+
+
+
+.Risultato
+AWS avvia il software con le impostazioni specificate. L'istanza di Connector e il software dovrebbero essere in esecuzione in circa cinque minuti.
+
+.Quali sono le prossime novità?
+Configurare BlueXP.
+
+--
+.Azure Marketplace
+--
+.Di cosa hai bisogno
+* VNET e subnet che soddisfano i requisiti di rete.
++
+link:task-prepare-restricted-mode.html["Scopri i requisiti di rete"]
+
+* Un ruolo personalizzato di Azure che include le autorizzazioni richieste per il connettore.
++
+link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Scopri come impostare le autorizzazioni Azure"]
+
+
+
+.Fasi
+. Accedere alla pagina NetApp Connector VM in Azure Marketplace.
++
+** https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Pagina di Azure Marketplace per le regioni commerciali"^]
+** https://portal.azure.us/#create/netapp.netapp-oncommand-cloud-manageroccm-byol["Pagina di Azure Marketplace per le regioni governative di Azure"^]
+
+
+. Fare clic su *Get it now* (scarica ora), quindi su *Continue* (continua).
+. Dal portale Azure, fare clic su *Create* (Crea) e seguire la procedura per configurare la macchina virtuale.
++
+Durante la configurazione della macchina virtuale, tenere presente quanto segue:
+
++
+** *Dimensione della macchina virtuale*: Scegli una dimensione della macchina virtuale che soddisfi i requisiti di CPU e RAM. Si consiglia DS3 v2.
+** *Dischi*: Il connettore può funzionare in modo ottimale con dischi HDD o SSD.
+** *Public IP*: Se si desidera utilizzare un indirizzo IP pubblico con la macchina virtuale del connettore, l'indirizzo IP deve utilizzare una SKU di base per garantire che BlueXP utilizzi questo indirizzo IP pubblico.
++
+image:screenshot-azure-sku.png["Una schermata della creazione di un nuovo indirizzo IP in Azure che consente di scegliere Basic nel campo SKU."]
+
++
+Se invece si utilizza un indirizzo IP SKU standard, BlueXP utilizza l'indirizzo _private_ IP del connettore, invece dell'indirizzo IP pubblico. Se il computer utilizzato per accedere a BlueXP Console non dispone dell'accesso a tale indirizzo IP privato, le azioni da BlueXP Console non avranno esito positivo.
+
++
+https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Documentazione di Azure: SKU IP pubblico"^]
+
+** *Network Security group*: Il connettore richiede connessioni in entrata utilizzando SSH, HTTP e HTTPS.
++
+link:task-prepare-restricted-mode.html["Scopri i requisiti di rete"].
+
+** *Identity*: In *Management*, selezionare *Enable system assigned Managed Identity*.
++
+Questa impostazione è importante perché un'identità gestita consente alla macchina virtuale del connettore di identificarsi in Azure Active Directory senza fornire credenziali. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Scopri di più sulle identità gestite per le risorse Azure"^].
+
+
+
+. Nella pagina *Review + create*, esaminare le selezioni e fare clic su *Create* per avviare l'implementazione.
+
+
+.Risultato
+Azure implementa la macchina virtuale con le impostazioni specificate. La macchina virtuale e il software del connettore dovrebbero essere in esecuzione in circa cinque minuti.
+
+.Quali sono le prossime novità?
+Configurare BlueXP.
+
+--
+.Installazione manuale
+--
+.Di cosa hai bisogno
+* Privilegi root per installare il connettore.
+* Dettagli su un server proxy, se è richiesto un proxy per l'accesso a Internet dal connettore.
++
+È possibile configurare un server proxy dopo l'installazione, ma per farlo è necessario riavviare il connettore.
+
+* Un certificato firmato dalla CA, se il server proxy utilizza HTTPS o se il proxy è un proxy di intercettazione.
+
+
+.A proposito di questa attività
+* L'installazione installa gli strumenti della riga di comando AWS (awscli) per abilitare le procedure di ripristino dal supporto NetApp.
++
+Se viene visualizzato un messaggio che indica che l'installazione di awscli non è riuscita, ignorare il messaggio. Il connettore può funzionare correttamente senza gli strumenti.
+
+* Il programma di installazione disponibile sul NetApp Support Site potrebbe essere una versione precedente. Dopo l'installazione, il connettore si aggiorna automaticamente se è disponibile una nuova versione.
+
+
+.Fasi
+. Verificare che docker sia attivato e in esecuzione.
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+. Se le variabili di sistema _http_proxy_ o _https_proxy_ sono impostate sull'host, rimuoverle:
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+Se non si rimuovono queste variabili di sistema, l'installazione avrà esito negativo.
+
+. Scaricare il software del connettore da https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sito di supporto NetApp"^], Quindi copiarlo sull'host Linux.
++
+È necessario scaricare il programma di installazione del connettore "online" da utilizzare nella rete o nel cloud. Un programma di installazione "offline" separato è disponibile per il connettore, ma è supportato solo con le implementazioni in modalità privata.
+
+. Assegnare le autorizzazioni per eseguire lo script.
++
+[source, cli]
+----
+chmod +x OnCommandCloudManager-<version>
+----
++
+Dove <version> è la versione del connettore scaricato.
+
+. Eseguire lo script di installazione.
++
+[source, cli]
+----
+ ./OnCommandCloudManager-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+I parametri --proxy e --cakert sono facoltativi. Se si dispone di un server proxy, è necessario immettere i parametri come mostrato. Il programma di installazione non richiede di fornire informazioni su un proxy.
+
++
+Ecco un esempio del comando che utilizza entrambi i parametri facoltativi:
+
++
+[source, cli]
+----
+ ./OnCommandCloudManager-V3.9.26 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+----
++
+--proxy configura il connettore per l'utilizzo di un server proxy HTTP o HTTPS utilizzando uno dei seguenti formati:
+
++
+** http://address:port
+** http://username:password@address:port
+** https://address:port
+** https://username:password@address:port
+
+
++
+--cakert specifica un certificato firmato da CA da utilizzare per l'accesso HTTPS tra il connettore e il server proxy. h
+
+
+
+.Risultato
+Il connettore è ora installato. Al termine dell'installazione, il servizio di connessione (occm) viene riavviato due volte se si specifica un server proxy.
+
+.Quali sono le prossime novità?
+Configurare BlueXP.
+
+--
+====
+
+
+== Configurare BlueXP
+
+Quando si accede alla console BlueXP per la prima volta, viene richiesto di scegliere un account a cui associare il connettore ed è necessario attivare la modalità limitata.
+
+
+NOTE: Se si dispone già di un account e si desidera crearne un altro, è necessario utilizzare l'API tenancy. link:task-create-account.html["Scopri come creare un account BlueXP aggiuntivo"].
+
+.Fasi
+. Aprire un browser Web da un host connesso all'istanza del connettore e immettere il seguente URL:
++
+https://_ipaddress_[]
+
+. Iscriviti o accedi a BlueXP.
+. Una volta effettuato l'accesso, configurare BlueXP:
++
+.. Inserire un nome per il connettore.
+.. Immettere un nome per un nuovo account BlueXP o selezionare un account esistente.
++
+È possibile selezionare un account esistente se l'accesso è già associato a un account BlueXP.
+
+.. Selezionare *l'esecuzione in un ambiente protetto?*
+.. Selezionare *Enable restricted mode on this account* (attiva modalità limitata su questo account).
++
+Tenere presente che non è possibile modificare questa impostazione dopo che BlueXP ha creato l'account. Non puoi attivare la modalità limitata in un secondo momento e non puoi disattivarla in un secondo momento.
+
++
+Se il connettore è stato implementato in un'area governativa, la casella di controllo è già attivata e non può essere modificata. Questo perché la modalità limitata è l'unica modalità supportata nelle regioni governative.
+
++
+image:screenshot-restricted-mode.png["Una schermata che mostra la pagina di benvenuto in cui è necessario inserire un nome di connettore, un nome account e attivare la modalità limitata per questo account."]
+
+.. Fare clic su *Let's start*.
+
+
+
+
+.Risultato
+Il connettore è ora installato e configurato con l'account BlueXP. Tutti gli utenti devono accedere a BlueXP utilizzando l'indirizzo IP dell'istanza del connettore.
+
+.Quali sono le prossime novità?
+Fornire a BlueXP le autorizzazioni precedentemente impostate.
+
+
+
+== Fornire le autorizzazioni a BlueXP
+
+Se il connettore è stato distribuito da Azure Marketplace o se il software del connettore è stato installato manualmente, è necessario fornire le autorizzazioni precedentemente impostate per poter utilizzare i servizi BlueXP.
+
+Questi passaggi non si applicano se il connettore è stato implementato da AWS Marketplace perché è stato scelto il ruolo IAM richiesto durante l'implementazione.
+
+link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Scopri come preparare le autorizzazioni cloud"].
+
+[role="tabbed-block"]
+====
+.Ruolo AWS IAM
+--
+Collegare il ruolo IAM precedentemente creato all'istanza EC2 in cui è stato installato il connettore.
+
+Questa procedura si applica solo se il connettore è stato installato manualmente in AWS. Per le implementazioni di AWS Marketplace, l'istanza di Connector è già stata associata a un ruolo IAM che include le autorizzazioni richieste.
+
+.Fasi
+. Accedere alla console Amazon EC2.
+. Selezionare *istanze*.
+. Selezionare l'istanza del connettore.
+. Selezionare *azioni > sicurezza > Modifica ruolo IAM*.
+. Selezionare il ruolo IAM e fare clic su *Aggiorna ruolo IAM*.
+
+
+.Risultato
+BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in AWS per conto dell'utente.
+
+--
+.Chiave di accesso AWS
+--
+Fornire a BlueXP la chiave di accesso AWS per un utente IAM che dispone delle autorizzazioni necessarie.
+
+.Fasi
+. Assicurarsi che il connettore corretto sia attualmente selezionato in BlueXP.
+. Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
++
+image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
+
+. Fare clic su *Add Credentials* (Aggiungi credenziali) e seguire la procedura guidata.
++
+.. *Credentials Location*: Selezionare *Amazon Web Services > Connector*.
+.. *Definisci credenziali*: Inserire una chiave di accesso AWS e una chiave segreta.
+.. *Marketplace Subscription*: Consente di associare un abbonamento Marketplace a queste credenziali sottoscrivendo ora o selezionando un abbonamento esistente.
+.. *Revisione*: Confermare i dettagli relativi alle nuove credenziali e fare clic su *Aggiungi*.
+
+
+
+
+.Risultato
+BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in AWS per conto dell'utente.
+
+--
+.Ruolo di Azure
+--
+Accedere al portale Azure e assegnare il ruolo personalizzato Azure alla macchina virtuale Connector per una o più sottoscrizioni.
+
+.Fasi
+. Dal portale Azure, aprire il servizio *Subscriptions* e selezionare l'abbonamento.
+. Fare clic su *Access Control (IAM)* > *Add* > *Add role assignment*.
+. Nella scheda *ruolo*, selezionare il ruolo *operatore BlueXP* e fare clic su *Avanti*.
++
+
+NOTE: BlueXP Operator è il nome predefinito fornito nel criterio BlueXP. Se si sceglie un nome diverso per il ruolo, selezionare il nome desiderato.
+
+. Nella scheda *membri*, completare la seguente procedura:
++
+.. Assegnare l'accesso a un'identità * gestita.
+.. Fare clic su *Select members* (Seleziona membri), selezionare l'abbonamento in cui è stata creata la macchina virtuale del connettore, scegliere *Virtual Machine*, quindi selezionare la macchina virtuale del connettore.
+.. Fare clic su *Seleziona*.
+.. Fare clic su *Avanti*.
+.. Fare clic su *Rivedi + assegna*.
+.. Se si desidera implementare Cloud Volumes ONTAP da abbonamenti aggiuntivi, passare a tale abbonamento e ripetere la procedura.
+
+
+
+
+.Risultato
+BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in Azure per conto dell'utente.
+
+--
+.Entità del servizio Azure
+--
+Fornire a BlueXP le credenziali per l'entità del servizio Azure precedentemente configurata.
+
+.Fasi
+. Accedere alla https://console.bluexp.netapp.com["Console BlueXP"^] ed effettuare l'accesso.
+. Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
++
+image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
+
+. Fare clic su *Add Credentials* (Aggiungi credenziali) e seguire la procedura guidata.
++
+.. *Credentials Location*: Selezionare *Microsoft Azure > Connector*.
+.. *Definisci credenziali*: Immettere le informazioni relative all'entità del servizio Azure Active Directory che concede le autorizzazioni richieste:
++
+*** ID dell'applicazione (client)
+*** ID directory (tenant)
+*** Segreto del client
+
+
+.. *Marketplace Subscription*: Consente di associare un abbonamento Marketplace a queste credenziali sottoscrivendo ora o selezionando un abbonamento esistente.
+.. *Revisione*: Confermare i dettagli relativi alle nuove credenziali e fare clic su *Aggiungi*.
+
+
+
+
+.Risultato
+BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in Azure per conto dell'utente.
+
+--
+.Account del servizio Google Cloud
+--
+Associare l'account del servizio alla macchina virtuale del connettore.
+
+.Fasi
+. Accedere al portale Google Cloud e assegnare l'account del servizio all'istanza della macchina virtuale del connettore.
++
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Documentazione di Google Cloud: Modifica dell'account del servizio e degli ambiti di accesso per un'istanza"^]
+
+. Se si desidera distribuire Cloud Volumes ONTAP in altri progetti, concedere l'accesso aggiungendo l'account di servizio con il ruolo BlueXP a tale progetto. Dovrai ripetere questo passaggio per ogni progetto.
+
+
+.Risultato
+BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in Google Cloud per tuo conto.
+
+--
+====

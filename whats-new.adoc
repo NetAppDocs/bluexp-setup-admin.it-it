@@ -1,0 +1,657 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
+summary: 'Scopri le novità delle funzionalità di amministrazione di BlueXP: Account BlueXP, connettori, credenziali del cloud provider e altro ancora.' 
+---
+= Novità
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Scopri le novità delle funzionalità di amministrazione di BlueXP: Account BlueXP, connettori, credenziali del cloud provider e altro ancora.
+
+
+
+== 7 maggio 2023
+
+
+
+=== Connettore 3.9.29
+
+* Ubuntu 22.04 è il nuovo sistema operativo per il connettore quando si implementa un connettore da BlueXP o dal mercato del cloud provider.
++
+È inoltre possibile installare manualmente il connettore sul proprio host Linux su cui è in esecuzione Ubuntu 22.04.
+
+* Red Hat Enterprise Linux 8.6 e 8.7 non sono più supportati con le nuove implementazioni di connettori.
++
+Queste versioni non sono supportate con le nuove implementazioni perché Red Hat non supporta più Docker, necessario per il connettore. Se si dispone di un connettore esistente in esecuzione su RHEL 8.6 o 8.7, NetApp continuerà a supportare la configurazione.
+
++
+Red Hat 7.6, 7.7, 7.8 e 7.9 sono ancora supportati con connettori nuovi ed esistenti.
+
+* Il connettore è ora supportato nell'area Qatar di Google Cloud.
+* Il connettore è supportato anche nella regione Sweden Central di Microsoft Azure.
++
+https://cloud.netapp.com/cloud-volumes-global-regions["Visualizza l'elenco completo delle regioni supportate"^]
+
+* Questa versione del connettore include i miglioramenti di Cloud Volumes ONTAP.
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-may-2023["Scopri i miglioramenti di Cloud Volumes ONTAP"^]
+
+
+
+
+
+== 4 aprile 2023
+
+
+
+=== Modalità di implementazione
+
+Le _modalità di implementazione_ di BlueXP consentono di utilizzare BlueXP in modo da soddisfare i requisiti di sicurezza e di business. È possibile scegliere tra tre modalità:
+
+* Modalità standard
+* Modalità limitata
+* Modalità privata
+
+
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["Scopri di più su queste modalità di implementazione"].
+
+
+NOTE: L'introduzione della modalità limitata sostituisce l'opzione di attivazione o disattivazione della piattaforma SaaS. È possibile attivare la modalità limitata al momento della creazione dell'account. Non può essere attivato o disattivato in un secondo momento.
+
+
+
+== 3 aprile 2023
+
+
+
+=== Connettore 3.9.28
+
+* Le notifiche e-mail sono ora supportate con il portafoglio digitale BlueXP.
++
+Se si configurano le impostazioni di notifica, è possibile ricevere notifiche via email quando le licenze BYOL stanno per scadere (una notifica di "avviso") o se sono già scadute (una notifica di "errore").
+
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Scopri come configurare le notifiche via e-mail"].
+
+* Il connettore è ora supportato nella regione di Google Cloud Turin.
++
+https://cloud.netapp.com/cloud-volumes-global-regions["Visualizza l'elenco completo delle regioni supportate"^]
+
+* È ora possibile gestire le credenziali utente associate all'accesso BlueXP: Credenziali ONTAP e credenziali del sito di supporto NetApp.
++
+Quando si seleziona *Impostazioni > credenziali*, è possibile visualizzare le credenziali, aggiornare le credenziali ed eliminarle. Ad esempio, se si modifica la password per queste credenziali, sarà necessario aggiornare la password in BlueXP.
+
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html["Scopri come gestire le credenziali utente"].
+
+* È ora possibile caricare gli allegati quando si crea un caso di supporto o quando si aggiornano le note del caso per un caso di supporto esistente.
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["Scopri come creare e gestire i casi di supporto"].
+
+* Questa versione del connettore include anche miglioramenti Cloud Volumes ONTAP e miglioramenti del cluster ONTAP on-premise.
++
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2023["Scopri i miglioramenti di Cloud Volumes ONTAP"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#3-april-2023["Scopri i miglioramenti del cluster on-premise di ONTAP"^]
+
+
+
+
+
+
+== 5 marzo 2023
+
+
+
+=== Connettore 3.9.27
+
+* La funzione di ricerca è ora disponibile nella console BlueXP. A questo punto, è possibile utilizzare la ricerca per trovare i servizi e le funzionalità di BlueXP.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search.png["Una schermata della ricerca BlueXP disponibile nella parte superiore della console."]
+
+* È possibile visualizzare e gestire i casi di supporto attivi e risolti direttamente da BlueXP. Puoi gestire i casi associati al tuo account NSS e alla tua azienda.
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["Scopri come gestire i tuoi casi di supporto"].
+
+* Il connettore è ora supportato in qualsiasi ambiente cloud con isolamento completo da Internet. È quindi possibile utilizzare la console BlueXP in esecuzione sul connettore per implementare Cloud Volumes ONTAP nella stessa posizione e per rilevare i cluster ONTAP on-premise (se si dispone di una connessione dall'ambiente cloud all'ambiente on-premise). È inoltre possibile utilizzare il backup e il ripristino BlueXP per eseguire il backup dei volumi Cloud Volumes ONTAP nelle aree commerciali di AWS e Azure. Nessun altro servizio BlueXP è supportato in questo tipo di implementazione, ad eccezione del portafoglio digitale BlueXP.
++
+L'area cloud può essere un'area per agenzie statunitensi sicure come AWS C2S/SC2S, Azure IL6 o qualsiasi area commerciale.
+
++
+Per iniziare, installare manualmente il software Connector, accedere alla console BlueXP in esecuzione sul connettore, aggiungere la licenza BYOL al portafoglio digitale BlueXP, quindi implementare Cloud Volumes ONTAP.
+
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Installare il connettore in una posizione senza accesso a Internet"^]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["Accedere alla console BlueXP sul connettore"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["Aggiungere una licenza non assegnata"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["Inizia a utilizzare Cloud Volumes ONTAP"^]
+
+
+* Il connettore consente ora di aggiungere e gestire i bucket Amazon S3 da BlueXP.
++
+https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Scopri come aggiungere nuovi bucket Amazon S3 nel tuo account AWS da BlueXP"^].
+
+* Questa versione del connettore include i miglioramenti di Cloud Volumes ONTAP.
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["Scopri i miglioramenti di Cloud Volumes ONTAP"^]
+
+
+
+
+
+== 5 febbraio 2023
+
+
+
+=== Connettore 3.9.26
+
+* Nella pagina *Log in*, viene richiesto di inserire l'indirizzo e-mail associato al login. Dopo aver fatto clic su *Avanti*, BlueXP richiede di eseguire l'autenticazione utilizzando il metodo di autenticazione associato all'accesso:
++
+** La password per le tue credenziali cloud NetApp
+** Le tue credenziali di identità federate
+** Le tue credenziali del NetApp Support Site
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-login.png["Schermata della pagina di accesso di BlueXP in cui viene richiesto di inserire l'indirizzo e-mail."]
+
+* Se non hai ancora utilizzato BlueXP e disponi delle credenziali NetApp Support Site (NSS), puoi saltare la pagina di registrazione e inserire il tuo indirizzo e-mail direttamente nella pagina di accesso. BlueXP ti iscriverà come parte di questo login iniziale.
+* Quando ti iscrivi a BlueXP dal mercato del tuo provider cloud, ora hai la possibilità di sostituire l'abbonamento esistente per un account con il nuovo abbonamento.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-aws-subscription.png["Una schermata che mostra l'assegnazione dell'abbonamento per un account BlueXP."]
+
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["Scopri come associare un abbonamento AWS"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html#associating-an-azure-marketplace-subscription-to-credentials["Scopri come associare un abbonamento Azure"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Scopri come associare un abbonamento a Google Cloud"]
+
+
+* BlueXP avviserà l'utente se il connettore è stato spento per 14 giorni o più.
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Informazioni sulle notifiche BlueXP"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#connectors-should-remain-running["Scopri perché i connettori devono rimanere in esecuzione"]
+
+
+* Abbiamo aggiornato la policy di connessione per Google Cloud per includere un'autorizzazione necessaria per creare e gestire le VM di storage su coppie Cloud Volumes ONTAP ha:
++
+compute.instances.updateNetworkInterface
+
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["Visualizzare le autorizzazioni Google Cloud per il connettore"].
+
+* Questa versione del connettore include i miglioramenti di Cloud Volumes ONTAP.
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-february-2023["Scopri i miglioramenti di Cloud Volumes ONTAP"^]
+
+
+
+
+
+== 1 gennaio 2023
+
+
+
+=== Connettore 3.9.25
+
+Questa versione del connettore include miglioramenti Cloud Volumes ONTAP e correzioni di bug.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1-january-2023["Scopri i miglioramenti di Cloud Volumes ONTAP"^]
+
+
+
+== 4 dicembre 2022
+
+
+
+=== Connettore 3.9.24
+
+* L'URL della console BlueXP è stato aggiornato a. https://console.bluexp.netapp.com[]
+* Il connettore è ora supportato nella regione di Google Cloud Israele.
+* Questa versione del connettore include anche miglioramenti Cloud Volumes ONTAP e miglioramenti del cluster ONTAP on-premise.
++
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#4-december-2022["Scopri i miglioramenti di Cloud Volumes ONTAP"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#4-december-2022["Scopri i miglioramenti del cluster on-premise di ONTAP"^]
+
+
+
+
+
+
+== 6 novembre 2022
+
+
+
+=== Connettore 3.9.23
+
+* Gli abbonamenti PAYGO e i contratti annuali per BlueXP sono ora disponibili per la visualizzazione e la gestione dal portafoglio digitale.
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-subscriptions.html["Scopri come gestire gli abbonamenti"^]
+
+* Questa versione del connettore include anche i miglioramenti di Cloud Volumes ONTAP.
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#6-november-2022["Scopri i miglioramenti di Cloud Volumes ONTAP"^]
+
+
+
+
+
+== 1° novembre 2022
+
+Cloud Manager richiede ora di aggiornare le credenziali associate ai tuoi account NetApp Support Site quando il token di refresh associato al tuo account scade dopo 3 mesi. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["Scopri come gestire gli account NSS"^]
+
+
+
+== 18 settembre 2022
+
+
+
+=== Connettore 3.9.22
+
+* Abbiamo migliorato la procedura guidata di implementazione del connettore aggiungendo una _guida in-product_ che fornisce i passaggi necessari per soddisfare i requisiti minimi per l'installazione del connettore: Autorizzazioni, autenticazione e rete.
+* È ora possibile creare un caso di supporto NetApp direttamente da Cloud Manager nella dashboard di supporto*.
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-get-help.html#netapp-support["Scopri come creare un caso"].
+
+* Questa versione del connettore include anche i miglioramenti di Cloud Volumes ONTAP.
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#18-september-2022["Scopri i miglioramenti di Cloud Volumes ONTAP"^]
+
+
+
+
+
+== 31 luglio 2022
+
+
+
+=== Connettore 3.9.21
+
+* Abbiamo introdotto un nuovo modo per scoprire le risorse cloud esistenti che non stai ancora gestendo in Cloud Manager.
++
+In Canvas, la scheda *My Opportunities* fornisce una posizione centralizzata per scoprire le risorse esistenti che è possibile aggiungere a Cloud Manager per operazioni e servizi dati coerenti nel tuo multicloud ibrido.
+
++
+In questa versione iniziale, My Opportunities consente di scoprire i file system FSX per ONTAP esistenti nel proprio account AWS.
+
++
+https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-using-my-opportunities["Scopri come scoprire FSX per ONTAP utilizzando le mie opportunità"^]
+
+* Questa versione del connettore include anche i miglioramenti di Cloud Volumes ONTAP.
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#31-july-2022["Scopri i miglioramenti di Cloud Volumes ONTAP"^]
+
+
+
+
+
+== 15 luglio 2022
+
+
+
+=== Modifiche alle policy
+
+Abbiamo aggiornato la documentazione aggiungendo le policy di Cloud Manager direttamente all'interno dei documenti. Ciò significa che ora è possibile visualizzare le autorizzazioni richieste per Connector e Cloud Volumes ONTAP insieme ai passaggi che descrivono come configurarle. Queste policy erano precedentemente accessibili da una pagina del sito di supporto NetApp.
+
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#create-an-iam-policy["Ecco un esempio che mostra le autorizzazioni del ruolo AWS IAM utilizzate per creare un connettore"].
+
+Abbiamo anche creato una pagina che fornisce collegamenti a ciascuna policy. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["Visualizza il riepilogo delle autorizzazioni per Cloud Manager"].
+
+
+
+== 3 luglio 2022
+
+
+
+=== Connettore 3.9.20
+
+* Abbiamo introdotto un nuovo modo per accedere all'elenco crescente di funzionalità nell'interfaccia di Cloud Manager. Tutte le funzionalità di Cloud Manager sono ora facilmente reperibili passando il mouse sul pannello di sinistra.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-navigation.png["Una schermata che mostra il nuovo menu di navigazione a sinistra in Cloud Manager."]
+
+* Ora puoi configurare Cloud Manager per inviare notifiche via email in modo da essere informato di importanti attività del sistema anche quando non sei connesso al sistema.
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Scopri di più sul monitoraggio delle operazioni nel tuo account"].
+
+* Cloud Manager ora supporta lo storage Azure Blob e Google Cloud Storage come ambienti di lavoro, in modo simile al supporto di Amazon S3.
++
+Dopo aver installato un connettore in Azure o Google Cloud, Cloud Manager rileva automaticamente le informazioni sullo storage Azure Blob nell'abbonamento Azure o in Google Cloud Storage nel progetto in cui è installato il connettore. Cloud Manager visualizza lo storage a oggetti come un ambiente di lavoro che è possibile aprire per visualizzare informazioni più dettagliate.
+
++
+Ecco un esempio di ambiente di lavoro Azure Blob:
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-azure-blob-details.png["Una schermata che mostra un ambiente di lavoro Azure Blob in cui è possibile visualizzare una panoramica di alto livello e informazioni dettagliate sugli account di storage."]
+
+* Abbiamo riprogettato la pagina delle risorse per un ambiente di lavoro Amazon S3 fornendo informazioni più dettagliate sui bucket S3, come capacità, dettagli di crittografia e altro ancora.
+* Il connettore è ora supportato nelle seguenti aree di Google Cloud:
++
+** Madrid (europa-Sud-Sance1)
+** Parigi (europa-ovest 9)
+** Varsavia (Europa centrale2)
+
+
+* Il connettore è ora supportato nella regione Azure West US 3.
++
+https://bluexp.netapp.com/cloud-volumes-global-regions["Visualizza l'elenco completo delle regioni supportate"^]
+
+* Questa versione del connettore include anche i miglioramenti di Cloud Volumes ONTAP.
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2-july-2022["Scopri i miglioramenti di Cloud Volumes ONTAP"^]
+
+
+
+
+
+== 28 giugno 2022
+
+
+
+=== Accedi con le credenziali NetApp
+
+Quando i nuovi utenti si iscrivono a Cloud Central, possono ora selezionare l'opzione *Accedi con NetApp* per accedere con le credenziali del NetApp Support Site. In alternativa all'immissione di un indirizzo e-mail e di una password.
+
+
+NOTE: Gli accessi esistenti che utilizzano un indirizzo e-mail e una password devono continuare a utilizzare tale metodo di accesso. L'opzione Accedi con NetApp è disponibile per i nuovi utenti che si iscrivono.
+
+
+
+== 7 giugno 2022
+
+
+
+=== Connettore 3.9.19
+
+* Il connettore è ora supportato nella regione di AWS Jakarta (ap-sud-est-3).
+* Il connettore è ora supportato nella regione sud-orientale del Brasile Azure.
++
+https://bluexp.netapp.com/cloud-volumes-global-regions["Visualizza l'elenco completo delle regioni supportate"^]
+
+* Questa versione del connettore include anche miglioramenti Cloud Volumes ONTAP e miglioramenti del cluster ONTAP on-premise.
++
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-june-2022["Scopri i miglioramenti di Cloud Volumes ONTAP"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#7-june-2022["Scopri i miglioramenti del cluster on-premise di ONTAP"^]
+
+
+
+
+
+
+== 12 maggio 2022
+
+
+
+=== Patch del connettore 3.9.18
+
+Abbiamo aggiornato il connettore per introdurre correzioni di bug. La soluzione più importante è un problema che influisce sull'implementazione di Cloud Volumes ONTAP in Google Cloud quando il connettore si trova in un VPC condiviso.
+
+
+
+== 2 maggio 2022
+
+
+
+=== Connettore 3.9.18
+
+* Il connettore è ora supportato nelle seguenti aree di Google Cloud:
++
+** Delhi (asia-Sud 2)
+** Melbourne (australia-sud-est 2)
+** Milano (europa-ovest 8)
+** Santiago (america del sud-ovest 1)
+
+
++
+https://bluexp.netapp.com/cloud-volumes-global-regions["Visualizza l'elenco completo delle regioni supportate"^]
+
+* Quando si seleziona l'account del servizio Google Cloud da utilizzare con il connettore, Cloud Manager visualizza ora l'indirizzo e-mail associato a ciascun account del servizio. La visualizzazione dell'indirizzo di posta elettronica consente di distinguere più facilmente gli account di servizio che condividono lo stesso nome.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-google-cloud-service-account.png["Una schermata del campo dell'account di servizio"]
+
+* Abbiamo certificato il connettore in Google Cloud su un'istanza di macchina virtuale con un sistema operativo che supporta https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["Funzioni di VM schermate"^]
+* Questa versione del connettore include anche i miglioramenti di Cloud Volumes ONTAP. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2-may-2022["Scopri di più su questi miglioramenti"^]
+* Sono necessarie nuove autorizzazioni AWS per consentire al connettore di implementare Cloud Volumes ONTAP.
++
+Le seguenti autorizzazioni sono ora necessarie per creare un gruppo di posizionamento AWS Spread quando si implementa una coppia ha in una singola zona di disponibilità (AZ):
+
++
+[source, json]
+----
+"ec2:DescribePlacementGroups",
+"iam:GetRolePolicy",
+----
++
+Queste autorizzazioni sono ora necessarie per ottimizzare il modo in cui Cloud Manager crea il gruppo di posizionamento.
+
++
+Assicurati di fornire queste autorizzazioni a ogni set di credenziali AWS aggiunto a Cloud Manager. link:reference-permissions-aws.html["Visualizzare la policy IAM più recente per il connettore"].
+
+
+
+
+
+== 3 aprile 2022
+
+
+
+=== Connettore 3.9.17
+
+* Ora puoi creare un connettore lasciando che Cloud Manager assuma un ruolo IAM impostato nel tuo ambiente. Questo metodo di autenticazione è più sicuro della condivisione di una chiave di accesso AWS e di una chiave segreta.
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Scopri come creare un connettore utilizzando un ruolo IAM"].
+
+* Questa versione del connettore include anche i miglioramenti di Cloud Volumes ONTAP. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2022["Scopri di più su questi miglioramenti"^]
+
+
+
+
+== 27 febbraio 2022
+
+
+
+=== Connettore 3.9.16
+
+* Quando crei un nuovo connettore in Google Cloud, Cloud Manager visualizzerà tutte le policy firewall esistenti. In precedenza, Cloud Manager non visualizzava policy che non disponevano di tag di destinazione.
+* Questa versione del connettore include anche i miglioramenti di Cloud Volumes ONTAP. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#27-february-2022["Scopri di più su questi miglioramenti"^]
+
+
+
+
+== 30 gennaio 2022
+
+
+
+=== Connettore 3.9.15
+
+Questa versione del connettore include i miglioramenti di Cloud Volumes ONTAP. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#30-january-2022["Scopri di più su questi miglioramenti"^]
+
+
+
+== 2 gennaio 2022
+
+
+
+=== Endpoint ridotti per il connettore
+
+Abbiamo ridotto il numero di endpoint che un connettore deve contattare per gestire risorse e processi all'interno del tuo ambiente di cloud pubblico.
+
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["Visualizzare l'elenco degli endpoint richiesti"]
+
+
+
+=== Crittografia del disco EBS per il connettore
+
+Quando si implementa un nuovo connettore in AWS da Cloud Manager, è ora possibile scegliere di crittografare i dischi EBS del connettore utilizzando la chiave master predefinita o una chiave gestita.
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-disk-encryption.png["Una schermata che mostra l'opzione di crittografia del disco quando si crea un connettore in AWS."]
+
+
+
+=== Indirizzo e-mail per gli account NSS
+
+Ora Cloud Manager può visualizzare l'indirizzo e-mail associato a un account NetApp Support Site.
+
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-nss-display-email.png["Una schermata che mostra il menu delle azioni per un account NetApp Support Site che include la possibilità di visualizzare l'indirizzo e-mail."]
+
+
+
+== 28 novembre 2021
+
+
+
+=== Aggiornamento necessario per gli account del NetApp Support Site
+
+A partire da dicembre 2021, NetApp utilizza ora Microsoft Azure Active Directory come provider di identità per i servizi di autenticazione specifici per il supporto e la concessione di licenze. In seguito a questo aggiornamento, Cloud Manager richiederà di aggiornare le credenziali per gli account NetApp Support Site già aggiunti in precedenza.
+
+Se non hai ancora eseguito la migrazione dell'account NSS a IDaaS, devi prima migrare l'account e poi aggiornare le tue credenziali in Cloud Manager.
+
+* link:task-adding-nss-accounts.html#update-an-nss-account-for-the-new-authentication-method["Scopri come aggiornare un account NSS con il nuovo metodo di autenticazione"].
+* https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["Scopri di più sull'utilizzo di Microsoft Azure ad da parte di NetApp per la gestione delle identità"^]
+
+
+
+
+=== Modificare gli account NSS per Cloud Volumes ONTAP
+
+Se la tua organizzazione dispone di più account del sito di supporto NetApp, ora puoi modificare l'account associato a un sistema Cloud Volumes ONTAP.
+
+link:task-adding-nss-accounts.html#attach-a-working-environment-to-a-different-nss-account["Scopri come collegare un ambiente di lavoro a un altro account NSS"].
+
+
+
+== 4 novembre 2021
+
+
+
+=== Certificazione SOC 2 tipo 2
+
+Un'azienda indipendente di contabili pubblici e un revisore dei servizi ha esaminato Cloud Manager, Cloud Sync, Cloud Tiering, Cloud Data Sense e Cloud Backup (piattaforma Cloud Manager) e ha affermato di aver ottenuto report SOC 2 di tipo 2 in base ai criteri applicabili per i servizi di trust.
+
+https://www.netapp.com/company/trust-center/compliance/soc-2/["Visualizza i report SOC 2 di NetApp"^].
+
+
+
+=== Il connettore non è più supportato come proxy
+
+Non è più possibile utilizzare Cloud Manager Connector come server proxy per inviare messaggi AutoSupport da Cloud Volumes ONTAP. Questa funzionalità è stata rimossa e non è più supportata. È necessario fornire la connettività AutoSupport tramite un'istanza NAT o i servizi proxy dell'ambiente.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-verify-autosupport.html["Scopri di più sulla verifica di AutoSupport con Cloud Volumes ONTAP"^]
+
+
+
+== 31 ottobre 2021
+
+
+
+=== Autenticazione con service principal
+
+Quando si crea un nuovo connettore in Microsoft Azure, è ora possibile autenticarsi con un'entità del servizio Azure, anziché con le credenziali dell'account Azure.
+
+link:task-creating-connectors-azure.html#create-a-connector-using-a-service-principal["Scopri come eseguire l'autenticazione con un service principal Azure"].
+
+
+
+=== Miglioramento delle credenziali
+
+Abbiamo riprogettato la pagina delle credenziali per una maggiore facilità di utilizzo e per adattarsi all'aspetto attuale dell'interfaccia di Cloud Manager.
+
+
+
+== 2 settembre 2021
+
+
+
+=== È stato aggiunto un nuovo servizio di notifica
+
+Il servizio di notifica è stato introdotto per visualizzare lo stato delle operazioni di Cloud Manager avviate durante la sessione di accesso corrente. È possibile verificare se l'operazione è stata eseguita correttamente o se non è riuscita. link:task-monitor-cm-operations.html["Scopri come monitorare le operazioni nell'account"].
+
+
+
+== 7 luglio 2021
+
+
+
+=== Miglioramenti alla procedura guidata Aggiungi connettore
+
+Abbiamo riprogettato la procedura guidata *Add Connector* per aggiungere nuove opzioni e semplificarne l'utilizzo. È ora possibile aggiungere tag, specificare un ruolo (per AWS o Azure), caricare un certificato root per un server proxy, visualizzare il codice per l'automazione Terraform, visualizzare i dettagli di avanzamento e molto altro ancora.
+
+* link:task-creating-connectors-aws.html["Creare un connettore in AWS"]
+* link:task-creating-connectors-azure.html["Creare un connettore in Azure"]
+* link:task-creating-connectors-gcp.html["Creare un connettore in Google Cloud"]
+
+
+
+
+=== Gestione dell'account NSS da Support Dashboard
+
+Gli account NetApp Support Site (NSS) sono ora gestiti dalla dashboard di supporto, anziché dal menu Impostazioni. Questa modifica semplifica la ricerca e la gestione di tutte le informazioni relative al supporto da un'unica posizione.
+
+link:task-adding-nss-accounts.html["Scopri come gestire gli account NSS"].
+
+image:screenshot_nss_management.png["Schermata della scheda Gestione NSS nella dashboard di supporto, in cui è possibile aggiungere account NSS."]
+
+
+
+== 5 maggio 2021
+
+
+
+=== Account nella timeline
+
+La cronologia di Cloud Manager mostra ora le azioni e gli eventi relativi alla gestione dell'account. Le azioni includono elementi come l'associazione degli utenti, la creazione di aree di lavoro e la creazione di connettori. Controllare la cronologia può essere utile se è necessario identificare chi ha eseguito un'azione specifica o se è necessario identificare lo stato di un'azione.
+
+link:task-monitor-cm-operations.html#auditing-user-activity-in-your-account["Scopri come filtrare la timeline per il servizio tenancy"].
+
+
+
+== 11 aprile 2021
+
+
+
+=== API chiama direttamente Cloud Manager
+
+Se è stato configurato un server proxy, è ora possibile attivare un'opzione per inviare chiamate API direttamente a Cloud Manager senza utilizzare il proxy. Questa opzione è supportata con i connettori in esecuzione in AWS o in Google Cloud.
+
+link:task-configuring-proxy.html["Scopri di più su questa impostazione"].
+
+
+
+=== Utenti dell'account di servizio
+
+È ora possibile creare un utente dell'account di servizio.
+
+Un account di servizio agisce come un "utente" che può effettuare chiamate API autorizzate a Cloud Manager per scopi di automazione. In questo modo è più semplice gestire l'automazione, poiché non è necessario creare script di automazione basati sull'account utente di una persona reale che può lasciare l'azienda in qualsiasi momento. E se utilizzi la federazione, puoi creare un token senza generare un token di refresh dal cloud.
+
+link:task-managing-netapp-accounts.html#creating-and-managing-service-accounts["Scopri di più sull'utilizzo degli account di servizio"].
+
+
+
+=== Anteprime private
+
+Ora puoi consentire anteprime private nel tuo account per accedere ai nuovi servizi cloud di NetApp man mano che vengono resi disponibili come anteprima in Cloud Manager.
+
+link:task-managing-netapp-accounts.html#allowing-private-previews["Scopri di più su questa opzione"].
+
+
+
+=== Servizi di terze parti
+
+Puoi anche consentire ai servizi di terze parti del tuo account di accedere ai servizi di terze parti disponibili in Cloud Manager.
+
+link:task-managing-netapp-accounts.html#allowing-third-party-services["Scopri di più su questa opzione"].
+
+
+
+== 9 febbraio 2021
+
+
+
+=== Miglioramenti della dashboard di supporto
+
+Abbiamo aggiornato il Support Dashboard, consentendoti di aggiungere le tue credenziali NetApp Support Site, che ti registrano per il supporto. Puoi anche avviare un caso di supporto NetApp direttamente dalla dashboard. Fare clic sull'icona Guida e quindi su *supporto*.

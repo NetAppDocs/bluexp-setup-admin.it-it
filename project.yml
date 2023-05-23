@@ -1,0 +1,295 @@
+---
+settings:
+  name: Setup and administration
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: it-it,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr
+sidebar:
+  entries:
+  - title: Documenti di installazione e amministrazione
+    url: "/index.html"
+  - title: Note di rilascio
+    entries:
+    - title: Novità
+      url: "/whats-new.html"
+    - title: Limitazioni
+      url: "/reference-limitations.html"
+  - title: Inizia subito
+    entries:
+    - title: Scopri le nozioni di base
+      entries:
+      - title: Panoramica di BlueXP
+        url: "/concept-overview.html"
+      - title: Account
+        url: "/concept-netapp-accounts.html"
+      - title: Connettori
+        url: "/concept-connectors.html"
+      - title: Modalità di implementazione
+        url: "/concept-modes.html"
+    - title: Inizia con la modalità standard
+      entries:
+      - title: Avvio rapido
+        url: "/task-quick-start-standard-mode.html"
+      - title: Rete per l'accesso alla console
+        url: "/reference-networking-saas-console.html"
+      - title: Iscriviti a BlueXP
+        url: "/task-sign-up-saas.html"
+      - title: Accedere a BlueXP
+        url: "/task-logging-in.html"
+      - title: Creare un connettore
+        entries:
+        - title: AWS
+          entries:
+          - title: Avvio rapido
+            url: "/task-quick-start-connector-aws.html"
+          - title: Opzioni di installazione
+            url: "/concept-install-options-aws.html"
+          - title: Configurare la rete
+            url: "/task-set-up-networking-aws.html"
+          - title: Esaminare i requisiti dell'host
+            url: "/reference-host-requirements-aws.html"
+          - title: Impostare le autorizzazioni AWS
+            url: "/task-set-up-permissions-aws.html"
+          - title: Creare il connettore
+            url: "/task-install-connector-aws.html"
+          - title: Fornire le autorizzazioni a BlueXP
+            url: "/task-provide-permissions-aws.html"
+        - title: Azure
+          entries:
+          - title: Avvio rapido
+            url: "/task-quick-start-connector-azure.html"
+          - title: Opzioni di installazione
+            url: "/concept-install-options-azure.html"
+          - title: Configurare la rete
+            url: "/task-set-up-networking-azure.html"
+          - title: Esaminare i requisiti dell'host
+            url: "/reference-host-requirements-azure.html"
+          - title: Impostare le autorizzazioni Azure
+            url: "/task-set-up-permissions-azure.html"
+          - title: Creare il connettore
+            url: "/task-install-connector-azure.html"
+          - title: Fornire le autorizzazioni a BlueXP
+            url: "/task-provide-permissions-azure.html"
+        - title: Google Cloud
+          entries:
+          - title: Avvio rapido
+            url: "/task-quick-start-connector-google.html"
+          - title: Opzioni di installazione
+            url: "/concept-install-options-google.html"
+          - title: Configurare la rete
+            url: "/task-set-up-networking-google.html"
+          - title: Esaminare i requisiti dell'host
+            url: "/reference-host-requirements-google.html"
+          - title: Impostare le autorizzazioni di Google Cloud
+            url: "/task-set-up-permissions-google.html"
+          - title: Abilitare le API di Google Cloud
+            url: "/task-enable-apis-google.html"
+          - title: Creare il connettore
+            url: "/task-install-connector-google.html"
+          - title: Fornire le autorizzazioni a BlueXP
+            url: "/task-provide-permissions-google.html"
+        - title: On-premise
+          entries:
+          - title: Avvio rapido
+            url: "/task-quick-start-connector-on-prem.html"
+          - title: Configurare la rete
+            url: "/task-set-up-networking-on-prem.html"
+          - title: Esaminare i requisiti dell'host
+            url: "/reference-host-requirements-on-prem.html"
+          - title: Impostare le autorizzazioni cloud
+            url: "/task-set-up-permissions-on-prem.html"
+          - title: Creare il connettore
+            url: "/task-install-connector-on-prem.html"
+          - title: Fornire le autorizzazioni a BlueXP
+            url: "/task-provide-permissions-on-prem.html"
+      - title: Iscriviti a BlueXP
+        url: "/task-subscribe-standard-mode.html"
+      - title: Cosa fare in seguito
+        url: "/reference-whats-next.html"
+    - title: Inizia con la modalità limitata
+      entries:
+      - title: Avvio rapido
+        url: "/task-quick-start-restricted-mode.html"
+      - title: Prepararsi per l'implementazione
+        url: "/task-prepare-restricted-mode.html"
+      - title: Implementare il connettore
+        url: "/task-install-restricted-mode.html"
+      - title: Accedere a BlueXP
+        url: "/task-log-in-restricted-mode.html"
+      - title: Iscriviti a BlueXP
+        url: "/task-subscribe-restricted-mode.html"
+      - title: Cosa fare in seguito
+        url: "/reference-whats-next-restricted-mode.html"
+    - title: Inizia con la modalità privata
+      entries:
+      - title: Avvio rapido
+        url: "/task-quick-start-private-mode.html"
+      - title: Prepararsi per l'implementazione
+        url: "/task-prepare-private-mode.html"
+      - title: Implementare il connettore
+        url: "/task-install-private-mode.html"
+      - title: Accedere a BlueXP
+        url: "/task-log-in-private-mode.html"
+      - title: Cosa fare in seguito
+        url: "/reference-whats-next-private-mode.html"
+  - title: Amministrare BlueXP
+    entries:
+    - title: Federazione delle identità
+      url: "/concept-federation.html"
+    - title: BlueXP
+      entries:
+      - title: Gestisci il tuo account
+        url: "/task-managing-netapp-accounts.html"
+      - title: Monitorare le operazioni nell'account
+        url: "/task-monitor-cm-operations.html"
+      - title: Creare un altro account
+        url: "/task-create-account.html"
+      - title: Ruoli utente
+        url: "/reference-user-roles.html"
+    - title: Connettori
+      entries:
+      - title: Individuare l'ID di sistema di un connettore
+        url: "/task-finding-system-id.html"
+      - title: Gestire i connettori esistenti
+        url: "/task-managing-connectors.html"
+      - title: Installare un certificato HTTPS
+        url: "/task-installing-https-cert.html"
+      - title: Configurare le impostazioni del proxy
+        url: "/task-configuring-proxy.html"
+      - title: Configurazione predefinita
+        url: "/reference-connector-default-config.html"
+    - title: Credenziali
+      entries:
+      - title: Gestire le credenziali AWS
+        entries:
+        - title: Panoramica
+          url: "/concept-accounts-aws.html"
+        - title: Gestire credenziali e sottoscrizioni
+          url: "/task-adding-aws-accounts.html"
+      - title: Gestire le credenziali Azure
+        entries:
+        - title: Panoramica
+          url: "/concept-accounts-azure.html"
+        - title: Gestire credenziali e sottoscrizioni
+          url: "/task-adding-azure-accounts.html"
+      - title: Gestire le credenziali Google Cloud
+        entries:
+        - title: Panoramica
+          url: "/concept-accounts-gcp.html"
+        - title: Gestire credenziali e sottoscrizioni
+          url: "/task-adding-gcp-accounts.html"
+      - title: Gestire le credenziali NSS associate a un account BlueXP
+        url: "/task-adding-nss-accounts.html"
+      - title: Gestire le credenziali associate all'accesso a BlueXP
+        url: "/task-manage-user-credentials.html"
+    - title: Scoperta dello storage cloud
+      entries:
+      - title: Gestisci i bucket Amazon S3
+        url: "/task-viewing-amazon-s3.html"
+      - title: Visualizza i tuoi account Azure Blob
+        url: "/task-viewing-azure-blob.html"
+      - title: Visualizza i bucket di storage Google Cloud
+        url: "/task-viewing-gcp-storage.html"
+  - title: Riferimento
+    entries:
+    - title: Permessi
+      entries:
+      - title: Riepilogo delle autorizzazioni
+        url: "/reference-permissions.html"
+      - title: Autorizzazioni AWS per il connettore
+        url: "/reference-permissions-aws.html"
+      - title: Autorizzazioni Azure per il connettore
+        url: "/reference-permissions-azure.html"
+      - title: Permessi Google Cloud per il connettore
+        url: "/reference-permissions-gcp.html"
+    - title: Porte
+      entries:
+      - title: Regole del gruppo di sicurezza in AWS
+        url: "/reference-ports-aws.html"
+      - title: Regole del gruppo di sicurezza in Azure
+        url: "/reference-ports-azure.html"
+      - title: Regole del firewall in Google Cloud
+        url: "/reference-ports-gcp.html"
+      - title: Porte per il connettore on-premise
+        url: "/reference-ports-on-prem.html"
+  - title: Conoscenza e supporto
+    entries:
+    - title: Registrati per ricevere assistenza
+      url: "/task-support-registration.html"
+    - title: Richiedi assistenza
+      url: "/task-get-help.html"
+  - title: Note legali
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: Inizia subito
+    links:
+    - title: Scopri BlueXP
+      url: concept-overview.html
+    - title: Scopri le modalità di implementazione
+      url: concept-modes.html
+    - title: Inizia con la modalità standard
+      url: "/task-quick-start-standard-mode.html"
+    - title: Inizia con la modalità limitata
+      url: "/task-quick-start-restricted-mode.html"
+    - title: Inizia con la modalità privata
+      url: "/task-quick-start-private-mode.html"
+  - title: BlueXP
+    links:
+    - title: Scopri di più sugli account BlueXP
+      url: concept-netapp-accounts.html
+    - title: Gestisci il tuo account BlueXP
+      url: task-managing-netapp-accounts.html
+    - title: Monitorare le operazioni nell'account
+      url: task-monitor-cm-operations.html
+  - title: Connettori
+    links:
+    - title: Scopri di più sui connettori
+      url: concept-connectors.html
+    - title: Creazione di un connettore in AWS (modalità standard)
+      url: task-quick-start-connector-aws.html
+    - title: Creazione di un connettore in Azure (modalità standard)
+      url: task-quick-start-connector-azure.html
+    - title: Creazione di un connettore in Google Cloud (modalità standard)
+      url: task-quick-start-connector-google.html
+    - title: Creazione di un connettore on-premise (modalità standard)
+      url: task-quick-start-connector-on-prem.html
+    - title: Gestire i connettori
+      url: task-managing-connectors.html
+  - title: Permessi
+    links:
+    - title: Riepilogo delle autorizzazioni
+      url: reference-permissions.html
+    - title: Autorizzazioni AWS per il connettore
+      url: reference-permissions-aws.html
+    - title: Autorizzazioni Azure per il connettore
+      url: reference-permissions-azure.html
+    - title: Permessi Google Cloud per il connettore
+      url: reference-permissions-gcp.html
+  - title: Credenziali
+    links:
+    - title: Gestire le credenziali AWS
+      url: task-adding-aws-accounts.html
+    - title: Gestire le credenziali Azure
+      url: task-adding-azure-accounts.html
+    - title: Gestire le credenziali Google Cloud
+      url: task-adding-gcp-accounts.html
+    - title: Gestisci le credenziali NSS per il tuo account
+      url: task-adding-nss-accounts.html
+  - title: Blog e community
+    links:
+    - title: Community NetApp
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: Blog BlueXP
+      url: https://bluexp.netapp.com/blog
+    - title: Webinar sul cloud
+      url: https://bluexp.netapp.com/events
+product-family:
+  name: BlueXP
+  repo: cloud-manager-family
+  sidebar_label: Tutta la documentazione BlueXP

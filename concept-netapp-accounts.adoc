@@ -1,0 +1,102 @@
+---
+sidebar: sidebar 
+permalink: concept-netapp-accounts.html 
+keywords: accounts, workspaces, Connector, users, BlueXP website, admin, Account Admin, Workspace Admin, account settings, workspaces, users, members, connector, service connector, user accounts, what are users, what is a workspace, users and workspaces, bluexp account, netapp account 
+summary: 'Un account BlueXP offre la multi-tenancy per la tua organizzazione, consentendo di organizzare utenti e risorse in aree di lavoro isolate. Ad esempio, un gruppo di utenti può implementare e gestire i sistemi Cloud Volumes ONTAP in un"area di lavoro non visibile agli altri utenti.' 
+---
+= Scopri di più sugli account BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Un _account BlueXP_ fornisce la multi-tenancy per la tua organizzazione, consentendo di organizzare utenti e risorse in _aree di lavoro_ isolate. Ad esempio, un gruppo di utenti può implementare e gestire i sistemi Cloud Volumes ONTAP in un'area di lavoro non visibile agli altri utenti.
+
+Quando accedi per la prima volta a BlueXP, ti viene richiesto di selezionare o creare un account. Ad esempio, se non si dispone ancora di un account, viene visualizzata la seguente schermata:
+
+image:screenshot-account-selection.png["Una schermata dell'installazione guidata di BlueXP che richiede l'account BlueXP in cui si desidera creare BlueXP."]
+
+BlueXP account Admins può quindi modificare le impostazioni per questo account gestendo utenti (membri), aree di lavoro e connettori:
+
+image:screenshot-account-settings.png["Una schermata che mostra il widget Manage account (Gestisci account) da cui è possibile gestire utenti, aree di lavoro e connettori."]
+
+link:task-managing-netapp-accounts.html["Scopri come gestire il tuo account BlueXP"].
+
+
+
+== Modalità di implementazione
+
+BlueXP offre le seguenti modalità di implementazione per l'account: Modalità standard, modalità limitata e modalità privata. Queste modalità supportano ambienti con diversi livelli di sicurezza e limitazioni di connettività.
+
+link:concept-modes.html["Scopri di più sulle modalità di implementazione di BlueXP"].
+
+
+
+== Membri
+
+I membri sono utenti BlueXP che si associano al proprio account BlueXP. L'associazione di un utente a un account e a una o più aree di lavoro in tale account consente a tali utenti di creare e gestire ambienti di lavoro in BlueXP.
+
+Quando si associa un utente, viene assegnato un ruolo:
+
+* _Account Admin_: Può eseguire qualsiasi azione in BlueXP.
+* _Workspace Admin_: Consente di creare e gestire le risorse nell'area di lavoro assegnata.
+* _Compliance Viewer_: È in grado di visualizzare solo le informazioni di conformità per la classificazione BlueXP e generare report per le aree di lavoro a cui sono autorizzati ad accedere.
+
+
+link:reference-user-roles.html["Scopri di più su questi ruoli"].
+
+
+
+== Aree di lavoro
+
+In BlueXP, un'area di lavoro isola qualsiasi numero di _ambienti di lavoro_ da altri utenti dell'account. Gli amministratori dell'area di lavoro non possono accedere agli ambienti di lavoro in un'area di lavoro a meno che l'amministratore dell'account non colleghi l'amministratore a tale area di lavoro.
+
+Un ambiente di lavoro rappresenta un sistema storage. Ad esempio:
+
+* Un sistema Cloud Volumes ONTAP
+* Un cluster ONTAP on-premise
+* Un cluster Kubernetes
+
+
+link:task-setting-up-netapp-accounts.html["Scopri come aggiungere un'area di lavoro"].
+
+
+
+== Connettori
+
+Un connettore esegue le azioni che BlueXP deve eseguire per gestire l'infrastruttura dati. Il connettore viene eseguito su un'istanza di macchina virtuale implementata nel cloud provider o su un host on-premise configurato.
+
+È possibile utilizzare un connettore con più di un servizio BlueXP. Ad esempio, se si utilizza un connettore per gestire Cloud Volumes ONTAP, è possibile utilizzare lo stesso connettore con un altro servizio come il tiering BlueXP.
+
+link:concept-connectors.html["Scopri di più sui connettori"].
+
+
+
+== Esempi
+
+I seguenti esempi illustrano come configurare gli account.
+
+
+NOTE: In entrambe le immagini di esempio che seguono, il connettore e i sistemi Cloud Volumes ONTAP non risiedono in realtà _nell'account BlueXP--sono in esecuzione in un provider cloud. Si tratta di una rappresentazione concettuale della relazione tra ciascun componente.
+
+
+
+=== Più aree di lavoro
+
+Nell'esempio riportato di seguito viene illustrato un account che utilizza due aree di lavoro per creare ambienti isolati. Il primo spazio di lavoro è per un ambiente di produzione e il secondo per un ambiente di sviluppo.
+
+image:diagram_cloud_central_accounts_one.png["Un diagramma che mostra un singolo account BlueXP che contiene due aree di lavoro. Ogni area di lavoro è associata allo stesso connettore e dispone di un proprio Workspace Admin"]
+
+
+
+=== Account multipli
+
+Ecco un altro esempio che mostra il più alto livello di multi-tenancy utilizzando due account BlueXP separati. Ad esempio, un provider di servizi potrebbe utilizzare BlueXP in un account per fornire servizi ai propri clienti, mentre un altro account per fornire il disaster recovery per una delle proprie business unit.
+
+L'account 2 include due connettori separati. Questo potrebbe verificarsi se i sistemi sono in regioni separate o in provider cloud separati.
+
+image:diagram_cloud_central_accounts_two.png["Un diagramma che mostra due account BlueXP, ciascuno con diverse aree di lavoro e i relativi Workspace Admins associati."]

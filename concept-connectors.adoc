@@ -1,0 +1,229 @@
+---
+sidebar: sidebar 
+permalink: concept-connectors.html 
+keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery' 
+summary: 'Un connettore è il software NetApp in esecuzione nella rete cloud o on-premise. Esegue le azioni che BlueXP deve eseguire per gestire l"infrastruttura dati. Il connettore esegue costantemente il polling del livello BlueXP SaaS per individuare eventuali azioni da intraprendere. Non è necessario un connettore per iniziare a utilizzare BlueXP, ma è necessario creare un connettore per sbloccare tutte le funzionalità e i servizi di BlueXP.' 
+---
+= Scopri di più sui connettori
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Un _connettore_ è il software NetApp in esecuzione nella rete cloud o on-premise. Esegue le azioni che BlueXP deve eseguire per gestire l'infrastruttura dati. Il connettore esegue costantemente il polling del livello BlueXP SaaS per individuare eventuali azioni da intraprendere. Non è necessario un connettore per iniziare a utilizzare BlueXP, ma è necessario creare un connettore per sbloccare tutte le funzionalità e i servizi di BlueXP.
+
+
+
+== Cosa puoi fare senza un connettore
+
+Non è necessario un connettore per iniziare a utilizzare BlueXP. È possibile utilizzare diverse funzionalità e servizi in BlueXP senza creare alcun connettore.
+
+È possibile utilizzare le seguenti funzionalità e servizi BlueXP senza un connettore:
+
+* Creazione dell'ambiente di lavoro Amazon FSX per NetApp ONTAP
++
+Sebbene non sia necessario un connettore per creare un ambiente di lavoro, è necessario creare e gestire volumi, replicare i dati e integrare FSX per ONTAP con servizi come la classificazione BlueXP e la copia e la sincronizzazione BlueXP.
+
+* Azure NetApp Files
++
+Sebbene non sia necessario un connettore per configurare e gestire Azure NetApp Files, è necessario un connettore per utilizzare la classificazione BlueXP per eseguire la scansione dei dati Azure NetApp Files.
+
+* Cloud Volumes Service per Google Cloud
+* Copia e sincronizzazione
+* Consulente digitale
+* Portafoglio digitale
++
+In quasi tutti i casi, è possibile aggiungere una licenza al portafoglio digitale senza un connettore.
+
++
+Per aggiungere una licenza al portafoglio digitale è necessario un connettore solo per le licenze Cloud Volumes ONTAP _basate su nodo_. In questo caso, è necessario un connettore perché i dati provengono dalle licenze installate sui sistemi Cloud Volumes ONTAP.
+
+* Rilevamento diretto dei cluster ONTAP on-premise
++
+Sebbene non sia necessario un connettore per il rilevamento diretto di un cluster ONTAP on-premise, è necessario un connettore per sfruttare le funzionalità aggiuntive di BlueXP.
+
++
+https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Scopri di più sulle opzioni di rilevamento e gestione dei cluster ONTAP on-premise"^]
+
+
+
+
+
+== Quando è necessario un connettore
+
+Quando si utilizza BlueXP in modalità standard, è necessario un connettore per le seguenti funzionalità e servizi in BlueXP:
+
+* Funzionalità di gestione di Amazon FSX per ONTAP
+* Discovery Amazon S3
+* Scoperta di Azure Blob
+* Backup e recovery
+* Classificazione
+* Cloud Volumes ONTAP
+* Sistemi e-Series
+* Efficienza economica ^1^
+* Caching edge
+* Rilevamento di Google Cloud Storage
+* Cluster Kubernetes
+* Integrazione del cluster ONTAP on-premise con i servizi dati BlueXP
+* Resilienza operativa ^1^
+* Sistemi StorageGRID
+* Tiering
+
+
+^1^ sebbene sia possibile accedere a questi servizi senza un connettore, è necessario un connettore per avviare azioni dai servizi.
+
+
+
+== I connettori devono essere sempre operativi
+
+I connettori sono una parte fondamentale dell'architettura del servizio BlueXP. È tua responsabilità garantire che i connettori pertinenti siano sempre attivi, operativi e accessibili. Sebbene il servizio sia progettato per superare brevi interruzioni della disponibilità del connettore, è necessario intraprendere azioni immediate quando è necessario rimediare ai guasti dell'infrastruttura.
+
+La presente documentazione è disciplinata dall'EULA. Se il prodotto non viene utilizzato in conformità con la documentazione, la funzionalità e il funzionamento del prodotto, nonché i diritti dell'utente previsti dal Contratto di licenza con l'utente finale, potrebbero risentire negativamente.
+
+
+
+=== Impatto su Cloud Volumes ONTAP
+
+Un connettore è un componente chiave per lo stato e il funzionamento di Cloud Volumes ONTAP. Se un connettore viene spento, i sistemi PAYGO Cloud Volumes ONTAP e i sistemi BYOL basati sulla capacità si arrestano dopo aver perso la comunicazione con un connettore per più di 14 giorni. Questo accade perché il connettore aggiorna le licenze sul sistema ogni giorno.
+
+Se il sistema Cloud Volumes ONTAP dispone di una licenza BYOL basata su nodo, il sistema rimane in esecuzione dopo 14 giorni perché la licenza è installata sul sistema Cloud Volumes ONTAP.
+
+
+
+== Posizioni supportate
+
+Un connettore è supportato nelle seguenti posizioni:
+
+* Amazon Web Services
+* Microsoft Azure
++
+Un connettore in Azure deve essere implementato nella stessa regione di Azure dei sistemi Cloud Volumes ONTAP che gestisce o in https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Coppia di regioni Azure"^] Per i sistemi Cloud Volumes ONTAP. Questo requisito garantisce l'utilizzo di una connessione Azure Private link tra Cloud Volumes ONTAP e i relativi account di storage associati. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Scopri come Cloud Volumes ONTAP utilizza un collegamento privato Azure"^]
+
+* Google Cloud
++
+Se si desidera utilizzare i servizi BlueXP con Google Cloud, è necessario utilizzare un connettore in esecuzione in Google Cloud.
+
+* On-premise
+
+
+
+
+== Modalità limitata e modalità privata
+
+Per utilizzare BlueXP in modalità limitata o privata, è possibile iniziare a utilizzare BlueXP installando il connettore e accedendo all'interfaccia utente in esecuzione localmente sul connettore.
+
+link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"].
+
+
+
+== Come creare un connettore
+
+Un account Admin BlueXP può creare un connettore direttamente da BlueXP, dal mercato del tuo cloud provider o installando manualmente il software sul tuo host Linux. Il modo in cui iniziare dipende dall'utilizzo di BlueXP in modalità standard, limitata o privata.
+
+* link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"]
+* link:task-quick-start-standard-mode.html["Avvio rapido per BlueXP in modalità standard"]
+* link:task-quick-start-restricted-mode.html["Avvio rapido per BlueXP in modalità limitata"]
+* link:task-quick-start-private-mode.html["Avvio rapido per BlueXP in modalità privata"]
+
+
+
+
+== Permessi
+
+Sono necessarie autorizzazioni specifiche per creare il connettore direttamente da BlueXP e un altro set di autorizzazioni per l'istanza del connettore stesso. Se si crea il connettore in AWS o Azure direttamente da BlueXP, BlueXP crea il connettore con le autorizzazioni necessarie.
+
+Per informazioni su come impostare le autorizzazioni, fare riferimento alle seguenti pagine:
+
+* Modalità standard
++
+** link:task-set-up-permissions-aws.html["Impostare le autorizzazioni AWS"]
+** link:task-set-up-permissions-azure.html["Impostare le autorizzazioni Azure"]
+** link:task-set-up-permissions-google.html["Impostare le autorizzazioni di Google Cloud"]
+** link:task-set-up-permissions-on-prem.html["Impostare le autorizzazioni cloud per le implementazioni on-premise"]
+
+
+* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Impostare le autorizzazioni cloud per la modalità limitata"]
+* link:task-prepare-private-mode.html#prepare-cloud-permissions["Impostare le autorizzazioni cloud per la modalità privata"]
+
+
+Per visualizzare le autorizzazioni necessarie per il connettore, fare riferimento alle seguenti pagine:
+
+* link:reference-permissions-aws.html["Scopri come il connettore utilizza le autorizzazioni AWS"]
+* link:reference-permissions-azure.html["Scopri come il connettore utilizza le autorizzazioni Azure"]
+* link:reference-permissions-gcp.html["Scopri come Connector utilizza le autorizzazioni Google Cloud"]
+
+
+
+
+== Aggiornamenti del connettore
+
+Di solito aggiorniamo il software del connettore ogni mese per introdurre nuove funzionalità e migliorare la stabilità. Sebbene la maggior parte dei servizi e delle funzionalità della piattaforma BlueXP sia offerta tramite software basato su SaaS, alcune funzionalità dipendono dalla versione del connettore. Che include la gestione Cloud Volumes ONTAP, la gestione del cluster ONTAP on-premise, le impostazioni e la guida.
+
+Il connettore aggiorna automaticamente il software alla versione più recente, purché disponga dell'accesso a Internet in uscita per ottenere l'aggiornamento software. Se si utilizza BlueXP in modalità privata, è necessario aggiornare manualmente il connettore.
+
+link:task-managing-connectors.html["Scopri come aggiornare manualmente il software del connettore"].
+
+
+
+== Manutenzione del sistema operativo e delle macchine virtuali
+
+La manutenzione del sistema operativo sull'host del connettore è responsabilità dell'utente. Ad esempio, è necessario applicare gli aggiornamenti per la protezione al sistema operativo sull'host del connettore seguendo le procedure standard dell'azienda per la distribuzione del sistema operativo.
+
+Tenere presente che non è necessario interrompere alcun servizio sull'host del connettore quando si esegue un aggiornamento del sistema operativo.
+
+Se è necessario arrestare e avviare la macchina virtuale del connettore, è necessario farlo dalla console del provider di cloud o utilizzando le procedure standard per la gestione on-premise.
+
+<<I connettori devono essere sempre operativi,Tenere presente che il connettore deve essere sempre operativo>>.
+
+
+
+== Ambienti di lavoro multipli
+
+Un connettore può gestire più ambienti di lavoro in BlueXP. Il numero massimo di ambienti di lavoro che un singolo connettore deve gestire varia. Dipende dal tipo di ambiente di lavoro, dal numero di volumi, dalla quantità di capacità gestita e dal numero di utenti.
+
+Se disponi di un'implementazione su larga scala, collabora con il tuo rappresentante NetApp per dimensionare il tuo ambiente. In caso di problemi durante il percorso, contattaci utilizzando la chat integrata nel prodotto.
+
+
+
+== Connettori multipli
+
+In alcuni casi, potrebbe essere necessario un solo connettore, ma potrebbero essere necessari due o più connettori.
+
+Ecco alcuni esempi:
+
+* Si dispone di un ambiente multi-cloud (ad esempio, AWS e Azure) e si preferisce avere un connettore in AWS e un altro in Azure. Ciascuno di essi gestisce i sistemi Cloud Volumes ONTAP in esecuzione in tali ambienti.
+* Un provider di servizi potrebbe utilizzare un account BlueXP per fornire servizi ai propri clienti, mentre utilizza un altro account per fornire il disaster recovery per una delle proprie business unit. Ciascun account dispone di connettori separati.
+
+
+
+
+=== Quando cambiare
+
+Quando si crea il primo connettore, BlueXP utilizza automaticamente tale connettore per ogni ambiente di lavoro aggiuntivo creato. Una volta creato un connettore aggiuntivo, è necessario passare da un connettore all'altro per visualizzare gli ambienti di lavoro specifici di ciascun connettore.
+
+link:task-managing-connectors.html["Scopri come passare da un connettore all'altro"].
+
+
+
+=== Disaster recovery
+
+È possibile gestire un ambiente di lavoro con più connettori contemporaneamente per scopi di disaster recovery. Se un connettore si spegne, è possibile passare all'altro connettore per gestire immediatamente l'ambiente di lavoro.
+
+Per impostare questa configurazione:
+
+. link:task-managing-connectors.html["Passare a un altro connettore"].
+. Scopri l'ambiente di lavoro esistente.
++
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["Aggiungere sistemi Cloud Volumes ONTAP esistenti a BlueXP"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Scopri i cluster ONTAP"^]
+
+
+. Impostare https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-storage-management.html["Modalità di gestione della capacità"^]
++
+Solo il connettore principale deve essere impostato su *Automatic Mode* (modalità automatica). Se si passa a un altro connettore per scopi di DR, è possibile modificare la modalità di gestione della capacità in base alle esigenze.
+
+

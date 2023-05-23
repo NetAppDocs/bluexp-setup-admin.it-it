@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: task-viewing-amazon-s3.html 
+keywords: s3 buckets, s3 storage, s3 working environment, amazon s3 buckets, amazon s3 working environment 
+summary: 'Dopo aver installato un connettore in AWS, BlueXP è in grado di rilevare automaticamente le informazioni sui bucket Amazon S3 che si trovano nell"account AWS in cui è installato il connettore. In Canvas viene aggiunto un ambiente di lavoro Amazon S3, in modo da poter visualizzare queste informazioni.' 
+---
+= Gestisci i bucket Amazon S3
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Dopo aver installato un connettore in AWS, BlueXP è in grado di rilevare automaticamente le informazioni sui bucket Amazon S3 che si trovano nell'account AWS in cui è installato il connettore. In Canvas viene aggiunto un ambiente di lavoro Amazon S3, in modo da poter visualizzare queste informazioni.
+
+image:screenshot-amazon-s3-we.png["Schermata di un ambiente di lavoro Amazon S3."]
+
+Puoi visualizzare i dettagli sui bucket S3, tra cui la regione, la policy di accesso, l'account, la capacità totale e utilizzata e molto altro ancora. Questi bucket possono essere utilizzati come destinazioni per le operazioni di backup e ripristino BlueXP, tiering BlueXP o copia e sincronizzazione BlueXP. Inoltre, è possibile utilizzare la classificazione BlueXP per eseguire la scansione di questi bucket.
+
+Una nuova funzionalità aggiunta consente ora di creare e modificare i bucket S3. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["Fai clic qui per scoprire come visualizzare, creare e gestire i bucket S3 utilizzando BlueXP"^]

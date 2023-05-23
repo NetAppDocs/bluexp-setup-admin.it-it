@@ -1,0 +1,75 @@
+---
+sidebar: sidebar 
+permalink: concept-accounts-azure.html 
+keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials 
+summary: Scopri come BlueXP utilizza le credenziali e le autorizzazioni Azure per eseguire azioni per tuo conto. La comprensione di questi dettagli può essere utile quando si gestiscono le credenziali per una o più sottoscrizioni Azure. Ad esempio, potrebbe essere utile sapere quando aggiungere ulteriori credenziali Azure a BlueXP. 
+---
+= Credenziali e permessi di Azure
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Scopri come BlueXP utilizza le credenziali e le autorizzazioni Azure per eseguire azioni per tuo conto. La comprensione di questi dettagli può essere utile quando si gestiscono le credenziali per una o più sottoscrizioni Azure. Ad esempio, potrebbe essere utile sapere quando aggiungere ulteriori credenziali Azure a BlueXP.
+
+
+
+== Credenziali iniziali di Azure
+
+Quando si implementa un connettore da BlueXP, è necessario utilizzare un account Azure o un'entità di servizio che disponga delle autorizzazioni necessarie per implementare la macchina virtuale del connettore. Le autorizzazioni richieste sono elencate nella link:task-set-up-permissions-azure.html["Policy di implementazione del connettore per Azure"].
+
+Quando BlueXP implementa la macchina virtuale del connettore in Azure, abilita una https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identità gestita assegnata dal sistema"^] sulla macchina virtuale, crea un ruolo personalizzato e lo assegna alla macchina virtuale. Il ruolo fornisce a BlueXP le autorizzazioni necessarie per gestire le risorse e i processi all'interno dell'abbonamento Azure. link:reference-permissions-azure.html["Analisi dell'utilizzo delle autorizzazioni da parte di BlueXP"].
+
+image:diagram_permissions_initial_azure.png["Immagine concettuale che mostra BlueXP che implementa un connettore in un account e un abbonamento Azure. Viene attivata un'identità gestita assegnata dal sistema e viene assegnato un ruolo personalizzato alla macchina virtuale del connettore."]
+
+BlueXP seleziona queste credenziali Azure per impostazione predefinita quando si crea un nuovo ambiente di lavoro per Cloud Volumes ONTAP:
+
+image:screenshot_accounts_select_azure.gif["Una schermata che mostra l'opzione Switch account (Cambia account) nella pagina Details  Credentials (Dettagli  credenziali)."]
+
+È possibile implementare tutti i sistemi Cloud Volumes ONTAP utilizzando le credenziali iniziali di Azure oppure aggiungere ulteriori credenziali.
+
+
+
+== Abbonamenti Azure aggiuntivi per un'identità gestita
+
+L'identità gestita assegnata dal sistema alla macchina virtuale del connettore è associata all'abbonamento con cui è stato avviato il connettore. Se si desidera selezionare un abbonamento Azure diverso, è necessario link:task-adding-azure-accounts.html#associating-additional-azure-subscriptions-with-a-managed-identity["associare l'identità gestita a tali sottoscrizioni"].
+
+
+
+== Credenziali Azure aggiuntive
+
+Se si desidera utilizzare credenziali Azure diverse con BlueXP, è necessario concedere le autorizzazioni richieste da link:task-adding-azure-accounts.html["Creazione e configurazione di un'entità di servizio in Azure Active Directory"] Per ciascun account Azure. L'immagine seguente mostra due account aggiuntivi, ciascuno configurato con un'entità del servizio e un ruolo personalizzato che fornisce le autorizzazioni:
+
+image:diagram_permissions_multiple_azure.png["Immagine concettuale che mostra l'account Azure iniziale, che riceve le autorizzazioni attraverso un ruolo personalizzato e un'identità gestita, e due account aggiuntivi che ricevono le autorizzazioni attraverso un ruolo personalizzato e un'entità del servizio."]
+
+Allora link:task-adding-azure-accounts.html#adding-azure-accounts-to-cloud-manager["Aggiungere le credenziali dell'account a BlueXP"] Fornendo dettagli sull'identità del servizio ad.
+
+Ad esempio, è possibile passare da una credenziale all'altra quando si crea un nuovo ambiente di lavoro Cloud Volumes ONTAP:
+
+image:screenshot_accounts_switch_azure.gif["Una schermata che mostra la selezione tra gli account del provider cloud dopo aver fatto clic su Cambia account nella pagina Dettagli  credenziali."]
+
+
+
+== E le implementazioni di Marketplace e on-premise?
+
+Le sezioni precedenti descrivono il metodo di implementazione consigliato per il connettore, fornito da BlueXP. È inoltre possibile implementare un connettore in Azure da Azure Marketplace e installare il software del connettore sul proprio host Linux.
+
+Se si utilizza Marketplace, è possibile fornire le autorizzazioni assegnando un ruolo personalizzato alla macchina virtuale del connettore e a un'identità gestita assegnata dal sistema oppure utilizzare l'entità del servizio Azure ad.
+
+Per le implementazioni on-premise, non è possibile impostare un'identità gestita per il connettore, ma è possibile fornire le autorizzazioni utilizzando un'identità di servizio.
+
+Per informazioni su come impostare le autorizzazioni, fare riferimento alle seguenti pagine:
+
+* Modalità standard
++
+** link:task-set-up-permissions-azure.html["Impostare le autorizzazioni Azure"]
+** link:task-set-up-permissions-on-prem.html["Impostare le autorizzazioni cloud per le implementazioni on-premise"]
+
+
+* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Impostare le autorizzazioni cloud per la modalità limitata"]
+* link:task-prepare-private-mode.html#prepare-cloud-permissions["Impostare le autorizzazioni cloud per la modalità privata"]
+

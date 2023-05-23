@@ -1,0 +1,260 @@
+---
+sidebar: sidebar 
+permalink: task-managing-connectors.html 
+keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager 
+summary: 'Dopo aver creato un connettore, potrebbe essere necessario gestirlo ogni tanto. Ad esempio, se si dispone di più connettori, è possibile passare da un connettore all"altro. In alternativa, potrebbe essere necessario aggiornare manualmente il connettore quando si utilizza BlueXP in modalità privata.' 
+---
+= Gestire i connettori esistenti
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Dopo aver creato un connettore, potrebbe essere necessario gestirlo ogni tanto. Ad esempio, se si dispone di più connettori, è possibile passare da un connettore all'altro. In alternativa, potrebbe essere necessario aggiornare manualmente il connettore quando si utilizza BlueXP in modalità privata.
+
+link:concept-connectors.html["Scopri come funzionano i connettori"].
+
+
+
+== Manutenzione del sistema operativo e delle macchine virtuali
+
+La manutenzione del sistema operativo sull'host del connettore è responsabilità dell'utente. Ad esempio, è necessario applicare gli aggiornamenti per la protezione al sistema operativo sull'host del connettore seguendo le procedure standard dell'azienda per la distribuzione del sistema operativo.
+
+Tenere presente che non è necessario interrompere alcun servizio sull'host del connettore quando si esegue un aggiornamento del sistema operativo.
+
+Se è necessario arrestare e avviare la macchina virtuale del connettore, è necessario farlo dalla console del provider di cloud o utilizzando le procedure standard per la gestione on-premise.
+
+link:concept-connectors.html#connectors-must-be-operational-at-all-times["Tenere presente che il connettore deve essere sempre operativo"].
+
+
+
+== Passare da un connettore all'altro
+
+Se si dispone di più connettori, è possibile passare da un connettore all'altro per visualizzare gli ambienti di lavoro associati a uno specifico connettore.
+
+Ad esempio, supponiamo di lavorare in un ambiente multi-cloud. In AWS potrebbe essere presente un connettore e in Google Cloud un altro connettore. Per gestire i sistemi Cloud Volumes ONTAP in esecuzione in tali cloud, è necessario passare da un connettore all'altro.
+
+.Fase
+. Selezionare l'elenco a discesa *Connector*, selezionare un altro connettore, quindi *Switch*.
++
+image:screenshot_connector_switch.gif["Una schermata che mostra l'icona del connettore nell'intestazione e l'azione Switch."]
+
+
+
+.Risultato
+BlueXP aggiorna e mostra gli ambienti di lavoro associati al connettore selezionato.
+
+
+
+== Scaricare o inviare un messaggio AutoSupport
+
+In caso di problemi, il personale NetApp potrebbe richiedere di inviare un messaggio AutoSupport al supporto NetApp per la risoluzione dei problemi.
+
+.Fasi
+. Nella parte superiore destra della console BlueXP, selezionare l'icona della Guida e selezionare *supporto*.
++
+image:screenshot-help-support.png["Schermata del menu Help (Guida) in cui Support (Assistenza) è la prima opzione elencata"]
+
+. Selezionare *BlueXP Connector*.
+. A seconda della modalità di invio delle informazioni al supporto NetApp, scegliere una delle seguenti opzioni:
++
+.. Selezionare l'opzione per scaricare il messaggio AutoSupport sul computer locale. Puoi quindi inviarla al supporto NetApp utilizzando un metodo preferito.
+.. Selezionare *Send AutoSupport* (Invia messaggio) per inviare direttamente il messaggio al supporto NetApp.
+
+
++
+image:screenshot-connector-autosupport.png["Una schermata della dashboard di supporto che mostra dove gli utenti possono scegliere di scaricare e inviare messaggi AutoSupport."]
+
+
+
+
+
+== Connettersi alla macchina virtuale Linux
+
+Per connettersi alla macchina virtuale Linux su cui viene eseguito il connettore, è possibile utilizzare le opzioni di connettività disponibili presso il provider di servizi cloud.
+
+AWS:: Quando è stata creata l'istanza del connettore in AWS, sono stati forniti una chiave di accesso AWS e una chiave segreta. È possibile utilizzare questa coppia di chiavi per SSH all'istanza.
++
+--
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS Docs (documenti AWS): Connettersi all'istanza di Linux"^]
+
+--
+Azure:: Quando si crea la macchina virtuale del connettore in Azure, si è scelto di eseguire l'autenticazione con una password o una chiave pubblica SSH. Utilizzare il metodo di autenticazione scelto per la connessione alla macchina virtuale.
++
+--
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Azure Docs: SSH nella macchina virtuale"^]
+
+--
+Google Cloud:: Non è possibile specificare un metodo di autenticazione quando si crea un connettore in Google Cloud. Tuttavia, è possibile connettersi all'istanza di Linux VM utilizzando Google Cloud Console o Google Cloud CLI (gcloud).
++
+--
+https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google Cloud Docs: Connessione a macchine virtuali Linux"^]
+
+--
+
+
+
+
+== Aggiornare il connettore quando si utilizza la modalità privata
+
+Se si utilizza BlueXP in modalità privata, è possibile aggiornare il connettore quando è disponibile una versione più recente dal NetApp Support Site.
+
+Il connettore deve essere riavviato durante il processo di aggiornamento, in modo che la console basata su Web non sia disponibile durante l'aggiornamento.
+
+
+NOTE: Negli host con accesso a Internet, il connettore aggiorna automaticamente il software alla versione più recente, purché disponga dell'accesso a Internet in uscita per ottenere l'aggiornamento software.
+
+.Fasi
+. Scaricare il software del connettore da https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sito di supporto NetApp"^].
+. Copiare il programma di installazione sull'host Linux.
+. Assegnare le autorizzazioni per eseguire lo script.
++
+[source, cli]
+----
+chmod +x /path/cloud-manager-connector-offline-<version>
+----
++
+Dove <version> è la versione del connettore scaricato.
+
+. Eseguire lo script di installazione:
++
+[source, cli]
+----
+sudo /path/cloud-manager-connector-offline-<version>
+----
++
+Dove <version> è la versione del connettore scaricato.
+
+. Una volta completato l'aggiornamento, è possibile verificare la versione del connettore accedendo a *Guida > supporto tecnico > connettore*.
+
+
+
+
+== Modificare l'indirizzo IP di un connettore
+
+Se necessario per la tua azienda, puoi modificare l'indirizzo IP interno e l'indirizzo IP pubblico dell'istanza del connettore assegnata automaticamente dal tuo cloud provider.
+
+.Fasi
+. Seguire le istruzioni del provider cloud per modificare l'indirizzo IP locale o l'indirizzo IP pubblico (o entrambi) per l'istanza del connettore.
+. Se è stato modificato l'indirizzo IP pubblico ed è necessario connettersi all'interfaccia utente locale in esecuzione sul connettore, riavviare l'istanza del connettore per registrare il nuovo indirizzo IP con BlueXP.
+. Se è stato modificato l'indirizzo IP privato, aggiornare la posizione di backup per i file di configurazione Cloud Volumes ONTAP in modo che i backup vengano inviati al nuovo indirizzo IP privato sul connettore.
++
+.. Eseguire il seguente comando dall'interfaccia utente di Cloud Volumes ONTAP per rimuovere la destinazione corrente del backup:
++
+[source, cli]
+----
+system configuration backup settings modify -destination ""
+----
+.. Accedere a BlueXP e aprire l'ambiente di lavoro.
+.. Selezionare il menu e selezionare *Avanzate > Backup della configurazione*.
+.. Selezionare *Set Backup Target* (Imposta destinazione backup).
+
+
+
+
+
+
+== Modificare gli URI di un connettore
+
+Aggiungere e rimuovere l'URI (Uniform Resource Identifier) per un connettore.
+
+.Fasi
+. Selezionare l'elenco a discesa *Connector* dall'intestazione BlueXP.
+. Selezionare *Gestisci connettori*.
+. Selezionare il menu delle azioni per un connettore e selezionare *Edit URI* (Modifica URI).
+. Aggiungere e rimuovere URI, quindi selezionare *Apply* (Applica).
+
+
+
+
+== Correggere gli errori di download quando si utilizza un gateway NAT Google Cloud
+
+Il connettore scarica automaticamente gli aggiornamenti software per Cloud Volumes ONTAP. Il download potrebbe non riuscire se la configurazione utilizza un gateway Google Cloud NAT. È possibile correggere questo problema limitando il numero di parti in cui è divisa l'immagine software. Questa fase deve essere completata utilizzando l'API BlueXP.
+
+.Fase
+. Inviare una richiesta PUT a /occm/config con il seguente JSON come corpo:
++
+[source]
+----
+{
+  "maxDownloadSessions": 32
+}
+----
++
+Il valore per _maxDownloadSessions_ può essere 1 o qualsiasi numero intero maggiore di 1. Se il valore è 1, l'immagine scaricata non verrà divisa.
+
++
+Si noti che 32 è un valore di esempio. Il valore da utilizzare dipende dalla configurazione NAT e dal numero di sessioni che è possibile avere contemporaneamente.
+
+
+
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["Scopri di più sulla chiamata API /occm/config"^]
+
+
+
+== Rimuovere i connettori da BlueXP
+
+Se un connettore non è attivo, è possibile rimuoverlo dall'elenco dei connettori in BlueXP. Questa operazione può essere eseguita se la macchina virtuale Connector è stata eliminata o se il software Connector è stato disinstallato.
+
+Tenere presente quanto segue per la rimozione di un connettore:
+
+* Questa azione non elimina la macchina virtuale.
+* Questa azione non può essere annullata - una volta rimosso un connettore da BlueXP, non è possibile aggiungerlo nuovamente.
+
+
+.Fasi
+. Selezionare l'elenco a discesa *Connector* dall'intestazione BlueXP.
+. Selezionare *Gestisci connettori*.
+. Selezionare il menu delle azioni per un connettore inattivo e selezionare *Remove Connector* (Rimuovi connettore).
++
+image:screenshot_connector_remove.gif["Una schermata del widget Connector in cui è possibile rimuovere un connettore inattivo."]
+
+. Inserire il nome del connettore da confermare, quindi selezionare *Remove* (Rimuovi).
+
+
+.Risultato
+BlueXP rimuove il connettore dai record.
+
+
+
+== Disinstallare il software Connector
+
+Disinstallare il software Connector per risolvere i problemi o per rimuovere definitivamente il software dall'host. La procedura da seguire dipende dal fatto che il connettore sia stato installato su un host con accesso a Internet o su un host in una rete con restrizioni che non dispone di accesso a Internet.
+
+
+
+=== Eseguire la disinstallazione da un host con accesso a Internet
+
+Il connettore online include uno script di disinstallazione che è possibile utilizzare per disinstallare il software.
+
+.Fase
+. Eseguire lo script di disinstallazione dall'host Linux:
++
+[source, cli]
+----
+/opt/application/netapp/service-manager-2/uninstall.sh [silent]
+----
++
+_silent_ esegue lo script senza richiedere conferma.
+
+
+
+
+
+=== Eseguire la disinstallazione da un host senza accesso a Internet
+
+Utilizzare questi comandi se il software del connettore è stato scaricato dal NetApp Support Site e installato in una rete con restrizioni che non dispone di accesso a Internet.
+
+.Fase
+. Dall'host Linux, eseguire i seguenti comandi:
++
+[source, cli]
+----
+docker-compose -f /opt/application/netapp/ds/docker-compose.yml down -v
+rm -rf /opt/application/netapp/ds
+----
+

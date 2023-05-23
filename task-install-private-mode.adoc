@@ -1,0 +1,225 @@
+---
+sidebar: sidebar 
+permalink: task-install-private-mode.html 
+keywords: install dark site, deploy dark site, install private mode, deploy private mode, install connector dark site, connector dark site, dark site, private mode, no internet 
+summary: 'Implementare il connettore in modalità privata in modo da poter utilizzare BlueXP senza connettività in uscita al livello BlueXP SaaS. Per iniziare, installare il connettore, configurare BlueXP accedendo all"interfaccia utente in esecuzione sul connettore, quindi fornire le autorizzazioni cloud precedentemente impostate.' 
+---
+= Implementare il connettore in modalità privata
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Implementare il connettore in modalità privata in modo da poter utilizzare BlueXP senza connettività in uscita al livello BlueXP SaaS. Per iniziare, installare il connettore, configurare BlueXP accedendo all'interfaccia utente in esecuzione sul connettore, quindi fornire le autorizzazioni cloud precedentemente impostate.
+
+
+
+== Montare il connettore
+
+Scaricare il programma di installazione del prodotto dal NetApp Support Site e installare manualmente il connettore sul proprio host Linux.
+
+Se si desidera utilizzare BlueXP in https://aws.amazon.com/federal/us-intelligence-community/["Ambiente AWS Commercial Cloud Services (C2S)"^] quindi, seguire le istruzioni separate per iniziare a utilizzare questo ambiente. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Scopri come iniziare a utilizzare Cloud Volumes ONTAP nell'ambiente AWS C2S"^]
+
+.Privilegi richiesti
+Per installare il connettore sono necessari i privilegi di root.
+
+.Fasi
+. Verificare che docker sia attivato e in esecuzione.
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+. Scaricare il software del connettore da https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sito di supporto NetApp"^]
++
+Assicurarsi di scaricare il programma di installazione per le reti con restrizioni senza accesso a Internet.
+
+. Copiare il programma di installazione sull'host Linux.
+. Assegnare le autorizzazioni per eseguire lo script.
++
+[source, cli]
+----
+chmod +x /path/cloud-manager-connector-offline-<version>
+----
++
+Dove <version> è la versione del connettore scaricato.
+
+. Eseguire lo script di installazione:
++
+[source, cli]
+----
+sudo /path/cloud-manager-connector-offline-<version>
+----
++
+Dove <version> è la versione del connettore scaricato.
+
+
+
+.Risultato
+Il software del connettore è installato. Ora puoi configurare BlueXP.
+
+
+
+== Configurare BlueXP
+
+Quando si accede alla console BlueXP per la prima volta, viene richiesto di configurare BlueXP.
+
+.Fasi
+. Aprire un browser Web e immettere https://_ipaddress_[] Dove _ipaddress_ è l'indirizzo IP dell'host Linux in cui è stato installato il connettore.
++
+Viene visualizzata la seguente schermata.
+
++
+image:screenshot-onprem-darksite-welcome.png["Una schermata della pagina di benvenuto che viene visualizzata dopo aver inserito l'indirizzo IP del connettore nel browser Web."]
+
+. Fare clic su *Set Up New BlueXP* (Configura nuovo BlueXP*) e seguire le istruzioni per configurare il sistema.
++
+** *Dettagli sistema*: Inserire un nome per il connettore e il nome della società.
++
+image:screenshot-onprem-darksite-details.png["Schermata della pagina System Details (Dettagli sistema) che richiede di inserire il nome BlueXP e il nome della società."]
+
+** *Create Admin User* (Crea utente amministratore): Consente di creare l'utente amministratore per il sistema.
++
+Questo account utente viene eseguito localmente sul sistema. Non esiste alcuna connessione al servizio auth0 disponibile tramite BlueXP.
+
+** *Revisione*: Esaminare i dettagli, accettare il contratto di licenza, quindi fare clic su *Configurazione*.
+
+
+. Accedere a BlueXP utilizzando l'utente amministratore appena creato.
+
+
+.Risultato
+Il connettore è stato installato e configurato.
+
+Quando saranno disponibili nuove versioni del software del connettore, verranno pubblicate sul sito di supporto NetApp. link:task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["Scopri come aggiornare il connettore"].
+
+.Quali sono le prossime novità?
+Fornire a BlueXP le autorizzazioni precedentemente impostate.
+
+
+
+== Fornire le autorizzazioni a BlueXP
+
+Se si desidera creare ambienti di lavoro Cloud Volumes ONTAP, è necessario fornire a BlueXP le autorizzazioni cloud precedentemente configurate.
+
+link:task-prepare-private-mode.html#prepare-cloud-permissions["Scopri come preparare le autorizzazioni cloud"].
+
+[role="tabbed-block"]
+====
+.Ruolo AWS IAM
+--
+Collegare il ruolo IAM precedentemente creato all'istanza di Connector EC2.
+
+.Fasi
+. Accedere alla console Amazon EC2.
+. Selezionare *istanze*.
+. Selezionare l'istanza del connettore.
+. Selezionare *azioni > sicurezza > Modifica ruolo IAM*.
+. Selezionare il ruolo IAM e fare clic su *Aggiorna ruolo IAM*.
+
+
+.Risultato
+BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in AWS per conto dell'utente.
+
+--
+.Chiave di accesso AWS
+--
+Fornire a BlueXP la chiave di accesso AWS per un utente IAM che dispone delle autorizzazioni necessarie.
+
+.Fasi
+. Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
++
+image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
+
+. Fare clic su *Add Credentials* (Aggiungi credenziali) e seguire la procedura guidata.
++
+.. *Credentials Location*: Selezionare *Amazon Web Services > Connector*.
+.. *Definisci credenziali*: Inserire una chiave di accesso AWS e una chiave segreta.
+.. *Marketplace Subscription*: Consente di associare un abbonamento Marketplace a queste credenziali sottoscrivendo ora o selezionando un abbonamento esistente.
+.. *Revisione*: Confermare i dettagli relativi alle nuove credenziali e fare clic su *Aggiungi*.
+
+
+
+
+.Risultato
+BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in AWS per conto dell'utente.
+
+--
+.Ruolo di Azure
+--
+Accedere al portale Azure e assegnare il ruolo personalizzato Azure alla macchina virtuale Connector per una o più sottoscrizioni.
+
+.Fasi
+. Dal portale Azure, aprire il servizio *Subscriptions* e selezionare l'abbonamento.
+. Fare clic su *Access Control (IAM)* > *Add* > *Add role assignment*.
+. Nella scheda *ruolo*, selezionare il ruolo *operatore BlueXP* e fare clic su *Avanti*.
++
+
+NOTE: BlueXP Operator è il nome predefinito fornito nel criterio BlueXP. Se si sceglie un nome diverso per il ruolo, selezionare il nome desiderato.
+
+. Nella scheda *membri*, completare la seguente procedura:
++
+.. Assegnare l'accesso a un'identità * gestita.
+.. Fare clic su *Select members* (Seleziona membri), selezionare l'abbonamento in cui è stata creata la macchina virtuale del connettore, scegliere *Virtual Machine*, quindi selezionare la macchina virtuale del connettore.
+.. Fare clic su *Seleziona*.
+.. Fare clic su *Avanti*.
+.. Fare clic su *Rivedi + assegna*.
+.. Se si desidera implementare Cloud Volumes ONTAP da abbonamenti aggiuntivi, passare a tale abbonamento e ripetere la procedura.
+
+
+
+
+.Risultato
+BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in Azure per conto dell'utente.
+
+--
+.Entità del servizio Azure
+--
+Fornire a BlueXP le credenziali per l'entità del servizio Azure precedentemente configurata.
+
+.Fasi
+. Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
++
+image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
+
+. Fare clic su *Add Credentials* (Aggiungi credenziali) e seguire la procedura guidata.
++
+.. *Credentials Location*: Selezionare *Microsoft Azure > Connector*.
+.. *Definisci credenziali*: Immettere le informazioni relative all'entità del servizio Azure Active Directory che concede le autorizzazioni richieste:
++
+*** ID dell'applicazione (client)
+*** ID directory (tenant)
+*** Segreto del client
+
+
+.. *Marketplace Subscription*: Consente di associare un abbonamento Marketplace a queste credenziali sottoscrivendo ora o selezionando un abbonamento esistente.
+.. *Revisione*: Confermare i dettagli relativi alle nuove credenziali e fare clic su *Aggiungi*.
+
+
+
+
+.Risultato
+BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in Azure per conto dell'utente.
+
+--
+.Account del servizio Google Cloud
+--
+Associare l'account del servizio alla macchina virtuale del connettore.
+
+.Fasi
+. Accedere al portale Google Cloud e assegnare l'account del servizio all'istanza della macchina virtuale del connettore.
++
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Documentazione di Google Cloud: Modifica dell'account del servizio e degli ambiti di accesso per un'istanza"^]
+
+. Se si desidera distribuire Cloud Volumes ONTAP in altri progetti, concedere l'accesso aggiungendo l'account di servizio con il ruolo BlueXP a tale progetto. Dovrai ripetere questo passaggio per ogni progetto.
+
+
+.Risultato
+BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in Google Cloud per tuo conto.
+
+--
+====

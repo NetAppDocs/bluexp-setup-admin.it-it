@@ -1,0 +1,71 @@
+---
+sidebar: sidebar 
+permalink: reference-permissions.html 
+keywords: permissions, actions 
+summary: 'Per utilizzare le funzionalità e i servizi di BlueXP, è necessario fornire le autorizzazioni necessarie per consentire a BlueXP di eseguire le operazioni nell"ambiente cloud. Utilizzare i collegamenti presenti in questa pagina per accedere rapidamente alle autorizzazioni richieste in BlueXP.' 
+---
+= Riepilogo delle autorizzazioni per BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Per utilizzare le funzionalità e i servizi di BlueXP, è necessario fornire le autorizzazioni necessarie per consentire a BlueXP di eseguire le operazioni nell'ambiente cloud. Utilizzare i collegamenti presenti in questa pagina per accedere rapidamente alle autorizzazioni necessarie in base all'obiettivo.
+
+
+
+== Autorizzazioni AWS
+
+[cols="25,60,40"]
+|===
+| Scopo | Descrizione | Collegamento 
+
+
+| Implementazione del connettore da BlueXP | L'utente che crea un connettore da BlueXP ha bisogno di autorizzazioni specifiche per implementare l'istanza in AWS. | link:task-set-up-permissions-aws.html["Impostare le autorizzazioni AWS"] 
+
+
+| Funzionamento del connettore | Quando BlueXP avvia il connettore, allega un criterio all'istanza che fornisce le autorizzazioni necessarie per gestire le risorse e i processi nell'account AWS. È necessario impostare la policy se si avvia un connettore dal marketplace, se si installa manualmente il connettore o se si desidera link:task-adding-aws-accounts.html#add-credentials-to-a-connector["Aggiungere altre credenziali AWS a un connettore"]. Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive. | link:reference-permissions-aws.html["Autorizzazioni AWS per il connettore"] 
+
+
+| Funzionamento Cloud Volumes ONTAP | Un ruolo IAM deve essere associato a ciascun nodo Cloud Volumes ONTAP in AWS. Lo stesso vale per il mediatore ha. L'opzione predefinita consiste nel consentire a BlueXP di creare i ruoli IAM, ma è possibile utilizzare i propri ruoli. | https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-iam-roles.html["Scopri come impostare i ruoli IAM da solo"^] 
+|===
+
+
+== Autorizzazioni Azure
+
+[cols="25,60,40"]
+|===
+| Scopo | Descrizione | Collegamento 
+
+
+| Implementazione del connettore da BlueXP | Quando si implementa un connettore da BlueXP, è necessario utilizzare un account Azure o un'entità di servizio che disponga delle autorizzazioni per implementare la macchina virtuale del connettore in Azure. | link:task-set-up-permissions-azure.html["Impostare le autorizzazioni Azure"] 
+
+
+| Funzionamento del connettore  a| 
+Quando BlueXP implementa la macchina virtuale del connettore in Azure, crea un ruolo personalizzato che fornisce le autorizzazioni necessarie per gestire le risorse e i processi all'interno dell'abbonamento Azure.
+
+È necessario impostare il ruolo personalizzato se si avvia un connettore dal marketplace, se si installa manualmente il connettore o se si desidera link:task-adding-azure-accounts.html#adding-additional-azure-credentials-to-cloud-manager["Aggiungere altre credenziali Azure a un connettore"].
+
+Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive.
+ a| 
+link:reference-permissions-azure.html["Autorizzazioni Azure per il connettore"]
+
+|===
+
+
+== Permessi Google Cloud
+
+[cols="25,60,40"]
+|===
+| Scopo | Descrizione | Collegamento 
+
+
+| Implementazione del connettore | L'utente di Google Cloud che implementa un connettore di BlueXP ha bisogno di autorizzazioni specifiche per implementare il connettore in Google Cloud. | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["Impostare le autorizzazioni per implementare il connettore"] 
+
+
+| Funzionamento del connettore | L'account di servizio per l'istanza di Connector VM deve disporre di autorizzazioni specifiche per le operazioni quotidiane. È necessario associare l'account del servizio al connettore quando lo si implementa da BlueXP. Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive. | link:reference-permissions-gcp.html["Permessi Google Cloud per il connettore"] 
+|===

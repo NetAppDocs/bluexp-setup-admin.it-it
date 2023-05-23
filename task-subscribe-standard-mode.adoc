@@ -1,0 +1,192 @@
+---
+sidebar: sidebar 
+permalink: task-subscribe-standard-mode.html 
+keywords: subscribe, subscription, marketplace subscription, paygo, contract, annual contract 
+summary: 'Iscriviti a BlueXP dal mercato del tuo cloud provider per pagare i servizi BlueXP a una tariffa oraria o attraverso un contratto annuale. Se hai acquistato una licenza da NetApp, devi anche iscriverti all"offerta Marketplace. La licenza viene sempre addebitata per prima, ma l"utente verrà addebitato alla tariffa oraria se supera la capacità concessa in licenza o se scade il termine della licenza.' 
+---
+= Iscriviti a BlueXP (modalità standard)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Iscriviti a BlueXP dal mercato del tuo cloud provider per pagare i servizi BlueXP a una tariffa oraria (PAYGO) o attraverso un contratto annuale. Se hai acquistato una licenza da NetApp (BYOL), devi anche iscriverti all'offerta Marketplace. La licenza viene sempre addebitata per prima, ma l'utente verrà addebitato alla tariffa oraria se supera la capacità concessa in licenza o se scade il termine della licenza.
+
+Un abbonamento al marketplace consente di addebitare i seguenti servizi BlueXP:
+
+* Backup e recovery
+* Classificazione
+* Cloud Volumes ONTAP
+* Tiering
+
+
+.Prima di iniziare
+L'iscrizione a BlueXP implica l'associazione di un abbonamento Marketplace alle credenziali cloud associate a un connettore. Se hai seguito il flusso di lavoro "Get Started with standard mode" (inizia con la modalità standard), dovresti già disporre di un connettore. Per ulteriori informazioni, consulta la link:task-quick-start-standard-mode.html["Avvio rapido per BlueXP in modalità standard"].
+
+[role="tabbed-block"]
+====
+.AWS
+--
+.Fasi
+. Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
+. Fare clic sul menu delle azioni per un set di credenziali, quindi selezionare *Associa abbonamento*.
++
+Selezionare le credenziali associate a un connettore. Non puoi associare un abbonamento al marketplace alle credenziali associate a BlueXP.
+
++
+image:screenshot_associate_subscription.png["Schermata del menu delle azioni per un set di credenziali esistenti."]
+
+. Per associare le credenziali a un abbonamento esistente, selezionare l'abbonamento dall'elenco a discesa e fare clic su *Associa*.
+. Per associare le credenziali a un nuovo abbonamento, fare clic su *Aggiungi abbonamento > continua* e seguire la procedura descritta in AWS Marketplace:
++
+.. Fare clic su *Visualizza opzioni di acquisto*.
+.. Fare clic su *Subscribe* (Iscriviti).
+.. Fare clic su *Configura account*.
++
+Verrai reindirizzato al sito Web di BlueXP.
+
+.. Dalla pagina *Subscription Assignment*:
++
+*** Seleziona gli account BlueXP a cui desideri associare questo abbonamento.
+*** Nel campo *Sostituisci abbonamento esistente*, scegli se desideri sostituire automaticamente l'abbonamento esistente per un account con questo nuovo abbonamento.
++
+BlueXP sostituisce l'abbonamento esistente per tutte le credenziali dell'account con questo nuovo abbonamento. Se un insieme di credenziali non è mai stato associato a un abbonamento, questo nuovo abbonamento non sarà associato a tali credenziali.
+
++
+Per tutti gli altri account, è necessario associare manualmente l'abbonamento ripetendo questa procedura.
+
+*** Fare clic su *Save* (Salva).
++
+Il seguente video mostra i passaggi per iscriversi a AWS Marketplace:
+
++
+video::video_subscribing_aws.mp4[width=848,height=480]
+
+
+
+
+
+
+--
+.Azure
+--
+.Fasi
+. Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
+. Fare clic sul menu delle azioni per un set di credenziali, quindi selezionare *Associa abbonamento*.
++
+Selezionare le credenziali associate a un connettore. Non puoi associare un abbonamento al marketplace alle credenziali associate a BlueXP.
+
++
+image:screenshot_azure_add_subscription.png["Schermata del menu delle azioni per un set di credenziali esistenti."]
+
+. Per associare le credenziali a un abbonamento esistente, selezionare l'abbonamento dall'elenco a discesa e fare clic su *Associa*.
+. Per associare le credenziali a un nuovo abbonamento, fare clic su *Aggiungi abbonamento > continua* e seguire la procedura in Azure Marketplace:
++
+.. Se richiesto, accedere all'account Azure.
+.. Fare clic su *Subscribe* (Iscriviti).
+.. Compila il modulo e fai clic su *Iscriviti*.
+.. Una volta completato il processo di iscrizione, fare clic su *Configura account*.
++
+Verrai reindirizzato al sito Web di BlueXP.
+
+.. Dalla pagina *Subscription Assignment*:
++
+*** Seleziona gli account BlueXP a cui desideri associare questo abbonamento.
+*** Nel campo *Sostituisci abbonamento esistente*, scegli se desideri sostituire automaticamente l'abbonamento esistente per un account con questo nuovo abbonamento.
++
+BlueXP sostituisce l'abbonamento esistente per tutte le credenziali dell'account con questo nuovo abbonamento. Se un insieme di credenziali non è mai stato associato a un abbonamento, questo nuovo abbonamento non sarà associato a tali credenziali.
+
++
+Per tutti gli altri account, è necessario associare manualmente l'abbonamento ripetendo questa procedura.
+
+*** Fare clic su *Save* (Salva).
++
+Il seguente video mostra i passaggi per iscriversi a Azure Marketplace:
+
++
+video::video_subscribing_azure.mp4[width=848,height=480]
+
+
+
+
+
+
+--
+.Google Cloud
+--
+.Fasi
+. Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
+. Fare clic sul menu delle azioni per un set di credenziali, quindi selezionare *Associa abbonamento*.
++
+image:screenshot_gcp_add_subscription.png["Schermata del menu delle azioni per un set di credenziali esistenti."]
+
+. Per associare le credenziali a un abbonamento esistente, selezionare un progetto e un abbonamento Google Cloud dall'elenco a discesa, quindi fare clic su *Associa*.
++
+image:screenshot_gcp_associate.gif["Una schermata di un progetto Google Cloud e di un abbonamento selezionati per le credenziali Google Cloud."]
+
+. Se non disponi già di un abbonamento, fai clic su *Aggiungi abbonamento > continua* e segui la procedura in Google Cloud Marketplace.
++
+
+NOTE: Prima di completare i seguenti passaggi, assicurarsi di disporre dei privilegi di Billing Admin nell'account Google Cloud e di un account di accesso BlueXP.
+
++
+.. Dopo essere stati reindirizzati a https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Pagina NetApp BlueXP su Google Cloud Marketplace"^], assicurarsi che il progetto corretto sia selezionato nel menu di navigazione superiore.
++
+image:screenshot_gcp_cvo_marketplace.png["Una schermata della pagina del marketplace Cloud Volumes ONTAP in Google Cloud."]
+
+.. Fare clic su *Subscribe* (Iscriviti).
+.. Selezionare l'account di fatturazione appropriato e accettare i termini e le condizioni.
+.. Fare clic su *Subscribe* (Iscriviti).
++
+Questa fase invia la richiesta di trasferimento a NetApp.
+
+.. Nella finestra di dialogo a comparsa, fare clic su *Registra con NetApp, Inc.*
++
+Questa fase deve essere completata per collegare l'abbonamento a Google Cloud al tuo account BlueXP. Il processo di collegamento di un abbonamento non viene completato fino a quando non si viene reindirizzati da questa pagina e si accede a BlueXP.
+
++
+image:screenshot_gcp_marketplace_register.png["Schermata di una finestra a comparsa di registrazione."]
+
+.. Completare la procedura riportata nella pagina *Subscription Assignment*:
++
+
+NOTE: Se qualcuno della tua organizzazione ha già sottoscritto l'abbonamento a NetApp BlueXP dal tuo account di fatturazione, verrai reindirizzato a. https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["La pagina Cloud Volumes ONTAP sul sito Web di BlueXP"^] invece. In caso di imprevisti, contatta il tuo team di vendita NetApp. Google abilita un solo abbonamento per account di fatturazione Google.
+
++
+*** Seleziona gli account BlueXP a cui desideri associare questo abbonamento.
+*** Nel campo *Sostituisci abbonamento esistente*, scegli se desideri sostituire automaticamente l'abbonamento esistente per un account con questo nuovo abbonamento.
++
+BlueXP sostituisce l'abbonamento esistente per tutte le credenziali dell'account con questo nuovo abbonamento. Se un insieme di credenziali non è mai stato associato a un abbonamento, questo nuovo abbonamento non sarà associato a tali credenziali.
+
++
+Per tutti gli altri account, è necessario associare manualmente l'abbonamento ripetendo questa procedura.
+
+*** Fare clic su *Save* (Salva).
++
+Il seguente video mostra i passaggi per iscriversi a Google Cloud Marketplace:
+
++
+video::video-subscribing-google-cloud.mp4[width=848,height=480]
+
+
+.. Una volta completata questa procedura, tornare alla pagina credenziali in BlueXP e selezionare questo nuovo abbonamento.
++
+image:screenshot_gcp_associate.gif["Schermata della pagina di assegnazione dell'abbonamento."]
+
+
+
+
+
+--
+====
+.Link correlati
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Gestire le licenze BYOL basate sulla capacità per Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Gestire le licenze BYOL per i servizi dati BlueXP"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["Gestire le credenziali AWS e le sottoscrizioni per BlueXP"]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html["Gestire le credenziali e le sottoscrizioni di Azure per BlueXP"]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Gestire le credenziali e le sottoscrizioni di Google Cloud per BlueXP"]
+

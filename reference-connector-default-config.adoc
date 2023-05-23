@@ -1,0 +1,141 @@
+---
+sidebar: sidebar 
+permalink: reference-connector-default-config.html 
+keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux, connector configuration, connector installation folder, connector folder, connector log, ubuntu 
+summary: È possibile ottenere ulteriori informazioni sul connettore prima di implementarlo o se è necessario risolvere eventuali problemi. 
+---
+= Configurazione predefinita per il connettore
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Potrebbe essere necessario ottenere ulteriori informazioni sulla configurazione del connettore prima di implementarlo o se è necessario risolvere eventuali problemi.
+
+
+
+== Configurazione predefinita con accesso a Internet
+
+I seguenti dettagli di configurazione si applicano se il connettore è stato implementato da BlueXP, dal mercato del cloud provider o se il connettore è stato installato manualmente su un host Linux on-premise con accesso a Internet.
+
+
+
+=== Dettagli AWS
+
+Se hai implementato il connettore da BlueXP o dal mercato del cloud provider, prendi nota di quanto segue:
+
+* Il tipo di istanza EC2 è t3.xlarge.
+* Il sistema operativo per l'immagine è Ubuntu 22.04.
++
+Il sistema operativo non include una GUI. Per accedere al sistema, è necessario utilizzare un terminale.
+
+* Il nome utente per l'istanza EC2 Linux è ec2-user.
+* Il disco di sistema predefinito è un disco gp2 da 100 GiB.
+
+
+
+
+=== Dettagli di Azure
+
+Se hai implementato il connettore da BlueXP o dal mercato del cloud provider, prendi nota di quanto segue:
+
+* Il tipo di macchina virtuale è DS3 v2.
+* Il sistema operativo per l'immagine è Ubuntu 22.04.
++
+Il sistema operativo non include una GUI. Per accedere al sistema, è necessario utilizzare un terminale.
+
+* Il disco di sistema predefinito è un disco SSD premium da 100 GiB.
+
+
+
+
+=== Dettagli di Google Cloud
+
+Se il connettore è stato implementato da BlueXP, tenere presente quanto segue:
+
+* L'istanza della macchina virtuale è n2-standard-4.
+* Il sistema operativo per l'immagine è Ubuntu 22.04.
++
+Il sistema operativo non include una GUI. Per accedere al sistema, è necessario utilizzare un terminale.
+
+* Il disco di sistema predefinito è un disco persistente SSD da 100 GiB.
+
+
+
+
+=== Cartella di installazione
+
+La cartella di installazione del connettore si trova nella seguente posizione:
+
+/opt/application/netapp/cloudmanager
+
+
+
+=== File di log
+
+I file di log sono contenuti nelle seguenti cartelle:
+
+* /opt/application/netapp/cloudmanager/log o.
+* /opt/application/netapp/service-manager-2/logs (a partire dalle nuove installazioni 3.9.23)
++
+I log in queste cartelle forniscono dettagli sulle immagini del connettore e del docker.
+
+* /opt/application/netapp/cloudmanager/docker_occm/data/log
++
+I log in questa cartella forniscono dettagli sui servizi cloud e sul servizio BlueXP in esecuzione sul connettore.
+
+
+
+
+
+=== Servizio del connettore
+
+* Il servizio BlueXP è denominato occm.
+* Il servizio occm dipende dal servizio MySQL.
++
+Se il servizio MySQL non è attivo, anche il servizio occm è inattivo.
+
+
+
+
+
+=== Porte
+
+Il connettore utilizza le seguenti porte sull'host Linux:
+
+* 80 per l'accesso HTTP
+* 443 per l'accesso HTTPS
+
+
+
+
+== Configurazione predefinita senza accesso a Internet
+
+La seguente configurazione si applica se il connettore è stato installato manualmente su un host Linux on-premise che non dispone di accesso a Internet. link:task-quick-start-private-mode.html["Scopri di più su questa opzione di installazione"].
+
+* La cartella di installazione del connettore si trova nella seguente posizione:
++
+/opt/application/netapp/ds
+
+* I file di log sono contenuti nelle seguenti cartelle:
++
+/var/lib/docker/volumes/ds_occmdata/_data/log
+
++
+I log in questa cartella forniscono dettagli sulle immagini del connettore e del docker.
+
+* Tutti i servizi vengono eseguiti all'interno di container di tipo docker
++
+I servizi dipendono dal servizio di runtime di docker in esecuzione
+
+* Il connettore utilizza le seguenti porte sull'host Linux:
++
+** 80 per l'accesso HTTP
+** 443 per l'accesso HTTPS
+
+
+

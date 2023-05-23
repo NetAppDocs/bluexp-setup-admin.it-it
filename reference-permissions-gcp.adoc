@@ -1,0 +1,278 @@
+---
+sidebar: sidebar 
+permalink: reference-permissions-gcp.html 
+keywords: permissions, gcp, gcp permissions 
+summary: BlueXP richiede le autorizzazioni per eseguire azioni nel provider cloud. Queste autorizzazioni sono incluse nelle policy fornite da NetApp. È possibile comprendere le funzioni di BlueXP con queste autorizzazioni. 
+---
+= Permessi Google Cloud per il connettore
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP richiede autorizzazioni per eseguire azioni in Google Cloud. Queste autorizzazioni sono incluse in un ruolo personalizzato fornito da NetApp. È possibile comprendere le funzioni di BlueXP con queste autorizzazioni.
+
+
+
+== Autorizzazioni dell'account di servizio
+
+Il ruolo personalizzato mostrato di seguito fornisce le autorizzazioni necessarie a un connettore per gestire le risorse e i processi all'interno della rete Google Cloud.
+
+È necessario applicare questo ruolo personalizzato a un account di servizio che viene collegato alla macchina virtuale del connettore.
+
+* link:task-set-up-permissions-google.html["Impostare le autorizzazioni per la modalità standard"]
+* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Impostare le autorizzazioni per la modalità limitata"]
+* link:task-prepare-private-mode.html#prepare-cloud-permissions["Impostare le autorizzazioni per la modalità privata"]
+
+
+Inoltre, è necessario assicurarsi che il ruolo sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive.
+
+[source, yaml]
+----
+title: NetApp BlueXP
+description: Permissions for the service account associated with the Connector instance.
+stage: GA
+includedPermissions:
+- iam.serviceAccounts.actAs
+- compute.regionBackendServices.create
+- compute.regionBackendServices.get
+- compute.regionBackendServices.list
+- compute.networks.updatePolicy
+- compute.backendServices.create
+- compute.addresses.list
+- compute.disks.create
+- compute.disks.createSnapshot
+- compute.disks.delete
+- compute.disks.get
+- compute.disks.list
+- compute.disks.setLabels
+- compute.disks.use
+- compute.firewalls.create
+- compute.firewalls.delete
+- compute.firewalls.get
+- compute.firewalls.list
+- compute.globalOperations.get
+- compute.images.get
+- compute.images.getFromFamily
+- compute.images.list
+- compute.images.useReadOnly
+- compute.instances.addAccessConfig
+- compute.instances.attachDisk
+- compute.instances.create
+- compute.instances.delete
+- compute.instances.detachDisk
+- compute.instances.get
+- compute.instances.getSerialPortOutput
+- compute.instances.list
+- compute.instances.setDeletionProtection
+- compute.instances.setLabels
+- compute.instances.setMachineType
+- compute.instances.setMetadata
+- compute.instances.setTags
+- compute.instances.start
+- compute.instances.stop
+- compute.instances.updateDisplayDevice
+- compute.instanceGroups.get
+- compute.addresses.get
+- compute.instances.updateNetworkInterface
+- compute.machineTypes.get
+- compute.networks.get
+- compute.networks.list
+- compute.projects.get
+- compute.regions.get
+- compute.regions.list
+- compute.snapshots.create
+- compute.snapshots.delete
+- compute.snapshots.get
+- compute.snapshots.list
+- compute.snapshots.setLabels
+- compute.subnetworks.get
+- compute.subnetworks.list
+- compute.subnetworks.use
+- compute.subnetworks.useExternalIp
+- compute.zoneOperations.get
+- compute.zones.get
+- compute.zones.list
+- compute.instances.setServiceAccount
+- deploymentmanager.compositeTypes.get
+- deploymentmanager.compositeTypes.list
+- deploymentmanager.deployments.create
+- deploymentmanager.deployments.delete
+- deploymentmanager.deployments.get
+- deploymentmanager.deployments.list
+- deploymentmanager.manifests.get
+- deploymentmanager.manifests.list
+- deploymentmanager.operations.get
+- deploymentmanager.operations.list
+- deploymentmanager.resources.get
+- deploymentmanager.resources.list
+- deploymentmanager.typeProviders.get
+- deploymentmanager.typeProviders.list
+- deploymentmanager.types.get
+- deploymentmanager.types.list
+- logging.logEntries.list
+- logging.privateLogEntries.list
+- resourcemanager.projects.get
+- storage.buckets.create
+- storage.buckets.delete
+- storage.buckets.get
+- storage.buckets.list
+- cloudkms.cryptoKeyVersions.useToEncrypt
+- cloudkms.cryptoKeys.get
+- cloudkms.cryptoKeys.list
+- cloudkms.keyRings.list
+- storage.buckets.update
+- iam.serviceAccounts.getIamPolicy
+- iam.serviceAccounts.list
+- storage.objects.get
+- storage.objects.list
+- monitoring.timeSeries.list
+- storage.buckets.getIamPolicy
+- cloudkms.cryptoKeys.getIamPolicy
+- cloudkms.cryptoKeys.setIamPolicy
+- cloudkms.keyRings.get
+- cloudkms.keyRings.getIamPolicy
+- cloudkms.keyRings.setIamPolicy
+----
+
+
+== Modalità di utilizzo delle autorizzazioni Google Cloud
+
+[cols="50,50"]
+|===
+| Azioni | Scopo 
+
+
+| - Compute.disks.create - compute.disks.createSnapshot - compute.disks.delete - compute.disks.get - compute.disks.list - compute.disks.setLabels - compute.disks.use | Per creare e gestire dischi per Cloud Volumes ONTAP. 
+
+
+| - compute.firewalls.create - compute.firewalls.delete - compute.firewalls.get - compute.firewalls.list | Per creare regole firewall per Cloud Volumes ONTAP. 
+
+
+| - Compute.globalOperations.get | Per ottenere lo stato delle operazioni. 
+
+
+| - Compute.images.get - compute.images.getFromFamily - compute.images.list - compute.images.useReadOnly | Per ottenere immagini per istanze di macchine virtuali. 
+
+
+| - compute.instances.attachDisk - compute.instances.detachDisk | Per collegare e scollegare i dischi a Cloud Volumes ONTAP. 
+
+
+| - compute.instances.create - compute.instances.delete | Per creare ed eliminare istanze di Cloud Volumes ONTAP VM. 
+
+
+| - compute.instances.get | Per elencare le istanze di macchine virtuali. 
+
+
+| - compute.instances.getSerialPortOutput | Per ottenere i log della console. 
+
+
+| - compute.instances.list | Per recuperare l'elenco di istanze in una zona. 
+
+
+| - compute.instances.setDeletionProtection | Per impostare la protezione di eliminazione sull'istanza. 
+
+
+| - compute.instances.setLabels | Per aggiungere etichette. 
+
+
+| - compute.instances.setMachineType - compute.instances.setMinCpuPlatform | Per modificare il tipo di macchina per Cloud Volumes ONTAP. 
+
+
+| - compute.instances.setMetadata | Per aggiungere metadati. 
+
+
+| - compute.instances.setTags | Per aggiungere tag per le regole del firewall. 
+
+
+| - compute.instances.start - compute.instances.stop - compute.instances.updateDisplayDevice | Per avviare e arrestare Cloud Volumes ONTAP. 
+
+
+| - Compute.machineTypes.get | Per ottenere il numero di core per controllare le qoutas. 
+
+
+| - compute.projects.get | Per supportare progetti multipli. 
+
+
+| - Compute.Snapshot.create - compute.snapshots.delete - compute.Snapshot.get - compute.Snapshot.list - compute.snapshots.setLabels | Per creare e gestire snapshot di dischi persistenti. 
+
+
+| - compute.networks.get - compute.networks.list - compute.regions.get - compute.regions.list - compute.subnetworks.get - compute.subnetworks.list - compute.zoneOperations.get - compute.zones.get - compute.zone.list | Per ottenere le informazioni di rete necessarie per creare una nuova istanza di macchina virtuale Cloud Volumes ONTAP. 
+
+
+| - deploymentmanager.compositeTypes.get - deploymentmanager.compositeTypes.list - deploymentmanager.deployments.create - deploymentmanager.deployments.delete - deploymentmanager.deployments.get - deploymentmanager.deployments.list - deploymentmanager.manifests.get - deploymentmanager.manifests.list - deploymentmanager.Operations.get - deploymentmanager.Operations.list - deploymentmanager.resources.get - deploymentmanager.typeProviders.get - deploymentmanager.typeProviders.list - deploymentmanager.typeopers.get.get.get - deploymentmanager.get.list | Per implementare l'istanza della macchina virtuale Cloud Volumes ONTAP utilizzando Google Cloud Deployment Manager. 
+
+
+| - Logging.logEntries.list - logging.privateLogEntries.list | Per ottenere unità di log stack. 
+
+
+| - resourcemanager.projects.get | Per supportare progetti multipli. 
+
+
+| - storage.bucket.create - storage.buckets.delete - storage.bucket.get - storage.bucket.list - storage.bucket.update | Per creare e gestire un bucket di storage Google Cloud per il tiering dei dati. 
+
+
+| - cloudkms.cryptoKeyVersions.useToEncrypt - cloudkms.cryptKeys.get - cloudkms.cryptKeys.list - cloudkms.keyrings.list | Per utilizzare le chiavi di crittografia gestite dal cliente dal servizio di gestione delle chiavi cloud con Cloud Volumes ONTAP. 
+
+
+| - compute.instances.setServiceAccount - iam.serviceAccounts.actAs - iam.serviceAccounts.getIamPolicy - iam.serviceAccounts.list - storage.objects.get - storage.objects.list | Per impostare un account di servizio sull'istanza di Cloud Volumes ONTAP. Questo account di servizio fornisce le autorizzazioni per il tiering dei dati a un bucket di storage Google Cloud. 
+
+
+| - compute.addresses.list | Recuperare gli indirizzi in una regione durante l'implementazione di una coppia ha. 
+
+
+| - Compute.backendServices.create - compute.regionBackendServices.create - compute.regionBackendServices.get - compute.regionBackendServices.list | Per configurare un servizio back-end per la distribuzione del traffico in una coppia ha. 
+
+
+| - compute.networks.updatePolicy | Per applicare le regole del firewall ai VPC e alle subnet per una coppia ha. 
+
+
+| - compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | Per attivare la classificazione BlueXP. 
+
+
+| - container.cluster.get - container.cluster.list | Per scoprire i cluster Kubernetes in esecuzione in Google Kubernetes Engine. 
+
+
+| - compute.instanceGroups.get - compute.addresses.get - compute.instances.updateNetworkInterface | Per creare e gestire le VM di storage su coppie Cloud Volumes ONTAP ha. 
+
+
+| - Monitoring.timeseries.list - storage.bucket.getIamPolicy | Per scoprire informazioni sui bucket di storage di Google Cloud. 
+
+
+| - Cloudkms.cryptKeys.get - cloudkms.cryptKeys.getIamPolicy - cloudkms.cryptKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.keyrings.getIamPolicy - cloudkms.keyrings.list - cloudkms.keyRings.setIamPolicy | Per selezionare le proprie chiavi gestite dal cliente nella procedura guidata di attivazione del backup e ripristino BlueXP invece di utilizzare le chiavi di crittografia predefinite gestite da Google. 
+|===
+
+
+== Registro delle modifiche
+
+Man mano che le autorizzazioni vengono aggiunte e rimosse, le annoteremo nelle sezioni seguenti.
+
+
+
+=== 6 febbraio 2023
+
+La seguente autorizzazione è stata aggiunta a questo criterio:
+
+* compute.instances.updateNetworkInterface
+
+
+Questa autorizzazione è richiesta per Cloud Volumes ONTAP.
+
+
+
+=== 27 gennaio 2023
+
+Al criterio sono state aggiunte le seguenti autorizzazioni:
+
+* Cloudkms.cryptKeys.getIamPolicy
+* cloudkms.cryptoKeys.setIamPolicy
+* Cloudkms.keyrings.get
+* Cloudkms.keyrings.getIamPolicy
+* cloudkms.keyRings.setIamPolicy
+
+
+Queste autorizzazioni sono necessarie per il backup e il ripristino di BlueXP.

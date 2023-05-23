@@ -1,0 +1,164 @@
+---
+sidebar: sidebar 
+permalink: task-monitor-cm-operations.html 
+keywords: administer, monitor, account, timeline, notifications, alerts, events, notification center, email 
+summary: 'È possibile monitorare lo stato delle operazioni eseguite da BlueXP per verificare l"eventuale presenza di problemi da risolvere. È possibile visualizzare lo stato nel Centro notifiche, nella Timeline o inviare notifiche all"e-mail.' 
+---
+= Monitorare le operazioni nell'account
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile monitorare lo stato delle operazioni eseguite da BlueXP per verificare l'eventuale presenza di problemi da risolvere. È possibile visualizzare lo stato nel Centro notifiche, nella Timeline o inviare notifiche all'e-mail.
+
+La seguente tabella fornisce un confronto tra il Centro notifiche e la cronologia, in modo da poter capire cosa offre ciascuno di essi.
+
+[cols="47,47"]
+|===
+| Centro notifiche | Tempistiche 
+
+
+| Mostra lo stato di alto livello per eventi e azioni | Fornisce informazioni dettagliate su ciascun evento o azione per ulteriori indagini 
+
+
+| Mostra lo stato della sessione di accesso corrente (le informazioni non vengono visualizzate nel Centro notifiche dopo la disconnessione) | Mantiene lo stato dell'ultimo mese 
+
+
+| Mostra solo le azioni avviate nell'interfaccia utente | Mostra tutte le azioni dell'interfaccia utente o delle API 
+
+
+| Mostra le azioni avviate dall'utente | Mostra tutte le azioni, avviate dall'utente o dal sistema 
+
+
+| Filtra i risultati in base all'importanza | Filtra per servizio, azione, utente, stato e altro ancora 
+
+
+| Consente di inviare notifiche via email agli utenti account e ad altri utenti | Nessuna funzionalità di posta elettronica 
+|===
+
+
+== Monitorare le attività utilizzando il Centro notifiche
+
+Le notifiche tengono traccia dell'avanzamento delle operazioni avviate in BlueXP per verificare se l'operazione è stata eseguita correttamente. Consentono di visualizzare lo stato di molte azioni BlueXP avviate durante la sessione di accesso corrente. Al momento non tutti i servizi riportano informazioni nel Centro notifiche.
+
+È possibile visualizzare le notifiche facendo clic sul campanello di notifica (image:icon_bell.png["campanello di notifica"]) nella barra dei menu. Il colore della piccola bolla nella campana indica la notifica di livello di severità più elevato attiva. Quindi, se vedi una bolla rossa, significa che c'è un'importante notifica che dovresti guardare.
+
+image:screenshot_notification_full.png["Una schermata che mostra l'elenco delle notifiche correnti nel Centro notifiche."]
+
+È inoltre possibile configurare BlueXP per inviare notifiche via email in modo da essere informati di importanti attività del sistema anche quando non si è connessi al sistema. I messaggi di posta elettronica possono essere inviati a tutti gli utenti che fanno parte del tuo account BlueXP o a qualsiasi altro destinatario che deve essere a conoscenza di determinati tipi di attività del sistema. Vedere <<Impostazione delle impostazioni di notifica e-mail,Impostazione delle impostazioni di notifica e-mail>> di seguito.
+
+
+
+=== Tipi di notifica
+
+Le notifiche sono classificate nelle seguenti categorie:
+
+[cols="22,58"]
+|===
+| Tipo di notifica | Descrizione 
+
+
+| Critico | Si è verificato un problema che potrebbe causare un'interruzione del servizio se non viene intrapresa immediatamente un'azione correttiva. 
+
+
+| Errore | Un'azione o un processo terminano con un errore o potrebbero portare a un errore se non viene intrapresa un'azione correttiva. 
+
+
+| Attenzione | Un problema di cui è necessario essere a conoscenza per assicurarsi che non raggiunga la severità critica. Le notifiche di questo livello di gravità non causano interruzioni del servizio e potrebbero non essere necessarie azioni correttive immediate. 
+
+
+| Consiglio | Un consiglio di sistema per intraprendere un'azione per migliorare il sistema o un determinato servizio; ad esempio: Risparmio sui costi, suggerimenti per nuovi servizi, configurazione di sicurezza consigliata, ecc. 
+
+
+| Informazioni | Messaggio che fornisce informazioni aggiuntive su un'azione o un processo. 
+
+
+| Successo | Un'azione o un processo sono stati completati correttamente. 
+|===
+
+
+=== Filtra le notifiche
+
+Per impostazione predefinita, vengono visualizzate tutte le notifiche. È possibile filtrare le notifiche visualizzate nel Centro notifiche in modo da visualizzare solo quelle importanti per l'utente. È possibile filtrare in base al "Servizio" BlueXP e alla notifica "tipo".
+
+image:screenshot_notification_filters.png["Una schermata che mostra i due tipi di filtri disponibili nel Centro notifiche."]
+
+Ad esempio, se si desidera visualizzare solo le notifiche di "errore" e "Avviso" per le operazioni BlueXP, selezionare queste voci e verranno visualizzati solo i tipi di notifica.
+
+
+
+=== Consente di impostare le notifiche e-mail
+
+È possibile inviare tramite e-mail tipi specifici di notifiche in modo da essere informati di importanti attività del sistema anche quando non si è connessi a BlueXP. I messaggi di posta elettronica possono essere inviati a tutti gli utenti che fanno parte del tuo account BlueXP o a qualsiasi altro destinatario che deve essere a conoscenza di determinati tipi di attività del sistema.
+
+[NOTE]
+====
+* A questo punto, le notifiche vengono inviate tramite e-mail per le seguenti funzionalità e servizi BlueXP: Connettori, copia e sincronizzazione BlueXP, backup e ripristino BlueXP, portafoglio digitale BlueXP e protezione ransomware BlueXP. Ulteriori servizi verranno aggiunti nelle versioni future.
+* L'invio di notifiche e-mail non è supportato quando il connettore viene installato in un sito senza accesso a Internet.
+
+
+====
+Per impostazione predefinita, gli account Admins di BlueXP riceveranno e-mail per tutte le notifiche "critiche" e "consigliate". Tutti gli altri utenti e destinatari sono configurati, per impostazione predefinita, per non ricevere alcuna email di notifica.
+
+Per personalizzare le impostazioni delle notifiche, è necessario essere un amministratore dell'account.
+
+.Fasi
+. Dalla barra dei menu di BlueXP, selezionare *Impostazioni > Impostazioni avvisi e notifiche*.
++
+image:screenshot-settings-notifications.png["Una schermata che mostra come visualizzare la pagina Impostazioni avvisi e notifiche."]
+
+. Selezionare uno o più utenti dalla scheda _account Users_ o dalla scheda _Additional Recipients_ e scegliere il tipo di notifica da inviare:
++
+** Per apportare modifiche a un singolo utente, selezionare il menu nella colonna Notifiche dell'utente, selezionare i tipi di notifica da inviare e selezionare *Applica*.
+** Per apportare modifiche a più utenti, selezionare la casella corrispondente a ciascun utente, selezionare *Gestisci notifiche e-mail*, selezionare i tipi di notifiche da inviare e selezionare *Applica*.
+
+
++
+image:screenshot-change-notifications.png["Una schermata che mostra come modificare le notifiche per più utenti."]
+
+
+
+
+
+=== Aggiungere altri destinatari di posta elettronica
+
+Gli utenti visualizzati nella scheda _account Users_ vengono popolati automaticamente dagli utenti dell'account BlueXP (dal link:task-managing-netapp-accounts.html#creating-and-managing-users["Pagina Manage account (Gestisci account)"]). È possibile aggiungere indirizzi e-mail nella scheda _destinatari aggiuntivi_ per altre persone o gruppi che non hanno accesso a BlueXP, ma che devono essere avvisati di determinati tipi di avvisi e notifiche.
+
+.Fasi
+. Dalla pagina Impostazioni avvisi e notifiche, selezionare *Aggiungi nuovi destinatari*.
++
+image:screenshot-add-email-recipient.png["Una schermata che mostra come aggiungere nuovi destinatari e-mail per avvisi e notifiche."]
+
+. Immettere il nome, l'indirizzo e-mail e selezionare i tipi di notifica che il destinatario riceverà, quindi selezionare *Aggiungi nuovo destinatario*.
+
+
+
+
+=== Consente di chiudere le notifiche
+
+Se non è più necessario visualizzarle, puoi rimuovere le notifiche dalla pagina. È possibile chiudere tutte le notifiche contemporaneamente oppure ignorare singole notifiche.
+
+Per chiudere tutte le notifiche, nel Centro notifiche selezionare image:button_3_vert_dots.png["un'icona con tre punti verticali"] E selezionare *Chiudi tutto*.image:screenshot_notification_menu.png["Una schermata che mostra il menu Notifiche per selezionare le impostazioni e chiudere tutte le opzioni."]
+
+Per chiudere le singole notifiche, posizionare il cursore del mouse sulla notifica e selezionare *Dismiss* (Chiudi).image:screenshot_notification_dismiss1.png["Una schermata che mostra come chiudere una singola notifica."]
+
+
+
+== Controllare l'attività dell'utente nell'account
+
+La cronologia di BlueXP mostra le azioni che gli utenti hanno completato per gestire l'account. Ciò include azioni di gestione come l'associazione di utenti, la creazione di aree di lavoro, la creazione di connettori e altro ancora.
+
+Controllare la cronologia può essere utile se è necessario identificare chi ha eseguito un'azione specifica o se è necessario identificare lo stato di un'azione.
+
+.Fasi
+. Dalla barra dei menu di BlueXP, selezionare *Impostazioni > Timeline*.
+. Nella sezione filtri, selezionare *Servizio*, attivare *locazione* e selezionare *Applica*.
+
+
+.Risultato
+La cronologia viene aggiornata per mostrare le azioni di gestione dell'account.

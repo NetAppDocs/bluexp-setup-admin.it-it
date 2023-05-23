@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: task-provide-permissions-on-prem.html 
+keywords: permissins, on prem permissions, aws permissions, azure permissions, credentials, aws credentials, azure credentials 
+summary: Dopo aver installato e configurato il connettore, è necessario aggiungere le credenziali cloud in modo che BlueXP disponga delle autorizzazioni necessarie per eseguire azioni in AWS o Azure. 
+---
+= Fornire le autorizzazioni a BlueXP per le installazioni on-premise
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Dopo aver installato e configurato il connettore, è necessario aggiungere le credenziali cloud in modo che BlueXP disponga delle autorizzazioni necessarie per eseguire azioni in AWS o Azure.
+
+
+TIP: Perché non Google Cloud? Quando il connettore viene installato in sede, non è in grado di gestire le risorse in Google Cloud. Il connettore deve essere installato in Google Cloud per gestire le risorse che vi risiedono.
+
+[role="tabbed-block"]
+====
+.AWS
+--
+.Prima di iniziare
+Se queste credenziali sono state appena create in AWS, potrebbero essere necessari alcuni minuti prima che siano disponibili per l'utilizzo. Attendere alcuni minuti prima di aggiungere le credenziali a BlueXP.
+
+.Fasi
+. Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
++
+image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
+
+. Fare clic su *Add Credentials* (Aggiungi credenziali) e seguire la procedura guidata.
++
+.. *Credentials Location*: Selezionare *Amazon Web Services > Connector*.
+.. *Definisci credenziali*: Inserire una chiave di accesso AWS e una chiave segreta.
+.. *Marketplace Subscription*: Consente di associare un abbonamento Marketplace a queste credenziali sottoscrivendo ora o selezionando un abbonamento esistente.
+.. *Revisione*: Confermare i dettagli relativi alle nuove credenziali e fare clic su *Aggiungi*.
+
+
+
+
+.Risultato
+BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in AWS per conto dell'utente. A questo punto, è possibile accedere alla https://console.bluexp.netapp.com["Console BlueXP"^] Per iniziare a utilizzare il connettore con BlueXP.
+
+--
+.Azure
+--
+.Prima di iniziare
+Se queste credenziali sono state appena create in Azure, potrebbero essere necessari alcuni minuti prima che siano disponibili per l'utilizzo. Attendere alcuni minuti prima di aggiungere le credenziali a BlueXP.
+
+.Fasi
+. Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
++
+image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
+
+. Fare clic su *Add Credentials* (Aggiungi credenziali) e seguire la procedura guidata.
++
+.. *Credentials Location*: Selezionare *Microsoft Azure > Connector*.
+.. *Definisci credenziali*: Immettere le informazioni relative all'entità del servizio Azure Active Directory che concede le autorizzazioni richieste:
++
+*** ID dell'applicazione (client)
+*** ID directory (tenant)
+*** Segreto del client
+
+
+.. *Marketplace Subscription*: Consente di associare un abbonamento Marketplace a queste credenziali sottoscrivendo ora o selezionando un abbonamento esistente.
+.. *Revisione*: Confermare i dettagli relativi alle nuove credenziali e fare clic su *Aggiungi*.
+
+
+
+
+.Risultato
+BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in Azure per conto dell'utente. A questo punto, è possibile accedere alla https://console.bluexp.netapp.com["Console BlueXP"^] Per iniziare a utilizzare il connettore con BlueXP.
+
+--
+====
