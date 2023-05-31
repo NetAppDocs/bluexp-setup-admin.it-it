@@ -33,7 +33,7 @@ image:screenshot-azure-actions.png["Una schermata che mostra il pannello delle a
 
 . Selezionare *Sync data* per sincronizzare i dati con o dallo storage Azure Blob.
 +
-Per ulteriori informazioni, vedere https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Panoramica della copia e della sincronizzazione BlueXP"^]
+Per ulteriori informazioni, vedere https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["Panoramica della copia e della sincronizzazione BlueXP"^]
 
 . Selezionare *Enter Working Environment* (Inserisci ambiente di lavoro) per visualizzare i dettagli sugli account di storage Azure nei tuoi Azure Blob.
 +

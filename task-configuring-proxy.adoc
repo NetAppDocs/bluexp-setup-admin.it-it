@@ -58,7 +58,7 @@ Se un connettore è stato configurato per l'utilizzo di un server proxy, è poss
 
 Se è stato disattivato l'utilizzo dei collegamenti privati di Azure con Cloud Volumes ONTAP e si stanno utilizzando gli endpoint del servizio, è necessario attivare il traffico API diretto. In caso contrario, il traffico non verrà instradato correttamente.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Scopri di più sull'utilizzo di un collegamento privato Azure o di endpoint di servizio con Cloud Volumes ONTAP"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Scopri di più sull'utilizzo di un collegamento privato Azure o di endpoint di servizio con Cloud Volumes ONTAP"^]
 
 .Fasi
 . Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *Impostazioni connettore*.

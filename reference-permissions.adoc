@@ -31,7 +31,7 @@ Per utilizzare le funzionalità e i servizi di BlueXP, è necessario fornire le 
 | Funzionamento del connettore | Quando BlueXP avvia il connettore, allega un criterio all'istanza che fornisce le autorizzazioni necessarie per gestire le risorse e i processi nell'account AWS. È necessario impostare la policy se si avvia un connettore dal marketplace, se si installa manualmente il connettore o se si desidera link:task-adding-aws-accounts.html#add-credentials-to-a-connector["Aggiungere altre credenziali AWS a un connettore"]. Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive. | link:reference-permissions-aws.html["Autorizzazioni AWS per il connettore"] 
 
 
-| Funzionamento Cloud Volumes ONTAP | Un ruolo IAM deve essere associato a ciascun nodo Cloud Volumes ONTAP in AWS. Lo stesso vale per il mediatore ha. L'opzione predefinita consiste nel consentire a BlueXP di creare i ruoli IAM, ma è possibile utilizzare i propri ruoli. | https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-iam-roles.html["Scopri come impostare i ruoli IAM da solo"^] 
+| Funzionamento Cloud Volumes ONTAP | Un ruolo IAM deve essere associato a ciascun nodo Cloud Volumes ONTAP in AWS. Lo stesso vale per il mediatore ha. L'opzione predefinita consiste nel consentire a BlueXP di creare i ruoli IAM, ma è possibile utilizzare i propri ruoli. | https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html["Scopri come impostare i ruoli IAM da solo"^] 
 |===
 
 

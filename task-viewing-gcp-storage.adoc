@@ -33,7 +33,7 @@ image:screenshot-gcp-cloud-storage-actions.png["Una schermata che mostra il riqu
 
 . Selezionare *Sync data* per sincronizzare i dati da o verso i bucket di storage Google Cloud.
 +
-Per ulteriori informazioni, vedere https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Panoramica della copia e della sincronizzazione BlueXP"^]
+Per ulteriori informazioni, vedere https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["Panoramica della copia e della sincronizzazione BlueXP"^]
 
 . Selezionare *Inserisci ambiente di lavoro* per visualizzare i dettagli relativi ai bucket nel tuo account Google.
 +

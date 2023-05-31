@@ -186,7 +186,7 @@ image:screenshot_gcp_associate.gif["Schermata della pagina di assegnazione dell'
 .Link correlati
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Gestire le licenze BYOL basate sulla capacità per Cloud Volumes ONTAP"^]
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Gestire le licenze BYOL per i servizi dati BlueXP"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["Gestire le credenziali AWS e le sottoscrizioni per BlueXP"]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html["Gestire le credenziali e le sottoscrizioni di Azure per BlueXP"]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Gestire le credenziali e le sottoscrizioni di Google Cloud per BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Gestire le credenziali AWS e le sottoscrizioni per BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Gestire le credenziali e le sottoscrizioni di Azure per BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["Gestire le credenziali e le sottoscrizioni di Google Cloud per BlueXP"]
 

@@ -130,4 +130,4 @@ Non c'è traffico in entrata verso il connettore, a meno che non venga avviato o
 
 == Limitazione dell'indirizzo IP
 
-È possibile che vi sia un conflitto con gli indirizzi IP nell'intervallo 172. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["Scopri di più su questo limite"].
+È possibile che vi sia un conflitto con gli indirizzi IP nell'intervallo 172. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["Scopri di più su questo limite"].

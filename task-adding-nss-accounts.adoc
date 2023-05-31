@@ -53,7 +53,7 @@ Support Dashboard consente di aggiungere e gestire gli account NetApp Support Si
 .Fasi
 . Nella parte superiore destra della console BlueXP, selezionare l'icona della Guida e selezionare *supporto*.
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["Schermata del menu Help (Guida) in cui Support (Assistenza) è la prima opzione elencata"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-help-support.png["Schermata del menu Help (Guida) in cui Support (Assistenza) è la prima opzione elencata"]
 
 . Selezionare *Gestione NSS > Aggiungi account NSS*.
 . Quando richiesto, selezionare *continua* per essere reindirizzato a una pagina di accesso Microsoft.
@@ -78,9 +78,9 @@ Lo stesso vale se si dispone di account NSS a livello di cliente preesistenti e 
 
 ** Una volta effettuato l'accesso, NetApp memorizzerà il nome utente NSS.
 +
-Si tratta di un ID generato dal sistema che viene mappato all'e-mail. Nella pagina *NSS Management*, è possibile visualizzare l'e-mail da image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["Un'icona di tre punti orizzontali"] menu.
+Si tratta di un ID generato dal sistema che viene mappato all'e-mail. Nella pagina *NSS Management*, è possibile visualizzare l'e-mail da image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-nss-menu.png["Un'icona di tre punti orizzontali"] menu.
 
-** Se è necessario aggiornare i token delle credenziali di accesso, è disponibile anche l'opzione *Update Credentials* (Aggiorna credenziali) in image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["Un'icona di tre punti orizzontali"] menu.
+** Se è necessario aggiornare i token delle credenziali di accesso, è disponibile anche l'opzione *Update Credentials* (Aggiorna credenziali) in image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-nss-menu.png["Un'icona di tre punti orizzontali"] menu.
 +
 Questa opzione richiede di effettuare nuovamente l'accesso. Il token per questi account scade dopo 90 giorni. Verrà inviata una notifica per avvisare l'utente.
 
@@ -91,10 +91,10 @@ Questa opzione richiede di effettuare nuovamente l'accesso. Il token per questi 
 .Quali sono le prossime novità?
 Gli utenti possono ora selezionare l'account durante la creazione di nuovi sistemi Cloud Volumes ONTAP, la registrazione di sistemi Cloud Volumes ONTAP esistenti e la registrazione per il supporto.
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["Avvio di Cloud Volumes ONTAP in AWS"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Lancio di Cloud Volumes ONTAP in Azure"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["Lancio di Cloud Volumes ONTAP in Google Cloud"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-registering.html["Registrazione di sistemi pay-as-you-go"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html["Avvio di Cloud Volumes ONTAP in AWS"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html["Lancio di Cloud Volumes ONTAP in Azure"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Lancio di Cloud Volumes ONTAP in Google Cloud"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-registering.html["Registrazione di sistemi pay-as-you-go"^]
 
 
 

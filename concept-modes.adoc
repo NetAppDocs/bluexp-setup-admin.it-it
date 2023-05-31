@@ -266,17 +266,19 @@ Servizi BlueXP supportati nelle implementazioni on-premise:: BlueXP supporta i s
 | Servizi supportati | Note 
 
 
-| Backup e recovery | Sono supportati solo il backup e il ripristino dei volumi ONTAP on-premise sui sistemi StorageGRID.https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["Scopri come eseguire il backup on-premise dei dati ONTAP su StorageGRID"^] 
+| Backup e recovery | Sono supportati solo il backup e il ripristino dei volumi ONTAP on-premise sui sistemi StorageGRID.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["Scopri come eseguire il backup on-premise dei dati ONTAP su StorageGRID"^] 
 
 
 | Classificazione  a| 
 * Le uniche origini dati supportate sono quelle che è possibile rilevare localmente.
 +
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#supported-data-sources["Visualizzare le fonti che è possibile scoprire localmente"^]
+https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html#supported-data-sources["Visualizzare le fonti che è possibile scoprire localmente"^]
 
 * Le funzioni che richiedono l'accesso a Internet in uscita non sono supportate.
 +
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#limitations["Visualizza le limitazioni delle funzioni"^]
+https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html#limitations["Visualizza le limitazioni delle funzioni"^]
 
 
 
@@ -296,7 +298,7 @@ Opzioni di licenza supportate:: Solo BYOL è supportato in modalità privata.
 --
 Per Cloud Volumes ONTAP BYOL, è supportata solo la licenza basata su nodo. Le licenze basate sulla capacità non sono supportate. Poiché non è disponibile una connessione Internet in uscita, è necessario caricare manualmente il file di licenza Cloud Volumes ONTAP nel portafoglio digitale BlueXP.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["Scopri come aggiungere licenze al portafoglio digitale BlueXP"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["Scopri come aggiungere licenze al portafoglio digitale BlueXP"^]
 
 --
 Come iniziare con la modalità privata:: La modalità privata è disponibile scaricando il programma di installazione "offline" dal NetApp Support Site.

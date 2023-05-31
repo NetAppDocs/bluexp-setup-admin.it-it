@@ -34,7 +34,7 @@ Il gruppo di sicurezza AWS per il connettore richiede regole sia in entrata che 
 | HTTPS | 443 | Fornisce l'accesso HTTPS dai browser Web client all'interfaccia utente locale e le connessioni dall'istanza di classificazione BlueXP 
 
 
-| TCP | 3128 | Fornisce a Cloud Volumes ONTAP l'accesso a Internet per inviare messaggi AutoSupport al supporto NetApp. È necessario aprire manualmente questa porta dopo l'implementazione. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-verify-autosupport.html["Scopri come il connettore viene utilizzato come proxy per i messaggi AutoSupport"^] 
+| TCP | 3128 | Fornisce a Cloud Volumes ONTAP l'accesso a Internet per inviare messaggi AutoSupport al supporto NetApp. È necessario aprire manualmente questa porta dopo l'implementazione. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport.html["Scopri come il connettore viene utilizzato come proxy per i messaggi AutoSupport"^] 
 
 
 | TCP | 9060, 9061 | Consente di abilitare e utilizzare la classificazione BlueXP e il backup e ripristino BlueXP nelle regioni governative. 

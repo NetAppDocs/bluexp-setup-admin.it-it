@@ -16,7 +16,7 @@ summary: 'Dopo aver effettuato l"accesso e configurato BlueXP in modalità stand
 [role="lead"]
 Dopo aver effettuato l'accesso e configurato BlueXP in modalità standard, gli utenti possono creare e rilevare ambienti di lavoro e utilizzare i servizi dati BlueXP.
 
-Per assistenza, consultare https://docs.netapp.com/us-en/cloud-manager-family/["home page della documentazione BlueXP"^] Per visualizzare i documenti relativi a tutti i servizi BlueXP.
+Per assistenza, consultare https://docs.netapp.com/us-en/bluexp-family/["home page della documentazione BlueXP"^] Per visualizzare i documenti relativi a tutti i servizi BlueXP.
 
 .Link correlato
 link:concept-modes.html["Modalità di implementazione di BlueXP"]

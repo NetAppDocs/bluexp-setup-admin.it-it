@@ -17,7 +17,7 @@ summary: 'Preparare l"ambiente prima di implementare BlueXP in modalità privata
 Preparare l'ambiente prima di implementare BlueXP in modalità privata. Ad esempio, è necessario rivedere i requisiti degli host, preparare il networking, impostare le autorizzazioni e molto altro ancora.
 
 
-NOTE: Se si desidera utilizzare BlueXP in https://aws.amazon.com/federal/us-intelligence-community/["Ambiente AWS Commercial Cloud Services (C2S)"^] Seguire quindi le istruzioni separate che descrivono come preparare, installare il connettore e avviare Cloud Volumes ONTAP. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Scopri come iniziare a utilizzare Cloud Volumes ONTAP nell'ambiente AWS C2S"^]
+NOTE: Se si desidera utilizzare BlueXP in https://aws.amazon.com/federal/us-intelligence-community/["Ambiente AWS Commercial Cloud Services (C2S)"^] Seguire quindi le istruzioni separate che descrivono come preparare, installare il connettore e avviare Cloud Volumes ONTAP. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Scopri come iniziare a utilizzare Cloud Volumes ONTAP nell'ambiente AWS C2S"^]
 
 
 
