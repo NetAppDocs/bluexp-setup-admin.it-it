@@ -2,22 +2,22 @@
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cloud-manager-setup-admin | NetApp Documentation</title>
-    <atom:link href="https://docs.netapp.com/it-it/cloud-manager-setup-admin/feed.xml" rel="self" type="application/rss+xml"/>
-    <link>https://docs.netapp.com/it-it/cloud-manager-setup-admin</link>
+    <title>bluexp-setup-admin | NetApp Documentation</title>
+    <atom:link href="https://docs.netapp.com/it-it/bluexp-setup-admin/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://docs.netapp.com/it-it/bluexp-setup-admin</link>
     <description>The latest updates from NetApp Documentation</description>
     <language>it-it</language>
     <ttl>60</ttl>
-    <pubDate>Wed, 24 May 2023 08:19:06 +0000</pubDate>
-    <lastBuildDate>Wed, 24 May 2023 08:19:06 +0000</lastBuildDate>
+    <pubDate>Wed, 31 May 2023 13:59:40 +0000</pubDate>
+    <lastBuildDate>Wed, 31 May 2023 13:59:40 +0000</lastBuildDate>
     
     
     
     <item>
-      <title>Novità (23 May 2023)</title>
-      <pubDate>Tue, 23 May 2023 19:36:43 +0000</pubDate>
-      <link>https://docs.netapp.com/it-it/cloud-manager-setup-admin/whats-new.html?time=1684870603</link>
-      <guid isPermaLink="false">Tue, 23 May 2023 19:36:43 +0000</guid>
+      <title>Novità (31 May 2023)</title>
+      <pubDate>Wed, 31 May 2023 13:56:31 +0000</pubDate>
+      <link>https://docs.netapp.com/it-it/bluexp-setup-admin/whats-new.html?time=1685541391</link>
+      <guid isPermaLink="false">Wed, 31 May 2023 13:56:31 +0000</guid>
       <description><![CDATA[ Scopri le novità delle funzionalità di amministrazione di BlueXP: Account BlueXP, connettori, credenziali del cloud provider e altro ancora. ]]></description>
     </item>
     
