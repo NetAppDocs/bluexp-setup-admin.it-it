@@ -41,6 +41,9 @@ image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (I
 .. Selezionare *Enable Proxy* (attiva proxy).
 .. Specificare il server utilizzando la sintassi http://_address:port_[] oppure https://_address:port_[]
 .. Specificare un nome utente e una password se è richiesta l'autenticazione di base per il server
++
+L'utente deve essere un utente locale. Gli utenti di dominio non sono supportati.
+
 .. Selezionare *Salva*.
 +
 

@@ -167,7 +167,8 @@ Il secondo criterio fornisce le autorizzazioni per i seguenti servizi:
                 "ce:GetCostAndUsage",
                 "ce:GetTags",
                 "fsx:Describe*",
-                "fsx:List*"
+                "fsx:List*",
+                "kms:GenerateDataKeyWithoutPlaintext"
             ],
             "Resource": "*",
             "Effect": "Allow",
@@ -1133,7 +1134,7 @@ Il connettore effettua le seguenti richieste API per implementare e gestire Clou
 | s3:ListBucket | No | Sì | No 
 
 
-.4+| Abilitare la crittografia dei dati di Cloud Volumes ONTAP utilizzando il servizio di gestione delle chiavi AWS (KMS) | Km: Elenco* | Sì | Sì | No 
+.5+| Abilitare la crittografia dei dati di Cloud Volumes ONTAP utilizzando il servizio di gestione delle chiavi AWS (KMS) | Km: Elenco* | Sì | Sì | No 
 
 
 | Kms: ReEncrypt* | Sì | No | No 
@@ -1143,6 +1144,9 @@ Il connettore effettua le seguenti richieste API per implementare e gestire Clou
 
 
 | Km: CreateGrant | Sì | Sì | No 
+
+
+| Kms:GenerateDataKeyWithoutPlaintext | Sì | Sì | No 
 
 
 .4+| Ottenere i dati sui costi AWS per Cloud Volumes ONTAP | ce: GetReservationUtilization | No | Sì | No 
@@ -1218,6 +1222,14 @@ Il connettore effettua le seguenti richieste API per gestire i tag sulle risorse
 == Registro delle modifiche
 
 Man mano che le autorizzazioni vengono aggiunte e rimosse, le annoteremo nelle sezioni seguenti.
+
+
+
+=== 6 giugno 2023
+
+Per Cloud Volumes ONTAP è ora richiesta la seguente autorizzazione:
+
+Kms:GenerateDataKeyWithoutPlaintext
 
 
 

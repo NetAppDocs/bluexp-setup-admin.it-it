@@ -3667,4 +3667,8 @@
 È necessario impostare la policy se si avvia un connettore dal marketplace, se si installa manualmente il connettore o se si desidera <block ref="c5a34c273ba791769e2c0edbb9c79dc0" category="inline-link-macro-rx"></block>.
 
 Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive.</block>
+  <block id="b9a11b90960ff803269429887ab4cff3" category="paragraph">L'utente deve essere un utente locale. Gli utenti di dominio non sono supportati.</block>
+  <block id="8773d2d5904a6b33e1f92e729d81f86b" category="cell">Kms:GenerateDataKeyWithoutPlaintext</block>
+  <block id="a05b5ce37ea267c22e70da731bcc3494" category="section-title">6 giugno 2023</block>
+  <block id="14cbfe27bd7092d1b2ab4502adbdd584" category="paragraph">Per Cloud Volumes ONTAP è ora richiesta la seguente autorizzazione:</block>
 </blocks>

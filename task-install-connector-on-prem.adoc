@@ -94,6 +94,9 @@ Ecco un esempio del comando che utilizza entrambi i parametri facoltativi:
 ** http://username:password@address:port
 ** https://address:port
 ** https://username:password@address:port
++
+L'utente deve essere un utente locale. Gli utenti di dominio non sono supportati.
+
 
 
 +
