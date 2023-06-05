@@ -2678,10 +2678,7 @@
   <block id="098ba24e143dd197f509e41083f0103e" category="section-title">Quando è necessario un connettore</block>
   <block id="bf2f35a1367a7ddb519a7dd3cedacfdd" category="paragraph">Quando si utilizza BlueXP in modalità standard, è necessario un connettore per le seguenti funzionalità e servizi in BlueXP:</block>
   <block id="234eb6bb27d592cbf06aa6537a33a380" category="list-text">Funzionalità di gestione di Amazon FSX per ONTAP</block>
-  <block id="c3d36b4a46dce16b3ad60eecabc87582" category="list-text">Discovery Amazon S3</block>
-  <block id="bde43e83db72512f1aea47540264c8f0" category="list-text">Scoperta di Azure Blob</block>
   <block id="c7a576f5db262c0475afa4a53822979e" category="list-text">Efficienza economica ^1^</block>
-  <block id="6060e8f925263dfdc63a751c294072e0" category="list-text">Rilevamento di Google Cloud Storage</block>
   <block id="9fc1f8c97e791c3c5fa11f21f2c02740" category="list-text">Integrazione del cluster ONTAP on-premise con i servizi dati BlueXP</block>
   <block id="7713949d8f17ff00f9cdb21469da8a35" category="list-text">Resilienza operativa ^1^</block>
   <block id="6d95cfc501ca88bca8a0045681608071" category="paragraph">^1^ sebbene sia possibile accedere a questi servizi senza un connettore, è necessario un connettore per avviare azioni dai servizi.</block>
@@ -3671,4 +3668,9 @@ Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono
   <block id="8773d2d5904a6b33e1f92e729d81f86b" category="cell">Kms:GenerateDataKeyWithoutPlaintext</block>
   <block id="a05b5ce37ea267c22e70da731bcc3494" category="section-title">6 giugno 2023</block>
   <block id="14cbfe27bd7092d1b2ab4502adbdd584" category="paragraph">Per Cloud Volumes ONTAP è ora richiesta la seguente autorizzazione:</block>
+  <block id="d79294e72dc3584cc12c98a7a931315d" category="list-text">Storage Amazon S3</block>
+  <block id="2b3e8f910d66604cd77f93b333670468" category="list-text">Storage Azure Blob</block>
+  <block id="390e388eccc77b388b4d54d73b76f902" category="list-text">Bucket di storage Google Cloud</block>
+  <block id="ac7b3cf10ea08c788a374e0291742517" category="list-text">Report sulla migrazione</block>
+  <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">Caching dei volumi</block>
 </blocks>

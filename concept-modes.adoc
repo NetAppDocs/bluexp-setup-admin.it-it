@@ -379,6 +379,9 @@ Alcuni servizi potrebbero essere supportati con limitazioni. Per ulteriori infor
 | Caching edge | No | No 
 
 
+| Report sulla migrazione | No | No 
+
+
 | Resilienza operativa | No | No 
 
 
@@ -391,17 +394,20 @@ Alcuni servizi potrebbero essere supportati con limitazioni. Per ulteriori infor
 | Replica | Sì | Sì 
 
 
-| Tiering | No | No 
+| Tiering | No | No | Caching dei volumi 
 
 
-.4+| *Caratteristiche* | Credenziali | Sì | Sì 
+| No | No .4+| *Caratteristiche* | Credenziali 
 
 
-| Account NSS | Sì | No 
+| Sì | Sì | Account NSS 
 
 
-| Notifiche | Sì | No 
+| Sì | No | Notifiche 
 
 
-| Cerca | Sì | No 
+| Sì | No | Cerca 
+
+
+| Sì | No | Tempistiche | Sì 
 |===
