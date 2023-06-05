@@ -18,6 +18,58 @@ Scopri le novità delle funzionalità di amministrazione di BlueXP: Account Blue
 
 
 
+== 4 giugno 2023
+
+
+
+=== Connettore 3.9.30
+
+* Quando si apre un caso di supporto NetApp dalla dashboard di supporto, BlueXP apre il caso utilizzando l'account del sito di supporto NetApp associato all'accesso a BlueXP. In precedenza, BlueXP ha utilizzato l'account del sito di supporto NetApp associato all'intero account BlueXP.
++
+Nell'ambito di questa modifica, la registrazione al supporto per un account BlueXP viene ora effettuata tramite l'account del sito di supporto NetApp associato all'accesso BlueXP di un utente. In precedenza, la registrazione al supporto era effettuata tramite un account NSS associato all'intero account BlueXP. Di conseguenza, altri utenti di BlueXP non visualizzeranno lo stesso stato di registrazione del supporto se non hanno associato un account del sito di supporto NetApp al proprio login BlueXP. Se in precedenza hai registrato il tuo account BlueXP per il supporto, lo stato di registrazione è ancora valido. Basta aggiungere un account NSS a livello utente per visualizzare lo stato.
+
++
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#create-a-case-with-netapp-support["Scopri come creare un caso con il supporto NetApp"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html["Scopri come gestire le credenziali associate all'accesso a BlueXP"]
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-support-registration.html["Scopri come registrarti per il supporto"]
+
+
+* Ora puoi cercare la documentazione da BlueXP. I risultati della ricerca ora forniscono link ai contenuti su docs.netapp.com e kb.netapp.com, che potrebbero aiutare a rispondere a una domanda che hai.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search-docs.png["Una schermata della ricerca BlueXP disponibile nella parte superiore della console."]
+
+* Il connettore è ora supportato nelle seguenti aree AWS:
++
+** Hyderabad (ap-sud-2)
+** Melbourne (ap-sud-est-4)
+** Spagna (ue-Sud-2)
+** Emirati Arabi Uniti (me-Central-1)
+** Zurigo (eu-Central-2)
+
+
+* Il connettore è ora supportato nelle seguenti aree di Azure:
++
+** Brasile Sud
+** Francia Sud
+** Jio India Central
+** Jio India ovest
+** Polonia centrale
+** Qatar Central
+
+
+* Il connettore è ora supportato nelle seguenti aree di Google Cloud:
++
+** Columbus (US-east5)
+** Dallas (US-South1)
+
+
++
+https://cloud.netapp.com/cloud-volumes-global-regions["Visualizza l'elenco completo delle regioni supportate"^]
+
+
+
+
+
 == 7 maggio 2023
 
 

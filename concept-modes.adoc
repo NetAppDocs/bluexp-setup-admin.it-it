@@ -403,5 +403,5 @@ Alcuni servizi potrebbero essere supportati con limitazioni. Per ulteriori infor
 | Notifiche | Sì | No 
 
 
-| Tempistiche | Sì | Sì 
+| Cerca | Sì | No 
 |===
