@@ -36,7 +36,7 @@ image:screenshot_accounts_select_azure.gif["Una schermata che mostra l'opzione S
 
 == Abbonamenti Azure aggiuntivi per un'identità gestita
 
-L'identità gestita assegnata dal sistema alla macchina virtuale del connettore è associata all'abbonamento con cui è stato avviato il connettore. Se si desidera selezionare un abbonamento Azure diverso, è necessario link:task-adding-azure-accounts.html#associating-additional-azure-subscriptions-with-a-managed-identity["associare l'identità gestita a tali sottoscrizioni"].
+L'identità gestita assegnata dal sistema alla macchina virtuale del connettore è associata all'abbonamento con cui è stato avviato il connettore. Se si desidera selezionare un abbonamento Azure diverso, è necessario link:task-adding-azure-accounts.html#associate-additional-azure-subscriptions-with-a-managed-identity["associare l'identità gestita a tali sottoscrizioni"].
 
 
 
@@ -46,7 +46,7 @@ Se si desidera utilizzare credenziali Azure diverse con BlueXP, è necessario co
 
 image:diagram_permissions_multiple_azure.png["Immagine concettuale che mostra l'account Azure iniziale, che riceve le autorizzazioni attraverso un ruolo personalizzato e un'identità gestita, e due account aggiuntivi che ricevono le autorizzazioni attraverso un ruolo personalizzato e un'entità del servizio."]
 
-Allora link:task-adding-azure-accounts.html#adding-azure-accounts-to-cloud-manager["Aggiungere le credenziali dell'account a BlueXP"] Fornendo dettagli sull'identità del servizio ad.
+Allora link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp["Aggiungere le credenziali dell'account a BlueXP"] Fornendo dettagli sull'identità del servizio ad.
 
 Ad esempio, è possibile passare da una credenziale all'altra quando si crea un nuovo ambiente di lavoro Cloud Volumes ONTAP:
 

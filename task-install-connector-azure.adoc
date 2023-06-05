@@ -119,7 +119,7 @@ Durante la configurazione della macchina virtuale, tenere presente quanto segue:
 ** Il connettore può funzionare in modo ottimale con dischi HDD o SSD.
 ** Scegli una macchina virtuale che soddisfi i requisiti di CPU e RAM. Si consiglia DS3 v2.
 +
-link:reference-host-requirements-azure["Esaminare i requisiti delle macchine virtuali"].
+link:reference-host-requirements-azure.html["Esaminare i requisiti delle macchine virtuali"].
 
 ** Per il gruppo di protezione della rete, il connettore richiede connessioni in entrata utilizzando SSH, HTTP e HTTPS. Sono necessarie altre regole per configurazioni specifiche.
 +

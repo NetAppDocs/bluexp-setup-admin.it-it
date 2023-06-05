@@ -116,6 +116,9 @@ Per completare questo passaggio, è necessario ottenere quanto segue dall'ammini
 Dopo aver creato la connessione utilizzando queste informazioni, la pagina Federation Setup elenca i parametri che è possibile inviare all'amministratore di ad per completare la configurazione nel passaggio successivo.
 
 
+NOTE: Prendere nota della data di scadenza del certificato. È necessario tornare alla pagina Federation Setup e aggiornare il certificato _prima_ che scada. Questa è la tua responsabilità. BlueXP non tiene traccia della data di scadenza. È meglio collaborare con il tuo team ad per ricevere avvisi puntuali.
+
+
 
 | 3 | AD admin | Completare la configurazione sul provider di identità utilizzando i parametri mostrati nella pagina Federation Setup (impostazione federazione) al termine del passaggio 2. 
 
@@ -156,6 +159,9 @@ Per completare questo passaggio, è necessario ottenere quanto segue dall'ammini
 Dopo aver creato la connessione utilizzando queste informazioni, la pagina Federation Setup elenca i parametri che è possibile inviare all'amministratore di ad per completare la configurazione nel passaggio successivo.
 
 
+NOTE: Prendere nota della data di scadenza della chiave segreta. È necessario tornare alla pagina Federation Setup e aggiornare il certificato _prima_ che scada. Questa è la tua responsabilità. BlueXP non tiene traccia della data di scadenza. È meglio collaborare con il tuo team ad per ricevere avvisi puntuali.
+
+
 
 | 3 | AD admin | Completare la configurazione in Azure ad utilizzando i parametri mostrati nella pagina Federation Setup (impostazione federazione) al termine del passaggio 2. 
 
@@ -186,6 +192,9 @@ Accedere alla https://services.cloud.netapp.com/federation-setup["Pagina NetApp 
 Per completare questo passaggio, è necessario ottenere quanto segue dall'amministratore ad: L'URL del server ADFS o il file di metadati della federazione.
 
 Dopo aver creato la connessione utilizzando queste informazioni, la pagina Federation Setup elenca i parametri che è possibile inviare all'amministratore di ad per completare la configurazione nel passaggio successivo.
+
+
+NOTE: Prendere nota della data di scadenza del certificato. È necessario tornare alla pagina Federation Setup e aggiornare il certificato _prima_ che scada. Questa è la tua responsabilità. BlueXP non tiene traccia della data di scadenza. È meglio collaborare con il tuo team ad per ricevere avvisi puntuali.
 
 
 
@@ -225,6 +234,9 @@ Per completare questo passaggio, è necessario ottenere quanto segue dall'ammini
 
 
 Dopo aver creato la connessione utilizzando queste informazioni, la pagina Federation Setup elenca i parametri che è possibile inviare all'amministratore di ad per completare la configurazione nel passaggio successivo.
+
+
+NOTE: Prendere nota della data di scadenza del certificato. È necessario tornare alla pagina Federation Setup e aggiornare il certificato _prima_ che scada. Questa è la tua responsabilità. BlueXP non tiene traccia della data di scadenza. È meglio collaborare con il tuo team ad per ricevere avvisi puntuali.
 
 
 

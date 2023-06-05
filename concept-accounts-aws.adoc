@@ -58,7 +58,7 @@ Dopo aver aggiunto un altro set di credenziali, è possibile passare a queste qu
 
 image:screenshot_accounts_switch_aws.png["Una schermata che mostra la selezione tra gli account del provider cloud dopo aver fatto clic su Cambia account nella pagina Dettagli  credenziali."]
 
-link:task-adding-aws-accounts.html#add-credentials-to-a-connector["Scopri come aggiungere le credenziali AWS a un connettore esistente."]
+link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["Scopri come aggiungere le credenziali AWS a un connettore esistente."]
 
 
 
@@ -67,7 +67,7 @@ link:task-adding-aws-accounts.html#add-credentials-to-a-connector["Scopri come a
 L'aggiunta di nuove credenziali AWS a BlueXP fornisce le autorizzazioni necessarie per creare e gestire un ambiente di lavoro FSX per ONTAP o per creare un connettore.
 
 * link:task-adding-aws-accounts.html#add-credentials-to-bluexp-for-creating-a-connector["Scopri come aggiungere le credenziali AWS a BlueXP per Amazon FSX per ONTAP"^]
-* link:task-adding-aws-accounts.html#add-credentials-to-a-connector["Scopri come aggiungere le credenziali AWS a BlueXP per la creazione di un connettore"]
+* link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["Scopri come aggiungere le credenziali AWS a BlueXP per la creazione di un connettore"]
 
 
 
