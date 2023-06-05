@@ -1947,7 +1947,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-23 19:36:43 +0000">05/23/2023</time>
+    <time datetime="2023-06-05 17:43:09 +0000">06/05/2023</time>
     
   
 
@@ -2164,7 +2164,8 @@
                 "ce:GetCostAndUsage",
                 "ce:GetTags",
                 "fsx:Describe*",
-                "fsx:List*"
+                "fsx:List*",
+                "kms:GenerateDataKeyWithoutPlaintext"
             ],
             "Resource": "*",
             "Effect": "Allow",
@@ -3716,7 +3717,7 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" rowspan="4"><p class="tableblock">Abilitare la crittografia dei dati di Cloud Volumes ONTAP utilizzando il servizio di gestione delle chiavi AWS (KMS)</p></td>
+<td class="tableblock halign-left valign-top" rowspan="5"><p class="tableblock">Abilitare la crittografia dei dati di Cloud Volumes ONTAP utilizzando il servizio di gestione delle chiavi AWS (KMS)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Km: Elenco*</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
@@ -3736,6 +3737,12 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Km: CreateGrant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kms:GenerateDataKeyWithoutPlaintext</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Sì</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
@@ -3889,6 +3896,15 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>Man mano che le autorizzazioni vengono aggiunte e rimosse, le annoteremo nelle sezioni seguenti.</p>
+</div>
+<div class="sect2">
+<h3 id="6-giugno-2023">6 giugno 2023</h3>
+<div class="paragraph">
+<p>Per Cloud Volumes ONTAP è ora richiesta la seguente autorizzazione:</p>
+</div>
+<div class="paragraph">
+<p>Kms:GenerateDataKeyWithoutPlaintext</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="14-febbraio-2023">14 febbraio 2023</h3>
