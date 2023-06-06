@@ -191,7 +191,7 @@ sidebar:
       entries:
       - title: Gestisci i bucket Amazon S3
         url: "/task-viewing-amazon-s3.html"
-      - title: Visualizza i tuoi account Azure Blob
+      - title: Gestisci i tuoi account Azure Blob
         url: "/task-viewing-azure-blob.html"
       - title: Visualizza i bucket di storage Google Cloud
         url: "/task-viewing-gcp-storage.html"

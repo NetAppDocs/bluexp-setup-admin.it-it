@@ -34,21 +34,12 @@
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Risultato</block>
   <block id="0cdc0aaedcc5278681de9de08217447f" category="paragraph">Ora hai effettuato l'accesso e puoi iniziare a utilizzare BlueXP per gestire la tua infrastruttura multi-cloud ibrida.</block>
   <block id="3747d8dfb456f8cefbe5ea8eed8a4289" category="summary">Dopo aver installato un connettore in Azure, BlueXP è in grado di rilevare automaticamente le informazioni sugli account di storage Azure che risiedono negli abbonamenti Azure in cui è installato il connettore. Un ambiente di lavoro Azure Blob viene aggiunto a Canvas per consentire la visualizzazione di queste informazioni.</block>
-  <block id="bce447551b8153911559a7a705721ffe" category="doc">Visualizza i tuoi account Azure Blob</block>
   <block id="df329246877a4bd1e46b66f9dd6845df" category="paragraph">Puoi visualizzare i dettagli sugli account di storage Azure, tra cui posizione, gruppo di risorse, capacità totale e utilizzata e molto altro ancora. Questi account possono essere utilizzati come destinazioni per le operazioni di backup e ripristino BlueXP, tiering BlueXP o copia e sincronizzazione BlueXP.</block>
-  <block id="dee8aad8e11608028ff3bcbb674cdcde" category="list-text">Installare un connettore nell'account Azure dove si desidera visualizzare gli account di storage Azure.</block>
   <block id="69e6c31f6140607f08425260f2faecb5" category="list-text">Dal menu di navigazione, selezionare *Storage &gt; Canvas*.</block>
-  <block id="4fa9fc9591ffa247eeef55070b3327a0" category="paragraph">Subito dopo dovrebbe essere visualizzato automaticamente un ambiente di lavoro Azure Blob.</block>
   <block id="2ed919302195764ff313fc8d75b59525" category="inline-image-macro">Uno screenshot di un ambiente di lavoro Azure Blob.</block>
   <block id="33b5e081bfc2a4ff553d44178d68dda0" category="paragraph"><block ref="33b5e081bfc2a4ff553d44178d68dda0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f0574ea9efbf61e3005311c1ed736537" category="list-text">Selezionare l'ambiente di lavoro e scegliere un'azione dal riquadro di destra.</block>
-  <block id="ddf1211c4efc09073771de2cfb4c8add" category="inline-image-macro">Una schermata che mostra il pannello delle azioni dopo aver selezionato un ambiente di lavoro Azure Blob. Il riquadro mostra il numero totale di account di storage e un'azione per l'utilizzo del servizio Sync.</block>
-  <block id="ff6037c85b586250d2e3426572b132dc" category="paragraph"><block ref="ff6037c85b586250d2e3426572b132dc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1b4dd0d5e9a98e510340de3c3938e7c5" category="list-text">Selezionare *Sync data* per sincronizzare i dati con o dallo storage Azure Blob.</block>
   <block id="6beafc0ddd3d2d40e91fd1f10beca6f6" category="inline-link">Panoramica della copia e della sincronizzazione BlueXP</block>
-  <block id="9e6c19e48717319b0b71ece6d5735a24" category="list-text">Selezionare *Enter Working Environment* (Inserisci ambiente di lavoro) per visualizzare i dettagli sugli account di storage Azure nei tuoi Azure Blob.</block>
-  <block id="60c144c7df7b8788c579926f83c506f9" category="inline-image-macro">Una schermata che mostra i dettagli di un ambiente di lavoro Azure Blob: Il numero totale di account storage, il numero totale di posizioni, gruppi di risorse, capacità totale e utilizzata e molto altro ancora.</block>
-  <block id="b8fb2daac759c86243cf205eec39b222" category="paragraph"><block ref="b8fb2daac759c86243cf205eec39b222" category="inline-image-macro-rx" type="image"></block></block>
   <block id="81b303f46dd1d85b6f031bc99d8e87a6" category="summary">BlueXP offre diverse modalità di implementazione che consentono di utilizzare BlueXP in modo da soddisfare i requisiti di sicurezza e di business. La modalità Standard sfrutta il layer BlueXP SaaS per fornire funzionalità complete, mentre la modalità limitata e la modalità privata sono disponibili per le organizzazioni con restrizioni di connettività.</block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="doc">Scopri le modalità di implementazione di BlueXP</block>
   <block id="534fd3c26a29e770ad82ea272b33fadf" category="paragraph">BlueXP offre varie _modalità di implementazione_ che consentono di utilizzare BlueXP in modo da soddisfare i requisiti di sicurezza e di business. _Standard mode_ sfrutta il layer BlueXP SaaS per fornire funzionalità complete, mentre _restricted mode_ e _private mode_ sono disponibili per le organizzazioni con restrizioni di connettività.</block>
@@ -3671,4 +3662,10 @@ Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono
   <block id="bff35f79163f07f1c3724cc46b19c1f3" category="paragraph">Tenere presente quanto segue sull'account NSS associato all'accesso a BlueXP:</block>
   <block id="7919f3886eb3f79725465a41663fb32e" category="list-text">Se stai cercando di associare un account del sito di supporto NetApp a un ambiente di lavoro Cloud Volumes ONTAP, puoi scegliere solo tra gli account NSS aggiunti all'account BlueXP di cui sei membro.</block>
   <block id="a91658662405c5ec223c95cc1036afce" category="paragraph">Le credenziali a livello di account NSS sono diverse dall'account NSS associato all'accesso a BlueXP. Le credenziali a livello di account NSS consentono di implementare Cloud Volumes ONTAP quando si porta la propria licenza (BYOL), registrare i sistemi PAYGO e aggiornare il software Cloud Volumes ONTAP.</block>
+  <block id="70c85793f0a33ef534a67f193287a992" category="doc">Gestisci i tuoi account Azure Blob</block>
+  <block id="bbea79834217efc10b46f4ce874042e0" category="inline-link">Fai clic qui per scoprire come visualizzare, creare e gestire i tuoi account di storage Azure utilizzando BlueXP</block>
+  <block id="925b4bfac5efe2fd0e529d00b71f77ab" category="paragraph">Una nuova funzionalità aggiunta consente ora di creare e modificare gli account di storage Azure.<block ref="3ed7f712e1a5045237f8df14106ff39a" category="inline-link-rx"></block>.</block>
+  <block id="26e3ab611e399c831d813cdff5745975" category="list-text">Il connettore consente ora di aggiungere e gestire gli account di storage Azure da BlueXP.</block>
+  <block id="8ffa5f25420a002d3aa8840ec0e7752f" category="inline-link">Scopri come aggiungere nuovi account di storage Azure negli abbonamenti Azure di BlueXP</block>
+  <block id="6c6c819a667ba8ce8119b4bf796894fc" category="paragraph"><block ref="fef6d7c0add7436be78fa3e990371931" category="inline-link-rx"></block>.</block>
 </blocks>

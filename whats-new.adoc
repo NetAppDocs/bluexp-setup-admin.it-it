@@ -38,6 +38,10 @@ Nell'ambito di questa modifica, la registrazione al supporto per un account Blue
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search-docs.png["Una schermata della ricerca BlueXP disponibile nella parte superiore della console."]
 
+* Il connettore consente ora di aggiungere e gestire gli account di storage Azure da BlueXP.
++
+https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["Scopri come aggiungere nuovi account di storage Azure negli abbonamenti Azure di BlueXP"^].
+
 * Il connettore è ora supportato nelle seguenti aree AWS:
 +
 ** Hyderabad (ap-sud-2)

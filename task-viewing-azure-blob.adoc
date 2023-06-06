@@ -4,7 +4,7 @@ permalink: task-viewing-azure-blob.html
 keywords: blob storage, blob working environment, azure blob storage accounts, azure blob working environment 
 summary: Dopo aver installato un connettore in Azure, BlueXP è in grado di rilevare automaticamente le informazioni sugli account di storage Azure che risiedono negli abbonamenti Azure in cui è installato il connettore. Un ambiente di lavoro Azure Blob viene aggiunto a Canvas per consentire la visualizzazione di queste informazioni. 
 ---
-= Visualizza i tuoi account Azure Blob
+= Gestisci i tuoi account Azure Blob
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,27 +16,8 @@ summary: Dopo aver installato un connettore in Azure, BlueXP è in grado di rile
 [role="lead"]
 Dopo aver installato un connettore in Azure, BlueXP è in grado di rilevare automaticamente le informazioni sugli account di storage Azure che risiedono negli abbonamenti Azure in cui è installato il connettore. Un ambiente di lavoro Azure Blob viene aggiunto a Canvas per consentire la visualizzazione di queste informazioni.
 
-Puoi visualizzare i dettagli sugli account di storage Azure, tra cui posizione, gruppo di risorse, capacità totale e utilizzata e molto altro ancora. Questi account possono essere utilizzati come destinazioni per le operazioni di backup e ripristino BlueXP, tiering BlueXP o copia e sincronizzazione BlueXP.
-
-.Fasi
-. Installare un connettore nell'account Azure dove si desidera visualizzare gli account di storage Azure.
-. Dal menu di navigazione, selezionare *Storage > Canvas*.
-+
-Subito dopo dovrebbe essere visualizzato automaticamente un ambiente di lavoro Azure Blob.
-
-+
 image:screenshot-azure-blob-we.png["Uno screenshot di un ambiente di lavoro Azure Blob."]
 
-. Selezionare l'ambiente di lavoro e scegliere un'azione dal riquadro di destra.
-+
-image:screenshot-azure-actions.png["Una schermata che mostra il pannello delle azioni dopo aver selezionato un ambiente di lavoro Azure Blob. Il riquadro mostra il numero totale di account di storage e un'azione per l'utilizzo del servizio Sync."]
+Puoi visualizzare i dettagli sugli account di storage Azure, tra cui posizione, gruppo di risorse, capacità totale e utilizzata e molto altro ancora. Questi account possono essere utilizzati come destinazioni per le operazioni di backup e ripristino BlueXP, tiering BlueXP o copia e sincronizzazione BlueXP.
 
-. Selezionare *Sync data* per sincronizzare i dati con o dallo storage Azure Blob.
-+
-Per ulteriori informazioni, vedere https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["Panoramica della copia e della sincronizzazione BlueXP"^]
-
-. Selezionare *Enter Working Environment* (Inserisci ambiente di lavoro) per visualizzare i dettagli sugli account di storage Azure nei tuoi Azure Blob.
-+
-image:screenshot-azure-blob-details.png["Una schermata che mostra i dettagli di un ambiente di lavoro Azure Blob: Il numero totale di account storage, il numero totale di posizioni, gruppi di risorse, capacità totale e utilizzata e molto altro ancora."]
-
-
+Una nuova funzionalità aggiunta consente ora di creare e modificare gli account di storage Azure. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Fai clic qui per scoprire come visualizzare, creare e gestire i tuoi account di storage Azure utilizzando BlueXP"^].
