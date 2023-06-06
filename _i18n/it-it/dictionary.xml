@@ -949,7 +949,6 @@
   <block id="b82af7a7b96d34942cadb7921514f408" category="paragraph">Quando si rileva direttamente un cluster ONTAP on-premise senza utilizzare un connettore, viene richiesto di immettere le credenziali ONTAP per il cluster. Queste credenziali vengono gestite a livello di utente, il che significa che non sono visualizzabili da altri utenti che effettuano l'accesso.</block>
   <block id="4cdcf6b8fd95bbaa7cf27e4443c7681b" category="section-title">Credenziali NSS</block>
   <block id="fb81cc600c8251372b08f0797c3abdd7" category="list-text">Quando si accede a Digital Advisor in BlueXP, viene richiesto di accedere a Digital Advisor inserendo le credenziali NSS.</block>
-  <block id="276e2bd44117ba4b3317de4a352235b2" category="paragraph">Tenere presente quanto segue sull'account NSS:</block>
   <block id="37cb0cdf24a1597d838bc5f1699b9e5a" category="list-text">L'account viene gestito a livello di utente, il che significa che non è visualizzabile da altri utenti che effettuano l'accesso.</block>
   <block id="db0f1f3e531a1a1c690b42c9a6daae35" category="inline-link-macro">Scopri di più sull'utilizzo delle credenziali NSS con il tuo account BlueXP</block>
   <block id="dacf2f246c2efb276c3709c141985f7c" category="paragraph"><block ref="4734e8f3bab5a9c00aebb286a2f16deb" category="inline-link-macro-rx"></block>.</block>
@@ -3589,7 +3588,6 @@
   <block id="c60a13b5352c81dedc5a2bed03d2f76a" category="list-text"><block ref="c60a13b5352c81dedc5a2bed03d2f76a" category="inline-link-rx"></block></block>
   <block id="8b2f4a40ac1aa19f2dc2b3da3efe4ffc" category="summary">Associa un account del sito di supporto NetApp al tuo account BlueXP per abilitare i flussi di lavoro chiave per Cloud Volumes ONTAP. Queste credenziali NSS sono associate all'intero account BlueXP.</block>
   <block id="71e32bbdd672e63bea65d67ecaa9f394" category="paragraph">Gli utenti possono ora selezionare l'account durante la creazione di nuovi sistemi Cloud Volumes ONTAP e la registrazione di sistemi Cloud Volumes ONTAP esistenti.</block>
-  <block id="282252a29e0d06c01483bbd34c2304a0" category="paragraph">Le credenziali NSS associate all'accesso a BlueXP consentono di accedere a Digital Advisor e alle funzionalità di registrazione e gestione dei casi di supporto.</block>
   <block id="f57a365a74c463e64fe68cc99fbed5f5" category="list-text">Quando si accede a *Support &gt; Resources* e si effettua la registrazione per il supporto, viene richiesto di associare le credenziali NSS al proprio login BlueXP.</block>
   <block id="b5d4819a4e8d73d085630d52e025ce10" category="paragraph">Questa azione registra l'account BlueXP per il supporto e attiva i diritti di supporto. Solo un utente dell'account BlueXP deve associare un account del sito di supporto NetApp al proprio account di accesso BlueXP per registrarsi al supporto e attivare i diritti di supporto. Una volta completata questa operazione, la pagina *risorse* mostra che il tuo account è registrato per il supporto.</block>
   <block id="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="paragraph"><block ref="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="inline-link-rx"></block></block>
@@ -3669,6 +3667,8 @@ Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono
   <block id="ac7b3cf10ea08c788a374e0291742517" category="list-text">Report sulla migrazione</block>
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">Caching dei volumi</block>
   <block id="fcaf3921e62bfc728003fed248ffa3f9" category="list-text">È possibile associare un solo account NSS a Digital Advisor e alla gestione dei casi di supporto, per utente.</block>
-  <block id="a90e2fd00c8dae4d2fb187ce1b69fa09" category="list-text">L'account non può essere utilizzato con le licenze Cloud Volumes ONTAP.</block>
-  <block id="49dd7d8a4c2b90d52580a51718450534" category="paragraph">Se stai lavorando con Cloud Volumes ONTAP, puoi associare le credenziali del sito di supporto NetApp all'account BlueXP di cui sei membro. Le credenziali a livello di account NSS consentono di implementare Cloud Volumes ONTAP quando si porta la propria licenza (BYOL), registrare i sistemi PAYGO e aggiornare il software Cloud Volumes ONTAP.</block>
+  <block id="9b7ea233ab4085c74e7506949f6c1a49" category="paragraph">Le credenziali NSS associate all'accesso a BlueXP consentono la registrazione del supporto, la gestione del caso e l'accesso a Digital Advisor.</block>
+  <block id="bff35f79163f07f1c3724cc46b19c1f3" category="paragraph">Tenere presente quanto segue sull'account NSS associato all'accesso a BlueXP:</block>
+  <block id="7919f3886eb3f79725465a41663fb32e" category="list-text">Se stai cercando di associare un account del sito di supporto NetApp a un ambiente di lavoro Cloud Volumes ONTAP, puoi scegliere solo tra gli account NSS aggiunti all'account BlueXP di cui sei membro.</block>
+  <block id="a91658662405c5ec223c95cc1036afce" category="paragraph">Le credenziali a livello di account NSS sono diverse dall'account NSS associato all'accesso a BlueXP. Le credenziali a livello di account NSS consentono di implementare Cloud Volumes ONTAP quando si porta la propria licenza (BYOL), registrare i sistemi PAYGO e aggiornare il software Cloud Volumes ONTAP.</block>
 </blocks>
