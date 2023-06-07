@@ -102,13 +102,13 @@ Il connettore deve disporre di una connessione di rete alla posizione in cui si 
 
 Se si prevede di installare manualmente il connettore sul proprio host Linux, il programma di installazione del connettore richiede l'accesso ai seguenti URL durante il processo di installazione:
 
-* https://support.netapp.com
-* https://mysupport.netapp.com
-* https://cloudmanager.cloud.netapp.com/tenancy
-* https://stream.cloudmanager.cloud.netapp.com
-* https://cloudmanagerinfraprod.azurecr.io
-* https://production-artifacts.cloudmanager.cloud.netapp.com
-* https://*.blob.core.windows.net
+* \https://support.netapp.com
+* \https://mysupport.netapp.com
+* \https://cloudmanager.cloud.netapp.com/tenancy
+* \https://stream.cloudmanager.cloud.netapp.com
+* \https://cloudmanagerinfraprod.azurecr.io
+* \https://production-artifacts.cloudmanager.cloud.netapp.com
+* \https://*.blob.core.windows.net
 
 
 L'host potrebbe tentare di aggiornare i pacchetti del sistema operativo durante l'installazione. L'host può contattare diversi siti di mirroring per questi pacchetti di sistemi operativi.
@@ -137,29 +137,46 @@ Servizi AWS (amazonaws.com):
 | Per gestire le risorse in AWS. L'endpoint esatto dipende dalla regione in cui viene implementato il connettore. https://docs.aws.amazon.com/general/latest/gr/rande.html["Per ulteriori informazioni, fare riferimento alla documentazione AWS"^] 
 
 
-| https://management.azure.com https://login.microsoftonline.com https://blob.core.windows.net https://core.windows.net | Per gestire le risorse nelle aree pubbliche di Azure. 
+| \https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net | Per gestire le risorse nelle aree pubbliche di Azure. 
 
 
-| https://management.usgovcloudapi.net https://login.microsoftonline.us https://blob.core.usgovcloudapi.net https://core.usgovcloudapi.net | Per gestire le risorse nelle regioni governative di Azure. 
+| \https://management.usgovcloudapi.net
+\https://login.microsoftonline.us
+\https://blob.core.usgovcloudapi.net
+\https://core.usgovcloudapi.net | Per gestire le risorse nelle regioni governative di Azure. 
 
 
-| https://management.chinacloudapi.cn https://login.chinacloudapi.cn https://blob.core.chinacloudapi.cn https://core.chinacloudapi.cn | Per gestire le risorse nelle regioni Azure China. 
+| \https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn | Per gestire le risorse nelle regioni Azure China. 
 
 
-| https://www.googleapis.com/compute/v1/ https://compute.googleapis.com/compute/v1 https://cloudresourcemanager.googleapis.com/v1/projects https://www.googleapis.com/compute/beta https://storage.googleapis.com/storage/v1 https://www.googleapis.com/storage/v1 https://iam.googleapis.com/v1 https://cloudkms.googleapis.com/v1 https://www.googleapis.com/deploymentmanager/v2/projects | Per gestire le risorse in Google Cloud. 
+| \https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects | Per gestire le risorse in Google Cloud. 
 
 
-| https://support.netapp.com | Per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al supporto NetApp. 
+| \https://support.netapp.com | Per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al supporto NetApp. 
 
 
  a| 
-https://*.api.bluexp.netapp.com
+\https://*.api.bluexp.netapp.com
 
-https://api.bluexp.netapp.com
+\https://api.bluexp.netapp.com
 
-https://*.cloudmanager.cloud.netapp.com
+\https://*.cloudmanager.cloud.netapp.com
 
-https://cloudmanager.cloud.netapp.com
+\https://cloudmanager.cloud.netapp.com
  a| 
 Fornire funzionalità e servizi SaaS all'interno di BlueXP.
 
@@ -168,7 +185,9 @@ NOTE: Il connettore sta attualmente contattando "cloudmanager.cloud.netapp.com",
 
 
 
-| https://cloudmanagerinfraprod.azurecr.io https://*.blob.core.windows.net | Per aggiornare il connettore e i relativi componenti Docker. 
+| \https://cloudmanagerinfraprod.azurecr.io
+
+\https://*.blob.core.windows.net | Per aggiornare il connettore e i relativi componenti Docker. 
 |===
 
 
@@ -214,13 +233,17 @@ In modalità limitata, l'interfaccia utente di BlueXP è accessibile dal connett
 | Endpoint | Scopo 
 
 
-| https://signin.b2c.netapp.com | Necessario per aggiornare le credenziali NetApp Support Site (NSS) o per aggiungere nuove credenziali NSS a BlueXP. 
+| \https://signin.b2c.netapp.com | Necessario per aggiornare le credenziali NetApp Support Site (NSS) o per aggiungere nuove credenziali NSS a BlueXP. 
 
 
-| https://netapp-cloud-account.auth0.com https://cdn.auth0.com https://services.cloud.netapp.com | Il browser Web si connette a questi endpoint per un'autenticazione utente centralizzata tramite BlueXP. 
+| \https://netapp-cloud-account.auth0.com
+
+\https://cdn.auth0.com
+
+\https://services.cloud.netapp.com | Il browser Web si connette a questi endpoint per un'autenticazione utente centralizzata tramite BlueXP. 
 
 
-| https://widget.intercom.io | Per chat in-product che ti consente di parlare con gli esperti cloud di NetApp. 
+| \https://widget.intercom.io | Per chat in-product che ti consente di parlare con gli esperti cloud di NetApp. 
 |===
 
 

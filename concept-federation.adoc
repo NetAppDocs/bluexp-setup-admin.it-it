@@ -123,7 +123,9 @@ NOTE: Prendere nota della data di scadenza del certificato. È necessario tornar
 | 3 | AD admin | Completare la configurazione sul provider di identità utilizzando i parametri mostrati nella pagina Federation Setup (impostazione federazione) al termine del passaggio 2. 
 
 
-| 4 | Amministratore di BlueXP | Verificare e attivare la connessione da https://services.cloud.netapp.com/federation-setup["Pagina NetApp Federation Setup"^]Si noti che la pagina viene aggiornata tra il test della connessione e l'abilitazione della connessione. 
+| 4 | Amministratore di BlueXP | Verificare e attivare la connessione da https://services.cloud.netapp.com/federation-setup["Pagina NetApp Federation Setup"^]
+
+Si noti che la pagina viene aggiornata tra il test della connessione e l'abilitazione della connessione. 
 |===
 
 
@@ -166,7 +168,9 @@ NOTE: Prendere nota della data di scadenza della chiave segreta. È necessario t
 | 3 | AD admin | Completare la configurazione in Azure ad utilizzando i parametri mostrati nella pagina Federation Setup (impostazione federazione) al termine del passaggio 2. 
 
 
-| 4 | Amministratore di BlueXP | Verificare e attivare la connessione da https://services.cloud.netapp.com/federation-setup["Pagina NetApp Federation Setup"^]Si noti che la pagina viene aggiornata tra il test della connessione e l'abilitazione della connessione. 
+| 4 | Amministratore di BlueXP | Verificare e attivare la connessione da https://services.cloud.netapp.com/federation-setup["Pagina NetApp Federation Setup"^]
+
+Si noti che la pagina viene aggiornata tra il test della connessione e l'abilitazione della connessione. 
 |===
 
 
@@ -201,7 +205,9 @@ NOTE: Prendere nota della data di scadenza del certificato. È necessario tornar
 | 3 | AD admin | Completare la configurazione sul server ADFS utilizzando i parametri mostrati nella pagina Federation Setup (impostazione federazione) al termine del passaggio 2. 
 
 
-| 4 | Amministratore di BlueXP | Verificare e attivare la connessione da https://services.cloud.netapp.com/federation-setup["Pagina NetApp Federation Setup"^]Si noti che la pagina viene aggiornata tra il test della connessione e l'abilitazione della connessione. 
+| 4 | Amministratore di BlueXP | Verificare e attivare la connessione da https://services.cloud.netapp.com/federation-setup["Pagina NetApp Federation Setup"^]
+
+Si noti che la pagina viene aggiornata tra il test della connessione e l'abilitazione della connessione. 
 |===
 
 
@@ -243,7 +249,9 @@ NOTE: Prendere nota della data di scadenza del certificato. È necessario tornar
 | 3 | AD admin | Completare la configurazione sul server PingFederate utilizzando i parametri mostrati nella pagina Federation Setup (impostazione federazione) al termine del passaggio 2. 
 
 
-| 4 | Amministratore di BlueXP | Verificare e attivare la connessione da https://services.cloud.netapp.com/federation-setup["Pagina NetApp Federation Setup"^]Si noti che la pagina viene aggiornata tra il test della connessione e l'abilitazione della connessione. 
+| 4 | Amministratore di BlueXP | Verificare e attivare la connessione da https://services.cloud.netapp.com/federation-setup["Pagina NetApp Federation Setup"^]
+
+Si noti che la pagina viene aggiornata tra il test della connessione e l'abilitazione della connessione. 
 |===
 
 

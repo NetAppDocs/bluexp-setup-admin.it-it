@@ -143,9 +143,11 @@ image:screenshot-add-email-recipient.png["Una schermata che mostra come aggiunge
 
 Se non è più necessario visualizzarle, puoi rimuovere le notifiche dalla pagina. È possibile chiudere tutte le notifiche contemporaneamente oppure ignorare singole notifiche.
 
-Per chiudere tutte le notifiche, nel Centro notifiche selezionare image:button_3_vert_dots.png["un'icona con tre punti verticali"] E selezionare *Chiudi tutto*.image:screenshot_notification_menu.png["Una schermata che mostra il menu Notifiche per selezionare le impostazioni e chiudere tutte le opzioni."]
+Per chiudere tutte le notifiche, nel Centro notifiche selezionare image:button_3_vert_dots.png["un'icona con tre punti verticali"] E selezionare *Chiudi tutto*.
+image:screenshot_notification_menu.png["Una schermata che mostra il menu Notifiche per selezionare le impostazioni e chiudere tutte le opzioni."]
 
-Per chiudere le singole notifiche, posizionare il cursore del mouse sulla notifica e selezionare *Dismiss* (Chiudi).image:screenshot_notification_dismiss1.png["Una schermata che mostra come chiudere una singola notifica."]
+Per chiudere le singole notifiche, posizionare il cursore del mouse sulla notifica e selezionare *Dismiss* (Chiudi).
+image:screenshot_notification_dismiss1.png["Una schermata che mostra come chiudere una singola notifica."]
 
 
 

@@ -118,16 +118,33 @@ Servizi AWS (amazonaws.com):
 | Per gestire le risorse in AWS. L'endpoint esatto dipende dalla regione in cui viene implementato il connettore. https://docs.aws.amazon.com/general/latest/gr/rande.html["Per ulteriori informazioni, fare riferimento alla documentazione AWS"^] 
 
 
-| https://management.azure.com https://login.microsoftonline.com https://blob.core.windows.net https://core.windows.net | Per gestire le risorse nelle aree pubbliche di Azure. 
+| \https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net | Per gestire le risorse nelle aree pubbliche di Azure. 
 
 
-| https://management.azure.microsoft.scloud https://login.microsoftonline.microsoft.scloud https://blob.core.microsoft.scloud https://core.microsoft.scloud | Per gestire le risorse nell'area Azure IL6. 
+| \https://management.azure.microsoft.scloud
+\https://login.microsoftonline.microsoft.scloud
+\https://blob.core.microsoft.scloud
+\https://core.microsoft.scloud | Per gestire le risorse nell'area Azure IL6. 
 
 
-| https://management.chinacloudapi.cn https://login.chinacloudapi.cn https://blob.core.chinacloudapi.cn https://core.chinacloudapi.cn | Per gestire le risorse nelle regioni Azure China. 
+| \https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn | Per gestire le risorse nelle regioni Azure China. 
 
 
-| https://www.googleapis.com/compute/v1/ https://compute.googleapis.com/compute/v1 https://cloudresourcemanager.googleapis.com/v1/projects https://www.googleapis.com/compute/beta https://storage.googleapis.com/storage/v1 https://www.googleapis.com/storage/v1 https://iam.googleapis.com/v1 https://cloudkms.googleapis.com/v1 https://www.googleapis.com/deploymentmanager/v2/projects | Per gestire le risorse in Google Cloud. 
+| \https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects | Per gestire le risorse in Google Cloud. 
 |===
 
 

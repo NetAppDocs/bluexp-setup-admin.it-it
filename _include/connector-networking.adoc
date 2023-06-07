@@ -23,17 +23,17 @@ Il connettore richiede l'accesso a Internet in uscita per gestire risorse e proc
 | Endpoint | Scopo 
 
 
-| https://support.netapp.com | Per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al supporto NetApp. 
+| \https://support.netapp.com | Per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al supporto NetApp. 
 
 
  a| 
-https://*.api.bluexp.netapp.com
+\https://*.api.bluexp.netapp.com
 
-https://api.bluexp.netapp.com
+\https://api.bluexp.netapp.com
 
-https://*.cloudmanager.cloud.netapp.com
+\https://*.cloudmanager.cloud.netapp.com
 
-https://cloudmanager.cloud.netapp.com
+\https://cloudmanager.cloud.netapp.com
  a| 
 Fornire funzionalità e servizi SaaS all'interno di BlueXP.
 
@@ -42,7 +42,9 @@ NOTE: Il connettore sta attualmente contattando "cloudmanager.cloud.netapp.com",
 
 
 
-| https://cloudmanagerinfraprod.azurecr.io https://*.blob.core.windows.net | Per aggiornare il connettore e i relativi componenti Docker. 
+| \https://cloudmanagerinfraprod.azurecr.io
+
+\https://*.blob.core.windows.net | Per aggiornare il connettore e i relativi componenti Docker. 
 
 
  a| 
@@ -57,19 +59,39 @@ Servizi AWS (amazonaws.com):
 | Per gestire le risorse in AWS. L'endpoint esatto dipende dalla regione in cui viene implementato il connettore. https://docs.aws.amazon.com/general/latest/gr/rande.html["Per ulteriori informazioni, fare riferimento alla documentazione AWS"^] 
 
 
-| https://management.azure.com https://login.microsoftonline.com https://blob.core.windows.net https://core.windows.net | Per gestire le risorse nelle aree pubbliche di Azure. 
+| \https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net | Per gestire le risorse nelle aree pubbliche di Azure. 
 
 
-| https://management.usgovcloudapi.net https://login.microsoftonline.us https://blob.core.usgovcloudapi.net https://core.usgovcloudapi.net | Per gestire le risorse nelle regioni governative di Azure. 
+| \https://management.usgovcloudapi.net
+\https://login.microsoftonline.us
+\https://blob.core.usgovcloudapi.net
+\https://core.usgovcloudapi.net | Per gestire le risorse nelle regioni governative di Azure. 
 
 
-| https://management.azure.microsoft.scloud https://login.microsoftonline.microsoft.scloud https://blob.core.microsoft.scloud https://core.microsoft.scloud | Per gestire le risorse nell'area Azure IL6. 
+| \https://management.azure.microsoft.scloud
+\https://login.microsoftonline.microsoft.scloud
+\https://blob.core.microsoft.scloud
+\https://core.microsoft.scloud | Per gestire le risorse nell'area Azure IL6. 
 
 
-| https://management.chinacloudapi.cn https://login.chinacloudapi.cn https://blob.core.chinacloudapi.cn https://core.chinacloudapi.cn | Per gestire le risorse nelle regioni Azure China. 
+| \https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn | Per gestire le risorse nelle regioni Azure China. 
 
 
-| https://www.googleapis.com/compute/v1/ https://compute.googleapis.com/compute/v1 https://cloudresourcemanager.googleapis.com/v1/projects https://www.googleapis.com/compute/beta https://storage.googleapis.com/storage/v1 https://www.googleapis.com/storage/v1 https://iam.googleapis.com/v1 https://cloudkms.googleapis.com/v1 https://www.googleapis.com/deploymentmanager/v2/projects | Per gestire le risorse in Google Cloud. 
+| \https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects | Per gestire le risorse in Google Cloud. 
 |===
 
 

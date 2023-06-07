@@ -79,7 +79,8 @@ La cartella di installazione del connettore si trova nella seguente posizione:
 
 I file di log sono contenuti nelle seguenti cartelle:
 
-* /opt/application/netapp/cloudmanager/log o.
+* /opt/application/netapp/cloudmanager/log
+oppure
 * /opt/application/netapp/service-manager-2/logs (a partire dalle nuove installazioni 3.9.23)
 +
 I log in queste cartelle forniscono dettagli sulle immagini del connettore e del docker.

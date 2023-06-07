@@ -56,13 +56,13 @@ link:reference-networking-saas-console.html["Visualizzare l'elenco degli endpoin
 
 Se si prevede di installare manualmente il connettore sul proprio host Linux, il programma di installazione del connettore richiede l'accesso ai seguenti URL durante il processo di installazione:
 
-* https://support.netapp.com
-* https://mysupport.netapp.com
-* https://cloudmanager.cloud.netapp.com/tenancy
-* https://stream.cloudmanager.cloud.netapp.com
-* https://cloudmanagerinfraprod.azurecr.io
-* https://production-artifacts.cloudmanager.cloud.netapp.com
-* https://*.blob.core.windows.net
+* \https://support.netapp.com
+* \https://mysupport.netapp.com
+* \https://cloudmanager.cloud.netapp.com/tenancy
+* \https://stream.cloudmanager.cloud.netapp.com
+* \https://cloudmanagerinfraprod.azurecr.io
+* \https://production-artifacts.cloudmanager.cloud.netapp.com
+* \https://*.blob.core.windows.net
 
 
 L'host potrebbe tentare di aggiornare i pacchetti del sistema operativo durante l'installazione. L'host può contattare diversi siti di mirroring per questi pacchetti di sistemi operativi.
@@ -78,23 +78,29 @@ Il connettore richiede l'accesso a Internet in uscita per contattare i seguenti 
 | Endpoint | Scopo 
 
 
-| https://management.azure.com https://login.microsoftonline.com https://blob.core.windows.net https://core.windows.net | Per gestire le risorse nelle aree pubbliche di Azure. 
+| \https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net | Per gestire le risorse nelle aree pubbliche di Azure. 
 
 
-| https://management.chinacloudapi.cn https://login.chinacloudapi.cn https://blob.core.chinacloudapi.cn https://core.chinacloudapi.cn | Per gestire le risorse nelle regioni Azure China. 
+| \https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn | Per gestire le risorse nelle regioni Azure China. 
 
 
-| https://support.netapp.com | Per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al supporto NetApp. 
+| \https://support.netapp.com | Per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al supporto NetApp. 
 
 
  a| 
-https://*.api.bluexp.netapp.com
+\https://*.api.bluexp.netapp.com
 
-https://api.bluexp.netapp.com
+\https://api.bluexp.netapp.com
 
-https://*.cloudmanager.cloud.netapp.com
+\https://*.cloudmanager.cloud.netapp.com
 
-https://cloudmanager.cloud.netapp.com
+\https://cloudmanager.cloud.netapp.com
  a| 
 Fornire funzionalità e servizi SaaS all'interno di BlueXP.
 
@@ -103,7 +109,9 @@ NOTE: Il connettore sta attualmente contattando "cloudmanager.cloud.netapp.com",
 
 
 
-| https://cloudmanagerinfraprod.azurecr.io https://*.blob.core.windows.net | Per aggiornare il connettore e i relativi componenti Docker. 
+| \https://cloudmanagerinfraprod.azurecr.io
+
+\https://*.blob.core.windows.net | Per aggiornare il connettore e i relativi componenti Docker. 
 |===
 
 

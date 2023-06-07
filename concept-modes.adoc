@@ -104,7 +104,8 @@ Posizione supportata per il connettore:: In modalità standard, il connettore è
 Installazione del connettore:: L'installazione del connettore è possibile da una procedura di installazione guidata in BlueXP, da AWS o Azure Marketplace, o utilizzando un programma di installazione per installare manualmente il connettore sul proprio host Linux nel data center o nel cloud.
 Aggiornamenti del connettore:: Gli aggiornamenti automatici del software del connettore sono disponibili da BlueXP con aggiornamenti mensili.
 Accesso all'interfaccia utente:: L'interfaccia utente è accessibile dalla console basata sul web fornita attraverso il layer SaaS.
-Endpoint API:: Le chiamate API vengono effettuate al seguente endpoint: https://cloudmanager.cloud.netapp.com
+Endpoint API:: Le chiamate API vengono effettuate al seguente endpoint:
+\https://cloudmanager.cloud.netapp.com
 Autenticazione:: L'autenticazione viene fornita tramite il servizio cloud di BlueXP utilizzando auth0 o tramite gli accessi al NetApp Support Site (NSS). È disponibile la federazione delle identità.
 Servizi BlueXP supportati:: Tutti i servizi BlueXP sono disponibili per gli utenti.
 Opzioni di licenza supportate:: Gli abbonamenti Marketplace e BYOL sono supportati con la modalità standard; tuttavia, le opzioni di licenza supportate dipendono dal servizio BlueXP in uso. Consulta la documentazione relativa a ciascun servizio per ulteriori informazioni sulle opzioni di licenza disponibili.
@@ -138,7 +139,8 @@ Posizione supportata per il connettore:: In modalità limitata, il connettore è
 Installazione del connettore:: L'installazione del connettore è possibile da AWS o Azure Marketplace o da un'installazione manuale sul proprio host Linux.
 Aggiornamenti del connettore:: Gli aggiornamenti automatici del software del connettore sono disponibili da BlueXP con aggiornamenti mensili.
 Accesso all'interfaccia utente:: L'interfaccia utente è accessibile dal connettore implementato nella tua area cloud.
-Endpoint API:: Le chiamate API vengono effettuate al seguente endpoint: https://cloudmanager.cloud.netapp.com
+Endpoint API:: Le chiamate API vengono effettuate al seguente endpoint:
+\https://cloudmanager.cloud.netapp.com
 Autenticazione:: L'autenticazione viene fornita tramite il servizio cloud di BlueXP utilizzando auth0. È disponibile anche la federazione delle identità.
 Servizi BlueXP supportati:: BlueXP supporta i seguenti servizi di storage e dati in modalità limitata:
 +
@@ -154,7 +156,9 @@ Servizi BlueXP supportati:: BlueXP supporta i seguenti servizi di storage e dati
 | Azure NetApp Files | Supporto completo 
 
 
-| Backup e recovery | Supportato in regioni governative e commerciali con modalità limitata. Non supportato nelle regioni sovrane con modalità limitata. Le seguenti funzionalità non sono supportate: Applicazioni, macchine virtuali e Kubernetes. 
+| Backup e recovery | Supportato in regioni governative e commerciali con modalità limitata. Non supportato nelle regioni sovrane con modalità limitata.
+
+Le seguenti funzionalità non sono supportate: Applicazioni, macchine virtuali e Kubernetes. 
 
 
 | Classificazione  a| 
@@ -174,7 +178,9 @@ Si applicano le seguenti limitazioni:
 | Portafoglio digitale | Per la modalità limitata, puoi utilizzare il portafoglio digitale con le opzioni di licenza supportate elencate di seguito. 
 
 
-| Cluster ONTAP on-premise | Sono supportati sia il rilevamento con un connettore che il rilevamento senza un connettore (rilevamento diretto). Quando si rileva un cluster on-premise con un connettore, la visualizzazione avanzata (System Manager) non è supportata. 
+| Cluster ONTAP on-premise | Sono supportati sia il rilevamento con un connettore che il rilevamento senza un connettore (rilevamento diretto).
+
+Quando si rileva un cluster on-premise con un connettore, la visualizzazione avanzata (System Manager) non è supportata. 
 
 
 | Replica | Supportato nelle regioni governative con modalità limitata. Non supportato in aree commerciali o in aree sovrane con modalità limitata. 
@@ -246,7 +252,9 @@ Servizi BlueXP supportati nelle implementazioni cloud:: BlueXP supporta i seguen
 | Servizi supportati | Note 
 
 
-| Backup e recovery | Supportato nelle aree commerciali di AWS e Azure. Non supportato in Google Cloud o in https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] oppure https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
+| Backup e recovery | Supportato nelle aree commerciali di AWS e Azure.
+
+Non supportato in Google Cloud o in https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] oppure https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
 
 
 | Cloud Volumes ONTAP | Poiché non è disponibile l'accesso a Internet, non sono disponibili le seguenti funzionalità: Aggiornamenti software automatici, AutoSupport e informazioni sui costi AWS. 
@@ -255,7 +263,9 @@ Servizi BlueXP supportati nelle implementazioni cloud:: BlueXP supporta i seguen
 | Portafoglio digitale | È possibile utilizzare il portafoglio digitale con le opzioni di licenza supportate elencate di seguito per la modalità privata. 
 
 
-| Cluster ONTAP on-premise | Richiede la connettività dal cloud (dove è installato il connettore) all'ambiente on-premise. Il rilevamento senza connettore (rilevamento diretto) non è supportato. 
+| Cluster ONTAP on-premise | Richiede la connettività dal cloud (dove è installato il connettore) all'ambiente on-premise.
+
+Il rilevamento senza connettore (rilevamento diretto) non è supportato. 
 |===
 --
 Servizi BlueXP supportati nelle implementazioni on-premise:: BlueXP supporta i seguenti servizi di storage e dati con modalità privata quando il connettore viene installato in sede:
