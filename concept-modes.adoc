@@ -355,7 +355,7 @@ Alcuni servizi potrebbero essere supportati con limitazioni. Per ulteriori infor
 | StorageGRID | No | No 
 
 
-.13+| *Servizi* | Backup e recovery | Sì | Sì 
+.15+| *Servizi* | Backup e recovery | Sì | Sì 
 
 
 | Classificazione | Sì | Sì 
@@ -394,20 +394,23 @@ Alcuni servizi potrebbero essere supportati con limitazioni. Per ulteriori infor
 | Replica | Sì | Sì 
 
 
-| Tiering | No | No | Caching dei volumi 
+| Tiering | No | No 
 
 
-| No | No .4+| *Caratteristiche* | Credenziali 
+| Caching dei volumi | No | No 
 
 
-| Sì | Sì | Account NSS 
+.5+| *Caratteristiche* | Credenziali | Sì | Sì 
 
 
-| Sì | No | Notifiche 
+| Account NSS | Sì | No 
 
 
-| Sì | No | Cerca 
+| Notifiche | Sì | No 
 
 
-| Sì | No | Tempistiche | Sì 
+| Cerca | Sì | No 
+
+
+| Tempistiche | Sì | Sì 
 |===
