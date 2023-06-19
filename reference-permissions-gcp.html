@@ -1947,7 +1947,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-23 19:36:43 +0000">05/23/2023</time>
+    <time datetime="2023-06-19 10:06:50 +0000">06/19/2023</time>
     
   
 
@@ -2115,11 +2115,20 @@ includedPermissions:
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- Compute.disks.create - compute.disks.createSnapshot - compute.disks.delete - compute.disks.get - compute.disks.list - compute.disks.setLabels - compute.disks.use</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.disks.create<br>
+- Compute.disks.createSnapshot<br>
+- compute.disks.delete<br>
+- compute.disks.get<br>
+- compute.disks.list<br>
+- compute.disks.setLabels<br>
+- compute.disks.use</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per creare e gestire dischi per Cloud Volumes ONTAP.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.firewalls.create - compute.firewalls.delete - compute.firewalls.get - compute.firewalls.list</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.firewalls.create<br>
+- compute.firewalls.delete<br>
+- compute.firewalls.get<br>
+- compute.firewalls.list</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per creare regole firewall per Cloud Volumes ONTAP.</p></td>
 </tr>
 <tr>
@@ -2127,15 +2136,20 @@ includedPermissions:
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per ottenere lo stato delle operazioni.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- Compute.images.get - compute.images.getFromFamily - compute.images.list - compute.images.useReadOnly</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.images.get<br>
+- Compute.images.getFromFamily<br>
+- compute.images.list<br>
+- compute.images.useReadOnly</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per ottenere immagini per istanze di macchine virtuali.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.instances.attachDisk - compute.instances.detachDisk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.instances.attachDisk<br>
+- compute.instances.detachDisk</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per collegare e scollegare i dischi a Cloud Volumes ONTAP.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.instances.create - compute.instances.delete</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.instances.create<br>
+- compute.instances.delete</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per creare ed eliminare istanze di Cloud Volumes ONTAP VM.</p></td>
 </tr>
 <tr>
@@ -2159,7 +2173,8 @@ includedPermissions:
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per aggiungere etichette.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.instances.setMachineType - compute.instances.setMinCpuPlatform</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.instances.setMachineType<br>
+- compute.instances.setMinCpuPlatform</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per modificare il tipo di macchina per Cloud Volumes ONTAP.</p></td>
 </tr>
 <tr>
@@ -2171,7 +2186,9 @@ includedPermissions:
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per aggiungere tag per le regole del firewall.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.instances.start - compute.instances.stop - compute.instances.updateDisplayDevice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.instances.start<br>
+- compute.instances.stop<br>
+- compute.instances.updateDisplayDevice</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per avviare e arrestare Cloud Volumes ONTAP.</p></td>
 </tr>
 <tr>
@@ -2183,19 +2200,47 @@ includedPermissions:
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per supportare progetti multipli.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- Compute.Snapshot.create - compute.snapshots.delete - compute.Snapshot.get - compute.Snapshot.list - compute.snapshots.setLabels</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.snapshot.create<br>
+- compute.snapshots.delete<br>
+- compute.snapshot.get<br>
+- compute.snapshot.list<br>
+- compute.snapshots.setLabels</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per creare e gestire snapshot di dischi persistenti.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.networks.get - compute.networks.list - compute.regions.get - compute.regions.list - compute.subnetworks.get - compute.subnetworks.list - compute.zoneOperations.get - compute.zones.get - compute.zone.list</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.networks.get<br>
+- compute.networks.list<br>
+- compute.regions.get<br>
+- compute.regions.list<br>
+- compute.subnetworks.get<br>
+- compute.subnetworks.list<br>
+- Compute.zoneOperations.get<br>
+- compute.zones.get<br>
+- compute.zones.list</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per ottenere le informazioni di rete necessarie per creare una nuova istanza di macchina virtuale Cloud Volumes ONTAP.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- deploymentmanager.compositeTypes.get - deploymentmanager.compositeTypes.list - deploymentmanager.deployments.create - deploymentmanager.deployments.delete - deploymentmanager.deployments.get - deploymentmanager.deployments.list - deploymentmanager.manifests.get - deploymentmanager.manifests.list - deploymentmanager.Operations.get - deploymentmanager.Operations.list - deploymentmanager.resources.get - deploymentmanager.typeProviders.get - deploymentmanager.typeProviders.list - deploymentmanager.typeopers.get.get.get - deploymentmanager.get.list</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- deploymentmanager.compositeTypes.get<br>
+- deploymentmanager.compositeTypes.list<br>
+- deploymentmanager.deployments.create<br>
+- deploymentmanager.deployments.delete<br>
+- deploymentmanager.deployments.get<br>
+- deploymentmanager.deployments.list<br>
+- deploymentmanager.manifests.get<br>
+- deploymentmanager.manifests.list<br>
+- deploymentmanager.operations.get<br>
+- deploymentmanager.operations.list<br>
+- deploymentmanager.resources.get<br>
+- deploymentmanager.resources.list<br>
+- Deploymentmanager.typeProviders.get<br>
+- Deploymentmanager.typeProviders.list<br>
+- deploymentmanager.types.get<br>
+- deploymentmanager.types.list</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per implementare l&#8217;istanza della macchina virtuale Cloud Volumes ONTAP utilizzando Google Cloud Deployment Manager.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- Logging.logEntries.list - logging.privateLogEntries.list</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- Logging.logEntries.list<br>
+- Logging.privateLogEntries.list</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per ottenere unità di log stack.</p></td>
 </tr>
 <tr>
@@ -2203,15 +2248,27 @@ includedPermissions:
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per supportare progetti multipli.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- storage.bucket.create - storage.buckets.delete - storage.bucket.get - storage.bucket.list - storage.bucket.update</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- storage.bucket.create<br>
+- storage.buckets.delete<br>
+- storage.bucket.get<br>
+- storage.bucket.list<br>
+- storage.bucket.update</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per creare e gestire un bucket di storage Google Cloud per il tiering dei dati.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- cloudkms.cryptoKeyVersions.useToEncrypt - cloudkms.cryptKeys.get - cloudkms.cryptKeys.list - cloudkms.keyrings.list</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- cloudkms.cryptoKeyVersions.useToEncrypt<br>
+- Cloudkms.cryptKeys.get<br>
+- Cloudkms.cryptKeys.list<br>
+- Cloudkms.keyrings.list</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per utilizzare le chiavi di crittografia gestite dal cliente dal servizio di gestione delle chiavi cloud con Cloud Volumes ONTAP.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.instances.setServiceAccount - iam.serviceAccounts.actAs - iam.serviceAccounts.getIamPolicy - iam.serviceAccounts.list - storage.objects.get - storage.objects.list</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.instances.setServiceAccount<br>
+- iam.serviceAccounts.actAs<br>
+- iam.serviceAccounts.getIamPolicy<br>
+- iam.serviceAccounts.list<br>
+- storage.objects.get<br>
+- storage.objects.list</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per impostare un account di servizio sull&#8217;istanza di Cloud Volumes ONTAP. Questo account di servizio fornisce le autorizzazioni per il tiering dei dati a un bucket di storage Google Cloud.</p></td>
 </tr>
 <tr>
@@ -2219,7 +2276,10 @@ includedPermissions:
 <td class="tableblock halign-left valign-top"><p class="tableblock">Recuperare gli indirizzi in una regione durante l&#8217;implementazione di una coppia ha.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- Compute.backendServices.create - compute.regionBackendServices.create - compute.regionBackendServices.get - compute.regionBackendServices.list</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- Compute.backendServices.create<br>
+- Compute.regionBackendServices.create<br>
+- Compute.regionBackendServices.get<br>
+- Compute.regionBackendServices.list</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per configurare un servizio back-end per la distribuzione del traffico in una coppia ha.</p></td>
 </tr>
 <tr>
@@ -2227,23 +2287,36 @@ includedPermissions:
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per applicare le regole del firewall ai VPC e alle subnet per una coppia ha.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.subnetworks.use<br>
+- compute.subnetworks.useExternalIp<br>
+- compute.instances.addAccessConfig</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per attivare la classificazione BlueXP.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- container.cluster.get - container.cluster.list</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- container.cluster.get<br>
+- container.cluster.list</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per scoprire i cluster Kubernetes in esecuzione in Google Kubernetes Engine.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.instanceGroups.get - compute.addresses.get - compute.instances.updateNetworkInterface</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- compute.instanceGroups.get<br>
+- compute.addresses.get<br>
+- compute.instances.updateNetworkInterface</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per creare e gestire le VM di storage su coppie Cloud Volumes ONTAP ha.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- Monitoring.timeseries.list - storage.bucket.getIamPolicy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- Monitoring.timeseries.list<br>
+- Storage.bucket.getIamPolicy</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per scoprire informazioni sui bucket di storage di Google Cloud.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">- Cloudkms.cryptKeys.get - cloudkms.cryptKeys.getIamPolicy - cloudkms.cryptKeys.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.keyrings.getIamPolicy - cloudkms.keyrings.list - cloudkms.keyRings.setIamPolicy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">- Cloudkms.cryptKeys.get<br>
+- Cloudkms.cryptKeys.getIamPolicy<br>
+- Cloudkms.cryptKeys.list<br>
+- cloudkms.cryptoKeys.setIamPolicy<br>
+- Cloudkms.keyrings.get<br>
+- Cloudkms.keyrings.getIamPolicy<br>
+- Cloudkms.keyrings.list<br>
+- cloudkms.keyRings.setIamPolicy</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per selezionare le proprie chiavi gestite dal cliente nella procedura guidata di attivazione del backup e ripristino BlueXP invece di utilizzare le chiavi di crittografia predefinite gestite da Google.</p></td>
 </tr>
 </tbody>
