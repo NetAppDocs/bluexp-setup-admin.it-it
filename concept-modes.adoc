@@ -365,7 +365,7 @@ Alcuni servizi potrebbero essere supportati con limitazioni. Per ulteriori infor
 | StorageGRID | No | No 
 
 
-.15+| *Servizi* | Backup e recovery | Sì | Sì 
+.16+| *Servizi* | Backup e recovery | Sì | Sì 
 
 
 | Classificazione | Sì | Sì 
@@ -402,6 +402,9 @@ Alcuni servizi potrebbero essere supportati con limitazioni. Per ulteriori infor
 
 
 | Replica | Sì | Sì 
+
+
+| Sostenibilità | No | No 
 
 
 | Tiering | No | No 
