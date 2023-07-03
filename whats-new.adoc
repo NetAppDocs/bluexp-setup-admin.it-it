@@ -18,6 +18,36 @@ Scopri le novità delle funzionalità di amministrazione di BlueXP: Account Blue
 
 
 
+== 2 luglio 2023
+
+
+
+=== Connettore 3.9.31
+
+* Ora puoi scoprire i cluster ONTAP on-premise dalla scheda *My estate* (in precedenza *My Opportunities*)
++
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster["Scopri come scoprire i cluster dalla pagina My estate"].
+
+* Se si utilizza il connettore in un'area governativa di Azure, assicurarsi che il connettore possa contattare il seguente endpoint:
++
+\https://occmclientinfragov.azurecr.us
+
++
+Questo endpoint è necessario per installare manualmente il connettore e per aggiornare il connettore e i relativi componenti Docker.
+
++
+A seguito di questa modifica, un connettore in un'area governativa di Azure non contatta più il seguente endpoint:
+
++
+\https://cloudmanagerinfraprod.azurecr.io
+
++
+Si noti che questo endpoint è ancora necessario per tutte le altre configurazioni in modalità limitata e per la modalità standard.
+
+
+
+
+
 == 4 giugno 2023
 
 

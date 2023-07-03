@@ -3792,4 +3792,23 @@ Il rilevamento senza connettore (rilevamento diretto) non è supportato.</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinar sul cloud</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Tutta la documentazione BlueXP</block>
   <block id="19bea5bec76c66ef8bd189aa23a4c860" category="cell">Sostenibilità</block>
+  <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2 luglio 2023</block>
+  <block id="78ee56d07ea6442fbe0c88b1ea3be7ad" category="section-title">Connettore 3.9.31</block>
+  <block id="9f1d24d5ab10dd326cb52dffc172eea5" category="list-text">Ora puoi scoprire i cluster ONTAP on-premise dalla scheda *My estate* (in precedenza *My Opportunities*)</block>
+  <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">Scopri come scoprire i cluster dalla pagina My estate</block>
+  <block id="92adae4e241e70163adb8c5469771a82" category="paragraph"><block ref="24b3a807a9407b81f5101322f988421d" category="inline-link-rx"></block>.</block>
+  <block id="6bdb2baa8fe05cff12c22f9f6f8e9e7f" category="list-text">Se si utilizza il connettore in un'area governativa di Azure, assicurarsi che il connettore possa contattare il seguente endpoint:</block>
+  <block id="1f29f58c7cdabd46095c6ad242933991" category="paragraph">\https://occmclientinfragov.azurecr.us</block>
+  <block id="7cbd2e15c5d25612181f48c177cab04b" category="paragraph">Questo endpoint è necessario per installare manualmente il connettore e per aggiornare il connettore e i relativi componenti Docker.</block>
+  <block id="49145759efbc79c21fc5ba75bb2aaf72" category="paragraph">A seguito di questa modifica, un connettore in un'area governativa di Azure non contatta più il seguente endpoint:</block>
+  <block id="979b0001d7bec41aff8509faf7b59bef" category="paragraph">Si noti che questo endpoint è ancora necessario per tutte le altre configurazioni in modalità limitata e per la modalità standard.</block>
+  <block id="b7e5db85ee5e5c349f5841d09bf19cbe" category="paragraph">Questo endpoint non è richiesto nelle regioni governative di Azure.</block>
+  <block id="8e1098945acc0cdc1dade8505d9ce607" category="paragraph">Questo endpoint è richiesto solo nelle regioni governative di Azure.</block>
+  <block id="2ecb939d80f14a8df5cdeee557b8a6a2" category="cell">\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+Questo endpoint non è richiesto nelle regioni governative di Azure.
+
+\https://occmclientinfragov.azurecr.us
+Questo endpoint è richiesto solo nelle regioni governative di Azure.</block>
 </blocks>
