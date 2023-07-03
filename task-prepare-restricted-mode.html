@@ -1925,21 +1925,21 @@
   </div>
 </div>
 
-      <div class="ie-nmt-disclaimer">
-  <span>
-    <div class="ie-nmt-disclaimer-container">
-      <div class="ie-nmt-disclaimer-icon">
-        <svg class="luci-icon" aria-hidden="true">
-          <use xlink:href="/it-it/bluexp-setup-admin/images/sprite.svg#circle-info">
-        </svg>
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <svg class="luci-icon" aria-hidden="true">
+            <use xlink:href="/it-it/bluexp-setup-admin/images/sprite.svg#circle-info">
+          </svg>
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> La versione in lingua italiana fornita proviene da una traduzione automatica. Per eventuali incoerenze, fare riferimento alla versione in lingua inglese. </span>
+        </div>
+        <div style="clear:both;"></div>
       </div>
-      <div class="ie-nmt-disclaimer-content">
-        <span> La versione in lingua italiana fornita proviene da una traduzione automatica. Per eventuali incoerenze, fare riferimento alla versione in lingua inglese. </span>
-      </div>
-      <div style="clear:both;"></div>
-    </div>
-  </span>
-</div><div class="n-doc__component-detail-heading-wrap">
+    </span>
+  </div><div class="n-doc__component-detail-heading-wrap">
   <h1 class="n-doc__component-detail-heading">Prepararsi per l&#8217;implementazione in modalità limitata</h1>
 </div>
 
@@ -1947,7 +1947,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-06-19 10:06:50 +0000">06/19/2023</time>
+    <time datetime="2023-07-03 15:30:30 +0000">07/03/2023</time>
     
   
 
@@ -2129,13 +2129,22 @@
 <p>https://stream.cloudmanager.cloud.netapp.com</p>
 </li>
 <li>
-<p>https://cloudmanagerinfraprod.azurecr.io</p>
-</li>
-<li>
 <p>https://production-artifacts.cloudmanager.cloud.netapp.com</p>
 </li>
 <li>
 <p>https://*.blob.core.windows.net</p>
+</li>
+<li>
+<p>https://cloudmanagerinfraprod.azurecr.io</p>
+<div class="paragraph">
+<p>Questo endpoint non è richiesto nelle regioni governative di Azure.</p>
+</div>
+</li>
+<li>
+<p>https://occmclientinfragov.azurecr.us</p>
+<div class="paragraph">
+<p>Questo endpoint è richiesto solo nelle regioni governative di Azure.</p>
+</div>
 </li>
 </ul>
 </div>
@@ -2255,9 +2264,13 @@ Il connettore sta attualmente contattando "cloudmanager.cloud.netapp.com", ma in
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">https://cloudmanagerinfraprod.azurecr.io<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock">https://*.blob.core.windows.net<br>
 <br>
-https://*.blob.core.windows.net</p></td>
+https://cloudmanagerinfraprod.azurecr.io<br>
+Questo endpoint non è richiesto nelle regioni governative di Azure.<br>
+<br>
+https://occmclientinfragov.azurecr.us<br>
+Questo endpoint è richiesto solo nelle regioni governative di Azure.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Per aggiornare il connettore e i relativi componenti Docker.</p></td>
 </tr>
 </tbody>
