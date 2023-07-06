@@ -26,7 +26,7 @@ Quando BlueXP avvia l'istanza del connettore in AWS, crea un ruolo IAM e un prof
 
 image:diagram_permissions_initial_aws.png["Immagine concettuale che mostra BlueXP che implementa il connettore in un account AWS. Un criterio IAM viene assegnato a un ruolo IAM, associato all'istanza di BlueXP."]
 
-BlueXP seleziona queste credenziali AWS per impostazione predefinita quando si crea un nuovo ambiente di lavoro per Cloud Volumes ONTAP:
+Se si crea un nuovo ambiente di lavoro per Cloud Volumes ONTAP, BlueXP seleziona queste credenziali AWS per impostazione predefinita:
 
 image:screenshot_accounts_select_aws.gif["Una schermata che mostra l'opzione Switch account (Cambia account) nella pagina Details  Credentials (Dettagli  credenziali)."]
 

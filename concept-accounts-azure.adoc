@@ -26,7 +26,7 @@ Quando BlueXP implementa la macchina virtuale del connettore in Azure, abilita u
 
 image:diagram_permissions_initial_azure.png["Immagine concettuale che mostra BlueXP che implementa un connettore in un account e un abbonamento Azure. Viene attivata un'identità gestita assegnata dal sistema e viene assegnato un ruolo personalizzato alla macchina virtuale del connettore."]
 
-BlueXP seleziona queste credenziali Azure per impostazione predefinita quando si crea un nuovo ambiente di lavoro per Cloud Volumes ONTAP:
+Se si crea un nuovo ambiente di lavoro per Cloud Volumes ONTAP, BlueXP seleziona queste credenziali Azure per impostazione predefinita:
 
 image:screenshot_accounts_select_azure.gif["Una schermata che mostra l'opzione Switch account (Cambia account) nella pagina Details  Credentials (Dettagli  credenziali)."]
 

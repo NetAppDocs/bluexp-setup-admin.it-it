@@ -25,7 +25,7 @@ Prima di poter utilizzare BlueXP per gestire le risorse nel progetto Google Clou
 Prima di implementare un connettore direttamente da BlueXP, è necessario disporre di due set di autorizzazioni:
 
 . È necessario implementare un connettore utilizzando un account Google che disponga delle autorizzazioni per avviare l'istanza della macchina virtuale del connettore da BlueXP.
-. Quando si implementa il connettore, viene richiesto di selezionare un https://cloud.google.com/iam/docs/service-accounts["account di servizio"^] Per l'istanza della macchina virtuale. BlueXP ottiene le autorizzazioni dall'account del servizio per creare e gestire i sistemi Cloud Volumes ONTAP per conto dell'utente e altro ancora. Le autorizzazioni vengono fornite allegando un ruolo personalizzato all'account del servizio.
+. Quando si implementa il connettore, viene richiesto di selezionare un https://cloud.google.com/iam/docs/service-accounts["account di servizio"^] Per l'istanza della macchina virtuale. BlueXP ottiene le autorizzazioni dall'account del servizio per creare e gestire i sistemi Cloud Volumes ONTAP, per gestire i backup utilizzando il backup e ripristino BlueXP e altro ancora. Le autorizzazioni vengono fornite allegando un ruolo personalizzato all'account del servizio.
 
 
 La seguente immagine mostra i requisiti di autorizzazione descritti nei numeri 1 e 2 precedenti:

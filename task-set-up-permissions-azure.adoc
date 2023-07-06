@@ -252,7 +252,7 @@ image:screenshot_azure_service_principal_role.png["Schermata del portale Azure c
 L'entità del servizio dispone ora delle autorizzazioni Azure necessarie per implementare il connettore.
 
 +
-Se si desidera implementare Cloud Volumes ONTAP da più sottoscrizioni Azure, è necessario associare l'entità del servizio a ciascuna di queste sottoscrizioni. BlueXP consente di selezionare l'abbonamento che si desidera utilizzare durante l'implementazione di Cloud Volumes ONTAP.
+Se si desidera gestire le risorse in più sottoscrizioni Azure, è necessario associare l'entità del servizio a ciascuna di queste sottoscrizioni. Ad esempio, BlueXP consente di selezionare l'abbonamento che si desidera utilizzare durante l'implementazione di Cloud Volumes ONTAP.
 
 
 
@@ -322,7 +322,7 @@ https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azur
 . Copiare il contenuto di link:reference-permissions-azure.html["Autorizzazioni di ruolo personalizzate per il connettore"] E salvarli in un file JSON.
 . Modificare il file JSON aggiungendo gli ID di abbonamento Azure all'ambito assegnabile.
 +
-È necessario aggiungere l'ID per ogni abbonamento Azure da cui gli utenti creeranno i sistemi Cloud Volumes ONTAP.
+Aggiungere l'ID per ogni abbonamento Azure che si desidera utilizzare con BlueXP.
 
 +
 *Esempio*
@@ -417,7 +417,7 @@ image:screenshot_azure_service_principal_role.png["Schermata del portale Azure c
 L'entità del servizio dispone ora delle autorizzazioni Azure necessarie per implementare il connettore.
 
 +
-Se si desidera implementare Cloud Volumes ONTAP da più sottoscrizioni Azure, è necessario associare l'entità del servizio a ciascuna di queste sottoscrizioni. BlueXP consente di selezionare l'abbonamento che si desidera utilizzare durante l'implementazione di Cloud Volumes ONTAP.
+Se si desidera gestire le risorse in più sottoscrizioni Azure, è necessario associare l'entità del servizio a ciascuna di queste sottoscrizioni. Ad esempio, BlueXP consente di selezionare l'abbonamento che si desidera utilizzare durante l'implementazione di Cloud Volumes ONTAP.
 
 
 
