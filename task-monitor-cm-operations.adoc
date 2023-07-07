@@ -44,13 +44,13 @@ La seguente tabella fornisce un confronto tra il Centro notifiche e la cronologi
 
 == Monitorare le attività utilizzando il Centro notifiche
 
-Le notifiche tengono traccia dell'avanzamento delle operazioni avviate in BlueXP per verificare se l'operazione è stata eseguita correttamente. Consentono di visualizzare lo stato di molte azioni BlueXP avviate durante la sessione di accesso corrente. Al momento non tutti i servizi riportano informazioni nel Centro notifiche.
+Le notifiche tengono traccia dell'avanzamento delle operazioni avviate in BlueXP per verificare se l'operazione è stata eseguita correttamente. Consentono di visualizzare lo stato di molte azioni BlueXP avviate durante la sessione di accesso corrente. Attualmente non tutti i servizi BlueXP riportano informazioni nel Centro notifiche.
 
 È possibile visualizzare le notifiche facendo clic sul campanello di notifica (image:icon_bell.png["campanello di notifica"]) nella barra dei menu. Il colore della piccola bolla nella campana indica la notifica di livello di severità più elevato attiva. Quindi, se vedi una bolla rossa, significa che c'è un'importante notifica che dovresti guardare.
 
 image:screenshot_notification_full.png["Una schermata che mostra l'elenco delle notifiche correnti nel Centro notifiche."]
 
-È inoltre possibile configurare BlueXP per inviare notifiche via email in modo da essere informati di importanti attività del sistema anche quando non si è connessi al sistema. I messaggi di posta elettronica possono essere inviati a tutti gli utenti che fanno parte del tuo account BlueXP o a qualsiasi altro destinatario che deve essere a conoscenza di determinati tipi di attività del sistema. Vedere <<Impostazione delle impostazioni di notifica e-mail,Impostazione delle impostazioni di notifica e-mail>> di seguito.
+È inoltre possibile configurare BlueXP in modo che invii determinati tipi di notifiche via email, in modo da essere informato di importanti attività del sistema anche quando non si è connessi al sistema. I messaggi di posta elettronica possono essere inviati a tutti gli utenti che fanno parte del tuo account BlueXP o a qualsiasi altro destinatario che deve essere a conoscenza di determinati tipi di attività del sistema. Scopri come <<Consente di impostare le notifiche e-mail,consente di impostare le notifiche e-mail>>.
 
 
 
@@ -58,7 +58,7 @@ image:screenshot_notification_full.png["Una schermata che mostra l'elenco delle 
 
 Le notifiche sono classificate nelle seguenti categorie:
 
-[cols="22,58"]
+[cols="20,60"]
 |===
 | Tipo di notifica | Descrizione 
 
@@ -84,11 +84,23 @@ Le notifiche sono classificate nelle seguenti categorie:
 
 === Filtra le notifiche
 
-Per impostazione predefinita, vengono visualizzate tutte le notifiche. È possibile filtrare le notifiche visualizzate nel Centro notifiche in modo da visualizzare solo quelle importanti per l'utente. È possibile filtrare in base al "Servizio" BlueXP e alla notifica "tipo".
+Per impostazione predefinita, tutte le notifiche attive vengono visualizzate nel Centro notifiche. È possibile filtrare le notifiche visualizzate in modo da visualizzare solo quelle importanti per l'utente. È possibile filtrare in base al "Servizio" BlueXP e alla notifica "tipo".
 
 image:screenshot_notification_filters.png["Una schermata che mostra i due tipi di filtri disponibili nel Centro notifiche."]
 
 Ad esempio, se si desidera visualizzare solo le notifiche di "errore" e "Avviso" per le operazioni BlueXP, selezionare queste voci e verranno visualizzati solo i tipi di notifica.
+
+
+
+=== Consente di chiudere le notifiche
+
+Se non è più necessario visualizzarle, puoi rimuovere le notifiche dalla pagina. È possibile chiudere tutte le notifiche contemporaneamente oppure ignorare singole notifiche.
+
+Per chiudere tutte le notifiche, nel Centro notifiche selezionare image:button_3_vert_dots.png["un'icona con tre punti verticali"] E selezionare *Chiudi tutto*.
+image:screenshot_notification_menu.png["Una schermata che mostra il menu Notifiche per selezionare le impostazioni e chiudere tutte le opzioni."]
+
+Per chiudere le singole notifiche, posizionare il cursore del mouse sulla notifica e selezionare *Dismiss* (Chiudi).
+image:screenshot_notification_dismiss1.png["Una schermata che mostra come chiudere una singola notifica."]
 
 
 
@@ -98,12 +110,14 @@ Ad esempio, se si desidera visualizzare solo le notifiche di "errore" e "Avviso"
 
 [NOTE]
 ====
-* A questo punto, le notifiche vengono inviate tramite e-mail per le seguenti funzionalità e servizi BlueXP: Connettori, copia e sincronizzazione BlueXP, backup e ripristino BlueXP, portafoglio digitale BlueXP e protezione ransomware BlueXP. Ulteriori servizi verranno aggiunti nelle versioni future.
+* A questo punto, le notifiche vengono inviate tramite e-mail per le seguenti funzionalità e servizi BlueXP: Connettore, copia e sincronizzazione BlueXP, backup e ripristino BlueXP, portafoglio digitale BlueXP e protezione ransomware BlueXP. Ulteriori servizi verranno aggiunti nelle versioni future.
 * L'invio di notifiche e-mail non è supportato quando il connettore viene installato in un sito senza accesso a Internet.
 
 
 ====
-Per impostazione predefinita, gli account Admins di BlueXP riceveranno e-mail per tutte le notifiche "critiche" e "consigliate". Tutti gli altri utenti e destinatari sono configurati, per impostazione predefinita, per non ricevere alcuna email di notifica.
+I filtri impostati nel Centro notifiche non determinano i tipi di notifiche che verranno inviate tramite e-mail. Per impostazione predefinita, gli account Admins di BlueXP riceveranno e-mail per tutte le notifiche "critiche" e "consigliate". Queste notifiche si applicano a tutti i servizi: Non è possibile scegliere di ricevere notifiche solo per alcuni servizi, ad esempio Connectors o BlueXP backup e recovery.
+
+Tutti gli altri utenti e destinatari sono configurati per non ricevere alcuna email di notifica, pertanto dovrai configurare le impostazioni di notifica per eventuali utenti aggiuntivi.
 
 Per personalizzare le impostazioni delle notifiche, è necessario essere un amministratore dell'account.
 
@@ -136,18 +150,6 @@ image:screenshot-add-email-recipient.png["Una schermata che mostra come aggiunge
 
 . Immettere il nome, l'indirizzo e-mail e selezionare i tipi di notifica che il destinatario riceverà, quindi selezionare *Aggiungi nuovo destinatario*.
 
-
-
-
-=== Consente di chiudere le notifiche
-
-Se non è più necessario visualizzarle, puoi rimuovere le notifiche dalla pagina. È possibile chiudere tutte le notifiche contemporaneamente oppure ignorare singole notifiche.
-
-Per chiudere tutte le notifiche, nel Centro notifiche selezionare image:button_3_vert_dots.png["un'icona con tre punti verticali"] E selezionare *Chiudi tutto*.
-image:screenshot_notification_menu.png["Una schermata che mostra il menu Notifiche per selezionare le impostazioni e chiudere tutte le opzioni."]
-
-Per chiudere le singole notifiche, posizionare il cursore del mouse sulla notifica e selezionare *Dismiss* (Chiudi).
-image:screenshot_notification_dismiss1.png["Una schermata che mostra come chiudere una singola notifica."]
 
 
 
