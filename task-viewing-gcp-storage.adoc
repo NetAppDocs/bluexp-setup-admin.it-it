@@ -16,27 +16,8 @@ summary: 'Dopo aver installato un connettore in Google Cloud, BlueXP è in grado
 [role="lead"]
 Dopo aver installato un connettore in Google Cloud, BlueXP è in grado di rilevare automaticamente le informazioni sui bucket di storage di Google Cloud che risiedono nell'account Google in cui è installato il connettore. Un ambiente di lavoro di Google Cloud Storage viene aggiunto a Canvas in modo da poter visualizzare queste informazioni.
 
-Puoi visualizzare i dettagli sui bucket di Google Cloud Storage, tra cui posizione, stato di accesso, classe di storage, capacità totale e utilizzata e altro ancora. Questi bucket possono essere utilizzati come destinazioni per le operazioni di backup e ripristino BlueXP, tiering BlueXP o copia e sincronizzazione BlueXP.
-
-.Fasi
-. Installa un connettore nell'account Google in cui desideri visualizzare i bucket di Google Cloud Storage.
-. Dal menu di navigazione, selezionare *Storage > Canvas*.
-+
-Subito dopo dovrebbe essere visualizzato automaticamente un ambiente di lavoro di Google Cloud Storage.
-
-+
 image:screenshot-gcp-cloud-storage-we.png["Una schermata di un ambiente di lavoro di Google Cloud Storage."]
 
-. Selezionare l'ambiente di lavoro e scegliere un'azione dal riquadro di destra.
-+
-image:screenshot-gcp-cloud-storage-actions.png["Una schermata che mostra il riquadro delle azioni dopo aver selezionato un ambiente di lavoro di Google Cloud Storage. Il riquadro mostra il numero totale di bucket e un'azione per l'utilizzo del servizio Sync."]
+Puoi visualizzare i dettagli sui bucket di Google Cloud Storage, tra cui posizione, stato di accesso, classe di storage, capacità totale e utilizzata e altro ancora. Questi bucket possono essere utilizzati come destinazioni per le operazioni di backup e ripristino BlueXP, tiering BlueXP o copia e sincronizzazione BlueXP.
 
-. Selezionare *Sync data* per sincronizzare i dati da o verso i bucket di storage Google Cloud.
-+
-Per ulteriori informazioni, vedere https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["Panoramica della copia e della sincronizzazione BlueXP"^]
-
-. Selezionare *Inserisci ambiente di lavoro* per visualizzare i dettagli relativi ai bucket nel tuo account Google.
-+
-image:screenshot-gcp-cloud-storage-details.png["Una schermata che mostra i dettagli di un ambiente di lavoro di Google Cloud Storage: Il numero totale di bucket, capacità e posizioni, quindi una tabella che mostra i dettagli di ciascun bucket."]
-
-
+Una nuova funzionalità aggiunta consente ora di creare e modificare i bucket di storage Google Cloud. https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html["Fai clic qui per scoprire come visualizzare, creare e gestire i bucket di cloud storage con BlueXP"^].
