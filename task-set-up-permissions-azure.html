@@ -1947,7 +1947,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-07-06 19:13:52 +0000">07/06/2023</time>
+    <time datetime="2023-07-14 19:55:42 +0000">07/14/2023</time>
     
   
 
@@ -2226,7 +2226,7 @@ Azure SetupAsService è il nome predefinito fornito nel criterio di implementazi
 <li>
 <p>Assicurarsi di disporre delle autorizzazioni in Azure per creare un&#8217;applicazione Active Directory e assegnarla a un ruolo.</p>
 <div class="paragraph">
-<p>Per ulteriori informazioni, fare riferimento a. <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/" target="_blank" rel="noopener">"Documentazione di Microsoft Azure: Autorizzazioni richieste"</a>.</p>
+<p>Per ulteriori informazioni, fare riferimento a. <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/" target="_blank" rel="noopener">"Documentazione di Microsoft Azure: Autorizzazioni richieste"</a></p>
 </div>
 </li>
 <li>
@@ -2506,7 +2506,7 @@ Azure SetupAsService è il nome predefinito fornito nel criterio di implementazi
 <li>
 <p>Assicurarsi di disporre delle autorizzazioni in Azure per creare un&#8217;applicazione Active Directory e assegnarla a un ruolo.</p>
 <div class="paragraph">
-<p>Per ulteriori informazioni, fare riferimento a. <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/" target="_blank" rel="noopener">"Documentazione di Microsoft Azure: Autorizzazioni richieste"</a>.</p>
+<p>Per ulteriori informazioni, fare riferimento a. <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/" target="_blank" rel="noopener">"Documentazione di Microsoft Azure: Autorizzazioni richieste"</a></p>
 </div>
 </li>
 <li>
@@ -2546,8 +2546,69 @@ Azure SetupAsService è il nome predefinito fornito nel criterio di implementazi
 </ol>
 </div>
 <div class="olist arabic">
-<div class="title">Assegnare il ruolo personalizzato all&#8217;applicazione</div>
+<div class="title">Assegnare l&#8217;applicazione a un ruolo</div>
 <ol class="arabic">
+<li>
+<p>Creare un ruolo personalizzato:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Copiare il contenuto di <a href="reference-permissions-azure.html">"Autorizzazioni di ruolo personalizzate per il connettore"</a> E salvarli in un file JSON.</p>
+</li>
+<li>
+<p>Modificare il file JSON aggiungendo gli ID di abbonamento Azure all&#8217;ambito assegnabile.</p>
+<div class="paragraph">
+<p>È necessario aggiungere l&#8217;ID per ogni abbonamento Azure da cui gli utenti creeranno i sistemi Cloud Volumes ONTAP.</p>
+</div>
+<div class="paragraph">
+<p><strong>Esempio</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Utilizzare il file JSON per creare un ruolo personalizzato in Azure.</p>
+<div class="paragraph">
+<p>I passaggi seguenti descrivono come creare il ruolo utilizzando Bash in Azure Cloud Shell.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Inizio <a href="https://docs.microsoft.com/en-us/azure/cloud-shell/overview" target="_blank" rel="noopener">"Azure Cloud Shell"</a> E scegliere l&#8217;ambiente Bash.</p>
+</li>
+<li>
+<p>Caricare il file JSON.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_azure_shell_upload.png" alt="Schermata di Azure Cloud Shell in cui è possibile scegliere l&#8217;opzione per caricare un file."></span></p>
+</div>
+</li>
+<li>
+<p>Utilizzare la CLI di Azure per creare il ruolo personalizzato:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-azurecli" data-lang="azurecli">az role definition create --role-definition Connector_Policy.json</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A questo punto, dovrebbe essere disponibile un ruolo personalizzato denominato BlueXP Operator che è possibile assegnare alla macchina virtuale Connector.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Assegnare l&#8217;applicazione al ruolo:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
 <li>
 <p>Dal portale Azure, aprire il servizio <strong>Subscriptions</strong>.</p>
 </li>
@@ -2562,8 +2623,8 @@ Azure SetupAsService è il nome predefinito fornito nel criterio di implementazi
 </li>
 <li>
 <p>Nella scheda <strong>membri</strong>, completare la seguente procedura:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+<div class="ulist">
+<ul>
 <li>
 <p>Mantieni selezionata l&#8217;opzione <strong>User, group o service principal</strong>.</p>
 </li>
@@ -2579,20 +2640,20 @@ Azure SetupAsService è il nome predefinito fornito nel criterio di implementazi
 <p>Ecco un esempio:</p>
 </div>
 </li>
-</ol>
+</ul>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_azure_service_principal_role.png" alt="Schermata del portale Azure che mostra il modulo Add role assignment nel portale Azure."></span></p>
 </div>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+<div class="ulist">
+<ul>
 <li>
 <p>Selezionare l&#8217;applicazione e fare clic su <strong>Select</strong> (Seleziona).</p>
 </li>
 <li>
 <p>Fare clic su <strong>Avanti</strong>.</p>
 </li>
-</ol>
+</ul>
 </div>
 </li>
 <li>
@@ -2600,8 +2661,11 @@ Azure SetupAsService è il nome predefinito fornito nel criterio di implementazi
 <div class="paragraph">
 <p>L&#8217;entità del servizio dispone ora delle autorizzazioni Azure necessarie per implementare il connettore.</p>
 </div>
+</li>
+</ol>
+</div>
 <div class="paragraph">
-<p>Se si desidera gestire le risorse in più sottoscrizioni Azure, è necessario associare l&#8217;entità del servizio a ciascuna di queste sottoscrizioni. Ad esempio, BlueXP consente di selezionare l&#8217;abbonamento che si desidera utilizzare durante l&#8217;implementazione di Cloud Volumes ONTAP.</p>
+<p>Se si desidera implementare Cloud Volumes ONTAP da più sottoscrizioni Azure, è necessario associare l&#8217;entità del servizio a ciascuna di queste sottoscrizioni. BlueXP consente di selezionare l&#8217;abbonamento che si desidera utilizzare durante l&#8217;implementazione di Cloud Volumes ONTAP.</p>
 </div>
 </li>
 </ol>

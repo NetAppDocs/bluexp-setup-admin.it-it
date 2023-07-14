@@ -1947,7 +1947,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-07-06 19:13:52 +0000">07/06/2023</time>
+    <time datetime="2023-07-14 19:55:42 +0000">07/14/2023</time>
     
   
 
@@ -1975,8 +1975,11 @@
 <div class="openblock">
 <div class="title">Mercato commerciale AWS</div>
 <div class="content">
+<div class="paragraph">
+<div class="title">Prima di iniziare</div>
+<p>Dovresti disporre di quanto segue:</p>
+</div>
 <div class="ulist">
-<div class="title">Di cosa hai bisogno</div>
 <ul>
 <li>
 <p>VPC e subnet che soddisfano i requisiti di rete.</p>
@@ -1992,6 +1995,12 @@
 </li>
 <li>
 <p>Autorizzazioni per iscriversi e annullare l&#8217;iscrizione da AWS Marketplace per l&#8217;utente IAM.</p>
+</li>
+<li>
+<p>Comprensione dei requisiti di CPU e RAM per l&#8217;istanza.</p>
+<div class="paragraph">
+<p><a href="task-prepare-restricted-mode.html#review-host-requirements">"Esaminare i requisiti dell&#8217;istanza"</a>.</p>
+</div>
 </li>
 <li>
 <p>Coppia di chiavi per l&#8217;istanza EC2.</p>
@@ -2030,10 +2039,7 @@
 <p><strong>Immagine dell&#8217;applicazione e del sistema operativo</strong>: Saltare questa sezione. Il connettore AMI è già selezionato.</p>
 </li>
 <li>
-<p><strong>Tipo di istanza</strong>: A seconda della disponibilità della regione, scegliere uno dei tipi di istanza supportati (si consiglia t3.xlarge).</p>
-<div class="paragraph">
-<p><a href="task-prepare-restricted-mode.html">"Esaminare i requisiti dell&#8217;istanza"</a>.</p>
-</div>
+<p><strong>Tipo di istanza</strong>: A seconda della disponibilità della regione, scegliere un tipo di istanza che soddisfi i requisiti di RAM e CPU (si consiglia t3.xlarge).</p>
 </li>
 <li>
 <p><strong>Coppia di chiavi (login)</strong>: Selezionare la coppia di chiavi che si desidera utilizzare per connettersi in modo sicuro all&#8217;istanza.</p>
@@ -2050,18 +2056,25 @@
 </li>
 <li>
 <p>Specificare le impostazioni del firewall che abilitano i metodi di connessione richiesti per l&#8217;istanza del connettore: SSH, HTTP e HTTPS.</p>
+<div class="paragraph">
+<p>Sono necessarie altre regole per configurazioni specifiche.</p>
+</div>
 </li>
 </ul>
 </div>
 </li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="reference-ports-aws.html">"Visualizzare le regole del gruppo di sicurezza per AWS"</a>.</p>
+</div>
+<div class="ulist">
+<ul>
 <li>
 <p><strong>Configure storage</strong> (Configura storage): Mantenere le opzioni di storage predefinite.</p>
 </li>
 <li>
 <p><strong>Dettagli avanzati</strong>: In <strong>Profilo istanza IAM</strong>, scegliere il ruolo IAM che include le autorizzazioni richieste per il connettore.</p>
-<div class="paragraph">
-<p><a href="task-prepare-restricted-mode.html">"Scopri come impostare le autorizzazioni AWS"</a>.</p>
-</div>
 </li>
 <li>
 <p><strong>Riepilogo</strong>: Esaminare il riepilogo e fare clic su <strong>Avvia istanza</strong>.</p>
@@ -2084,8 +2097,11 @@
 <div class="openblock">
 <div class="title">Mercato AWS Gov</div>
 <div class="content">
+<div class="paragraph">
+<div class="title">Prima di iniziare</div>
+<p>Dovresti disporre di quanto segue:</p>
+</div>
 <div class="ulist">
-<div class="title">Di cosa hai bisogno</div>
 <ul>
 <li>
 <p>VPC e subnet che soddisfano i requisiti di rete.</p>
@@ -2178,8 +2194,11 @@
 <div class="openblock">
 <div class="title">Azure Marketplace</div>
 <div class="content">
+<div class="paragraph">
+<div class="title">Prima di iniziare</div>
+<p>Dovresti disporre di quanto segue:</p>
+</div>
 <div class="ulist">
-<div class="title">Di cosa hai bisogno</div>
 <ul>
 <li>
 <p>VNET e subnet che soddisfano i requisiti di rete.</p>
@@ -2246,7 +2265,7 @@
 <li>
 <p><strong>Network Security group</strong>: Il connettore richiede connessioni in entrata utilizzando SSH, HTTP e HTTPS.</p>
 <div class="paragraph">
-<p><a href="task-prepare-restricted-mode.html">"Scopri i requisiti di rete"</a>.</p>
+<p><a href="reference-ports-azure.html">"Visualizza le regole del gruppo di sicurezza per Azure"</a>.</p>
 </div>
 </li>
 <li>
@@ -2276,8 +2295,11 @@
 <div class="openblock">
 <div class="title">Installazione manuale</div>
 <div class="content">
+<div class="paragraph">
+<div class="title">Prima di iniziare</div>
+<p>Dovresti disporre di quanto segue:</p>
+</div>
 <div class="ulist">
-<div class="title">Di cosa hai bisogno</div>
 <ul>
 <li>
 <p>Privilegi root per installare il connettore.</p>
@@ -2378,7 +2400,7 @@ unset https_proxy</code></pre>
 </ul>
 </div>
 <div class="paragraph">
-<p>--cakert specifica un certificato firmato da CA da utilizzare per l&#8217;accesso HTTPS tra il connettore e il server proxy. h</p>
+<p>--cakert specifica un certificato firmato da CA da utilizzare per l&#8217;accesso HTTPS tra il connettore e il server proxy. Questo parametro è necessario solo se si specifica un server proxy HTTPS o se il proxy è un proxy di intercettazione.</p>
 </div>
 </li>
 </ol>
@@ -2536,9 +2558,6 @@ Se si dispone già di un account e si desidera crearne un altro, è necessario u
 <div class="title">Fasi</div>
 <ol class="arabic">
 <li>
-<p>Assicurarsi che il connettore corretto sia attualmente selezionato in BlueXP.</p>
-</li>
-<li>
 <p>Nella parte superiore destra della console BlueXP, fare clic sull&#8217;icona Impostazioni e selezionare <strong>credenziali</strong>.</p>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_settings_icon.gif" alt="Una schermata che mostra l&#8217;icona Settings (Impostazioni) in alto a destra della console BlueXP."></span></p>
@@ -2621,7 +2640,7 @@ BlueXP Operator è il nome predefinito fornito nel criterio BlueXP. Se si scegli
 <p>Fare clic su <strong>Rivedi + assegna</strong>.</p>
 </li>
 <li>
-<p>Se si desidera gestire le risorse in abbonamenti aggiuntivi, passare a tale abbonamento e ripetere la procedura.</p>
+<p>Se si desidera gestire le risorse in abbonamenti Azure aggiuntivi, passare a tale abbonamento e ripetere la procedura.</p>
 </li>
 </ol>
 </div>
@@ -2643,9 +2662,6 @@ BlueXP Operator è il nome predefinito fornito nel criterio BlueXP. Se si scegli
 <div class="olist arabic">
 <div class="title">Fasi</div>
 <ol class="arabic">
-<li>
-<p>Accedere alla <a href="https://console.bluexp.netapp.com" target="_blank" rel="noopener">"Console BlueXP"</a> ed effettuare l&#8217;accesso.</p>
-</li>
 <li>
 <p>Nella parte superiore destra della console BlueXP, fare clic sull&#8217;icona Impostazioni e selezionare <strong>credenziali</strong>.</p>
 <div class="paragraph">

@@ -1947,7 +1947,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-23 19:36:43 +0000">05/23/2023</time>
+    <time datetime="2023-07-14 19:55:42 +0000">07/14/2023</time>
     
   
 
@@ -2038,7 +2038,7 @@ Quando BlueXP crea il connettore, applica un nuovo set di autorizzazioni all&#82
 <li>
 <p>Copiare e incollare il seguente criterio:</p>
 <div class="paragraph">
-<p>Si ricorda che questo criterio contiene solo le autorizzazioni necessarie per avviare l&#8217;istanza di Connector in AWS da BlueXP. <a href="reference-permissions-aws.html">"Visualizza i permessi richiesti per l&#8217;istanza del connettore"</a>.</p>
+<p>Si ricorda che questo criterio contiene solo le autorizzazioni necessarie per avviare l&#8217;istanza di Connector in AWS da BlueXP. <a href="reference-permissions-aws.html">"Visualizza le autorizzazioni richieste per l&#8217;istanza del connettore"</a>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2187,35 +2187,35 @@ Quando BlueXP crea il connettore, applica un nuovo set di autorizzazioni all&#82
 <h2 id="impostare-le-autorizzazioni-per-il-connettore-durante-limplementazione-da-aws-marketplace">Impostare le autorizzazioni per il connettore durante l&#8217;implementazione da AWS Marketplace</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Creare policy IAM in AWS e associarle a un ruolo IAM. Quando si crea il connettore da AWS Marketplace, viene richiesto di selezionare il ruolo IAM.</p>
+<p>Per prepararsi all&#8217;implementazione di un marketplace, creare policy IAM in AWS e allegarle a un ruolo IAM. Quando si crea il connettore da AWS Marketplace, viene richiesto di selezionare il ruolo IAM.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Fasi</div>
 <ol class="arabic">
 <li>
-<p>Dalla console IAM, creare una policy:</p>
+<p>Accedere alla console AWS e accedere al servizio IAM.</p>
+</li>
+<li>
+<p>Creare una policy:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
 <p>Fare clic su <strong>Policy &gt; Create policy</strong> (Criteri &gt; Crea policy).</p>
 </li>
 <li>
-<p>Selezionare <strong>JSON</strong> e copiare e incollare il contenuto di <a href="reference-permissions-aws.html">"Criteri IAM per il connettore"</a>.</p>
+<p>Selezionare <strong>JSON</strong> e copiare e incollare il contenuto di <a href="reference-permissions-aws.html">"Policy IAM per il connettore"</a>.</p>
 </li>
 <li>
 <p>Completare i passaggi rimanenti per creare il criterio.</p>
 <div class="paragraph">
-<p>A seconda dei servizi BlueXP che si intende utilizzare, potrebbe essere necessario creare una seconda policy.</p>
+<p>A seconda dei servizi BlueXP che si intende utilizzare, potrebbe essere necessario creare una seconda policy. Per le regioni standard, le autorizzazioni sono distribuite in due policy. Sono necessarie due policy a causa di un limite massimo di dimensioni dei caratteri per le policy gestite in AWS. <a href="reference-permissions-aws.html">"Scopri di più sulle policy IAM per il connettore"</a>.</p>
 </div>
 </li>
 </ol>
 </div>
-<div class="paragraph">
-<p>Per le regioni standard, le autorizzazioni sono distribuite in due policy. Sono necessarie due policy a causa di un limite massimo di dimensioni dei caratteri per le policy gestite in AWS.</p>
-</div>
 </li>
 <li>
-<p>Nella console IAM, creare un ruolo IAM:</p>
+<p>Creare un ruolo IAM:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -2225,7 +2225,7 @@ Quando BlueXP crea il connettore, applica un nuovo set di autorizzazioni all&#82
 <p>Selezionare <strong>servizio AWS &gt; EC2</strong>.</p>
 </li>
 <li>
-<p>Aggiungere le autorizzazioni allegando i criteri creati nel passaggio precedente.</p>
+<p>Aggiungere le autorizzazioni allegando il criterio appena creato.</p>
 </li>
 <li>
 <p>Completare i passaggi rimanenti per creare il ruolo.</p>
@@ -2245,7 +2245,7 @@ Quando BlueXP crea il connettore, applica un nuovo set di autorizzazioni all&#82
 <h2 id="impostare-le-autorizzazioni-da-assegnare-dopo-linstallazione-manuale">Impostare le autorizzazioni da assegnare dopo l&#8217;installazione manuale</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Se si installa manualmente il software del connettore sul proprio host Linux in AWS, è possibile fornire le autorizzazioni nei seguenti modi:</p>
+<p>Se si prevede di installare manualmente il software del connettore sul proprio host Linux in AWS, è possibile fornire le autorizzazioni nei seguenti modi:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -2266,7 +2266,10 @@ Quando BlueXP crea il connettore, applica un nuovo set di autorizzazioni all&#82
 <div class="title">Fasi</div>
 <ol class="arabic">
 <li>
-<p>Dalla console IAM, creare una policy:</p>
+<p>Accedere alla console AWS e accedere al servizio IAM.</p>
+</li>
+<li>
+<p>Creare una policy:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -2278,17 +2281,14 @@ Quando BlueXP crea il connettore, applica un nuovo set di autorizzazioni all&#82
 <li>
 <p>Completare i passaggi rimanenti per creare il criterio.</p>
 <div class="paragraph">
-<p>A seconda dei servizi BlueXP che si intende utilizzare, potrebbe essere necessario creare una seconda policy.</p>
+<p>A seconda dei servizi BlueXP che si intende utilizzare, potrebbe essere necessario creare una seconda policy. Per le regioni standard, le autorizzazioni sono distribuite in due policy. Sono necessarie due policy a causa di un limite massimo di dimensioni dei caratteri per le policy gestite in AWS. <a href="reference-permissions-aws.html">"Scopri di più sulle policy IAM per il connettore"</a>.</p>
 </div>
 </li>
 </ol>
 </div>
-<div class="paragraph">
-<p>Per le regioni standard, le autorizzazioni sono distribuite in due policy. Sono necessarie due policy a causa di un limite massimo di dimensioni dei caratteri per le policy gestite in AWS. <a href="reference-permissions-aws.html">"Scopri di più sulle policy IAM per il connettore"</a>.</p>
-</div>
 </li>
 <li>
-<p>Nella console IAM, creare un ruolo IAM:</p>
+<p>Creare un ruolo IAM:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -2298,7 +2298,7 @@ Quando BlueXP crea il connettore, applica un nuovo set di autorizzazioni all&#82
 <p>Selezionare <strong>servizio AWS &gt; EC2</strong>.</p>
 </li>
 <li>
-<p>Aggiungere le autorizzazioni allegando i criteri creati nel passaggio precedente.</p>
+<p>Aggiungere le autorizzazioni allegando il criterio appena creato.</p>
 </li>
 <li>
 <p>Completare i passaggi rimanenti per creare il ruolo.</p>
@@ -2321,7 +2321,10 @@ Quando BlueXP crea il connettore, applica un nuovo set di autorizzazioni all&#82
 <div class="title">Fasi</div>
 <ol class="arabic">
 <li>
-<p>Dalla console IAM, creare una policy:</p>
+<p>Accedere alla console AWS e accedere al servizio IAM.</p>
+</li>
+<li>
+<p>Creare una policy:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>

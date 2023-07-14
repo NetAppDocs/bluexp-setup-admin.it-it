@@ -1947,7 +1947,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-07-06 19:13:52 +0000">07/06/2023</time>
+    <time datetime="2023-07-14 19:55:42 +0000">07/14/2023</time>
     
   
 
@@ -1965,8 +1965,11 @@
 <div class="openblock">
 <div class="title">BlueXP</div>
 <div class="content">
+<div class="paragraph">
+<div class="title">Prima di iniziare</div>
+<p>Dovresti disporre di quanto segue:</p>
+</div>
 <div class="ulist">
-<div class="title">Di cosa hai bisogno</div>
 <ul>
 <li>
 <p>Un abbonamento Azure.</p>
@@ -2146,24 +2149,21 @@ Se hai già effettuato l&#8217;accesso a un account Azure, BlueXP utilizzerà au
 <div class="ulist">
 <ul>
 <li>
-<p>Il connettore può funzionare in modo ottimale con dischi HDD o SSD.</p>
+<p><strong>Dimensione della macchina virtuale</strong>: Scegli una dimensione della macchina virtuale che soddisfi i requisiti di CPU e RAM. Si consiglia DS3 v2.</p>
 </li>
 <li>
-<p>Scegli una macchina virtuale che soddisfi i requisiti di CPU e RAM. Si consiglia DS3 v2.</p>
-<div class="paragraph">
-<p><a href="reference-host-requirements-azure.html">"Esaminare i requisiti delle macchine virtuali"</a>.</p>
-</div>
+<p><strong>Dischi</strong>: Il connettore può funzionare in modo ottimale con dischi HDD o SSD.</p>
 </li>
 <li>
-<p>Per il gruppo di protezione della rete, il connettore richiede connessioni in entrata utilizzando SSH, HTTP e HTTPS. Sono necessarie altre regole per configurazioni specifiche.</p>
+<p><strong>Network Security group</strong>: Il connettore richiede connessioni in entrata utilizzando SSH, HTTP e HTTPS.</p>
 <div class="paragraph">
 <p><a href="reference-ports-azure.html">"Visualizza le regole del gruppo di sicurezza per Azure"</a>.</p>
 </div>
 </li>
 <li>
-<p>In <strong>Management</strong>, abilitare <strong>System Assigned Managed Identity</strong> per la macchina virtuale del connettore selezionando <strong>ON</strong>.</p>
+<p><strong>Identity</strong>: In <strong>Management</strong>, selezionare <strong>Enable system assigned Managed Identity</strong>.</p>
 <div class="paragraph">
-<p>Questa impostazione è importante perché un&#8217;identità gestita consente alla macchina virtuale del connettore di identificarsi in Azure Active Directory senza fornire credenziali. Al termine, sarà necessario assegnare il ruolo personalizzato creato <a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview" target="_blank" rel="noopener">"Scopri di più sulle identità gestite per le risorse Azure"</a>.</p>
+<p>Questa impostazione è importante perché un&#8217;identità gestita consente alla macchina virtuale del connettore di identificarsi in Azure Active Directory senza fornire credenziali. <a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview" target="_blank" rel="noopener">"Scopri di più sulle identità gestite per le risorse Azure"</a>.</p>
 </div>
 </li>
 </ul>
@@ -2217,8 +2217,11 @@ Se hai già effettuato l&#8217;accesso a un account Azure, BlueXP utilizzerà au
 <div class="openblock">
 <div class="title">Installazione manuale</div>
 <div class="content">
+<div class="paragraph">
+<div class="title">Prima di iniziare</div>
+<p>Dovresti disporre di quanto segue:</p>
+</div>
 <div class="ulist">
-<div class="title">Di cosa hai bisogno</div>
 <ul>
 <li>
 <p>Privilegi root per installare il connettore.</p>

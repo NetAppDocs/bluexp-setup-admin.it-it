@@ -1947,7 +1947,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-31 13:56:31 +0000">05/31/2023</time>
+    <time datetime="2023-07-14 19:55:42 +0000">07/14/2023</time>
     
   
 
@@ -2117,13 +2117,15 @@ Se il software Connector è stato installato manualmente su un sistema esistente
 <div class="paragraph">
 <p>Creare un&#8217;applicazione e un service principal Azure Active Directory (ad) che BlueXP possa utilizzare per il controllo degli accessi basato sui ruoli.</p>
 </div>
-<div class="paragraph">
-<div class="title">Prima di iniziare</div>
-<p>Per creare un&#8217;applicazione Active Directory e assegnarla a un ruolo, è necessario disporre delle autorizzazioni appropriate in Azure. Per ulteriori informazioni, fare riferimento a. <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/" target="_blank" rel="noopener">"Documentazione di Microsoft Azure: Autorizzazioni richieste"</a>.</p>
-</div>
 <div class="olist arabic">
 <div class="title">Fasi</div>
 <ol class="arabic">
+<li>
+<p>Assicurarsi di disporre delle autorizzazioni in Azure per creare un&#8217;applicazione Active Directory e assegnarla a un ruolo.</p>
+<div class="paragraph">
+<p>Per ulteriori informazioni, fare riferimento a. <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/" target="_blank" rel="noopener">"Documentazione di Microsoft Azure: Autorizzazioni richieste"</a></p>
+</div>
+</li>
 <li>
 <p>Dal portale Azure, aprire il servizio <strong>Azure Active Directory</strong>.</p>
 <div class="paragraph">
@@ -2131,10 +2133,10 @@ Se il software Connector è stato installato manualmente su un sistema esistente
 </div>
 </li>
 <li>
-<p>Nel menu, selezionare <strong>App Registrations</strong>.</p>
+<p>Nel menu, fare clic su <strong>App Registrations</strong>.</p>
 </li>
 <li>
-<p>Selezionare <strong>Nuova registrazione</strong>.</p>
+<p>Fare clic su <strong>Nuova registrazione</strong>.</p>
 </li>
 <li>
 <p>Specificare i dettagli dell&#8217;applicazione:</p>
@@ -2153,7 +2155,10 @@ Se il software Connector è stato installato manualmente su un sistema esistente
 </div>
 </li>
 <li>
-<p>Selezionare <strong>Registra</strong>.</p>
+<p>Fare clic su <strong>Registra</strong>.</p>
+<div class="paragraph">
+<p>Hai creato l&#8217;applicazione ad e il service principal.</p>
+</div>
 </li>
 </ol>
 </div>
@@ -2238,10 +2243,10 @@ Se il software Connector è stato installato manualmente su un sistema esistente
 <p>Selezionare l&#8217;abbonamento.</p>
 </li>
 <li>
-<p>Selezionare <strong>controllo di accesso (IAM) &gt; Aggiungi &gt; Aggiungi assegnazione ruolo</strong>.</p>
+<p>Fare clic su <strong>Access control (IAM) &gt; Add &gt; Add role assignment</strong> (controllo accesso (IAM) &gt; Add &gt; Add role assign</p>
 </li>
 <li>
-<p>Nella scheda <strong>ruolo</strong>, selezionare il ruolo <strong>operatore BlueXP</strong> e selezionare <strong>Avanti</strong>.</p>
+<p>Nella scheda <strong>ruolo</strong>, selezionare il ruolo <strong>operatore BlueXP</strong> e fare clic su <strong>Avanti</strong>.</p>
 </li>
 <li>
 <p>Nella scheda <strong>membri</strong>, completare la seguente procedura:</p>
@@ -2251,7 +2256,7 @@ Se il software Connector è stato installato manualmente su un sistema esistente
 <p>Mantieni selezionata l&#8217;opzione <strong>User, group o service principal</strong>.</p>
 </li>
 <li>
-<p>Seleziona <strong>Seleziona membri</strong>.</p>
+<p>Fare clic su <strong>Seleziona membri</strong>.</p>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot-azure-service-principal-role.png" alt="Schermata del portale Azure che mostra la scheda membri quando si aggiunge un ruolo a un&#8217;applicazione."></span></p>
 </div>
@@ -2270,16 +2275,16 @@ Se il software Connector è stato installato manualmente su un sistema esistente
 <div class="ulist">
 <ul>
 <li>
-<p>Selezionare l&#8217;applicazione e selezionare <strong>Seleziona</strong>.</p>
+<p>Selezionare l&#8217;applicazione e fare clic su <strong>Select</strong> (Seleziona).</p>
 </li>
 <li>
-<p>Selezionare <strong>Avanti</strong>.</p>
+<p>Fare clic su <strong>Avanti</strong>.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Selezionare <strong>Rivedi + assegna</strong>.</p>
+<p>Fare clic su <strong>Rivedi + assegna</strong>.</p>
 <div class="paragraph">
 <p>L&#8217;entità del servizio dispone ora delle autorizzazioni Azure necessarie per implementare il connettore.</p>
 </div>
@@ -2302,10 +2307,10 @@ Se il software Connector è stato installato manualmente su un sistema esistente
 <div class="title">Fasi</div>
 <ol class="arabic">
 <li>
-<p>Nel servizio <strong>Azure Active Directory</strong>, selezionare <strong>App Registrations</strong> e selezionare l&#8217;applicazione.</p>
+<p>Nel servizio <strong>Azure Active Directory</strong>, fare clic su <strong>App Registrations</strong> e selezionare l&#8217;applicazione.</p>
 </li>
 <li>
-<p>Selezionare <strong>API permissions &gt; Add a permission</strong> (autorizzazioni API &gt; Aggiungi autorizzazione).</p>
+<p>Fare clic su <strong>API permissions &gt; Add a permission</strong> (autorizzazioni API &gt; Aggiungi autorizzazione)</p>
 </li>
 <li>
 <p>In <strong>Microsoft API</strong>, selezionare <strong>Azure Service Management</strong>.</p>
@@ -2314,7 +2319,7 @@ Se il software Connector è stato installato manualmente su un sistema esistente
 </div>
 </li>
 <li>
-<p>Selezionare <strong>Access Azure Service Management as organization users</strong> (accesso a Azure Service Management come utenti dell&#8217;organizzazione), quindi selezionare <strong>Add permissions</strong> (Aggiungi autorizzazioni).</p>
+<p>Fare clic su <strong>Access Azure Service Management as organization users</strong> (Accedi a Azure Service Management come utenti dell&#8217;organizzazione), quindi fare clic su <strong>Add permissions</strong> (</p>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_azure_service_mgmt_apis_add.gif" alt="Una schermata del portale Azure che mostra l&#8217;aggiunta delle API di gestione dei servizi Azure."></span></p>
 </div>
@@ -2331,12 +2336,15 @@ Se il software Connector è stato installato manualmente su un sistema esistente
 <div class="title">Fasi</div>
 <ol class="arabic">
 <li>
-<p>Nel servizio <strong>Azure Active Directory</strong>, selezionare <strong>App Registrations</strong> e selezionare l&#8217;applicazione.</p>
+<p>Nel servizio <strong>Azure Active Directory</strong>, fare clic su <strong>App Registrations</strong> e selezionare l&#8217;applicazione.</p>
 </li>
 <li>
 <p>Copiare <strong>Application (client) ID</strong> e <strong>Directory (tenant) ID</strong>.</p>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_azure_app_ids.gif" alt="Una schermata che mostra l&#8217;ID dell&#8217;applicazione (client) e l&#8217;ID della directory (tenant) per un&#8217;applicazione in Azure Active Directory."></span></p>
+</div>
+<div class="paragraph">
+<p>Quando si aggiunge l&#8217;account Azure a BlueXP, è necessario fornire l&#8217;ID dell&#8217;applicazione (client) e l&#8217;ID della directory (tenant) per l&#8217;applicazione. BlueXP utilizza gli ID per effettuare l&#8217;accesso a livello di programmazione.</p>
 </div>
 </li>
 </ol>
@@ -2354,21 +2362,24 @@ Se il software Connector è stato installato manualmente su un sistema esistente
 <p>Aprire il servizio <strong>Azure Active Directory</strong>.</p>
 </li>
 <li>
-<p>Selezionare <strong>App Registrations</strong> e selezionare l&#8217;applicazione.</p>
+<p>Fare clic su <strong>App Registrations</strong> e selezionare l&#8217;applicazione.</p>
 </li>
 <li>
-<p>Selezionare <strong>certificati e segreti &gt; nuovo segreto client</strong>.</p>
+<p>Fare clic su <strong>certificati e segreti &gt; nuovo segreto client</strong>.</p>
 </li>
 <li>
 <p>Fornire una descrizione del segreto e una durata.</p>
 </li>
 <li>
-<p>Selezionare <strong>Aggiungi</strong>.</p>
+<p>Fare clic su <strong>Aggiungi</strong>.</p>
 </li>
 <li>
 <p>Copiare il valore del client secret.</p>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_azure_client_secret.gif" alt="Schermata del portale Azure che mostra un segreto client per l&#8217;entità del servizio Azure ad."></span></p>
+</div>
+<div class="paragraph">
+<p>Ora hai un client segreto che BlueXP può utilizzare per autenticare con Azure ad.</p>
 </div>
 </li>
 </ol>
@@ -2389,20 +2400,20 @@ Se il software Connector è stato installato manualmente su un sistema esistente
 <p>Se hai appena creato queste credenziali nel tuo cloud provider, potrebbero essere necessari alcuni minuti prima che siano disponibili per l&#8217;utilizzo. Attendere alcuni minuti prima di aggiungere le credenziali a BlueXP.</p>
 </div>
 <div class="paragraph">
-<div class="title">Di cosa hai bisogno</div>
-<p>È necessario creare un connettore prima di poter modificare le impostazioni di BlueXP. <a href="concept-connectors.html#how-to-create-a-connector">"Scopri come"</a>.</p>
+<div class="title">Prima di iniziare</div>
+<p>È necessario creare un connettore prima di poter modificare le impostazioni di BlueXP. <a href="concept-connectors.html#how-to-create-a-connector">"Scopri come creare un connettore"</a>.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Fasi</div>
 <ol class="arabic">
 <li>
-<p>Nella parte superiore destra della console BlueXP, selezionare l&#8217;icona Impostazioni e selezionare <strong>credenziali</strong>.</p>
+<p>Nella parte superiore destra della console BlueXP, fare clic sull&#8217;icona Impostazioni e selezionare <strong>credenziali</strong>.</p>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_settings_icon.gif" alt="Una schermata che mostra l&#8217;icona Settings (Impostazioni) in alto a destra della console BlueXP."></span></p>
 </div>
 </li>
 <li>
-<p>Nella pagina <strong>credenziali account</strong>, selezionare <strong>Aggiungi credenziali</strong> e seguire la procedura guidata.</p>
+<p>Fare clic su <strong>Add Credentials</strong> (Aggiungi credenziali) e seguire la procedura guidata.</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -2413,25 +2424,22 @@ Se il software Connector è stato installato manualmente su un sistema esistente
 <div class="ulist">
 <ul>
 <li>
-<p>ID applicazione (client): Vedere <a href="#ottenere-lid-dellapplicazione-e-lid-della-directory">Ottenere l&#8217;ID dell&#8217;applicazione e l&#8217;ID della directory</a>.</p>
+<p>ID dell&#8217;applicazione (client)</p>
 </li>
 <li>
-<p>ID directory (tenant): Vedere <a href="#ottenere-lid-dellapplicazione-e-lid-della-directory">Ottenere l&#8217;ID dell&#8217;applicazione e l&#8217;ID della directory</a>.</p>
+<p>ID directory (tenant)</p>
 </li>
 <li>
-<p>Segreto del client: Vedere <a href="#creare-un-client-segreto">Creare un client segreto</a>.</p>
+<p>Segreto del client</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
 <p><strong>Marketplace Subscription</strong>: Consente di associare un abbonamento Marketplace a queste credenziali sottoscrivendo ora o selezionando un abbonamento esistente.</p>
-<div class="paragraph">
-<p>Per pagare Cloud Volumes ONTAP a una tariffa oraria (PAYGO), queste credenziali Azure devono essere associate a un abbonamento da Azure Marketplace.</p>
-</div>
 </li>
 <li>
-<p><strong>Revisione</strong>: Confermare i dettagli relativi alle nuove credenziali e selezionare <strong>Aggiungi</strong>.</p>
+<p><strong>Revisione</strong>: Confermare i dettagli relativi alle nuove credenziali e fare clic su <strong>Aggiungi</strong>.</p>
 </li>
 </ol>
 </div>
@@ -2473,39 +2481,42 @@ Se il software Connector è stato installato manualmente su un sistema esistente
 </ul>
 </div>
 <div class="paragraph">
-<div class="title">Di cosa hai bisogno</div>
+<div class="title">Prima di iniziare</div>
 <p>È necessario creare un connettore prima di poter modificare le impostazioni di BlueXP. <a href="concept-connectors.html#how-to-create-a-connector">"Scopri come"</a>.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Fasi</div>
 <ol class="arabic">
 <li>
-<p>Nella parte superiore destra della console BlueXP, selezionare l&#8217;icona Impostazioni e selezionare <strong>credenziali</strong>.</p>
+<p>Nella parte superiore destra della console BlueXP, fare clic sull&#8217;icona Impostazioni e selezionare <strong>credenziali</strong>.</p>
 </li>
 <li>
-<p>Nella pagina <strong>account credentials</strong>, selezionare il menu delle azioni per un set di credenziali, quindi selezionare <strong>associate Subscription</strong>.</p>
+<p>Fare clic sul menu delle azioni per un set di credenziali, quindi selezionare <strong>Associa abbonamento</strong>.</p>
+<div class="paragraph">
+<p>Selezionare le credenziali associate a un connettore. Non puoi associare un abbonamento al marketplace alle credenziali associate a BlueXP.</p>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_azure_add_subscription.png" alt="Schermata del menu delle azioni per un set di credenziali esistenti."></span></p>
 </div>
 </li>
 <li>
-<p>Per associare le credenziali a un abbonamento esistente, selezionare l&#8217;abbonamento dall&#8217;elenco a discesa e selezionare <strong>Associa</strong>.</p>
+<p>Per associare le credenziali a un abbonamento esistente, selezionare l&#8217;abbonamento dall&#8217;elenco a discesa e fare clic su <strong>Associa</strong>.</p>
 </li>
 <li>
-<p>Per associare le credenziali a un nuovo abbonamento, selezionare <strong>Aggiungi abbonamento &gt; continua</strong> e seguire la procedura in Azure Marketplace:</p>
+<p>Per associare le credenziali a un nuovo abbonamento, fare clic su <strong>Aggiungi abbonamento &gt; continua</strong> e seguire la procedura in Azure Marketplace:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
 <p>Se richiesto, accedere all&#8217;account Azure.</p>
 </li>
 <li>
-<p>Selezionare <strong>Iscriviti</strong>.</p>
+<p>Fare clic su <strong>Subscribe</strong> (Iscriviti).</p>
 </li>
 <li>
-<p>Compila il modulo e seleziona <strong>Iscriviti</strong>.</p>
+<p>Compila il modulo e fai clic su <strong>Iscriviti</strong>.</p>
 </li>
 <li>
-<p>Una volta completato il processo di iscrizione, selezionare <strong>Configura account</strong>.</p>
+<p>Una volta completato il processo di iscrizione, fare clic su <strong>Configura account</strong>.</p>
 <div class="paragraph">
 <p>Verrai reindirizzato al sito Web di BlueXP.</p>
 </div>
@@ -2531,7 +2542,7 @@ Se il software Connector è stato installato manualmente su un sistema esistente
 <div class="ulist">
 <ul>
 <li>
-<p>Selezionare <strong>Salva</strong>.</p>
+<p>Fare clic su <strong>Save</strong> (Salva).</p>
 <div class="paragraph">
 <p>Il seguente video mostra i passaggi per iscriversi a Azure Marketplace:</p>
 </div>
