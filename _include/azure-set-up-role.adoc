@@ -1,0 +1,42 @@
+= 
+:allow-uri-read: 
+
+
+. Copiare il contenuto di link:reference-permissions-azure.html["Autorizzazioni di ruolo personalizzate per il connettore"] E salvarli in un file JSON.
+. Modificare il file JSON aggiungendo gli ID di abbonamento Azure all'ambito assegnabile.
++
+Aggiungere l'ID per ogni abbonamento Azure che si desidera utilizzare con BlueXP.
+
++
+*Esempio*
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+. Utilizzare il file JSON per creare un ruolo personalizzato in Azure.
++
+I passaggi seguenti descrivono come creare il ruolo utilizzando Bash in Azure Cloud Shell.
+
++
+.. Inizio https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] E scegliere l'ambiente Bash.
+.. Caricare il file JSON.
++
+image:screenshot_azure_shell_upload.png["Schermata di Azure Cloud Shell in cui è possibile scegliere l'opzione per caricare un file."]
+
+.. Utilizzare la CLI di Azure per creare il ruolo personalizzato:
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
+
+
+
+
+.Risultato
+A questo punto, dovrebbe essere disponibile un ruolo personalizzato denominato BlueXP Operator che è possibile assegnare alla macchina virtuale Connector.

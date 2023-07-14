@@ -20,7 +20,9 @@ Creare un connettore direttamente dalla console basata sul web BlueXP, da Azure 
 ====
 .BlueXP
 --
-.Di cosa hai bisogno
+.Prima di iniziare
+Dovresti disporre di quanto segue:
+
 * Un abbonamento Azure.
 * Una VNET e una subnet nella regione Azure desiderata.
 * Dettagli su un server proxy, se l'organizzazione richiede un proxy per tutto il traffico Internet in uscita:
@@ -116,18 +118,15 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-onco
 Durante la configurazione della macchina virtuale, tenere presente quanto segue:
 
 +
-** Il connettore può funzionare in modo ottimale con dischi HDD o SSD.
-** Scegli una macchina virtuale che soddisfi i requisiti di CPU e RAM. Si consiglia DS3 v2.
-+
-link:reference-host-requirements-azure.html["Esaminare i requisiti delle macchine virtuali"].
-
-** Per il gruppo di protezione della rete, il connettore richiede connessioni in entrata utilizzando SSH, HTTP e HTTPS. Sono necessarie altre regole per configurazioni specifiche.
+** *Dimensione della macchina virtuale*: Scegli una dimensione della macchina virtuale che soddisfi i requisiti di CPU e RAM. Si consiglia DS3 v2.
+** *Dischi*: Il connettore può funzionare in modo ottimale con dischi HDD o SSD.
+** *Network Security group*: Il connettore richiede connessioni in entrata utilizzando SSH, HTTP e HTTPS.
 +
 link:reference-ports-azure.html["Visualizza le regole del gruppo di sicurezza per Azure"].
 
-** In *Management*, abilitare *System Assigned Managed Identity* per la macchina virtuale del connettore selezionando *ON*.
+** *Identity*: In *Management*, selezionare *Enable system assigned Managed Identity*.
 +
-Questa impostazione è importante perché un'identità gestita consente alla macchina virtuale del connettore di identificarsi in Azure Active Directory senza fornire credenziali. Al termine, sarà necessario assegnare il ruolo personalizzato creato https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Scopri di più sulle identità gestite per le risorse Azure"^].
+Questa impostazione è importante perché un'identità gestita consente alla macchina virtuale del connettore di identificarsi in Azure Active Directory senza fornire credenziali. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Scopri di più sulle identità gestite per le risorse Azure"^].
 
 
 
@@ -160,7 +159,9 @@ link:task-provide-permissions-azure.html["Fornire a BlueXP le autorizzazioni pre
 --
 .Installazione manuale
 --
-.Di cosa hai bisogno
+.Prima di iniziare
+Dovresti disporre di quanto segue:
+
 * Privilegi root per installare il connettore.
 * Dettagli su un server proxy, se è richiesto un proxy per l'accesso a Internet dal connettore.
 +

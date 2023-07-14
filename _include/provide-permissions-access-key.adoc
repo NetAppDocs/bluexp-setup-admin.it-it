@@ -1,0 +1,20 @@
+= 
+:allow-uri-read: 
+
+
+. Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
++
+image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
+
+. Fare clic su *Add Credentials* (Aggiungi credenziali) e seguire la procedura guidata.
++
+.. *Credentials Location*: Selezionare *Amazon Web Services > Connector*.
+.. *Definisci credenziali*: Inserire una chiave di accesso AWS e una chiave segreta.
+.. *Marketplace Subscription*: Consente di associare un abbonamento Marketplace a queste credenziali sottoscrivendo ora o selezionando un abbonamento esistente.
+.. *Revisione*: Confermare i dettagli relativi alle nuove credenziali e fare clic su *Aggiungi*.
+
+
+
+
+.Risultato
+BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in AWS per conto dell'utente.

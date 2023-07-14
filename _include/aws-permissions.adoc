@@ -1,0 +1,32 @@
+= 
+:allow-uri-read: 
+
+
+. Accedere alla console AWS e accedere al servizio IAM.
+. Creare una policy:
++
+.. Fare clic su *Policy > Create policy* (Criteri > Crea policy).
+.. Selezionare *JSON* e copiare e incollare il contenuto di link:reference-permissions-aws.html["Policy IAM per il connettore"].
+.. Completare i passaggi rimanenti per creare il criterio.
+
+
+
+
+. Creare un ruolo IAM:
++
+.. Fare clic su *ruoli > Crea ruolo*.
+.. Selezionare *servizio AWS > EC2*.
+.. Aggiungere le autorizzazioni allegando il criterio appena creato.
+.. Completare i passaggi rimanenti per creare il ruolo.
+
+
+
+
+. Allegare i criteri a un utente IAM.
++
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["Documentazione AWS: Creazione dei ruoli IAM"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["Documentazione di AWS: Aggiunta e rimozione dei criteri IAM"^]
+
+
+. Assicurarsi che l'utente disponga di una chiave di accesso che è possibile aggiungere a BlueXP dopo aver installato il connettore.
+

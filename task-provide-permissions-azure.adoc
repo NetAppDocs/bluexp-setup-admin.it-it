@@ -56,7 +56,6 @@ Accedere alla https://console.bluexp.netapp.com["Console BlueXP"^] Per iniziare 
 .Principale del servizio
 --
 .Fasi
-. Accedere alla https://console.bluexp.netapp.com["Console BlueXP"^] ed effettuare l'accesso.
 . Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
 +
 image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]

@@ -145,7 +145,7 @@ L'utente di Google Cloud dispone ora delle autorizzazioni necessarie per creare 
 Nell'esempio seguente viene creato un ruolo denominato "Connector" a livello di progetto:
 
 +
-gcloud iam roles create connector --project=myproject --file=connector.yaml
+`gcloud iam roles create connector --project=myproject --file=connector.yaml`
 
 +
 https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documenti Google Cloud: Creazione e gestione di ruoli personalizzati"^]

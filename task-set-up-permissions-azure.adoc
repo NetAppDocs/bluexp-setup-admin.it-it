@@ -203,7 +203,7 @@ Creare e configurare un'entità di servizio in Azure Active Directory e ottenere
 .Creare un'applicazione Azure Active Directory per il controllo degli accessi in base al ruolo
 . Assicurarsi di disporre delle autorizzazioni in Azure per creare un'applicazione Active Directory e assegnarla a un ruolo.
 +
-Per ulteriori informazioni, fare riferimento a. https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentazione di Microsoft Azure: Autorizzazioni richieste"^].
+Per ulteriori informazioni, fare riferimento a. https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentazione di Microsoft Azure: Autorizzazioni richieste"^]
 
 . Dal portale Azure, aprire il servizio *Azure Active Directory*.
 +
@@ -368,7 +368,7 @@ Creare e configurare un'entità di servizio in Azure Active Directory e ottenere
 .Creare un'applicazione Azure Active Directory per il controllo degli accessi in base al ruolo
 . Assicurarsi di disporre delle autorizzazioni in Azure per creare un'applicazione Active Directory e assegnarla a un ruolo.
 +
-Per ulteriori informazioni, fare riferimento a. https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentazione di Microsoft Azure: Autorizzazioni richieste"^].
+Per ulteriori informazioni, fare riferimento a. https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentazione di Microsoft Azure: Autorizzazioni richieste"^]
 
 . Dal portale Azure, aprire il servizio *Azure Active Directory*.
 +
@@ -389,35 +389,80 @@ Hai creato l'applicazione ad e il service principal.
 
 
 
-.Assegnare il ruolo personalizzato all'applicazione
-. Dal portale Azure, aprire il servizio *Subscriptions*.
-. Selezionare l'abbonamento.
-. Fare clic su *Access control (IAM) > Add > Add role assignment* (controllo accesso (IAM) > Add > Add role assign
-. Nella scheda *ruolo*, selezionare il ruolo *operatore BlueXP* e fare clic su *Avanti*.
-. Nella scheda *membri*, completare la seguente procedura:
+.Assegnare l'applicazione a un ruolo
+. Creare un ruolo personalizzato:
 +
-.. Mantieni selezionata l'opzione *User, group o service principal*.
-.. Fare clic su *Seleziona membri*.
+.. Copiare il contenuto di link:reference-permissions-azure.html["Autorizzazioni di ruolo personalizzate per il connettore"] E salvarli in un file JSON.
+.. Modificare il file JSON aggiungendo gli ID di abbonamento Azure all'ambito assegnabile.
++
+È necessario aggiungere l'ID per ogni abbonamento Azure da cui gli utenti creeranno i sistemi Cloud Volumes ONTAP.
+
++
+*Esempio*
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+.. Utilizzare il file JSON per creare un ruolo personalizzato in Azure.
++
+I passaggi seguenti descrivono come creare il ruolo utilizzando Bash in Azure Cloud Shell.
+
++
+*** Inizio https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Azure Cloud Shell"^] E scegliere l'ambiente Bash.
+*** Caricare il file JSON.
++
+image:screenshot_azure_shell_upload.png["Schermata di Azure Cloud Shell in cui è possibile scegliere l'opzione per caricare un file."]
+
+*** Utilizzare la CLI di Azure per creare il ruolo personalizzato:
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
++
+A questo punto, dovrebbe essere disponibile un ruolo personalizzato denominato BlueXP Operator che è possibile assegnare alla macchina virtuale Connector.
+
+
+
+
+
+. Assegnare l'applicazione al ruolo:
++
+.. Dal portale Azure, aprire il servizio *Subscriptions*.
+.. Selezionare l'abbonamento.
+.. Fare clic su *Access control (IAM) > Add > Add role assignment* (controllo accesso (IAM) > Add > Add role assign
+.. Nella scheda *ruolo*, selezionare il ruolo *operatore BlueXP* e fare clic su *Avanti*.
+.. Nella scheda *membri*, completare la seguente procedura:
++
+*** Mantieni selezionata l'opzione *User, group o service principal*.
+*** Fare clic su *Seleziona membri*.
 +
 image:screenshot-azure-service-principal-role.png["Schermata del portale Azure che mostra la scheda membri quando si aggiunge un ruolo a un'applicazione."]
 
-.. Cercare il nome dell'applicazione.
+*** Cercare il nome dell'applicazione.
 +
 Ecco un esempio:
 
 +
 image:screenshot_azure_service_principal_role.png["Schermata del portale Azure che mostra il modulo Add role assignment nel portale Azure."]
 
-.. Selezionare l'applicazione e fare clic su *Select* (Seleziona).
-.. Fare clic su *Avanti*.
+*** Selezionare l'applicazione e fare clic su *Select* (Seleziona).
+*** Fare clic su *Avanti*.
 
 
-. Fare clic su *Rivedi + assegna*.
+.. Fare clic su *Rivedi + assegna*.
 +
 L'entità del servizio dispone ora delle autorizzazioni Azure necessarie per implementare il connettore.
 
 +
-Se si desidera gestire le risorse in più sottoscrizioni Azure, è necessario associare l'entità del servizio a ciascuna di queste sottoscrizioni. Ad esempio, BlueXP consente di selezionare l'abbonamento che si desidera utilizzare durante l'implementazione di Cloud Volumes ONTAP.
+Se si desidera implementare Cloud Volumes ONTAP da più sottoscrizioni Azure, è necessario associare l'entità del servizio a ciascuna di queste sottoscrizioni. BlueXP consente di selezionare l'abbonamento che si desidera utilizzare durante l'implementazione di Cloud Volumes ONTAP.
+
+
 
 
 

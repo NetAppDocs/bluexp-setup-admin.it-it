@@ -1,0 +1,40 @@
+= 
+:allow-uri-read: 
+
+
+.Fasi
+. Accedere alla https://aws.amazon.com/marketplace/pp/B018REK8QG["Pagina BlueXP su AWS Marketplace"^]
+. Nella pagina Marketplace, fare clic su *Continue to Subscribe*, quindi fare clic su *Continue to Configuration*.
++
+image:screenshot-subscribe-aws.png["Una schermata che mostra i pulsanti continua a iscriversi e continua a configurazione su AWS Marketplace."]
+
+. Modificare una delle opzioni predefinite e fare clic su *Continue to Launch* (continua fino all'avvio).
+. In *Choose Action* (Scegli azione), selezionare *Launch through EC2* (Avvia tramite EC2*), quindi fare clic su *Launch* (Avvia).
++
+Questi passaggi descrivono come avviare l'istanza dalla console EC2 perché la console consente di associare un ruolo IAM all'istanza del connettore. Ciò non è possibile utilizzando l'azione *Launch from Website* (Avvia dal sito Web).
+
+. Seguire le istruzioni per configurare e implementare l'istanza:
++
+** *Nome e tag*: Immettere un nome e tag per l'istanza.
+** *Immagine dell'applicazione e del sistema operativo*: Saltare questa sezione. Il connettore AMI è già selezionato.
+** *Tipo di istanza*: A seconda della disponibilità della regione, scegliere un tipo di istanza che soddisfi i requisiti di RAM e CPU (si consiglia t3.xlarge).
+** *Coppia di chiavi (login)*: Selezionare la coppia di chiavi che si desidera utilizzare per connettersi in modo sicuro all'istanza.
+** *Impostazioni di rete*: Modificare le impostazioni di rete in base alle esigenze:
++
+*** Scegliere il VPC e la subnet desiderati.
+*** Specificare se l'istanza deve avere un indirizzo IP pubblico.
+*** Specificare le impostazioni del firewall che abilitano i metodi di connessione richiesti per l'istanza del connettore: SSH, HTTP e HTTPS.
++
+Sono necessarie altre regole per configurazioni specifiche.
+
++
+link:reference-ports-aws.html["Visualizzare le regole del gruppo di sicurezza per AWS"].
+
+
+
+** *Configure storage* (Configura storage): Mantenere le opzioni di storage predefinite.
+** *Dettagli avanzati*: In *Profilo istanza IAM*, scegliere il ruolo IAM che include le autorizzazioni richieste per il connettore.
+** *Riepilogo*: Esaminare il riepilogo e fare clic su *Avvia istanza*.
+
+
+

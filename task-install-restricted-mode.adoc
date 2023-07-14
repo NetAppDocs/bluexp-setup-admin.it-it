@@ -26,7 +26,9 @@ Installare il connettore dal mercato del provider di servizi cloud o installando
 ====
 .Mercato commerciale AWS
 --
-.Di cosa hai bisogno
+.Prima di iniziare
+Dovresti disporre di quanto segue:
+
 * VPC e subnet che soddisfano i requisiti di rete.
 +
 link:task-prepare-restricted-mode.html["Scopri i requisiti di rete"]
@@ -36,6 +38,10 @@ link:task-prepare-restricted-mode.html["Scopri i requisiti di rete"]
 link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Scopri come impostare le autorizzazioni AWS"]
 
 * Autorizzazioni per iscriversi e annullare l'iscrizione da AWS Marketplace per l'utente IAM.
+* Comprensione dei requisiti di CPU e RAM per l'istanza.
++
+link:task-prepare-restricted-mode.html#review-host-requirements["Esaminare i requisiti dell'istanza"].
+
 * Coppia di chiavi per l'istanza EC2.
 
 
@@ -54,23 +60,23 @@ Questi passaggi descrivono come avviare l'istanza dalla console EC2 perché la c
 +
 ** *Nome e tag*: Immettere un nome e tag per l'istanza.
 ** *Immagine dell'applicazione e del sistema operativo*: Saltare questa sezione. Il connettore AMI è già selezionato.
-** *Tipo di istanza*: A seconda della disponibilità della regione, scegliere uno dei tipi di istanza supportati (si consiglia t3.xlarge).
-+
-link:task-prepare-restricted-mode.html["Esaminare i requisiti dell'istanza"].
-
+** *Tipo di istanza*: A seconda della disponibilità della regione, scegliere un tipo di istanza che soddisfi i requisiti di RAM e CPU (si consiglia t3.xlarge).
 ** *Coppia di chiavi (login)*: Selezionare la coppia di chiavi che si desidera utilizzare per connettersi in modo sicuro all'istanza.
 ** *Impostazioni di rete*: Modificare le impostazioni di rete in base alle esigenze:
 +
 *** Scegliere il VPC e la subnet desiderati.
 *** Specificare se l'istanza deve avere un indirizzo IP pubblico.
 *** Specificare le impostazioni del firewall che abilitano i metodi di connessione richiesti per l'istanza del connettore: SSH, HTTP e HTTPS.
++
+Sono necessarie altre regole per configurazioni specifiche.
+
++
+link:reference-ports-aws.html["Visualizzare le regole del gruppo di sicurezza per AWS"].
+
 
 
 ** *Configure storage* (Configura storage): Mantenere le opzioni di storage predefinite.
 ** *Dettagli avanzati*: In *Profilo istanza IAM*, scegliere il ruolo IAM che include le autorizzazioni richieste per il connettore.
-+
-link:task-prepare-restricted-mode.html["Scopri come impostare le autorizzazioni AWS"].
-
 ** *Riepilogo*: Esaminare il riepilogo e fare clic su *Avvia istanza*.
 
 
@@ -85,7 +91,9 @@ Configurare BlueXP.
 --
 .Mercato AWS Gov
 --
-.Di cosa hai bisogno
+.Prima di iniziare
+Dovresti disporre di quanto segue:
+
 * VPC e subnet che soddisfano i requisiti di rete.
 +
 link:task-prepare-restricted-mode.html["Scopri i requisiti di rete"]
@@ -137,7 +145,9 @@ Configurare BlueXP.
 --
 .Azure Marketplace
 --
-.Di cosa hai bisogno
+.Prima di iniziare
+Dovresti disporre di quanto segue:
+
 * VNET e subnet che soddisfano i requisiti di rete.
 +
 link:task-prepare-restricted-mode.html["Scopri i requisiti di rete"]
@@ -175,7 +185,7 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 
 ** *Network Security group*: Il connettore richiede connessioni in entrata utilizzando SSH, HTTP e HTTPS.
 +
-link:task-prepare-restricted-mode.html["Scopri i requisiti di rete"].
+link:reference-ports-azure.html["Visualizza le regole del gruppo di sicurezza per Azure"].
 
 ** *Identity*: In *Management*, selezionare *Enable system assigned Managed Identity*.
 +
@@ -195,7 +205,9 @@ Configurare BlueXP.
 --
 .Installazione manuale
 --
-.Di cosa hai bisogno
+.Prima di iniziare
+Dovresti disporre di quanto segue:
+
 * Privilegi root per installare il connettore.
 * Dettagli su un server proxy, se è richiesto un proxy per l'accesso a Internet dal connettore.
 +
@@ -268,7 +280,7 @@ L'utente deve essere un utente locale. Gli utenti di dominio non sono supportati
 
 
 +
---cakert specifica un certificato firmato da CA da utilizzare per l'accesso HTTPS tra il connettore e il server proxy. h
+--cakert specifica un certificato firmato da CA da utilizzare per l'accesso HTTPS tra il connettore e il server proxy. Questo parametro è necessario solo se si specifica un server proxy HTTPS o se il proxy è un proxy di intercettazione.
 
 
 
@@ -359,7 +371,6 @@ BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in AWS pe
 Fornire a BlueXP la chiave di accesso AWS per un utente IAM che dispone delle autorizzazioni necessarie.
 
 .Fasi
-. Assicurarsi che il connettore corretto sia attualmente selezionato in BlueXP.
 . Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
 +
 image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
@@ -397,7 +408,7 @@ NOTE: BlueXP Operator è il nome predefinito fornito nel criterio BlueXP. Se si 
 .. Fare clic su *Seleziona*.
 .. Fare clic su *Avanti*.
 .. Fare clic su *Rivedi + assegna*.
-.. Se si desidera gestire le risorse in abbonamenti aggiuntivi, passare a tale abbonamento e ripetere la procedura.
+.. Se si desidera gestire le risorse in abbonamenti Azure aggiuntivi, passare a tale abbonamento e ripetere la procedura.
 
 
 
@@ -411,7 +422,6 @@ BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in Azure 
 Fornire a BlueXP le credenziali per l'entità del servizio Azure precedentemente configurata.
 
 .Fasi
-. Accedere alla https://console.bluexp.netapp.com["Console BlueXP"^] ed effettuare l'accesso.
 . Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
 +
 image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]

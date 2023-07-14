@@ -20,7 +20,9 @@ Creare un connettore direttamente dalla console basata sul web BlueXP, utilizzan
 ====
 .BlueXP
 --
-.Di cosa hai bisogno
+.Prima di iniziare
+Dovresti disporre di quanto segue:
+
 * Le autorizzazioni necessarie per Google Cloud per creare il connettore e un account di servizio per la macchina virtuale del connettore.
 +
 link:task-set-up-permissions-google.html["Scopri come impostare le autorizzazioni di Google Cloud"]
@@ -72,7 +74,9 @@ Una volta completato il processo, il connettore è disponibile per l'utilizzo da
 --
 .gcloud
 --
-.Di cosa hai bisogno
+.Prima di iniziare
+Dovresti disporre di quanto segue:
+
 * Le autorizzazioni necessarie per Google Cloud per creare il connettore e un account di servizio per la macchina virtuale del connettore.
 +
 link:task-set-up-permissions-google.html["Scopri come impostare le autorizzazioni di Google Cloud"]
@@ -174,7 +178,9 @@ Aprire un browser Web e accedere a. https://console.bluexp.netapp.com["Console B
 --
 .Installazione manuale
 --
-.Di cosa hai bisogno
+.Prima di iniziare
+Dovresti disporre di quanto segue:
+
 * Privilegi root per installare il connettore.
 * Dettagli su un server proxy, se è richiesto un proxy per l'accesso a Internet dal connettore.
 +

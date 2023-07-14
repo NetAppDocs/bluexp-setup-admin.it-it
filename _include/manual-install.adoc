@@ -1,26 +1,6 @@
----
-sidebar: sidebar 
-permalink: task-install-connector-on-prem.html 
-keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install 
-summary: 'Installare un connettore on-premise, quindi effettuare l"accesso e configurarlo per l"utilizzo con l"account BlueXP.' 
----
-= Installazione e configurazione di un connettore on-premise
-:hardbreaks:
+= 
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
-
-[role="lead"]
-Installare un connettore on-premise, quindi effettuare l'accesso e configurarlo per l'utilizzo con l'account BlueXP.
-
-
-
-== Montare il connettore
-
-Scaricare e installare il software del connettore su un host Linux esistente on-premise.
 
 .Prima di iniziare
 Dovresti disporre di quanto segue:
@@ -101,31 +81,21 @@ L'utente deve essere un utente locale. Gli utenti di dominio non sono supportati
 
 
 
-.Risultato
-Il connettore è ora installato. Al termine dell'installazione, il servizio di connessione (occm) viene riavviato due volte se si specifica un server proxy.
+. Attendere il completamento dell'installazione.
++
+Al termine dell'installazione, il servizio di connessione (occm) viene riavviato due volte se si specifica un server proxy.
 
-
-
-== Configurare il connettore
-
-Iscriviti o accedi, quindi configura il connettore per l'utilizzo con l'account.
-
-.Fasi
-. Aprire un browser Web e immettere il seguente URL:
+. Aprire un browser Web da un host connesso alla macchina virtuale Connector e immettere il seguente URL:
 +
 https://_ipaddress_[]
 
-+
-_Ipaddress_ può essere localhost, un indirizzo IP privato o un indirizzo IP pubblico, a seconda della configurazione dell'host. Ad esempio, se il connettore si trova nel cloud pubblico senza un indirizzo IP pubblico, è necessario inserire un indirizzo IP privato da un host che ha una connessione all'host del connettore.
-
-. Iscriviti o accedi.
-. Dopo aver effettuato l'accesso, configurare BlueXP:
+. Dopo aver effettuato l'accesso, configurare il connettore:
 +
 .. Specificare l'account BlueXP da associare al connettore.
 .. Immettere un nome per il sistema.
 .. In *stai eseguendo in un ambiente protetto?* Mantieni disattivata la modalità limitata.
 +
-La modalità limitata deve essere disattivata perché questa procedura descrive come utilizzare BlueXP in modalità standard. Inoltre, la modalità limitata non è supportata quando il connettore viene installato on-premise.
+La modalità limitata deve essere disattivata perché questa procedura descrive come utilizzare BlueXP in modalità standard. Attivare la modalità limitata solo se si dispone di un ambiente sicuro e si desidera disconnettere questo account dai servizi di back-end BlueXP. In tal caso, link:task-quick-start-restricted-mode.html["Segui i passaggi per iniziare a utilizzare BlueXP in modalità limitata"].
 
 .. Fare clic su *Let's start*.
 
@@ -133,7 +103,4 @@ La modalità limitata deve essere disattivata perché questa procedura descrive 
 
 
 .Risultato
-BlueXP è ora configurato con il connettore appena installato.
-
-.Quali sono le prossime novità?
-link:task-provide-permissions-on-prem.html["Fornire a BlueXP le autorizzazioni precedentemente configurate"].
+Il connettore è ora installato e configurato con l'account BlueXP.

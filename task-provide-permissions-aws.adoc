@@ -35,7 +35,9 @@ Collegare il ruolo IAM precedentemente creato all'istanza di Connector EC2.
 
 
 .Risultato
-BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in AWS per conto dell'utente. Accedere alla https://console.bluexp.netapp.com["Console BlueXP"^] Per iniziare a utilizzare il connettore con BlueXP.
+BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in AWS per conto dell'utente.
+
+Accedere alla https://console.bluexp.netapp.com["Console BlueXP"^] Per iniziare a utilizzare il connettore con BlueXP.
 
 --
 .Chiave di accesso AWS
@@ -59,7 +61,9 @@ image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (I
 
 
 .Risultato
-BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in AWS per conto dell'utente. Accedere alla https://console.bluexp.netapp.com["Console BlueXP"^] Per iniziare a utilizzare il connettore con BlueXP.
+BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in AWS per conto dell'utente.
+
+Accedere alla https://console.bluexp.netapp.com["Console BlueXP"^] Per iniziare a utilizzare il connettore con BlueXP.
 
 --
 ====

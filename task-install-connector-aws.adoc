@@ -20,7 +20,9 @@ Creare un connettore direttamente dalla console basata sul web BlueXP, da AWS Ma
 ====
 .BlueXP
 --
-.Di cosa hai bisogno
+.Prima di iniziare
+Dovresti disporre di quanto segue:
+
 * Metodo di autenticazione AWS: Un ruolo IAM o chiavi di accesso per un utente IAM con le autorizzazioni richieste.
 +
 link:task-set-up-permissions-aws.html["Scopri come impostare le autorizzazioni AWS"]
@@ -84,7 +86,9 @@ Una volta completato il processo, il connettore è disponibile per l'utilizzo da
 --
 .Mercato AWS
 --
-.Di cosa hai bisogno
+.Prima di iniziare
+Dovresti disporre di quanto segue:
+
 * VPC e subnet che soddisfano i requisiti di rete.
 +
 link:task-set-up-networking-aws.html["Scopri i requisiti di rete"].
@@ -94,6 +98,10 @@ link:task-set-up-networking-aws.html["Scopri i requisiti di rete"].
 link:task-set-up-permissions-aws.html["Scopri come impostare le autorizzazioni AWS"].
 
 * Autorizzazioni per iscriversi e annullare l'iscrizione da AWS Marketplace per l'utente IAM.
+* Comprensione dei requisiti di CPU e RAM per l'istanza.
++
+link:reference-host-requirements-aws.html["Esaminare i requisiti dell'istanza"].
+
 * Coppia di chiavi per l'istanza EC2.
 
 
@@ -112,10 +120,7 @@ Questi passaggi descrivono come avviare l'istanza dalla console EC2 perché la c
 +
 ** *Nome e tag*: Immettere un nome e tag per l'istanza.
 ** *Immagine dell'applicazione e del sistema operativo*: Saltare questa sezione. Il connettore AMI è già selezionato.
-** *Tipo di istanza*: A seconda della disponibilità della regione, scegliere uno dei tipi di istanza supportati (si consiglia t3.xlarge).
-+
-link:reference-host-requirements-aws.html["Esaminare i requisiti dell'istanza"].
-
+** *Tipo di istanza*: A seconda della disponibilità della regione, scegliere un tipo di istanza che soddisfi i requisiti di RAM e CPU (si consiglia t3.xlarge).
 ** *Coppia di chiavi (login)*: Selezionare la coppia di chiavi che si desidera utilizzare per connettersi in modo sicuro all'istanza.
 ** *Impostazioni di rete*: Modificare le impostazioni di rete in base alle esigenze:
 +
@@ -132,9 +137,6 @@ link:reference-ports-aws.html["Visualizzare le regole del gruppo di sicurezza pe
 
 ** *Configure storage* (Configura storage): Mantenere le opzioni di storage predefinite.
 ** *Dettagli avanzati*: In *Profilo istanza IAM*, scegliere il ruolo IAM che include le autorizzazioni richieste per il connettore.
-+
-link:task-set-up-permissions-aws.html["Scopri come impostare le autorizzazioni AWS"].
-
 ** *Riepilogo*: Esaminare il riepilogo e fare clic su *Avvia istanza*.
 
 
@@ -166,7 +168,9 @@ Aprire un browser Web e accedere a. https://console.bluexp.netapp.com["Console B
 --
 .Installazione manuale
 --
-.Di cosa hai bisogno
+.Prima di iniziare
+Dovresti disporre di quanto segue:
+
 * Privilegi root per installare il connettore.
 * Dettagli su un server proxy, se è richiesto un proxy per l'accesso a Internet dal connettore.
 +

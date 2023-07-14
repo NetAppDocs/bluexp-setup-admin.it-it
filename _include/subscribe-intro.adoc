@@ -1,0 +1,5 @@
+= 
+:allow-uri-read: 
+
+
+Iscriviti a BlueXP dal mercato del tuo cloud provider per pagare i servizi BlueXP a una tariffa oraria (PAYGO) o attraverso un contratto annuale. Se hai acquistato una licenza da NetApp (BYOL), devi anche iscriverti all'offerta Marketplace. La licenza viene sempre addebitata per prima, ma l'utente verrà addebitato alla tariffa oraria se supera la capacità concessa in licenza o se scade il termine della licenza.

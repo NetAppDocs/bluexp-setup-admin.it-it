@@ -55,7 +55,7 @@ TIP: Quando BlueXP crea il connettore, applica un nuovo set di autorizzazioni al
 . Fare clic su *JSON*.
 . Copiare e incollare il seguente criterio:
 +
-Si ricorda che questo criterio contiene solo le autorizzazioni necessarie per avviare l'istanza di Connector in AWS da BlueXP. link:reference-permissions-aws.html["Visualizza i permessi richiesti per l'istanza del connettore"].
+Si ricorda che questo criterio contiene solo le autorizzazioni necessarie per avviare l'istanza di Connector in AWS da BlueXP. link:reference-permissions-aws.html["Visualizza le autorizzazioni richieste per l'istanza del connettore"].
 
 +
 [source, json]
@@ -163,27 +163,25 @@ Ora dovresti disporre di un ruolo IAM con le autorizzazioni richieste o di un ut
 
 == Impostare le autorizzazioni per il connettore durante l'implementazione da AWS Marketplace
 
-Creare policy IAM in AWS e associarle a un ruolo IAM. Quando si crea il connettore da AWS Marketplace, viene richiesto di selezionare il ruolo IAM.
+Per prepararsi all'implementazione di un marketplace, creare policy IAM in AWS e allegarle a un ruolo IAM. Quando si crea il connettore da AWS Marketplace, viene richiesto di selezionare il ruolo IAM.
 
 .Fasi
-. Dalla console IAM, creare una policy:
+. Accedere alla console AWS e accedere al servizio IAM.
+. Creare una policy:
 +
 .. Fare clic su *Policy > Create policy* (Criteri > Crea policy).
-.. Selezionare *JSON* e copiare e incollare il contenuto di link:reference-permissions-aws.html["Criteri IAM per il connettore"].
+.. Selezionare *JSON* e copiare e incollare il contenuto di link:reference-permissions-aws.html["Policy IAM per il connettore"].
 .. Completare i passaggi rimanenti per creare il criterio.
 +
-A seconda dei servizi BlueXP che si intende utilizzare, potrebbe essere necessario creare una seconda policy.
-
-+
-Per le regioni standard, le autorizzazioni sono distribuite in due policy. Sono necessarie due policy a causa di un limite massimo di dimensioni dei caratteri per le policy gestite in AWS.
+A seconda dei servizi BlueXP che si intende utilizzare, potrebbe essere necessario creare una seconda policy. Per le regioni standard, le autorizzazioni sono distribuite in due policy. Sono necessarie due policy a causa di un limite massimo di dimensioni dei caratteri per le policy gestite in AWS. link:reference-permissions-aws.html["Scopri di più sulle policy IAM per il connettore"].
 
 
 
-. Nella console IAM, creare un ruolo IAM:
+. Creare un ruolo IAM:
 +
 .. Fare clic su *ruoli > Crea ruolo*.
 .. Selezionare *servizio AWS > EC2*.
-.. Aggiungere le autorizzazioni allegando i criteri creati nel passaggio precedente.
+.. Aggiungere le autorizzazioni allegando il criterio appena creato.
 .. Completare i passaggi rimanenti per creare il ruolo.
 
 
@@ -196,7 +194,7 @@ Ora si dispone di un ruolo IAM che è possibile associare all'istanza EC2 durant
 
 == Impostare le autorizzazioni da assegnare dopo l'installazione manuale
 
-Se si installa manualmente il software del connettore sul proprio host Linux in AWS, è possibile fornire le autorizzazioni nei seguenti modi:
+Se si prevede di installare manualmente il software del connettore sul proprio host Linux in AWS, è possibile fornire le autorizzazioni nei seguenti modi:
 
 * Opzione 1: Creazione di criteri IAM e associazione dei criteri a un ruolo IAM che è possibile associare all'istanza EC2.
 * Opzione 2: Fornire a BlueXP le chiavi di accesso AWS per un utente IAM che dispone delle autorizzazioni necessarie.
@@ -207,24 +205,22 @@ Se si installa manualmente il software del connettore sul proprio host Linux in 
 .Ruolo IAM
 --
 .Fasi
-. Dalla console IAM, creare una policy:
+. Accedere alla console AWS e accedere al servizio IAM.
+. Creare una policy:
 +
 .. Fare clic su *Policy > Create policy* (Criteri > Crea policy).
 .. Selezionare *JSON* e copiare e incollare il contenuto di link:reference-permissions-aws.html["Policy IAM per il connettore"].
 .. Completare i passaggi rimanenti per creare il criterio.
 +
-A seconda dei servizi BlueXP che si intende utilizzare, potrebbe essere necessario creare una seconda policy.
-
-+
-Per le regioni standard, le autorizzazioni sono distribuite in due policy. Sono necessarie due policy a causa di un limite massimo di dimensioni dei caratteri per le policy gestite in AWS. link:reference-permissions-aws.html["Scopri di più sulle policy IAM per il connettore"].
+A seconda dei servizi BlueXP che si intende utilizzare, potrebbe essere necessario creare una seconda policy. Per le regioni standard, le autorizzazioni sono distribuite in due policy. Sono necessarie due policy a causa di un limite massimo di dimensioni dei caratteri per le policy gestite in AWS. link:reference-permissions-aws.html["Scopri di più sulle policy IAM per il connettore"].
 
 
 
-. Nella console IAM, creare un ruolo IAM:
+. Creare un ruolo IAM:
 +
 .. Fare clic su *ruoli > Crea ruolo*.
 .. Selezionare *servizio AWS > EC2*.
-.. Aggiungere le autorizzazioni allegando i criteri creati nel passaggio precedente.
+.. Aggiungere le autorizzazioni allegando il criterio appena creato.
 .. Completare i passaggi rimanenti per creare il ruolo.
 
 
@@ -237,7 +233,8 @@ Ora si dispone di un ruolo IAM che è possibile associare all'istanza EC2 dopo a
 .Chiave di accesso AWS
 --
 .Fasi
-. Dalla console IAM, creare una policy:
+. Accedere alla console AWS e accedere al servizio IAM.
+. Creare una policy:
 +
 .. Fare clic su *Policy > Create policy* (Criteri > Crea policy).
 .. Selezionare *JSON* e copiare e incollare il contenuto di link:reference-permissions-aws.html["Policy IAM per il connettore"].

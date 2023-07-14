@@ -66,6 +66,8 @@ Analisi e controllo:: Utilizza strumenti per monitorare, mappare e ottimizzare l
 --
 * https://bluexp.netapp.com/netapp-cloud-data-sense["Classificazione"^]
 * https://bluexp.netapp.com/digital-advisor["Consulente digitale"^]
+* https://bluexp.netapp.com/digital-advisor["Efficienza economica"^]
+* https://bluexp.netapp.com/digital-advisor["Resilienza operativa"^]
 * https://bluexp.netapp.com/ransomware-protection["Protezione ransomware"^]
 
 
@@ -90,7 +92,7 @@ I prezzi di BlueXP dipendono dai servizi che si intende utilizzare. https://blue
 
 == Come funziona BlueXP
 
-BlueXP include una console basata su web fornita tramite il layer SaaS, account che forniscono multi-tenancy e connettori che gestiscono Cloud Volumes ONTAP e altri servizi cloud.
+BlueXP include una console basata su web fornita tramite il layer SaaS, account che forniscono multi-tenancy e connettori che gestiscono gli ambienti di lavoro e abilitano i servizi cloud BlueXP.
 
 
 
@@ -110,7 +112,7 @@ link:concept-netapp-accounts.html["Scopri di più sugli account"].
 
 === Connettori
 
-Non è necessario un connettore per iniziare a utilizzare BlueXP, ma è necessario creare un connettore per sbloccare tutte le funzionalità e i servizi di BlueXP. Un connettore consente la gestione di risorse e processi in ambienti on-premise e cloud. È necessario utilizzare Cloud Volumes ONTAP e altri servizi dati.
+Non è necessario un connettore per iniziare a utilizzare BlueXP, ma è necessario creare un connettore per sbloccare tutte le funzionalità e i servizi di BlueXP. Un connettore consente la gestione di risorse e processi in ambienti on-premise e cloud. È necessario gestire gli ambienti di lavoro (ad esempio, cluster Cloud Volumes ONTAP e ONTAP on-premise) e utilizzare molti servizi dati BlueXP.
 
 link:concept-connectors.html["Scopri di più sui connettori"].
 

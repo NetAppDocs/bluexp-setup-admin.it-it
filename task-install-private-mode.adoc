@@ -168,7 +168,7 @@ NOTE: BlueXP Operator è il nome predefinito fornito nel criterio BlueXP. Se si 
 .. Fare clic su *Seleziona*.
 .. Fare clic su *Avanti*.
 .. Fare clic su *Rivedi + assegna*.
-.. Se si desidera implementare Cloud Volumes ONTAP da abbonamenti aggiuntivi, passare a tale abbonamento e ripetere la procedura.
+.. Se si desidera gestire le risorse in abbonamenti Azure aggiuntivi, passare a tale abbonamento e ripetere la procedura.
 
 
 
@@ -215,7 +215,7 @@ Associare l'account del servizio alla macchina virtuale del connettore.
 +
 https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Documentazione di Google Cloud: Modifica dell'account del servizio e degli ambiti di accesso per un'istanza"^]
 
-. Se si desidera distribuire Cloud Volumes ONTAP in altri progetti, concedere l'accesso aggiungendo l'account di servizio con il ruolo BlueXP a tale progetto. Dovrai ripetere questo passaggio per ogni progetto.
+. Se si desidera gestire le risorse in altri progetti, concedere l'accesso aggiungendo l'account di servizio con il ruolo BlueXP a tale progetto. Dovrai ripetere questo passaggio per ogni progetto.
 
 
 .Risultato

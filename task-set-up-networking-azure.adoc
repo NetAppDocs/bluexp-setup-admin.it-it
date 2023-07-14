@@ -54,15 +54,15 @@ link:reference-networking-saas-console.html["Visualizzare l'elenco degli endpoin
 
 === Endpoint contattati durante l'installazione manuale
 
-Se si prevede di installare manualmente il connettore sul proprio host Linux, il programma di installazione del connettore richiede l'accesso ai seguenti URL durante il processo di installazione:
+Quando si installa manualmente il connettore sul proprio host Linux, il programma di installazione del connettore richiede l'accesso ai seguenti URL durante il processo di installazione:
 
 * \https://support.netapp.com
 * \https://mysupport.netapp.com
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
-* \https://cloudmanagerinfraprod.azurecr.io
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
 * \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
 
 
 L'host potrebbe tentare di aggiornare i pacchetti del sistema operativo durante l'installazione. L'host può contattare diversi siti di mirroring per questi pacchetti di sistemi operativi.
@@ -73,24 +73,36 @@ L'host potrebbe tentare di aggiornare i pacchetti del sistema operativo durante 
 
 Il connettore richiede l'accesso a Internet in uscita per contattare i seguenti endpoint al fine di gestire risorse e processi all'interno dell'ambiente di cloud pubblico per le operazioni quotidiane.
 
-[cols="2*"]
+[cols="2a,1a"]
 |===
 | Endpoint | Scopo 
 
 
-| \https://management.azure.com
+ a| 
+\https://management.azure.com
 \https://login.microsoftonline.com
 \https://blob.core.windows.net
-\https://core.windows.net | Per gestire le risorse nelle aree pubbliche di Azure. 
+\https://core.windows.net
+ a| 
+Per gestire le risorse nelle aree pubbliche di Azure.
 
 
-| \https://management.chinacloudapi.cn
+
+ a| 
+\https://management.chinacloudapi.cn
 \https://login.chinacloudapi.cn
 \https://blob.core.chinacloudapi.cn
-\https://core.chinacloudapi.cn | Per gestire le risorse nelle regioni Azure China. 
+\https://core.chinacloudapi.cn
+ a| 
+Per gestire le risorse nelle regioni Azure China.
 
 
-| \https://support.netapp.com | Per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al supporto NetApp. 
+
+ a| 
+\https://support.netapp.com
+ a| 
+Per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al supporto NetApp.
+
 
 
  a| 
@@ -109,9 +121,13 @@ NOTE: Il connettore sta attualmente contattando "cloudmanager.cloud.netapp.com",
 
 
 
-| \https://cloudmanagerinfraprod.azurecr.io
+ a| 
+\https://*.blob.core.windows.net
 
-\https://*.blob.core.windows.net | Per aggiornare il connettore e i relativi componenti Docker. 
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+Per aggiornare il connettore e i relativi componenti Docker.
+
 |===
 
 
@@ -124,15 +140,20 @@ Se l'organizzazione richiede la distribuzione di un server proxy per tutto il tr
 * Certificato HTTPS
 
 
+Queste informazioni devono essere fornite durante l'installazione.
+
 
 
 == Porte
 
-Non c'è traffico in entrata verso il connettore, a meno che non venga avviato o se il connettore viene utilizzato come proxy per i messaggi AutoSupport.
+Non c'è traffico in entrata verso il connettore, a meno che non venga avviato o se il connettore viene utilizzato come proxy per inviare messaggi AutoSupport da Cloud Volumes ONTAP al supporto NetApp.
 
 * HTTP (80) e HTTPS (443) forniscono l'accesso all'interfaccia utente locale, che verrà utilizzata in rare circostanze.
 * SSH (22) è necessario solo se è necessario connettersi all'host per la risoluzione dei problemi.
-* Le connessioni in entrata sulla porta 3128 sono necessarie se si implementano sistemi Cloud Volumes ONTAP in una subnet in cui non è disponibile una connessione Internet in uscita. Se i sistemi Cloud Volumes ONTAP non dispongono di una connessione Internet in uscita per inviare messaggi AutoSupport, BlueXP configura automaticamente i sistemi Cloud Volumes ONTAP in modo che utilizzino un server proxy incluso nel connettore. L'unico requisito è garantire che il gruppo di sicurezza del connettore consenta le connessioni in entrata sulla porta 3128. Dopo aver implementato il connettore, aprire questa porta.
+* Le connessioni in entrata sulla porta 3128 sono necessarie se si implementano sistemi Cloud Volumes ONTAP in una subnet in cui non è disponibile una connessione Internet in uscita.
++
+Se i sistemi Cloud Volumes ONTAP non dispongono di una connessione Internet in uscita per inviare messaggi AutoSupport, BlueXP configura automaticamente i sistemi Cloud Volumes ONTAP in modo che utilizzino un server proxy incluso nel connettore. L'unico requisito è garantire che il gruppo di sicurezza del connettore consenta le connessioni in entrata sulla porta 3128. Dopo aver implementato il connettore, aprire questa porta.
+
 
 
 

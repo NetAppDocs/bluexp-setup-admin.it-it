@@ -231,21 +231,24 @@ Esistono due scenari in cui è possibile associare un abbonamento AWS Marketplac
 * Si desidera sostituire un abbonamento AWS Marketplace esistente con un nuovo abbonamento.
 
 
-.Di cosa hai bisogno
+.Prima di iniziare
 È necessario creare un connettore prima di poter modificare le impostazioni di BlueXP. link:concept-connectors.html#how-to-create-a-connector["Scopri come creare un connettore"].
 
 .Fasi
-. Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
-. Nella pagina *account credentials*, selezionare il menu delle azioni per un set di credenziali, quindi selezionare *associate Subscription*.
+. Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
+. Fare clic sul menu delle azioni per un set di credenziali, quindi selezionare *Associa abbonamento*.
++
+Selezionare le credenziali associate a un connettore. Non puoi associare un abbonamento al marketplace alle credenziali associate a BlueXP.
+
 +
 image:screenshot_associate_subscription.png["Schermata del menu delle azioni per un set di credenziali esistenti."]
 
-. Per associare le credenziali a un abbonamento esistente, selezionare l'abbonamento dall'elenco a discesa e selezionare *Associa*.
-. Per associare le credenziali a un nuovo abbonamento, selezionare *Aggiungi abbonamento > continua* e seguire la procedura descritta in AWS Marketplace:
+. Per associare le credenziali a un abbonamento esistente, selezionare l'abbonamento dall'elenco a discesa e fare clic su *Associa*.
+. Per associare le credenziali a un nuovo abbonamento, fare clic su *Aggiungi abbonamento > continua* e seguire la procedura descritta in AWS Marketplace:
 +
-.. Selezionare *Visualizza opzioni di acquisto*.
-.. Selezionare *Iscriviti*.
-.. Selezionare *Configura account*.
+.. Fare clic su *Visualizza opzioni di acquisto*.
+.. Fare clic su *Subscribe* (Iscriviti).
+.. Fare clic su *Configura account*.
 +
 Verrai reindirizzato al sito Web di BlueXP.
 
@@ -259,9 +262,9 @@ BlueXP sostituisce l'abbonamento esistente per tutte le credenziali dell'account
 +
 Per tutti gli altri account, è necessario associare manualmente l'abbonamento ripetendo questa procedura.
 
-*** Selezionare *Salva*.
+*** Fare clic su *Save* (Salva).
 +
-Il seguente video mostra i passaggi per iscriversi a Google Cloud Marketplace:
+Il seguente video mostra i passaggi per iscriversi a AWS Marketplace:
 
 +
 video::video_subscribing_aws.mp4[width=848,height=480]

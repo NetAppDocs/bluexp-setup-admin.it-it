@@ -40,9 +40,9 @@ Quando si installa manualmente il connettore sul proprio host Linux, il programm
 * \https://mysupport.netapp.com
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
-* \https://cloudmanagerinfraprod.azurecr.io
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
 * \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
 
 
 L'host potrebbe tentare di aggiornare i pacchetti del sistema operativo durante l'installazione. L'host può contattare diversi siti di mirroring per questi pacchetti di sistemi operativi.
@@ -53,7 +53,7 @@ L'host potrebbe tentare di aggiornare i pacchetti del sistema operativo durante 
 
 Il connettore richiede l'accesso a Internet in uscita per contattare i seguenti endpoint al fine di gestire risorse e processi all'interno dell'ambiente di cloud pubblico per le operazioni quotidiane.
 
-[cols="2*"]
+[cols="2a,1a"]
 |===
 | Endpoint | Scopo 
 
@@ -68,18 +68,33 @@ Servizi AWS (amazonaws.com):
 * Servizio token di sicurezza (STS)
 * S3 (Simple Storage Service)
 
-| Per gestire le risorse in AWS. L'endpoint esatto dipende dalla regione in cui viene implementato il connettore. https://docs.aws.amazon.com/general/latest/gr/rande.html["Per ulteriori informazioni, fare riferimento alla documentazione AWS"^] 
+ a| 
+Per gestire le risorse in AWS. L'endpoint esatto dipende dalla regione in cui viene implementato il connettore. https://docs.aws.amazon.com/general/latest/gr/rande.html["Per ulteriori informazioni, fare riferimento alla documentazione AWS"^]
 
 
-| \https://management.azure.com
-\https://login.microsoftonline.com | Per gestire le risorse nelle aree pubbliche di Azure. 
+
+ a| 
+\https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net
+ a| 
+Per gestire le risorse nelle aree pubbliche di Azure.
 
 
-| \https://management.chinacloudapi.cn
-\https://login.chinacloudapi.cn | Per gestire le risorse nelle regioni Azure China. 
+
+ a| 
+\https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn
+ a| 
+Per gestire le risorse nelle regioni Azure China.
 
 
-| \https://www.googleapis.com/compute/v1/
+
+ a| 
+\https://www.googleapis.com/compute/v1/
 \https://compute.googleapis.com/compute/v1
 \https://cloudresourcemanager.googleapis.com/v1/projects
 \https://www.googleapis.com/compute/beta
@@ -87,10 +102,17 @@ Servizi AWS (amazonaws.com):
 \https://www.googleapis.com/storage/v1
 \https://iam.googleapis.com/v1
 \https://cloudkms.googleapis.com/v1
-\https://www.googleapis.com/deploymentmanager/v2/projects | Per gestire le risorse in Google Cloud. 
+\https://www.googleapis.com/deploymentmanager/v2/projects
+ a| 
+Per gestire le risorse in Google Cloud.
 
 
-| \https://support.netapp.com | Per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al supporto NetApp. 
+
+ a| 
+\https://support.netapp.com
+ a| 
+Per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al supporto NetApp.
+
 
 
  a| 
@@ -109,9 +131,13 @@ NOTE: Il connettore sta attualmente contattando "cloudmanager.cloud.netapp.com",
 
 
 
-| \https://cloudmanagerinfraprod.azurecr.io
+ a| 
+\https://*.blob.core.windows.net
 
-\https://*.blob.core.windows.net | Per aggiornare il connettore e i relativi componenti Docker. 
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+Per aggiornare il connettore e i relativi componenti Docker.
+
 |===
 .Link correlato
 link:reference-networking-saas-console.html["Preparare la rete per l'accesso dell'utente alla console BlueXP"]
@@ -127,15 +153,20 @@ Se l'organizzazione richiede la distribuzione di un server proxy per tutto il tr
 * Certificato HTTPS
 
 
+Queste informazioni devono essere fornite durante l'installazione.
+
 
 
 == Porte
 
-Non c'è traffico in entrata verso il connettore, a meno che non venga avviato o se il connettore viene utilizzato come proxy per i messaggi AutoSupport.
+Non c'è traffico in entrata verso il connettore, a meno che non venga avviato o se il connettore viene utilizzato come proxy per inviare messaggi AutoSupport da Cloud Volumes ONTAP al supporto NetApp.
 
 * HTTP (80) e HTTPS (443) forniscono l'accesso all'interfaccia utente locale, che verrà utilizzata in rare circostanze.
 * SSH (22) è necessario solo se è necessario connettersi all'host per la risoluzione dei problemi.
-* Le connessioni in entrata sulla porta 3128 sono necessarie se si implementano sistemi Cloud Volumes ONTAP in una subnet in cui non è disponibile una connessione Internet in uscita. Se i sistemi Cloud Volumes ONTAP non dispongono di una connessione Internet in uscita per inviare messaggi AutoSupport, BlueXP configura automaticamente i sistemi Cloud Volumes ONTAP in modo che utilizzino un server proxy incluso nel connettore. L'unico requisito è garantire che il gruppo di sicurezza del connettore consenta le connessioni in entrata sulla porta 3128. Dopo aver implementato il connettore, aprire questa porta.
+* Le connessioni in entrata sulla porta 3128 sono necessarie se si implementano sistemi Cloud Volumes ONTAP in una subnet in cui non è disponibile una connessione Internet in uscita.
++
+Se i sistemi Cloud Volumes ONTAP non dispongono di una connessione Internet in uscita per inviare messaggi AutoSupport, BlueXP configura automaticamente i sistemi Cloud Volumes ONTAP in modo che utilizzino un server proxy incluso nel connettore. L'unico requisito è garantire che il gruppo di sicurezza del connettore consenta le connessioni in entrata sulla porta 3128. Dopo aver implementato il connettore, aprire questa porta.
+
 
 
 

@@ -14,7 +14,7 @@ summary: 'Iscriviti a BlueXP dal mercato del tuo cloud provider per pagare i ser
 
 
 [role="lead"]
-Iscriviti a BlueXP dal mercato del tuo cloud provider per pagare i servizi BlueXP a una tariffa oraria o attraverso un contratto annuale. Se hai acquistato una licenza da NetApp, devi anche iscriverti all'offerta Marketplace. La licenza viene sempre addebitata per prima, ma l'utente verrà addebitato alla tariffa oraria se supera la capacità concessa in licenza o se scade il termine della licenza.
+Iscriviti a BlueXP dal mercato del tuo cloud provider per pagare i servizi BlueXP a una tariffa oraria (PAYGO) o attraverso un contratto annuale. Se hai acquistato una licenza da NetApp (BYOL), devi anche iscriverti all'offerta Marketplace. La licenza viene sempre addebitata per prima, ma l'utente verrà addebitato alla tariffa oraria se supera la capacità concessa in licenza o se scade il termine della licenza.
 
 Un abbonamento al marketplace consente di addebitare i seguenti servizi BlueXP in modalità limitata:
 
@@ -73,9 +73,6 @@ video::video_subscribing_aws.mp4[width=848,height=480]
 --
 .Azure
 --
-
-NOTE: In Azure, i contratti annuali non sono supportati dalle regioni governative.
-
 .Fasi
 . Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
 . Fare clic sul menu delle azioni per un set di credenziali, quindi selezionare *Associa abbonamento*.

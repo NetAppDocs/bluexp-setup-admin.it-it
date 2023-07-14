@@ -42,7 +42,9 @@ image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (I
 
 
 .Risultato
-BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in AWS per conto dell'utente. A questo punto, è possibile accedere alla https://console.bluexp.netapp.com["Console BlueXP"^] Per iniziare a utilizzare il connettore con BlueXP.
+BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in AWS per conto dell'utente.
+
+A questo punto, è possibile accedere alla https://console.bluexp.netapp.com["Console BlueXP"^] Per iniziare a utilizzare il connettore con BlueXP.
 
 --
 .Azure

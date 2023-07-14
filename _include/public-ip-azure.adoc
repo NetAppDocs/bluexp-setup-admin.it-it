@@ -1,0 +1,11 @@
+= 
+:allow-uri-read: 
+
+
+Se si desidera utilizzare un indirizzo IP pubblico con la macchina virtuale del connettore in Azure, l'indirizzo IP deve utilizzare una SKU di base per assicurarsi che BlueXP utilizzi questo indirizzo IP pubblico.
+
+image:screenshot-azure-sku.png["Una schermata della creazione di un nuovo indirizzo IP in Azure che consente di scegliere Basic nel campo SKU."]
+
+Se invece si utilizza un indirizzo IP SKU standard, BlueXP utilizza l'indirizzo _private_ IP del connettore, invece dell'indirizzo IP pubblico. Se il computer utilizzato per accedere a BlueXP Console non dispone dell'accesso a tale indirizzo IP privato, le azioni da BlueXP Console non avranno esito positivo.
+
+https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Documentazione di Azure: SKU IP pubblico"^]
