@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: reference-networking-saas-console.html 
-keywords: networking, urls, endpoints, web browser, console 
-summary: Quando utilizzi la console basata sul web BlueXP fornita attraverso il layer SaaS, contatta diversi endpoint per completare le attività di gestione dei dati. Il computer che esegue il browser Web deve disporre di connessioni a questi endpoint. 
+keywords: networking, urls, endpoints, web browser, console, network, set up networking 
+summary: 'Quando si inizia a utilizzare BlueXP, assicurarsi che la rete consenta l"accesso a endpoint specifici dalla console BlueXP. A seconda del modo in cui si intende utilizzare BlueXP, potrebbe essere necessario configurare la rete per un connettore e per servizi BlueXP specifici.' 
 ---
-= Preparare la rete per l'accesso dell'utente alla console BlueXP
+= Preparare la rete
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,6 +14,12 @@ summary: Quando utilizzi la console basata sul web BlueXP fornita attraverso il 
 
 
 [role="lead"]
+Quando si inizia a utilizzare BlueXP, assicurarsi che la rete consenta l'accesso a endpoint specifici dalla console BlueXP. A seconda del modo in cui si intende utilizzare BlueXP, potrebbe essere necessario configurare la rete per un connettore e per servizi BlueXP specifici.
+
+
+
+== Preparare la rete per l'accesso dell'utente alla console BlueXP
+
 Quando utilizzi la console basata sul web BlueXP fornita attraverso il layer SaaS, contatta diversi endpoint per completare le attività di gestione dei dati. Il computer che esegue il browser Web deve disporre di connessioni a questi endpoint.
 
 [cols="2*"]
@@ -67,10 +73,24 @@ Servizi AWS (amazonaws.com):
 
 | \https://widget.intercom.io | Per chat in-product che ti consente di parlare con gli esperti cloud di NetApp. 
 |===
-.Link correlati
-* link:task-prepare-restricted-mode.html#prepare-networking-for-user-access-to-bluexp-console["Preparazione della rete per l'accesso dell'utente alla console BlueXP (modalità limitata)"]
-* link:task-set-up-networking-aws.html#endpoints-contacted-from-the-connector["Endpoint che il connettore contatta in AWS (modalità standard)"]
-* link:task-set-up-networking-azure.html#endpoints-contacted-from-the-connector["Endpoint che il connettore contatta in Azure (modalità standard)"]
-* link:task-set-up-networking-google.html#endpoints-contacted-from-the-connector["Endpoint che il connettore contatta in Google Cloud (modalità standard)"]
-* link:task-set-up-networking-on-prem.html#endpoints-contacted-during-manual-installation["Endpoint contattati durante l'installazione manuale del connettore (modalità standard)"]
+Oltre a questi endpoint, è anche necessario garantire che il connettore disponga dell'accesso a Internet in uscita per contattare endpoint specifici per le operazioni quotidiane. Puoi trovare l'elenco di questi endpoint seguendo i link nella sezione successiva.
 
+
+
+== Preparare il collegamento in rete per un connettore
+
+Il modo in cui prepari la tua rete per un connettore dipende da dove intendi installare il connettore, che può trovarsi nel cloud o in sede. Per ulteriori informazioni sui requisiti di rete dei connettori, fare riferimento alle seguenti pagine:
+
+* link:task-set-up-networking-aws.html["Configurare la rete AWS"]
+* link:task-set-up-networking-azure.html["Configurare il networking Azure"]
+* link:task-set-up-networking-google.html["Configurare il networking Google Cloud"]
+* link:task-set-up-networking-on-prem.html["Configurare il networking on-premise"]
+
+
+
+
+== Preparare il networking per i servizi BlueXP
+
+Quando si inizia a utilizzare BlueXP, è necessario assicurarsi di aver soddisfatto i requisiti di rete per i servizi BlueXP che si intende utilizzare. Per ulteriori informazioni, fare riferimento alla documentazione relativa a ciascun servizio.
+
+https://docs.netapp.com/us-en/bluexp-family/["Documentazione BlueXP"^]

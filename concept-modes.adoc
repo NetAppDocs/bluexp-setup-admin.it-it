@@ -237,7 +237,7 @@ image:diagram-private-mode-onprem.png["Un'immagine concettuale che mostra un dat
 
 BlueXP funziona come segue in modalità privata:
 
-Comunicazione in uscita:: Non è richiesta alcuna connettività in uscita. Tutti i pacchetti, le dipendenze e i componenti essenziali vengono forniti con il connettore e forniti dalla macchina locale. La connettività alle risorse pubblicamente disponibili del tuo cloud provider è necessaria solo se stai implementando Cloud Volumes ONTAP.
+Comunicazione in uscita:: Non è richiesta alcuna connettività in uscita per il layer BlueXP SaaS. Tutti i pacchetti, le dipendenze e i componenti essenziali vengono forniti con il connettore e forniti dalla macchina locale. La connettività alle risorse pubblicamente disponibili del tuo cloud provider è necessaria solo se stai implementando Cloud Volumes ONTAP.
 Posizione supportata per il connettore:: In modalità privata, il connettore è supportato nel cloud o on-premise.
 Installazione del connettore:: Le installazioni manuali del connettore sono supportate sul proprio host Linux nel cloud o on-premise.
 Aggiornamenti del connettore:: È necessario aggiornare manualmente il software del connettore. Il software Connector viene pubblicato sul sito di supporto NetApp a intervalli non definiti.

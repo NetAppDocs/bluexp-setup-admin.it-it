@@ -785,7 +785,7 @@ Il connettore effettua le seguenti richieste API quando si utilizza il metodo Se
 * s3:PutBucketPublicAccessBlock
 * s3:AbortMultipartUpload
 * s3:ListMultipartUploadParts
-* athena:StartQueryExecutionc
+* athena:StartQueryExecution
 * athena: GetQueryResults
 * athena:GetQueryExecution
 * athena:StopQueryExecution

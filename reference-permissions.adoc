@@ -36,6 +36,18 @@ Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono
 
 
 | Funzionamento Cloud Volumes ONTAP | Un ruolo IAM deve essere associato a ciascun nodo Cloud Volumes ONTAP in AWS. Lo stesso vale per il mediatore ha. L'opzione predefinita consiste nel consentire a BlueXP di creare i ruoli IAM, ma è possibile utilizzare i propri ruoli. | https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html["Scopri come impostare i ruoli IAM da solo"^] 
+
+
+| Eseguire il backup dei cluster ONTAP on-premise su Amazon S3 | Quando si attivano i backup sui volumi ONTAP, il backup e ripristino di BlueXP richiede di inserire una chiave di accesso e un segreto per un utente IAM che dispone di autorizzazioni specifiche. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions["Impostare le autorizzazioni S3 per i backup"^] 
+
+
+| Eseguire il backup dei cluster ONTAP on-premise su StorageGRID | Quando si prepara StorageGRID come destinazione di backup per i cluster ONTAP, il backup e ripristino di BlueXP richiede di inserire una chiave di accesso e un segreto per un utente IAM che dispone di autorizzazioni specifiche. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["Preparare StorageGRID come destinazione del backup"^] 
+
+
+| Eseguire il Tier dei cluster ONTAP on-premise in AWS | Quando si attiva il tiering BlueXP su AWS, la procedura guidata richiede di inserire una chiave di accesso e una chiave segreta. Queste credenziali vengono passate al cluster ONTAP in modo che ONTAP possa eseguire il Tier dei dati al bucket S3. | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["Impostare le autorizzazioni S3 per il tiering"^] 
+
+
+| Eseguire il Tier dei cluster ONTAP on-premise in StorageGRID | Quando si imposta il tiering BlueXP su StorageGRID, è necessario fornire il tiering BlueXP con una chiave di accesso S3 e una chiave segreta. BlueXP Tiering utilizza le chiavi per accedere ai bucket. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["Preparare il tiering a StorageGRID"^] 
 |===
 
 
@@ -74,4 +86,20 @@ link:reference-permissions-azure.html["Autorizzazioni Azure per il connettore"]
 | Funzionamento del connettore | L'account di servizio per l'istanza di Connector VM deve disporre di autorizzazioni specifiche per le operazioni quotidiane. È necessario associare l'account del servizio al connettore quando lo si implementa da BlueXP.
 
 Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive. | link:reference-permissions-gcp.html["Permessi Google Cloud per il connettore"] 
+
+
+| Eseguire il backup di Cloud Volumes ONTAP su Google Cloud  a| 
+Quando si utilizza il backup e ripristino di BlueXP per eseguire il backup di Cloud Volumes ONTAP, è necessario aggiungere autorizzazioni al connettore nei seguenti scenari:
+
+* Si desidera utilizzare la funzionalità di ricerca e ripristino
+* Si desidera utilizzare le chiavi di crittografia gestite dal cliente (CMEK)
+
+ a| 
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#verify-or-add-permissions-to-the-connector["Permessi per la funzionalità di ricerca  Restore"^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#required-information-for-using-customer-managed-encryption-keys-cmek["Permessi per i CMEK"^]
+
+
+
+
+| Eseguire il backup dei cluster ONTAP on-premise su Google Cloud | Quando si utilizza il backup e ripristino di BlueXP per eseguire il backup dei cluster ONTAP on-premise, è necessario aggiungere le autorizzazioni al connettore per utilizzare la funzionalità di ricerca e ripristino. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["Permessi per la funzionalità di ricerca  Restore"^] 
 |===
