@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-permissions.html 
 keywords: permissions, actions 
-summary: 'Per utilizzare le funzionalità e i servizi di BlueXP, è necessario fornire le autorizzazioni necessarie per consentire a BlueXP di eseguire le operazioni nell"ambiente cloud. Utilizzare i collegamenti presenti in questa pagina per accedere rapidamente alle autorizzazioni richieste in BlueXP.' 
+summary: 'Per utilizzare le funzionalità e i servizi di BlueXP, è necessario fornire le autorizzazioni in modo che BlueXP possa eseguire le operazioni nell"ambiente cloud. Utilizzare i collegamenti presenti in questa pagina per accedere rapidamente alle autorizzazioni necessarie in base all"obiettivo.' 
 ---
 = Riepilogo delle autorizzazioni per BlueXP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Per utilizzare le funzionalità e i servizi di BlueXP, è necessario f
 
 
 [role="lead"]
-Per utilizzare le funzionalità e i servizi di BlueXP, è necessario fornire le autorizzazioni necessarie per consentire a BlueXP di eseguire le operazioni nell'ambiente cloud. Utilizzare i collegamenti presenti in questa pagina per accedere rapidamente alle autorizzazioni necessarie in base all'obiettivo.
+Per utilizzare le funzionalità e i servizi di BlueXP, è necessario fornire le autorizzazioni in modo che BlueXP possa eseguire le operazioni nell'ambiente cloud. Utilizzare i collegamenti presenti in questa pagina per accedere rapidamente alle autorizzazioni necessarie in base all'obiettivo.
 
 
 
@@ -41,13 +41,7 @@ Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono
 | Eseguire il backup dei cluster ONTAP on-premise su Amazon S3 | Quando si attivano i backup sui volumi ONTAP, il backup e ripristino di BlueXP richiede di inserire una chiave di accesso e un segreto per un utente IAM che dispone di autorizzazioni specifiche. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions["Impostare le autorizzazioni S3 per i backup"^] 
 
 
-| Eseguire il backup dei cluster ONTAP on-premise su StorageGRID | Quando si prepara StorageGRID come destinazione di backup per i cluster ONTAP, il backup e ripristino di BlueXP richiede di inserire una chiave di accesso e un segreto per un utente IAM che dispone di autorizzazioni specifiche. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["Preparare StorageGRID come destinazione del backup"^] 
-
-
-| Eseguire il Tier dei cluster ONTAP on-premise in AWS | Quando si attiva il tiering BlueXP su AWS, la procedura guidata richiede di inserire una chiave di accesso e una chiave segreta. Queste credenziali vengono passate al cluster ONTAP in modo che ONTAP possa eseguire il Tier dei dati al bucket S3. | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["Impostare le autorizzazioni S3 per il tiering"^] 
-
-
-| Eseguire il Tier dei cluster ONTAP on-premise in StorageGRID | Quando si imposta il tiering BlueXP su StorageGRID, è necessario fornire il tiering BlueXP con una chiave di accesso S3 e una chiave segreta. BlueXP Tiering utilizza le chiavi per accedere ai bucket. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["Preparare il tiering a StorageGRID"^] 
+| Eseguire il Tier dei cluster ONTAP on-premise su Amazon S3 | Quando si attiva il tiering BlueXP su AWS, la procedura guidata richiede di inserire una chiave di accesso e una chiave segreta. Queste credenziali vengono passate al cluster ONTAP in modo che ONTAP possa eseguire il Tier dei dati al bucket S3. | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["Impostare le autorizzazioni S3 per il tiering"^] 
 |===
 
 
@@ -102,4 +96,18 @@ Quando si utilizza il backup e ripristino di BlueXP per eseguire il backup di Cl
 
 
 | Eseguire il backup dei cluster ONTAP on-premise su Google Cloud | Quando si utilizza il backup e ripristino di BlueXP per eseguire il backup dei cluster ONTAP on-premise, è necessario aggiungere le autorizzazioni al connettore per utilizzare la funzionalità di ricerca e ripristino. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["Permessi per la funzionalità di ricerca  Restore"^] 
+|===
+
+
+== Permessi StorageGRID
+
+[cols="25,60,40"]
+|===
+| Scopo | Descrizione | Collegamento 
+
+
+| Eseguire il backup dei cluster ONTAP on-premise su StorageGRID | Quando si prepara StorageGRID come destinazione di backup per i cluster ONTAP, il backup e ripristino di BlueXP richiede di inserire una chiave di accesso e un segreto per un utente IAM che dispone di autorizzazioni specifiche. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["Preparare StorageGRID come destinazione del backup"^] 
+
+
+| Eseguire il Tier dei cluster ONTAP on-premise in StorageGRID | Quando si imposta il tiering BlueXP su StorageGRID, è necessario fornire il tiering BlueXP con una chiave di accesso S3 e una chiave segreta. BlueXP Tiering utilizza le chiavi per accedere ai bucket. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["Preparare il tiering a StorageGRID"^] 
 |===
