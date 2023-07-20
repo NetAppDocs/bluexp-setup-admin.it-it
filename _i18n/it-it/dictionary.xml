@@ -1828,7 +1828,6 @@
   <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">Destinazione</block>
   <block id="241b5fab8e737eaa79c543efe7307059" category="cell">Chiamate API e AutoSupport</block>
   <block id="096a28c32a85d3d48462b468a3700d9a" category="cell">LIF gestione cluster ONTAP e Internet in uscita</block>
-  <block id="7863903e1b4b84391267ab5c4af6a68d" category="cell">Chiamate API a Google Cloud e ONTAP, alla classificazione BlueXP, alla protezione ransomware BlueXP e invio di messaggi AutoSupport a NetApp</block>
   <block id="22043367a89ddcf3eb99eec509a967ba" category="cell">Chiamate API</block>
   <block id="e93028bdc1aacdfb3687181f2031765d" category="cell">3000</block>
   <block id="e9ed822bdea417e9dfd79a2c81634ba4" category="cell">Mediatore ONTAP ha</block>
@@ -3815,4 +3814,7 @@ Questo endpoint è richiesto solo nelle regioni governative di Azure.</block>
   <block id="48f169efc2b522ea6ab10451a2a28cd8" category="summary">Per utilizzare le funzionalità e i servizi di BlueXP, è necessario fornire le autorizzazioni in modo che BlueXP possa eseguire le operazioni nell'ambiente cloud. Utilizzare i collegamenti presenti in questa pagina per accedere rapidamente alle autorizzazioni necessarie in base all'obiettivo.</block>
   <block id="6bc8bd282f003afcaaf88391550efbaf" category="cell">Eseguire il Tier dei cluster ONTAP on-premise su Amazon S3</block>
   <block id="23c27147b4e0e766d76ac0f6e872424e" category="section-title">Permessi StorageGRID</block>
+  <block id="eb44d47feda5532d1121c79d84128d2e" category="cell">Chiamate API ad AWS, a ONTAP, alla classificazione BlueXP, alla protezione ransomware BlueXP e invio di messaggi AutoSupport a NetApp</block>
+  <block id="e671b39f5fdb18b38eb5c968b368b3aa" category="cell">Chiamate API ad Azure, a ONTAP, alla classificazione BlueXP, alla protezione ransomware BlueXP e invio di messaggi AutoSupport a NetApp</block>
+  <block id="8150638aa57d2b5755445cf3ab8eac20" category="cell">Chiamate API a Google Cloud, a ONTAP, alla classificazione BlueXP, alla protezione ransomware BlueXP e invio di messaggi AutoSupport a NetApp</block>
 </blocks>
