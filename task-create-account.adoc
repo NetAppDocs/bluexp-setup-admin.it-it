@@ -31,7 +31,7 @@ Se si desidera attivare la modalità limitata, è necessario includere quanto se
 
 NOTE: Non è possibile modificare l'impostazione della modalità limitata dopo che BlueXP ha creato l'account. Non puoi attivare la modalità limitata in un secondo momento e non puoi disattivarla in un secondo momento. Deve essere impostato al momento della creazione dell'account.
 
-https://docs.netapp.com/us-en/bluexp-automation/tenancy/post-tenancy-account-.html["Scopri come utilizzare questa chiamata API"^]
+https://docs.netapp.com/us-en/bluexp-automation/tenancy/post-tenancy-account-id.html["Scopri come utilizzare questa chiamata API"^]
 
 .Link correlati
 * link:concept-netapp-accounts.html["Scopri di più sugli account BlueXP"]
