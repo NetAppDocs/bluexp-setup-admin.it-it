@@ -7,7 +7,7 @@
 . Selezionare *istanze*.
 . Selezionare l'istanza del connettore.
 . Selezionare *azioni > sicurezza > Modifica ruolo IAM*.
-. Selezionare il ruolo IAM e fare clic su *Aggiorna ruolo IAM*.
+. Selezionare il ruolo IAM e selezionare *Aggiorna ruolo IAM*.
 
 
 .Risultato

@@ -51,8 +51,8 @@ TIP: Quando BlueXP crea il connettore, applica un nuovo set di autorizzazioni al
 
 .Fasi
 . Accedere alla console AWS IAM.
-. Fare clic su *Policy > Create policy* (Criteri > Crea policy).
-. Fare clic su *JSON*.
+. Selezionare *Criteri > Crea policy*.
+. Selezionare *JSON*.
 . Copiare e incollare il seguente criterio:
 +
 Si ricorda che questo criterio contiene solo le autorizzazioni necessarie per avviare l'istanza di Connector in AWS da BlueXP. link:reference-permissions-aws.html["Visualizza le autorizzazioni richieste per l'istanza del connettore"].
@@ -128,15 +128,15 @@ Si ricorda che questo criterio contiene solo le autorizzazioni necessarie per av
     ]
 }
 ----
-. Fare clic su *Avanti* e aggiungere tag, se necessario.
-. Fare clic su *Avanti* e immettere un nome e una descrizione.
-. Fare clic su *Crea policy*.
+. Selezionare *Avanti* e aggiungere tag, se necessario.
+. Selezionare *Avanti* e immettere un nome e una descrizione.
+. Selezionare *Crea policy*.
 . Allegare il criterio a un ruolo IAM che BlueXP può assumere o a un utente IAM in modo da poter fornire a BlueXP le chiavi di accesso:
 +
 ** (Opzione 1) impostare un ruolo IAM che BlueXP può assumere:
 +
 ... Accedere alla console AWS IAM nell'account di destinazione.
-... In Gestione accessi, fare clic su *ruoli > Crea ruolo* e seguire i passaggi per creare il ruolo.
+... In Gestione accessi, selezionare *ruoli > Crea ruolo* e seguire i passaggi per creare il ruolo.
 ... In *Trusted entity type*, selezionare *AWS account*.
 ... Selezionare *un altro account AWS* e inserire l'ID dell'account BlueXP SaaS: 952013314444
 ... Selezionare il criterio creato nella sezione precedente.
@@ -145,10 +145,10 @@ Si ricorda che questo criterio contiene solo le autorizzazioni necessarie per av
 
 ** (Opzione 2) impostare le autorizzazioni per un utente IAM in modo da poter fornire a BlueXP le chiavi di accesso:
 +
-... Dalla console di AWS IAM, fare clic su *Users* (utenti), quindi selezionare il nome utente.
-... Fare clic su *Aggiungi permessi > Allega direttamente policy esistenti*.
+... Dalla console di AWS IAM, selezionare *Users* (utenti), quindi selezionare il nome utente.
+... Selezionare *Aggiungi permessi > Allega direttamente policy esistenti*.
 ... Selezionare il criterio creato.
-... Fare clic su *Avanti*, quindi su *Aggiungi permessi*.
+... Selezionare *Avanti*, quindi selezionare *Aggiungi permessi*.
 ... Assicurarsi di disporre della chiave di accesso e della chiave segreta per l'utente IAM.
 
 
@@ -169,7 +169,7 @@ Per prepararsi all'implementazione di un marketplace, creare policy IAM in AWS e
 . Accedere alla console AWS e accedere al servizio IAM.
 . Creare una policy:
 +
-.. Fare clic su *Policy > Create policy* (Criteri > Crea policy).
+.. Selezionare *Criteri > Crea policy*.
 .. Selezionare *JSON* e copiare e incollare il contenuto di link:reference-permissions-aws.html["Policy IAM per il connettore"].
 .. Completare i passaggi rimanenti per creare il criterio.
 +
@@ -179,7 +179,7 @@ A seconda dei servizi BlueXP che si intende utilizzare, potrebbe essere necessar
 
 . Creare un ruolo IAM:
 +
-.. Fare clic su *ruoli > Crea ruolo*.
+.. Selezionare *ruoli > Crea ruolo*.
 .. Selezionare *servizio AWS > EC2*.
 .. Aggiungere le autorizzazioni allegando il criterio appena creato.
 .. Completare i passaggi rimanenti per creare il ruolo.
@@ -208,7 +208,7 @@ Se si prevede di installare manualmente il software del connettore sul proprio h
 . Accedere alla console AWS e accedere al servizio IAM.
 . Creare una policy:
 +
-.. Fare clic su *Policy > Create policy* (Criteri > Crea policy).
+.. Selezionare *Criteri > Crea policy*.
 .. Selezionare *JSON* e copiare e incollare il contenuto di link:reference-permissions-aws.html["Policy IAM per il connettore"].
 .. Completare i passaggi rimanenti per creare il criterio.
 +
@@ -218,7 +218,7 @@ A seconda dei servizi BlueXP che si intende utilizzare, potrebbe essere necessar
 
 . Creare un ruolo IAM:
 +
-.. Fare clic su *ruoli > Crea ruolo*.
+.. Selezionare *ruoli > Crea ruolo*.
 .. Selezionare *servizio AWS > EC2*.
 .. Aggiungere le autorizzazioni allegando il criterio appena creato.
 .. Completare i passaggi rimanenti per creare il ruolo.
@@ -236,7 +236,7 @@ Ora si dispone di un ruolo IAM che è possibile associare all'istanza EC2 dopo a
 . Accedere alla console AWS e accedere al servizio IAM.
 . Creare una policy:
 +
-.. Fare clic su *Policy > Create policy* (Criteri > Crea policy).
+.. Selezionare *Criteri > Crea policy*.
 .. Selezionare *JSON* e copiare e incollare il contenuto di link:reference-permissions-aws.html["Policy IAM per il connettore"].
 .. Completare i passaggi rimanenti per creare il criterio.
 +

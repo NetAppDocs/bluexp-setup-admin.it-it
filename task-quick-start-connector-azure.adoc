@@ -72,7 +72,7 @@ link:task-set-up-permissions-azure.html["Seguire le istruzioni dettagliate per c
 Creare il connettore utilizzando una delle opzioni di installazione disponibili:
 
 [role="quick-margin-list"]
-* *Da BlueXP*: Fare clic sull'elenco a discesa Connector (connettore), selezionare *Add Connector* (Aggiungi connettore) e seguire le istruzioni.
+* *Da BlueXP*: Selezionare l'elenco a discesa Connector (connettore), selezionare *Add Connector* (Aggiungi connettore) e seguire le istruzioni.
 * *Da Azure Marketplace*: Andare alla https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Pagina delle macchine virtuali di NetApp Connector in Azure Marketplace"^] E seguire le istruzioni per creare la macchina virtuale del connettore.
 * *Installazione manuale*: Scaricare il software del connettore da https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sito di supporto NetApp"] ed eseguire lo script di installazione.
 

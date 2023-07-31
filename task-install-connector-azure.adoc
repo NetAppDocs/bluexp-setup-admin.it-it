@@ -43,7 +43,7 @@ Queste autorizzazioni sono valide per l'istanza del connettore. Si tratta di un 
 
 
 .Fasi
-. Se si sta creando il primo ambiente di lavoro, fare clic su *Aggiungi ambiente di lavoro* e seguire le istruzioni. In caso contrario, fare clic sull'elenco a discesa *Connector* e selezionare *Add Connector* (Aggiungi connettore).
+. Se si sta creando il primo ambiente di lavoro, selezionare *Aggiungi ambiente di lavoro* e seguire le istruzioni. In caso contrario, selezionare l'elenco a discesa *Connector* (connettore) e selezionare *Add Connector* (Aggiungi connettore).
 +
 image:screenshot_connector_add.gif["Una schermata che mostra l'icona del connettore nell'intestazione e l'azione Add Connector."]
 
@@ -95,7 +95,7 @@ link:reference-ports-azure.html["Visualizza le regole del gruppo di sicurezza pe
 ** *Revisione*: Controllare le selezioni per verificare che la configurazione sia corretta.
 
 
-. Fare clic su *Aggiungi*.
+. Selezionare *Aggiungi*.
 +
 La macchina virtuale dovrebbe essere pronta in circa 7 minuti. Si consiglia di rimanere sulla pagina fino al completamento del processo.
 
@@ -112,8 +112,8 @@ Una volta completato il processo, il connettore è disponibile per l'utilizzo da
 +
 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Pagina di Azure Marketplace per le regioni commerciali"^]
 
-. Fare clic su *Get it now* (scarica ora), quindi su *Continue* (continua).
-. Dal portale Azure, fare clic su *Create* (Crea) e seguire la procedura per configurare la macchina virtuale.
+. Selezionare *Get it now* (Ottieni ora), quindi selezionare *Continue* (continua).
+. Dal portale Azure, selezionare *Create* e seguire la procedura per configurare la macchina virtuale.
 +
 Durante la configurazione della macchina virtuale, tenere presente quanto segue:
 
@@ -130,7 +130,7 @@ Questa impostazione è importante perché un'identità gestita consente alla mac
 
 
 
-. Nella pagina *Review + create*, esaminare le selezioni e fare clic su *Create* per avviare l'implementazione.
+. Nella pagina *Review + create*, esaminare le selezioni e selezionare *Create* per avviare l'implementazione.
 +
 Azure implementa la macchina virtuale con le impostazioni specificate. La macchina virtuale e il software del connettore dovrebbero essere in esecuzione in circa cinque minuti.
 
@@ -146,7 +146,7 @@ https://_ipaddress_[]
 +
 La modalità limitata deve essere disattivata perché questa procedura descrive come utilizzare BlueXP in modalità standard. Attivare la modalità limitata solo se si dispone di un ambiente sicuro e si desidera disconnettere questo account dai servizi di back-end BlueXP. In tal caso, link:task-quick-start-restricted-mode.html["Segui i passaggi per iniziare a utilizzare BlueXP in modalità limitata"].
 
-.. Fare clic su *Let's start*.
+.. Selezionare *Let's start*.
 
 
 
@@ -256,7 +256,7 @@ https://_ipaddress_[]
 +
 La modalità limitata deve essere disattivata perché questa procedura descrive come utilizzare BlueXP in modalità standard. Attivare la modalità limitata solo se si dispone di un ambiente sicuro e si desidera disconnettere questo account dai servizi di back-end BlueXP. In tal caso, link:task-quick-start-restricted-mode.html["Segui i passaggi per iniziare a utilizzare BlueXP in modalità limitata"].
 
-.. Fare clic su *Let's start*.
+.. Selezionare *Let's start*.
 
 
 

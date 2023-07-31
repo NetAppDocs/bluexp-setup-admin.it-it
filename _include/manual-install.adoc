@@ -97,7 +97,7 @@ https://_ipaddress_[]
 +
 La modalità limitata deve essere disattivata perché questa procedura descrive come utilizzare BlueXP in modalità standard. Attivare la modalità limitata solo se si dispone di un ambiente sicuro e si desidera disconnettere questo account dai servizi di back-end BlueXP. In tal caso, link:task-quick-start-restricted-mode.html["Segui i passaggi per iniziare a utilizzare BlueXP in modalità limitata"].
 
-.. Fare clic su *Let's start*.
+.. Selezionare *Let's start*.
 
 
 

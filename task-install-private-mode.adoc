@@ -76,7 +76,7 @@ Viene visualizzata la seguente schermata.
 +
 image:screenshot-onprem-darksite-welcome.png["Una schermata della pagina di benvenuto che viene visualizzata dopo aver inserito l'indirizzo IP del connettore nel browser Web."]
 
-. Fare clic su *Set Up New BlueXP* (Configura nuovo BlueXP*) e seguire le istruzioni per configurare il sistema.
+. Selezionare *Set Up New BlueXP* (Configura nuovo BlueXP*) e seguire le istruzioni per configurare il sistema.
 +
 ** *Dettagli sistema*: Inserire un nome per il connettore e il nome della società.
 +
@@ -86,7 +86,7 @@ image:screenshot-onprem-darksite-details.png["Schermata della pagina System Deta
 +
 Questo account utente viene eseguito localmente sul sistema. Non esiste alcuna connessione al servizio auth0 disponibile tramite BlueXP.
 
-** *Revisione*: Esaminare i dettagli, accettare il contratto di licenza, quindi fare clic su *Configurazione*.
+** *Revisione*: Esaminare i dettagli, accettare il contratto di licenza, quindi selezionare *Configurazione*.
 
 
 . Accedere a BlueXP utilizzando l'utente amministratore appena creato.
@@ -119,7 +119,7 @@ Collegare il ruolo IAM precedentemente creato all'istanza di Connector EC2.
 . Selezionare *istanze*.
 . Selezionare l'istanza del connettore.
 . Selezionare *azioni > sicurezza > Modifica ruolo IAM*.
-. Selezionare il ruolo IAM e fare clic su *Aggiorna ruolo IAM*.
+. Selezionare il ruolo IAM e selezionare *Aggiorna ruolo IAM*.
 
 
 .Risultato
@@ -131,16 +131,16 @@ BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in AWS pe
 Fornire a BlueXP la chiave di accesso AWS per un utente IAM che dispone delle autorizzazioni necessarie.
 
 .Fasi
-. Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
+. Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
 +
 image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
 
-. Fare clic su *Add Credentials* (Aggiungi credenziali) e seguire la procedura guidata.
+. Selezionare *Aggiungi credenziali* e seguire la procedura guidata.
 +
 .. *Credentials Location*: Selezionare *Amazon Web Services > Connector*.
 .. *Definisci credenziali*: Inserire una chiave di accesso AWS e una chiave segreta.
 .. *Marketplace Subscription*: Consente di associare un abbonamento Marketplace a queste credenziali sottoscrivendo ora o selezionando un abbonamento esistente.
-.. *Revisione*: Confermare i dettagli relativi alle nuove credenziali e fare clic su *Aggiungi*.
+.. *Revisione*: Confermare i dettagli relativi alle nuove credenziali e selezionare *Aggiungi*.
 
 
 
@@ -155,8 +155,8 @@ Accedere al portale Azure e assegnare il ruolo personalizzato Azure alla macchin
 
 .Fasi
 . Dal portale Azure, aprire il servizio *Subscriptions* e selezionare l'abbonamento.
-. Fare clic su *Access Control (IAM)* > *Add* > *Add role assignment*.
-. Nella scheda *ruolo*, selezionare il ruolo *operatore BlueXP* e fare clic su *Avanti*.
+. Selezionare *Access Control (IAM)* > *Add* > *Add role assignment*.
+. Nella scheda *ruolo*, selezionare il ruolo *operatore BlueXP* e selezionare *Avanti*.
 +
 
 NOTE: BlueXP Operator è il nome predefinito fornito nel criterio BlueXP. Se si sceglie un nome diverso per il ruolo, selezionare il nome desiderato.
@@ -164,10 +164,10 @@ NOTE: BlueXP Operator è il nome predefinito fornito nel criterio BlueXP. Se si 
 . Nella scheda *membri*, completare la seguente procedura:
 +
 .. Assegnare l'accesso a un'identità * gestita.
-.. Fare clic su *Select members* (Seleziona membri), selezionare l'abbonamento in cui è stata creata la macchina virtuale del connettore, scegliere *Virtual Machine*, quindi selezionare la macchina virtuale del connettore.
-.. Fare clic su *Seleziona*.
-.. Fare clic su *Avanti*.
-.. Fare clic su *Rivedi + assegna*.
+.. Selezionare *Select members*, selezionare l'abbonamento in cui è stata creata la macchina virtuale Connector, scegliere *Virtual Machine*, quindi selezionare la macchina virtuale Connector.
+.. Selezionare *Seleziona*.
+.. Selezionare *Avanti*.
+.. Selezionare *Rivedi + assegna*.
 .. Se si desidera gestire le risorse in abbonamenti Azure aggiuntivi, passare a tale abbonamento e ripetere la procedura.
 
 
@@ -182,11 +182,11 @@ BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in Azure 
 Fornire a BlueXP le credenziali per l'entità del servizio Azure precedentemente configurata.
 
 .Fasi
-. Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
+. Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
 +
 image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
 
-. Fare clic su *Add Credentials* (Aggiungi credenziali) e seguire la procedura guidata.
+. Selezionare *Aggiungi credenziali* e seguire la procedura guidata.
 +
 .. *Credentials Location*: Selezionare *Microsoft Azure > Connector*.
 .. *Definisci credenziali*: Immettere le informazioni relative all'entità del servizio Azure Active Directory che concede le autorizzazioni richieste:
@@ -197,7 +197,7 @@ image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (I
 
 
 .. *Marketplace Subscription*: Consente di associare un abbonamento Marketplace a queste credenziali sottoscrivendo ora o selezionando un abbonamento esistente.
-.. *Revisione*: Confermare i dettagli relativi alle nuove credenziali e fare clic su *Aggiungi*.
+.. *Revisione*: Confermare i dettagli relativi alle nuove credenziali e selezionare *Aggiungi*.
 
 
 

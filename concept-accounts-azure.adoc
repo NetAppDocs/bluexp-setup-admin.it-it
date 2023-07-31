@@ -50,7 +50,7 @@ Allora link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-
 
 Ad esempio, è possibile passare da una credenziale all'altra quando si crea un nuovo ambiente di lavoro Cloud Volumes ONTAP:
 
-image:screenshot_accounts_switch_azure.gif["Una schermata che mostra la selezione tra gli account del provider cloud dopo aver fatto clic su Cambia account nella pagina Dettagli  credenziali."]
+image:screenshot_accounts_switch_azure.gif["Una schermata che mostra la selezione tra gli account del provider cloud dopo aver selezionato Switch account (Cambia account) nella pagina Details  Credentials (Dettagli  credenziali)."]
 
 
 

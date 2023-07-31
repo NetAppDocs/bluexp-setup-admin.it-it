@@ -3,21 +3,21 @@
 
 
 .Fasi
-. Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
-. Fare clic sul menu delle azioni per un set di credenziali, quindi selezionare *Associa abbonamento*.
+. Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
+. Selezionare il menu delle azioni per una serie di credenziali, quindi selezionare *Associa abbonamento*.
 +
 Selezionare le credenziali associate a un connettore. Non puoi associare un abbonamento al marketplace alle credenziali associate a BlueXP.
 
 +
 image:screenshot_azure_add_subscription.png["Schermata del menu delle azioni per un set di credenziali esistenti."]
 
-. Per associare le credenziali a un abbonamento esistente, selezionare l'abbonamento dall'elenco a discesa e fare clic su *Associa*.
-. Per associare le credenziali a un nuovo abbonamento, fare clic su *Aggiungi abbonamento > continua* e seguire la procedura in Azure Marketplace:
+. Per associare le credenziali a un abbonamento esistente, selezionare l'abbonamento dall'elenco a discesa e selezionare *Associa*.
+. Per associare le credenziali a un nuovo abbonamento, selezionare *Aggiungi abbonamento > continua* e seguire la procedura in Azure Marketplace:
 +
 .. Se richiesto, accedere all'account Azure.
-.. Fare clic su *Subscribe* (Iscriviti).
-.. Compila il modulo e fai clic su *Iscriviti*.
-.. Una volta completato il processo di iscrizione, fare clic su *Configura account*.
+.. Selezionare *Iscriviti*.
+.. Compila il modulo e seleziona *Iscriviti*.
+.. Una volta completato il processo di iscrizione, selezionare *Configura account*.
 +
 Verrai reindirizzato al sito Web di BlueXP.
 
@@ -31,7 +31,7 @@ BlueXP sostituisce l'abbonamento esistente per tutte le credenziali dell'account
 +
 Per tutti gli altri account, è necessario associare manualmente l'abbonamento ripetendo questa procedura.
 
-*** Fare clic su *Save* (Salva).
+*** Selezionare *Salva*.
 +
 Il seguente video mostra i passaggi per iscriversi a Azure Marketplace:
 

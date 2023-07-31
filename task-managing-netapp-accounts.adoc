@@ -93,6 +93,9 @@ L'utente non può più accedere alle risorse di questo account BlueXP.
 
 È possibile associare e disassociare gli amministratori Workspace alle aree di lavoro in qualsiasi momento. L'associazione dell'utente consente di creare e visualizzare gli ambienti di lavoro in tale area di lavoro.
 
+
+NOTE: Inoltre, è necessario associare il connettore alle aree di lavoro in modo che gli amministratori dell'area di lavoro possano accedervi da BlueXP. link:task-managing-netapp-accounts.html#manage-a-connectors-workspaces["Scopri come gestire le aree di lavoro di un connettore"].
+
 .Fasi
 . Nella parte superiore di BlueXP, selezionare l'elenco a discesa *account* e selezionare *Gestisci account*.
 +
@@ -217,6 +220,9 @@ Gestisci le tue aree di lavoro creando, rinominando ed eliminando le aree di lav
 ** Selezionare *Rinomina* per rinominare l'area di lavoro.
 ** Selezionare *Delete* (Elimina) per eliminare l'area di lavoro.
 
+
++
+Se è stata creata una nuova area di lavoro, è necessario aggiungere anche il connettore a tale area di lavoro. Se non si aggiunge il connettore, gli amministratori dell'area di lavoro non possono accedere alle risorse presenti nell'area di lavoro. Per ulteriori informazioni, fare riferimento alla sezione seguente.
 
 
 

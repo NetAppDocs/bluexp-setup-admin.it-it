@@ -46,7 +46,7 @@ La seguente tabella fornisce un confronto tra il Centro notifiche e la cronologi
 
 Le notifiche tengono traccia dell'avanzamento delle operazioni avviate in BlueXP per verificare se l'operazione è stata eseguita correttamente. Consentono di visualizzare lo stato di molte azioni BlueXP avviate durante la sessione di accesso corrente. Attualmente non tutti i servizi BlueXP riportano informazioni nel Centro notifiche.
 
-È possibile visualizzare le notifiche facendo clic sul campanello di notifica (image:icon_bell.png["campanello di notifica"]) nella barra dei menu. Il colore della piccola bolla nella campana indica la notifica di livello di severità più elevato attiva. Quindi, se vedi una bolla rossa, significa che c'è un'importante notifica che dovresti guardare.
+È possibile visualizzare le notifiche selezionando il campanello di notifica (image:icon_bell.png["campanello di notifica"]) nella barra dei menu. Il colore della piccola bolla nella campana indica la notifica di livello di severità più elevato attiva. Quindi, se vedi una bolla rossa, significa che c'è un'importante notifica che dovresti guardare.
 
 image:screenshot_notification_full.png["Una schermata che mostra l'elenco delle notifiche correnti nel Centro notifiche."]
 

@@ -35,15 +35,15 @@ link:task-set-up-networking-google.html["Scopri i requisiti di rete"]
 
 
 .Fasi
-. Fare clic sull'elenco a discesa *Connector* (connettore) e selezionare *Add Connector* (Aggiungi connettore).
+. Selezionare l'elenco a discesa *Connector* (connettore) e selezionare *Add Connector* (Aggiungi connettore).
 +
 image:screenshot_connector_add.gif["Una schermata che mostra l'icona del connettore nell'intestazione e l'azione Add Connector."]
 
 . Scegli *Google Cloud Platform* come tuo cloud provider.
 . Nella pagina *Deploying a Connector* (implementazione di un connettore), consultare i dettagli relativi alle esigenze. Sono disponibili due opzioni:
 +
-.. Fare clic su *Continue* (continua) per prepararsi all'implementazione utilizzando la guida all'interno del prodotto. Ogni fase della guida all'interno del prodotto include le informazioni contenute in questa pagina della documentazione.
-.. Fare clic su *Skip to Deployment* (passa alla distribuzione) se si è già pronti seguendo la procedura riportata in questa pagina.
+.. Selezionare *continua* per prepararsi all'implementazione utilizzando la guida all'interno del prodotto. Ogni fase della guida all'interno del prodotto include le informazioni contenute in questa pagina della documentazione.
+.. Selezionare *Skip to Deployment* (passa alla distribuzione) se si è già pronti seguendo la procedura riportata in questa pagina.
 
 
 . Seguire i passaggi della procedura guidata per creare il connettore:
@@ -62,7 +62,7 @@ link:reference-ports-gcp.html["Regole del firewall in Google Cloud"]
 ** *Revisione*: Controllare le selezioni per verificare che la configurazione sia corretta.
 
 
-. Fare clic su *Aggiungi*.
+. Selezionare *Aggiungi*.
 +
 L'istanza dovrebbe essere pronta in circa 7 minuti. Si consiglia di rimanere sulla pagina fino al completamento del processo.
 
@@ -271,7 +271,7 @@ https://_ipaddress_[]
 +
 La modalità limitata deve essere disattivata perché questa procedura descrive come utilizzare BlueXP in modalità standard. Attivare la modalità limitata solo se si dispone di un ambiente sicuro e si desidera disconnettere questo account dai servizi di back-end BlueXP. In tal caso, link:task-quick-start-restricted-mode.html["Segui i passaggi per iniziare a utilizzare BlueXP in modalità limitata"].
 
-.. Fare clic su *Let's start*.
+.. Selezionare *Let's start*.
 
 
 

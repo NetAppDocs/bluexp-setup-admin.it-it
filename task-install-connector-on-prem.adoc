@@ -127,7 +127,7 @@ _Ipaddress_ può essere localhost, un indirizzo IP privato o un indirizzo IP pub
 +
 La modalità limitata deve essere disattivata perché questa procedura descrive come utilizzare BlueXP in modalità standard. Inoltre, la modalità limitata non è supportata quando il connettore viene installato on-premise.
 
-.. Fare clic su *Let's start*.
+.. Selezionare *Let's start*.
 
 
 

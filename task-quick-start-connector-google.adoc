@@ -87,7 +87,7 @@ Per implementare il connettore e Cloud Volumes ONTAP in Google Cloud sono necess
 Creare il connettore utilizzando una delle opzioni di installazione disponibili:
 
 [role="quick-margin-list"]
-* *Da BlueXP*: Fare clic sull'elenco a discesa Connector (connettore), selezionare *Add Connector* (Aggiungi connettore) e seguire le istruzioni.
+* *Da BlueXP*: Selezionare l'elenco a discesa Connector (connettore), selezionare *Add Connector* (Aggiungi connettore) e seguire le istruzioni.
 * *Utilizzando gloud*: Utilizzare `gcloud compute instances create` comando.
 * *Installazione manuale*: Scaricare il software del connettore da https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sito di supporto NetApp"] ed eseguire lo script di installazione.
 

@@ -72,7 +72,7 @@ link:task-set-up-permissions-aws.html["Seguire le istruzioni dettagliate"].
 Creare il connettore utilizzando una delle opzioni di installazione disponibili:
 
 [role="quick-margin-list"]
-* *Da BlueXP*: Fare clic sull'elenco a discesa Connector (connettore), selezionare *Add Connector* (Aggiungi connettore) e seguire le istruzioni.
+* *Da BlueXP*: Selezionare l'elenco a discesa Connector (connettore), selezionare *Add Connector* (Aggiungi connettore) e seguire le istruzioni.
 * *Da AWS Marketplace*: Andare alla https://aws.amazon.com/marketplace/pp/B018REK8QG["Pagina BlueXP su AWS Marketplace"^] E seguire le istruzioni per l'avvio tramite EC2 in modo da poter aggiungere un ruolo IAM.
 * *Installazione manuale*: Scaricare il software del connettore da https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sito di supporto NetApp"] ed eseguire lo script di installazione.
 

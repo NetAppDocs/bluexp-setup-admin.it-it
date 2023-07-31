@@ -2,11 +2,11 @@
 :allow-uri-read: 
 
 
-. Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
+. Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
 +
 image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
 
-. Fare clic su *Add Credentials* (Aggiungi credenziali) e seguire la procedura guidata.
+. Selezionare *Aggiungi credenziali* e seguire la procedura guidata.
 +
 .. *Credentials Location*: Selezionare *Microsoft Azure > Connector*.
 .. *Definisci credenziali*: Immettere le informazioni relative all'entità del servizio Azure Active Directory che concede le autorizzazioni richieste:
@@ -17,7 +17,7 @@ image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (I
 
 
 .. *Marketplace Subscription*: Consente di associare un abbonamento Marketplace a queste credenziali sottoscrivendo ora o selezionando un abbonamento esistente.
-.. *Revisione*: Confermare i dettagli relativi alle nuove credenziali e fare clic su *Aggiungi*.
+.. *Revisione*: Confermare i dettagli relativi alle nuove credenziali e selezionare *Aggiungi*.
 
 
 

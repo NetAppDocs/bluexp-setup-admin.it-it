@@ -47,12 +47,12 @@ link:task-prepare-restricted-mode.html#review-host-requirements["Esaminare i req
 
 .Fasi
 . Accedere alla https://aws.amazon.com/marketplace/pp/B018REK8QG["Pagina BlueXP su AWS Marketplace"^]
-. Nella pagina Marketplace, fare clic su *Continue to Subscribe*, quindi fare clic su *Continue to Configuration*.
+. Nella pagina Marketplace, selezionare *Continue to Subscribe*, quindi selezionare *Continue to Configuration*.
 +
 image:screenshot-subscribe-aws.png["Una schermata che mostra i pulsanti continua a iscriversi e continua a configurazione su AWS Marketplace."]
 
-. Modificare una delle opzioni predefinite e fare clic su *Continue to Launch* (continua fino all'avvio).
-. In *Choose Action* (Scegli azione), selezionare *Launch through EC2* (Avvia tramite EC2*), quindi fare clic su *Launch* (Avvia).
+. Modificare una delle opzioni predefinite e selezionare *Continue to Launch* (continua fino all'avvio).
+. In *Choose Action* (Scegli azione), selezionare *Launch through EC2* (Avvia tramite EC2*), quindi selezionare *Launch* (Avvia).
 +
 Questi passaggi descrivono come avviare l'istanza dalla console EC2 perché la console consente di associare un ruolo IAM all'istanza del connettore. Ciò non è possibile utilizzando l'azione *Launch from Website* (Avvia dal sito Web).
 
@@ -77,7 +77,7 @@ link:reference-ports-aws.html["Visualizzare le regole del gruppo di sicurezza pe
 
 ** *Configure storage* (Configura storage): Mantenere le opzioni di storage predefinite.
 ** *Dettagli avanzati*: In *Profilo istanza IAM*, scegliere il ruolo IAM che include le autorizzazioni richieste per il connettore.
-** *Riepilogo*: Esaminare il riepilogo e fare clic su *Avvia istanza*.
+** *Riepilogo*: Esaminare il riepilogo e selezionare *Avvia istanza*.
 
 
 
@@ -115,7 +115,7 @@ link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Scopri come im
 +
 image:screenshot-gov-cloud-mktp.png["Una schermata che mostra l'offerta BlueXP dopo averla cercata in AWS Marketplace"]
 
-.. Fare clic su *continua*.
+.. Selezionare *continua*.
 
 
 . Seguire le istruzioni per configurare e implementare l'istanza:
@@ -131,7 +131,7 @@ image:screenshot_aws_iam_role.gif["Una schermata che mostra i campi nella pagina
 ** *Add Storage* (Aggiungi storage): Mantenere le opzioni di storage predefinite.
 ** *Add Tags* (Aggiungi tag): Se si desidera, inserire i tag per l'istanza.
 ** *Configure Security Group* (Configura gruppo di protezione): Specificare i metodi di connessione richiesti per l'istanza del connettore: SSH, HTTP e HTTPS.
-** *Revisione*: Rivedere le selezioni e fare clic su *Avvia*.
+** *Revisione*: Rivedere le selezioni e selezionare *Avvio*.
 
 
 
@@ -165,8 +165,8 @@ link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Scopri come im
 ** https://portal.azure.us/#create/netapp.netapp-oncommand-cloud-manageroccm-byol["Pagina di Azure Marketplace per le regioni governative di Azure"^]
 
 
-. Fare clic su *Get it now* (scarica ora), quindi su *Continue* (continua).
-. Dal portale Azure, fare clic su *Create* (Crea) e seguire la procedura per configurare la macchina virtuale.
+. Selezionare *Get it now* (Ottieni ora), quindi selezionare *Continue* (continua).
+. Dal portale Azure, selezionare *Create* e seguire la procedura per configurare la macchina virtuale.
 +
 Durante la configurazione della macchina virtuale, tenere presente quanto segue:
 
@@ -193,7 +193,7 @@ Questa impostazione è importante perché un'identità gestita consente alla mac
 
 
 
-. Nella pagina *Review + create*, esaminare le selezioni e fare clic su *Create* per avviare l'implementazione.
+. Nella pagina *Review + create*, esaminare le selezioni e selezionare *Create* per avviare l'implementazione.
 
 
 .Risultato
@@ -325,7 +325,7 @@ Se il connettore è stato implementato in un'area governativa, la casella di con
 +
 image:screenshot-restricted-mode.png["Una schermata che mostra la pagina di benvenuto in cui è necessario inserire un nome di connettore, un nome account e attivare la modalità limitata per questo account."]
 
-.. Fare clic su *Let's start*.
+.. Selezionare *Let's start*.
 
 
 
@@ -359,7 +359,7 @@ Questa procedura si applica solo se il connettore è stato installato manualment
 . Selezionare *istanze*.
 . Selezionare l'istanza del connettore.
 . Selezionare *azioni > sicurezza > Modifica ruolo IAM*.
-. Selezionare il ruolo IAM e fare clic su *Aggiorna ruolo IAM*.
+. Selezionare il ruolo IAM e selezionare *Aggiorna ruolo IAM*.
 
 
 .Risultato
@@ -371,16 +371,16 @@ BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in AWS pe
 Fornire a BlueXP la chiave di accesso AWS per un utente IAM che dispone delle autorizzazioni necessarie.
 
 .Fasi
-. Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
+. Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
 +
 image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
 
-. Fare clic su *Add Credentials* (Aggiungi credenziali) e seguire la procedura guidata.
+. Selezionare *Aggiungi credenziali* e seguire la procedura guidata.
 +
 .. *Credentials Location*: Selezionare *Amazon Web Services > Connector*.
 .. *Definisci credenziali*: Inserire una chiave di accesso AWS e una chiave segreta.
 .. *Marketplace Subscription*: Consente di associare un abbonamento Marketplace a queste credenziali sottoscrivendo ora o selezionando un abbonamento esistente.
-.. *Revisione*: Confermare i dettagli relativi alle nuove credenziali e fare clic su *Aggiungi*.
+.. *Revisione*: Confermare i dettagli relativi alle nuove credenziali e selezionare *Aggiungi*.
 
 
 
@@ -395,8 +395,8 @@ Accedere al portale Azure e assegnare il ruolo personalizzato Azure alla macchin
 
 .Fasi
 . Dal portale Azure, aprire il servizio *Subscriptions* e selezionare l'abbonamento.
-. Fare clic su *Access Control (IAM)* > *Add* > *Add role assignment*.
-. Nella scheda *ruolo*, selezionare il ruolo *operatore BlueXP* e fare clic su *Avanti*.
+. Selezionare *Access Control (IAM)* > *Add* > *Add role assignment*.
+. Nella scheda *ruolo*, selezionare il ruolo *operatore BlueXP* e selezionare *Avanti*.
 +
 
 NOTE: BlueXP Operator è il nome predefinito fornito nel criterio BlueXP. Se si sceglie un nome diverso per il ruolo, selezionare il nome desiderato.
@@ -404,10 +404,10 @@ NOTE: BlueXP Operator è il nome predefinito fornito nel criterio BlueXP. Se si 
 . Nella scheda *membri*, completare la seguente procedura:
 +
 .. Assegnare l'accesso a un'identità * gestita.
-.. Fare clic su *Select members* (Seleziona membri), selezionare l'abbonamento in cui è stata creata la macchina virtuale del connettore, scegliere *Virtual Machine*, quindi selezionare la macchina virtuale del connettore.
-.. Fare clic su *Seleziona*.
-.. Fare clic su *Avanti*.
-.. Fare clic su *Rivedi + assegna*.
+.. Selezionare *Select members*, selezionare l'abbonamento in cui è stata creata la macchina virtuale Connector, scegliere *Virtual Machine*, quindi selezionare la macchina virtuale Connector.
+.. Selezionare *Seleziona*.
+.. Selezionare *Avanti*.
+.. Selezionare *Rivedi + assegna*.
 .. Se si desidera gestire le risorse in abbonamenti Azure aggiuntivi, passare a tale abbonamento e ripetere la procedura.
 
 
@@ -422,11 +422,11 @@ BlueXP dispone ora delle autorizzazioni necessarie per eseguire azioni in Azure 
 Fornire a BlueXP le credenziali per l'entità del servizio Azure precedentemente configurata.
 
 .Fasi
-. Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
+. Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
 +
 image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
 
-. Fare clic su *Add Credentials* (Aggiungi credenziali) e seguire la procedura guidata.
+. Selezionare *Aggiungi credenziali* e seguire la procedura guidata.
 +
 .. *Credentials Location*: Selezionare *Microsoft Azure > Connector*.
 .. *Definisci credenziali*: Immettere le informazioni relative all'entità del servizio Azure Active Directory che concede le autorizzazioni richieste:
@@ -437,7 +437,7 @@ image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (I
 
 
 .. *Marketplace Subscription*: Consente di associare un abbonamento Marketplace a queste credenziali sottoscrivendo ora o selezionando un abbonamento esistente.
-.. *Revisione*: Confermare i dettagli relativi alle nuove credenziali e fare clic su *Aggiungi*.
+.. *Revisione*: Confermare i dettagli relativi alle nuove credenziali e selezionare *Aggiungi*.
 
 
 

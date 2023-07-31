@@ -23,16 +23,16 @@ summary: 'È possibile gestire le credenziali Google Cloud associate all"istanza
 Quando si implementa un connettore in Google Cloud, BlueXP crea un set predefinito di credenziali associate all'istanza della macchina virtuale del connettore. In qualsiasi momento, è possibile modificare l'abbonamento Marketplace associato a queste credenziali. L'abbonamento consente di creare un sistema Cloud Volumes ONTAP pay-as-you-go e di utilizzare altri servizi BlueXP.
 
 .Fasi
-. Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.
-. Fare clic sul menu delle azioni per un set di credenziali, quindi selezionare *Associa abbonamento*.
+. Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
+. Selezionare il menu delle azioni per una serie di credenziali, quindi selezionare *Associa abbonamento*.
 +
 image:screenshot_gcp_add_subscription.png["Schermata del menu delle azioni per un set di credenziali esistenti."]
 
-. Per associare le credenziali a un abbonamento esistente, selezionare un progetto e un abbonamento Google Cloud dall'elenco a discesa, quindi fare clic su *Associa*.
+. Per associare le credenziali a un abbonamento esistente, selezionare un progetto e un abbonamento Google Cloud dall'elenco a discesa, quindi selezionare *Associa*.
 +
 image:screenshot_gcp_associate.gif["Una schermata di un progetto Google Cloud e di un abbonamento selezionati per le credenziali Google Cloud."]
 
-. Se non disponi già di un abbonamento, fai clic su *Aggiungi abbonamento > continua* e segui la procedura in Google Cloud Marketplace.
+. Se non disponi già di un abbonamento, seleziona *Aggiungi abbonamento > continua* e segui la procedura in Google Cloud Marketplace.
 +
 
 NOTE: Prima di completare i seguenti passaggi, assicurarsi di disporre dei privilegi di Billing Admin nell'account Google Cloud e di un account di accesso BlueXP.
@@ -42,13 +42,13 @@ NOTE: Prima di completare i seguenti passaggi, assicurarsi di disporre dei privi
 +
 image:screenshot_gcp_cvo_marketplace.png["Una schermata della pagina del marketplace Cloud Volumes ONTAP in Google Cloud."]
 
-.. Fare clic su *Subscribe* (Iscriviti).
+.. Selezionare *Iscriviti*.
 .. Selezionare l'account di fatturazione appropriato e accettare i termini e le condizioni.
-.. Fare clic su *Subscribe* (Iscriviti).
+.. Selezionare *Iscriviti*.
 +
 Questa fase invia la richiesta di trasferimento a NetApp.
 
-.. Nella finestra di dialogo a comparsa, fare clic su *Registra con NetApp, Inc.*
+.. Nella finestra di dialogo a comparsa, selezionare *Registra con NetApp, Inc.*
 +
 Questa fase deve essere completata per collegare l'abbonamento a Google Cloud al tuo account BlueXP. Il processo di collegamento di un abbonamento non viene completato fino a quando non si viene reindirizzati da questa pagina e si accede a BlueXP.
 
@@ -69,7 +69,7 @@ BlueXP sostituisce l'abbonamento esistente per tutte le credenziali dell'account
 +
 Per tutti gli altri account, è necessario associare manualmente l'abbonamento ripetendo questa procedura.
 
-*** Fare clic su *Save* (Salva).
+*** Selezionare *Salva*.
 +
 Il seguente video mostra i passaggi per iscriversi a Google Cloud Marketplace:
 

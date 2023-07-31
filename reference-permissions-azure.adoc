@@ -181,7 +181,7 @@ Le sezioni seguenti descrivono come utilizzare le autorizzazioni per ciascun ser
 
 === Azure NetApp Files
 
-Il connettore effettua le seguenti richieste API per gestire gli ambienti di lavoro Azure NetApp Files:
+Il connettore esegue le seguenti richieste API quando si utilizza la classificazione BlueXP per eseguire la scansione dei dati Azure NetApp Files:
 
 * Microsoft.NetApp/netAppAccounts/read
 * Microsoft.NetApp/netAppAccounts/capacityPools/read

@@ -4,12 +4,12 @@
 
 .Fasi
 . Accedere alla https://aws.amazon.com/marketplace/pp/B018REK8QG["Pagina BlueXP su AWS Marketplace"^]
-. Nella pagina Marketplace, fare clic su *Continue to Subscribe*, quindi fare clic su *Continue to Configuration*.
+. Nella pagina Marketplace, selezionare *Continue to Subscribe*, quindi selezionare *Continue to Configuration*.
 +
 image:screenshot-subscribe-aws.png["Una schermata che mostra i pulsanti continua a iscriversi e continua a configurazione su AWS Marketplace."]
 
-. Modificare una delle opzioni predefinite e fare clic su *Continue to Launch* (continua fino all'avvio).
-. In *Choose Action* (Scegli azione), selezionare *Launch through EC2* (Avvia tramite EC2*), quindi fare clic su *Launch* (Avvia).
+. Modificare una delle opzioni predefinite e selezionare *Continue to Launch* (continua fino all'avvio).
+. In *Choose Action* (Scegli azione), selezionare *Launch through EC2* (Avvia tramite EC2*), quindi selezionare *Launch* (Avvia).
 +
 Questi passaggi descrivono come avviare l'istanza dalla console EC2 perché la console consente di associare un ruolo IAM all'istanza del connettore. Ciò non è possibile utilizzando l'azione *Launch from Website* (Avvia dal sito Web).
 
@@ -34,7 +34,7 @@ link:reference-ports-aws.html["Visualizzare le regole del gruppo di sicurezza pe
 
 ** *Configure storage* (Configura storage): Mantenere le opzioni di storage predefinite.
 ** *Dettagli avanzati*: In *Profilo istanza IAM*, scegliere il ruolo IAM che include le autorizzazioni richieste per il connettore.
-** *Riepilogo*: Esaminare il riepilogo e fare clic su *Avvia istanza*.
+** *Riepilogo*: Esaminare il riepilogo e selezionare *Avvia istanza*.
 
 
 
