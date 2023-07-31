@@ -103,8 +103,7 @@ Per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al suppor
  a| 
 Fornire funzionalità e servizi SaaS all'interno di BlueXP.
 
-
-NOTE: Il connettore sta attualmente contattando "cloudmanager.cloud.netapp.com", ma inizierà a contattare "api.bluexp.netapp.com" in una versione successiva.
+Tenere presente che il connettore sta contattando "cloudmanager.cloud.netapp.com", ma inizierà a contattare "api.bluexp.netapp.com" in una versione successiva.
 
 
 
@@ -120,14 +119,12 @@ Per aggiornare il connettore e i relativi componenti Docker.
 
 == Server proxy
 
-Se l'organizzazione richiede la distribuzione di un server proxy per tutto il traffico Internet in uscita, ottenere le seguenti informazioni sul proxy HTTP o HTTPS:
+Se l'organizzazione richiede la distribuzione di un server proxy per tutto il traffico Internet in uscita, ottenere le seguenti informazioni sul proxy HTTP o HTTPS. Queste informazioni devono essere fornite durante l'installazione.
 
 * Indirizzo IP
 * Credenziali
 * Certificato HTTPS
 
-
-Queste informazioni devono essere fornite durante l'installazione.
 
 
 
@@ -139,7 +136,7 @@ Non c'è traffico in entrata verso il connettore, a meno che non venga avviato o
 * SSH (22) è necessario solo se è necessario connettersi all'host per la risoluzione dei problemi.
 * Le connessioni in entrata sulla porta 3128 sono necessarie se si implementano sistemi Cloud Volumes ONTAP in una subnet in cui non è disponibile una connessione Internet in uscita.
 +
-Se i sistemi Cloud Volumes ONTAP non dispongono di una connessione Internet in uscita per inviare messaggi AutoSupport, BlueXP configura automaticamente i sistemi Cloud Volumes ONTAP in modo che utilizzino un server proxy incluso nel connettore. L'unico requisito è garantire che il gruppo di sicurezza del connettore consenta le connessioni in entrata sulla porta 3128. Dopo aver implementato il connettore, aprire questa porta.
+Se i sistemi Cloud Volumes ONTAP non dispongono di una connessione a Internet in uscita per inviare messaggi AutoSupport, BlueXP configura automaticamente tali sistemi in modo che utilizzino un server proxy incluso nel connettore. L'unico requisito è garantire che il gruppo di sicurezza del connettore consenta le connessioni in entrata sulla porta 3128. Dopo aver implementato il connettore, aprire questa porta.
 
 
 

@@ -168,14 +168,12 @@ Per gestire le risorse in Google Cloud.
 
 === Server proxy
 
-Se l'organizzazione richiede la distribuzione di un server proxy per tutto il traffico Internet in uscita, ottenere le seguenti informazioni sul proxy HTTP o HTTPS:
+Se l'organizzazione richiede la distribuzione di un server proxy per tutto il traffico Internet in uscita, ottenere le seguenti informazioni sul proxy HTTP o HTTPS. Queste informazioni devono essere fornite durante l'installazione.
 
 * Indirizzo IP
 * Credenziali
 * Certificato HTTPS
 
-
-Queste informazioni devono essere fornite durante l'installazione.
 
 Con la modalità privata, l'unica volta in cui BlueXP invia il traffico in uscita è al provider cloud per creare un sistema Cloud Volumes ONTAP.
 
