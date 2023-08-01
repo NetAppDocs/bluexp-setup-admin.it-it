@@ -276,6 +276,80 @@ video::video_subscribing_aws.mp4[width=848,height=480]
 
 
 
+== Associa un abbonamento esistente al tuo account
+
+Quando effettui l'iscrizione a BlueXP dal marketplace AWS, l'ultimo passaggio del processo consiste nell'associare l'iscrizione agli account BlueXP dal sito web BlueXP. Se non hai completato questo passaggio, non puoi utilizzare l'abbonamento con il tuo account BlueXP.
+
+Segui i passaggi riportati di seguito se ti sei abbonato a BlueXP da AWS Marketplace, ma non hai fatto la procedura per associare l'abbonamento all'account.
+
+.Fasi
+. Accedi al Digital Wallet di BlueXP per confermare che non hai associato il tuo abbonamento all'account BlueXP.
++
+.. Dal menu di navigazione di BlueXP, selezionare *Governance > Digital wallet*.
+.. Selezionare *Abbonamenti*.
+.. Verifica che il tuo abbonamento BlueXP non venga visualizzato.
++
+Verranno visualizzati solo gli abbonamenti associati all'account attualmente visualizzato. Se non vedi il tuo abbonamento, procedi con i passaggi seguenti.
+
+
+
+. Accedi alla console AWS e accedi a *sottoscrizioni al marketplace AWS*.
+. Trova l'iscrizione a NetApp BlueXP.
++
+image:screenshot-aws-marketplace-bluexp-subscription.png["Uno screenshot del marketplace AWS che mostra un'iscrizione a NetApp BlueXP."]
+
+. Selezionare *configura prodotto*.
++
+La pagina dell'offerta di sottoscrizione dovrebbe essere caricata in una nuova scheda o finestra del browser.
+
+. Selezionare *Configura account*.
++
+image:screenshot-aws-marketplace-set-up-account.png["Uno screenshot del marketplace AWS che mostra un'iscrizione a NetApp BlueXP e l'opzione per la configurazione del tuo account che compare in alto a destra della pagina."]
+
++
+La pagina *assegnazione abbonamento* su netapp.com dovrebbe essere caricata in una nuova scheda o finestra del browser.
+
++
+Nota: Potrebbe essere richiesto di accedere prima a BlueXP.
+
+. Dalla pagina *Subscription Assignment*:
++
+** Seleziona gli account BlueXP a cui desideri associare questo abbonamento.
+** Nel campo *Sostituisci abbonamento esistente*, scegli se desideri sostituire automaticamente l'abbonamento esistente per un account con questo nuovo abbonamento.
++
+BlueXP sostituisce l'abbonamento esistente per tutte le credenziali dell'account con questo nuovo abbonamento. Se un insieme di credenziali non è mai stato associato a un abbonamento, questo nuovo abbonamento non sarà associato a tali credenziali.
+
++
+Per tutti gli altri account, è necessario associare manualmente l'abbonamento ripetendo questa procedura.
+
++
+image:screenshot-subscription-assignment.png["Uno screenshot della pagina Subscription Assignment che ti permette di scegliere gli account BlueXP corretti da associare a questo abbonamento."]
+
+
+
+. Accedi al Digital Wallet di BlueXP per verificare che l'iscrizione sia associata al tuo account BlueXP.
++
+.. Dal menu di navigazione di BlueXP, selezionare *Governance > Digital wallet*.
+.. Selezionare *Abbonamenti*.
+.. Verifica che venga visualizzato il tuo abbonamento BlueXP.
+
+
+. Verifica che l'iscrizione sia associata alle tue credenziali AWS.
++
+.. Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
+.. Nella pagina *credenziali dell'account*, verifica che l'abbonamento sia associato alle tue credenziali AWS.
++
+Ecco un esempio.
+
++
+image:screenshot-credentials-with-subscription.png["Uno screenshot della pagina delle credenziali dell'account BlueXP che mostra le credenziali AWS che include un campo di iscrizione che identifica il nome dell'iscrizione associata alle credenziali."]
+
+
+
+
+
+
+
 == Modificare le credenziali
 
 Modificare le credenziali AWS in BlueXP modificando il tipo di account (chiavi AWS o assumere il ruolo), modificando il nome o aggiornando le credenziali (le chiavi o il ruolo ARN).

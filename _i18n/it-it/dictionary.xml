@@ -3852,4 +3852,31 @@ Questo endpoint è richiesto solo nelle regioni governative di Azure.</block>
   <block id="d2b74161d054c69894469355bb22cb63" category="list-text">Se si sta creando il primo ambiente di lavoro, fare clic su *Aggiungi ambiente di lavoro* e seguire le istruzioni. In caso contrario, fare clic sull'elenco a discesa *Connector* e selezionare *Add Connector* (Aggiungi connettore).</block>
   <block id="7dafa3d9179efddb7b70ff753d853a0e" category="paragraph"><block ref="29949bbccf251af183678449a2465f09" category="inline-xref-macro-rx"></block>.</block>
   <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">Fare clic su *Aggiungi*.</block>
+  <block id="6f634a99f964ad704af4d4f3aaf6d261" category="section-title">Associa un abbonamento esistente al tuo account</block>
+  <block id="18fdf9616b567e691b5890f032e3bba7" category="paragraph">Quando effettui l'iscrizione a BlueXP dal marketplace AWS, l'ultimo passaggio del processo consiste nell'associare l'iscrizione agli account BlueXP dal sito web BlueXP. Se non hai completato questo passaggio, non puoi utilizzare l'abbonamento con il tuo account BlueXP.</block>
+  <block id="6fb458ce426e7a3b13d1d111785c2d01" category="paragraph">Segui i passaggi riportati di seguito se ti sei abbonato a BlueXP da AWS Marketplace, ma non hai fatto la procedura per associare l'abbonamento all'account.</block>
+  <block id="bb2c89244641e4e9b00203476e12f0fa" category="list-text">Accedi al Digital Wallet di BlueXP per confermare che non hai associato il tuo abbonamento all'account BlueXP.</block>
+  <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">Dal menu di navigazione di BlueXP, selezionare *Governance &gt; Digital wallet*.</block>
+  <block id="8c3682e85d7f4dbe8a46485082335dec" category="list-text">Selezionare *Abbonamenti*.</block>
+  <block id="ed6b397e0118acc4ce6973d71f8bf52b" category="list-text">Verifica che il tuo abbonamento BlueXP non venga visualizzato.</block>
+  <block id="0b63efe724268bea77154f68b732287f" category="paragraph">Verranno visualizzati solo gli abbonamenti associati all'account attualmente visualizzato. Se non vedi il tuo abbonamento, procedi con i passaggi seguenti.</block>
+  <block id="f059d36774fc7cb0f68cf549634c6649" category="list-text">Accedi alla console AWS e accedi a *sottoscrizioni al marketplace AWS*.</block>
+  <block id="f8c6f0be8abb9f25513e90fc59a8022a" category="list-text">Trova l'iscrizione a NetApp BlueXP.</block>
+  <block id="a33c6ab064752da11797cc3fcb72c16c" category="inline-image-macro">Uno screenshot del marketplace AWS che mostra un'iscrizione a NetApp BlueXP.</block>
+  <block id="cd0345f5cc6a1039b0fb0404342bcf95" category="paragraph"><block ref="cd0345f5cc6a1039b0fb0404342bcf95" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5df82b79e0671efbca7c878a5dc6ff0c" category="list-text">Selezionare *configura prodotto*.</block>
+  <block id="d322d34d737802e42885dcb924b50296" category="paragraph">La pagina dell'offerta di sottoscrizione dovrebbe essere caricata in una nuova scheda o finestra del browser.</block>
+  <block id="49ff8f7962f9a965de7b3ac21b54fa0c" category="inline-image-macro">Uno screenshot del marketplace AWS che mostra un'iscrizione a NetApp BlueXP e l'opzione per la configurazione del tuo account che compare in alto a destra della pagina.</block>
+  <block id="ed95a7891978e2cf8bdd5f3a968fadf8" category="paragraph"><block ref="ed95a7891978e2cf8bdd5f3a968fadf8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3973d17448cb9fb34230d9497124e62e" category="paragraph">La pagina *assegnazione abbonamento* su netapp.com dovrebbe essere caricata in una nuova scheda o finestra del browser.</block>
+  <block id="2bd91e2097a924ebf8ed96f27e0e014b" category="paragraph">Nota: Potrebbe essere richiesto di accedere prima a BlueXP.</block>
+  <block id="ad06dac7d3f75caabc6bbf1ee222b5b1" category="inline-image-macro">Uno screenshot della pagina Subscription Assignment che ti permette di scegliere gli account BlueXP corretti da associare a questo abbonamento.</block>
+  <block id="f08dbbf2dcc1aaacd389964d9e1720e9" category="paragraph"><block ref="f08dbbf2dcc1aaacd389964d9e1720e9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ab7f683bf33e15557d8b8c755ab6925d" category="list-text">Accedi al Digital Wallet di BlueXP per verificare che l'iscrizione sia associata al tuo account BlueXP.</block>
+  <block id="3d202823d7d9b23ecb538a9e600a47f9" category="list-text">Verifica che venga visualizzato il tuo abbonamento BlueXP.</block>
+  <block id="b37f51b57881b03b6c52e06acb6edd87" category="list-text">Verifica che l'iscrizione sia associata alle tue credenziali AWS.</block>
+  <block id="be7152363bc92639c82fcab79b823266" category="list-text">Nella pagina *credenziali dell'account*, verifica che l'abbonamento sia associato alle tue credenziali AWS.</block>
+  <block id="ff61d6606967c3f8b0dfa41b1fd7bfa0" category="paragraph">Ecco un esempio.</block>
+  <block id="91bff69789722fff2c4a5649d3493da5" category="inline-image-macro">Uno screenshot della pagina delle credenziali dell'account BlueXP che mostra le credenziali AWS che include un campo di iscrizione che identifica il nome dell'iscrizione associata alle credenziali.</block>
+  <block id="57ed1d98795cc2b599a80064fd2b2bbf" category="paragraph"><block ref="57ed1d98795cc2b599a80064fd2b2bbf" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
