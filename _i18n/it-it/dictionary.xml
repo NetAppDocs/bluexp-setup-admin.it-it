@@ -3876,8 +3876,7 @@ Questo endpoint è richiesto solo nelle regioni governative di Azure.</block>
   <block id="ff61d6606967c3f8b0dfa41b1fd7bfa0" category="paragraph">Ecco un esempio.</block>
   <block id="91bff69789722fff2c4a5649d3493da5" category="inline-image-macro">Uno screenshot della pagina delle credenziali dell'account BlueXP che mostra le credenziali AWS che include un campo di iscrizione che identifica il nome dell'iscrizione associata alle credenziali.</block>
   <block id="57ed1d98795cc2b599a80064fd2b2bbf" category="paragraph"><block ref="57ed1d98795cc2b599a80064fd2b2bbf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a19fbbab905f444316acc463c35da764" category="paragraph">Il video seguente mostra come associare le credenziali a un nuovo abbonamento.</block>
-  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">Iscriviti a BlueXP da Azure Marketplace</block>
-  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Iscriviti a BlueXP da Google Cloud Marketplace</block>
-  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">Iscriviti a BlueXP dal marketplace AWS</block>
+  <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">Il seguente video mostra i passaggi per iscriversi a Azure Marketplace:</block>
+  <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">Il seguente video mostra i passaggi per iscriversi a Google Cloud Marketplace:</block>
+  <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">Il seguente video mostra i passaggi per iscriversi a AWS Marketplace:</block>
 </blocks>
