@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: subscription-videos.html 
+keywords: install connector aws, aws install connector, connector aws, aws connector, installation options, aws marketplace, manual install 
+summary: Questi video mostrano come iscriversi ad BlueXP dal marketplace del tuo cloud provider. 
+---
+= Opzioni di installazione del connettore in AWS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Questi video mostrano come iscriversi ad BlueXP dal marketplace del tuo cloud provider.
+
+
+
+== AWS
+
+.Iscriviti a BlueXP dal marketplace AWS
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
+
+
+== Azure
+
+.Iscriviti a BlueXP da Azure Marketplace
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
+
+
+== Google Cloud
+
+.Iscriviti a BlueXP da Google Cloud Marketplace
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
+
+
+== Cartella personale
+
+.Iscriviti a BlueXP da Google Cloud Marketplace
+video::8d5e054b-f40b-451f-a0e7-870454f1376e[panopto]
