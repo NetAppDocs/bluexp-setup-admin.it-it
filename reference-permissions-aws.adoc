@@ -162,10 +162,6 @@ Il secondo criterio fornisce le autorizzazioni per i seguenti servizi:
                 "kms:ReEncrypt*",
                 "kms:Describe*",
                 "kms:CreateGrant",
-                "ce:GetReservationUtilization",
-                "ce:GetDimensionValues",
-                "ce:GetCostAndUsage",
-                "ce:GetTags",
                 "fsx:Describe*",
                 "fsx:List*",
                 "kms:GenerateDataKeyWithoutPlaintext"
@@ -493,10 +489,6 @@ Il secondo criterio fornisce le autorizzazioni per i seguenti servizi:
                 "ec2:DescribeIamInstanceProfileAssociations",
                 "ec2:DisassociateIamInstanceProfile",
                 "ec2:DescribeInstanceAttribute",
-                "ce:GetReservationUtilization",
-                "ce:GetDimensionValues",
-                "ce:GetCostAndUsage",
-                "ce:GetTags",
                 "ec2:CreatePlacementGroup",
                 "ec2:DeletePlacementGroup"
             ],
@@ -1126,18 +1118,6 @@ Il connettore effettua le seguenti richieste API per implementare e gestire Clou
 
 
 | Kms:GenerateDataKeyWithoutPlaintext | Sì | Sì | No 
-
-
-.4+| Ottenere i dati sui costi AWS per Cloud Volumes ONTAP | ce: GetReservationUtilization | No | Sì | No 
-
-
-| ce:GetDimensionValues | No | Sì | No 
-
-
-| ce:GetCostAndUsage | No | Sì | No 
-
-
-| ce:GetTags | No | Sì | No 
 
 
 .2+| Creare e gestire un gruppo di posizionamento AWS Spread per due nodi ha e il mediatore in una singola AWS Availability zone | ec2:CreatePlacementGroup | Sì | No | No 
