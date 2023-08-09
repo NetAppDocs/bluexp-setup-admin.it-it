@@ -826,7 +826,6 @@
   <block id="b0844d01c75bb6b60219ee536f20aa15" category="list-text">Quando richiesto, leggere il Contratto di licenza con l'utente finale e accettare i termini.</block>
   <block id="a2d1bd30e95a89c4ecb9d6a39da84e3a" category="list-text">Nella pagina *Benvenuto*, immettere un nome per l'account.</block>
   <block id="efb45899558a953ff7d6578e89aa2c1c" category="inline-link-macro">Scopri come aggiungere membri a un account esistente</block>
-  <block id="816dc8c932a8afbdb9361ede8774b3d0" category="paragraph">Se la tua azienda dispone già di un account e vuoi iscriverti, devi chiudere BlueXP e chiedere al proprietario di associarti all'account. Dopo che il proprietario ti ha aggiunto, puoi accedere e accedere all'account. <block ref="3b04849a18b87204738aa991e5f8575e" category="inline-link-macro-rx"></block>.</block>
   <block id="ecbca8245155432067c380b55b5146bb" category="paragraph">Un account è l'elemento di primo livello della piattaforma per le identità di NetApp. Consente di aggiungere e gestire utenti, ruoli, autorizzazioni e ambienti di lavoro.</block>
   <block id="a860f226d10bcd54ab238e5189d94747" category="inline-image-macro">Una schermata della pagina di benvenuto che viene visualizzata quando accedi con un nuovo account che non appartiene a un account.</block>
   <block id="e079acaa326ddf3b1cb6ee167cce08f4" category="paragraph"><block ref="e079acaa326ddf3b1cb6ee167cce08f4" category="inline-image-macro-rx" type="image"></block></block>
@@ -1662,7 +1661,6 @@
   <block id="d847fd38c43b77f685712342ed5f2a9a" category="list-text">Accedere a BlueXP utilizzando l'utente amministratore appena creato.</block>
   <block id="2fdca5f14e2fdf34df61ef1c2e18eae5" category="paragraph">Il connettore è stato installato e configurato.</block>
   <block id="c4d9d6c8e652595e9d46970f56499783" category="inline-link-macro">Scopri come aggiornare il connettore</block>
-  <block id="ab75cfa6ae53348a737404e49985eb65" category="paragraph">Quando saranno disponibili nuove versioni del software del connettore, verranno pubblicate sul sito di supporto NetApp. <block ref="f17f7484922764d58b748b63a8956073" category="inline-link-macro-rx"></block>.</block>
   <block id="4f63de4c96383f078fb74fced1187f1d" category="section-title">Fornire le autorizzazioni a BlueXP</block>
   <block id="fc0a94ce93071b9e22ad0f0a9d4c266d" category="paragraph">Se si desidera creare ambienti di lavoro Cloud Volumes ONTAP, è necessario fornire a BlueXP le autorizzazioni cloud precedentemente configurate.</block>
   <block id="d8325912caeaba85aaefdb17eacaea8d" category="inline-link-macro">Scopri come preparare le autorizzazioni cloud</block>
@@ -2054,7 +2052,6 @@
   <block id="67b68df6bafe01dd2b7c0f5e85ec62ff" category="section-title">Autenticazione con service principal</block>
   <block id="8c14c862f5a121ac56cd7c2e45b59e09" category="paragraph">Quando si crea un nuovo connettore in Microsoft Azure, è ora possibile autenticarsi con un'entità del servizio Azure, anziché con le credenziali dell'account Azure.</block>
   <block id="2b5f7271b3a292c88ce5b4850153c1f4" category="inline-link-macro">Scopri come eseguire l'autenticazione con un service principal Azure</block>
-  <block id="051567b32d3e33a05e8a851cf866c6ce" category="paragraph"><block ref="8cd32335430c25ac68d0cf69c4942ed3" category="inline-link-macro-rx"></block>.</block>
   <block id="c4f5f37a3eac48a6747104e3821bdfc7" category="section-title">Miglioramento delle credenziali</block>
   <block id="927ebf0b3ebac11b90b010cce510f149" category="paragraph">Abbiamo riprogettato la pagina delle credenziali per una maggiore facilità di utilizzo e per adattarsi all'aspetto attuale dell'interfaccia di Cloud Manager.</block>
   <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2 settembre 2021</block>
@@ -2077,7 +2074,6 @@
   <block id="d818c001b3cfbc2033e278823ec2a52a" category="section-title">Account nella timeline</block>
   <block id="9b67e1ec262493b1df3ec41cc4fbd4a0" category="paragraph">La cronologia di Cloud Manager mostra ora le azioni e gli eventi relativi alla gestione dell'account. Le azioni includono elementi come l'associazione degli utenti, la creazione di aree di lavoro e la creazione di connettori. Controllare la cronologia può essere utile se è necessario identificare chi ha eseguito un'azione specifica o se è necessario identificare lo stato di un'azione.</block>
   <block id="2355c6490a09de53516a5be37a0fe654" category="inline-link-macro">Scopri come filtrare la timeline per il servizio tenancy</block>
-  <block id="42719a12f66c2c272af903550dd96abe" category="paragraph"><block ref="3d5e26c44503b9c3759d0014c33a4b1a" category="inline-link-macro-rx"></block>.</block>
   <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">11 aprile 2021</block>
   <block id="a751a999298090bf2562492d1817e583" category="section-title">API chiama direttamente Cloud Manager</block>
   <block id="c22052aa83aad03ab1340970700a2c27" category="paragraph">Se è stato configurato un server proxy, è ora possibile attivare un'opzione per inviare chiamate API direttamente a Cloud Manager senza utilizzare il proxy. Questa opzione è supportata con i connettori in esecuzione in AWS o in Google Cloud.</block>
@@ -2087,14 +2083,11 @@
   <block id="e6a71362eab01fb017f9ece8e67215b8" category="paragraph">È ora possibile creare un utente dell'account di servizio.</block>
   <block id="83510fd4a5d6f463975ffcf1a28079a3" category="paragraph">Un account di servizio agisce come un "utente" che può effettuare chiamate API autorizzate a Cloud Manager per scopi di automazione. In questo modo è più semplice gestire l'automazione, poiché non è necessario creare script di automazione basati sull'account utente di una persona reale che può lasciare l'azienda in qualsiasi momento. E se utilizzi la federazione, puoi creare un token senza generare un token di refresh dal cloud.</block>
   <block id="f172ba98380ffa94100632430ae9c805" category="inline-link-macro">Scopri di più sull'utilizzo degli account di servizio</block>
-  <block id="49b62302ac4a1f507a909dae3aaa2449" category="paragraph"><block ref="8b912a6501daee7a624ed28b2417cf57" category="inline-link-macro-rx"></block>.</block>
   <block id="a214c30250196bf3a7430f258daa1c0a" category="section-title">Anteprime private</block>
   <block id="18da70587f043904939613fa4c43ba6d" category="paragraph">Ora puoi consentire anteprime private nel tuo account per accedere ai nuovi servizi cloud di NetApp man mano che vengono resi disponibili come anteprima in Cloud Manager.</block>
   <block id="50ea4e8dccd315b387c3720bf218560a" category="inline-link-macro">Scopri di più su questa opzione</block>
-  <block id="66580d43a3e141cd0f7973122dee9318" category="paragraph"><block ref="6051fdb20fc6a92af957c64f87fc9e45" category="inline-link-macro-rx"></block>.</block>
   <block id="e4be032a3be0dcfffde1cc853ce81a9f" category="section-title">Servizi di terze parti</block>
   <block id="4823145b3655f45dcb57edeef856c1a9" category="paragraph">Puoi anche consentire ai servizi di terze parti del tuo account di accedere ai servizi di terze parti disponibili in Cloud Manager.</block>
-  <block id="55e1f633897fc0a0ce5b8e8e0fb09370" category="paragraph"><block ref="9a04b22be906f506f76b327c13da5a90" category="inline-link-macro-rx"></block>.</block>
   <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">9 febbraio 2021</block>
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">Miglioramenti della dashboard di supporto</block>
   <block id="2a42bd1b25c8685af4b1b1d1ca8e4805" category="paragraph">Abbiamo aggiornato il Support Dashboard, consentendoti di aggiungere le tue credenziali NetApp Support Site, che ti registrano per il supporto. Puoi anche avviare un caso di supporto NetApp direttamente dalla dashboard. Fare clic sull'icona Guida e quindi su *supporto*.</block>
@@ -2806,7 +2799,6 @@ Si noti che la pagina viene aggiornata tra il test della connessione e l'abilita
   <block id="e98ed4965158505163fc6b7ffa9ba9b0" category="paragraph">È necessario associare il connettore alle aree di lavoro in modo che gli amministratori dell'area di lavoro possano accedervi da BlueXP.</block>
   <block id="acff4181fbf10d78defb836baab72c8d" category="paragraph">Se si dispone solo di account Admins, non è necessario associare il connettore alle aree di lavoro. Gli amministratori degli account hanno la possibilità di accedere a tutte le aree di lavoro in BlueXP per impostazione predefinita.</block>
   <block id="b7f7a48c60012c23b8adb659da31b71a" category="inline-link-macro">Scopri di più su utenti, aree di lavoro e connettori</block>
-  <block id="7d033896524ebe16495f74d9f7202783" category="paragraph"><block ref="cf2050a2914e59a752ab48465ba00e16" category="inline-link-macro-rx"></block>.</block>
   <block id="e75928b1dc1ca3932b7aca29ff283aa4" category="list-text">Selezionare *Connector*.</block>
   <block id="36a0e8f51d7a9a76f77fc1b370f8c049" category="list-text">Selezionare *Manage Workspaces* (Gestisci aree di lavoro) per il connettore che si desidera associare.</block>
   <block id="13a89cea3d139c1997539c3cc4d05ec3" category="list-text">Selezionare le aree di lavoro da associare al connettore e selezionare *Apply* (Applica).</block>
@@ -2842,7 +2834,6 @@ Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono
   <block id="bd39c8654fa47d44bbd01a5d81c6197e" category="cell">Quando si implementa un connettore da BlueXP, è necessario utilizzare un account Azure o un'entità di servizio che disponga delle autorizzazioni per implementare la macchina virtuale del connettore in Azure.</block>
   <block id="80487192abab0ee504d52b82c771727f" category="paragraph">Quando BlueXP implementa la macchina virtuale del connettore in Azure, crea un ruolo personalizzato che fornisce le autorizzazioni necessarie per gestire le risorse e i processi all'interno dell'abbonamento Azure.</block>
   <block id="652a30691608448a6f2f15a1d2bb02f5" category="inline-link-macro">Aggiungere altre credenziali Azure a un connettore</block>
-  <block id="8ff08eb12a4bed8d94e8682a89020c56" category="paragraph">È necessario impostare il ruolo personalizzato se si avvia un connettore dal marketplace, se si installa manualmente il connettore o se si desidera <block ref="3a714b4b67994f94abb2f77ce85a395b" category="inline-link-macro-rx"></block>.</block>
   <block id="bcfaa2da0752134728f286af2b223842" category="paragraph">Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive.</block>
   <block id="24cce65a483e1205b8ca7bc0bf14c6c9" category="paragraph"><block ref="24cce65a483e1205b8ca7bc0bf14c6c9" category="inline-link-macro-rx"></block></block>
   <block id="d3846482b7a5f3467b05518965422219" category="section-title">Permessi Google Cloud</block>
@@ -2915,7 +2906,6 @@ Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono
   <block id="ba47221b59f846f383b80e1123a79d45" category="paragraph"><block ref="ba47221b59f846f383b80e1123a79d45" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4420a19e2fb911632ceb20db9bff5d6a" category="section-title">Aggiungere altri destinatari di posta elettronica</block>
   <block id="da69d368769f4f71d80717684f0fae51" category="inline-link-macro">Pagina Manage account (Gestisci account)</block>
-  <block id="7e3e224d3901e0bbd70dd518a48dba67" category="paragraph">Gli utenti visualizzati nella scheda _account Users_ vengono popolati automaticamente dagli utenti dell'account BlueXP (dal <block ref="7ec5341aa06784128979f04caa0eaf74" category="inline-link-macro-rx"></block>). È possibile aggiungere indirizzi e-mail nella scheda _destinatari aggiuntivi_ per altre persone o gruppi che non hanno accesso a BlueXP, ma che devono essere avvisati di determinati tipi di avvisi e notifiche.</block>
   <block id="9c3d653ca7995e59299fb7641e61895f" category="list-text">Dalla pagina Impostazioni avvisi e notifiche, selezionare *Aggiungi nuovi destinatari*.</block>
   <block id="acd827f1422fd31386324c56e2be6d81" category="inline-image-macro">Una schermata che mostra come aggiungere nuovi destinatari e-mail per avvisi e notifiche.</block>
   <block id="5e56842d0cfbf695522e945a01570eba" category="paragraph"><block ref="5e56842d0cfbf695522e945a01570eba" category="inline-image-macro-rx" type="image"></block></block>
@@ -3170,7 +3160,6 @@ Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono
   <block id="2289c95473cffd95de217b1b675483e0" category="paragraph">È possibile aggiungere le credenziali AWS a un connettore esistente o direttamente a BlueXP:</block>
   <block id="19d38e2a40bebb64998474cbec167167" category="list-text">Aggiungere ulteriori credenziali AWS a un connettore esistente</block>
   <block id="86ae9eb7648ce9574603dd22de833a70" category="inline-xref">Scopri come aggiungere le credenziali AWS a un connettore</block>
-  <block id="2e5620a6569fc852b94b7e03a147a125" category="paragraph">L'aggiunta di credenziali AWS a un connettore esistente fornisce le autorizzazioni necessarie per gestire risorse e processi all'interno del tuo ambiente di cloud pubblico. <block ref="568ce14d3cdae759e790bc127b222228" category="inline-xref-macro-rx"></block>.</block>
   <block id="a6390625ed7305318bb287641e3ea65f" category="list-text">Aggiungere le credenziali AWS a BlueXP per creare un connettore</block>
   <block id="7c45fb9face239cc4b78e899305dee96" category="inline-xref">Scopri come aggiungere le credenziali AWS a BlueXP</block>
   <block id="3ec77266ee6a41b1747d294029bbd73e" category="paragraph">L'aggiunta di nuove credenziali AWS a BlueXP offre a BlueXP le autorizzazioni necessarie per creare un connettore. <block ref="45675543b86ad867a67fe4ac8024c9ea" category="inline-xref-macro-rx"></block>.</block>
@@ -3880,4 +3869,15 @@ Questo endpoint è richiesto solo nelle regioni governative di Azure.</block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="25c1d94d9b5ddfa1e59f39dc9cc2a66c" category="paragraph">\https://api.cloud.netapp.com</block>
   <block id="78429c89c33011bf4e7173ce7e0a7d38" category="paragraph">\https://netapp-cloud-account.auth0.com/userinfo</block>
+  <block id="2274fc3b815748857736944118caafcb" category="paragraph">Quando saranno disponibili nuove versioni del software del connettore, verranno pubblicate sul sito di supporto NetApp. <block ref="6573e3614f2b2c9574b675c6e2dabc80" category="inline-link-macro-rx"></block>.</block>
+  <block id="fe7f6ce20f8de3b21c991518b42d29c7" category="paragraph">È necessario impostare il ruolo personalizzato se si avvia un connettore dal marketplace, se si installa manualmente il connettore o se si desidera <block ref="cc20e8be88e79fa30534d9044d86d641" category="inline-link-macro-rx"></block>.</block>
+  <block id="ea472a728fa8ea8a9d957dafbf3b3c56" category="paragraph"><block ref="4bafa1fce0633bbc25f458d6925369da" category="inline-link-macro-rx"></block>.</block>
+  <block id="880b965f9cabc8a09dc307835b0c1c44" category="paragraph">Se la tua azienda dispone già di un account e vuoi iscriverti, devi chiudere BlueXP e chiedere al proprietario di associarti all'account. Dopo che il proprietario ti ha aggiunto, puoi accedere e accedere all'account. <block ref="221ad62081662624d5ad46e4eb019f63" category="inline-link-macro-rx"></block>.</block>
+  <block id="51a7ac19cbf0f9d074132cf117ad2e0c" category="paragraph">L'aggiunta di credenziali AWS a un connettore esistente fornisce le autorizzazioni necessarie per gestire risorse e processi all'interno del tuo ambiente di cloud pubblico. <block ref="c25c39db29c727f1578fc8385e3c589b" category="inline-xref-macro-rx"></block>.</block>
+  <block id="e5858eca10506e717b009052b0640e5d" category="paragraph">Gli utenti visualizzati nella scheda _account Users_ vengono popolati automaticamente dagli utenti dell'account BlueXP (dal <block ref="bce79e838594aa867c34fc02622c1a7f" category="inline-link-macro-rx"></block>). È possibile aggiungere indirizzi e-mail nella scheda _destinatari aggiuntivi_ per altre persone o gruppi che non hanno accesso a BlueXP, ma che devono essere avvisati di determinati tipi di avvisi e notifiche.</block>
+  <block id="fb2327495633231db53b83b63281ec59" category="paragraph"><block ref="ba792a8f94fc4fa1d6890491a6d3ca88" category="inline-link-macro-rx"></block>.</block>
+  <block id="546da6116b7feb3e2f6bc76e15679ce5" category="paragraph"><block ref="b046bb32939806f90ece83bf6f045fc2" category="inline-link-macro-rx"></block>.</block>
+  <block id="785c09ae237878056a26f76d752f9655" category="paragraph"><block ref="d681f410de8bf56d0591b119af19b91f" category="inline-link-macro-rx"></block>.</block>
+  <block id="819bbc17eab62ac696bc204d9864298c" category="paragraph"><block ref="317e81beacf8b3184ba06b75c8cba7f0" category="inline-link-macro-rx"></block>.</block>
+  <block id="d5a6b4dc8861625dfe113504ac0e255e" category="paragraph"><block ref="fdc7ca711ae67c971d281a756b555324" category="inline-link-macro-rx"></block>.</block>
 </blocks>

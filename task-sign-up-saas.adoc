@@ -39,7 +39,7 @@ Nel modulo di iscrizione sono consentiti solo caratteri inglesi.
 . Quando richiesto, leggere il Contratto di licenza con l'utente finale e accettare i termini.
 . Nella pagina *Benvenuto*, immettere un nome per l'account.
 +
-Se la tua azienda dispone già di un account e vuoi iscriverti, devi chiudere BlueXP e chiedere al proprietario di associarti all'account. Dopo che il proprietario ti ha aggiunto, puoi accedere e accedere all'account. link:task-managing-netapp-accounts.html#adding-users["Scopri come aggiungere membri a un account esistente"].
+Se la tua azienda dispone già di un account e vuoi iscriverti, devi chiudere BlueXP e chiedere al proprietario di associarti all'account. Dopo che il proprietario ti ha aggiunto, puoi accedere e accedere all'account. link:task-managing-netapp-accounts.html#add-users["Scopri come aggiungere membri a un account esistente"].
 
 +
 Un account è l'elemento di primo livello della piattaforma per le identità di NetApp. Consente di aggiungere e gestire utenti, ruoli, autorizzazioni e ambienti di lavoro.

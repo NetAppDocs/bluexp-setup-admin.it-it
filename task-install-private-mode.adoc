@@ -95,7 +95,7 @@ Questo account utente viene eseguito localmente sul sistema. Non esiste alcuna c
 .Risultato
 Il connettore è stato installato e configurato.
 
-Quando saranno disponibili nuove versioni del software del connettore, verranno pubblicate sul sito di supporto NetApp. link:task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["Scopri come aggiornare il connettore"].
+Quando saranno disponibili nuove versioni del software del connettore, verranno pubblicate sul sito di supporto NetApp. link:task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Scopri come aggiornare il connettore"].
 
 .Quali sono le prossime novità?
 Fornire a BlueXP le autorizzazioni precedentemente impostate.

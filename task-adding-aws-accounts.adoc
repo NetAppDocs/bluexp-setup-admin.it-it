@@ -24,7 +24,7 @@ Aggiungi e gestisci le credenziali AWS in modo che BlueXP disponga delle autoriz
 
 * Aggiungere ulteriori credenziali AWS a un connettore esistente
 +
-L'aggiunta di credenziali AWS a un connettore esistente fornisce le autorizzazioni necessarie per gestire risorse e processi all'interno del tuo ambiente di cloud pubblico. <<Add credentials to a Connector,Scopri come aggiungere le credenziali AWS a un connettore>>.
+L'aggiunta di credenziali AWS a un connettore esistente fornisce le autorizzazioni necessarie per gestire risorse e processi all'interno del tuo ambiente di cloud pubblico. <<Aggiungere credenziali aggiuntive a un connettore,Scopri come aggiungere le credenziali AWS a un connettore>>.
 
 * Aggiungere le credenziali AWS a BlueXP per creare un connettore
 +

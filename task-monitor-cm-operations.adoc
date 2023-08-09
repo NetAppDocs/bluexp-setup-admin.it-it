@@ -141,7 +141,7 @@ image:screenshot-change-notifications.png["Una schermata che mostra come modific
 
 === Aggiungere altri destinatari di posta elettronica
 
-Gli utenti visualizzati nella scheda _account Users_ vengono popolati automaticamente dagli utenti dell'account BlueXP (dal link:task-managing-netapp-accounts.html#creating-and-managing-users["Pagina Manage account (Gestisci account)"]). È possibile aggiungere indirizzi e-mail nella scheda _destinatari aggiuntivi_ per altre persone o gruppi che non hanno accesso a BlueXP, ma che devono essere avvisati di determinati tipi di avvisi e notifiche.
+Gli utenti visualizzati nella scheda _account Users_ vengono popolati automaticamente dagli utenti dell'account BlueXP (dal link:task-managing-netapp-accounts.html#create-and-manage-users["Pagina Manage account (Gestisci account)"]). È possibile aggiungere indirizzi e-mail nella scheda _destinatari aggiuntivi_ per altre persone o gruppi che non hanno accesso a BlueXP, ma che devono essere avvisati di determinati tipi di avvisi e notifiche.
 
 .Fasi
 . Dalla pagina Impostazioni avvisi e notifiche, selezionare *Aggiungi nuovi destinatari*.

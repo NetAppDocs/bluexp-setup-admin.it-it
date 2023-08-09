@@ -58,7 +58,7 @@ Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono
 | Funzionamento del connettore  a| 
 Quando BlueXP implementa la macchina virtuale del connettore in Azure, crea un ruolo personalizzato che fornisce le autorizzazioni necessarie per gestire le risorse e i processi all'interno dell'abbonamento Azure.
 
-È necessario impostare il ruolo personalizzato se si avvia un connettore dal marketplace, se si installa manualmente il connettore o se si desidera link:task-adding-azure-accounts.html#adding-additional-azure-credentials-to-cloud-manager["Aggiungere altre credenziali Azure a un connettore"].
+È necessario impostare il ruolo personalizzato se si avvia un connettore dal marketplace, se si installa manualmente il connettore o se si desidera link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp["Aggiungere altre credenziali Azure a un connettore"].
 
 Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive.
  a| 

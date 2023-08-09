@@ -665,7 +665,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport
 
 Quando si crea un nuovo connettore in Microsoft Azure, è ora possibile autenticarsi con un'entità del servizio Azure, anziché con le credenziali dell'account Azure.
 
-link:task-creating-connectors-azure.html#create-a-connector-using-a-service-principal["Scopri come eseguire l'autenticazione con un service principal Azure"].
+link:task-creating-connectors-azure.html["Scopri come eseguire l'autenticazione con un service principal Azure"].
 
 
 
@@ -718,7 +718,7 @@ image:screenshot_nss_management.png["Schermata della scheda Gestione NSS nella d
 
 La cronologia di Cloud Manager mostra ora le azioni e gli eventi relativi alla gestione dell'account. Le azioni includono elementi come l'associazione degli utenti, la creazione di aree di lavoro e la creazione di connettori. Controllare la cronologia può essere utile se è necessario identificare chi ha eseguito un'azione specifica o se è necessario identificare lo stato di un'azione.
 
-link:task-monitor-cm-operations.html#auditing-user-activity-in-your-account["Scopri come filtrare la timeline per il servizio tenancy"].
+link:task-monitor-cm-operations.html#audit-user-activity-in-your-account["Scopri come filtrare la timeline per il servizio tenancy"].
 
 
 
@@ -740,7 +740,7 @@ link:task-configuring-proxy.html["Scopri di più su questa impostazione"].
 
 Un account di servizio agisce come un "utente" che può effettuare chiamate API autorizzate a Cloud Manager per scopi di automazione. In questo modo è più semplice gestire l'automazione, poiché non è necessario creare script di automazione basati sull'account utente di una persona reale che può lasciare l'azienda in qualsiasi momento. E se utilizzi la federazione, puoi creare un token senza generare un token di refresh dal cloud.
 
-link:task-managing-netapp-accounts.html#creating-and-managing-service-accounts["Scopri di più sull'utilizzo degli account di servizio"].
+link:task-managing-netapp-accounts.html#create-and-manage-service-accounts["Scopri di più sull'utilizzo degli account di servizio"].
 
 
 
@@ -748,7 +748,7 @@ link:task-managing-netapp-accounts.html#creating-and-managing-service-accounts["
 
 Ora puoi consentire anteprime private nel tuo account per accedere ai nuovi servizi cloud di NetApp man mano che vengono resi disponibili come anteprima in Cloud Manager.
 
-link:task-managing-netapp-accounts.html#allowing-private-previews["Scopri di più su questa opzione"].
+link:task-managing-netapp-accounts.html#allow-private-previews["Scopri di più su questa opzione"].
 
 
 
@@ -756,7 +756,7 @@ link:task-managing-netapp-accounts.html#allowing-private-previews["Scopri di pi�
 
 Puoi anche consentire ai servizi di terze parti del tuo account di accedere ai servizi di terze parti disponibili in Cloud Manager.
 
-link:task-managing-netapp-accounts.html#allowing-third-party-services["Scopri di più su questa opzione"].
+link:task-managing-netapp-accounts.html#allow-third-party-services["Scopri di più su questa opzione"].
 
 
 

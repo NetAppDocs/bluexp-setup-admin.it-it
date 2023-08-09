@@ -234,7 +234,7 @@ Se è stata creata una nuova area di lavoro, è necessario aggiungere anche il c
 
 Se si dispone solo di account Admins, non è necessario associare il connettore alle aree di lavoro. Gli amministratori degli account hanno la possibilità di accedere a tutte le aree di lavoro in BlueXP per impostazione predefinita.
 
-link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["Scopri di più su utenti, aree di lavoro e connettori"].
+link:concept-netapp-accounts.html["Scopri di più su utenti, aree di lavoro e connettori"].
 
 .Fasi
 . Nella parte superiore di BlueXP, selezionare l'elenco a discesa *account* e selezionare *Gestisci account*.
