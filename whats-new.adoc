@@ -26,7 +26,7 @@ Scopri le novità delle funzionalità di amministrazione di BlueXP: Account Blue
 
 * È ora possibile utilizzare l'API del servizio di audit BlueXP per esportare i registri di audit.
 +
-Il servizio di audit registra le informazioni sulle operazioni eseguite dai servizi BlueXP. Sono inclusi gli indirizzi IP di origine, le aree di lavoro, i connettori utilizzati e altri dati di telemetria. È possibile utilizzare questi dati per determinare quali azioni sono state eseguite, chi le ha eseguite e quando si sono verificate.
+Il servizio di audit registra le informazioni sulle operazioni eseguite dai servizi BlueXP. Sono inclusi spazi di lavoro, connettori utilizzati e altri dati di telemetria. È possibile utilizzare questi dati per determinare quali azioni sono state eseguite, chi le ha eseguite e quando si sono verificate.
 
 +
 https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["Scopri di più sull'utilizzo dell'API del servizio di audit"^]

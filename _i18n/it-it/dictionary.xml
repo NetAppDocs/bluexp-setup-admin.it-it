@@ -2816,18 +2816,9 @@ Si noti che la pagina viene aggiornata tra il test della connessione e l'abilita
   <block id="f664478fbdfbd15104b014e41c35e88c" category="doc">Riepilogo delle autorizzazioni per BlueXP</block>
   <block id="d2c0c7feb18d0e89bab9d23b6ec4c042" category="section-title">Autorizzazioni AWS</block>
   <block id="97e7c9a7d06eac006a28bf05467fcc8b" category="cell">Collegamento</block>
-  <block id="eec108a26c2c4c3392174c931352146b" category="cell">Implementazione del connettore da BlueXP</block>
   <block id="1570052dc3548215211726a63fbaaf7a" category="cell">L'utente che crea un connettore da BlueXP ha bisogno di autorizzazioni specifiche per implementare l'istanza in AWS.</block>
-  <block id="9d79131734042a17283af57f76b63c58" category="cell">Funzionamento del connettore</block>
   <block id="00232842735eab80a07d1168667e8d7f" category="inline-link-macro">Aggiungere altre credenziali AWS a un connettore</block>
-  <block id="ec2a26203d1e704fea5fe65b3298f175" category="cell">Quando BlueXP avvia il connettore, allega un criterio all'istanza che fornisce le autorizzazioni necessarie per gestire le risorse e i processi nell'account AWS.
-
-È necessario impostare la policy se si avvia un connettore dal marketplace, se si installa manualmente il connettore o se si desidera <block ref="c5a34c273ba791769e2c0edbb9c79dc0" category="inline-link-macro-rx"></block>.
-
-Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive.</block>
   <block id="f8a3b3003a624ccf880a2b952a5d299a" category="cell"><block ref="f8a3b3003a624ccf880a2b952a5d299a" category="inline-link-macro-rx"></block></block>
-  <block id="0b7fc44a4fc16ca2deedd18213df11d0" category="cell">Funzionamento Cloud Volumes ONTAP</block>
-  <block id="ed36c10a45b6f1c2c5b5a23a54e905dd" category="cell">Un ruolo IAM deve essere associato a ciascun nodo Cloud Volumes ONTAP in AWS. Lo stesso vale per il mediatore ha. L'opzione predefinita consiste nel consentire a BlueXP di creare i ruoli IAM, ma è possibile utilizzare i propri ruoli.</block>
   <block id="421a1f316880c0380ff3114c3bf34f83" category="inline-link">Scopri come impostare i ruoli IAM da solo</block>
   <block id="1dde058782233339aff261555be71a1e" category="cell"><block ref="1dde058782233339aff261555be71a1e" category="inline-link-rx"></block></block>
   <block id="bf689424a4d3a62d9c0d40a07107c3d2" category="section-title">Autorizzazioni Azure</block>
@@ -2837,13 +2828,9 @@ Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono
   <block id="bcfaa2da0752134728f286af2b223842" category="paragraph">Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive.</block>
   <block id="24cce65a483e1205b8ca7bc0bf14c6c9" category="paragraph"><block ref="24cce65a483e1205b8ca7bc0bf14c6c9" category="inline-link-macro-rx"></block></block>
   <block id="d3846482b7a5f3467b05518965422219" category="section-title">Permessi Google Cloud</block>
-  <block id="f56912566696fa3cc8524bcac5febbeb" category="cell">Implementazione del connettore</block>
   <block id="891af1225ba19aa10048241aff61f420" category="cell">L'utente di Google Cloud che implementa un connettore di BlueXP ha bisogno di autorizzazioni specifiche per implementare il connettore in Google Cloud.</block>
   <block id="8bbd308345d88bc23fd26357cd36b8d9" category="inline-link-macro">Impostare le autorizzazioni per implementare il connettore</block>
   <block id="cf94f172dc39ef92ca49e3c869407357" category="cell"><block ref="cf94f172dc39ef92ca49e3c869407357" category="inline-link-macro-rx"></block></block>
-  <block id="4f3c3c35c132b98b7f7a6e950dee69ce" category="cell">L'account di servizio per l'istanza di Connector VM deve disporre di autorizzazioni specifiche per le operazioni quotidiane. È necessario associare l'account del servizio al connettore quando lo si implementa da BlueXP.
-
-Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive.</block>
   <block id="8e83b819241a1bf1d918adcc453afeab" category="cell"><block ref="8e83b819241a1bf1d918adcc453afeab" category="inline-link-macro-rx"></block></block>
   <block id="56e1e624f64034081fc607cc1b1f8f79" category="summary">Se il connettore è stato creato da Azure Marketplace o se il software è stato installato manualmente, è necessario fornire a BlueXP le autorizzazioni precedentemente impostate. La fornitura delle autorizzazioni consente a BlueXP di gestire l'infrastruttura di dati e storage in Azure.</block>
   <block id="d0158e5fcbfd28e34c4ef5775896911d" category="doc">Fornire le autorizzazioni Azure a BlueXP</block>
@@ -3740,7 +3727,6 @@ Questo endpoint è richiesto solo nelle regioni governative di Azure.</block>
   <block id="9d5f9909bec8cf71910a31c50878914c" category="section-title">30 luglio</block>
   <block id="167693b239be0e2939d61376cd3a5487" category="section-title">Connettore 3.9.32</block>
   <block id="7af14628b780746da1b2b7396f10a07e" category="list-text">È ora possibile utilizzare l'API del servizio di audit BlueXP per esportare i registri di audit.</block>
-  <block id="f7cc7ff5799b515f0c19fb83e0dd5098" category="paragraph">Il servizio di audit registra le informazioni sulle operazioni eseguite dai servizi BlueXP. Sono inclusi gli indirizzi IP di origine, le aree di lavoro, i connettori utilizzati e altri dati di telemetria. È possibile utilizzare questi dati per determinare quali azioni sono state eseguite, chi le ha eseguite e quando si sono verificate.</block>
   <block id="5a97fe4fe664c9e98d8ad88cdbf44d98" category="inline-link">Scopri di più sull'utilizzo dell'API del servizio di audit</block>
   <block id="23822bdcf5039c31a637229d8ca51ffa" category="paragraph"><block ref="23822bdcf5039c31a637229d8ca51ffa" category="inline-link-rx"></block></block>
   <block id="d00604985bd7a191952bde8a0cec39fd" category="paragraph">Questo collegamento è accessibile anche dall'interfaccia utente di BlueXP nella pagina Timeline.</block>
@@ -3870,7 +3856,6 @@ Questo endpoint è richiesto solo nelle regioni governative di Azure.</block>
   <block id="25c1d94d9b5ddfa1e59f39dc9cc2a66c" category="paragraph">\https://api.cloud.netapp.com</block>
   <block id="78429c89c33011bf4e7173ce7e0a7d38" category="paragraph">\https://netapp-cloud-account.auth0.com/userinfo</block>
   <block id="2274fc3b815748857736944118caafcb" category="paragraph">Quando saranno disponibili nuove versioni del software del connettore, verranno pubblicate sul sito di supporto NetApp. <block ref="6573e3614f2b2c9574b675c6e2dabc80" category="inline-link-macro-rx"></block>.</block>
-  <block id="fe7f6ce20f8de3b21c991518b42d29c7" category="paragraph">È necessario impostare il ruolo personalizzato se si avvia un connettore dal marketplace, se si installa manualmente il connettore o se si desidera <block ref="cc20e8be88e79fa30534d9044d86d641" category="inline-link-macro-rx"></block>.</block>
   <block id="ea472a728fa8ea8a9d957dafbf3b3c56" category="paragraph"><block ref="4bafa1fce0633bbc25f458d6925369da" category="inline-link-macro-rx"></block>.</block>
   <block id="880b965f9cabc8a09dc307835b0c1c44" category="paragraph">Se la tua azienda dispone già di un account e vuoi iscriverti, devi chiudere BlueXP e chiedere al proprietario di associarti all'account. Dopo che il proprietario ti ha aggiunto, puoi accedere e accedere all'account. <block ref="221ad62081662624d5ad46e4eb019f63" category="inline-link-macro-rx"></block>.</block>
   <block id="51a7ac19cbf0f9d074132cf117ad2e0c" category="paragraph">L'aggiunta di credenziali AWS a un connettore esistente fornisce le autorizzazioni necessarie per gestire risorse e processi all'interno del tuo ambiente di cloud pubblico. <block ref="c25c39db29c727f1578fc8385e3c589b" category="inline-xref-macro-rx"></block>.</block>
@@ -3880,4 +3865,56 @@ Questo endpoint è richiesto solo nelle regioni governative di Azure.</block>
   <block id="785c09ae237878056a26f76d752f9655" category="paragraph"><block ref="d681f410de8bf56d0591b119af19b91f" category="inline-link-macro-rx"></block>.</block>
   <block id="819bbc17eab62ac696bc204d9864298c" category="paragraph"><block ref="317e81beacf8b3184ba06b75c8cba7f0" category="inline-link-macro-rx"></block>.</block>
   <block id="d5a6b4dc8861625dfe113504ac0e255e" category="paragraph"><block ref="fdc7ca711ae67c971d281a756b555324" category="inline-link-macro-rx"></block>.</block>
+  <block id="ae74a3a0435bedb1f051b5b083969faa" category="paragraph">BlueXP richiede le autorizzazioni AWS per il connettore e per i singoli servizi.</block>
+  <block id="12c74214cb4c18cf36d885303d6aa2e1" category="cell">Obiettivo</block>
+  <block id="4afbf095518e3a60998aad1ce6f249ce" category="cell">Implementa il connettore da BlueXP</block>
+  <block id="236126e6a3c1a1d09b8182f67882c801" category="cell">Fornire le autorizzazioni per il connettore</block>
+  <block id="c6d0e2abed82fca958366c2fcda89a77" category="cell">Quando BlueXP avvia il connettore, allega un criterio all'istanza che fornisce le autorizzazioni necessarie per gestire le risorse e i processi nell'account AWS.
+
+Devi impostare la policy da solo se avvii un connettore da AWS Marketplace, se installi manualmente il connettore o se vuoi <block ref="c5a34c273ba791769e2c0edbb9c79dc0" category="inline-link-macro-rx"></block>.
+
+Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive.</block>
+  <block id="2bd154f3e1528430624d1980f1fe12c2" category="cell">Fornire autorizzazioni per i nodi Cloud Volumes ONTAP</block>
+  <block id="2584b7afa455c935a90917055396e327" category="cell">Un ruolo IAM deve essere associato a ciascun nodo Cloud Volumes ONTAP in AWS. Lo stesso vale per il mediatore ha. L'opzione predefinita è consentire a BlueXP di creare i ruoli IAM per te, ma puoi utilizzarne uno personalizzato durante la creazione dell'ambiente di lavoro.</block>
+  <block id="07914074e8936595a39fa14377c5047c" category="cell">Implementa il broker dei dati in AWS</block>
+  <block id="18a3707b00c2a06ba4d52fc010e2ac0e" category="cell">L'account utente AWS utilizzato per implementare il broker di dati deve disporre di autorizzazioni specifiche.</block>
+  <block id="572539efea3b8fc37d4d9f01097ce1b1" category="inline-link">Autorizzazioni necessarie per implementare il data broker in AWS</block>
+  <block id="81a564d7b4e8b4dee115ac457361e17e" category="cell"><block ref="81a564d7b4e8b4dee115ac457361e17e" category="inline-link-rx"></block></block>
+  <block id="5a4538181503849bbcd06a951c8a8e2d" category="cell">Fornire le autorizzazioni per il broker di dati</block>
+  <block id="3dfd0f786aab78ee1bfb08af94cb59ef" category="cell">Quando BlueXP copia e sincronizza implementa il data broker, crea un ruolo IAM per l'istanza del data broker. Se preferisci, puoi implementare il data broker utilizzando il tuo ruolo IAM.</block>
+  <block id="9b99759f27fdd4623c9ea015c92207fd" category="inline-link">Requisiti per utilizzare il tuo ruolo IAM con il broker dei dati AWS</block>
+  <block id="10f1c56c57fc53ad92122681abc21632" category="cell"><block ref="10f1c56c57fc53ad92122681abc21632" category="inline-link-rx"></block></block>
+  <block id="ee62d3f2099b104d52eb4e2fe59eb860" category="cell">Abilitare l'accesso AWS per un broker dei dati installato manualmente</block>
+  <block id="18f5ca31365bcff8913658163e306178" category="cell">Se utilizzi il broker di dati con un rapporto di sincronizzazione che include un bucket S3, devi preparare l'host Linux per l'accesso ad AWS. Quando installi il broker di dati, dovrai fornire le chiavi AWS a un utente IAM che dispone di accesso programmatico e autorizzazioni specifiche.</block>
+  <block id="c9e33dfa8b5904f2c5eeefbab35a3d9b" category="inline-link">Abilitazione dell'accesso ad AWS</block>
+  <block id="fcf846fa24de23410cb4903a97ac9f0d" category="cell"><block ref="fcf846fa24de23410cb4903a97ac9f0d" category="inline-link-rx"></block></block>
+  <block id="71a673e1aed38a0f77d59612fb124b6b" category="cell">Crea e gestisci FSX per ONTAP</block>
+  <block id="c896aff3890756b5b5617815b60fa045" category="cell">Per creare o gestire un ambiente di lavoro Amazon FSX per NetApp ONTAP, devi aggiungere le credenziali AWS a BlueXP fornendo l'ARN di un ruolo IAM che conferisce ad BlueXP le autorizzazioni necessarie per creare l'ambiente di lavoro.</block>
+  <block id="8d5c6b0c966cc9b5f51ab3ebb991e7ec" category="inline-link">Scopri come configurare le credenziali AWS per FSX</block>
+  <block id="c52aa019132bc05b5d90dee260d8fb6a" category="cell"><block ref="c52aa019132bc05b5d90dee260d8fb6a" category="inline-link-rx"></block></block>
+  <block id="459077578e6bfda6360917f5762cecbd" category="paragraph">BlueXP richiede le autorizzazioni di Azure per il connettore e per i singoli servizi.</block>
+  <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="section-title">Connettore</block>
+  <block id="19be7d05557bac8d8c8cdcd69e418046" category="paragraph">È necessario impostare il ruolo personalizzato se si avvia un connettore dal mercato, se si installa manualmente il connettore o se si desidera <block ref="cc20e8be88e79fa30534d9044d86d641" category="inline-link-macro-rx"></block>.</block>
+  <block id="c3cccd9ce135f450a9619b57dba5e5f1" category="cell">Implementa il broker di dati in Azure</block>
+  <block id="05f8fb1bf008e214609328fb34b7e532" category="cell">L'account utente Azure utilizzato per implementare il broker di dati deve disporre delle autorizzazioni richieste.</block>
+  <block id="c658fd4f091c10877f154fbf84fbee89" category="inline-link">Autorizzazioni necessarie per implementare il data broker in Azure</block>
+  <block id="fe6b9c6ed5d8a08b2dbc8fc0c9f1b1e1" category="cell"><block ref="fe6b9c6ed5d8a08b2dbc8fc0c9f1b1e1" category="inline-link-rx"></block></block>
+  <block id="abc6c653a66385c7d89c7c9b11146695" category="paragraph">BlueXP richiede le autorizzazioni di Google Cloud per il connettore e per i singoli servizi.</block>
+  <block id="ccdd7e208a0a423c2c21b0cf2b9c9cf9" category="cell">L'account di servizio per l'istanza di Connector VM deve disporre di autorizzazioni specifiche per le operazioni quotidiane. È necessario associare l'account del servizio al connettore durante la distribuzione.
+
+Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive.</block>
+  <block id="2ffc85864a3bde535e5f41ca5ceb963e" category="cell">Scopri Cloud Volumes Service per Google Cloud</block>
+  <block id="fb40390dc5f9af56c8a05dba3f355101" category="cell">BlueXP deve accedere all'API di Cloud Volumes Service e disporre delle autorizzazioni necessarie tramite un account di servizio Google Cloud.</block>
+  <block id="ec8725380aa2f688c9b9d45557c44600" category="inline-link">Impostare un account di servizio</block>
+  <block id="71ff910f19cd22c3817e69aefe990dc8" category="cell"><block ref="71ff910f19cd22c3817e69aefe990dc8" category="inline-link-rx"></block></block>
+  <block id="326383c715f7d58418eab62449d7e6b5" category="cell">Implementa il broker dei dati in Google Cloud</block>
+  <block id="6f0cd56d775c80607dc578326e3840bd" category="cell">Verifica che l'utente Google Cloud che implementa il broker di dati disponga delle autorizzazioni richieste.</block>
+  <block id="23c5a36a4e18015e399e97b3a48f2255" category="inline-link">Autorizzazioni necessarie per implementare il data broker in Google Cloud</block>
+  <block id="958a0d8cd16ff833279695f251ff3807" category="cell"><block ref="958a0d8cd16ff833279695f251ff3807" category="inline-link-rx"></block></block>
+  <block id="835763cb29b6af444564b2a25239e51b" category="cell">Attiva l'accesso a Google Cloud per un broker dei dati installato manualmente</block>
+  <block id="9bb2d547aba26d64f54ee705473214d6" category="cell">Se intendi utilizzare il data broker con una relazione di sincronizzazione che include un bucket di storage Google Cloud, devi preparare l'host Linux per l'accesso a Google Cloud. Quando si installa il data broker, è necessario fornire una chiave per un account di servizio che dispone di autorizzazioni specifiche.</block>
+  <block id="71921838fce69c9d045aeb2ad30c1eb5" category="inline-link">Abilitazione dell'accesso a Google Cloud</block>
+  <block id="9b9b58eacf6390de371391672ac7e8ec" category="cell"><block ref="9b9b58eacf6390de371391672ac7e8ec" category="inline-link-rx"></block></block>
+  <block id="8aa2111995c967fbe71b3943dcfa40e7" category="paragraph">BlueXP richiede autorizzazioni StorageGRID per due servizi.</block>
+  <block id="857c228cf033cf46c4d3b643ed4db3a6" category="paragraph">Il servizio di audit registra le informazioni sulle operazioni eseguite dai servizi BlueXP. Sono inclusi spazi di lavoro, connettori utilizzati e altri dati di telemetria. È possibile utilizzare questi dati per determinare quali azioni sono state eseguite, chi le ha eseguite e quando si sono verificate.</block>
 </blocks>
