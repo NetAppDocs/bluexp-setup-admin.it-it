@@ -109,7 +109,7 @@ BlueXP richiede le autorizzazioni di Azure per il connettore e per i singoli ser
 
 
 
-=== Connettore
+=== Connettori
 
 [cols="20,60,20"]
 |===
@@ -148,7 +148,7 @@ BlueXP richiede le autorizzazioni di Google Cloud per il connettore e per i sing
 
 
 
-=== Connettore
+=== Connettori
 
 [cols="20,60,20"]
 |===
