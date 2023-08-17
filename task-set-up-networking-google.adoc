@@ -97,13 +97,11 @@ Per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al suppor
 
 \https://api.bluexp.netapp.com
 
-\https://api.cloud.netapp.com
-
 \https://*.cloudmanager.cloud.netapp.com
 
 \https://cloudmanager.cloud.netapp.com
 
-\https://netapp-cloud-account.auth0.com/userinfo
+\https://netapp-cloud-account.auth0.com
  a| 
 Fornire funzionalità e servizi SaaS all'interno di BlueXP.
 
