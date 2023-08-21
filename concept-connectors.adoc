@@ -65,6 +65,7 @@ Quando si utilizza BlueXP in modalità standard, è necessario un connettore per
 * Backup e recovery
 * Classificazione
 * Cloud Volumes ONTAP
+* Disaster recovery
 * Sistemi e-Series
 * Efficienza economica ^1^
 * Caching edge

@@ -383,6 +383,9 @@ Alcuni servizi potrebbero essere supportati con limitazioni. Per ulteriori infor
 | Portafoglio digitale | Sì | Sì 
 
 
+| Disaster recovery | No | No 
+
+
 | Efficienza economica | No | No 
 
 
@@ -410,10 +413,10 @@ Alcuni servizi potrebbero essere supportati con limitazioni. Per ulteriori infor
 | Tiering | No | No 
 
 
-| Caching dei volumi | No | No 
+| Caching dei volumi | No | No .5+| *Caratteristiche* 
 
 
-.5+| *Caratteristiche* | Credenziali | Sì | Sì 
+| Credenziali | Sì | Sì 
 
 
 | Account NSS | Sì | No 
@@ -423,7 +426,4 @@ Alcuni servizi potrebbero essere supportati con limitazioni. Per ulteriori infor
 
 
 | Cerca | Sì | No 
-
-
-| Tempistiche | Sì | Sì 
 |===
