@@ -74,7 +74,8 @@ Per tutti gli altri account, è necessario associare manualmente l'abbonamento r
 Il seguente video mostra i passaggi per iscriversi a Google Cloud Marketplace:
 
 +
-video::video-subscribing-google-cloud.mp4[width=848,height=480]
+.Iscriviti a BlueXP da Google Cloud Marketplace
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 
 
 .. Una volta completata questa procedura, tornare alla pagina credenziali in BlueXP e selezionare questo nuovo abbonamento.

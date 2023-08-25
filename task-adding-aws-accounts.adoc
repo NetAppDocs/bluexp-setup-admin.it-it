@@ -267,7 +267,8 @@ Per tutti gli altri account, è necessario associare manualmente l'abbonamento r
 Il seguente video mostra i passaggi per iscriversi a AWS Marketplace:
 
 +
-video::video_subscribing_aws.mp4[width=848,height=480]
+.Iscriviti a BlueXP dal marketplace AWS
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 
 
 

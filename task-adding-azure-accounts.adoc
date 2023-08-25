@@ -367,7 +367,8 @@ Per tutti gli altri account, è necessario associare manualmente l'abbonamento r
 Il seguente video mostra i passaggi per iscriversi a Azure Marketplace:
 
 +
-video::video_subscribing_azure.mp4[width=848,height=480]
+.Iscriviti a BlueXP da Azure Marketplace
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 
 
