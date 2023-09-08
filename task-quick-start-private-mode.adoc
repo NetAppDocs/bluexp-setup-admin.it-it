@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-quick-start-private-mode.html 
 keywords: private mode quick start, quick start 
-summary: Inizia a utilizzare BlueXP in modalità privata in pochi passaggi. 
+summary: 'Inizia a utilizzare BlueXP in modalità privata preparando l"ambiente e implementando il connettore.' 
 ---
-= Avvio rapido per BlueXP in modalità privata
+= Flusso di lavoro introduttivo (modalità privata)
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,22 +16,18 @@ summary: Inizia a utilizzare BlueXP in modalità privata in pochi passaggi.
 [role="lead"]
 Inizia a utilizzare BlueXP in modalità privata preparando l'ambiente e implementando il connettore.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Prepararsi per l'implementazione
+Prima di iniziare, dovresti avere una conoscenza di link:concept-netapp-accounts.html["BlueXP"], link:concept-connectors.html["Connettori"], e. link:concept-modes.html["modalità di distribuzione"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] link:task-prepare-private-mode.html["Prepararsi per l'implementazione"]
 [role="quick-margin-list"]
 . Prepara un host Linux dedicato che soddisfi i requisiti di CPU, RAM, spazio su disco, motore Docker e altro ancora.
 . Configurare una rete che fornisca accesso alle reti di destinazione.
 . Per le implementazioni cloud, imposta le autorizzazioni nel tuo cloud provider in modo da poter associare tali autorizzazioni al connettore dopo l'installazione del software.
 
 
-[role="quick-margin-para"]
-link:task-prepare-private-mode.html["Scopri come prepararsi per l'implementazione"].
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Due"] Implementare il connettore
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Due"] link:task-install-private-mode.html["Implementare il connettore"]
 [role="quick-margin-list"]
 . Installare il software del connettore sul proprio host Linux.
 . Configurare BlueXP aprendo un browser Web e immettendo l'indirizzo IP dell'host Linux.
 . Per le implementazioni cloud, fornire a BlueXP le autorizzazioni precedentemente impostate.
 
-
-[role="quick-margin-para"]
-link:task-install-private-mode.html["Scopri come implementare il connettore"].

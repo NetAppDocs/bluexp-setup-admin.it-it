@@ -2,6 +2,9 @@
 :allow-uri-read: 
 
 
+Endpoint contattati dal connettore:: Il connettore richiede l'accesso a Internet in uscita per contattare i seguenti endpoint al fine di gestire risorse e processi all'interno dell'ambiente di cloud pubblico per le operazioni quotidiane.
+
+
 | servizi AWS (amazonaws.com):
 
 * CloudFormation
@@ -12,7 +15,7 @@
 * S3 (Simple Storage Service)
 
 
-| per gestire le risorse in AWS. L'endpoint esatto dipende dalla regione in cui viene implementato il connettore. https://docs.aws.amazon.com/general/latest/gr/rande.html["Per ulteriori informazioni, fare riferimento alla documentazione AWS"^]
+| per gestire le risorse in AWS. L'endpoint esatto dipende dall'area AWS che stai utilizzando. https://docs.aws.amazon.com/general/latest/gr/rande.html["Per ulteriori informazioni, fare riferimento alla documentazione AWS"^]
 
 | \https://management.azure.com
 \https://login.microsoftonline.com

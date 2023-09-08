@@ -31,7 +31,7 @@ BlueXP richiede le autorizzazioni AWS per il connettore e per i singoli servizi.
 | Obiettivo | Descrizione | Collegamento 
 
 
-| Implementa il connettore da BlueXP | L'utente che crea un connettore da BlueXP ha bisogno di autorizzazioni specifiche per implementare l'istanza in AWS. | link:task-set-up-permissions-aws.html["Impostare le autorizzazioni AWS"] 
+| Implementa il connettore da BlueXP | L'utente che crea un connettore da BlueXP ha bisogno di autorizzazioni specifiche per implementare l'istanza in AWS. | link:task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["Impostare le autorizzazioni AWS"] 
 
 
 | Fornire le autorizzazioni per il connettore | Quando BlueXP avvia il connettore, allega un criterio all'istanza che fornisce le autorizzazioni necessarie per gestire le risorse e i processi nell'account AWS.
@@ -116,7 +116,7 @@ BlueXP richiede le autorizzazioni di Azure per il connettore e per i singoli ser
 | Obiettivo | Descrizione | Collegamento 
 
 
-| Implementa il connettore da BlueXP | Quando si implementa un connettore da BlueXP, è necessario utilizzare un account Azure o un'entità di servizio che disponga delle autorizzazioni per implementare la macchina virtuale del connettore in Azure. | link:task-set-up-permissions-azure.html["Impostare le autorizzazioni Azure"] 
+| Implementa il connettore da BlueXP | Quando si implementa un connettore da BlueXP, è necessario utilizzare un account Azure o un'entità di servizio che disponga delle autorizzazioni per implementare la macchina virtuale del connettore in Azure. | link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Impostare le autorizzazioni Azure"] 
 
 
 | Fornire le autorizzazioni per il connettore  a| 
@@ -155,12 +155,12 @@ BlueXP richiede le autorizzazioni di Google Cloud per il connettore e per i sing
 | Obiettivo | Descrizione | Collegamento 
 
 
-| Implementa il connettore da BlueXP | L'utente di Google Cloud che implementa un connettore di BlueXP ha bisogno di autorizzazioni specifiche per implementare il connettore in Google Cloud. | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["Impostare le autorizzazioni per implementare il connettore"] 
+| Implementa il connettore da BlueXP | L'utente di Google Cloud che implementa un connettore di BlueXP ha bisogno di autorizzazioni specifiche per implementare il connettore in Google Cloud. | link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["Impostare le autorizzazioni per creare il connettore"] 
 
 
 | Fornire le autorizzazioni per il connettore | L'account di servizio per l'istanza di Connector VM deve disporre di autorizzazioni specifiche per le operazioni quotidiane. È necessario associare l'account del servizio al connettore durante la distribuzione.
 
-Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive. | link:reference-permissions-gcp.html["Permessi Google Cloud per il connettore"] 
+Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive. | link:task-install-connector-google-bluexp-gcloud.html#step-3-set-up-permissions-for-the-connector["Impostare le autorizzazioni per il connettore"] 
 |===
 
 

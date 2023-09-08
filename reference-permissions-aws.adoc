@@ -30,10 +30,10 @@ Tenere presente quanto segue:
 * Se necessario, è possibile limitare le policy IAM utilizzando il modulo IAM `Condition` elemento. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["Documentazione AWS: Elemento Condition"^]
 * Per visualizzare istruzioni dettagliate sull'utilizzo di questi criteri, fare riferimento alle seguenti pagine:
 +
-** link:task-set-up-permissions-aws.html["Impostazione delle autorizzazioni per l'installazione del connettore in AWS (modalità standard)"]
-** link:task-set-up-permissions-on-prem.html["Impostazione delle autorizzazioni per l'installazione on-premise del connettore (modalità standard)"]
-** link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Impostare le autorizzazioni per la modalità limitata"]
-** link:task-prepare-private-mode.html#prepare-cloud-permissions["Impostare le autorizzazioni per la modalità privata"]
+** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["Impostare le autorizzazioni per un'implementazione di AWS Marketplace"]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Impostare le autorizzazioni per le implementazioni on-premise"]
+** link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità limitata"]
+** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità privata"]
 
 
 

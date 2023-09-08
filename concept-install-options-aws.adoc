@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-install-options-aws.html 
 keywords: install connector aws, aws install connector, connector aws, aws connector, installation options, aws marketplace, manual install 
-summary: 'Esistono diversi modi per creare un connettore in AWS. Direttamente da BlueXP è il modo più comune. L"opzione di installazione scelta determina il modo in cui si prepara per l"implementazione.' 
+summary: Esistono diversi modi per creare un connettore in AWS. Direttamente da BlueXP è il modo più comune. 
 ---
 = Opzioni di installazione del connettore in AWS
 :hardbreaks:
@@ -14,21 +14,19 @@ summary: 'Esistono diversi modi per creare un connettore in AWS. Direttamente da
 
 
 [role="lead"]
-Esistono diversi modi per creare un connettore in AWS. Direttamente da BlueXP è il modo più comune. L'opzione di installazione scelta determina il modo in cui si prepara per l'implementazione.
+Esistono diversi modi per creare un connettore in AWS. Direttamente da BlueXP è il modo più comune.
 
 Sono disponibili le seguenti opzioni di installazione:
 
-* Creare il connettore direttamente da BlueXP (opzione standard)
+* link:task-install-connector-aws-bluexp.html["Creare il connettore direttamente da BlueXP"] (questa è l'opzione standard)
 +
 Questa azione avvia un'istanza EC2 che esegue Linux e il software Connector in un VPC a scelta.
 
-* Creare un connettore da AWS Marketplace
+* link:task-install-connector-aws-marketplace.html["Creare un connettore da AWS Marketplace"]
 +
-Questa azione avvia anche un'istanza EC2 che esegue Linux e il software Connector.
+Questa azione avvia anche un'istanza EC2 che esegue Linux e il software Connector, ma l'implementazione viene avviata direttamente dal marketplace di AWS e non da BlueXP.
 
-* Scaricare e installare manualmente il software sul proprio host Linux
+* link:task-install-connector-aws-manual.html["Scaricare e installare manualmente il software sul proprio host Linux"]
 
 
 L'opzione di installazione scelta influisce sul modo in cui si prepara l'installazione. Ciò include il modo in cui si forniscono a BlueXP le autorizzazioni necessarie per autenticare e gestire le risorse in AWS.
-
-link:task-install-connector-aws.html["Scopri come installare il connettore in AWS"].

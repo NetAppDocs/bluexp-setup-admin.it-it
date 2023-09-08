@@ -141,18 +141,20 @@ Un account Admin BlueXP può creare un connettore direttamente da BlueXP, dal me
 
 Sono necessarie autorizzazioni specifiche per creare il connettore direttamente da BlueXP e un altro set di autorizzazioni per l'istanza del connettore stesso. Se si crea il connettore in AWS o Azure direttamente da BlueXP, BlueXP crea il connettore con le autorizzazioni necessarie.
 
-Per informazioni su come impostare le autorizzazioni, fare riferimento alle seguenti pagine:
+Quando si utilizza BlueXP in modalità standard, il modo in cui si forniscono le autorizzazioni dipende da come si intende creare il connettore.
+
+Per informazioni su come impostare le autorizzazioni, fare riferimento a quanto segue:
 
 * Modalità standard
 +
-** link:task-set-up-permissions-aws.html["Impostare le autorizzazioni AWS"]
-** link:task-set-up-permissions-azure.html["Impostare le autorizzazioni Azure"]
-** link:task-set-up-permissions-google.html["Impostare le autorizzazioni di Google Cloud"]
-** link:task-set-up-permissions-on-prem.html["Impostare le autorizzazioni cloud per le implementazioni on-premise"]
+** link:concept-install-options-aws.html["Opzioni di installazione del connettore in AWS"]
+** link:concept-install-options-azure.html["Opzioni di installazione del connettore in Azure"]
+** link:concept-install-options-google.html["Opzioni di installazione del connettore in Google Cloud"]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Impostare le autorizzazioni cloud per le implementazioni on-premise"]
 
 
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Impostare le autorizzazioni cloud per la modalità limitata"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["Impostare le autorizzazioni cloud per la modalità privata"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità limitata"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità privata"]
 
 
 Per visualizzare le autorizzazioni necessarie per il connettore, fare riferimento alle seguenti pagine:

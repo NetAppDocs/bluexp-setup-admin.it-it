@@ -20,7 +20,7 @@ Scopri come BlueXP utilizza le credenziali e le autorizzazioni Azure per eseguir
 
 == Credenziali iniziali di Azure
 
-Quando si implementa un connettore da BlueXP, è necessario utilizzare un account Azure o un'entità di servizio che disponga delle autorizzazioni necessarie per implementare la macchina virtuale del connettore. Le autorizzazioni richieste sono elencate nella link:task-set-up-permissions-azure.html["Policy di implementazione del connettore per Azure"].
+Quando si implementa un connettore da BlueXP, è necessario utilizzare un account Azure o un'entità di servizio che disponga delle autorizzazioni necessarie per implementare la macchina virtuale del connettore. Le autorizzazioni richieste sono elencate nella link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Policy di implementazione del connettore per Azure"].
 
 Quando BlueXP implementa la macchina virtuale del connettore in Azure, abilita una https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identità gestita assegnata dal sistema"^] sulla macchina virtuale, crea un ruolo personalizzato e lo assegna alla macchina virtuale. Il ruolo fornisce a BlueXP le autorizzazioni necessarie per gestire le risorse e i processi all'interno dell'abbonamento Azure. link:reference-permissions-azure.html["Analisi dell'utilizzo delle autorizzazioni da parte di BlueXP"].
 
@@ -66,10 +66,10 @@ Per informazioni su come impostare le autorizzazioni, fare riferimento alle segu
 
 * Modalità standard
 +
-** link:task-set-up-permissions-azure.html["Impostare le autorizzazioni Azure"]
-** link:task-set-up-permissions-on-prem.html["Impostare le autorizzazioni cloud per le implementazioni on-premise"]
+** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Impostare le autorizzazioni per un'implementazione di Azure Marketplace"]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Impostare le autorizzazioni per le implementazioni on-premise"]
 
 
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Impostare le autorizzazioni cloud per la modalità limitata"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["Impostare le autorizzazioni cloud per la modalità privata"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità limitata"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità privata"]
 

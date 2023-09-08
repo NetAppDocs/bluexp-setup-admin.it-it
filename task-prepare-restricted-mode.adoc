@@ -18,7 +18,7 @@ Preparare l'ambiente prima di implementare BlueXP in modalità limitata. Ad esem
 
 
 
-== Comprendere il funzionamento della modalità limitata
+== Fase 1: Comprendere il funzionamento della modalità limitata
 
 Prima di iniziare, è necessario conoscere il funzionamento di BlueXP in modalità limitata.
 
@@ -30,7 +30,7 @@ link:concept-modes.html["Scopri come funziona la modalità limitata"].
 
 
 
-== Esaminare le opzioni di installazione
+== Passaggio 2: Esaminare le opzioni di installazione
 
 In modalità limitata, è possibile installare solo il connettore nel cloud. Sono disponibili le seguenti opzioni di installazione:
 
@@ -41,7 +41,7 @@ In modalità limitata, è possibile installare solo il connettore nel cloud. Son
 
 
 
-== Esaminare i requisiti dell'host
+== Fase 3: Esaminare i requisiti dell'host
 
 Il software del connettore deve essere eseguito su un host che soddisfi i requisiti specifici del sistema operativo, della RAM, dei requisiti delle porte e così via.
 
@@ -86,22 +86,37 @@ Motore Docker:: Prima di installare il connettore, è necessario installare Dock
 
 
 
-== Preparare il collegamento in rete per il connettore
+== Fase 4: Preparare il collegamento in rete
 
 Configura la tua rete in modo che il connettore possa gestire risorse e processi all'interno del tuo ambiente di cloud pubblico. Oltre a disporre di una rete virtuale e di una subnet per il connettore, è necessario assicurarsi che siano soddisfatti i seguenti requisiti.
 
+Connessioni alle reti di destinazione:: Il connettore deve disporre di una connessione di rete alla posizione in cui si intende gestire lo storage. Ad esempio, il VPC o VNET in cui si intende implementare Cloud Volumes ONTAP o il data center in cui risiedono i cluster ONTAP on-premise.
+Preparare la rete per l'accesso dell'utente alla console BlueXP:: In modalità limitata, l'interfaccia utente di BlueXP è accessibile dal connettore. Quando si utilizza l'interfaccia utente di BlueXP, si contatta alcuni endpoint per completare le attività di gestione dei dati. Questi endpoint vengono contattati dal computer di un utente quando si completano azioni specifiche dalla console BlueXP.
++
+--
+[cols="2*"]
+|===
+| Endpoint | Scopo 
 
 
-=== Connessioni alle reti di destinazione
-
-Il connettore deve disporre di una connessione di rete alla posizione in cui si intende gestire lo storage. Ad esempio, il VPC o VNET in cui si intende implementare Cloud Volumes ONTAP o il data center in cui risiedono i cluster ONTAP on-premise.
+| \https://signin.b2c.netapp.com | Necessario per aggiornare le credenziali NetApp Support Site (NSS) o per aggiungere nuove credenziali NSS a BlueXP. 
 
 
+| \https://netapp-cloud-account.auth0.com
 
-=== Accesso a Internet in uscita per installazioni manuali
+\https://cdn.auth0.com
 
-Quando si installa manualmente il connettore sul proprio host Linux, il programma di installazione del connettore richiede l'accesso ai seguenti URL durante il processo di installazione:
+\https://services.cloud.netapp.com | Il browser Web si connette a questi endpoint per un'autenticazione utente centralizzata tramite BlueXP. 
 
+
+| \https://widget.intercom.io | Per chat in-product che ti consente di parlare con gli esperti cloud di NetApp. 
+|===
+--
+
+
+Endpoint contattati durante l'installazione manuale:: Quando si installa manualmente il connettore sul proprio host Linux, il programma di installazione del connettore richiede l'accesso ai seguenti URL durante il processo di installazione:
++
+--
 * \https://support.netapp.com
 * \https://mysupport.netapp.com
 * \https://cloudmanager.cloud.netapp.com/tenancy
@@ -120,12 +135,10 @@ Questo endpoint è richiesto solo nelle regioni governative di Azure.
 
 L'host potrebbe tentare di aggiornare i pacchetti del sistema operativo durante l'installazione. L'host può contattare diversi siti di mirroring per questi pacchetti di sistemi operativi.
 
-
-
-=== Accesso a Internet in uscita per le operazioni quotidiane
-
-La posizione di rete in cui si implementa il connettore deve disporre di una connessione Internet in uscita. Il connettore richiede l'accesso a Internet in uscita per contattare i seguenti endpoint al fine di gestire risorse e processi all'interno dell'ambiente di cloud pubblico.
-
+--
+Accesso a Internet in uscita per le operazioni quotidiane:: La posizione di rete in cui si implementa il connettore deve disporre di una connessione Internet in uscita. Il connettore richiede l'accesso a Internet in uscita per contattare i seguenti endpoint al fine di gestire risorse e processi all'interno dell'ambiente di cloud pubblico.
++
+--
 [cols="2a,1a"]
 |===
 | Endpoint | Scopo 
@@ -142,7 +155,7 @@ Servizi AWS (amazonaws.com):
 * S3 (Simple Storage Service)
 
  a| 
-Per gestire le risorse in AWS. L'endpoint esatto dipende dalla regione in cui viene implementato il connettore. https://docs.aws.amazon.com/general/latest/gr/rande.html["Per ulteriori informazioni, fare riferimento alla documentazione AWS"^]
+Per gestire le risorse in AWS. L'endpoint esatto dipende dall'area AWS che stai utilizzando. https://docs.aws.amazon.com/general/latest/gr/rande.html["Per ulteriori informazioni, fare riferimento alla documentazione AWS"^]
 
 
 
@@ -227,35 +240,35 @@ Questo endpoint è richiesto solo nelle regioni governative di Azure.
 Per aggiornare il connettore e i relativi componenti Docker.
 
 |===
+--
 
 
-=== Server proxy
-
-Se l'organizzazione richiede la distribuzione di un server proxy per tutto il traffico Internet in uscita, ottenere le seguenti informazioni sul proxy HTTP o HTTPS. Queste informazioni devono essere fornite durante l'installazione.
-
-* Indirizzo IP
-* Credenziali
-* Certificato HTTPS
-
-
-
-
-=== Indirizzo IP pubblico in Azure
-
-Se si desidera utilizzare un indirizzo IP pubblico con la macchina virtuale del connettore in Azure, l'indirizzo IP deve utilizzare una SKU di base per assicurarsi che BlueXP utilizzi questo indirizzo IP pubblico.
-
+Indirizzo IP pubblico in Azure:: Se si desidera utilizzare un indirizzo IP pubblico con la macchina virtuale del connettore in Azure, l'indirizzo IP deve utilizzare una SKU di base per assicurarsi che BlueXP utilizzi questo indirizzo IP pubblico.
++
+--
 image:screenshot-azure-sku.png["Una schermata della creazione di un nuovo indirizzo IP in Azure che consente di scegliere Basic nel campo SKU."]
 
 Se invece si utilizza un indirizzo IP SKU standard, BlueXP utilizza l'indirizzo _private_ IP del connettore, invece dell'indirizzo IP pubblico. Se il computer utilizzato per accedere a BlueXP Console non dispone dell'accesso a tale indirizzo IP privato, le azioni da BlueXP Console non avranno esito positivo.
 
 https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Documentazione di Azure: SKU IP pubblico"^]
 
+--
 
 
-=== Porte
+Server proxy:: Se l'organizzazione richiede la distribuzione di un server proxy per tutto il traffico Internet in uscita, ottenere le seguenti informazioni sul proxy HTTP o HTTPS. Queste informazioni devono essere fornite durante l'installazione.
++
+--
+* Indirizzo IP
+* Credenziali
+* Certificato HTTPS
 
-Non c'è traffico in entrata verso il connettore, a meno che non venga avviato o se il connettore viene utilizzato come proxy per inviare messaggi AutoSupport da Cloud Volumes ONTAP al supporto NetApp.
 
+--
+
+
+Porte:: Non c'è traffico in entrata verso il connettore, a meno che non venga avviato o se il connettore viene utilizzato come proxy per inviare messaggi AutoSupport da Cloud Volumes ONTAP al supporto NetApp.
++
+--
 * HTTP (80) e HTTPS (443) forniscono l'accesso all'interfaccia utente locale, che verrà utilizzata in rare circostanze.
 * SSH (22) è necessario solo se è necessario connettersi all'host per la risoluzione dei problemi.
 * Le connessioni in entrata sulla porta 3128 sono necessarie se si implementano sistemi Cloud Volumes ONTAP in una subnet in cui non è disponibile una connessione Internet in uscita.
@@ -264,32 +277,12 @@ Se i sistemi Cloud Volumes ONTAP non dispongono di una connessione a Internet in
 
 
 
+--
 
 
-== Preparare la rete per l'accesso dell'utente alla console BlueXP
-
-In modalità limitata, l'interfaccia utente di BlueXP è accessibile dal connettore. Quando si utilizza l'interfaccia utente di BlueXP, si contatta alcuni endpoint per completare le attività di gestione dei dati. Il computer che esegue il browser Web deve disporre di connessioni ai seguenti endpoint.
-
-[cols="2*"]
-|===
-| Endpoint | Scopo 
 
 
-| \https://signin.b2c.netapp.com | Necessario per aggiornare le credenziali NetApp Support Site (NSS) o per aggiungere nuove credenziali NSS a BlueXP. 
-
-
-| \https://netapp-cloud-account.auth0.com
-
-\https://cdn.auth0.com
-
-\https://services.cloud.netapp.com | Il browser Web si connette a questi endpoint per un'autenticazione utente centralizzata tramite BlueXP. 
-
-
-| \https://widget.intercom.io | Per chat in-product che ti consente di parlare con gli esperti cloud di NetApp. 
-|===
-
-
-== Preparare le autorizzazioni cloud
+== Passaggio: 5 preparare le autorizzazioni del cloud
 
 BlueXP richiede le autorizzazioni del provider cloud per implementare Cloud Volumes ONTAP in una rete virtuale e utilizzare i servizi dati BlueXP. È necessario impostare le autorizzazioni nel provider cloud e associarle al connettore.
 
@@ -606,7 +599,7 @@ A questo punto si dispone di un account di servizio che è possibile assegnare a
 ====
 
 
-== Abilitare le API di Google Cloud
+== Passaggio 6: Abilitare le API di Google Cloud
 
 Per implementare Cloud Volumes ONTAP in Google Cloud sono necessarie diverse API.
 

@@ -1,0 +1,71 @@
+= 
+:allow-uri-read: 
+
+
+Host dedicato:: Il connettore non è supportato su un host condiviso con altre applicazioni. L'host deve essere un host dedicato.
+
+
+VPC e subnet:: Quando si crea il connettore, è necessario specificare il VPC e la subnet in cui deve risiedere il connettore.
+
+
+VNET e subnet:: Quando si crea il connettore, è necessario specificare il VNET e la subnet in cui deve risiedere il connettore.
+
+
+Connessioni alle reti di destinazione:: Un connettore richiede una connessione di rete alla posizione in cui si intende creare e gestire gli ambienti di lavoro. Ad esempio, la rete in cui intendi creare sistemi Cloud Volumes ONTAP o un sistema storage nel tuo ambiente on-premise.
+
+
+Accesso a Internet in uscita:: La posizione di rete in cui si implementa il connettore deve disporre di una connessione Internet in uscita per contattare endpoint specifici.
+
+
+Endpoint contattati dalla console BlueXP:: Quando utilizzi la console basata sul web BlueXP fornita attraverso il layer SaaS, contatta diversi endpoint per completare le attività di gestione dei dati. Sono inclusi gli endpoint che vengono contattati per implementare il connettore dalla console BlueXP.
++
+--
+link:reference-networking-saas-console.html["Visualizzare l'elenco degli endpoint contattati dalla console BlueXP"].
+
+--
+
+
+Regione di Azure:: Se si utilizza Cloud Volumes ONTAP, il connettore deve essere implementato nella stessa area Azure dei sistemi Cloud Volumes ONTAP gestiti o in https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Coppia di regioni Azure"^] Per i sistemi Cloud Volumes ONTAP. Questo requisito garantisce l'utilizzo di una connessione Azure Private link tra Cloud Volumes ONTAP e i relativi account di storage associati.
++
+--
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Scopri come Cloud Volumes ONTAP utilizza un collegamento privato Azure"^]
+
+--
+
+
+Porte:: Non c'è traffico in entrata verso il connettore, a meno che non venga avviato o se il connettore viene utilizzato come proxy per inviare messaggi AutoSupport da Cloud Volumes ONTAP al supporto NetApp.
++
+--
+* HTTP (80) e HTTPS (443) forniscono l'accesso all'interfaccia utente locale, che verrà utilizzata in rare circostanze.
+* SSH (22) è necessario solo se è necessario connettersi all'host per la risoluzione dei problemi.
+* Le connessioni in entrata sulla porta 3128 sono necessarie se si implementano sistemi Cloud Volumes ONTAP in una subnet in cui non è disponibile una connessione Internet in uscita.
++
+Se i sistemi Cloud Volumes ONTAP non dispongono di una connessione a Internet in uscita per inviare messaggi AutoSupport, BlueXP configura automaticamente tali sistemi in modo che utilizzino un server proxy incluso nel connettore. L'unico requisito è garantire che il gruppo di sicurezza del connettore consenta le connessioni in entrata sulla porta 3128. Dopo aver implementato il connettore, aprire questa porta.
+
+
+
+--
+
+
+Server proxy:: Se l'organizzazione richiede la distribuzione di un server proxy per tutto il traffico Internet in uscita, ottenere le seguenti informazioni sul proxy HTTP o HTTPS. Queste informazioni devono essere fornite durante l'installazione.
++
+--
+* Indirizzo IP
+* Credenziali
+* Certificato HTTPS
+
+
+--
+
+
+Indirizzo IP pubblico in Azure:: Se si desidera utilizzare un indirizzo IP pubblico con la macchina virtuale del connettore in Azure, l'indirizzo IP deve utilizzare una SKU di base per assicurarsi che BlueXP utilizzi questo indirizzo IP pubblico.
++
+--
+image:screenshot-azure-sku.png["Una schermata della creazione di un nuovo indirizzo IP in Azure che consente di scegliere Basic nel campo SKU."]
+
+Se invece si utilizza un indirizzo IP SKU standard, BlueXP utilizza l'indirizzo _private_ IP del connettore, invece dell'indirizzo IP pubblico. Se il computer utilizzato per accedere a BlueXP Console non dispone dell'accesso a tale indirizzo IP privato, le azioni da BlueXP Console non avranno esito positivo.
+
+https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Documentazione di Azure: SKU IP pubblico"^]
+
+--
+

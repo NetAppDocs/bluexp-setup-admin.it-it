@@ -18,7 +18,7 @@ Implementare il connettore in modalità limitata in modo da poter utilizzare Blu
 
 
 
-== Montare il connettore
+== Fase 1: Installare il connettore
 
 Installare il connettore dal mercato del provider di servizi cloud o installando manualmente il software sul proprio host Linux.
 
@@ -35,12 +35,12 @@ link:task-prepare-restricted-mode.html["Scopri i requisiti di rete"]
 
 * Un ruolo IAM con un criterio allegato che include le autorizzazioni richieste per il connettore.
 +
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Scopri come impostare le autorizzazioni AWS"]
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Scopri come impostare le autorizzazioni AWS"]
 
 * Autorizzazioni per iscriversi e annullare l'iscrizione da AWS Marketplace per l'utente IAM.
 * Comprensione dei requisiti di CPU e RAM per l'istanza.
 +
-link:task-prepare-restricted-mode.html#review-host-requirements["Esaminare i requisiti dell'istanza"].
+link:task-prepare-restricted-mode.html#step-3-review-host-requirements["Esaminare i requisiti dell'istanza"].
 
 * Coppia di chiavi per l'istanza EC2.
 
@@ -100,7 +100,7 @@ link:task-prepare-restricted-mode.html["Scopri i requisiti di rete"]
 
 * Un ruolo IAM con un criterio allegato che include le autorizzazioni richieste per il connettore.
 +
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Scopri come impostare le autorizzazioni AWS"]
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Scopri come impostare le autorizzazioni AWS"]
 
 * Autorizzazioni per iscriversi e annullare l'iscrizione da AWS Marketplace per l'utente IAM.
 * Coppia di chiavi per l'istanza EC2.
@@ -154,7 +154,7 @@ link:task-prepare-restricted-mode.html["Scopri i requisiti di rete"]
 
 * Un ruolo personalizzato di Azure che include le autorizzazioni richieste per il connettore.
 +
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Scopri come impostare le autorizzazioni Azure"]
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Scopri come impostare le autorizzazioni Azure"]
 
 
 
@@ -294,7 +294,7 @@ Configurare BlueXP.
 ====
 
 
-== Configurare BlueXP
+== Fase 2: Configurare BlueXP
 
 Quando si accede alla console BlueXP per la prima volta, viene richiesto di scegliere un account a cui associare il connettore ed è necessario attivare la modalità limitata.
 
@@ -338,13 +338,13 @@ Fornire a BlueXP le autorizzazioni precedentemente impostate.
 
 
 
-== Fornire le autorizzazioni a BlueXP
+== Fase 3: Fornire le autorizzazioni ad BlueXP
 
 Se il connettore è stato distribuito da Azure Marketplace o se il software del connettore è stato installato manualmente, è necessario fornire le autorizzazioni precedentemente impostate per poter utilizzare i servizi BlueXP.
 
 Questi passaggi non si applicano se il connettore è stato implementato da AWS Marketplace perché è stato scelto il ruolo IAM richiesto durante l'implementazione.
 
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Scopri come preparare le autorizzazioni cloud"].
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Scopri come preparare le autorizzazioni cloud"].
 
 [role="tabbed-block"]
 ====

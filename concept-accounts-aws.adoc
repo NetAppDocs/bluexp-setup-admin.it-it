@@ -20,7 +20,7 @@ Scopri come BlueXP utilizza le credenziali e le autorizzazioni AWS per eseguire 
 
 == Credenziali AWS iniziali
 
-Quando si implementa un connettore da BlueXP, è necessario fornire l'ARN di un ruolo IAM o le chiavi di accesso per un utente IAM. Il metodo di autenticazione utilizzato deve disporre delle autorizzazioni necessarie per implementare l'istanza del connettore in AWS. Le autorizzazioni richieste sono elencate nella link:task-set-up-permissions-aws.html["Policy di implementazione del connettore per AWS"].
+Quando si implementa un connettore da BlueXP, è necessario fornire l'ARN di un ruolo IAM o le chiavi di accesso per un utente IAM. Il metodo di autenticazione utilizzato deve disporre delle autorizzazioni necessarie per implementare l'istanza del connettore in AWS. Le autorizzazioni richieste sono elencate nella link:task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["Policy di implementazione del connettore per AWS"].
 
 Quando BlueXP avvia l'istanza del connettore in AWS, crea un ruolo IAM e un profilo di istanza per l'istanza. Allega inoltre un criterio che fornisce al connettore le autorizzazioni per gestire risorse e processi all'interno di tale account AWS. link:reference-permissions-aws.html["Analisi dell'utilizzo delle autorizzazioni da parte di BlueXP"].
 
@@ -84,12 +84,12 @@ Per informazioni su come impostare le autorizzazioni, fare riferimento alle segu
 
 * Modalità standard
 +
-** link:task-set-up-permissions-aws.html["Impostare le autorizzazioni AWS"]
-** link:task-set-up-permissions-on-prem.html["Impostare le autorizzazioni cloud per le implementazioni on-premise"]
+** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["Impostare le autorizzazioni per un'implementazione di AWS Marketplace"]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Impostare le autorizzazioni per le implementazioni on-premise"]
 
 
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Impostare le autorizzazioni cloud per la modalità limitata"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["Impostare le autorizzazioni cloud per la modalità privata"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità limitata"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità privata"]
 
 
 

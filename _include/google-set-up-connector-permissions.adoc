@@ -1,0 +1,57 @@
+= 
+:allow-uri-read: 
+
+
+Un account di servizio Google Cloud è necessario per fornire a Connector le autorizzazioni necessarie per gestire le risorse in Google Cloud. Quando si crea il connettore, è necessario associare questo account di servizio alla macchina virtuale del connettore.
+
+.Fasi
+. Creare un ruolo personalizzato in Google Cloud:
++
+.. Creare un file YAML che includa il contenuto di link:reference-permissions-gcp.html["Autorizzazioni dell'account di servizio per il connettore"].
+.. Da Google Cloud, attiva la shell cloud.
+.. Caricare il file YAML che include le autorizzazioni richieste.
+.. Creare un ruolo personalizzato utilizzando `gcloud iam roles create` comando.
++
+Nell'esempio seguente viene creato un ruolo denominato "Connector" a livello di progetto:
+
++
+`gcloud iam roles create connector --project=myproject --file=connector.yaml`
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documenti Google Cloud: Creazione e gestione di ruoli personalizzati"^]
+
+
+
+. Creare un account di servizio in Google Cloud e assegnare il ruolo all'account di servizio:
++
+.. Dal servizio IAM & Admin, selezionare *account di servizio > Crea account di servizio*.
+.. Inserire i dettagli dell'account del servizio e selezionare *Crea e continua*.
+.. Selezionare il ruolo appena creato.
+.. Completare i passaggi rimanenti per creare il ruolo.
++
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Documenti Google Cloud: Creazione di un account di servizio"^]
+
+
+
+. Se si prevede di implementare i sistemi Cloud Volumes ONTAP in progetti diversi da quello in cui si trova il connettore, è necessario fornire l'account di servizio del connettore per accedere a tali progetti.
++
+Ad esempio, supponiamo che il connettore si trovi nel progetto 1 e che si desideri creare sistemi Cloud Volumes ONTAP nel progetto 2. È necessario concedere l'accesso all'account di servizio nel progetto 2.
+
++
+.. Dal servizio IAM & Admin, selezionare il progetto Google Cloud in cui si desidera creare i sistemi Cloud Volumes ONTAP.
+.. Nella pagina *IAM*, selezionare *Concedi accesso* e fornire i dettagli richiesti.
++
+*** Inserire l'indirizzo e-mail dell'account di servizio del connettore.
+*** Selezionare il ruolo personalizzato del connettore.
+*** Selezionare *Salva*.
+
+
+
+
++
+Per ulteriori informazioni, fare riferimento a. https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Documentazione di Google Cloud"^]
+
+
+
+.Risultato
+L'account di servizio per la macchina virtuale del connettore è impostato.

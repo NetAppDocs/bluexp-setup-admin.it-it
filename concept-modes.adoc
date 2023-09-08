@@ -94,9 +94,9 @@ BlueXP funziona come segue in modalità standard:
 Comunicazione in uscita:: La connettività è necessaria dal connettore al layer BlueXP SaaS, alle risorse pubblicamente disponibili del tuo cloud provider e ad altri componenti essenziali per le operazioni quotidiane.
 +
 --
-* link:task-set-up-networking-aws.html#endpoints-contacted-from-the-connector["Endpoint che il connettore contatta in AWS"]
-* link:task-set-up-networking-azure.html#endpoints-contacted-from-the-connector["Endpoint che il connettore contatta in Azure"]
-* link:task-set-up-networking-google.html#endpoints-contacted-from-the-connector["Endpoint che il connettore contatta in Google Cloud"]
+* link:task-install-connector-aws-bluexp.html#step-1-set-up-networking["Endpoint che il connettore contatta in AWS"]
+* link:task-install-connector-azure-bluexp.html#step-1-set-up-networking["Endpoint che il connettore contatta in Azure"]
+* link:task-install-connector-google-bluexp-gcloud.html#step-1-set-up-networking["Endpoint che il connettore contatta in Google Cloud"]
 
 
 --

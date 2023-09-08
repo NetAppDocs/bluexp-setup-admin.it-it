@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-quick-start-standard-mode.html 
 keywords: quick start, standard mode quick start 
-summary: Inizia a utilizzare BlueXP in modalità standard registrandoti dalla console BlueXP, creando facoltativamente un connettore e iscrivendoti a BlueXP. 
+summary: Inizia con BlueXP in modalità standard preparando il networking per la console BlueXP, iscrivendoti e creando un account, creando facoltativamente un connettore e iscrivendoti a BlueXP. 
 ---
-= Avvio rapido per BlueXP in modalità standard
+= Flusso di lavoro introduttivo (modalità standard)
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,19 +14,22 @@ summary: Inizia a utilizzare BlueXP in modalità standard registrandoti dalla co
 
 
 [role="lead"]
-Inizia a utilizzare BlueXP in modalità standard registrandoti dalla console BlueXP, creando facoltativamente un connettore e iscrivendoti a BlueXP.
+Inizia con BlueXP in modalità standard preparando il networking per la console BlueXP, iscrivendoti e creando un account, creando facoltativamente un connettore e iscrivendoti a BlueXP.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Registrati e crea un account
+Prima di iniziare, dovresti avere una conoscenza di link:concept-netapp-accounts.html["BlueXP"], link:concept-connectors.html["Connettori"], e. link:concept-modes.html["modalità di distribuzione"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] link:reference-networking-saas-console.html["Preparazione del networking per l'utilizzo della console BlueXP"]
+[role="quick-margin-para"]
+I computer che accedono alla console BlueXP devono disporre di connessioni a endpoint specifici per completare alcune attività amministrative. Se la rete limita l'accesso in uscita, è necessario assicurarsi che questi endpoint siano consentiti.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Due"] link:task-sign-up-saas.html["Registrati e crea un account"]
 [role="quick-margin-para"]
 Accedere alla https://console.bluexp.netapp.com["Console BlueXP"^] e iscriverti. Ti verrà offerta la possibilità di creare un account, ma puoi saltare questo passaggio se sei invitato a un account esistente.
 
 [role="quick-margin-para"]
 A questo punto, hai effettuato l'accesso e puoi iniziare a utilizzare diversi servizi BlueXP come Consulente digitale, Amazon FSX per ONTAP, Azure NetApp Files e altri ancora. link:concept-connectors.html["Scopri cosa puoi fare senza un connettore"].
 
-[role="quick-margin-para"]
-link:task-sign-up-saas.html["Scopri come iscriversi e creare un account"].
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Due"] Creare un connettore
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tre"] Creare un connettore
 [role="quick-margin-para"]
 Non è necessario un connettore per iniziare a utilizzare BlueXP, ma è possibile creare un connettore per sbloccare tutte le funzionalità e i servizi di BlueXP. Il connettore è il software NetApp che consente a BlueXP di gestire risorse e processi all'interno del tuo ambiente di cloud ibrido.
 
@@ -35,18 +38,15 @@ Un account Admin BlueXP può creare un connettore nel cloud o nella rete on-prem
 
 [role="quick-margin-list"]
 * link:concept-connectors.html["Scopri di più su quando sono necessari i connettori e sul loro funzionamento"]
-* link:task-quick-start-connector-aws.html["Scopri come creare un connettore in AWS"]
-* link:task-quick-start-connector-azure.html["Scopri come creare un connettore in Azure"]
-* link:task-quick-start-connector-google.html["Scopri come creare un connettore in Google Cloud"]
-* link:task-quick-start-connector-on-prem.html["Scopri come creare un connettore on-premise"]
+* link:concept-install-options-aws.html["Scopri come creare un connettore in AWS"]
+* link:concept-install-options-azure.html["Scopri come creare un connettore in Azure"]
+* link:concept-install-options-google.html["Scopri come creare un connettore in Google Cloud"]
+* link:task-install-connector-on-prem.html["Scopri come creare un connettore on-premise"]
 
 
 [role="quick-margin-para"]
 Nota: Se si desidera utilizzare i servizi BlueXP per gestire lo storage e i dati in Google Cloud, il connettore deve essere in esecuzione in Google Cloud.
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tre"] Iscriviti a BlueXP
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quattro"] link:task-subscribe-standard-mode.html["Iscriviti a BlueXP"]
 [role="quick-margin-para"]
 Iscriviti a BlueXP dal mercato del tuo cloud provider per pagare i servizi BlueXP a una tariffa oraria (PAYGO) o attraverso un contratto annuale.
-
-[role="quick-margin-para"]
-link:task-subscribe-standard-mode.html["Scopri come iscriverti a BlueXP"].

@@ -18,7 +18,7 @@ Implementare il connettore in modalità privata in modo da poter utilizzare Blue
 
 
 
-== Montare il connettore
+== Fase 1: Installare il connettore
 
 Scaricare il programma di installazione del prodotto dal NetApp Support Site e installare manualmente il connettore sul proprio host Linux.
 
@@ -64,7 +64,7 @@ Il software del connettore è installato. Ora puoi configurare BlueXP.
 
 
 
-== Configurare BlueXP
+== Fase 2: Configurare BlueXP
 
 Quando si accede alla console BlueXP per la prima volta, viene richiesto di configurare BlueXP.
 
@@ -102,11 +102,11 @@ Fornire a BlueXP le autorizzazioni precedentemente impostate.
 
 
 
-== Fornire le autorizzazioni a BlueXP
+== Fase 3: Fornire le autorizzazioni ad BlueXP
 
 Se si desidera creare ambienti di lavoro Cloud Volumes ONTAP, è necessario fornire a BlueXP le autorizzazioni cloud precedentemente configurate.
 
-link:task-prepare-private-mode.html#prepare-cloud-permissions["Scopri come preparare le autorizzazioni cloud"].
+link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Scopri come preparare le autorizzazioni cloud"].
 
 [role="tabbed-block"]
 ====
