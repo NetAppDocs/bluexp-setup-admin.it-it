@@ -3406,7 +3406,6 @@ Questo endpoint è richiesto solo nelle regioni governative di Azure.</block>
   <block id="6d2d5c49a26a8339a26911674ee69f80" category="list-text">Per associare le credenziali a un nuovo abbonamento, selezionare *Aggiungi abbonamento &gt; continua* e seguire la procedura descritta in AWS Marketplace:</block>
   <block id="cc5b03fa4f937c63363767c812feeb34" category="list-text">Selezionare *Visualizza opzioni di acquisto*.</block>
   <block id="0b45e429b84384fa541446c3364409c9" category="list-text">Selezionare *Configura account*.</block>
-  <block id="9d5f9909bec8cf71910a31c50878914c" category="section-title">30 luglio</block>
   <block id="167693b239be0e2939d61376cd3a5487" category="section-title">Connettore 3.9.32</block>
   <block id="7af14628b780746da1b2b7396f10a07e" category="list-text">È ora possibile utilizzare l'API del servizio di audit BlueXP per esportare i registri di audit.</block>
   <block id="5a97fe4fe664c9e98d8ad88cdbf44d98" category="inline-link">Scopri di più sull'utilizzo dell'API del servizio di audit</block>
@@ -3773,4 +3772,11 @@ membro: Account di servizio BlueXP come serviceAccount.user</block>
   <block id="490065fa675522d3a515cadb526d26f6" category="sidebar">Creare dal mercato</block>
   <block id="655a3c90b399118b5d073277c90e6b0f" category="sidebar">Installazione manuale</block>
   <block id="054df94b323e23fce659cffe65ef10ef" category="sidebar">Crea da BlueXP o utilizzando gcloud</block>
+  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">10 settembre 2023</block>
+  <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">Connettore 3.9.33</block>
+  <block id="d8465669650730f887acd3754f3dea9f" category="list-text">Quando crei un connettore in AWS da BlueXP, puoi cercare nel campo Coppia di chiavi per trovare più facilmente la coppia di chiavi da utilizzare con l'istanza del connettore.</block>
+  <block id="5fa35188b7dd9c428afc77ce84eeb10b" category="inline-image-macro">Schermata dell'opzione di ricerca nel campo Key Pair (Coppia di chiavi) visualizzata nella pagina Network quando si crea un connettore in AWS da BlueXP.</block>
+  <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="90641719c2018ef19f0a8140a88f5fee" category="list-text">Questo aggiornamento include anche le correzioni dei bug.</block>
+  <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">30 luglio 2023</block>
 </blocks>
