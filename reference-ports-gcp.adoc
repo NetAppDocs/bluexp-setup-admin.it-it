@@ -72,7 +72,7 @@ NOTE: L'indirizzo IP di origine è l'host del connettore.
 | Servizio | Protocollo | Porta | Destinazione | Scopo 
 
 
-| Chiamate API e AutoSupport | HTTPS | 443 | LIF gestione cluster ONTAP e Internet in uscita | Chiamate API a Google Cloud, a ONTAP, alla classificazione BlueXP, alla protezione ransomware BlueXP e invio di messaggi AutoSupport a NetApp 
+| Chiamate API e AutoSupport | HTTPS | 443 | LIF gestione cluster ONTAP e Internet in uscita | Le chiamate API a Google Cloud, a ONTAP, alla classificazione BlueXP e all'invio di messaggi AutoSupport a NetApp 
 
 
 | Chiamate API | TCP | 8080 | Classificazione BlueXP | Eseguire una verifica dell'istanza di classificazione BlueXP durante l'implementazione 

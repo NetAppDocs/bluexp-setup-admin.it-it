@@ -75,7 +75,7 @@ NOTE: L'indirizzo IP di origine è l'host del connettore.
 | Servizio | Protocollo | Porta | Destinazione | Scopo 
 
 
-| Chiamate API e AutoSupport | HTTPS | 443 | LIF gestione cluster ONTAP e Internet in uscita | Chiamate API ad AWS, a ONTAP, alla classificazione BlueXP, alla protezione ransomware BlueXP e invio di messaggi AutoSupport a NetApp 
+| Chiamate API e AutoSupport | HTTPS | 443 | LIF gestione cluster ONTAP e Internet in uscita | L'API chiama AWS, ONTAP, classificandosi BlueXP e inviando messaggi AutoSupport a NetApp 
 
 
 .2+| Chiamate API | TCP | 3000 | Mediatore ONTAP ha | Comunicazione con il mediatore ONTAP ha 

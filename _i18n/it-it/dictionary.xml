@@ -566,8 +566,6 @@
   <block id="3e347fe716ab17eefd02acef8c0347bf" category="list-text"><block ref="3e347fe716ab17eefd02acef8c0347bf" category="inline-link-rx"></block></block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="inline-link">Consulente digitale</block>
   <block id="86d4d1274a29106954740fc239a0af79" category="list-text"><block ref="86d4d1274a29106954740fc239a0af79" category="inline-link-rx"></block></block>
-  <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="inline-link">Protezione ransomware</block>
-  <block id="ecbf594bb3a0b1f21d5ca3e417aec924" category="list-text"><block ref="ecbf594bb3a0b1f21d5ca3e417aec924" category="inline-link-rx"></block></block>
   <block id="e1d4fcf84146530af8da4a20a003710d" category="inline-link">Scopri di più su come utilizzare BlueXP per aiutare la tua organizzazione</block>
   <block id="b2be08edab4d3d89797b89ae19e20493" category="paragraph"><block ref="b2be08edab4d3d89797b89ae19e20493" category="inline-link-rx"></block></block>
   <block id="902e65d33784bd8924eb05e622aa2dda" category="section-title">Cloud provider supportati</block>
@@ -3355,9 +3353,6 @@ Questo endpoint è richiesto solo nelle regioni governative di Azure.</block>
   <block id="48f169efc2b522ea6ab10451a2a28cd8" category="summary">Per utilizzare le funzionalità e i servizi di BlueXP, è necessario fornire le autorizzazioni in modo che BlueXP possa eseguire le operazioni nell'ambiente cloud. Utilizzare i collegamenti presenti in questa pagina per accedere rapidamente alle autorizzazioni necessarie in base all'obiettivo.</block>
   <block id="6bc8bd282f003afcaaf88391550efbaf" category="cell">Eseguire il Tier dei cluster ONTAP on-premise su Amazon S3</block>
   <block id="23c27147b4e0e766d76ac0f6e872424e" category="section-title">Permessi StorageGRID</block>
-  <block id="eb44d47feda5532d1121c79d84128d2e" category="cell">Chiamate API ad AWS, a ONTAP, alla classificazione BlueXP, alla protezione ransomware BlueXP e invio di messaggi AutoSupport a NetApp</block>
-  <block id="e671b39f5fdb18b38eb5c968b368b3aa" category="cell">Chiamate API ad Azure, a ONTAP, alla classificazione BlueXP, alla protezione ransomware BlueXP e invio di messaggi AutoSupport a NetApp</block>
-  <block id="8150638aa57d2b5755445cf3ab8eac20" category="cell">Chiamate API a Google Cloud, a ONTAP, alla classificazione BlueXP, alla protezione ransomware BlueXP e invio di messaggi AutoSupport a NetApp</block>
   <block id="6d349a0af72df500a21b7660d8e471b2" category="paragraph"><block ref="6d349a0af72df500a21b7660d8e471b2" category="inline-link-rx"></block></block>
   <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">Selezionare *User Credentials* (credenziali utente).</block>
   <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">Per confermare che la procedura di registrazione è stata eseguita correttamente, selezionare l'icona Guida e selezionare *supporto*.</block>
@@ -3566,7 +3561,6 @@ Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono
   <block id="2a3be610e29cddb2c56aa61b555b895a" category="list-text">Quando è stata creata l'istanza del connettore in AWS, sono stati forniti una chiave di accesso AWS e una chiave segreta. È possibile utilizzare questa coppia di chiavi per SSH all'istanza. Il nome utente per l'istanza EC2 Linux è ubuntu (per i connettori creati prima di maggio 2023, il nome utente era EC2-user).</block>
   <block id="04e4cf5594e5bdae569d4fdcee8b46a6" category="list-text">Quando è stata creata la Connector VM in Azure, è stato specificato un nome utente e si è scelto di autenticarsi con una password o una chiave pubblica SSH. Utilizzare il metodo di autenticazione scelto per la connessione alla macchina virtuale.</block>
   <block id="300f031c227ed1b4448a8bb51abec2bb" category="paragraph">\https://netapp-cloud-account.auth0.com</block>
-  <block id="80a43f3cb5826b8218d88da517c1e84b" category="list-text">Al momento, le notifiche vengono inviate via email per i seguenti servizi e funzionalità di BlueXP: Connettore, Digital Wallet di BlueXP, copia e sincronizzazione di BlueXP, backup e recovery di BlueXP, tiering di BlueXP, report di migrazione di BlueXP e protezione dal ransomware di BlueXP. Ulteriori servizi verranno aggiunti nelle versioni future.</block>
   <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">Iscriviti a BlueXP dal marketplace AWS</block>
   <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">Iscriviti a BlueXP da Azure Marketplace</block>
   <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Iscriviti a BlueXP da Google Cloud Marketplace</block>
@@ -3778,4 +3772,8 @@ membro: Account di servizio BlueXP come serviceAccount.user</block>
 
 Non supportato in Google Cloud o in<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>,<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>, o.<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
   <block id="fcbe8b204f3332d68f1b0f5f05c998db" category="cell">Poiché non è disponibile l'accesso a Internet, non sono disponibili le seguenti funzioni: Aggiornamenti software automatici e AutoSupport.</block>
+  <block id="8bb35bd6add2b83baee34c828e6acacf" category="cell">Le chiamate API ad Azure, a ONTAP, alla classificazione BlueXP e all'invio di messaggi AutoSupport a NetApp</block>
+  <block id="d80bf17e105d87b4295cb2e090a28117" category="list-text">Al momento, le notifiche vengono inviate via email per i seguenti servizi e funzionalità di BlueXP: Connettore, Digital Wallet di BlueXP, copia e sincronizzazione di BlueXP, backup e recovery di BlueXP, tiering di BlueXP e report di migrazione di BlueXP. Ulteriori servizi verranno aggiunti nelle versioni future.</block>
+  <block id="2cc0b2404e9976abc7bb1156519a654c" category="cell">L'API chiama AWS, ONTAP, classificandosi BlueXP e inviando messaggi AutoSupport a NetApp</block>
+  <block id="5f16447aef2a6c01e852292f98e5a67d" category="cell">Le chiamate API a Google Cloud, a ONTAP, alla classificazione BlueXP e all'invio di messaggi AutoSupport a NetApp</block>
 </blocks>

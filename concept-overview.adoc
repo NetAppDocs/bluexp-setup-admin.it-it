@@ -68,7 +68,6 @@ Analisi e controllo:: Utilizza strumenti per monitorare, mappare e ottimizzare l
 * https://bluexp.netapp.com/digital-advisor["Consulente digitale"^]
 * https://bluexp.netapp.com/digital-advisor["Efficienza economica"^]
 * https://bluexp.netapp.com/digital-advisor["Resilienza operativa"^]
-* https://bluexp.netapp.com/ransomware-protection["Protezione ransomware"^]
 
 
 --
