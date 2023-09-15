@@ -2271,7 +2271,6 @@ oppure</block>
   <block id="f851630c999713801d4adbdaeecfc902" category="list-text">Specificare se l'istanza deve avere un indirizzo IP pubblico.</block>
   <block id="d0bf1fb8b3ea2c1aed553c11fcfc2431" category="list-text">Specificare le impostazioni del firewall che abilitano i metodi di connessione richiesti per l'istanza del connettore: SSH, HTTP e HTTPS.</block>
   <block id="2cff93ab04445d2412fc49f1670cf749" category="paragraph">Sono necessarie altre regole per configurazioni specifiche.</block>
-  <block id="79b8b9ad9bf89b0b494ac4c62694d70f" category="list-text">*Configure storage* (Configura storage): Mantenere le opzioni di storage predefinite.</block>
   <block id="752330cdb2fab31ec29aaa286269a882" category="list-text">*Dettagli avanzati*: In *Profilo istanza IAM*, scegliere il ruolo IAM che include le autorizzazioni richieste per il connettore.</block>
   <block id="10a3df02c55e733eca6fef076545645a" category="paragraph">AWS avvia il software con le impostazioni specificate. L'istanza di Connector e il software dovrebbero essere in esecuzione in circa cinque minuti.</block>
   <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">Identity Federation consente il single sign-on con BlueXP, in modo che gli utenti possano accedere utilizzando le credenziali della propria identità aziendale. Per iniziare, scopri come funziona la federazione delle identità con BlueXP e consulta una panoramica del processo di installazione.</block>
@@ -3776,4 +3775,6 @@ Non supportato in Google Cloud o in<block ref="da2732e6e9a1be4ab82a1194533aac59"
   <block id="d80bf17e105d87b4295cb2e090a28117" category="list-text">Al momento, le notifiche vengono inviate via email per i seguenti servizi e funzionalità di BlueXP: Connettore, Digital Wallet di BlueXP, copia e sincronizzazione di BlueXP, backup e recovery di BlueXP, tiering di BlueXP e report di migrazione di BlueXP. Ulteriori servizi verranno aggiunti nelle versioni future.</block>
   <block id="2cc0b2404e9976abc7bb1156519a654c" category="cell">L'API chiama AWS, ONTAP, classificandosi BlueXP e inviando messaggi AutoSupport a NetApp</block>
   <block id="5f16447aef2a6c01e852292f98e5a67d" category="cell">Le chiamate API a Google Cloud, a ONTAP, alla classificazione BlueXP e all'invio di messaggi AutoSupport a NetApp</block>
+  <block id="3bb1e2709fa189f2a1cf46aadeab3b46" category="list-text">*Configura archiviazione*: Mantenere le dimensioni e il tipo di disco predefiniti per il volume root.</block>
+  <block id="4aed728875c28373d48d9ac6dc115722" category="paragraph">Se si desidera abilitare la crittografia Amazon EBS sul volume root, selezionare *Avanzate*, espandere *Volume 1*, selezionare *crittografato*, quindi scegliere una chiave KMS.</block>
 </blocks>

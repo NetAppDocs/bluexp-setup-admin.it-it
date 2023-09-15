@@ -75,7 +75,10 @@ link:reference-ports-aws.html["Visualizzare le regole del gruppo di sicurezza pe
 
 
 
-** *Configure storage* (Configura storage): Mantenere le opzioni di storage predefinite.
+** *Configura archiviazione*: Mantenere le dimensioni e il tipo di disco predefiniti per il volume root.
++
+Se si desidera abilitare la crittografia Amazon EBS sul volume root, selezionare *Avanzate*, espandere *Volume 1*, selezionare *crittografato*, quindi scegliere una chiave KMS.
+
 ** *Dettagli avanzati*: In *Profilo istanza IAM*, scegliere il ruolo IAM che include le autorizzazioni richieste per il connettore.
 ** *Riepilogo*: Esaminare il riepilogo e selezionare *Avvia istanza*.
 
