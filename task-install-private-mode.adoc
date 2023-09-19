@@ -76,13 +76,13 @@ Viene visualizzata la seguente schermata.
 +
 image:screenshot-onprem-darksite-welcome.png["Una schermata della pagina di benvenuto che viene visualizzata dopo aver inserito l'indirizzo IP del connettore nel browser Web."]
 
-. Selezionare *Set Up New BlueXP* (Configura nuovo BlueXP*) e seguire le istruzioni per configurare il sistema.
+. Selezionare *Configura nuovo connettore BlueXP* e seguire le istruzioni a schermo per configurare il sistema.
 +
 ** *Dettagli sistema*: Inserire un nome per il connettore e il nome della società.
 +
 image:screenshot-onprem-darksite-details.png["Schermata della pagina System Details (Dettagli sistema) che richiede di inserire il nome BlueXP e il nome della società."]
 
-** *Create Admin User* (Crea utente amministratore): Consente di creare l'utente amministratore per il sistema.
+** *Creare un utente amministratore*: Creare l'utente amministratore per il sistema.
 +
 Questo account utente viene eseguito localmente sul sistema. Non esiste alcuna connessione al servizio auth0 disponibile tramite BlueXP.
 

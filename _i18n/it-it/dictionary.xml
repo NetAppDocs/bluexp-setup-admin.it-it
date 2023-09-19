@@ -1485,7 +1485,6 @@
   <block id="9f390f684f634b575bf8d3a2e73f760c" category="list-text">*Dettagli sistema*: Inserire un nome per il connettore e il nome della società.</block>
   <block id="ed55d4951cd784cfacedc42b26d251dd" category="inline-image-macro">Schermata della pagina System Details (Dettagli sistema) che richiede di inserire il nome BlueXP e il nome della società.</block>
   <block id="c630091323c70c3e08081e625ae63da9" category="paragraph"><block ref="c630091323c70c3e08081e625ae63da9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="43601154a054554dd57207148a15b7b1" category="list-text">*Create Admin User* (Crea utente amministratore): Consente di creare l'utente amministratore per il sistema.</block>
   <block id="0e5308fba9cc92e9ff80d599c7e865ca" category="paragraph">Questo account utente viene eseguito localmente sul sistema. Non esiste alcuna connessione al servizio auth0 disponibile tramite BlueXP.</block>
   <block id="d847fd38c43b77f685712342ed5f2a9a" category="list-text">Accedere a BlueXP utilizzando l'utente amministratore appena creato.</block>
   <block id="2fdca5f14e2fdf34df61ef1c2e18eae5" category="paragraph">Il connettore è stato installato e configurato.</block>
@@ -3435,7 +3434,6 @@ Questo endpoint è richiesto solo nelle regioni governative di Azure.</block>
   <block id="28d4bc1715fb315a1134ddb9ce9b69ef" category="paragraph">Se è stata creata una nuova area di lavoro, è necessario aggiungere anche il connettore a tale area di lavoro. Se non si aggiunge il connettore, gli amministratori dell'area di lavoro non possono accedere alle risorse presenti nell'area di lavoro. Per ulteriori informazioni, fare riferimento alla sezione seguente.</block>
   <block id="136dc09835924029e4299fa28f17233d" category="list-text">Selezionare *continua*.</block>
   <block id="b7d7e6e6aa05f7913906689b7f1e583a" category="list-text">*Revisione*: Rivedere le selezioni e selezionare *Avvio*.</block>
-  <block id="ecbc764762d64c7a0728c929154e75f5" category="list-text">Selezionare *Set Up New BlueXP* (Configura nuovo BlueXP*) e seguire le istruzioni per configurare il sistema.</block>
   <block id="22cb2add8f3bffef4e749ab0af395ded" category="list-text">*Revisione*: Esaminare i dettagli, accettare il contratto di licenza, quindi selezionare *Configurazione*.</block>
   <block id="451c5548be4e9e7bdee0e30d3122050a" category="paragraph"><block ref="5df7abb03e9cd39c0665b677aaa45ef4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a60f29cdbb848f0645646b0cceee422" category="paragraph">Tenere presente che il connettore sta contattando "cloudmanager.cloud.netapp.com", ma inizierà a contattare "api.bluexp.netapp.com" in una versione successiva.</block>
@@ -3777,4 +3775,6 @@ Non supportato in Google Cloud o in<block ref="da2732e6e9a1be4ab82a1194533aac59"
   <block id="5f16447aef2a6c01e852292f98e5a67d" category="cell">Le chiamate API a Google Cloud, a ONTAP, alla classificazione BlueXP e all'invio di messaggi AutoSupport a NetApp</block>
   <block id="3bb1e2709fa189f2a1cf46aadeab3b46" category="list-text">*Configura archiviazione*: Mantenere le dimensioni e il tipo di disco predefiniti per il volume root.</block>
   <block id="4aed728875c28373d48d9ac6dc115722" category="paragraph">Se si desidera abilitare la crittografia Amazon EBS sul volume root, selezionare *Avanzate*, espandere *Volume 1*, selezionare *crittografato*, quindi scegliere una chiave KMS.</block>
+  <block id="cf5973f42a5c4e31665e41b2ec75f8a0" category="list-text">Selezionare *Configura nuovo connettore BlueXP* e seguire le istruzioni a schermo per configurare il sistema.</block>
+  <block id="1759129089da3c0c000cb4c2196a2fd0" category="list-text">*Creare un utente amministratore*: Creare l'utente amministratore per il sistema.</block>
 </blocks>
