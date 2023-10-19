@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-netapp-accounts.html 
 keywords: accounts, workspaces, Connector, users, BlueXP website, admin, Account Admin, Workspace Admin, account settings, workspaces, users, members, connector, service connector, user accounts, what are users, what is a workspace, users and workspaces, bluexp account, netapp account 
-summary: 'Un account BlueXP offre la multi-tenancy per la tua organizzazione, consentendo di organizzare utenti e risorse in aree di lavoro isolate. Ad esempio, un gruppo di utenti può implementare e gestire i sistemi Cloud Volumes ONTAP in un"area di lavoro non visibile ad altri utenti che gestiscono diversi tipi di ambienti di lavoro in un"area di lavoro diversa.' 
+summary: 'Un account BlueXP offre la multi-tenancy per la tua organizzazione, consentendo di organizzare utenti e risorse in aree di lavoro isolate. Ad esempio, un gruppo di utenti può distribuire e gestire ambienti di lavoro Cloud Volumes ONTAP in un"area di lavoro non visibile agli utenti che gestiscono ambienti di lavoro in un"altra area di lavoro.' 
 ---
 = Scopri di più sugli account BlueXP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Un account BlueXP offre la multi-tenancy per la tua organizzazione, co
 
 
 [role="lead"]
-Un _account BlueXP_ fornisce la multi-tenancy per la tua organizzazione, consentendo di organizzare utenti e risorse in _aree di lavoro_ isolate. Ad esempio, un gruppo di utenti può implementare e gestire i sistemi Cloud Volumes ONTAP in un'area di lavoro non visibile ad altri utenti che gestiscono diversi tipi di ambienti di lavoro in un'area di lavoro diversa.
+Un _account BlueXP_ fornisce la multi-tenancy per la tua organizzazione, consentendo di organizzare utenti e risorse in _aree di lavoro_ isolate. Ad esempio, un gruppo di utenti può distribuire e gestire ambienti di lavoro Cloud Volumes ONTAP in un'area di lavoro non visibile agli utenti che gestiscono ambienti di lavoro in un'altra area di lavoro.
 
 Quando accedi per la prima volta a BlueXP, ti viene richiesto di selezionare o creare un account. Ad esempio, se non si dispone ancora di un account, viene visualizzata la seguente schermata:
 

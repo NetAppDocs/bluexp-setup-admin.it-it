@@ -81,6 +81,8 @@ Quando si utilizza BlueXP in modalità standard, è necessario un connettore per
 
 ^1^ sebbene sia possibile accedere a questi servizi senza un connettore, è necessario un connettore per avviare azioni dai servizi.
 
+Per utilizzare BlueXP in modalità limitata o privata è necessario un connettore.
+
 
 
 == I connettori devono essere sempre operativi
@@ -130,9 +132,9 @@ link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"].
 Un account Admin BlueXP può creare un connettore direttamente da BlueXP, dal mercato del tuo cloud provider o installando manualmente il software sul tuo host Linux. Il modo in cui iniziare dipende dall'utilizzo di BlueXP in modalità standard, limitata o privata.
 
 * link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"]
-* link:task-quick-start-standard-mode.html["Avvio rapido per BlueXP in modalità standard"]
-* link:task-quick-start-restricted-mode.html["Avvio rapido per BlueXP in modalità limitata"]
-* link:task-quick-start-private-mode.html["Avvio rapido per BlueXP in modalità privata"]
+* link:task-quick-start-standard-mode.html["Inizia subito con BlueXP in modalità standard"]
+* link:task-quick-start-restricted-mode.html["Inizia subito con BlueXP in modalità limitata"]
+* link:task-quick-start-private-mode.html["Inizia subito con BlueXP in modalità privata"]
 
 
 
@@ -157,7 +159,7 @@ Per informazioni su come impostare le autorizzazioni, fare riferimento a quanto 
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità privata"]
 
 
-Per visualizzare le autorizzazioni necessarie per il connettore, fare riferimento alle seguenti pagine:
+Per visualizzare le autorizzazioni esatte necessarie al connettore per le operazioni quotidiane, fare riferimento alle pagine seguenti:
 
 * link:reference-permissions-aws.html["Scopri come il connettore utilizza le autorizzazioni AWS"]
 * link:reference-permissions-azure.html["Scopri come il connettore utilizza le autorizzazioni Azure"]
