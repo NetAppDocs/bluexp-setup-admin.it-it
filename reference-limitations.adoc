@@ -24,12 +24,6 @@ Queste limitazioni sono specifiche per l'installazione e l'amministrazione di Bl
 
 
 
-=== Configurazione del proxy con gli utenti di dominio
-
-BlueXP non supporta gli utenti di dominio durante la configurazione di un server proxy per il connettore. Quando si inserisce un nome utente per il server proxy, questo deve essere un utente locale.
-
-
-
 === Le impostazioni predefinite dell'istanza EC2 non devono essere modificate
 
 Quando si implementa il connettore in AWS, per impostazione predefinita vengono configurate le seguenti impostazioni dell'istanza EC2:
