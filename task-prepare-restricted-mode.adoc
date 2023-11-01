@@ -206,6 +206,7 @@ Per gestire le risorse in Google Cloud.
 
  a| 
 \https://support.netapp.com
+\https://mysupport.netapp.com
  a| 
 Per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al supporto NetApp.
 

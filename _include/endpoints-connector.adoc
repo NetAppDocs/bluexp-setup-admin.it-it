@@ -58,7 +58,9 @@ Endpoint contattati dal connettore:: Il connettore richiede l'accesso a Internet
 
 | per gestire le risorse in Google Cloud.
 
-| \https://support.netapp.com | per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al supporto NetApp.
+|
+\https://support.netapp.com
+\https://mysupport.netapp.com | per ottenere informazioni sulla licenza e inviare messaggi AutoSupport al supporto NetApp.
 
 | \https://*.api.bluexp.netapp.com
 

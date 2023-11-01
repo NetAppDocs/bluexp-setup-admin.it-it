@@ -59,6 +59,7 @@ Per gestire le risorse in AWS. L'endpoint esatto dipende dall'area AWS che stai 
 
  a| 
 \https://support.netapp.com
+\https://mysupport.netapp.com
  a| 
 Per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al supporto NetApp.
 
