@@ -4,7 +4,7 @@ permalink: concept-accounts-azure.html
 keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials 
 summary: Scopri come BlueXP utilizza le credenziali e le autorizzazioni Azure per eseguire azioni per tuo conto. La comprensione di questi dettagli può essere utile quando si gestiscono le credenziali per una o più sottoscrizioni Azure. Ad esempio, potrebbe essere utile sapere quando aggiungere ulteriori credenziali Azure a BlueXP. 
 ---
-= Credenziali e permessi di Azure
+= Scopri le credenziali e le autorizzazioni di Azure
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

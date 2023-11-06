@@ -87,6 +87,8 @@ L'host potrebbe tentare di aggiornare i pacchetti del sistema operativo durante 
 Endpoint contattati dal connettore:: Il connettore richiede l'accesso a Internet in uscita per contattare i seguenti endpoint al fine di gestire risorse e processi all'interno dell'ambiente di cloud pubblico per le operazioni quotidiane.
 +
 --
+Si noti che gli endpoint elencati di seguito sono tutte le voci CNAME.
+
 [cols="2a,1a"]
 |===
 | Endpoint | Scopo 

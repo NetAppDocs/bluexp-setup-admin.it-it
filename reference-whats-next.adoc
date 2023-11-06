@@ -16,6 +16,9 @@ summary: 'Dopo aver effettuato l"accesso e configurato BlueXP in modalità stand
 [role="lead"]
 Dopo aver effettuato l'accesso e configurato BlueXP in modalità standard, gli utenti possono creare e rilevare ambienti di lavoro e utilizzare i servizi dati BlueXP.
 
+
+TIP: Se hai installato un connettore in AWS, Microsoft Azure o Google Cloud, BlueXP scopre automaticamente le informazioni sui bucket Amazon S3, sull'archiviazione BLOB di Azure o sui bucket Google Cloud Storage nella posizione in cui è installato il connettore. Un ambiente di lavoro viene aggiunto automaticamente a BlueXP Canvas.
+
 Per assistenza, consultare https://docs.netapp.com/us-en/bluexp-family/["home page della documentazione BlueXP"^] Per visualizzare i documenti relativi a tutti i servizi BlueXP.
 
 .Link correlato

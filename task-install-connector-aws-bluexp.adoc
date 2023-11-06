@@ -37,6 +37,8 @@ Accesso a Internet in uscita:: La posizione di rete in cui si implementa il conn
 Endpoint contattati dal connettore:: Il connettore richiede l'accesso a Internet in uscita per contattare i seguenti endpoint al fine di gestire risorse e processi all'interno dell'ambiente di cloud pubblico per le operazioni quotidiane.
 +
 --
+Si noti che gli endpoint elencati di seguito sono tutte le voci CNAME.
+
 [cols="2a,1a"]
 |===
 | Endpoint | Scopo 
@@ -318,3 +320,5 @@ L'istanza dovrebbe essere pronta in circa 7 minuti. Si consiglia di rimanere sul
 
 .Risultato
 Una volta completato il processo, il connettore è disponibile per l'utilizzo da parte di BlueXP.
+
+Se hai bucket Amazon S3 nello stesso account AWS in cui hai creato il connettore, vedrai automaticamente un ambiente di lavoro Amazon S3 su BlueXP Canvas. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["Scopri come gestire i bucket S3 da BlueXP"^]

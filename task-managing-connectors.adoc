@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-managing-connectors.html 
-keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager 
+keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager, local ui, go to local ui 
 summary: 'Dopo aver creato un connettore, potrebbe essere necessario gestirlo ogni tanto. Ad esempio, se si dispone di più connettori, è possibile passare da un connettore all"altro. In alternativa, potrebbe essere necessario aggiornare manualmente il connettore quando si utilizza BlueXP in modalità privata.' 
 ---
 = Gestire i connettori esistenti
@@ -18,6 +18,13 @@ Dopo aver creato un connettore, potrebbe essere necessario gestirlo ogni tanto. 
 
 link:concept-connectors.html["Scopri come funzionano i connettori"].
 
+[NOTE]
+====
+Il connettore include un'interfaccia utente locale, accessibile dall'host del connettore. Questa interfaccia utente è fornita per i clienti che utilizzano BlueXP in modalità limitata o privata. Quando si utilizza BlueXP in modalità standard, è necessario accedere all'interfaccia utente da https://console.bluexp.netapp.com/["Console SaaS BlueXP"^]
+
+link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"].
+
+====
 
 
 == Manutenzione del sistema operativo e delle macchine virtuali
@@ -106,7 +113,7 @@ Se si utilizza BlueXP in modalità privata, è possibile aggiornare il connettor
 Il connettore deve essere riavviato durante il processo di aggiornamento, in modo che la console basata su Web non sia disponibile durante l'aggiornamento.
 
 
-NOTE: Negli host con accesso a Internet, il connettore aggiorna automaticamente il software alla versione più recente, purché disponga dell'accesso a Internet in uscita per ottenere l'aggiornamento software.
+NOTE: Quando si utilizza BlueXP in modalità standard o limitata, il connettore aggiorna automaticamente il proprio software all'ultima versione, a condizione che disponga di accesso a Internet outbound per ottenere l'aggiornamento software.
 
 .Fasi
 . Scaricare il software del connettore da https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sito di supporto NetApp"^].

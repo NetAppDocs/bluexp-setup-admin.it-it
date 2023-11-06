@@ -172,7 +172,7 @@ Per visualizzare le autorizzazioni esatte necessarie al connettore per le operaz
 
 Di solito aggiorniamo il software del connettore ogni mese per introdurre nuove funzionalità e migliorare la stabilità. Sebbene la maggior parte dei servizi e delle funzionalità della piattaforma BlueXP sia offerta tramite software basato su SaaS, alcune funzionalità dipendono dalla versione del connettore. Che include la gestione Cloud Volumes ONTAP, la gestione del cluster ONTAP on-premise, le impostazioni e la guida.
 
-Il connettore aggiorna automaticamente il software alla versione più recente, purché disponga dell'accesso a Internet in uscita per ottenere l'aggiornamento software. Se si utilizza BlueXP in modalità privata, è necessario aggiornare manualmente il connettore.
+Quando si utilizza BlueXP in modalità standard o limitata, il connettore aggiorna automaticamente il proprio software all'ultima versione, a condizione che disponga di accesso a Internet outbound per ottenere l'aggiornamento software. Se si utilizza BlueXP in modalità privata, è necessario aggiornare manualmente il connettore.
 
 link:task-managing-connectors.html["Scopri come aggiornare manualmente il software del connettore"].
 

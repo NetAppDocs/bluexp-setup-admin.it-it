@@ -4,7 +4,7 @@ permalink: reference-ports-azure.html
 keywords: ports, security group, http, https, inbound, outbound 
 summary: Il gruppo di sicurezza Azure per il connettore richiede regole sia in entrata che in uscita. BlueXP crea automaticamente questo gruppo di protezione quando si crea un connettore da BlueXP. È necessario impostare questo gruppo di protezione per tutte le altre opzioni di installazione. 
 ---
-= Regole del gruppo di sicurezza in Azure
+= Regole del gruppo di sicurezza del connettore in Azure
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

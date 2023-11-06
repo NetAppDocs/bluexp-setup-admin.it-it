@@ -4,7 +4,7 @@ permalink: reference-ports-gcp.html
 keywords: ports, firewall rules, http, https, inbound, outbound 
 summary: Le regole del firewall Google Cloud per il connettore richiedono regole sia in entrata che in uscita. BlueXP crea automaticamente questo gruppo di protezione quando si crea un connettore da BlueXP. È necessario impostare questo gruppo di protezione per tutte le altre opzioni di installazione. 
 ---
-= Regole del firewall in Google Cloud
+= Regole del firewall connettore in Google Cloud
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
