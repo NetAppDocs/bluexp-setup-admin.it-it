@@ -18,6 +18,16 @@ Scopri le novità delle funzionalità di amministrazione di BlueXP: Account Blue
 
 
 
+== 8 novembre 2023
+
+
+
+=== Connettore 3.9.35
+
+Questa versione contiene piccoli miglioramenti alla sicurezza e correzioni di bug.
+
+
+
 == 6 ottobre 2023
 
 
