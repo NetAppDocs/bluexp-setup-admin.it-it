@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-permissions-aws.html 
-keywords: permissions, actions, aws, aws permissions 
+keywords: permissions, actions, aws, aws permissions, top secret, secret, aws top secret, aws secret, aws govcloud, govcloud, govcloud permissions, secret permissions, top secret permissions 
 summary: 'Quando BlueXP avvia l"istanza del connettore in AWS, allega un criterio all"istanza che fornisce al connettore le autorizzazioni per gestire le risorse e i processi all"interno di tale account AWS. Il connettore utilizza le autorizzazioni per effettuare chiamate API a diversi servizi AWS, tra cui EC2, S3, CloudFormation, IAM, Il servizio di gestione delle chiavi e molto altro ancora.' 
 ---
 = Autorizzazioni AWS per il connettore

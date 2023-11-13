@@ -16,7 +16,7 @@ summary: Inizia con BlueXP in modalità standard preparando il networking per la
 [role="lead"]
 Inizia con BlueXP in modalità standard preparando il networking per la console BlueXP, iscrivendoti e creando un account, creando facoltativamente un connettore e iscrivendoti a BlueXP.
 
-Prima di iniziare, dovresti avere una conoscenza di link:concept-netapp-accounts.html["BlueXP"], link:concept-connectors.html["Connettori"], e. link:concept-modes.html["modalità di distribuzione"].
+In modalità standard, BlueXP è accessibile agli utenti come servizio cloud dalla console basata su web. Prima di iniziare, dovresti avere una conoscenza di link:concept-netapp-accounts.html["BlueXP"], link:concept-connectors.html["Connettori"], e. link:concept-modes.html["modalità di distribuzione"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] link:reference-networking-saas-console.html["Preparazione del networking per l'utilizzo della console BlueXP"]
 [role="quick-margin-para"]

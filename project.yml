@@ -213,36 +213,58 @@ homepage:
     links:
     - title: Scopri di più sui connettori
       url: concept-connectors.html
-    - title: Creazione di un connettore in AWS (modalità standard)
-      url: task-install-connector-aws-bluexp.html
-    - title: Creazione di un connettore in Azure (modalità standard)
-      url: task-install-connector-azure-bluexp.html
-    - title: Creazione di un connettore in Google Cloud (modalità standard)
-      url: task-install-connector-google-bluexp-gcloud.html
-    - title: Creazione di un connettore on-premise (modalità standard)
-      url: task-install-connector-on-prem.html
     - title: Gestire i connettori
       url: task-managing-connectors.html
-  - title: Permessi
-    links:
-    - title: Riepilogo delle autorizzazioni
-      url: reference-permissions.html
-    - title: Autorizzazioni AWS per il connettore
+    - title: Visualizza le autorizzazioni AWS
       url: reference-permissions-aws.html
-    - title: Autorizzazioni Azure per il connettore
+    - title: Visualizzare le autorizzazioni di Azure
       url: reference-permissions-azure.html
-    - title: Permessi Google Cloud per il connettore
+    - title: Visualizzare le autorizzazioni di Google Cloud
       url: reference-permissions-gcp.html
-  - title: Credenziali
+  - title: AWS
     links:
-    - title: Gestire le credenziali AWS
+    - title: Inizia subito in una regione AWS standard
+      url: task-quick-start-standard-mode.html
+    - title: Inizia subito in un'area di AWS GovCloud
+      url: task-quick-start-restricted-mode.html
+    - title: Inizia in AWS Secret o Top Secret Cloud
+      url: https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html
+    - title: Visualizzare i criteri IAM per il connettore
+      url: reference-permissions-aws.html
+    - title: Gestire credenziali e sottoscrizioni
       url: task-adding-aws-accounts.html
-    - title: Gestire le credenziali Azure
+  - title: Azure
+    links:
+    - title: Inizia in una regione Azure standard
+      url: task-quick-start-standard-mode.html
+    - title: Inizia subito in un'area Azure Government
+      url: task-quick-start-restricted-mode.html
+    - title: Inizia subito con Azure IL6
+      url: task-quick-start-private-mode.html
+    - title: Visualizzare il ruolo personalizzato per il connettore
+      url: reference-permissions-azure.html
+    - title: Gestire credenziali e sottoscrizioni
       url: task-adding-azure-accounts.html
-    - title: Gestire le credenziali Google Cloud
+  - title: Google Cloud
+    links:
+    - title: Inizia subito in un'area standard di Google Cloud
+      url: task-quick-start-standard-mode.html
+    - title: Visualizzare l'account del servizio per il connettore
+      url: reference-permissions-gcp.html
+    - title: Gestire credenziali e sottoscrizioni
       url: task-adding-gcp-accounts.html
-    - title: Gestisci le credenziali NSS per il tuo account
-      url: task-adding-nss-accounts.html
+  - title: On-premise
+    links:
+    - title: Installare e configurare un connettore in modalità standard
+      url: task-install-connector-on-prem.html
+    - title: Installare e configurare un connettore in modalità privata
+      url: task-quick-start-private-mode.html
+  - title: Accesso in corso
+    links:
+    - title: Accedere a BlueXP
+      url: task-logging-in.html
+    - title: Utilizzo della federazione delle identità con BlueXP
+      url: concept-federation.html
   - title: Blog e community
     links:
     - title: Community NetApp

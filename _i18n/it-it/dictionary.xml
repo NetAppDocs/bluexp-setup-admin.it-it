@@ -3146,21 +3146,13 @@ Il rilevamento senza connettore (rilevamento diretto) non è supportato.</block>
   <block id="eed7d7eea79968152bcb0157d198eeea" category="sidebar">Federazione delle identità</block>
   <block id="b02d6a4d5c11f6d94cd3e2e249d6dec1" category="sidebar">BlueXP</block>
   <block id="f4040f71a7d553f2519487070892b115" category="sidebar">Ruoli utente</block>
-  <block id="6dc6b060b761d145366b9ed041137917" category="sidebar">Gestire le credenziali AWS</block>
   <block id="8d855a86408ade086a4d47d808971acd" category="sidebar">Gestire credenziali e sottoscrizioni</block>
-  <block id="c135c603177e58023474a65f829c0fd3" category="sidebar">Gestire le credenziali Azure</block>
-  <block id="15f599d5c4282f662b38657a0b5c5739" category="sidebar">Gestire le credenziali Google Cloud</block>
   <block id="fbfa85280a8f29e21ca92f023121f1b2" category="sidebar">Scoperta dello storage cloud</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">Riferimento</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">Riepilogo delle autorizzazioni</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conoscenza e supporto</block>
   <block id="bd684dd31e369444b29047e57d56ff19" category="sidebar">Scopri le modalità di implementazione</block>
-  <block id="761d871e89c5ad68ac5c2de768bb7fc4" category="sidebar">Creazione di un connettore in AWS (modalità standard)</block>
-  <block id="1df187938f50cb0ec2035714e29f9008" category="sidebar">Creazione di un connettore in Azure (modalità standard)</block>
-  <block id="421e0ee20fb73cf162f2c03955c94f24" category="sidebar">Creazione di un connettore in Google Cloud (modalità standard)</block>
-  <block id="a80c3e3d3461039581490c3b665e6c55" category="sidebar">Creazione di un connettore on-premise (modalità standard)</block>
   <block id="c8aded93abddb2318a41b08cba739012" category="sidebar">Gestire i connettori</block>
-  <block id="5287995c403f34c9ff0e79af4e8e7c9d" category="sidebar">Gestisci le credenziali NSS per il tuo account</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blog e community</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Community NetApp</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">Blog BlueXP</block>
@@ -3778,4 +3770,23 @@ Non supportato in Google Cloud o in<block ref="da2732e6e9a1be4ab82a1194533aac59"
   <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">8 novembre 2023</block>
   <block id="82a9cd2bfcf44ef6090c93dcb2ee0451" category="section-title">Connettore 3.9.35</block>
   <block id="77fe99ef9ead4490d30142892f6b5fec" category="paragraph">Questa versione contiene piccoli miglioramenti alla sicurezza e correzioni di bug.</block>
+  <block id="ee06369b39630f4fbf14829266d40a91" category="paragraph">La modalità privata viene generalmente utilizzata con ambienti on-premise che non dispongono di connessione a Internet e con aree cloud sicure, tra cui<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>,<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>, e.<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
+  <block id="a95e947d8a886ad72a7cea0e895006fd" category="paragraph">La modalità limitata viene generalmente utilizzata dai governi locali e statali e da società regolamentate, comprese le implementazioni nelle aree pubbliche di AWS GovCloud e Azure. Prima di iniziare, dovresti avere una conoscenza di <block ref="ad4b275d9dc1eba2c344335cef84161e" category="inline-link-macro-rx"></block>, <block ref="939be5a52f87f3be4e9cee0e0efdb78e" category="inline-link-macro-rx"></block>, e. <block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block>.</block>
+  <block id="c2a3212cb98f382140fb5a23af1c6063" category="paragraph">In modalità standard, BlueXP è accessibile agli utenti come servizio cloud dalla console basata su web. Prima di iniziare, dovresti avere una conoscenza di <block ref="ad4b275d9dc1eba2c344335cef84161e" category="inline-link-macro-rx"></block>, <block ref="939be5a52f87f3be4e9cee0e0efdb78e" category="inline-link-macro-rx"></block>, e. <block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block>.</block>
+  <block id="a620abb16506a8da5f6b8dcbc0073466" category="sidebar">Visualizza le autorizzazioni AWS</block>
+  <block id="b7053c5f835c45d38cf071449c74fd56" category="sidebar">Visualizzare le autorizzazioni di Azure</block>
+  <block id="7050d365baa220c42a688cbf36a7e997" category="sidebar">Visualizzare le autorizzazioni di Google Cloud</block>
+  <block id="891c5b2cea54480f0e1abb74959457a6" category="sidebar">Inizia subito in una regione AWS standard</block>
+  <block id="e766f31fe70a68c11b8631144211d0f7" category="sidebar">Inizia subito in un'area di AWS GovCloud</block>
+  <block id="9722aa95875a94430d4569d2e8bd2382" category="sidebar">Inizia in AWS Secret o Top Secret Cloud</block>
+  <block id="e55aba8c57180a56450db886ecd8232e" category="sidebar">Visualizzare i criteri IAM per il connettore</block>
+  <block id="27c705176bc1f05cf50771b1f8fe182a" category="sidebar">Inizia in una regione Azure standard</block>
+  <block id="60563f8b2620e88ac71d1a98ee73e2e5" category="sidebar">Inizia subito in un'area Azure Government</block>
+  <block id="31b63be41ae4657f9e340188aa268589" category="sidebar">Inizia subito con Azure IL6</block>
+  <block id="3dbdf7d7951b212ca0000f0027184bb8" category="sidebar">Visualizzare il ruolo personalizzato per il connettore</block>
+  <block id="6c3328ab0a2ccaa273efaec9a88e2751" category="sidebar">Inizia subito in un'area standard di Google Cloud</block>
+  <block id="6844a754c2b209da7ac4949824ac467d" category="sidebar">Visualizzare l'account del servizio per il connettore</block>
+  <block id="917f62b5224eebe3d212f654f1273e57" category="sidebar">Installare e configurare un connettore in modalità standard</block>
+  <block id="f6bf5d3da1d67288a149ab832d6401d0" category="sidebar">Installare e configurare un connettore in modalità privata</block>
+  <block id="6596e863cf1d0baa0dbccff0e9088e4a" category="sidebar">Accesso in corso</block>
 </blocks>
