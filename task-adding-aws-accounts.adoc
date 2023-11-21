@@ -4,7 +4,7 @@ permalink: task-adding-aws-accounts.html
 keywords: permissions, aws, policy, iam, iam role, role, granting, policy, iam policy, iam user, access keys, arn, cloud provider accounts, aws, cloud provider profile, json, iam, credentials, adding credentials, add credentials 
 summary: Aggiungi e gestisci le credenziali AWS in modo che BlueXP disponga delle autorizzazioni necessarie per implementare e gestire le risorse cloud nei tuoi account AWS. Se si gestiscono più sottoscrizioni AWS, è possibile assegnarle a diverse credenziali AWS dalla pagina credenziali. 
 ---
-= Gestire le credenziali AWS e le sottoscrizioni per BlueXP
+= Gestisci le credenziali AWS e le iscrizioni al marketplace per BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -228,7 +228,10 @@ Dopo aver aggiunto le credenziali AWS a BlueXP, è possibile associare un abbona
 Esistono due scenari in cui è possibile associare un abbonamento AWS Marketplace dopo aver aggiunto le credenziali a BlueXP:
 
 * Non hai associato un abbonamento quando inizialmente hai aggiunto le credenziali a BlueXP.
-* Si desidera sostituire un abbonamento AWS Marketplace esistente con un nuovo abbonamento.
+* Vuoi modificare l'iscrizione al marketplace AWS associata alle credenziali AWS.
++
+Sostituendo l'attuale sottoscrizione al marketplace con una nuova sottoscrizione, l'abbonamento al marketplace viene modificato per qualsiasi ambiente di lavoro Cloud Volumes ONTAP esistente e per tutti i nuovi ambienti di lavoro.
+
 
 
 .Prima di iniziare

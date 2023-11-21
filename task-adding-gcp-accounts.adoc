@@ -20,7 +20,9 @@ summary: 'È possibile gestire le credenziali Google Cloud associate all"istanza
 
 == Associare un abbonamento Marketplace alle credenziali Google Cloud
 
-Quando si implementa un connettore in Google Cloud, BlueXP crea un set predefinito di credenziali associate all'istanza della macchina virtuale del connettore. In qualsiasi momento, è possibile modificare l'abbonamento Marketplace associato a queste credenziali. L'abbonamento consente di creare un sistema Cloud Volumes ONTAP pay-as-you-go e di utilizzare altri servizi BlueXP.
+Quando si implementa un connettore in Google Cloud, BlueXP crea un set predefinito di credenziali associate all'istanza della macchina virtuale del connettore. In qualsiasi momento, puoi modificare l'iscrizione di Google Cloud Marketplace associata a queste credenziali. L'abbonamento consente di creare un sistema Cloud Volumes ONTAP pay-as-you-go e di utilizzare altri servizi BlueXP.
+
+Sostituendo l'attuale sottoscrizione al marketplace con una nuova sottoscrizione, l'abbonamento al marketplace viene modificato per qualsiasi ambiente di lavoro Cloud Volumes ONTAP esistente e per tutti i nuovi ambienti di lavoro.
 
 .Fasi
 . Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.

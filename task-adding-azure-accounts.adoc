@@ -4,7 +4,7 @@ permalink: task-adding-azure-accounts.html
 keywords: permissions, microsoft, azure, permissions, custom role, role, json, active directory, ad, service principal, key, tenant id, application key, application id, operator role, managed identity, iam, operator, role, virtual machine, create custom role, create azure custom role, azure custom role 
 summary: Aggiungi e gestisci le credenziali Azure in modo che BlueXP disponga delle autorizzazioni necessarie per implementare e gestire le risorse cloud nelle tue sottoscrizioni Azure. Se si gestiscono più sottoscrizioni Azure Marketplace, è possibile assegnarle a diverse credenziali Azure dalla pagina credenziali. 
 ---
-= Gestire le credenziali e le sottoscrizioni di Azure per BlueXP
+= Gestisci le credenziali di Azure e le iscrizioni al marketplace per BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -327,7 +327,10 @@ Dopo aver aggiunto le credenziali Azure a BlueXP, è possibile associare un abbo
 Esistono due scenari in cui è possibile associare un abbonamento a Azure Marketplace dopo aver aggiunto le credenziali a BlueXP:
 
 * Non hai associato un abbonamento quando inizialmente hai aggiunto le credenziali a BlueXP.
-* Si desidera sostituire un abbonamento a Azure Marketplace esistente con un nuovo abbonamento.
+* Vuoi modificare l'iscrizione ad Azure Marketplace associata alle credenziali Azure.
++
+Sostituendo l'attuale sottoscrizione al marketplace con una nuova sottoscrizione, l'abbonamento al marketplace viene modificato per qualsiasi ambiente di lavoro Cloud Volumes ONTAP esistente e per tutti i nuovi ambienti di lavoro.
+
 
 
 .Prima di iniziare

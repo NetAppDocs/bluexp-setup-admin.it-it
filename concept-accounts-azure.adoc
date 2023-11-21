@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-accounts-azure.html 
-keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials 
-summary: Scopri come BlueXP utilizza le credenziali e le autorizzazioni Azure per eseguire azioni per tuo conto. La comprensione di questi dettagli può essere utile quando si gestiscono le credenziali per una o più sottoscrizioni Azure. Ad esempio, potrebbe essere utile sapere quando aggiungere ulteriori credenziali Azure a BlueXP. 
+keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials, marketplace subscription, replace subscription, subscription 
+summary: Scopri in che modo BlueXP usa le credenziali di Azure per eseguire azioni per tuo conto e come tali credenziali sono associate alle iscrizioni al marketplace. La comprensione di questi dettagli può essere utile quando si gestiscono le credenziali per una o più sottoscrizioni Azure. Ad esempio, potrebbe essere utile sapere quando aggiungere ulteriori credenziali Azure a BlueXP. 
 ---
 = Scopri le credenziali e le autorizzazioni di Azure
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Scopri come BlueXP utilizza le credenziali e le autorizzazioni Azure pe
 
 
 [role="lead"]
-Scopri come BlueXP utilizza le credenziali e le autorizzazioni Azure per eseguire azioni per tuo conto. La comprensione di questi dettagli può essere utile quando si gestiscono le credenziali per una o più sottoscrizioni Azure. Ad esempio, potrebbe essere utile sapere quando aggiungere ulteriori credenziali Azure a BlueXP.
+Scopri in che modo BlueXP usa le credenziali di Azure per eseguire azioni per tuo conto e come tali credenziali sono associate alle iscrizioni al marketplace. La comprensione di questi dettagli può essere utile quando si gestiscono le credenziali per una o più sottoscrizioni Azure. Ad esempio, potrebbe essere utile sapere quando aggiungere ulteriori credenziali Azure a BlueXP.
 
 
 
@@ -54,7 +54,49 @@ image:screenshot_accounts_switch_azure.gif["Una schermata che mostra la selezion
 
 
 
-== E le implementazioni di Marketplace e on-premise?
+== Credenziali e iscrizioni al marketplace
+
+Le credenziali che Aggiungi a un connettore devono essere associate a un'iscrizione ad Azure Marketplace in modo da poter pagare per Cloud Volumes ONTAP a una tariffa oraria (PAYGO) o tramite un contratto annuale e per utilizzare altri servizi BlueXP.
+
+link:task-adding-azure-accounts.html#subscribe["Scopri come associare un abbonamento Azure"].
+
+Nota quanto segue sulle credenziali e le iscrizioni al marketplace di Azure:
+
+* Puoi associare solo un'iscrizione ad Azure Marketplace a un set di credenziali Azure
+* È possibile sostituire un abbonamento esistente al mercato con un nuovo abbonamento
+
+
+
+
+== FAQ
+
+La seguente domanda riguarda le credenziali e gli abbonamenti.
+
+
+
+=== Posso modificare l'iscrizione ad Azure Marketplace per gli ambienti di lavoro Cloud Volumes ONTAP?
+
+Sì, è possibile. Quando modifichi l'abbonamento ad Azure Marketplace associato a un set di credenziali Azure, tutti gli ambienti di lavoro Cloud Volumes ONTAP esistenti e nuovi verranno addebitati sulla nuova iscrizione.
+
+link:task-adding-azure-accounts.html#subscribe["Scopri come associare un abbonamento Azure"].
+
+
+
+=== Posso aggiungere più credenziali Azure, ciascuna con diverse iscrizioni al marketplace?
+
+Tutte le credenziali di Azure che appartengono alla stessa iscrizione di Azure saranno associate alla stessa iscrizione di Azure Marketplace.
+
+Se disponi di più credenziali Azure che appartengono a diverse iscrizioni ad Azure, queste possono essere associate alla stessa iscrizione ad Azure Marketplace o a diverse iscrizioni al marketplace.
+
+
+
+=== Posso spostare gli ambienti di lavoro Cloud Volumes ONTAP esistenti in un'altra iscrizione ad Azure?
+
+No, non è possibile spostare le risorse di Azure associate al tuo ambiente di lavoro Cloud Volumes ONTAP in un'altra sottoscrizione di Azure.
+
+
+
+=== Come funzionano le credenziali per le implementazioni del marketplace e le implementazioni on-premise?
 
 Le sezioni precedenti descrivono il metodo di implementazione consigliato per il connettore, fornito da BlueXP. È inoltre possibile implementare un connettore in Azure da Azure Marketplace e installare il software del connettore sul proprio host Linux.
 

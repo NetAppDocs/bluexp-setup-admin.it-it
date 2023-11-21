@@ -37,7 +37,6 @@
   <block id="5e15e451ab1dcb5e3bfae55f8b58e524" category="list-text">*Credentials Location*: Selezionare *Amazon Web Services &gt; Connector*.</block>
   <block id="8117407a9689d4f991904d5739091c47" category="list-text">*Definisci credenziali*: Inserire una chiave di accesso AWS e una chiave segreta.</block>
   <block id="dc6e318a413899b5467eabc5f69ad366" category="list-text">*Marketplace Subscription*: Consente di associare un abbonamento Marketplace a queste credenziali sottoscrivendo ora o selezionando un abbonamento esistente.</block>
-  <block id="70c85793f0a33ef534a67f193287a992" category="doc">Gestisci i tuoi account Azure Blob</block>
   <block id="f9a2f8eef1df12108fd0c6b9b6b7fe6a" category="doc">Opzioni di installazione del connettore in Google Cloud</block>
   <block id="b5afc81c4f24b143224e304b939a3f6c" category="paragraph">Sono disponibili le seguenti opzioni di installazione:</block>
   <block id="b584cbf8cb993e5b450384402639e3c4" category="paragraph">Questa azione avvia un'istanza della macchina virtuale che esegue Linux e il software del connettore in un VPC a scelta.</block>
@@ -387,7 +386,6 @@
   <block id="9df83ab1f3ab5fb0d62768dd3ff406e6" category="list-text">Cloudkms.keyrings.getIamPolicy</block>
   <block id="e7456e97941e04b31434ba6dcce10d88" category="list-text">cloudkms.keyRings.setIamPolicy</block>
   <block id="7c68c9240932ba8b284de266f9564faa" category="paragraph">Queste autorizzazioni sono necessarie per il backup e il ripristino di BlueXP.</block>
-  <block id="1c498f9a6415c0ecd5728481eea5743b" category="summary">Scopri come BlueXP utilizza le credenziali e le autorizzazioni di Google Cloud per eseguire azioni per tuo conto. Comprendere questi dettagli può essere utile quando si gestiscono le credenziali per uno o più progetti Google Cloud. Ad esempio, è possibile ottenere informazioni sull'account del servizio associato alla macchina virtuale del connettore.</block>
   <block id="a8f8f08c9d91eeaecc31377113ddd27b" category="section-title">Progetto e permessi per BlueXP</block>
   <block id="627c5def4348066ddd5e7a1664e1079b" category="paragraph">Prima di poter utilizzare BlueXP per gestire le risorse nel progetto Google Cloud, è necessario implementare un connettore. Il connettore non può essere in esecuzione in sede o in un altro cloud provider.</block>
   <block id="356334a26d74c400a5e0a69f237ba73e" category="paragraph">Prima di implementare un connettore direttamente da BlueXP, è necessario disporre di due set di autorizzazioni:</block>
@@ -1011,7 +1009,6 @@
   <block id="98de57befcb39b412a8dac16a11d762e" category="list-text">Un tipo di istanza che soddisfa i requisiti di CPU e RAM indicati in precedenza. Consigliamo n2-standard-4.</block>
   <block id="984ca77a9a51746d3dd5a855a71d3493" category="inline-link">Funzioni di VM schermate</block>
   <block id="5e59673ea4dc0650f587413c4848c02c" category="paragraph">Il connettore è supportato in Google Cloud su un'istanza di macchina virtuale con un sistema operativo che supporta<block ref="bd10301ee2e8f0cb38112a71d2b6920c" category="inline-link-rx"></block></block>
-  <block id="c01f728e9ef3359c6e9b452f47a9ca09" category="summary">Scopri come BlueXP utilizza le credenziali e le autorizzazioni Azure per eseguire azioni per tuo conto. La comprensione di questi dettagli può essere utile quando si gestiscono le credenziali per una o più sottoscrizioni Azure. Ad esempio, potrebbe essere utile sapere quando aggiungere ulteriori credenziali Azure a BlueXP.</block>
   <block id="08a6159f6d9d986210470d2ab6dff166" category="section-title">Credenziali iniziali di Azure</block>
   <block id="25b6fc1a8ebb7aa3a82a611b3dc7cc8d" category="inline-link-macro">Policy di implementazione del connettore per Azure</block>
   <block id="9cbe008fc71c240a16ab125b2873fe44" category="inline-link-macro">Analisi dell'utilizzo delle autorizzazioni da parte di BlueXP</block>
@@ -1033,7 +1030,6 @@
   <block id="9d28e4868b7fcb2d0b7ab54f9d7f7b3c" category="inline-link-macro">Aggiungere le credenziali dell'account a BlueXP</block>
   <block id="f25b2b221edfa2bdf4fb0df0c1b2c9d5" category="paragraph">Allora <block ref="d81a76d92186f9ebef738a7789fc0680" category="inline-link-macro-rx"></block> Fornendo dettagli sull'identità del servizio ad.</block>
   <block id="eb99e348d38c212372a6e836f66f7356" category="paragraph">Ad esempio, è possibile passare da una credenziale all'altra quando si crea un nuovo ambiente di lavoro Cloud Volumes ONTAP:</block>
-  <block id="baa9dd166d2a7f1d62e78a829f4b35a6" category="section-title">E le implementazioni di Marketplace e on-premise?</block>
   <block id="018f02432b76c440f6d0c2a5da5a1a5d" category="paragraph">Le sezioni precedenti descrivono il metodo di implementazione consigliato per il connettore, fornito da BlueXP. È inoltre possibile implementare un connettore in Azure da Azure Marketplace e installare il software del connettore sul proprio host Linux.</block>
   <block id="f0e36fc8cdf840530f36b60220f9185b" category="paragraph">Se si utilizza Marketplace, è possibile fornire le autorizzazioni assegnando un ruolo personalizzato alla macchina virtuale del connettore e a un'identità gestita assegnata dal sistema oppure utilizzare l'entità del servizio Azure ad.</block>
   <block id="a5cd95b551d8bf545c63c76c6fb91786" category="paragraph">Per le implementazioni on-premise, non è possibile impostare un'identità gestita per il connettore, ma è possibile fornire le autorizzazioni utilizzando un'identità di servizio.</block>
@@ -1212,7 +1208,6 @@
   <block id="01da112af45ab74fbf33e58033fbd785" category="summary">È possibile gestire le credenziali Google Cloud associate all'istanza di Connector VM associando un abbonamento al marketplace e risolvendo i problemi del processo di abbonamento. Entrambe queste attività garantiscono che sia possibile utilizzare l'abbonamento al marketplace per pagare i servizi BlueXP.</block>
   <block id="f691281f53b81c9f5d73a97dc7c334fd" category="doc">Gestire le credenziali e le sottoscrizioni di Google Cloud per BlueXP</block>
   <block id="209e33f8aa50ade8c82e5bc82a8c023d" category="section-title">Associare un abbonamento Marketplace alle credenziali Google Cloud</block>
-  <block id="e6bd6cdf191b4526ecbd9326bd7b5c24" category="paragraph">Quando si implementa un connettore in Google Cloud, BlueXP crea un set predefinito di credenziali associate all'istanza della macchina virtuale del connettore. In qualsiasi momento, è possibile modificare l'abbonamento Marketplace associato a queste credenziali. L'abbonamento consente di creare un sistema Cloud Volumes ONTAP pay-as-you-go e di utilizzare altri servizi BlueXP.</block>
   <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.</block>
   <block id="0d28acbceed906f52a206d0f3fb0add2" category="inline-image-macro">Schermata del menu delle azioni per un set di credenziali esistenti.</block>
   <block id="ea765af20d763fe16d94ba9ef03fd31b" category="paragraph"><block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
@@ -1480,7 +1475,6 @@
   <block id="5d1285233566f1379ef88c010de06abc" category="list-text">*Definisci credenziali*: Immettere le informazioni relative all'entità del servizio Azure Active Directory che concede le autorizzazioni richieste:</block>
   <block id="3612e0e7a44ec38da1e226c618526f91" category="open-title">Account del servizio Google Cloud</block>
   <block id="4b6fbf3b382ce342b57bbdb4fe0d6baf" category="paragraph">Associare l'account del servizio alla macchina virtuale del connettore.</block>
-  <block id="ea5bc95c9558a374461d71a1d2f029ca" category="summary">Scopri come BlueXP utilizza le credenziali e le autorizzazioni AWS per eseguire azioni per tuo conto. La comprensione di questi dettagli può essere utile quando si gestiscono le credenziali per uno o più account AWS in BlueXP. Ad esempio, potrebbe essere utile sapere quando aggiungere ulteriori credenziali AWS a BlueXP.</block>
   <block id="9ef43b020d41cab5808d78fdf855c429" category="section-title">Credenziali AWS iniziali</block>
   <block id="09c2333ff15fa85698d91a366cce26dd" category="inline-link-macro">Policy di implementazione del connettore per AWS</block>
   <block id="858c852a1a4696d4e56295d4b4b0ea20" category="paragraph">Quando BlueXP avvia l'istanza del connettore in AWS, crea un ruolo IAM e un profilo di istanza per l'istanza. Allega inoltre un criterio che fornisce al connettore le autorizzazioni per gestire risorse e processi all'interno di tale account AWS. <block ref="9d2ef148313eb953f656b8efd4016e8c" category="inline-link-macro-rx"></block>.</block>
@@ -1494,11 +1488,9 @@
   <block id="d366b2fda179ae88058b546b6cd89726" category="list-text">È possibile aggiungere le credenziali AWS direttamente a BlueXP</block>
   <block id="1fba93959336f34e08c6d34d0ca68230" category="paragraph">Consulta le sezioni seguenti per ulteriori dettagli.</block>
   <block id="a456be184fc96fef017630ede092b15d" category="section-title">Aggiungere le credenziali AWS a un connettore esistente</block>
-  <block id="c0f31a85c681cbd2946d5195b382308e" category="paragraph">Se si desidera avviare Cloud Volumes ONTAP in diversi account AWS, è possibile fornire le chiavi AWS per un utente IAM o l'ARN di un ruolo in un account attendibile. L'immagine seguente mostra due account aggiuntivi, uno che fornisce le autorizzazioni tramite un ruolo IAM in un account attendibile e l'altro tramite le chiavi AWS di un utente IAM:</block>
   <block id="25743d3dcac2dfe95c6e899571bfccc3" category="inline-image-macro">Immagine concettuale che mostra due account aggiuntivi. Ciascuno di essi dispone di una policy IAM, una è collegata all'utente IAM e l'altra a un ruolo IAM.</block>
   <block id="49a11e441cb19dc0d43b1d3a3794d033" category="paragraph"><block ref="49a11e441cb19dc0d43b1d3a3794d033" category="inline-image-macro-rx" type="image"></block></block>
   <block id="48c7f5d184d27ef640370421d3317ba5" category="paragraph">Aggiungere quindi le credenziali dell'account a BlueXP specificando il nome risorsa Amazon (ARN) del ruolo IAM o le chiavi AWS per l'utente IAM.</block>
-  <block id="bc84b27c0d74f906857d6c1a83c368a0" category="paragraph">Dopo aver aggiunto un altro set di credenziali, è possibile passare a queste quando si crea un nuovo ambiente di lavoro:</block>
   <block id="a6856ad65a90d33bc83bd78362d9bfce" category="inline-link-macro">Scopri come aggiungere le credenziali AWS a un connettore esistente.</block>
   <block id="affef63146feae005315127173a28aa9" category="paragraph"><block ref="affef63146feae005315127173a28aa9" category="inline-link-macro-rx"></block></block>
   <block id="a923d2e65283c489ad78d9cdfa9bad74" category="section-title">Aggiungere le credenziali AWS direttamente a BlueXP</block>
@@ -1511,7 +1503,6 @@
   <block id="a4542ce435b67066671321f478dce8cc" category="paragraph">Se si utilizza Marketplace, le autorizzazioni vengono fornite nello stesso modo. È sufficiente creare e configurare manualmente il ruolo IAM, quindi fornire le autorizzazioni per eventuali account aggiuntivi.</block>
   <block id="c369edb322a8885a983610e18f932d0c" category="paragraph">Per le implementazioni on-premise, non è possibile impostare un ruolo IAM per il sistema BlueXP, ma è possibile fornire le autorizzazioni utilizzando le chiavi di accesso AWS.</block>
   <block id="70bfaa19a89e29bf0fc2b34b8f3150ba" category="section-title">Come si possono ruotare in modo sicuro le credenziali AWS?</block>
-  <block id="ee0f653772b33fb034bc7001a0c5e7a3" category="paragraph">Come descritto in precedenza, BlueXP consente di fornire le credenziali AWS in diversi modi: Un ruolo IAM associato all'istanza del connettore, assumendo un ruolo IAM in un account attendibile o fornendo le chiavi di accesso AWS.</block>
   <block id="025a22cb479bbf0e83048a4ae6ffaaa0" category="paragraph">Con le prime due opzioni, BlueXP utilizza AWS Security Token Service per ottenere credenziali temporanee che ruotano costantemente. Questo processo è la Best practice: È automatico e sicuro.</block>
   <block id="f265ab1711375ae7a7a4e8594c5e1395" category="paragraph">Se si forniscono chiavi di accesso AWS a BlueXP, è necessario ruotarle aggiornandole in BlueXP a intervalli regolari. Si tratta di un processo completamente manuale.</block>
   <block id="ccd2fd61b259ee660f0c8a22d4d70882" category="summary">Il connettore utilizza le porte in entrata se installato manualmente su un host Linux on-premise. Potrebbe essere necessario fare riferimento a queste porte per scopi di pianificazione.</block>
@@ -2661,7 +2652,6 @@ Si noti che la pagina viene aggiornata tra il test della connessione e l'abilita
   <block id="ef21f4467b6f56b5c04a15d016e654a2" category="paragraph">Dopo aver aggiunto le credenziali Azure a BlueXP, è possibile associare un abbonamento a Azure Marketplace a tali credenziali. L'abbonamento consente di creare un sistema Cloud Volumes ONTAP pay-as-you-go e di utilizzare altri servizi BlueXP.</block>
   <block id="2e6aa15d4609a29d86e5e9f886599c4c" category="paragraph">Esistono due scenari in cui è possibile associare un abbonamento a Azure Marketplace dopo aver aggiunto le credenziali a BlueXP:</block>
   <block id="20e15acf80fa51f5de6b9e96c9c64fde" category="list-text">Non hai associato un abbonamento quando inizialmente hai aggiunto le credenziali a BlueXP.</block>
-  <block id="086754afbe30b09d7f6a643dd6e05800" category="list-text">Si desidera sostituire un abbonamento a Azure Marketplace esistente con un nuovo abbonamento.</block>
   <block id="20a8a479e52579cf8f1fe773676218bc" category="paragraph"><block ref="20a8a479e52579cf8f1fe773676218bc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7dffa6296286b12f66d638f53340316c" category="list-text">Se richiesto, accedere all'account Azure.</block>
   <block id="344ece1ef43a9e3bbb281e15f3df6442" category="paragraph">Verrai reindirizzato al sito Web di BlueXP.</block>
@@ -2673,7 +2663,6 @@ Si noti che la pagina viene aggiornata tra il test della connessione e l'abilita
   <block id="7132b07cc411f1ad7091b34cfe32d739" category="section-title">Eliminare le credenziali</block>
   <block id="a16b0bbea9ed6a7a22d41efc21ec1cef" category="paragraph">Se non hai più bisogno di una serie di credenziali, puoi eliminarle da BlueXP. È possibile eliminare solo le credenziali non associate a un ambiente di lavoro.</block>
   <block id="79c33710e10337a79e50227860ebf59a" category="list-text">Nella pagina *credenziali account*, selezionare il menu delle azioni per un set di credenziali, quindi selezionare *Elimina credenziali*.</block>
-  <block id="a4f513306c1a0ead14679ffb7c282460" category="doc">Gestisci i bucket Amazon S3</block>
   <block id="08533087d95fb07c92ed0773080a65d4" category="doc">Configurare il networking Azure</block>
   <block id="1387f52f9e1a700036780a5bf567fab3" category="section-title">VNET e subnet</block>
   <block id="b26bf0de9fb68038a5f4e2e2a13c5811" category="paragraph">Quando si crea il connettore, è necessario specificare il VNET e la subnet in cui deve risiedere il connettore.</block>
@@ -2890,7 +2879,6 @@ Si noti che la pagina viene aggiornata tra il test della connessione e l'abilita
   <block id="94935dba78b982df4dbaaf55737f4d0b" category="section-title">Associare un abbonamento AWS</block>
   <block id="490ff557e203933a15d8fe5bc6dad106" category="paragraph">Dopo aver aggiunto le credenziali AWS a BlueXP, è possibile associare un abbonamento AWS Marketplace a tali credenziali. L'abbonamento consente di pagare Cloud Volumes ONTAP a una tariffa oraria (PAYGO) o utilizzando un contratto annuale e di utilizzare altri servizi BlueXP.</block>
   <block id="5eae6608f40144c94d96a8f0a1602c97" category="paragraph">Esistono due scenari in cui è possibile associare un abbonamento AWS Marketplace dopo aver aggiunto le credenziali a BlueXP:</block>
-  <block id="dbaf1a33cea4faeebcb91c3b7d479cc9" category="list-text">Si desidera sostituire un abbonamento AWS Marketplace esistente con un nuovo abbonamento.</block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">Scopri come creare un connettore</block>
   <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">È necessario creare un connettore prima di poter modificare le impostazioni di BlueXP. <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>.</block>
   <block id="583059f51a0b347f747db9f8d2421392" category="paragraph"><block ref="583059f51a0b347f747db9f8d2421392" category="inline-image-macro-rx" type="image"></block></block>
@@ -3147,7 +3135,6 @@ Il rilevamento senza connettore (rilevamento diretto) non è supportato.</block>
   <block id="b02d6a4d5c11f6d94cd3e2e249d6dec1" category="sidebar">BlueXP</block>
   <block id="f4040f71a7d553f2519487070892b115" category="sidebar">Ruoli utente</block>
   <block id="8d855a86408ade086a4d47d808971acd" category="sidebar">Gestire credenziali e sottoscrizioni</block>
-  <block id="fbfa85280a8f29e21ca92f023121f1b2" category="sidebar">Scoperta dello storage cloud</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">Riferimento</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">Riepilogo delle autorizzazioni</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conoscenza e supporto</block>
@@ -3188,7 +3175,6 @@ Il rilevamento senza connettore (rilevamento diretto) non è supportato.</block>
   <block id="b0689737e83154357ff9ef36053bda4f" category="paragraph">Per impostazione predefinita, tutte le notifiche attive vengono visualizzate nel Centro notifiche. È possibile filtrare le notifiche visualizzate in modo da visualizzare solo quelle importanti per l'utente. È possibile filtrare in base al "Servizio" BlueXP e alla notifica "tipo".</block>
   <block id="2ad68125d72949aee5ac56974ac53849" category="paragraph">I filtri impostati nel Centro notifiche non determinano i tipi di notifiche che verranno inviate tramite e-mail. Per impostazione predefinita, gli account Admins di BlueXP riceveranno e-mail per tutte le notifiche "critiche" e "consigliate". Queste notifiche si applicano a tutti i servizi: Non è possibile scegliere di ricevere notifiche solo per alcuni servizi, ad esempio Connectors o BlueXP backup e recovery.</block>
   <block id="7fcffcce675dad706dbf53d68f1f86f2" category="paragraph">Tutti gli altri utenti e destinatari sono configurati per non ricevere alcuna email di notifica, pertanto dovrai configurare le impostazioni di notifica per eventuali utenti aggiuntivi.</block>
-  <block id="19b587cc77ce4b8566975983ec907303" category="sidebar">Gestisci i bucket di storage Google Cloud</block>
   <block id="161fbe930f63fa83671b46be2b2b3d58" category="paragraph">Dovresti disporre di quanto segue:</block>
   <block id="7e0b6f72a006c5db4d352632364cae2a" category="paragraph">Per ulteriori informazioni, fare riferimento a.<block ref="f85f976c363ea77b8f2232a1ebbc4d2d" category="inline-link-rx"></block></block>
   <block id="1b6d3b3a89f4e066eb8bb8d481156cbb" category="list-text">*Tipo di istanza*: A seconda della disponibilità della regione, scegliere un tipo di istanza che soddisfi i requisiti di RAM e CPU (si consiglia t3.xlarge).</block>
@@ -3789,4 +3775,49 @@ Non supportato in Google Cloud o in<block ref="da2732e6e9a1be4ab82a1194533aac59"
   <block id="917f62b5224eebe3d212f654f1273e57" category="sidebar">Installare e configurare un connettore in modalità standard</block>
   <block id="f6bf5d3da1d67288a149ab832d6401d0" category="sidebar">Installare e configurare un connettore in modalità privata</block>
   <block id="6596e863cf1d0baa0dbccff0e9088e4a" category="sidebar">Accesso in corso</block>
+  <block id="337e8febb8ac96133c86a51cd7bc0240" category="summary">Scopri in che modo BlueXP usa le credenziali di Azure per eseguire azioni per tuo conto e come tali credenziali sono associate alle iscrizioni al marketplace. La comprensione di questi dettagli può essere utile quando si gestiscono le credenziali per una o più sottoscrizioni Azure. Ad esempio, potrebbe essere utile sapere quando aggiungere ulteriori credenziali Azure a BlueXP.</block>
+  <block id="3bf21bdc87a8f6ebde5b75e8cb0d5138" category="section-title">Credenziali e iscrizioni al marketplace</block>
+  <block id="b1e32c999d336fb505915de8a8ffca55" category="paragraph">Le credenziali che Aggiungi a un connettore devono essere associate a un'iscrizione ad Azure Marketplace in modo da poter pagare per Cloud Volumes ONTAP a una tariffa oraria (PAYGO) o tramite un contratto annuale e per utilizzare altri servizi BlueXP.</block>
+  <block id="fb84f4e33822ea62702acf73a6936590" category="paragraph"><block ref="1203dc0bfed75eb2f240871bcc177fc9" category="inline-link-macro-rx"></block>.</block>
+  <block id="699a4563fbdfb82a77a96312a9c5b942" category="paragraph">Nota quanto segue sulle credenziali e le iscrizioni al marketplace di Azure:</block>
+  <block id="394fe3b41aaabcee1c8575842cbb5c99" category="list-text">Puoi associare solo un'iscrizione ad Azure Marketplace a un set di credenziali Azure</block>
+  <block id="d9fbcede0b5dd54b1e4b6bd98ebd3fff" category="list-text">È possibile sostituire un abbonamento esistente al mercato con un nuovo abbonamento</block>
+  <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="section-title">FAQ</block>
+  <block id="c304c6eb88f5bb91ab96ba559c3124d2" category="paragraph">La seguente domanda riguarda le credenziali e gli abbonamenti.</block>
+  <block id="d1498a931fa5f0af32115f36f233018b" category="section-title">Posso modificare l'iscrizione ad Azure Marketplace per gli ambienti di lavoro Cloud Volumes ONTAP?</block>
+  <block id="eb61c2cc62653045f5374d6c02b9cb28" category="paragraph">Sì, è possibile. Quando modifichi l'abbonamento ad Azure Marketplace associato a un set di credenziali Azure, tutti gli ambienti di lavoro Cloud Volumes ONTAP esistenti e nuovi verranno addebitati sulla nuova iscrizione.</block>
+  <block id="9da47999e254d317c9c5eadda7df30b7" category="section-title">Posso aggiungere più credenziali Azure, ciascuna con diverse iscrizioni al marketplace?</block>
+  <block id="c0e1571fee7bc6b756a9626664ca06e8" category="paragraph">Tutte le credenziali di Azure che appartengono alla stessa iscrizione di Azure saranno associate alla stessa iscrizione di Azure Marketplace.</block>
+  <block id="0fa4c0b97cc5b7972696a2ba8c38b9c8" category="paragraph">Se disponi di più credenziali Azure che appartengono a diverse iscrizioni ad Azure, queste possono essere associate alla stessa iscrizione ad Azure Marketplace o a diverse iscrizioni al marketplace.</block>
+  <block id="4666e56ab2715e92af8b4dbb7fc97357" category="section-title">Posso spostare gli ambienti di lavoro Cloud Volumes ONTAP esistenti in un'altra iscrizione ad Azure?</block>
+  <block id="cd0af57faab800d64dbc9b6686539495" category="paragraph">No, non è possibile spostare le risorse di Azure associate al tuo ambiente di lavoro Cloud Volumes ONTAP in un'altra sottoscrizione di Azure.</block>
+  <block id="94db8f0d9e472465df4f4a2373f34e15" category="section-title">Come funzionano le credenziali per le implementazioni del marketplace e le implementazioni on-premise?</block>
+  <block id="459f61ebe7bde01cca8ed21d42e836ca" category="paragraph">Quando si implementa un connettore in Google Cloud, BlueXP crea un set predefinito di credenziali associate all'istanza della macchina virtuale del connettore. In qualsiasi momento, puoi modificare l'iscrizione di Google Cloud Marketplace associata a queste credenziali. L'abbonamento consente di creare un sistema Cloud Volumes ONTAP pay-as-you-go e di utilizzare altri servizi BlueXP.</block>
+  <block id="9e2bbef36ac6bd075f201eb1ac82fddb" category="paragraph">Sostituendo l'attuale sottoscrizione al marketplace con una nuova sottoscrizione, l'abbonamento al marketplace viene modificato per qualsiasi ambiente di lavoro Cloud Volumes ONTAP esistente e per tutti i nuovi ambienti di lavoro.</block>
+  <block id="6f3c919771c405c0014ee0f6d72d3149" category="summary">Scopri in che modo BlueXP usa le credenziali di Google Cloud per eseguire azioni per tuo conto e come tali credenziali sono associate alle iscrizioni al marketplace. Comprendere questi dettagli può essere utile quando si gestiscono le credenziali per uno o più progetti Google Cloud. Ad esempio, è possibile ottenere informazioni sull'account del servizio associato alla macchina virtuale del connettore.</block>
+  <block id="2b28187ebaea3b39a76735548553c017" category="paragraph">Quando implementi un connettore in Google Cloud, BlueXP crea un set di credenziali predefinito per l'account del servizio Google Cloud nel progetto in cui risiede il connettore. Queste credenziali devono essere associate a un'iscrizione a Google Cloud Marketplace in modo da poter pagare per Cloud Volumes ONTAP a una tariffa oraria (PAYGO) e utilizzare altri servizi BlueXP.</block>
+  <block id="09287a1087bc09afb8b07a6d1a5eae1e" category="inline-link-macro">Scopri come associare un abbonamento a Google Cloud Marketplace</block>
+  <block id="7acdafee5614d2da4affd478462c535e" category="paragraph"><block ref="4394d3ef2937eb47839ebd4e9350c4a7" category="inline-link-macro-rx"></block>.</block>
+  <block id="ebb6d853fd57e1782a582fe71ada39d8" category="paragraph">Nota quanto segue riguardo le credenziali di Google Cloud e le iscrizioni al marketplace:</block>
+  <block id="4d1b7e7c166bf4ed32fa5d56516fa083" category="list-text">A un connettore può essere associato un solo set di credenziali Google Cloud</block>
+  <block id="6d399b7b3ed393068765f55064547297" category="list-text">Puoi associare alle credenziali un solo abbonamento a Google Cloud Marketplace</block>
+  <block id="239d1b40f08bc1656a0d7e74a463506d" category="summary">Scopri in che modo BlueXP usa le credenziali AWS per eseguire azioni per tuo conto e come tali credenziali sono associate alle iscrizioni al marketplace. La comprensione di questi dettagli può essere utile quando si gestiscono le credenziali per uno o più account AWS in BlueXP. Ad esempio, potrebbe essere utile sapere quando aggiungere ulteriori credenziali AWS a BlueXP.</block>
+  <block id="83c8c6a596b650f7a3d797d7ca610eec" category="paragraph">Se vuoi utilizzare BlueXP con altri account AWS, puoi fornire le chiavi AWS per un utente IAM o l'ARN di un ruolo in un account attendibile. L'immagine seguente mostra due account aggiuntivi, uno che fornisce le autorizzazioni tramite un ruolo IAM in un account attendibile e l'altro tramite le chiavi AWS di un utente IAM:</block>
+  <block id="69989e90b246317e0163189ff8d059e9" category="paragraph">Le credenziali che Aggiungi a un connettore devono essere associate a un'iscrizione al marketplace AWS in modo che puoi pagare per Cloud Volumes ONTAP a una tariffa oraria (PAYGO) o tramite un contratto annuale e per utilizzare altri servizi BlueXP.</block>
+  <block id="121abc14ff73ca8b4e21d30028c17399" category="paragraph"><block ref="ec04a55c38de32bb88fa7b4155061e7c" category="inline-link-macro-rx"></block>.</block>
+  <block id="76561e64ef8af12896c02fcfaddaf89e" category="paragraph">Nota quanto segue sulle credenziali e le iscrizioni al marketplace di AWS:</block>
+  <block id="7b0c974aab7fa6523b2e4aa45c818464" category="list-text">Puoi associare una sola iscrizione al marketplace di AWS a un set di credenziali AWS</block>
+  <block id="d33d86c6f3f99b3b9b1b988bde0679bd" category="paragraph">Le seguenti domande sono relative alle credenziali e agli abbonamenti.</block>
+  <block id="f4ccd042e43557d6dcec2b8d243b7662" category="paragraph">Come descritto nelle sezioni precedenti, BlueXP ti consente di fornire le credenziali AWS in pochi modi: Un ruolo IAM associato all'istanza di connettore, assumendo un ruolo IAM in un account attendibile o fornendo chiavi di accesso AWS.</block>
+  <block id="c9195aa1791c4bdbc03156535bd27fc0" category="section-title">Posso modificare l'iscrizione al marketplace AWS per gli ambienti di lavoro Cloud Volumes ONTAP?</block>
+  <block id="2fde9464009be43ef57f1ae03915ce1b" category="paragraph">Sì, è possibile. Quando modifichi l'iscrizione al marketplace di AWS associata a un set di credenziali, tutti gli ambienti di lavoro Cloud Volumes ONTAP esistenti e nuovi verranno addebitati i costi del nuovo abbonamento.</block>
+  <block id="5f40627f2e8501cf250f4cc37e129f5c" category="section-title">Posso aggiungere più credenziali AWS, ciascuna con diverse iscrizioni al marketplace?</block>
+  <block id="f3d5116dad7634904c5a0daad024b77d" category="paragraph">Tutte le credenziali AWS che appartengono allo stesso account AWS saranno associate allo stesso abbonamento a AWS Marketplace.</block>
+  <block id="941c9eda62bf4e57d449bdcf28810b26" category="paragraph">Se disponi di più credenziali AWS appartenenti a diversi account AWS, tali credenziali possono essere associate alla stessa iscrizione di AWS Marketplace o a iscrizioni diverse.</block>
+  <block id="240d9c0eecb88b98c7fc253d7a1ea3e9" category="section-title">Posso spostare gli ambienti di lavoro Cloud Volumes ONTAP esistenti su un account AWS diverso?</block>
+  <block id="48fee81c8905ac5f4a12516fa379b0f7" category="paragraph">No, non è possibile spostare le risorse AWS associate al tuo ambiente di lavoro Cloud Volumes ONTAP su un account AWS diverso.</block>
+  <block id="a0b5de080d56bb71b1a6a7c72fd88757" category="doc">Gestisci le credenziali AWS e le iscrizioni al marketplace per BlueXP</block>
+  <block id="8fda5ebe3faa8194a970ad5e0645d8c7" category="list-text">Vuoi modificare l'iscrizione al marketplace AWS associata alle credenziali AWS.</block>
+  <block id="0b3b411ceb545e69a73eeeea9e0f4812" category="doc">Gestisci le credenziali di Azure e le iscrizioni al marketplace per BlueXP</block>
+  <block id="f2427bd8db58aeac7d862aab97ae63df" category="list-text">Vuoi modificare l'iscrizione ad Azure Marketplace associata alle credenziali Azure.</block>
 </blocks>
