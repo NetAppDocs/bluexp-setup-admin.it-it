@@ -27,6 +27,9 @@ Questi endpoint vengono contattati dal computer di un utente quando si completan
 \https://*.console.bluexp.netapp.com | Il browser Web contatta questi URL quando si utilizza la console basata su Web BlueXP. 
 
 
+| \https://aiq.netapp.com | Richieste per accedere al Digital Advisor di BlueXP. 
+
+
  a| 
 Servizi AWS (amazonaws.com):
 

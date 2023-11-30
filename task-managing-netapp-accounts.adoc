@@ -116,11 +116,13 @@ L'utente può ora accedere a tali aree di lavoro da BlueXP, purché il connettor
 
 == Creare e gestire gli account di servizio
 
-Un account di servizio agisce come un "utente" che può effettuare chiamate API autorizzate a BlueXP per scopi di automazione. In questo modo è più semplice gestire l'automazione, poiché non è necessario creare script di automazione basati sull'account utente di una persona reale che può lasciare l'azienda in qualsiasi momento. E se utilizzi la federazione, puoi creare un token senza generare un token di refresh dal cloud.
+Un account di servizio agisce come un "utente" che può effettuare chiamate API autorizzate a BlueXP per scopi di automazione. In questo modo è più semplice gestire l'automazione, poiché non è necessario creare script di automazione basati sull'account utente di una persona reale che può lasciare l'azienda in qualsiasi momento.
 
 È possibile assegnare le autorizzazioni a un account di servizio assegnandolo un ruolo, proprio come qualsiasi altro utente BlueXP. È inoltre possibile associare l'account del servizio a aree di lavoro specifiche per controllare gli ambienti di lavoro (risorse) a cui il servizio può accedere.
 
 Quando si crea l'account del servizio, BlueXP consente di copiare o scaricare un ID client e un segreto client per l'account del servizio. Questa coppia di chiavi viene utilizzata per l'autenticazione con BlueXP.
+
+Tenere presente che non è necessario un token di aggiornamento per le operazioni API quando si utilizza un account di servizio. https://docs.netapp.com/us-en/bluexp-automation/platform/grant_types.html["Informazioni sui token di aggiornamento"^]
 
 
 

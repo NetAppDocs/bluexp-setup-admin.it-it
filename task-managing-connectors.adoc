@@ -230,21 +230,20 @@ BlueXP rimuove il connettore dai record.
 
 == Disinstallare il software Connector
 
-Disinstallare il software Connector per risolvere i problemi o per rimuovere definitivamente il software dall'host. La procedura da seguire dipende dal fatto che il connettore sia stato installato su un host con accesso a Internet o su un host in una rete con restrizioni che non dispone di accesso a Internet.
+Disinstallare il software Connector per risolvere i problemi o per rimuovere definitivamente il software dall'host. La procedura da seguire dipende dal fatto che il connettore sia stato installato su un host con accesso a Internet (modalità standard o limitata) o su un host in una rete che non dispone di accesso a Internet (modalità privata).
 
 
 
-=== Eseguire la disinstallazione da un host con accesso a Internet
+=== Disinstallare quando si utilizza la modalità standard o limitata
 
-Il connettore online include uno script di disinstallazione che è possibile utilizzare per disinstallare il software.
+I passaggi riportati di seguito consentono di disinstallare il software del connettore quando si utilizza BlueXP in modalità standard o limitata.
 
-.Fase
+.Fasi
+. Connettersi alla macchina virtuale Linux per il connettore.
 . Eseguire lo script di disinstallazione dall'host Linux:
 +
-[source, cli]
-----
-/opt/application/netapp/service-manager-2/uninstall.sh [silent]
-----
+`/opt/application/netapp/service-manager-2/uninstall.sh [silent]`
+
 +
 _silent_ esegue lo script senza richiedere conferma.
 
@@ -252,16 +251,15 @@ _silent_ esegue lo script senza richiedere conferma.
 
 
 
-=== Eseguire la disinstallazione da un host senza accesso a Internet
+=== Disinstallare quando si utilizza la modalità privata
 
-Utilizzare questi comandi se il software del connettore è stato scaricato dal NetApp Support Site e installato in una rete con restrizioni che non dispone di accesso a Internet.
+La procedura riportata di seguito consente di disinstallare il software del connettore quando si utilizza BlueXP in modalità privata in cui non è disponibile alcun accesso a Internet.
 
-.Fase
+.Fasi
+. Connettersi alla macchina virtuale Linux per il connettore.
 . Dall'host Linux, eseguire i seguenti comandi:
 +
-[source, cli]
-----
-docker-compose -f /opt/application/netapp/ds/docker-compose.yml down -v
-rm -rf /opt/application/netapp/ds
-----
+`./opt/application/netapp/ds/cleanup.sh`
+`rm -rf /opt/application/netapp/ds`
+
 

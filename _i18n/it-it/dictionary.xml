@@ -487,7 +487,6 @@
   <block id="9cf68904e16d6d689d242f4868ec6c3f" category="list-text">Host dedicato</block>
   <block id="3e54bf758f50b15d709edd166d8bf82b" category="list-text">Il connettore non è supportato su un host condiviso con altre applicazioni. L'host deve essere un host dedicato.</block>
   <block id="bbf3330385f894cd7bd34b34e4c36d6c" category="list-text">Sistemi operativi supportati</block>
-  <block id="e5051949dc3a37f9077e85df0f1c8a21" category="list-text">Ubuntu 22.04</block>
   <block id="ee7f5aec4e9ac5fecb93d224c17fcd43" category="list-text">CentOS 7.6, 7.7, 7.8 e 7.9</block>
   <block id="eaf5618d0182a88179ac8580cc418219" category="list-text">Red Hat Enterprise Linux 7.6, 7.7, 7.8 e 7.9</block>
   <block id="24dfedb0d4bd46f0cd823d4e245f7642" category="paragraph">L'host deve essere registrato con Red Hat Subscription Management. Se non è registrato, l'host non può accedere ai repository per aggiornare il software di terze parti richiesto durante l'installazione del connettore.</block>
@@ -1970,7 +1969,6 @@
   <block id="5eeca886fa07462826a9ea747483f528" category="section-title">Dettagli AWS</block>
   <block id="a0676ac5cfebaef69b53ff7e37cd8c3c" category="paragraph">Se hai implementato il connettore da BlueXP o dal mercato del cloud provider, prendi nota di quanto segue:</block>
   <block id="6b3a1b41a32e70a38db42e8ec15a6fba" category="list-text">Il tipo di istanza EC2 è t3.xlarge.</block>
-  <block id="eebb9a8111d1623667243e7e41ed0e71" category="list-text">Il sistema operativo per l'immagine è Ubuntu 22.04.</block>
   <block id="953e61420be6157aa122dfd3475d4070" category="paragraph">Il sistema operativo non include una GUI. Per accedere al sistema, è necessario utilizzare un terminale.</block>
   <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">Il disco di sistema predefinito è un disco gp2 da 100 GiB.</block>
   <block id="b8c4a5bd8ed4eb470e80955a542dd4bf" category="section-title">Dettagli di Azure</block>
@@ -2089,13 +2087,8 @@ oppure</block>
   <block id="ec2047192779921dd8c042d6555c8cd8" category="list-text">Inserire il nome del connettore da confermare, quindi selezionare *Remove* (Rimuovi).</block>
   <block id="7c42efcb94d7f8204bfb69f49301938f" category="paragraph">BlueXP rimuove il connettore dai record.</block>
   <block id="1e5422449b0eb99ea40cb7fe70879cc1" category="section-title">Disinstallare il software Connector</block>
-  <block id="1eadfd8e2f3b513abf35355f37e97001" category="paragraph">Disinstallare il software Connector per risolvere i problemi o per rimuovere definitivamente il software dall'host. La procedura da seguire dipende dal fatto che il connettore sia stato installato su un host con accesso a Internet o su un host in una rete con restrizioni che non dispone di accesso a Internet.</block>
-  <block id="4d67fb715dceafe12fe6803426ac57b2" category="section-title">Eseguire la disinstallazione da un host con accesso a Internet</block>
-  <block id="e089c95fb359ddfa284cac5771dbcd57" category="paragraph">Il connettore online include uno script di disinstallazione che è possibile utilizzare per disinstallare il software.</block>
   <block id="6a5be3e06b444aea04beccda3bc9e1d6" category="list-text">Eseguire lo script di disinstallazione dall'host Linux:</block>
   <block id="0bb43692ecd0352eecc69c235e34d6f0" category="paragraph">_silent_ esegue lo script senza richiedere conferma.</block>
-  <block id="8df713934e0916c402f7101820962747" category="section-title">Eseguire la disinstallazione da un host senza accesso a Internet</block>
-  <block id="aa03c0a49ae5be9aa71931d934887122" category="paragraph">Utilizzare questi comandi se il software del connettore è stato scaricato dal NetApp Support Site e installato in una rete con restrizioni che non dispone di accesso a Internet.</block>
   <block id="c89064bda3f1ae133a231f5b1f44c3b0" category="list-text">Dall'host Linux, eseguire i seguenti comandi:</block>
   <block id="111374538bcb0d5c90baaab097278e39" category="doc">Configurare il networking on-premise</block>
   <block id="8efafb8ae5af62e571308cca0bdcb4f0" category="paragraph">Quando si installa manualmente il connettore sul proprio host Linux, il programma di installazione del connettore richiede l'accesso ai seguenti URL durante il processo di installazione:</block>
@@ -2444,7 +2437,6 @@ Si noti che la pagina viene aggiornata tra il test della connessione e l'abilita
   <block id="aca7ecb913d1693820d3cecc61146e57" category="list-text">Selezionare le aree di lavoro da associare all'utente e selezionare *Apply* (Applica).</block>
   <block id="00c13424586ec3eadb8e36d6a47c5a3d" category="paragraph">L'utente può ora accedere a tali aree di lavoro da BlueXP, purché il connettore sia stato associato anche alle aree di lavoro.</block>
   <block id="f932d2619edea0dc69b40e9be53abdc4" category="section-title">Creare e gestire gli account di servizio</block>
-  <block id="a27c9464b539fe59f34a06ecfb5eebf0" category="paragraph">Un account di servizio agisce come un "utente" che può effettuare chiamate API autorizzate a BlueXP per scopi di automazione. In questo modo è più semplice gestire l'automazione, poiché non è necessario creare script di automazione basati sull'account utente di una persona reale che può lasciare l'azienda in qualsiasi momento. E se utilizzi la federazione, puoi creare un token senza generare un token di refresh dal cloud.</block>
   <block id="3867fe57530ba0aa0540b395cae02bbe" category="paragraph">È possibile assegnare le autorizzazioni a un account di servizio assegnandolo un ruolo, proprio come qualsiasi altro utente BlueXP. È inoltre possibile associare l'account del servizio a aree di lavoro specifiche per controllare gli ambienti di lavoro (risorse) a cui il servizio può accedere.</block>
   <block id="3e90ee6ffbf4747b6daa7514209e20ef" category="paragraph">Quando si crea l'account del servizio, BlueXP consente di copiare o scaricare un ID client e un segreto client per l'account del servizio. Questa coppia di chiavi viene utilizzata per l'autenticazione con BlueXP.</block>
   <block id="41d9e1257b3e21add2e59d038938ea94" category="section-title">Creare un account di servizio</block>
@@ -3820,4 +3812,19 @@ Non supportato in Google Cloud o in<block ref="da2732e6e9a1be4ab82a1194533aac59"
   <block id="8fda5ebe3faa8194a970ad5e0645d8c7" category="list-text">Vuoi modificare l'iscrizione al marketplace AWS associata alle credenziali AWS.</block>
   <block id="0b3b411ceb545e69a73eeeea9e0f4812" category="doc">Gestisci le credenziali di Azure e le iscrizioni al marketplace per BlueXP</block>
   <block id="f2427bd8db58aeac7d862aab97ae63df" category="list-text">Vuoi modificare l'iscrizione ad Azure Marketplace associata alle credenziali Azure.</block>
+  <block id="183f3a1e578d0dce86eeb393edf40a5d" category="list-text">Ubuntu 22,04 LTS</block>
+  <block id="7f9b20909dd63d1bee579fee63d32a4a" category="paragraph">Disinstallare il software Connector per risolvere i problemi o per rimuovere definitivamente il software dall'host. La procedura da seguire dipende dal fatto che il connettore sia stato installato su un host con accesso a Internet (modalità standard o limitata) o su un host in una rete che non dispone di accesso a Internet (modalità privata).</block>
+  <block id="704318f2299bbf226c9c1348790ad16a" category="section-title">Disinstallare quando si utilizza la modalità standard o limitata</block>
+  <block id="cb4aad09336fbc7a1b8ecf07e5495e18" category="paragraph">I passaggi riportati di seguito consentono di disinstallare il software del connettore quando si utilizza BlueXP in modalità standard o limitata.</block>
+  <block id="fd1e4807d8caf9eb7b22acef39d3e5ce" category="list-text">Connettersi alla macchina virtuale Linux per il connettore.</block>
+  <block id="e1b145fbf942267f38a8e6f0928d8629" category="paragraph"><block ref="9ff6aead716ef57f3a1e9e40a858062f" prefix="" category="inline-code"></block></block>
+  <block id="e62b509228c00429c0a06d3fd75b6e6e" category="section-title">Disinstallare quando si utilizza la modalità privata</block>
+  <block id="56772d07c7720c5dc4391eea138265a3" category="paragraph">La procedura riportata di seguito consente di disinstallare il software del connettore quando si utilizza BlueXP in modalità privata in cui non è disponibile alcun accesso a Internet.</block>
+  <block id="72b013396e56865d3673702aa9bcc731" category="paragraph"><block ref="53c9ecf44ffc5c93a5a42f4cda983463" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
+  <block id="6ae4e7f185de6791c9b45f3d273959f9" category="cell">\https://aiq.netapp.com</block>
+  <block id="034ade3fc7b98591feafb7b0039b2724" category="cell">Richieste per accedere al Digital Advisor di BlueXP.</block>
+  <block id="345dbd48a6c734a7dc3b743f014493be" category="paragraph">Un account di servizio agisce come un "utente" che può effettuare chiamate API autorizzate a BlueXP per scopi di automazione. In questo modo è più semplice gestire l'automazione, poiché non è necessario creare script di automazione basati sull'account utente di una persona reale che può lasciare l'azienda in qualsiasi momento.</block>
+  <block id="f48ee857175ccdfbd5ae5d5354c32c08" category="inline-link">Informazioni sui token di aggiornamento</block>
+  <block id="713b059ba47ab000812d3dd15273cee6" category="paragraph">Tenere presente che non è necessario un token di aggiornamento per le operazioni API quando si utilizza un account di servizio.<block ref="cc919b62f11a25e2d8c9fb23b34ada32" category="inline-link-rx"></block></block>
+  <block id="7c42c6e2f8295dada12f50f825327ddf" category="list-text">Il sistema operativo per l'immagine è Ubuntu 22,04 LTS.</block>
 </blocks>
