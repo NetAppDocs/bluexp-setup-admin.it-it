@@ -1442,7 +1442,6 @@
   <block id="377655366b79df746cc3d0c01596ba86" category="paragraph">Scaricare il programma di installazione del prodotto dal NetApp Support Site e installare manualmente il connettore sul proprio host Linux.</block>
   <block id="7bc3966adb932d8b546fbfa4ef7113d7" category="paragraph">Per installare il connettore sono necessari i privilegi di root.</block>
   <block id="2ba7eb945a77498b8342e4be53a3761e" category="list-text">Scaricare il software del connettore da<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block></block>
-  <block id="21ecc51e06ea55adef72442730b0d5cf" category="paragraph">Assicurarsi di scaricare il programma di installazione per le reti con restrizioni senza accesso a Internet.</block>
   <block id="0d5d3e78379f182967772aab096aa6ac" category="list-text">Copiare il programma di installazione sull'host Linux.</block>
   <block id="482c8088b93a78c2682279e88617ca7f" category="list-text">Eseguire lo script di installazione:</block>
   <block id="d932ef50072ac5f51fe3242771618f19" category="paragraph">Il software del connettore è installato. Ora puoi configurare BlueXP.</block>
@@ -3026,9 +3025,6 @@ Il rilevamento senza connettore (rilevamento diretto) non è supportato.</block>
   <block id="99f9fe7adce4b6282eee924da977b6d4" category="list-text">Servizi BlueXP supportati nelle implementazioni on-premise</block>
   <block id="614a24e7adcef9d83ca4454cd4443cbd" category="list-text">BlueXP supporta i seguenti servizi di storage e dati con modalità privata quando il connettore viene installato in sede:</block>
   <block id="1a1c1a2053d87746c09321c96ffee577" category="inline-link">Scopri come eseguire il backup on-premise dei dati ONTAP su StorageGRID</block>
-  <block id="4b2d116ffff1d0b3943a8369ed15f92e" category="cell">Sono supportati solo il backup e il ripristino dei volumi ONTAP on-premise sui sistemi StorageGRID.
-
-<block ref="06335b9f199e896c8eeed49a6ea11aae" category="inline-link-rx"></block></block>
   <block id="53a7caecec393fdcc143318b6a21f701" category="list-text">Le uniche origini dati supportate sono quelle che è possibile rilevare localmente.</block>
   <block id="ad85db404f0dfc2267b348299aa513b9" category="inline-link">Visualizzare le fonti che è possibile scoprire localmente</block>
   <block id="c31f6ba921f50b9fdf957e9653b25a96" category="paragraph"><block ref="c31f6ba921f50b9fdf957e9653b25a96" category="inline-link-rx"></block></block>
@@ -3827,4 +3823,20 @@ Non supportato in Google Cloud o in<block ref="da2732e6e9a1be4ab82a1194533aac59"
   <block id="f48ee857175ccdfbd5ae5d5354c32c08" category="inline-link">Informazioni sui token di aggiornamento</block>
   <block id="713b059ba47ab000812d3dd15273cee6" category="paragraph">Tenere presente che non è necessario un token di aggiornamento per le operazioni API quando si utilizza un account di servizio.<block ref="cc919b62f11a25e2d8c9fb23b34ada32" category="inline-link-rx"></block></block>
   <block id="7c42c6e2f8295dada12f50f825327ddf" category="list-text">Il sistema operativo per l'immagine è Ubuntu 22,04 LTS.</block>
+  <block id="e8a0c291b754a75e0e91ecf69d567912" category="section-title">5 dicembre 2023</block>
+  <block id="1771e2f4014c6ccd829b84cf9e8c7d27" category="section-title">Rilascio in modalità privata</block>
+  <block id="5a78b457c661dc3d01c5125da794f0ed" category="paragraph">Una nuova release in modalità privata è ora disponibile per BlueXP. Questa release include la versione 3.9.35 del connettore e le versioni dei servizi BlueXP che sono supportate dalla modalità privata a ottobre 2023.</block>
+  <block id="ec34e91164e39c9df1bfb906cff07162" category="paragraph">Questa nuova versione è disponibile per il download dal sito del supporto NetApp.</block>
+  <block id="2e57b160bcd31ccd527a6670d94879de" category="inline-link">Scopri di più sui servizi BlueXP inclusi nella modalità privata</block>
+  <block id="d51183b71ba843f2f97d0b54a084f7e8" category="list-text"><block ref="d51183b71ba843f2f97d0b54a084f7e8" category="inline-link-rx"></block></block>
+  <block id="8156defa13b44a36e67cab400c3b8bd4" category="inline-link">Scopri come iniziare a utilizzare BlueXP in modalità privata</block>
+  <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
+  <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">Informazioni su come aggiornare il connettore quando si utilizza la modalità privata</block>
+  <block id="4e208e7f54024bf731fae02025ce34d9" category="list-text"><block ref="4e208e7f54024bf731fae02025ce34d9" category="inline-link-rx"></block></block>
+  <block id="a6c2003199e95310a83aa40a67058bd8" category="paragraph">Assicurarsi di scaricare il programma di installazione offline per le reti private senza accesso a Internet.</block>
+  <block id="592f630e8b69cd90cac093e1bdbd9dbb" category="list-text">È supportato il backup e il ripristino di volumi ONTAP on-premise su sistemi StorageGRID.</block>
+  <block id="06335b9f199e896c8eeed49a6ea11aae" category="paragraph"><block ref="06335b9f199e896c8eeed49a6ea11aae" category="inline-link-rx"></block></block>
+  <block id="74456640d8afbf406f720d7bd598b445" category="list-text">È supportato anche il backup e il ripristino di volumi ONTAP on-premise in ONTAP S3.</block>
+  <block id="18bb302ce6a2bf46e1beed1133756fb6" category="inline-link">Ecco come eseguire il backup dei dati ONTAP on-premise su ONTAP S3</block>
+  <block id="4befb86902877ee4e8c0bab35f4c9850" category="paragraph"><block ref="4befb86902877ee4e8c0bab35f4c9850" category="inline-link-rx"></block></block>
 </blocks>
