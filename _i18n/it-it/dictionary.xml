@@ -3839,4 +3839,7 @@ Non supportato in Google Cloud o in<block ref="da2732e6e9a1be4ab82a1194533aac59"
   <block id="74456640d8afbf406f720d7bd598b445" category="list-text">È supportato anche il backup e il ripristino di volumi ONTAP on-premise in ONTAP S3.</block>
   <block id="18bb302ce6a2bf46e1beed1133756fb6" category="inline-link">Ecco come eseguire il backup dei dati ONTAP on-premise su ONTAP S3</block>
   <block id="4befb86902877ee4e8c0bab35f4c9850" category="paragraph"><block ref="4befb86902877ee4e8c0bab35f4c9850" category="inline-link-rx"></block></block>
+  <block id="d22d5d645d5b80561936fd406bec2118" category="section-title">5 dicembre 2023</block>
+  <block id="f729237ece11d2ac3f651452a87ead32" category="paragraph">Le seguenti autorizzazioni non sono più necessarie per il backup e recovery di BlueXP durante il backup dei dati dei volumi nell'storage Azure Blob:</block>
+  <block id="fe3f6158e2c4c966c8642056658d69e0" category="paragraph">Queste autorizzazioni sono necessarie per altri servizi storage BlueXP, pertanto resteranno nel ruolo personalizzato del connettore se utilizzi tali servizi storage.</block>
 </blocks>
