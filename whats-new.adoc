@@ -18,6 +18,20 @@ Scopri le novità delle funzionalità di amministrazione di BlueXP: Account Blue
 
 
 
+== 11 gennaio 2024
+
+
+
+=== Connettore 3.9.36
+
+Questa release include miglioramenti minori, correzioni di bug e supporto per il connettore nelle seguenti aree cloud:
+
+* La regione di Israele (Tel Aviv) in AWS
+* L'Arabia Saudita in Google Cloud
+
+
+
+
 == 5 dicembre 2023
 
 

@@ -18,14 +18,14 @@ Per iniziare, il rappresentante NetApp potrebbe richiedere l'ID di sistema del c
 
 .Fasi
 . Nella parte superiore destra della console BlueXP, selezionare l'icona della Guida.
-. Selezionare *supporto > connettore*.
+. Selezionare *supporto > connettore BlueXP*.
 +
-L'ID di sistema viene visualizzato nella parte superiore.
+L'ID del sistema viene visualizzato nella parte superiore della pagina.
 
 +
 *Esempio*
 
 +
-image:screenshot_system_id.gif["Una schermata che mostra l'ID di sistema per BlueXP visualizzato nella dashboard di supporto."]
+image:screenshot-system-id.png["Una schermata che mostra l'ID di sistema per BlueXP visualizzato nella dashboard di supporto."]
 
 
