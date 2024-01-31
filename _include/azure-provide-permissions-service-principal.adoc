@@ -9,7 +9,7 @@ image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (I
 . Selezionare *Aggiungi credenziali* e seguire la procedura guidata.
 +
 .. *Credentials Location*: Selezionare *Microsoft Azure > Connector*.
-.. *Definisci credenziali*: Immettere le informazioni relative all'entità del servizio Azure Active Directory che concede le autorizzazioni richieste:
+.. *Definisci credenziali*: Immettere le informazioni sull'entità del servizio Microsoft Entra che concede le autorizzazioni richieste:
 +
 *** ID dell'applicazione (client)
 *** ID directory (tenant)

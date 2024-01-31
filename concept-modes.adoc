@@ -68,7 +68,7 @@ Nella tabella seguente viene fornito un confronto di queste modalità.
 | Accesso all'interfaccia utente | Dal livello SaaS BlueXP | Localmente dal connettore VM | Localmente dal connettore VM 
 
 
-| Endpoint API | Il livello BlueXP SaaS | Il livello BlueXP SaaS | Il connettore 
+| Endpoint API | Il livello BlueXP SaaS | Il connettore | Il connettore 
 
 
 | Autenticazione | Tramite SaaS utilizzando auth0, accesso NSS o federazione di identità | Attraverso SaaS utilizzando auth0 o Identity Federation | Autenticazione utente locale 
@@ -138,9 +138,8 @@ Il layer BlueXP SaaS non avvia la comunicazione con il connettore. Tutte le comu
 Posizione supportata per il connettore:: In modalità limitata, il connettore è supportato nel cloud: In un'area governativa, in un'area sovrana o in un'area commerciale.
 Installazione del connettore:: L'installazione del connettore è possibile da AWS o Azure Marketplace o da un'installazione manuale sul proprio host Linux.
 Aggiornamenti del connettore:: Gli aggiornamenti automatici del software del connettore sono disponibili da BlueXP con aggiornamenti mensili.
-Accesso all'interfaccia utente:: L'interfaccia utente è accessibile dal connettore implementato nella tua area cloud.
-Endpoint API:: Le chiamate API vengono effettuate al seguente endpoint:
-\https://cloudmanager.cloud.netapp.com
+Accesso all'interfaccia utente:: L'interfaccia utente è accessibile dalla macchina virtuale del connettore implementata nella regione del cloud.
+Endpoint API:: Le chiamate API vengono effettuate alla macchina virtuale del connettore.
 Autenticazione:: L'autenticazione viene fornita tramite il servizio cloud di BlueXP utilizzando auth0. È disponibile anche la federazione delle identità.
 Servizi BlueXP supportati:: BlueXP supporta i seguenti servizi di storage e dati in modalità limitata:
 +

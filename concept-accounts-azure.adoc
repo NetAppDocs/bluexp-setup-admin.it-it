@@ -42,7 +42,7 @@ L'identità gestita assegnata dal sistema alla macchina virtuale del connettore 
 
 == Credenziali Azure aggiuntive
 
-Se si desidera utilizzare credenziali Azure diverse con BlueXP, è necessario concedere le autorizzazioni richieste da link:task-adding-azure-accounts.html["Creazione e configurazione di un'entità di servizio in Azure Active Directory"] Per ciascun account Azure. L'immagine seguente mostra due account aggiuntivi, ciascuno configurato con un'entità del servizio e un ruolo personalizzato che fornisce le autorizzazioni:
+Se si desidera utilizzare credenziali Azure diverse con BlueXP, è necessario concedere le autorizzazioni richieste da link:task-adding-azure-accounts.html["Creazione e impostazione di un'entità di servizio in Microsoft Entra ID"] Per ciascun account Azure. L'immagine seguente mostra due account aggiuntivi, ciascuno configurato con un'entità del servizio e un ruolo personalizzato che fornisce le autorizzazioni:
 
 image:diagram_permissions_multiple_azure.png["Immagine concettuale che mostra l'account Azure iniziale, che riceve le autorizzazioni attraverso un ruolo personalizzato e un'identità gestita, e due account aggiuntivi che ricevono le autorizzazioni attraverso un ruolo personalizzato e un'entità del servizio."]
 
@@ -100,7 +100,7 @@ No, non è possibile spostare le risorse di Azure associate al tuo ambiente di l
 
 Le sezioni precedenti descrivono il metodo di implementazione consigliato per il connettore, fornito da BlueXP. È inoltre possibile implementare un connettore in Azure da Azure Marketplace e installare il software del connettore sul proprio host Linux.
 
-Se si utilizza Marketplace, è possibile fornire le autorizzazioni assegnando un ruolo personalizzato alla macchina virtuale del connettore e a un'identità gestita assegnata dal sistema oppure utilizzare l'entità del servizio Azure ad.
+Se si utilizza Marketplace, è possibile fornire autorizzazioni assegnando un ruolo personalizzato alla macchina virtuale del connettore e a un'identità gestita assegnata al sistema oppure è possibile utilizzare un'entità del servizio Microsoft Entra.
 
 Per le implementazioni on-premise, non è possibile impostare un'identità gestita per il connettore, ma è possibile fornire le autorizzazioni utilizzando un'identità di servizio.
 

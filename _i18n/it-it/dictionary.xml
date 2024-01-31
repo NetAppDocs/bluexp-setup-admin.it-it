@@ -61,7 +61,6 @@
   <block id="ca5c14dd1767138ec0ae60d1c4d7a128" category="list-text">Selezionare *account utente Azure* per accedere all'account Microsoft, che dovrebbe disporre delle autorizzazioni necessarie.</block>
   <block id="e0f74d06e87b3ad6fc9f3b3cfc573c38" category="paragraph">Il modulo è di proprietà e ospitato da Microsoft. Le tue credenziali non vengono fornite a NetApp.</block>
   <block id="49e88457c3aa8d56ebf17eb8460a3eb8" category="admonition">Se hai già effettuato l'accesso a un account Azure, BlueXP utilizzerà automaticamente tale account. Se disponi di più account, potrebbe essere necessario prima disconnettersi per assicurarsi di utilizzare l'account corretto.</block>
-  <block id="0a3420a284048b3146bfedfda39bc929" category="list-text">Selezionare *Active Directory service principal* per immettere informazioni sull'entità del servizio Azure Active Directory che concede le autorizzazioni richieste:</block>
   <block id="5f92aba7d335e90da33ac643d56ed817" category="list-text">ID dell'applicazione (client)</block>
   <block id="ac1fdeeca5975112ea2d53b754a4c94f" category="list-text">ID directory (tenant)</block>
   <block id="734082edf44417dd19cc65943aa65c36" category="list-text">Segreto del client</block>
@@ -586,7 +585,6 @@
   <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">Selezionare *Gestione NSS &gt; Aggiungi account NSS*.</block>
   <block id="85b9386ed443776127e099931d73448a" category="list-text">Quando richiesto, selezionare *continua* per essere reindirizzato a una pagina di accesso Microsoft.</block>
-  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp utilizza Microsoft Azure Active Directory come provider di identità per i servizi di autenticazione specifici per il supporto e la concessione di licenze.</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">Nella pagina di accesso, fornire l'indirizzo e-mail e la password registrati del NetApp Support Site per eseguire il processo di autenticazione.</block>
   <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">Queste azioni consentono a BlueXP di utilizzare il tuo account NSS per download di licenze, verifica dell'aggiornamento software e registrazioni di supporto future.</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">Tenere presente quanto segue:</block>
@@ -608,19 +606,9 @@
   <block id="f8c7ce78aaf937671ef25c9c931e368e" category="list-text"><block ref="f8c7ce78aaf937671ef25c9c931e368e" category="inline-link-rx"></block></block>
   <block id="a37ea04c3e1568f7c0e8e6abc9104d40" category="inline-link">Registrazione di sistemi pay-as-you-go</block>
   <block id="b973035f0b680495b14f344d6beef53c" category="list-text"><block ref="b973035f0b680495b14f344d6beef53c" category="inline-link-rx"></block></block>
-  <block id="bdc3d022de69262bc7cb126fddac2df3" category="section-title">Aggiornare un account NSS per il nuovo metodo di autenticazione</block>
-  <block id="759f5e4f5dca6e6753e9254efed21ea1" category="paragraph">A partire da novembre 2021, NetApp utilizza Microsoft Azure Active Directory come provider di identità per i servizi di autenticazione specifici per il supporto e la concessione di licenze. In seguito a questo aggiornamento, BlueXP richiederà di aggiornare le credenziali per gli account esistenti aggiunti in precedenza.</block>
-  <block id="a8ee828dbf9ffbba52ad9d7c1d04242a" category="inline-link">Creare un account Microsoft Azure Active Directory B2C che verrà collegato all'account BlueXP corrente</block>
-  <block id="4ca24677e66997a22608e9d0d222f780" category="list-text">Se non l'hai già fatto,<block ref="7a8e518e973906b81bf65d6cae725be0" category="inline-link-rx"></block>.</block>
   <block id="b7d544e19d5b26255a1df1dd3e33d678" category="list-text">Selezionare *NSS Management*.</block>
-  <block id="de427ea5ca6af7aba62b71992e7b574a" category="list-text">Per l'account NSS che si desidera aggiornare, selezionare *Aggiorna account*.</block>
-  <block id="d351b79158a130fb8ea25841a60a3d92" category="inline-image-macro">Una schermata che mostra l'opzione Update account (Aggiorna account)</block>
-  <block id="8c513892354d080911596538a0a8e779" category="paragraph"><block ref="8c513892354d080911596538a0a8e779" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="12e10a54c3e2f5a33f8aa5731c8309bd" category="paragraph">Una volta completato il processo, l'account aggiornato dovrebbe essere elencato nella tabella come _nuovo_ account. La _vecchia_ versione dell'account è ancora elencata nella tabella, insieme alle associazioni esistenti dell'ambiente di lavoro.</block>
   <block id="5f74d1c3714e49926cf5f752029ebcc2" category="inline-xref">Collegare tali ambienti di lavoro a un account NSS diverso</block>
-  <block id="fa867fa0605c678ee51d2260103bd8bf" category="list-text">Se gli ambienti di lavoro Cloud Volumes ONTAP esistenti sono collegati alla versione precedente dell'account, seguire i passaggi riportati di seguito per <block ref="ac2d4b7aa5ce32d2814e2f5e96d09326" category="inline-xref-macro-rx"></block>.</block>
   <block id="b0afff19aa3343a6f86619d833dbd316" category="inline-image-macro">Un'icona con tre punti affiancati</block>
-  <block id="957061f35945035f7619d487eeae3396" category="list-text">Accedere alla versione precedente dell'account NSS e selezionare <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> Quindi selezionare *Delete* (Elimina).</block>
   <block id="8cb2ff10d15cea1a460cee3b506d5a6c" category="section-title">Aggiornare le credenziali NSS</block>
   <block id="90488de845793cd541dd12866e86b44a" category="paragraph">Sarà necessario aggiornare le credenziali per gli account NSS in BlueXP quando si verifica una delle seguenti situazioni:</block>
   <block id="d7fb44c1919b66d02d93dc18ebb82756" category="list-text">Le credenziali dell'account vengono modificate</block>
@@ -630,7 +618,6 @@
   <block id="2aa3557242cb0eddbff8233ad0c81a45" category="paragraph"><block ref="2aa3557242cb0eddbff8233ad0c81a45" category="inline-image-macro-rx" type="image"></block></block>
   <block id="297e9bab56e72eca06bc12c5f89c3007" category="section-title">Collegare un ambiente di lavoro a un altro account NSS</block>
   <block id="8b65cb7585cade7e7c6df120ae10da1b" category="paragraph">Se l'organizzazione dispone di più account del sito di supporto NetApp, è possibile modificare l'account associato a un sistema Cloud Volumes ONTAP.</block>
-  <block id="71030de456dade7df9dd4194ac0cc64e" category="paragraph">Questa funzionalità è supportata solo con gli account NSS configurati per l'utilizzo di Microsoft Azure ad adottato da NetApp per la gestione delle identità. Prima di utilizzare questa funzione, selezionare *Aggiungi account NSS* o *Aggiorna account*.</block>
   <block id="2b1290920584c08c2e2b07569cf0a3b0" category="list-text">Per modificare l'account NSS, attenersi alla seguente procedura:</block>
   <block id="7ebef2f036d00a5760c52a09582f43b4" category="list-text">Espandere la riga relativa all'account NetApp Support Site a cui è attualmente associato l'ambiente di lavoro.</block>
   <block id="4ff944075f223ced34dfceaeee89f003" category="list-text">Per l'ambiente di lavoro per il quale si desidera modificare l'associazione, selezionare <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block></block>
@@ -639,7 +626,6 @@
   <block id="11ecc3de6ba7beb5561699b813f5f452" category="paragraph"><block ref="11ecc3de6ba7beb5561699b813f5f452" category="inline-image-macro-rx" type="image"></block></block>
   <block id="17b44f0405de560bdd9ba352b67adb7a" category="list-text">Selezionare l'account, quindi selezionare *Salva*.</block>
   <block id="504f62cd55407d98070b45659035b7f5" category="section-title">Visualizzare l'indirizzo e-mail di un account NSS</block>
-  <block id="b740e07b8f623825c65d7d54111e7561" category="paragraph">Ora che gli account NetApp Support Site utilizzano Microsoft Azure Active Directory per i servizi di autenticazione, il nome utente NSS visualizzato in BlueXP è in genere un identificatore generato da Azure ad. Di conseguenza, potresti non conoscere immediatamente l'indirizzo e-mail associato a tale account. Tuttavia, BlueXP offre un'opzione per visualizzare l'indirizzo e-mail associato.</block>
   <block id="a74d4f6da1f4962caa974b5e68852f05" category="admonition">Quando si accede alla pagina di gestione NSS, BlueXP genera un token per ciascun account nella tabella. Tale token include informazioni sull'indirizzo e-mail associato. Il token viene quindi rimosso quando si esce dalla pagina. Le informazioni non vengono mai memorizzate nella cache, il che contribuisce a proteggere la privacy dell'utente.</block>
   <block id="fb62719b7db2f72c6247845a1f5cbcb1" category="list-text">Per l'account NSS che si desidera aggiornare, selezionare <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> Quindi selezionare *Visualizza indirizzo e-mail*.</block>
   <block id="51f80facd7c70833cf77adf937c57d0f" category="inline-image-macro">Una schermata che mostra il menu delle azioni per un account NetApp Support Site che include la possibilità di visualizzare l'indirizzo e-mail.</block>
@@ -1017,15 +1003,12 @@
   <block id="daa8ebdcea8faf9c0a905610b976465d" category="inline-link-macro">associare l'identità gestita a tali sottoscrizioni</block>
   <block id="e9449a821e5687d61739e39e9c79898a" category="paragraph">L'identità gestita assegnata dal sistema alla macchina virtuale del connettore è associata all'abbonamento con cui è stato avviato il connettore. Se si desidera selezionare un abbonamento Azure diverso, è necessario <block ref="f01caac2e85764bbee287cdcbf568231" category="inline-link-macro-rx"></block>.</block>
   <block id="87201b9d2d1782996b39bbbe3547cd00" category="section-title">Credenziali Azure aggiuntive</block>
-  <block id="65362b4c54ef572e25b742c44ba41e3e" category="inline-link-macro">Creazione e configurazione di un'entità di servizio in Azure Active Directory</block>
-  <block id="008c03a90ac1fbf6c15706a19f919f3b" category="paragraph">Se si desidera utilizzare credenziali Azure diverse con BlueXP, è necessario concedere le autorizzazioni richieste da <block ref="551303c9f711674f6fbd417b1f488bc0" category="inline-link-macro-rx"></block> Per ciascun account Azure. L'immagine seguente mostra due account aggiuntivi, ciascuno configurato con un'entità del servizio e un ruolo personalizzato che fornisce le autorizzazioni:</block>
   <block id="21df124adba9039de035d33b17717b15" category="inline-image-macro">Immagine concettuale che mostra l'account Azure iniziale, che riceve le autorizzazioni attraverso un ruolo personalizzato e un'identità gestita, e due account aggiuntivi che ricevono le autorizzazioni attraverso un ruolo personalizzato e un'entità del servizio.</block>
   <block id="0d613716f3793197f23817b5b3a36ec3" category="paragraph"><block ref="0d613716f3793197f23817b5b3a36ec3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9d28e4868b7fcb2d0b7ab54f9d7f7b3c" category="inline-link-macro">Aggiungere le credenziali dell'account a BlueXP</block>
   <block id="f25b2b221edfa2bdf4fb0df0c1b2c9d5" category="paragraph">Allora <block ref="d81a76d92186f9ebef738a7789fc0680" category="inline-link-macro-rx"></block> Fornendo dettagli sull'identità del servizio ad.</block>
   <block id="eb99e348d38c212372a6e836f66f7356" category="paragraph">Ad esempio, è possibile passare da una credenziale all'altra quando si crea un nuovo ambiente di lavoro Cloud Volumes ONTAP:</block>
   <block id="018f02432b76c440f6d0c2a5da5a1a5d" category="paragraph">Le sezioni precedenti descrivono il metodo di implementazione consigliato per il connettore, fornito da BlueXP. È inoltre possibile implementare un connettore in Azure da Azure Marketplace e installare il software del connettore sul proprio host Linux.</block>
-  <block id="f0e36fc8cdf840530f36b60220f9185b" category="paragraph">Se si utilizza Marketplace, è possibile fornire le autorizzazioni assegnando un ruolo personalizzato alla macchina virtuale del connettore e a un'identità gestita assegnata dal sistema oppure utilizzare l'entità del servizio Azure ad.</block>
   <block id="a5cd95b551d8bf545c63c76c6fb91786" category="paragraph">Per le implementazioni on-premise, non è possibile impostare un'identità gestita per il connettore, ma è possibile fornire le autorizzazioni utilizzando un'identità di servizio.</block>
   <block id="53c512e9599c71e1a585d636a5229820" category="list-text">Modalità standard</block>
   <block id="4275ae61422c34253a59329bd20a0449" category="inline-link-macro">Impostare le autorizzazioni Azure</block>
@@ -1110,13 +1093,9 @@
   <block id="a4a42c8639c0aa2e10cb3a3eaaae664b" category="paragraph">È necessario utilizzare questo metodo di autenticazione se il connettore è installato on-premise. Non puoi utilizzare un ruolo IAM.</block>
   <block id="c6a2a62c2d06a1633aadd355cae5e2d6" category="paragraph">A questo punto, si dovrebbero disporre delle chiavi di accesso per un utente IAM che dispone delle autorizzazioni necessarie. Dopo aver installato il connettore, è necessario associare queste credenziali al connettore di BlueXP.</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="open-title">Azure</block>
-  <block id="0180cc84ac01ea354335e5e4c42027db" category="paragraph">Quando il connettore viene installato on-premise, è necessario fornire a BlueXP le autorizzazioni Azure impostando un'entità di servizio in Azure Active Directory e ottenendo le credenziali Azure necessarie a BlueXP.</block>
-  <block id="ac572c9e1fee2fbf598102a8524251e8" category="list-title">Creare un'applicazione Azure Active Directory per il controllo degli accessi in base al ruolo</block>
   <block id="2189e37a9b7c751d238d4e13fd8f634b" category="list-text">Assicurarsi di disporre delle autorizzazioni in Azure per creare un'applicazione Active Directory e assegnarla a un ruolo.</block>
   <block id="9e0b4c608c2ed027fef07ddc68aae407" category="inline-link">Documentazione di Microsoft Azure: Autorizzazioni richieste</block>
-  <block id="c9bae6707a626ab71ed3b97345b5becf" category="list-text">Dal portale Azure, aprire il servizio *Azure Active Directory*.</block>
   <block id="2edcc284e8171b76333ca90d4cda988f" category="inline-image-macro">Mostra il servizio Active Directory in Microsoft Azure.</block>
-  <block id="2947c6ef91b5c925ae2fcec9d7750590" category="paragraph"><block ref="2947c6ef91b5c925ae2fcec9d7750590" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c9034af778b085a9440ffcb8389cc4db" category="list-text">Specificare i dettagli dell'applicazione:</block>
   <block id="46beecb01aa2327ae1886dfc53955977" category="list-text">*Nome*: Immettere un nome per l'applicazione.</block>
   <block id="c1433d2b36933dc034014d989542d7e9" category="list-text">*Tipo di account*: Selezionare un tipo di account (qualsiasi sarà compatibile con BlueXP).</block>
@@ -1158,16 +1137,10 @@
   <block id="1e957f13620bb4b87171f37fc42387b1" category="paragraph"><block ref="1e957f13620bb4b87171f37fc42387b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f7cb8eeaecd418d11a034c2be7337f33" category="list-title">Ottenere l'ID dell'applicazione e l'ID della directory per l'applicazione</block>
   <block id="e762ce4f71e8abc9d8deee4d4b7277fe" category="list-text">Copiare *Application (client) ID* e *Directory (tenant) ID*.</block>
-  <block id="8fd7e29954792b2ee199fcf4fb0e7dec" category="inline-image-macro">Una schermata che mostra l'ID dell'applicazione (client) e l'ID della directory (tenant) per un'applicazione in Azure Active Directory.</block>
-  <block id="825a40e15534f0cdcdd95391c6eb18c2" category="paragraph"><block ref="825a40e15534f0cdcdd95391c6eb18c2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6f49aa80c50bf9d897f387113aee3a15" category="paragraph">Quando si aggiunge l'account Azure a BlueXP, è necessario fornire l'ID dell'applicazione (client) e l'ID della directory (tenant) per l'applicazione. BlueXP utilizza gli ID per effettuare l'accesso a livello di programmazione.</block>
   <block id="3a1ecf20407e16f0524dacb991fefae3" category="list-title">Creare un client segreto</block>
-  <block id="eeae8e1dd73b92b26863247fdba559d5" category="list-text">Aprire il servizio *Azure Active Directory*.</block>
   <block id="56c696c4118c8dc3d2947c159fdbbb7c" category="list-text">Fornire una descrizione del segreto e una durata.</block>
   <block id="a91d60261e2974b6b9f5d3d3d0abacdd" category="list-text">Copiare il valore del client secret.</block>
-  <block id="5a3a4c596a95b6a9851a1c7b6539b0ea" category="inline-image-macro">Schermata del portale Azure che mostra un segreto client per l'entità del servizio Azure ad.</block>
-  <block id="7c5f29026f30af547f4c1e9a0f0854e6" category="paragraph"><block ref="7c5f29026f30af547f4c1e9a0f0854e6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="023ea1edce87fad0b64c3daf1301e63a" category="paragraph">Ora hai un client segreto che BlueXP può utilizzare per autenticare con Azure ad.</block>
   <block id="62089e33eb517da2e77f2dbae303746e" category="paragraph">L'entità del servizio è ora impostata e l'ID dell'applicazione (client), l'ID della directory (tenant) e il valore del client secret dovrebbero essere stati copiati. Dopo aver installato il connettore, è necessario associare queste credenziali al connettore di BlueXP.</block>
   <block id="b6bbae5bdf4c539603a70f4db19e6b04" category="summary">Installare un connettore on-premise, quindi effettuare l'accesso e configurarlo per l'utilizzo con l'account BlueXP.</block>
   <block id="1fb392a56edc456b1bc3eddb57b0906b" category="doc">Installazione e configurazione di un connettore on-premise</block>
@@ -1465,7 +1438,6 @@
   <block id="201a0e8a9a7e1b007b99b4e4c24c017d" category="open-title">Entità del servizio Azure</block>
   <block id="e326875367720b38c29c8fa0afd491be" category="paragraph">Fornire a BlueXP le credenziali per l'entità del servizio Azure precedentemente configurata.</block>
   <block id="58cf09b42fff9dfb526ddbf232538ae2" category="list-text">*Credentials Location*: Selezionare *Microsoft Azure &gt; Connector*.</block>
-  <block id="5d1285233566f1379ef88c010de06abc" category="list-text">*Definisci credenziali*: Immettere le informazioni relative all'entità del servizio Azure Active Directory che concede le autorizzazioni richieste:</block>
   <block id="3612e0e7a44ec38da1e226c618526f91" category="open-title">Account del servizio Google Cloud</block>
   <block id="4b6fbf3b382ce342b57bbdb4fe0d6baf" category="paragraph">Associare l'account del servizio alla macchina virtuale del connettore.</block>
   <block id="9ef43b020d41cab5808d78fdf855c429" category="section-title">Credenziali AWS iniziali</block>
@@ -1811,10 +1783,6 @@
   <block id="afd82a1708e69d4da8a44f0cbee4ae9c" category="section-title">Aggiornamento necessario per gli account del NetApp Support Site</block>
   <block id="cd9cf4a2a1c115f8da1d3cd4b0b783dd" category="paragraph">A partire da dicembre 2021, NetApp utilizza ora Microsoft Azure Active Directory come provider di identità per i servizi di autenticazione specifici per il supporto e la concessione di licenze. In seguito a questo aggiornamento, Cloud Manager richiederà di aggiornare le credenziali per gli account NetApp Support Site già aggiunti in precedenza.</block>
   <block id="a47acc65b2885cddfc6096e5aa5324f7" category="paragraph">Se non hai ancora eseguito la migrazione dell'account NSS a IDaaS, devi prima migrare l'account e poi aggiornare le tue credenziali in Cloud Manager.</block>
-  <block id="d843af49cdcc73f67f6a04467ff7a5b1" category="inline-link-macro">Scopri come aggiornare un account NSS con il nuovo metodo di autenticazione</block>
-  <block id="39324a4f3b6b149e18eccdfc7337abd7" category="list-text"><block ref="3c862e0ed1419b55d2a034c234cd6671" category="inline-link-macro-rx"></block>.</block>
-  <block id="b48762bb68eb4f8c518d5be6f1c76d16" category="inline-link">Scopri di più sull'utilizzo di Microsoft Azure ad da parte di NetApp per la gestione delle identità</block>
-  <block id="d9031e6782c3419c7b81c9c83572daf7" category="list-text"><block ref="d9031e6782c3419c7b81c9c83572daf7" category="inline-link-rx"></block></block>
   <block id="3d0f9c18d87223bbfa0a981f08fc2ba8" category="section-title">Modificare gli account NSS per Cloud Volumes ONTAP</block>
   <block id="e99f30e825d98bd08033ec588636b5fc" category="paragraph">Se la tua organizzazione dispone di più account del sito di supporto NetApp, ora puoi modificare l'account associato a un sistema Cloud Volumes ONTAP.</block>
   <block id="410c9dea5614a1c565dab22836dac506" category="inline-link-macro">Scopri come collegare un ambiente di lavoro a un altro account NSS</block>
@@ -2152,7 +2120,6 @@ oppure</block>
   <block id="608216b752e1b11f41d17b75b772c3a3" category="paragraph">Impostare le autorizzazioni e una chiave di accesso per un utente IAM. Dopo aver installato il connettore e configurato BlueXP, è necessario fornire a BlueXP la chiave di accesso AWS.</block>
   <block id="5850d39c612d40f90f438e324ad5d585" category="paragraph">L'account dispone ora delle autorizzazioni necessarie.</block>
   <block id="e204418b1dd1e0b04b4cf51c3a87d8b4" category="paragraph">Creare un ruolo personalizzato Azure con le autorizzazioni richieste. Assegnerai questo ruolo alla macchina virtuale del connettore.</block>
-  <block id="a05caac06592f9dd951208e6ba7ea716" category="paragraph">Creare e configurare un'entità di servizio in Azure Active Directory e ottenere le credenziali Azure necessarie a BlueXP. È necessario fornire queste credenziali a BlueXP dopo aver installato il connettore e configurato BlueXP.</block>
   <block id="173005bb35533114a1987fe6db4b3ce0" category="list-title">Assegnare il ruolo personalizzato all'applicazione</block>
   <block id="0f49f1997355db31e21cf44f968bde0d" category="paragraph">L'entità del servizio è ora impostata e l'ID dell'applicazione (client), l'ID della directory (tenant) e il valore del client secret dovrebbero essere stati copiati. Quando si aggiunge un account Azure, è necessario inserire queste informazioni in BlueXP.</block>
   <block id="1ed6266d74ad49161a59212a6ae176ed" category="paragraph">Creare un ruolo e applicarlo a un account di servizio da utilizzare per l'istanza della macchina virtuale del connettore.</block>
@@ -2243,7 +2210,6 @@ oppure</block>
   <block id="f1a3fd4ef355aad263b4de618c67166b" category="section-title">Provider di identità supportati</block>
   <block id="7d141767127fe81f539e933e77b452bf" category="paragraph">BlueXP supporta i seguenti provider di identità:</block>
   <block id="a07e97604d6d44417ed607f955f75bb4" category="list-text">Provider di identità SAML (Security Assertion Markup Language)</block>
-  <block id="6ed3014fadd3eec5c63b090c750c1377" category="list-text">Microsoft Azure Active Directory (ad)</block>
   <block id="00f7a7902fa21b12c977cbf65a600530" category="list-text">Active Directory Federation Services (ADFS)</block>
   <block id="8be692f2d7f8fe746b9e4a80e973c3ab" category="list-text">PingFederate</block>
   <block id="b3a90c39fbb2a07cca4a396cdcfbcda7" category="paragraph">BlueXP supporta solo SSO avviato da service provider (SP-Initiated). SSO avviato dal provider di identità (avviato da IdP) non supportato.</block>
@@ -2291,17 +2257,10 @@ oppure</block>
   <block id="77515c9e6cbb6a15e2cb738105271642" category="cell">Verificare e attivare la connessione da<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block>
 
 Si noti che la pagina viene aggiornata tra il test della connessione e l'abilitazione della connessione.</block>
-  <block id="6e9feb3d8b1d2610e025f8bd1e048c93" category="section-title">Microsoft Azure ad</block>
-  <block id="fa292d75bd72ae1e1506c8f6c8e39fa3" category="paragraph">Ad alto livello, la configurazione di una connessione federata tra BlueXP e Azure ad include i seguenti passaggi:</block>
-  <block id="9149dec1c87108fda2f607ad7f9d0f7c" category="paragraph">Configurare Azure Active Directory per abilitare la federazione delle identità con BlueXP.</block>
-  <block id="a2c2d074b529efb4b812b96b74e02f33" category="inline-link">Visualizza le istruzioni per la registrazione dell'applicazione con Azure ad</block>
-  <block id="8f916695f0c02d47ca7caf627294b5b2" category="paragraph"><block ref="8f916695f0c02d47ca7caf627294b5b2" category="inline-link-rx"></block></block>
   <block id="ef64c252ec5198cd24bcab0c5b591d8c" category="paragraph">Per completare questo passaggio, è necessario ottenere quanto segue dall'amministratore di ad:</block>
   <block id="76525f0f34b48475e5ca33f71d296f3b" category="list-text">ID client</block>
   <block id="797685b539958d3786d560ae97430767" category="list-text">Valore segreto del client</block>
-  <block id="a5ebf29140e5a70af04c991816638085" category="list-text">Dominio Microsoft Azure ad</block>
   <block id="5b70b2d98b345016c9e69390ea296277" category="admonition">Prendere nota della data di scadenza della chiave segreta. È necessario tornare alla pagina Federation Setup e aggiornare il certificato _prima_ che scada. Questa è la tua responsabilità. BlueXP non tiene traccia della data di scadenza. È meglio collaborare con il tuo team ad per ricevere avvisi puntuali.</block>
-  <block id="bcaf1c3aeb49ac35fd670bdcd8cd4946" category="cell">Completare la configurazione in Azure ad utilizzando i parametri mostrati nella pagina Federation Setup (impostazione federazione) al termine del passaggio 2.</block>
   <block id="d39660f3085c958967d8d820464b4974" category="paragraph">Ad alto livello, la configurazione di una connessione federata tra BlueXP e ADFS include i seguenti passaggi:</block>
   <block id="d37e669914774ef1ff275b462c890f08" category="paragraph">Configurare il server ADFS per abilitare la federazione delle identità con BlueXP.</block>
   <block id="f1b98402afda515a4e3b322603f457af" category="inline-link">Visualizza le istruzioni per la configurazione del server ADFS con auth0</block>
@@ -2605,24 +2564,15 @@ Si noti che la pagina viene aggiornata tra il test della connessione e l'abilita
   <block id="4c8e6ab2d23d4298d90b773c324cb53f" category="paragraph">Quando si implementa un connettore da BlueXP, BlueXP abilita un'identità gestita assegnata dal sistema sulla macchina virtuale che dispone delle autorizzazioni necessarie. BlueXP seleziona queste credenziali Azure per impostazione predefinita quando si crea un nuovo ambiente di lavoro per Cloud Volumes ONTAP.</block>
   <block id="960aa67e3f5a73b6b0ebfceb7ad917b1" category="inline-link-macro">Scopri le credenziali e le autorizzazioni di Azure</block>
   <block id="85d7d6e9942cf214a95a83e7e69cb42d" category="admonition">Se il software Connector è stato installato manualmente su un sistema esistente, non viene aggiunto un set iniziale di credenziali. <block ref="03e7749e48caa10071407ca0a90e6393" category="inline-link-macro-rx"></block>.</block>
-  <block id="59472e728844389989783720db86de5d" category="paragraph">Se si desidera implementare Cloud Volumes ONTAP utilizzando credenziali _diverse_ Azure, è necessario concedere le autorizzazioni richieste creando e impostando un'entità di servizio in Active Directory per ciascun account Azure. È quindi possibile aggiungere le nuove credenziali a BlueXP.</block>
   <block id="6e95efa08c25f0af7a47ce778b6734b5" category="section-title">Concedere le autorizzazioni ad Azure utilizzando un'entità del servizio</block>
-  <block id="b2998e2e0ef7309b8da02b90df84bd24" category="paragraph">BlueXP ha bisogno delle autorizzazioni per eseguire azioni in Azure. È possibile concedere le autorizzazioni richieste a un account Azure creando e impostando un'entità di servizio in Azure Active Directory e ottenendo le credenziali Azure necessarie a BlueXP.</block>
-  <block id="a51a8051417c96e970980b9b28955db7" category="paragraph">L'immagine seguente mostra come BlueXP ottiene le autorizzazioni per eseguire operazioni in Azure. Un oggetto principale del servizio, legato a una o più sottoscrizioni Azure, rappresenta BlueXP in Azure Active Directory e viene assegnato a un ruolo personalizzato che consente le autorizzazioni richieste.</block>
-  <block id="a842603387c8331a94843de5d982e083" category="inline-image-macro">Immagine concettuale che mostra che BlueXP ottiene l'autenticazione e l'autorizzazione da Azure Active Directory prima di poter effettuare una chiamata API. In Active Directory, il ruolo BlueXP definisce le autorizzazioni. È legato a una o più sottoscrizioni Azure e a un oggetto principale del servizio che rappresenta l'applicazione Cloud Manager.</block>
-  <block id="36cdb45a5a4d45ce925c965292b1bf5e" category="paragraph"><block ref="36cdb45a5a4d45ce925c965292b1bf5e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="38a91ab5feb97884a3314ce2a24ffe85" category="list-text"><block ref="37b5fab1aa996a2c516511211cb14d49" category="inline-xref-macro-rx"></block>.</block>
   <block id="b5cf760d7a6af85b245fd69703dbf615" category="list-text"><block ref="043a4d29eb639fbbd1f56826dde09f8f" category="inline-xref-macro-rx"></block>.</block>
   <block id="a7fa3c1cd24012fd30c1c780e76ed243" category="list-text"><block ref="64c971bf921f5a3e2106b2880ac38406" category="inline-xref-macro-rx"></block>.</block>
   <block id="1c80a5d7f18a46f8056d76d21087faa4" category="list-text"><block ref="6e43fddc58b77d10342452e0c5f86200" category="inline-xref-macro-rx"></block>.</block>
   <block id="984e49e0fdc61eadd13acdd5613f2579" category="list-text"><block ref="2f8da44aff19ae4d1a810f6d1d618984" category="inline-xref-macro-rx"></block>.</block>
-  <block id="f80027e1697bb881bbd28096ec4eb44d" category="section-title">Creare un'applicazione Azure Active Directory</block>
-  <block id="bde31a3498404dfaa1dada9308b8c172" category="paragraph">Creare un'applicazione e un service principal Azure Active Directory (ad) che BlueXP possa utilizzare per il controllo degli accessi basato sui ruoli.</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">Prima di iniziare</block>
   <block id="805d5c27eec50dcf481d2dff37f36287" category="paragraph">È necessario associare l'entità del servizio a una o più sottoscrizioni Azure e assegnarle il ruolo personalizzato "operatore BlueXP" in modo che BlueXP disponga delle autorizzazioni in Azure.</block>
   <block id="10976842fc02803e74db1e7ad1d16d24" category="paragraph">L'entità del servizio deve disporre delle autorizzazioni "API di gestione dei servizi Windows Azure".</block>
   <block id="4c8a0043df6fc20c84f393cad42133de" category="section-title">Ottenere l'ID dell'applicazione e l'ID della directory</block>
-  <block id="38551ea5316187f2da6d181a1e614e38" category="paragraph">È necessario creare un client secret e fornire a BlueXP il valore del segreto in modo che BlueXP possa utilizzarlo per l'autenticazione con Azure ad.</block>
   <block id="6186e185b0ea9b1c5909f6190ea935aa" category="section-title">Aggiungere le credenziali a BlueXP</block>
   <block id="897558c0bcdd42cd68064bdca7591b82" category="paragraph">Dopo aver fornito un account Azure con le autorizzazioni richieste, è possibile aggiungere le credenziali per tale account a BlueXP. Il completamento di questo passaggio consente di avviare Cloud Volumes ONTAP utilizzando credenziali Azure diverse.</block>
   <block id="15bb02041f104dbc655746382fa7ea1c" category="paragraph">Se hai appena creato queste credenziali nel tuo cloud provider, potrebbero essere necessari alcuni minuti prima che siano disponibili per l'utilizzo. Attendere alcuni minuti prima di aggiungere le credenziali a BlueXP.</block>
@@ -2686,7 +2636,6 @@ Si noti che la pagina viene aggiornata tra il test della connessione e l'abilita
   <block id="fd5bdaf26d6756bb4ba2d2c659da9808" category="list-text">*Public IP*: Se si desidera utilizzare un indirizzo IP pubblico con la macchina virtuale del connettore, l'indirizzo IP deve utilizzare una SKU di base per garantire che BlueXP utilizzi questo indirizzo IP pubblico.</block>
   <block id="0b7c0e66015972c9e3c3e051249db480" category="list-text">*Network Security group*: Il connettore richiede connessioni in entrata utilizzando SSH, HTTP e HTTPS.</block>
   <block id="92fa0fc1299e55c066d0a19cd22b4e7b" category="list-text">*Identity*: In *Management*, selezionare *Enable system assigned Managed Identity*.</block>
-  <block id="76f2625388817626b5d20572023827a8" category="paragraph">Questa impostazione è importante perché un'identità gestita consente alla macchina virtuale del connettore di identificarsi in Azure Active Directory senza fornire credenziali.<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block>.</block>
   <block id="2d3bb174766a8cbc78a4d5d0a2739c56" category="paragraph">Quando si accede alla console BlueXP per la prima volta, viene richiesto di scegliere un account a cui associare il connettore ed è necessario attivare la modalità limitata.</block>
   <block id="b22816a3d20c18e89e4ef89984ca5df6" category="inline-link-macro">Scopri come creare un account BlueXP aggiuntivo</block>
   <block id="432f719258fc9e575a2982302eac9cdc" category="admonition">Se si dispone già di un account e si desidera crearne un altro, è necessario utilizzare l'API tenancy. <block ref="987610e2980e99ab837daf2502634d0e" category="inline-link-macro-rx"></block>.</block>
@@ -2966,7 +2915,6 @@ Si noti che la pagina viene aggiornata tra il test della connessione e l'abilita
   <block id="572a35a7a9ed649cca9ec1cf347c9b9a" category="paragraph">È inoltre necessaria una connessione per le risorse del cloud provider dall'interno della regione.</block>
   <block id="f987da77cc0f6de4634d1fa74f39b8bf" category="list-text">In modalità limitata, il connettore è supportato nel cloud: In un'area governativa, in un'area sovrana o in un'area commerciale.</block>
   <block id="d4d5e0af068ca8798201df6c91671178" category="list-text">L'installazione del connettore è possibile da AWS o Azure Marketplace o da un'installazione manuale sul proprio host Linux.</block>
-  <block id="5d2e991218aeae54cc4d2ce0102ec194" category="list-text">L'interfaccia utente è accessibile dal connettore implementato nella tua area cloud.</block>
   <block id="a67215d34dfdabae38d0a7c1f5f4b6cc" category="list-text">L'autenticazione viene fornita tramite il servizio cloud di BlueXP utilizzando auth0. È disponibile anche la federazione delle identità.</block>
   <block id="2a4defb74ef42279e0fb8c75b5c452cd" category="list-text">BlueXP supporta i seguenti servizi di storage e dati in modalità limitata:</block>
   <block id="ea22f9957523103248d84695e98b17ba" category="cell">Servizi supportati</block>
@@ -3077,7 +3025,6 @@ Il rilevamento senza connettore (rilevamento diretto) non è supportato.</block>
   <block id="8a7c8d2028930eaef2c3f44925994051" category="list-text">Credenziali cloud NetApp: Inserire la password</block>
   <block id="a02705346febd77df5680fe2f12343a9" category="list-text">Federated User (utente federato): Immettere le credenziali di identità federated</block>
   <block id="24bdc2b22d38abff9ff97a9c5b5e7966" category="list-text">Account NetApp Support Site: Immettere le credenziali del NetApp Support Site</block>
-  <block id="e3e02b70df514c22082124328763d018" category="list-text">Fornire dettagli su un'entità del servizio Azure ad. Questa entità del servizio richiede anche autorizzazioni specifiche.</block>
   <block id="fdf818accfe04434a4c9fd9ccfe6d56c" category="list-text">Copiare le autorizzazioni richieste per un nuovo ruolo personalizzato in Azure e salvarle in un file JSON.</block>
   <block id="6beeae0bdc78c57583db2029e3f5c09d" category="list-text">Modificare il JSON aggiungendo il proprio ID di abbonamento Azure all'ambito assegnabile.</block>
   <block id="6d3e63abb9fe9c98dbe6a99d8a196043" category="list-text">Immettere il seguente comando Azure CLI:</block>
@@ -3087,7 +3034,6 @@ Il rilevamento senza connettore (rilevamento diretto) non è supportato.</block>
   <block id="4cca684df8c889c784e30e6f0215cff5" category="admonition">Azure SetupAsService è il nome predefinito fornito nel criterio di implementazione del connettore per Azure. Se si sceglie un nome diverso per il ruolo, selezionare il nome desiderato.</block>
   <block id="f6d4189bf00021bb75f4f2f5b11507bf" category="paragraph">L'utente Azure dispone ora delle autorizzazioni necessarie per implementare il connettore da BlueXP.</block>
   <block id="d9a4ebb1284c84465eac2a20b8331523" category="paragraph">Invece di effettuare l'accesso con l'account Azure, è possibile fornire a BlueXP le credenziali per un'entità del servizio Azure che dispone delle autorizzazioni necessarie.</block>
-  <block id="f7f4921534d4730228a1def336cce565" category="paragraph">Creare e configurare un'entità di servizio in Azure Active Directory e ottenere le credenziali Azure necessarie a BlueXP.</block>
   <block id="26f0c6c76fbc2f0b096a4ff32489120c" category="paragraph">L'entità del servizio è ora impostata e l'ID dell'applicazione (client), l'ID della directory (tenant) e il valore del client secret dovrebbero essere stati copiati. Inserire queste informazioni in BlueXP quando si crea il connettore.</block>
   <block id="0d1f9ac2ac0f76a6809ba58855ffa7f5" category="list-text">Opzione 1: Assegnare un ruolo personalizzato alla macchina virtuale Azure utilizzando un'identità gestita assegnata dal sistema.</block>
   <block id="d31f2fb13b2fed83440a04d526a6ca7d" category="list-text">Opzione 2: Fornire a BlueXP le credenziali per un'entità del servizio Azure che dispone delle autorizzazioni necessarie.</block>
@@ -3116,12 +3062,6 @@ Il rilevamento senza connettore (rilevamento diretto) non è supportato.</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">Riferimento</block>
   <block id="a4f605cd0aab29ee5fb50f28627cef5d" category="sidebar">Riepilogo delle autorizzazioni</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conoscenza e supporto</block>
-  <block id="bd684dd31e369444b29047e57d56ff19" category="sidebar">Scopri le modalità di implementazione</block>
-  <block id="c8aded93abddb2318a41b08cba739012" category="sidebar">Gestire i connettori</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blog e community</block>
-  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Community NetApp</block>
-  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">Blog BlueXP</block>
-  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinar sul cloud</block>
   <block id="19bea5bec76c66ef8bd189aa23a4c860" category="cell">Sostenibilità</block>
   <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2 luglio 2023</block>
   <block id="78ee56d07ea6442fbe0c88b1ea3be7ad" category="section-title">Connettore 3.9.31</block>
@@ -3261,7 +3201,6 @@ Questo endpoint è richiesto solo nelle regioni governative di Azure.</block>
   <block id="ce2590ec8b406b42ba7a670543c8ab81" category="list-text">Selezionare l'applicazione e selezionare *Seleziona*.</block>
   <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">Selezionare *Avanti*.</block>
   <block id="85b8cec39bdb05ec73cd076b2359cfd1" category="list-text">Selezionare *Rivedi + assegna*.</block>
-  <block id="9993d6f6284200668a6f4c51df9812da" category="list-text">Nel servizio *Azure Active Directory*, selezionare *App Registrations* e selezionare l'applicazione.</block>
   <block id="69dc2d1327bf480b016b4aed7cd7d900" category="list-text">Selezionare *API permissions &gt; Add a permission* (autorizzazioni API &gt; Aggiungi autorizzazione).</block>
   <block id="4477be44a064848adbf1b5f50428e0cd" category="list-text">Selezionare *Access Azure Service Management as organization users* (accesso a Azure Service Management come utenti dell'organizzazione), quindi selezionare *Add permissions* (Aggiungi autorizzazioni).</block>
   <block id="39ec83d3cc8c12b784bf30f64700b168" category="list-text">Selezionare *App Registrations* e selezionare l'applicazione.</block>
@@ -3568,7 +3507,6 @@ membro: Account di servizio BlueXP come serviceAccount.user</block>
   <block id="a0d5fffa896034a79c127d53a34685b7" category="list-text"><block ref="a0d5fffa896034a79c127d53a34685b7" category="inline-link-macro-rx"></block></block>
   <block id="8ce9c61f5e14fb093fdb6cc132fb3103" category="summary">Per creare un connettore in Azure da BlueXP, devi configurare il networking, preparare le autorizzazioni di Azure e quindi creare il connettore.</block>
   <block id="383a4f176227e611b43fffaef447cf94" category="section-title">Passaggio 2: Creare un ruolo personalizzato</block>
-  <block id="568a7904f89eda5a0e1ad00f19631224" category="paragraph">Creare un ruolo personalizzato Azure che è possibile assegnare all'account Azure o a un'entità di servizio Azure ad. BlueXP esegue l'autenticazione con Azure e utilizza queste autorizzazioni per creare l'istanza di Connector per conto dell'utente.</block>
   <block id="93017c2ae371dc5a19be6e0cce08ab5a" category="section-title">Fase 3: Configurare l'autenticazione</block>
   <block id="a29efb5754bb36ee62d4a2e17c5e5717" category="list-text">Accedi con l'account Azure quando richiesto. Questo account deve disporre di autorizzazioni Azure specifiche. Questa è l'opzione predefinita.</block>
   <block id="fbb7d70eda793afc4159d1bd8f3c3814" category="paragraph">Seguire la procedura per preparare uno di questi metodi di autenticazione per l'utilizzo con BlueXP.</block>
@@ -3734,22 +3672,6 @@ membro: Account di servizio BlueXP come serviceAccount.user</block>
   <block id="ee06369b39630f4fbf14829266d40a91" category="paragraph">La modalità privata viene generalmente utilizzata con ambienti on-premise che non dispongono di connessione a Internet e con aree cloud sicure, tra cui<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>,<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>, e.<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
   <block id="a95e947d8a886ad72a7cea0e895006fd" category="paragraph">La modalità limitata viene generalmente utilizzata dai governi locali e statali e da società regolamentate, comprese le implementazioni nelle aree pubbliche di AWS GovCloud e Azure. Prima di iniziare, dovresti avere una conoscenza di <block ref="ad4b275d9dc1eba2c344335cef84161e" category="inline-link-macro-rx"></block>, <block ref="939be5a52f87f3be4e9cee0e0efdb78e" category="inline-link-macro-rx"></block>, e. <block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block>.</block>
   <block id="c2a3212cb98f382140fb5a23af1c6063" category="paragraph">In modalità standard, BlueXP è accessibile agli utenti come servizio cloud dalla console basata su web. Prima di iniziare, dovresti avere una conoscenza di <block ref="ad4b275d9dc1eba2c344335cef84161e" category="inline-link-macro-rx"></block>, <block ref="939be5a52f87f3be4e9cee0e0efdb78e" category="inline-link-macro-rx"></block>, e. <block ref="dd9572e43b86cdf1b1d508e121fd732e" category="inline-link-macro-rx"></block>.</block>
-  <block id="a620abb16506a8da5f6b8dcbc0073466" category="sidebar">Visualizza le autorizzazioni AWS</block>
-  <block id="b7053c5f835c45d38cf071449c74fd56" category="sidebar">Visualizzare le autorizzazioni di Azure</block>
-  <block id="7050d365baa220c42a688cbf36a7e997" category="sidebar">Visualizzare le autorizzazioni di Google Cloud</block>
-  <block id="891c5b2cea54480f0e1abb74959457a6" category="sidebar">Inizia subito in una regione AWS standard</block>
-  <block id="e766f31fe70a68c11b8631144211d0f7" category="sidebar">Inizia subito in un'area di AWS GovCloud</block>
-  <block id="9722aa95875a94430d4569d2e8bd2382" category="sidebar">Inizia in AWS Secret o Top Secret Cloud</block>
-  <block id="e55aba8c57180a56450db886ecd8232e" category="sidebar">Visualizzare i criteri IAM per il connettore</block>
-  <block id="27c705176bc1f05cf50771b1f8fe182a" category="sidebar">Inizia in una regione Azure standard</block>
-  <block id="60563f8b2620e88ac71d1a98ee73e2e5" category="sidebar">Inizia subito in un'area Azure Government</block>
-  <block id="31b63be41ae4657f9e340188aa268589" category="sidebar">Inizia subito con Azure IL6</block>
-  <block id="3dbdf7d7951b212ca0000f0027184bb8" category="sidebar">Visualizzare il ruolo personalizzato per il connettore</block>
-  <block id="6c3328ab0a2ccaa273efaec9a88e2751" category="sidebar">Inizia subito in un'area standard di Google Cloud</block>
-  <block id="6844a754c2b209da7ac4949824ac467d" category="sidebar">Visualizzare l'account del servizio per il connettore</block>
-  <block id="917f62b5224eebe3d212f654f1273e57" category="sidebar">Installare e configurare un connettore in modalità standard</block>
-  <block id="f6bf5d3da1d67288a149ab832d6401d0" category="sidebar">Installare e configurare un connettore in modalità privata</block>
-  <block id="6596e863cf1d0baa0dbccff0e9088e4a" category="sidebar">Accesso in corso</block>
   <block id="337e8febb8ac96133c86a51cd7bc0240" category="summary">Scopri in che modo BlueXP usa le credenziali di Azure per eseguire azioni per tuo conto e come tali credenziali sono associate alle iscrizioni al marketplace. La comprensione di questi dettagli può essere utile quando si gestiscono le credenziali per una o più sottoscrizioni Azure. Ad esempio, potrebbe essere utile sapere quando aggiungere ulteriori credenziali Azure a BlueXP.</block>
   <block id="3bf21bdc87a8f6ebde5b75e8cb0d5138" category="section-title">Credenziali e iscrizioni al marketplace</block>
   <block id="b1e32c999d336fb505915de8a8ffca55" category="paragraph">Le credenziali che Aggiungi a un connettore devono essere associate a un'iscrizione ad Azure Marketplace in modo da poter pagare per Cloud Volumes ONTAP a una tariffa oraria (PAYGO) o tramite un contratto annuale e per utilizzare altri servizi BlueXP.</block>
@@ -3862,4 +3784,52 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="fa0738e12b2324073fa9b5f91af71e48" category="cell">Sì
 
 <block ref="42dbd2df9d57eeeb664cce05b5a35bf1" category="inline-link-rx"></block></block>
+  <block id="ceff1e7e9afd603be2687369aac73bb6" category="paragraph">Questa impostazione è importante perché un'identità gestita consente alla macchina virtuale Connector di identificarsi in Microsoft Entra ID senza fornire credenziali.<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block>.</block>
+  <block id="10d9864d222fd249479246f9c50df58c" category="list-text">*Definisci credenziali*: Immettere le informazioni sull'entità del servizio Microsoft Entra che concede le autorizzazioni richieste:</block>
+  <block id="9c0e62a86b9fe558cad9c4d280ea439d" category="list-text">Enable NTP (attiva NTP)</block>
+  <block id="726d1cad4d0527532460d1a853919ebc" category="inline-link">Scopri di più sulla classificazione BlueXP</block>
+  <block id="aa58ae713abe4e1f7b639f232b2814b8" category="list-text">Se stai pensando di utilizzare la classificazione BlueXP per analizzare le origini dati aziendali, dovresti attivare un servizio NTP (Network Time Protocol) sia sul sistema del connettore BlueXP che sul sistema di classificazione BlueXP in modo che l'ora venga sincronizzata tra i sistemi.<block ref="f37549d88d23259dc9470e2f2bfbbbf0" category="inline-link-rx"></block></block>
+  <block id="9ed6715eace733ae6dc526b52a03058e" category="paragraph">Una volta creato il connettore, sarà necessario implementare questo requisito di rete.</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp utilizza Microsoft Entra ID come provider di identità per i servizi di autenticazione specifici per il supporto e la licenza.</block>
+  <block id="dfec517d439938ca1ef24de3972ed1d6" category="paragraph">Questa funzione è supportata solo con gli account NSS configurati per l'utilizzo di Microsoft Entra ID adottato da NetApp per la gestione delle identità. Prima di utilizzare questa funzione, selezionare *Aggiungi account NSS* o *Aggiorna account*.</block>
+  <block id="a5b46ae1ec2ad5287349444529a0b53c" category="paragraph">Ora che gli account del sito di supporto NetApp utilizzano l'Entra ID Microsoft per i servizi di autenticazione, il nome utente NSS visualizzato in BlueXP è in genere un identificatore generato da Microsoft Entra. Di conseguenza, potresti non conoscere immediatamente l'indirizzo e-mail associato a tale account. Tuttavia, BlueXP offre un'opzione per visualizzare l'indirizzo e-mail associato.</block>
+  <block id="009cf1f7b9b15240104b17e10bb20e3a" category="paragraph">Creare e configurare un'entità di servizio in Microsoft Entra ID e ottenere le credenziali di Azure necessarie per BlueXP.</block>
+  <block id="20a548e155064dfebc2cf8e9a74ab489" category="list-title">Creare un'applicazione Microsoft Entra per il controllo degli accessi basato sui ruoli</block>
+  <block id="3acc75f616414df16724fc2f4fe192eb" category="list-text">Dal portale di Azure, aprire il servizio *Microsoft Entra ID*.</block>
+  <block id="ef37e6517cca469b358f0c04ca3cf119" category="paragraph"><block ref="ef37e6517cca469b358f0c04ca3cf119" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8427c98ccc673304dbaa4bf3fd3975a1" category="list-text">Nel servizio *Microsoft Entra ID*, selezionare *registrazioni app* e selezionare l'applicazione.</block>
+  <block id="0e9983a04d343289b5ae2931f37d22a2" category="inline-image-macro">Una schermata che mostra l'ID dell'applicazione (client) e l'ID della directory (tenant) per un'applicazione in Microsoft Entra IDy.</block>
+  <block id="5f3a0546e3f6705a50269404106d5aba" category="paragraph"><block ref="5f3a0546e3f6705a50269404106d5aba" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0540893171fcc820664625cbbe23e031" category="list-text">Aprire il servizio *Microsoft Entra ID*.</block>
+  <block id="9056be4df2e385c15b0e73176bcf8af3" category="inline-image-macro">Uno screenshot del portale di Azure che mostra un segreto client per l'entità del servizio Microsoft Entra.</block>
+  <block id="bc061266b02f85e444a9b5ae50e1a3fd" category="paragraph"><block ref="bc061266b02f85e444a9b5ae50e1a3fd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b750da0ca2dca4110c6636dcb1ebbe6f" category="paragraph">A questo punto, si dispone di una chiave segreta del client che BlueXP può utilizzare per eseguire l'autenticazione con Microsoft Entra ID.</block>
+  <block id="93f1f0c1ede8583ffa25159579861501" category="inline-link">Scopri di più sull'utilizzo di Microsoft Azure Active Directory per la gestione delle identità da parte di NetApp</block>
+  <block id="b17de28cfe26993460dbe87832a64b2e" category="paragraph"><block ref="b17de28cfe26993460dbe87832a64b2e" category="inline-link-rx"></block></block>
+  <block id="8b0acfdcefc686d1057ba6e0a6e5660e" category="paragraph">Quando il connettore è installato on-premise, devi fornire ad BlueXP le autorizzazioni di Azure, configurando un'identità di servizio in Microsoft Entra ID e ottenendo le credenziali di Azure di cui BlueXP ha bisogno.</block>
+  <block id="33a300827c19fa9f3bf7b47e8b880c1a" category="paragraph">Creare un ruolo personalizzato Azure che è possibile assegnare all'account Azure o a un'entità del servizio Microsoft Entra. BlueXP esegue l'autenticazione con Azure e utilizza queste autorizzazioni per creare l'istanza di Connector per conto dell'utente.</block>
+  <block id="4dc29cf7d5ceac3415d2828b1afce709" category="list-text">Fornire dettagli su un'entità del servizio Microsoft Entra. Questa entità del servizio richiede anche autorizzazioni specifiche.</block>
+  <block id="b4dba39cc2b8d5c6f4a03822fd76264e" category="list-text">Selezionare *identità servizio Active Directory* per immettere le informazioni sull'entità del servizio Microsoft Entra che concede le autorizzazioni richieste:</block>
+  <block id="7f29dd2bb0d156a9d6d9989b5778daa2" category="paragraph">Se si prevede di creare il connettore dal mercato del provider di servizi cloud, sarà necessario implementare questo requisito di rete dopo aver creato il connettore.</block>
+  <block id="b8209f3a8b56fd0a82dda548b64e89ef" category="paragraph">Creare e configurare un'entità di servizio in Microsoft Entra ID e ottenere le credenziali di Azure necessarie per BlueXP. È necessario fornire queste credenziali a BlueXP dopo aver installato il connettore e configurato BlueXP.</block>
+  <block id="861b0fb25af072735ec514d20fc89dcf" category="list-text">L'interfaccia utente è accessibile dalla macchina virtuale del connettore implementata nella regione del cloud.</block>
+  <block id="22b4db6594130f0f35e22d0a9f00512b" category="paragraph">Se si desidera distribuire Cloud Volumes ONTAP utilizzando le credenziali _different_ Azure, è necessario concedere le autorizzazioni richieste creando e impostando un'entità di servizio in Microsoft Entra ID per ogni account Azure. È quindi possibile aggiungere le nuove credenziali a BlueXP.</block>
+  <block id="5c1680223b4715618aa00772c8cde483" category="paragraph">BlueXP ha bisogno delle autorizzazioni per eseguire azioni in Azure. Puoi concedere le autorizzazioni richieste a un account Azure creando e impostando un'entità di servizio in Microsoft Entra ID e ottenendo le credenziali Azure necessarie per BlueXP.</block>
+  <block id="fe5c910b24c178432f88a8f6c9bff2f8" category="paragraph">L'immagine seguente mostra come BlueXP ottiene le autorizzazioni per eseguire operazioni in Azure. Un oggetto principale di servizio, legato a una o più sottoscrizioni di Azure, rappresenta BlueXP in Microsoft Entra ID e viene assegnato a un ruolo personalizzato che consente le autorizzazioni richieste.</block>
+  <block id="7afd1b01e02546b27e413c581edae96f" category="inline-image-macro">Immagine concettuale che mostra BlueXP che ottiene l'autenticazione e l'autorizzazione da Microsoft Entra ID prima di poter effettuare una chiamata API. In Active Directory, il ruolo BlueXP definisce le autorizzazioni. È legato a una o più sottoscrizioni Azure e a un oggetto principale del servizio che rappresenta l'applicazione Cloud Manager.</block>
+  <block id="6d78ad58e10567f5ec4210ab631a73a7" category="paragraph"><block ref="6d78ad58e10567f5ec4210ab631a73a7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f2ef9d77d1510f334154dfe7d165c04f" category="list-text"><block ref="f6c5720bdbe1f9f8e6fbf04de7a942ac" category="inline-xref-macro-rx"></block>.</block>
+  <block id="6a9a84396b26e1101ebf5eac3a9595ed" category="section-title">Creare un'applicazione Microsoft Entra</block>
+  <block id="1e6c9b3850b2a8aff77429d3da407ad1" category="paragraph">Creare un'applicazione e un'entità di servizio Microsoft Entra che BlueXP possa utilizzare per il role-based access control.</block>
+  <block id="de44ed3c24fd21ff1cd5065625a6d78e" category="paragraph">Devi creare una password client e fornire a BlueXP il valore della password in modo che BlueXP possa utilizzarla per l'autenticazione con Microsoft Entra ID.</block>
+  <block id="4df90909cc2d04997870c4949a39d14b" category="list-text">ID Microsoft Entra</block>
+  <block id="f03abb60d67394fd935c0b64f6d1c3c1" category="paragraph">A un livello elevato, la configurazione di una connessione federata tra BlueXP e Microsoft Entra ID include i seguenti passaggi:</block>
+  <block id="4d78a4f82051c51790a4d6a1b19d7bf4" category="paragraph">Configurare Microsoft Entra ID per abilitare la federazione delle identità con BlueXP.</block>
+  <block id="91b6e8c144e0b0c26485c1d90cdf8e9b" category="inline-link">Visualizzare le istruzioni per la registrazione dell'applicazione con Microsoft Entra ID</block>
+  <block id="f56344318e894c9b20e07a08f6a512c3" category="paragraph"><block ref="f56344318e894c9b20e07a08f6a512c3" category="inline-link-rx"></block></block>
+  <block id="b1b357376edc356774ec099bb39e65b7" category="list-text">Dominio Microsoft Entra ID</block>
+  <block id="bcf96e38858d09ccb3d335e0944d8a4a" category="cell">Completare la configurazione in Microsoft Entra ID utilizzando i parametri mostrati nella pagina impostazione Federazione dopo aver completato il passaggio 2.</block>
+  <block id="b63eb36e7e2e258bb1104cee2cd67c79" category="inline-link-macro">Creazione e impostazione di un'entità di servizio in Microsoft Entra ID</block>
+  <block id="3c648c2bdafb5df126cd7d0e3dfcad8a" category="paragraph">Se si desidera utilizzare credenziali Azure diverse con BlueXP, è necessario concedere le autorizzazioni richieste da <block ref="45c7e71be639d18293cd100d389b6dc3" category="inline-link-macro-rx"></block> Per ciascun account Azure. L'immagine seguente mostra due account aggiuntivi, ciascuno configurato con un'entità del servizio e un ruolo personalizzato che fornisce le autorizzazioni:</block>
+  <block id="66106267dde1c941a1fde19110f5e949" category="paragraph">Se si utilizza Marketplace, è possibile fornire autorizzazioni assegnando un ruolo personalizzato alla macchina virtuale del connettore e a un'identità gestita assegnata al sistema oppure è possibile utilizzare un'entità del servizio Microsoft Entra.</block>
 </blocks>

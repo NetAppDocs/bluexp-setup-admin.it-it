@@ -74,21 +74,21 @@ Quando si implementa un connettore da BlueXP, BlueXP abilita un'identità gestit
 
 TIP: Se il software Connector è stato installato manualmente su un sistema esistente, non viene aggiunto un set iniziale di credenziali. link:concept-accounts-azure.html["Scopri le credenziali e le autorizzazioni di Azure"].
 
-Se si desidera implementare Cloud Volumes ONTAP utilizzando credenziali _diverse_ Azure, è necessario concedere le autorizzazioni richieste creando e impostando un'entità di servizio in Active Directory per ciascun account Azure. È quindi possibile aggiungere le nuove credenziali a BlueXP.
+Se si desidera distribuire Cloud Volumes ONTAP utilizzando le credenziali _different_ Azure, è necessario concedere le autorizzazioni richieste creando e impostando un'entità di servizio in Microsoft Entra ID per ogni account Azure. È quindi possibile aggiungere le nuove credenziali a BlueXP.
 
 
 
 === Concedere le autorizzazioni ad Azure utilizzando un'entità del servizio
 
-BlueXP ha bisogno delle autorizzazioni per eseguire azioni in Azure. È possibile concedere le autorizzazioni richieste a un account Azure creando e impostando un'entità di servizio in Azure Active Directory e ottenendo le credenziali Azure necessarie a BlueXP.
+BlueXP ha bisogno delle autorizzazioni per eseguire azioni in Azure. Puoi concedere le autorizzazioni richieste a un account Azure creando e impostando un'entità di servizio in Microsoft Entra ID e ottenendo le credenziali Azure necessarie per BlueXP.
 
 .A proposito di questa attività
-L'immagine seguente mostra come BlueXP ottiene le autorizzazioni per eseguire operazioni in Azure. Un oggetto principale del servizio, legato a una o più sottoscrizioni Azure, rappresenta BlueXP in Azure Active Directory e viene assegnato a un ruolo personalizzato che consente le autorizzazioni richieste.
+L'immagine seguente mostra come BlueXP ottiene le autorizzazioni per eseguire operazioni in Azure. Un oggetto principale di servizio, legato a una o più sottoscrizioni di Azure, rappresenta BlueXP in Microsoft Entra ID e viene assegnato a un ruolo personalizzato che consente le autorizzazioni richieste.
 
-image:diagram_azure_authentication.png["Immagine concettuale che mostra che BlueXP ottiene l'autenticazione e l'autorizzazione da Azure Active Directory prima di poter effettuare una chiamata API. In Active Directory, il ruolo BlueXP definisce le autorizzazioni. È legato a una o più sottoscrizioni Azure e a un oggetto principale del servizio che rappresenta l'applicazione Cloud Manager."]
+image:diagram_azure_authentication.png["Immagine concettuale che mostra BlueXP che ottiene l'autenticazione e l'autorizzazione da Microsoft Entra ID prima di poter effettuare una chiamata API. In Active Directory, il ruolo BlueXP definisce le autorizzazioni. È legato a una o più sottoscrizioni Azure e a un oggetto principale del servizio che rappresenta l'applicazione Cloud Manager."]
 
 .Fasi
-. <<Creare un'applicazione Azure Active Directory>>.
+. <<Creare un'applicazione Microsoft Entra>>.
 . <<Assegnare l'applicazione a un ruolo>>.
 . <<Aggiungere le autorizzazioni API per la gestione dei servizi Windows Azure>>.
 . <<Ottenere l'ID dell'applicazione e l'ID della directory>>.
@@ -97,18 +97,18 @@ image:diagram_azure_authentication.png["Immagine concettuale che mostra che Blue
 
 
 
-==== Creare un'applicazione Azure Active Directory
+==== Creare un'applicazione Microsoft Entra
 
-Creare un'applicazione e un service principal Azure Active Directory (ad) che BlueXP possa utilizzare per il controllo degli accessi basato sui ruoli.
+Creare un'applicazione e un'entità di servizio Microsoft Entra che BlueXP possa utilizzare per il role-based access control.
 
 .Fasi
 . Assicurarsi di disporre delle autorizzazioni in Azure per creare un'applicazione Active Directory e assegnarla a un ruolo.
 +
 Per ulteriori informazioni, fare riferimento a. https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentazione di Microsoft Azure: Autorizzazioni richieste"^]
 
-. Dal portale Azure, aprire il servizio *Azure Active Directory*.
+. Dal portale di Azure, aprire il servizio *Microsoft Entra ID*.
 +
-image:screenshot_azure_ad.gif["Mostra il servizio Active Directory in Microsoft Azure."]
+image:screenshot_azure_ad.png["Mostra il servizio Active Directory in Microsoft Azure."]
 
 . Nel menu, selezionare *App Registrations*.
 . Selezionare *Nuova registrazione*.
@@ -221,7 +221,7 @@ Se si desidera implementare Cloud Volumes ONTAP da più sottoscrizioni Azure, è
 L'entità del servizio deve disporre delle autorizzazioni "API di gestione dei servizi Windows Azure".
 
 .Fasi
-. Nel servizio *Azure Active Directory*, selezionare *App Registrations* e selezionare l'applicazione.
+. Nel servizio *Microsoft Entra ID*, selezionare *registrazioni app* e selezionare l'applicazione.
 . Selezionare *API permissions > Add a permission* (autorizzazioni API > Aggiungi autorizzazione).
 . In *Microsoft API*, selezionare *Azure Service Management*.
 +
@@ -240,10 +240,10 @@ image:screenshot_azure_service_mgmt_apis_add.gif["Una schermata del portale Azur
 Quando si aggiunge l'account Azure a BlueXP, è necessario fornire l'ID dell'applicazione (client) e l'ID della directory (tenant) per l'applicazione. BlueXP utilizza gli ID per effettuare l'accesso a livello di programmazione.
 
 .Fasi
-. Nel servizio *Azure Active Directory*, selezionare *App Registrations* e selezionare l'applicazione.
+. Nel servizio *Microsoft Entra ID*, selezionare *registrazioni app* e selezionare l'applicazione.
 . Copiare *Application (client) ID* e *Directory (tenant) ID*.
 +
-image:screenshot_azure_app_ids.gif["Una schermata che mostra l'ID dell'applicazione (client) e l'ID della directory (tenant) per un'applicazione in Azure Active Directory."]
+image:screenshot_azure_app_ids.gif["Una schermata che mostra l'ID dell'applicazione (client) e l'ID della directory (tenant) per un'applicazione in Microsoft Entra IDy."]
 
 +
 Quando si aggiunge l'account Azure a BlueXP, è necessario fornire l'ID dell'applicazione (client) e l'ID della directory (tenant) per l'applicazione. BlueXP utilizza gli ID per effettuare l'accesso a livello di programmazione.
@@ -254,20 +254,20 @@ Quando si aggiunge l'account Azure a BlueXP, è necessario fornire l'ID dell'app
 
 ==== Creare un client segreto
 
-È necessario creare un client secret e fornire a BlueXP il valore del segreto in modo che BlueXP possa utilizzarlo per l'autenticazione con Azure ad.
+Devi creare una password client e fornire a BlueXP il valore della password in modo che BlueXP possa utilizzarla per l'autenticazione con Microsoft Entra ID.
 
 .Fasi
-. Aprire il servizio *Azure Active Directory*.
+. Aprire il servizio *Microsoft Entra ID*.
 . Selezionare *App Registrations* e selezionare l'applicazione.
 . Selezionare *certificati e segreti > nuovo segreto client*.
 . Fornire una descrizione del segreto e una durata.
 . Selezionare *Aggiungi*.
 . Copiare il valore del client secret.
 +
-image:screenshot_azure_client_secret.gif["Schermata del portale Azure che mostra un segreto client per l'entità del servizio Azure ad."]
+image:screenshot_azure_client_secret.gif["Uno screenshot del portale di Azure che mostra un segreto client per l'entità del servizio Microsoft Entra."]
 
 +
-Ora hai un client segreto che BlueXP può utilizzare per autenticare con Azure ad.
+A questo punto, si dispone di una chiave segreta del client che BlueXP può utilizzare per eseguire l'autenticazione con Microsoft Entra ID.
 
 
 
@@ -294,7 +294,7 @@ image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (I
 . Selezionare *Aggiungi credenziali* e seguire la procedura guidata.
 +
 .. *Credentials Location*: Selezionare *Microsoft Azure > Connector*.
-.. *Definisci credenziali*: Immettere le informazioni relative all'entità del servizio Azure Active Directory che concede le autorizzazioni richieste:
+.. *Definisci credenziali*: Immettere le informazioni sull'entità del servizio Microsoft Entra che concede le autorizzazioni richieste:
 +
 *** ID dell'applicazione (client)
 *** ID directory (tenant)

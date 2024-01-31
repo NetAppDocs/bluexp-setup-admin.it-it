@@ -172,6 +172,9 @@ Se i sistemi Cloud Volumes ONTAP non dispongono di una connessione a Internet in
 --
 
 
+Enable NTP (attiva NTP):: Se stai pensando di utilizzare la classificazione BlueXP per analizzare le origini dati aziendali, dovresti attivare un servizio NTP (Network Time Protocol) sia sul sistema del connettore BlueXP che sul sistema di classificazione BlueXP in modo che l'ora venga sincronizzata tra i sistemi. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Scopri di più sulla classificazione BlueXP"^]
+
+
 
 
 == Passaggio 3: Impostare le autorizzazioni

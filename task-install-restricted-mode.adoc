@@ -192,7 +192,7 @@ link:reference-ports-azure.html["Visualizza le regole del gruppo di sicurezza pe
 
 ** *Identity*: In *Management*, selezionare *Enable system assigned Managed Identity*.
 +
-Questa impostazione è importante perché un'identità gestita consente alla macchina virtuale del connettore di identificarsi in Azure Active Directory senza fornire credenziali. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Scopri di più sulle identità gestite per le risorse Azure"^].
+Questa impostazione è importante perché un'identità gestita consente alla macchina virtuale Connector di identificarsi in Microsoft Entra ID senza fornire credenziali. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["Scopri di più sulle identità gestite per le risorse Azure"^].
 
 
 
@@ -440,7 +440,7 @@ image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (I
 . Selezionare *Aggiungi credenziali* e seguire la procedura guidata.
 +
 .. *Credentials Location*: Selezionare *Microsoft Azure > Connector*.
-.. *Definisci credenziali*: Immettere le informazioni relative all'entità del servizio Azure Active Directory che concede le autorizzazioni richieste:
+.. *Definisci credenziali*: Immettere le informazioni sull'entità del servizio Microsoft Entra che concede le autorizzazioni richieste:
 +
 *** ID dell'applicazione (client)
 *** ID directory (tenant)

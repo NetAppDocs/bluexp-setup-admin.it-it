@@ -56,7 +56,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/scre
 . Selezionare *Gestione NSS > Aggiungi account NSS*.
 . Quando richiesto, selezionare *continua* per essere reindirizzato a una pagina di accesso Microsoft.
 +
-NetApp utilizza Microsoft Azure Active Directory come provider di identità per i servizi di autenticazione specifici per il supporto e la concessione di licenze.
+NetApp utilizza Microsoft Entra ID come provider di identità per i servizi di autenticazione specifici per il supporto e la licenza.
 
 . Nella pagina di accesso, fornire l'indirizzo e-mail e la password registrati del NetApp Support Site per eseguire il processo di autenticazione.
 +
@@ -97,32 +97,6 @@ Gli utenti possono ora selezionare l'account durante la creazione di nuovi siste
 
 
 
-== Aggiornare un account NSS per il nuovo metodo di autenticazione
-
-A partire da novembre 2021, NetApp utilizza Microsoft Azure Active Directory come provider di identità per i servizi di autenticazione specifici per il supporto e la concessione di licenze. In seguito a questo aggiornamento, BlueXP richiederà di aggiornare le credenziali per gli account esistenti aggiunti in precedenza.
-
-.Fasi
-. Se non l'hai già fatto, https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["Creare un account Microsoft Azure Active Directory B2C che verrà collegato all'account BlueXP corrente"^].
-. Nella parte superiore destra della console BlueXP, selezionare l'icona della Guida e selezionare *supporto*.
-. Selezionare *NSS Management*.
-. Per l'account NSS che si desidera aggiornare, selezionare *Aggiorna account*.
-+
-image:screenshot-nss-update-account.png["Una schermata che mostra l'opzione Update account (Aggiorna account)"]
-
-. Quando richiesto, selezionare *continua* per essere reindirizzato a una pagina di accesso Microsoft.
-+
-NetApp utilizza Microsoft Azure Active Directory come provider di identità per i servizi di autenticazione specifici per il supporto e la concessione di licenze.
-
-. Nella pagina di accesso, fornire l'indirizzo e-mail e la password registrati del NetApp Support Site per eseguire il processo di autenticazione.
-+
-Una volta completato il processo, l'account aggiornato dovrebbe essere elencato nella tabella come _nuovo_ account. La _vecchia_ versione dell'account è ancora elencata nella tabella, insieme alle associazioni esistenti dell'ambiente di lavoro.
-
-. Se gli ambienti di lavoro Cloud Volumes ONTAP esistenti sono collegati alla versione precedente dell'account, seguire i passaggi riportati di seguito per <<Collegare un ambiente di lavoro a un altro account NSS,Collegare tali ambienti di lavoro a un account NSS diverso>>.
-. Accedere alla versione precedente dell'account NSS e selezionare image:icon-action.png["Un'icona con tre punti affiancati"] Quindi selezionare *Delete* (Elimina).
-
-
-
-
 == Aggiornare le credenziali NSS
 
 Sarà necessario aggiornare le credenziali per gli account NSS in BlueXP quando si verifica una delle seguenti situazioni:
@@ -140,7 +114,7 @@ image:screenshot-nss-update-credentials.png["Una schermata che mostra il menu de
 
 . Quando richiesto, selezionare *continua* per essere reindirizzato a una pagina di accesso Microsoft.
 +
-NetApp utilizza Microsoft Azure Active Directory come provider di identità per i servizi di autenticazione specifici per il supporto e la concessione di licenze.
+NetApp utilizza Microsoft Entra ID come provider di identità per i servizi di autenticazione specifici per il supporto e la licenza.
 
 . Nella pagina di accesso, fornire l'indirizzo e-mail e la password registrati del NetApp Support Site per eseguire il processo di autenticazione.
 
@@ -151,7 +125,7 @@ NetApp utilizza Microsoft Azure Active Directory come provider di identità per 
 
 Se l'organizzazione dispone di più account del sito di supporto NetApp, è possibile modificare l'account associato a un sistema Cloud Volumes ONTAP.
 
-Questa funzionalità è supportata solo con gli account NSS configurati per l'utilizzo di Microsoft Azure ad adottato da NetApp per la gestione delle identità. Prima di utilizzare questa funzione, selezionare *Aggiungi account NSS* o *Aggiorna account*.
+Questa funzione è supportata solo con gli account NSS configurati per l'utilizzo di Microsoft Entra ID adottato da NetApp per la gestione delle identità. Prima di utilizzare questa funzione, selezionare *Aggiungi account NSS* o *Aggiorna account*.
 
 .Fasi
 . Nella parte superiore destra della console BlueXP, selezionare l'icona della Guida e selezionare *supporto*.
@@ -173,7 +147,7 @@ image:screenshot-nss-change-account.png["Una schermata che mostra il menu delle 
 
 == Visualizzare l'indirizzo e-mail di un account NSS
 
-Ora che gli account NetApp Support Site utilizzano Microsoft Azure Active Directory per i servizi di autenticazione, il nome utente NSS visualizzato in BlueXP è in genere un identificatore generato da Azure ad. Di conseguenza, potresti non conoscere immediatamente l'indirizzo e-mail associato a tale account. Tuttavia, BlueXP offre un'opzione per visualizzare l'indirizzo e-mail associato.
+Ora che gli account del sito di supporto NetApp utilizzano l'Entra ID Microsoft per i servizi di autenticazione, il nome utente NSS visualizzato in BlueXP è in genere un identificatore generato da Microsoft Entra. Di conseguenza, potresti non conoscere immediatamente l'indirizzo e-mail associato a tale account. Tuttavia, BlueXP offre un'opzione per visualizzare l'indirizzo e-mail associato.
 
 
 TIP: Quando si accede alla pagina di gestione NSS, BlueXP genera un token per ciascun account nella tabella. Tale token include informazioni sull'indirizzo e-mail associato. Il token viene quindi rimosso quando si esce dalla pagina. Le informazioni non vengono mai memorizzate nella cache, il che contribuisce a proteggere la privacy dell'utente.
