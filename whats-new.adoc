@@ -34,17 +34,17 @@ A questo punto, la versione 3.9.37 è disponibile per la modalità standard e la
 
 Se utilizzi le credenziali cloud di NetApp per accedere a BlueXP, puoi modificare il tuo nome in *Impostazioni utente*.
 
-image:screenshot-edit-name.png["Schermata che mostra la possibilità di modificare il nome in Impostazioni utente."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png["Schermata che mostra la possibilità di modificare il nome in Impostazioni utente."]
 
 La modifica del nome non è supportata se si effettua l'accesso con una connessione federata o con l'account del sito di supporto NetApp.
 
 
 
-=== Requisiti del servizio metadati istanza Amazon EC2
+=== Requisito IMDSv1 per EC2 istanze
 
-Devi essere consapevole del fatto che IMDSv1 è necessario su istanze EC2 prima di installare manualmente il software del connettore in AWS.
+Devi essere consapevole che la versione 1 (IMDSv1) del servizio metadati istanza è necessaria sulle istanze Amazon EC2 prima di installare manualmente il software del connettore in AWS.
 
-link:reference-limitations.html["Scopri di più sul requisito per IMDSv1 in AWS"].
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["Scopri di più sul requisito per IMDSv1 in AWS"].
 
 
 
@@ -107,7 +107,7 @@ Questa versione contiene piccoli miglioramenti e correzioni di bug.
 
 * Quando crei un connettore in AWS da BlueXP, puoi cercare nel campo Coppia di chiavi per trovare più facilmente la coppia di chiavi da utilizzare con l'istanza del connettore.
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png["Schermata dell'opzione di ricerca nel campo Key Pair (Coppia di chiavi) visualizzata nella pagina Network quando si crea un connettore in AWS da BlueXP."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-connector-aws-key-pair.png["Schermata dell'opzione di ricerca nel campo Key Pair (Coppia di chiavi) visualizzata nella pagina Network quando si crea un connettore in AWS da BlueXP."]
 
 * Questo aggiornamento include anche le correzioni dei bug.
 

@@ -3580,7 +3580,6 @@ membro: Account di servizio BlueXP come serviceAccount.user</block>
   <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">Connettore 3.9.33</block>
   <block id="d8465669650730f887acd3754f3dea9f" category="list-text">Quando crei un connettore in AWS da BlueXP, puoi cercare nel campo Coppia di chiavi per trovare più facilmente la coppia di chiavi da utilizzare con l'istanza del connettore.</block>
   <block id="5fa35188b7dd9c428afc77ce84eeb10b" category="inline-image-macro">Schermata dell'opzione di ricerca nel campo Key Pair (Coppia di chiavi) visualizzata nella pagina Network quando si crea un connettore in AWS da BlueXP.</block>
-  <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="90641719c2018ef19f0a8140a88f5fee" category="list-text">Questo aggiornamento include anche le correzioni dei bug.</block>
   <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">30 luglio 2023</block>
   <block id="e22252cf3c711c916163d727b6261500" category="paragraph">La regione cloud può essere un'area per agenzie statunitensi sicure come AWS Top Secret Cloud, AWS Secret Cloud, Azure IL6 o qualsiasi regione commerciale.</block>
@@ -3859,7 +3858,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="f1c2261d89d52febeed15edf1f34a5b7" category="section-title">Modifica nome</block>
   <block id="c42458c54134318669b685ee8730a478" category="paragraph">Se utilizzi le credenziali cloud di NetApp per accedere a BlueXP, puoi modificare il tuo nome in *Impostazioni utente*.</block>
   <block id="ab15c21485050b3b0c09a3b7b31d97d7" category="inline-image-macro">Schermata che mostra la possibilità di modificare il nome in Impostazioni utente.</block>
-  <block id="19f8b99a1063fac466ee71dbd38b8447" category="paragraph"><block ref="19f8b99a1063fac466ee71dbd38b8447" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4a784443543a41df794122c52fae1df7" category="paragraph">La modifica del nome non è supportata se si effettua l'accesso con una connessione federata o con l'account del sito di supporto NetApp.</block>
   <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">Sarà necessario aggiornare la posizione di backup per ciascun sistema Cloud Volumes ONTAP.</block>
   <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">Eseguire il seguente comando dall'interfaccia CLI di Cloud Volumes ONTAP per visualizzare la destinazione di backup corrente:</block>
@@ -3872,8 +3870,10 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="1dd4f77b0b91e0fcf80bc700a9a86fd6" category="paragraph">Quando implementi il connettore in AWS da BlueXP o da AWS Marketplace, le seguenti impostazioni di istanza di EC2 sono configurate per impostazione predefinita:</block>
   <block id="a781cb38c0c2c5288c02850fcd3cda7d" category="list-text">IMDSv1</block>
   <block id="1b863f7993d117f5ab767043f7a0bcdb" category="list-text">Il servizio metadati istanza versione 1 (IMDSv1) è necessario per le istanze EC2. Il connettore non è supportato con IMDSv2.</block>
-  <block id="7626696bd9f21a6589ce40ea53af6046" category="section-title">Requisiti del servizio metadati istanza Amazon EC2</block>
-  <block id="bce093b82ba18b11f0951a0e0b61a538" category="paragraph">Devi essere consapevole del fatto che IMDSv1 è necessario su istanze EC2 prima di installare manualmente il software del connettore in AWS.</block>
   <block id="f8197842b4e7ad7b7b15ef36dcb4ae78" category="inline-link-macro">Scopri di più sul requisito per IMDSv1 in AWS</block>
-  <block id="b305801a6c9c8eadb3e6439dc658aaa8" category="paragraph"><block ref="785f731db3565bf64fce6692ea6b4a4a" category="inline-link-macro-rx"></block>.</block>
+  <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c7f67b21e0c8d093756f7b3a59e8d2e8" category="section-title">Requisito IMDSv1 per EC2 istanze</block>
+  <block id="09477b433fb18272d0d3ee6b7a7e23ad" category="paragraph">Devi essere consapevole che la versione 1 (IMDSv1) del servizio metadati istanza è necessaria sulle istanze Amazon EC2 prima di installare manualmente il software del connettore in AWS.</block>
+  <block id="ae1d4316f9a8104fa910e65fd2096cb3" category="paragraph"><block ref="3fb75bc46ec80b0989f43707450cda37" category="inline-link-rx"></block>.</block>
+  <block id="bbd3f8aeec942b5e418da40a3101ed3e" category="paragraph"><block ref="bbd3f8aeec942b5e418da40a3101ed3e" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
