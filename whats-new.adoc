@@ -40,6 +40,14 @@ La modifica del nome non è supportata se si effettua l'accesso con una connessi
 
 
 
+=== Requisiti del servizio metadati istanza Amazon EC2
+
+Devi essere consapevole del fatto che IMDSv1 è necessario su istanze EC2 prima di installare manualmente il software del connettore in AWS.
+
+link:reference-limitations.html["Scopri di più sul requisito per IMDSv1 in AWS"].
+
+
+
 == 11 gennaio 2024
 
 

@@ -1525,7 +1525,6 @@
   <block id="6802f2d551252ff38d10cfab7b7735b3" category="paragraph">Queste limitazioni sono specifiche per l'installazione e l'amministrazione di BlueXP: Il connettore, la piattaforma SaaS e molto altro ancora.</block>
   <block id="83e566847d42782b3343e108150d7f57" category="section-title">Limitazioni del connettore</block>
   <block id="cf4525e15b866700f10e91573643ba54" category="section-title">Le impostazioni predefinite dell'istanza EC2 non devono essere modificate</block>
-  <block id="505d2a7358228b26711e097c3ca6dc24" category="paragraph">Quando si implementa il connettore in AWS, per impostazione predefinita vengono configurate le seguenti impostazioni dell'istanza EC2:</block>
   <block id="b6c588d5cb8cbc221e66a15877aed30a" category="list-text">IMDSv2 è impostato su opzionale</block>
   <block id="b29d18da75a3c01939275500a8fc2e70" category="list-text">HttpTokens è impostato su opzionale</block>
   <block id="a91c1c121088ffbd72985e0bf2459f87" category="paragraph">Queste impostazioni non devono essere modificate in obbligatorio. La modifica di queste impostazioni su richiesta influisce sulla disponibilità di connettori e Cloud Volumes ONTAP.</block>
@@ -3865,4 +3864,16 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">Sarà necessario aggiornare la posizione di backup per ciascun sistema Cloud Volumes ONTAP.</block>
   <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">Eseguire il seguente comando dall'interfaccia CLI di Cloud Volumes ONTAP per visualizzare la destinazione di backup corrente:</block>
   <block id="78cae36205d703274f695ea4e85f6ffe" category="list-text">Eseguire il seguente comando per aggiornare l'indirizzo IP della destinazione di backup:</block>
+  <block id="375a8301ce4caf38298dba148206d69c" category="section-title">IMDSv1 è necessario per le istanze EC2</block>
+  <block id="997791080d6fcd216110fbfe145cef98" category="paragraph">Prima di installare manualmente il software del connettore su un'istanza EC2 in AWS quando si utilizza la modalità standard o la modalità limitata, è necessario assicurarsi che l'istanza EC2 utilizzi la versione 1 (IMDSv1) del servizio metadati istanza. Il connettore non è supportato con IMDSv2.</block>
+  <block id="95371958414dbd4f614d7ff8348b9b31" category="paragraph">Poiché IMDSv2 è ora la versione predefinita su una nuova istanza EC2, è necessario modificare le opzioni dei metadati dell'istanza per ripristinare l'utilizzo di IMDSv1.</block>
+  <block id="c637448044ff305c64a7c1cd8b77b196" category="inline-link">Documentazione AWS: Ripristinare l'utilizzo di IMDSv1</block>
+  <block id="dd3ddc1f5982d8946100b097e7993378" category="paragraph"><block ref="dd3ddc1f5982d8946100b097e7993378" category="inline-link-rx"></block></block>
+  <block id="1dd4f77b0b91e0fcf80bc700a9a86fd6" category="paragraph">Quando implementi il connettore in AWS da BlueXP o da AWS Marketplace, le seguenti impostazioni di istanza di EC2 sono configurate per impostazione predefinita:</block>
+  <block id="a781cb38c0c2c5288c02850fcd3cda7d" category="list-text">IMDSv1</block>
+  <block id="1b863f7993d117f5ab767043f7a0bcdb" category="list-text">Il servizio metadati istanza versione 1 (IMDSv1) è necessario per le istanze EC2. Il connettore non è supportato con IMDSv2.</block>
+  <block id="7626696bd9f21a6589ce40ea53af6046" category="section-title">Requisiti del servizio metadati istanza Amazon EC2</block>
+  <block id="bce093b82ba18b11f0951a0e0b61a538" category="paragraph">Devi essere consapevole del fatto che IMDSv1 è necessario su istanze EC2 prima di installare manualmente il software del connettore in AWS.</block>
+  <block id="f8197842b4e7ad7b7b15ef36dcb4ae78" category="inline-link-macro">Scopri di più sul requisito per IMDSv1 in AWS</block>
+  <block id="b305801a6c9c8eadb3e6439dc658aaa8" category="paragraph"><block ref="785f731db3565bf64fce6692ea6b4a4a" category="inline-link-macro-rx"></block>.</block>
 </blocks>

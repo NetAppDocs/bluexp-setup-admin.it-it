@@ -82,6 +82,14 @@ Il connettore è supportato in Google Cloud su un'istanza di macchina virtuale c
 Spazio su disco in /opz:: 100 GiB di spazio deve essere disponibile
 Spazio su disco in /var:: 20 GiB di spazio deve essere disponibile
 Motore Docker:: Prima di installare il connettore, è necessario installare Docker Engine versione 19.3.1 o successiva sull'host. https://docs.docker.com/engine/install/["Visualizzare le istruzioni di installazione"^]
+IMDSv1:: Il servizio metadati istanza versione 1 (IMDSv1) è necessario per le istanze EC2. Il connettore non è supportato con IMDSv2.
++
+--
+Poiché IMDSv2 è ora la versione predefinita su una nuova istanza EC2, è necessario modificare le opzioni dei metadati dell'istanza per ripristinare l'utilizzo di IMDSv1.
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-restore-IMDSv1["Documentazione AWS: Ripristinare l'utilizzo di IMDSv1"^]
+
+--
 
 
 
