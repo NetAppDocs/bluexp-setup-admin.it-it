@@ -170,15 +170,21 @@ Se necessario per la tua azienda, puoi modificare l'indirizzo IP interno e l'ind
 . Se è stato modificato l'indirizzo IP pubblico ed è necessario connettersi all'interfaccia utente locale in esecuzione sul connettore, riavviare l'istanza del connettore per registrare il nuovo indirizzo IP con BlueXP.
 . Se è stato modificato l'indirizzo IP privato, aggiornare la posizione di backup per i file di configurazione Cloud Volumes ONTAP in modo che i backup vengano inviati al nuovo indirizzo IP privato sul connettore.
 +
-.. Eseguire il seguente comando dall'interfaccia utente di Cloud Volumes ONTAP per rimuovere la destinazione corrente del backup:
+Sarà necessario aggiornare la posizione di backup per ciascun sistema Cloud Volumes ONTAP.
+
++
+.. Eseguire il seguente comando dall'interfaccia CLI di Cloud Volumes ONTAP per visualizzare la destinazione di backup corrente:
 +
 [source, cli]
 ----
-system configuration backup settings modify -destination ""
+system configuration backup show
 ----
-.. Accedere a BlueXP e aprire l'ambiente di lavoro.
-.. Selezionare il menu e selezionare *Avanzate > Backup della configurazione*.
-.. Selezionare *Set Backup Target* (Imposta destinazione backup).
+.. Eseguire il seguente comando per aggiornare l'indirizzo IP della destinazione di backup:
++
+[source, cli]
+----
+system configuration backup settings modify -destination <target-location>
+----
 
 
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, connectors' 
 summary: 'Scopri le novità delle funzionalità di amministrazione di BlueXP: Account BlueXP, connettori, credenziali del cloud provider e altro ancora.' 
 ---
 = Novità
@@ -15,6 +15,28 @@ summary: 'Scopri le novità delle funzionalità di amministrazione di BlueXP: Ac
 
 [role="lead"]
 Scopri le novità delle funzionalità di amministrazione di BlueXP: Account BlueXP, connettori, credenziali del cloud provider e altro ancora.
+
+
+
+== 15 febbraio 2024
+
+
+
+=== Connettore 3.9.37
+
+Questa versione di BlueXP Connector include piccoli miglioramenti alla sicurezza e correzioni di bug.
+
+A questo punto, la versione 3.9.37 è disponibile per la modalità standard e la modalità limitata.
+
+
+
+=== Modifica nome
+
+Se utilizzi le credenziali cloud di NetApp per accedere a BlueXP, puoi modificare il tuo nome in *Impostazioni utente*.
+
+image:screenshot-edit-name.png["Schermata che mostra la possibilità di modificare il nome in Impostazioni utente."]
+
+La modifica del nome non è supportata se si effettua l'accesso con una connessione federata o con l'account del sito di supporto NetApp.
 
 
 
