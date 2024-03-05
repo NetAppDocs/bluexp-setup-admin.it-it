@@ -377,7 +377,7 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
 | StorageGRID | No | No 
 
 
-.16+| *Servizi* | Backup e recovery | Sì
+.17+| *Servizi* | Backup e recovery | Sì
 
 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["Visualizza l'elenco delle destinazioni di backup supportate per i dati dei volumi ONTAP"^] | Sì
 
@@ -412,6 +412,9 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 
 
 | Resilienza operativa | No | No 
+
+
+| Protezione ransomware | No | No 
 
 
 | Risoluzione dei problemi | No | No 
