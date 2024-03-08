@@ -1401,9 +1401,7 @@
   <block id="f624e5f75138eb92caddd44e1bc7342e" category="list-text">Tag:getTagValues</block>
   <block id="5e665d8f5cf0c341dce9f3bd5e7f4cc0" category="list-text">Tag:tagResources</block>
   <block id="5e10058ad3f07bfeca3eef81de09ce28" category="list-text">Tag:UntagResources</block>
-  <block id="a05b5ce37ea267c22e70da731bcc3494" category="section-title">6 giugno 2023</block>
   <block id="14cbfe27bd7092d1b2ab4502adbdd584" category="paragraph">Per Cloud Volumes ONTAP è ora richiesta la seguente autorizzazione:</block>
-  <block id="1be1ae3d277ebf372ecefda4d444dbbb" category="section-title">14 febbraio 2023</block>
   <block id="bf9c7c9727a11f040da47cdd589f7ea6" category="paragraph">Per il tiering BlueXP è ora richiesta la seguente autorizzazione:</block>
   <block id="b2cc56e18c7250863c6c74a223137e16" category="summary">Implementare il connettore in modalità privata in modo da poter utilizzare BlueXP senza connettività in uscita al livello BlueXP SaaS. Per iniziare, installare il connettore, configurare BlueXP accedendo all'interfaccia utente in esecuzione sul connettore, quindi fornire le autorizzazioni cloud precedentemente impostate.</block>
   <block id="2f549fb867eb9c0be636782d32264aa6" category="doc">Implementare il connettore in modalità privata</block>
@@ -1524,10 +1522,6 @@
   <block id="482723983a4f2af954e36ff41e567451" category="doc">Limitazioni note</block>
   <block id="6802f2d551252ff38d10cfab7b7735b3" category="paragraph">Queste limitazioni sono specifiche per l'installazione e l'amministrazione di BlueXP: Il connettore, la piattaforma SaaS e molto altro ancora.</block>
   <block id="83e566847d42782b3343e108150d7f57" category="section-title">Limitazioni del connettore</block>
-  <block id="cf4525e15b866700f10e91573643ba54" category="section-title">Le impostazioni predefinite dell'istanza EC2 non devono essere modificate</block>
-  <block id="b6c588d5cb8cbc221e66a15877aed30a" category="list-text">IMDSv2 è impostato su opzionale</block>
-  <block id="b29d18da75a3c01939275500a8fc2e70" category="list-text">HttpTokens è impostato su opzionale</block>
-  <block id="a91c1c121088ffbd72985e0bf2459f87" category="paragraph">Queste impostazioni non devono essere modificate in obbligatorio. La modifica di queste impostazioni su richiesta influisce sulla disponibilità di connettori e Cloud Volumes ONTAP.</block>
   <block id="911d15b7ac55478d2b567e8488658687" category="section-title">Possibile conflitto con gli indirizzi IP compresi nell'intervallo 172</block>
   <block id="efdb2123102821583a0af000d2fa9040" category="paragraph">BlueXP implementa il connettore con due interfacce che hanno indirizzi IP negli intervalli 172.17.0.0/16 e 172.18.0.0/16.</block>
   <block id="5646658d58bb92ba775a6c2cd024ef17" category="paragraph">Se la rete dispone di una subnet configurata con uno di questi intervalli, potrebbero verificarsi errori di connettività da BlueXP. Ad esempio, il rilevamento dei cluster ONTAP on-premise in BlueXP potrebbe non riuscire.</block>
@@ -2328,8 +2322,6 @@ Si noti che la pagina viene aggiornata tra il test della connessione e l'abilita
   <block id="58dcadbd8de2066b4071d6ed4e0b4baf" category="section-title">Attivare un proxy su un connettore</block>
   <block id="a211e8f0d908dfd70d36364b3fbd91b0" category="paragraph">Quando si configura un connettore per l'utilizzo di un server proxy, il connettore e i sistemi Cloud Volumes ONTAP gestiti (inclusi i mediatori ha) utilizzano tutti il server proxy.</block>
   <block id="f5cfd333047dfa220ee8666d14286034" category="paragraph">Si noti che questa operazione riavvia il connettore. Assicurarsi che il connettore non stia eseguendo alcuna operazione prima di procedere.</block>
-  <block id="1ba8304c99952e6f64861018bbefcdd0" category="list-text">Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *Impostazioni connettore*.</block>
-  <block id="861d390100edeb52d8f385f026c72049" category="list-text">In *Generale*, selezionare *Configurazione proxy HTTP*.</block>
   <block id="2c451caa323474f558c4e4065578647d" category="list-text">Configurare il proxy:</block>
   <block id="dabc8d2c79f6529ca393b4b3d4f75805" category="list-text">Selezionare *Enable Proxy* (attiva proxy).</block>
   <block id="25e8eb6a683e97e04e337e061a18205c" category="list-text">Specificare il server utilizzando la sintassi<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block> oppure<block ref="9ab29a9097f3907435367cc314192885" category="inline-link-rx"></block></block>
@@ -2339,7 +2331,6 @@ Si noti che la pagina viene aggiornata tra il test della connessione e l'abilita
   <block id="37bccc08c3c6cebbbf500cfe54775991" category="paragraph">Se è stato disattivato l'utilizzo dei collegamenti privati di Azure con Cloud Volumes ONTAP e si stanno utilizzando gli endpoint del servizio, è necessario attivare il traffico API diretto. In caso contrario, il traffico non verrà instradato correttamente.</block>
   <block id="ac10c9401f16ed5ff0a029bce2712adc" category="inline-link">Scopri di più sull'utilizzo di un collegamento privato Azure o di endpoint di servizio con Cloud Volumes ONTAP</block>
   <block id="6143580a5ae490efe32d3c566650ad6c" category="paragraph"><block ref="6143580a5ae490efe32d3c566650ad6c" category="inline-link-rx"></block></block>
-  <block id="73918d630dd9a657f3442a2c1231fd74" category="list-text">In *General*, selezionare *Support Direct API Traffic*.</block>
   <block id="c569dd49f93a05d537d61130ed43e6e9" category="list-text">Selezionare la casella di controllo per attivare l'opzione, quindi selezionare *Salva*.</block>
   <block id="9345f603d48306b04203c8a77bc1ec43" category="summary">Quando si crea un account BlueXP, questo include solo un singolo utente amministratore e un'area di lavoro. È possibile gestire l'account in base alle esigenze dell'organizzazione aggiungendo utenti, creando account di servizio per scopi di automazione, aggiungendo aree di lavoro e altro ancora.</block>
   <block id="f2b686d839a94b2d7f1e0a55d1c7c302" category="doc">Gestisci il tuo account BlueXP</block>
@@ -3456,7 +3447,6 @@ Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono
   <block id="bbc8741d5b8cb60c926722b934bec008" category="section-title">Passaggio 2: Impostare le autorizzazioni AWS</block>
   <block id="76fc03e9ac56ec6623a5f3fd59761d4b" category="section-title">Fase 3: Creare il connettore</block>
   <block id="da14ee4a8100ac08980150bcda1e397d" category="inline-link-macro">Informazioni sulla configurazione predefinita del connettore</block>
-  <block id="f1620bf756a71002318f3eb8b1277d2f" category="paragraph">La creazione del connettore da BlueXP implementa un'istanza EC2 in AWS usando una configurazione predefinita. <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>.</block>
   <block id="26b0998fe035211b8097187e431e16b9" category="summary">Per installare manualmente il connettore sul proprio host Linux, è necessario rivedere i requisiti dell'host, configurare la rete, preparare le autorizzazioni AWS, installare il connettore e quindi fornire le autorizzazioni preparate.</block>
   <block id="eb44c1bbcb138bd8d43dab2a2d5dd798" category="doc">Installare manualmente il connettore in AWS</block>
   <block id="2cdec4e0f473161523115d9e1cc50257" category="list-text">Quando si crea il connettore, è necessario selezionare una coppia di chiavi EC2 da utilizzare con l'istanza.</block>
@@ -3507,7 +3497,6 @@ membro: Account di servizio BlueXP come serviceAccount.user</block>
   <block id="fbb7d70eda793afc4159d1bd8f3c3814" category="paragraph">Seguire la procedura per preparare uno di questi metodi di autenticazione per l'utilizzo con BlueXP.</block>
   <block id="a9242e0bd7c37f9c26c954ae4eff29b3" category="open-title">Account Azure</block>
   <block id="d1ff9355f81257b2c8a7693e702ba3f7" category="section-title">Fase 4: Creare il connettore</block>
-  <block id="f23ed1e499f82b7b35d463ccef21eed1" category="paragraph">La creazione del connettore da BlueXP implementa una macchina virtuale in Azure usando una configurazione predefinita. <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>.</block>
   <block id="2f44f891a2e61a894ccc4f30dfd7b4be" category="paragraph"><block ref="8d330a1f00fb06fce7867e682fb9a351" category="inline-xref-macro-rx"></block>.</block>
   <block id="234849cccf32785a20387f435fbc1665" category="paragraph">Quando si utilizza BlueXP in modalità standard, il modo in cui si forniscono le autorizzazioni dipende da come si intende creare il connettore.</block>
   <block id="235df19fd66aa61dd8174f1a6480f822" category="paragraph">Per informazioni su come impostare le autorizzazioni, fare riferimento a quanto segue:</block>
@@ -3546,7 +3535,6 @@ membro: Account di servizio BlueXP come serviceAccount.user</block>
   <block id="4d55aaa36c67fd980b8ca20ca5db6ef9" category="paragraph">Prima di poter implementare un connettore da BlueXP o utilizzando gcloud, devi impostare le autorizzazioni per l'utente Google Cloud che implementerà la macchina virtuale del connettore.</block>
   <block id="8456ad5c97fd1db8b43fc61d8ea03799" category="section-title">Fase 6: Creare il connettore</block>
   <block id="bb919bb919074dbe6c69b05695d0a1aa" category="paragraph">Crea un connettore direttamente dalla console basata su web BlueXP o tramite gcloud.</block>
-  <block id="b03261236b57a26202438940439ee786" category="paragraph">La creazione di Connector implementa un'istanza di macchina virtuale in Google Cloud utilizzando una configurazione predefinita. <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>.</block>
   <block id="ec2ce152b3b60e3721ae091911de473d" category="list-text">Comprensione dei requisiti delle istanze di macchine virtuali.</block>
   <block id="aab924c92611ee11b49b8687e53ec943" category="list-text">*CPU*: 4 core o 4 vCPU</block>
   <block id="3f8517f6b0146fc27e0a5144098713fb" category="list-text">*RAM*: 14 GB</block>
@@ -3862,19 +3850,91 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">Sarà necessario aggiornare la posizione di backup per ciascun sistema Cloud Volumes ONTAP.</block>
   <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">Eseguire il seguente comando dall'interfaccia CLI di Cloud Volumes ONTAP per visualizzare la destinazione di backup corrente:</block>
   <block id="78cae36205d703274f695ea4e85f6ffe" category="list-text">Eseguire il seguente comando per aggiornare l'indirizzo IP della destinazione di backup:</block>
-  <block id="375a8301ce4caf38298dba148206d69c" category="section-title">IMDSv1 è necessario per le istanze EC2</block>
-  <block id="997791080d6fcd216110fbfe145cef98" category="paragraph">Prima di installare manualmente il software del connettore su un'istanza EC2 in AWS quando si utilizza la modalità standard o la modalità limitata, è necessario assicurarsi che l'istanza EC2 utilizzi la versione 1 (IMDSv1) del servizio metadati istanza. Il connettore non è supportato con IMDSv2.</block>
   <block id="95371958414dbd4f614d7ff8348b9b31" category="paragraph">Poiché IMDSv2 è ora la versione predefinita su una nuova istanza EC2, è necessario modificare le opzioni dei metadati dell'istanza per ripristinare l'utilizzo di IMDSv1.</block>
   <block id="c637448044ff305c64a7c1cd8b77b196" category="inline-link">Documentazione AWS: Ripristinare l'utilizzo di IMDSv1</block>
   <block id="dd3ddc1f5982d8946100b097e7993378" category="paragraph"><block ref="dd3ddc1f5982d8946100b097e7993378" category="inline-link-rx"></block></block>
-  <block id="1dd4f77b0b91e0fcf80bc700a9a86fd6" category="paragraph">Quando implementi il connettore in AWS da BlueXP o da AWS Marketplace, le seguenti impostazioni di istanza di EC2 sono configurate per impostazione predefinita:</block>
   <block id="a781cb38c0c2c5288c02850fcd3cda7d" category="list-text">IMDSv1</block>
   <block id="1b863f7993d117f5ab767043f7a0bcdb" category="list-text">Il servizio metadati istanza versione 1 (IMDSv1) è necessario per le istanze EC2. Il connettore non è supportato con IMDSv2.</block>
-  <block id="f8197842b4e7ad7b7b15ef36dcb4ae78" category="inline-link-macro">Scopri di più sul requisito per IMDSv1 in AWS</block>
   <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c7f67b21e0c8d093756f7b3a59e8d2e8" category="section-title">Requisito IMDSv1 per EC2 istanze</block>
-  <block id="09477b433fb18272d0d3ee6b7a7e23ad" category="paragraph">Devi essere consapevole che la versione 1 (IMDSv1) del servizio metadati istanza è necessaria sulle istanze Amazon EC2 prima di installare manualmente il software del connettore in AWS.</block>
-  <block id="ae1d4316f9a8104fa910e65fd2096cb3" category="paragraph"><block ref="3fb75bc46ec80b0989f43707450cda37" category="inline-link-rx"></block>.</block>
   <block id="bbd3f8aeec942b5e418da40a3101ed3e" category="paragraph"><block ref="bbd3f8aeec942b5e418da40a3101ed3e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="list-text">Protezione ransomware</block>
+  <block id="4a1a05ee22994e328d9ec0402052b926" category="section-title">8 marzo 2024</block>
+  <block id="e95eef6ba2551f885847cc2b51459994" category="paragraph">La seguente autorizzazione è ora inclusa nel criterio del connettore:</block>
+  <block id="33e595f0fd43192e3f1d28a291860881" category="paragraph">EC2:DescribeAvailabilityZones</block>
+  <block id="b12f2c2fee8ccdb3cad2171b53ed3cfd" category="paragraph">Questa autorizzazione è necessaria per una prossima release. Aggiorneremo le note di rilascio con ulteriori dettagli quando tale release sarà disponibile.</block>
+  <block id="6a7140fd5370f297d9a834d30e26ffde" category="section-title">6 giugno 2023</block>
+  <block id="5fc531b28735a6e141b39c2b5e2f1dcc" category="section-title">14 febbraio 2023</block>
+  <block id="d1b9e6a9e660eac14ba251761cf89e4b" category="paragraph">La creazione del connettore da BlueXP implementa una macchina virtuale in Azure usando una configurazione predefinita. Dopo aver creato il connettore, non si dovrebbe passare a un tipo di VM più piccolo che abbia meno CPU o RAM. <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>.</block>
+  <block id="d54ab8a1d5dd0b1066137c76d5021844" category="section-title">Tipo di macchina virtuale o istanza</block>
+  <block id="c371dc405db8facc84986c93c1618d1e" category="paragraph">Se hai creato un connettore direttamente da BlueXP, BlueXP ha implementato un'istanza di macchina virtuale nel cloud provider utilizzando una configurazione predefinita. Dopo aver creato il connettore, non si dovrebbe passare a un'istanza VM più piccola con meno CPU o RAM.</block>
+  <block id="bdfd85d15fc6c7ed4e5a19af0a8f1999" category="paragraph">I requisiti della CPU e della RAM sono i seguenti:</block>
+  <block id="84fc34721c0c912a148a70d22ac7cd5a" category="paragraph"><block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>.</block>
+  <block id="98dddf7eafbbdfa88756d62945237473" category="section-title">Richiedi l'utilizzo di IMDSv2 sulle istanze di Amazon EC2</block>
+  <block id="824e7fae55f361d08bb9bd5bdf494ff0" category="inline-link">Scopri di più su IMDSv2 dal blog sulla sicurezza AWS</block>
+  <block id="c49009b6f155acc311d4014abe19ec98" category="paragraph">A partire da marzo 2024, BlueXP ora supporta Amazon EC2 Instance Metadata Service versione 2 (IMDSv2) con connettore e Cloud Volumes ONTAP (incluso il mediatore per le implementazioni ha). IMDSv2 fornisce una maggiore protezione contro le vulnerabilità.<block ref="cb4336eb4a08d88f663206e070c9e1af" category="inline-link-rx"></block></block>
+  <block id="4166379ba80de4be17a81c04ec7819c4" category="list-text">IMDSv2 è attivato per impostazione predefinita su tutte le nuove istanze del connettore EC2. IMDSv1 è stato abilitato prima di marzo 2024.</block>
+  <block id="6f218fd0d06a9a2564453a73bc05ee13" category="list-text">IMDSv1 è abilitato per impostazione predefinita su tutte le istanze nuove ed esistenti di Cloud Volumes ONTAP EC2.</block>
+  <block id="7e6c98db93605459a9b69da423ef4684" category="paragraph">Se richiesto dai criteri di protezione, è possibile configurare le istanze EC2 in modo che utilizzino IMDSv2.</block>
+  <block id="b2f60e6f194d16e1bf9deaa367cd9eae" category="list-text">La versione del connettore deve essere 3.9.38 o successiva.</block>
+  <block id="177aac65c5f4518e1a35eb1479fac1a1" category="list-text">Questa modifica richiede il riavvio delle istanze di Cloud Volumes ONTAP.</block>
+  <block id="5024434a1308ae5aff26ba15a55bce13" category="paragraph">Questi passaggi richiedono l'utilizzo dell'interfaccia a riga di comando di AWS, perché devi modificare il limite del nodo di risposta su 3.</block>
+  <block id="674bc63ff5794e51146ad842329f5afd" category="list-text">Richiedere l'uso di IMDSv2 sull'istanza del connettore:</block>
+  <block id="7c08236138358b7a6e12dcdf43b92969" category="list-text">Installa l'interfaccia a riga di comando di AWS.</block>
+  <block id="97b647a1aeead85f7ff9e6660cadfd49" category="inline-link">Documentazione AWS: Installa o effettua l'aggiornamento alla versione più recente della CLI AWS</block>
+  <block id="0eccbc3e7cb345786a9c69cf32e0b410" category="paragraph"><block ref="0eccbc3e7cb345786a9c69cf32e0b410" category="inline-link-rx"></block></block>
+  <block id="fdedd16440c0c883dfc66fe8ef510c62" category="list-text">Utilizzare<block ref="163406f31b4a352573543db4a8b761b7" prefix=" " category="inline-code"></block> Comando per richiedere l'uso di IMDSv2 e per modificare il limite di risposta PUT hop a 3.</block>
+  <block id="d83ec76d50b3bda1cf13e81a46048f91" category="admonition">Il<block ref="b14a1de55f9953d856d03b1230916191" prefix=" " category="inline-code"></block> Set di parametri IMDSv2 su richiesto. Quando<block ref="b14a1de55f9953d856d03b1230916191" prefix=" " category="inline-code"></block> è obbligatorio, è necessario impostare anche<block ref="075040dbadfe9a123d2621d11f01b0a6" prefix=" " category="inline-code"></block> su attivato.</block>
+  <block id="e3562f747ad313da62190f86bb64dc87" category="list-text">Richiedi l'utilizzo di IMDSv2 sulle istanze di Cloud Volumes ONTAP:</block>
+  <block id="e813184f980902e482da371f4c1635a3" category="inline-link">Console Amazon EC2</block>
+  <block id="a3c1ab8ea16cbc440d74ed1810e1ea29" category="list-text">Accedere alla<block ref="a979ef0662428242021a3b937a5a7bf7" category="inline-link-rx"></block></block>
+  <block id="0923d272646612aa7fcac06ded4f9775" category="list-text">Dal riquadro di navigazione, selezionare *istanze*.</block>
+  <block id="bd669926126507d7fbfbbb50bfafba24" category="list-text">Selezionare un'istanza di Cloud Volumes ONTAP.</block>
+  <block id="1c9db3e842584a909d28ae8882a8e58a" category="list-text">Selezionare *azioni &gt; Impostazioni istanza &gt; Modifica opzioni metadati istanza*.</block>
+  <block id="dee3242d9f387f850469315724ac6c27" category="list-text">Nella finestra di dialogo *Modifica opzioni metadati istanza*, selezionare quanto segue:</block>
+  <block id="e24b7163a4dc37a3db7eb4e01db5a81f" category="list-text">Per *Servizio metadati istanza*, selezionare *Abilita*.</block>
+  <block id="2c239daef1a43ddd2011dfa4a307c157" category="list-text">Per *IMDSv2*, selezionare *richiesto*.</block>
+  <block id="5cf803d4e6ce3c1fc67e7320dcd440b1" category="list-text">Ripetere questi passaggi per altre istanze di Cloud Volumes ONTAP, incluso il mediatore ha.</block>
+  <block id="0694adc8bc882f236f606e1c56eebe94" category="inline-link">Arrestare e avviare le istanze di Cloud Volumes ONTAP</block>
+  <block id="96afcc62a59c68b277c1a37c2254e239" category="list-text"><block ref="96afcc62a59c68b277c1a37c2254e239" category="inline-link-rx"></block></block>
+  <block id="1bf094b9d6f1b1c1ae5e745beefb3ff7" category="paragraph">L'istanza del connettore e le istanze di Cloud Volumes ONTAP sono ora configurate per l'utilizzo di IMDSv2.</block>
+  <block id="00d14f718aca7db50368d8fc7008b41a" category="section-title">Connettore 3.9.38</block>
+  <block id="d39d3f642c13ecde9b0fc02889aa6386" category="paragraph">A questo punto, la versione 3.9.38 è disponibile per la modalità standard e la modalità limitata. Questa release include il supporto per IMDSv2 in AWS e un aggiornamento dei permessi AWS.</block>
+  <block id="b8048e9aa508d6c9379607c39c84e904" category="section-title">Supporto di IMDSv2</block>
+  <block id="727615b8adbd72d276572a4469f7c09d" category="paragraph">BlueXP ora supporta Amazon EC2 Instance Metadata Service versione 2 (IMDSv2) con l'istanza del connettore e con le istanze di Cloud Volumes ONTAP. IMDSv2 fornisce una maggiore protezione contro le vulnerabilità. In precedenza era supportato solo IMDSv1.</block>
+  <block id="8035ec6377ab933cc4bc2a70b5416a29" category="paragraph"><block ref="8035ec6377ab933cc4bc2a70b5416a29" category="inline-link-rx"></block></block>
+  <block id="89f5243637c4f72512944130a95ee3e5" category="paragraph">Il servizio IMDS (Instance Metadata Service) viene attivato come segue nelle istanze EC2:</block>
+  <block id="baebea4bbd59d6c8efcae96586b2e199" category="inline-link">Script di terraform</block>
+  <block id="0b18bb2eadaff9912e9bbefb3accbc90" category="list-text">Per le nuove implementazioni di connettori da BlueXP, da AWS Marketplace o utilizzando<block ref="d5789cbcfe02eb67db017173bcddbe49" category="inline-link-rx"></block>, IMDSv2 è attivato per impostazione predefinita nell'istanza EC2.</block>
+  <block id="0319f9ec57f9eeb8250ac949896c30fd" category="list-text">Se si avvia una nuova istanza EC2 in AWS e quindi si installa manualmente il software del connettore, anche IMDSv2 viene attivato per impostazione predefinita.</block>
+  <block id="1fac08ada9902743d92641fbbd32d13f" category="list-text">Per i connettori esistenti, IMDSv1 è ancora supportato, ma è possibile configurare manualmente IMDSv2 sull'istanza EC2, se si preferisce.</block>
+  <block id="d0371cc329d08bb54c28e8881cc93db7" category="list-text">Per Cloud Volumes ONTAP, IMDSv1 è attivato per impostazione predefinita sulle istanze nuove ed esistenti. Se si preferisce, è possibile configurare manualmente IMDSv2 sulle istanze EC2.</block>
+  <block id="e064a507c52bd5a195428edf98b8aecb" category="inline-link">Scopri come configurare IMDSv2 sulle istanze esistenti</block>
+  <block id="35caf9a212e382e214a82a5d75099530" category="paragraph"><block ref="2136f09eaf84594e894a08f345e725b8" category="inline-link-rx"></block>.</block>
+  <block id="4cc078461f1763cdb13efec9da8a6a3f" category="section-title">Aggiornamento delle autorizzazioni AWS</block>
+  <block id="5b208d0b88475ec99f06a7e55104a566" category="paragraph">Abbiamo aggiornato la policy del connettore per AWS in modo da includere l'autorizzazione "EC2:DescribeAvailabilityZones". Questa autorizzazione è necessaria per una prossima release. Aggiorneremo le note di rilascio con ulteriori dettagli quando tale release sarà disponibile.</block>
+  <block id="7595af352964f2b06057ab6310fdff44" category="inline-link">Visualizza le autorizzazioni AWS per il connettore</block>
+  <block id="bad85d32b5f3e46e956809c13b502817" category="paragraph"><block ref="7e42187d6259f740c2e1915df5429efc" category="inline-link-rx"></block>.</block>
+  <block id="9796f4649a0c963c7b6019196c7f14f0" category="section-title">Impostazioni proxy e Cloud Volumes ONTAP</block>
+  <block id="1697d0f8a0936757a7bb28b4fa2eacd1" category="paragraph">Le impostazioni del server proxy per il connettore sono ora disponibili nella pagina *Gestisci connettori* (modalità standard) o nella pagina *Modifica connettori* (modalità limitata e modalità privata).</block>
+  <block id="50770490f832c2b93de5aff17e5102b5" category="inline-link">Informazioni su come configurare il connettore per l'utilizzo di un server proxy</block>
+  <block id="d58ba1e11f305c91632d6e86e3515966" category="paragraph"><block ref="f2fec40748e9e912170fdd2984d9b989" category="inline-link-rx"></block>.</block>
+  <block id="d560347c8aaf0de44ab17132b9923b1c" category="paragraph">Inoltre, abbiamo rinominato la pagina *Impostazioni connettore* in *Impostazioni Cloud Volumes ONTAP*.</block>
+  <block id="79c73187c699b08002880f70fb88a0a8" category="inline-image-macro">Schermata che mostra l'opzione Impostazioni Cloud Volumes ONTAP disponibile nel menu Impostazioni.</block>
+  <block id="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="paragraph"><block ref="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="03c012ec036bd77d62ef64e67f7dbc5a" category="list-text">Accedere alla pagina *Modifica connettore BlueXP*.</block>
+  <block id="5682fb3f3dc6955b7e9d4b14adc8daa0" category="paragraph">La navigazione dipende dall'utilizzo di BlueXP in modalità standard (accesso all'interfaccia BlueXP dal sito Web SaaS) o in modalità limitata o privata (accesso all'interfaccia BlueXP localmente dall'host del connettore).</block>
+  <block id="75effefc9fa992948e167a31a7b2c21e" category="inline-image-macro">Schermata che mostra la pagina Gestisci connettori disponibile dopo aver selezionato il connettore.</block>
+  <block id="e929efc0ae3c20b98faca1bce939c39f" category="paragraph"><block ref="e929efc0ae3c20b98faca1bce939c39f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d7cd2871be8edef469dbc0a8331b2ea1" category="list-text">Selezionare il menu azione per un connettore e selezionare *Modifica connettore*.</block>
+  <block id="51061648a222d2e9cfc0c81e3936b2ed" category="inline-image-macro">Schermata che mostra l'opzione Modifica connettori disponibile nel menu azione.</block>
+  <block id="b56348249fcdfb1d99adf3c4aed569de" category="paragraph"><block ref="b56348249fcdfb1d99adf3c4aed569de" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c2e1602403c9ad1e0a65c8bcd78343f0" category="open-title">Modalità limitata o privata</block>
+  <block id="58254850bdb77fd29a5e690737b3b38e" category="list-text">Selezionare *Modifica connettore*.</block>
+  <block id="52151b08532438e354a67736d7f485dd" category="inline-image-macro">Una schermata che mostra l'opzione Modifica connettore disponibile dopo l'espansione del menu connettore.</block>
+  <block id="00f7462bbd72cb5b8ec9621909b3ebb1" category="paragraph"><block ref="00f7462bbd72cb5b8ec9621909b3ebb1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3a71443a0764cf544fb5e2055be2d744" category="list-text">Selezionare *Configurazione proxy HTTP*.</block>
+  <block id="7562ce5f768e11625bc10a4b9ebb71b0" category="list-text">Accedere alla pagina *Modifica connettore BlueXP*:</block>
+  <block id="f5d22e387d3dd91dbc45f16de7949a06" category="list-text">Selezionare *Support Direct API Traffic*.</block>
+  <block id="0515ac140ab701cd78614b76c8296d4f" category="paragraph">La creazione del connettore da BlueXP implementa un'istanza EC2 in AWS usando una configurazione predefinita. Dopo aver creato il connettore, non si dovrebbe passare a un tipo di istanza EC2 più piccolo che ha meno CPU o RAM. <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>.</block>
+  <block id="b1f8391bb8c209468262aa239bef0d41" category="paragraph">La creazione di Connector implementa un'istanza di macchina virtuale in Google Cloud utilizzando una configurazione predefinita. Dopo aver creato il connettore, non si dovrebbe passare a un'istanza VM più piccola con meno CPU o RAM. <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>.</block>
 </blocks>

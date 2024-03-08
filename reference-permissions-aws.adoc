@@ -73,6 +73,7 @@ Il secondo criterio fornisce le autorizzazioni per i seguenti servizi:
     "Statement": [
         {
             "Action": [
+                "ec2:DescribeAvailabilityZones",
                 "ec2:DescribeInstances",
                 "ec2:DescribeInstanceStatus",
                 "ec2:RunInstances",
@@ -1301,6 +1302,16 @@ Il connettore effettua le seguenti richieste API per gestire i tag sulle risorse
 == Registro delle modifiche
 
 Man mano che le autorizzazioni vengono aggiunte e rimosse, le annoteremo nelle sezioni seguenti.
+
+
+
+=== 8 marzo 2024
+
+La seguente autorizzazione è ora inclusa nel criterio del connettore:
+
+EC2:DescribeAvailabilityZones
+
+Questa autorizzazione è necessaria per una prossima release. Aggiorneremo le note di rilascio con ulteriori dettagli quando tale release sarà disponibile.
 
 
 

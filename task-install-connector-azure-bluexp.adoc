@@ -420,7 +420,7 @@ L'entità del servizio è ora impostata e l'ID dell'applicazione (client), l'ID 
 Creare il connettore direttamente dalla console BlueXP basata sul Web.
 
 .A proposito di questa attività
-La creazione del connettore da BlueXP implementa una macchina virtuale in Azure usando una configurazione predefinita. link:reference-connector-default-config.html["Informazioni sulla configurazione predefinita del connettore"].
+La creazione del connettore da BlueXP implementa una macchina virtuale in Azure usando una configurazione predefinita. Dopo aver creato il connettore, non si dovrebbe passare a un tipo di VM più piccolo che abbia meno CPU o RAM. link:reference-connector-default-config.html["Informazioni sulla configurazione predefinita del connettore"].
 
 .Prima di iniziare
 Dovresti disporre di quanto segue:

@@ -39,6 +39,20 @@ link:concept-connectors.html#connectors-must-be-operational-at-all-times["Tenere
 
 
 
+== Tipo di macchina virtuale o istanza
+
+Se hai creato un connettore direttamente da BlueXP, BlueXP ha implementato un'istanza di macchina virtuale nel cloud provider utilizzando una configurazione predefinita. Dopo aver creato il connettore, non si dovrebbe passare a un'istanza VM più piccola con meno CPU o RAM.
+
+I requisiti della CPU e della RAM sono i seguenti:
+
+CPU:: 4 core o 4 vCPU
+RAM:: 14 GB
+
+
+link:reference-connector-default-config.html["Informazioni sulla configurazione predefinita del connettore"].
+
+
+
 == Visualizzare la versione di un connettore
 
 È possibile visualizzare la versione del connettore per verificare che il connettore sia stato aggiornato automaticamente alla versione più recente o perché è necessario condividerlo con il rappresentante NetApp.
@@ -120,6 +134,81 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 
 --
 
+
+
+
+== Richiedi l'utilizzo di IMDSv2 sulle istanze di Amazon EC2
+
+A partire da marzo 2024, BlueXP ora supporta Amazon EC2 Instance Metadata Service versione 2 (IMDSv2) con connettore e Cloud Volumes ONTAP (incluso il mediatore per le implementazioni ha). IMDSv2 fornisce una maggiore protezione contro le vulnerabilità. https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["Scopri di più su IMDSv2 dal blog sulla sicurezza AWS"^]
+
+* IMDSv2 è attivato per impostazione predefinita su tutte le nuove istanze del connettore EC2. IMDSv1 è stato abilitato prima di marzo 2024.
+* IMDSv1 è abilitato per impostazione predefinita su tutte le istanze nuove ed esistenti di Cloud Volumes ONTAP EC2.
+
+
+Se richiesto dai criteri di protezione, è possibile configurare le istanze EC2 in modo che utilizzino IMDSv2.
+
+.Prima di iniziare
+* La versione del connettore deve essere 3.9.38 o successiva.
+* Questa modifica richiede il riavvio delle istanze di Cloud Volumes ONTAP.
+
+
+.A proposito di questa attività
+Questi passaggi richiedono l'utilizzo dell'interfaccia a riga di comando di AWS, perché devi modificare il limite del nodo di risposta su 3.
+
+.Fasi
+. Richiedere l'uso di IMDSv2 sull'istanza del connettore:
++
+.. Connettersi alla macchina virtuale Linux per il connettore.
++
+Quando è stata creata l'istanza del connettore in AWS, sono stati forniti una chiave di accesso AWS e una chiave segreta. È possibile utilizzare questa coppia di chiavi per SSH all'istanza. Il nome utente per l'istanza EC2 Linux è ubuntu (per i connettori creati prima di maggio 2023, il nome utente era EC2-user).
+
++
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS Docs (documenti AWS): Connettersi all'istanza di Linux"^]
+
+.. Installa l'interfaccia a riga di comando di AWS.
++
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html["Documentazione AWS: Installa o effettua l'aggiornamento alla versione più recente della CLI AWS"^]
+
+.. Utilizzare `aws ec2 modify-instance-metadata-options` Comando per richiedere l'uso di IMDSv2 e per modificare il limite di risposta PUT hop a 3.
++
+*Esempio*
+
++
+[source, awscli]
+----
+aws ec2 modify-instance-metadata-options \
+    --instance-id <instance-id> \
+    --http-put-response-hop-limit 3 \
+    --http-tokens required \
+    --http-endpoint enabled
+----
+
+
++
+
+NOTE: Il `http-tokens` Set di parametri IMDSv2 su richiesto. Quando `http-tokens` è obbligatorio, è necessario impostare anche `http-endpoint` su attivato.
+
+. Richiedi l'utilizzo di IMDSv2 sulle istanze di Cloud Volumes ONTAP:
++
+.. Accedere alla https://console.aws.amazon.com/ec2/["Console Amazon EC2"^]
+.. Dal riquadro di navigazione, selezionare *istanze*.
+.. Selezionare un'istanza di Cloud Volumes ONTAP.
+.. Selezionare *azioni > Impostazioni istanza > Modifica opzioni metadati istanza*.
+.. Nella finestra di dialogo *Modifica opzioni metadati istanza*, selezionare quanto segue:
++
+*** Per *Servizio metadati istanza*, selezionare *Abilita*.
+*** Per *IMDSv2*, selezionare *richiesto*.
+*** Selezionare *Salva*.
+
+
+.. Ripetere questi passaggi per altre istanze di Cloud Volumes ONTAP, incluso il mediatore ha.
+.. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-state.html["Arrestare e avviare le istanze di Cloud Volumes ONTAP"^]
+
+
+
+
+.Risultato
+L'istanza del connettore e le istanze di Cloud Volumes ONTAP sono ora configurate per l'utilizzo di IMDSv2.
 
 
 

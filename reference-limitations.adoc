@@ -24,28 +24,6 @@ Queste limitazioni sono specifiche per l'installazione e l'amministrazione di Bl
 
 
 
-=== IMDSv1 è necessario per le istanze EC2
-
-Prima di installare manualmente il software del connettore su un'istanza EC2 in AWS quando si utilizza la modalità standard o la modalità limitata, è necessario assicurarsi che l'istanza EC2 utilizzi la versione 1 (IMDSv1) del servizio metadati istanza. Il connettore non è supportato con IMDSv2.
-
-Poiché IMDSv2 è ora la versione predefinita su una nuova istanza EC2, è necessario modificare le opzioni dei metadati dell'istanza per ripristinare l'utilizzo di IMDSv1.
-
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-restore-IMDSv1["Documentazione AWS: Ripristinare l'utilizzo di IMDSv1"^]
-
-
-
-=== Le impostazioni predefinite dell'istanza EC2 non devono essere modificate
-
-Quando implementi il connettore in AWS da BlueXP o da AWS Marketplace, le seguenti impostazioni di istanza di EC2 sono configurate per impostazione predefinita:
-
-* IMDSv2 è impostato su opzionale
-* HttpTokens è impostato su opzionale
-
-
-Queste impostazioni non devono essere modificate in obbligatorio. La modifica di queste impostazioni su richiesta influisce sulla disponibilità di connettori e Cloud Volumes ONTAP.
-
-
-
 === Possibile conflitto con gli indirizzi IP compresi nell'intervallo 172
 
 BlueXP implementa il connettore con due interfacce che hanno indirizzi IP negli intervalli 172.17.0.0/16 e 172.18.0.0/16.
