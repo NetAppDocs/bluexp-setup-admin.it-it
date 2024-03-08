@@ -3909,7 +3909,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="1fac08ada9902743d92641fbbd32d13f" category="list-text">Per i connettori esistenti, IMDSv1 è ancora supportato, ma è possibile configurare manualmente IMDSv2 sull'istanza EC2, se si preferisce.</block>
   <block id="d0371cc329d08bb54c28e8881cc93db7" category="list-text">Per Cloud Volumes ONTAP, IMDSv1 è attivato per impostazione predefinita sulle istanze nuove ed esistenti. Se si preferisce, è possibile configurare manualmente IMDSv2 sulle istanze EC2.</block>
   <block id="e064a507c52bd5a195428edf98b8aecb" category="inline-link">Scopri come configurare IMDSv2 sulle istanze esistenti</block>
-  <block id="35caf9a212e382e214a82a5d75099530" category="paragraph"><block ref="2136f09eaf84594e894a08f345e725b8" category="inline-link-rx"></block>.</block>
   <block id="4cc078461f1763cdb13efec9da8a6a3f" category="section-title">Aggiornamento delle autorizzazioni AWS</block>
   <block id="5b208d0b88475ec99f06a7e55104a566" category="paragraph">Abbiamo aggiornato la policy del connettore per AWS in modo da includere l'autorizzazione "EC2:DescribeAvailabilityZones". Questa autorizzazione è necessaria per una prossima release. Aggiorneremo le note di rilascio con ulteriori dettagli quando tale release sarà disponibile.</block>
   <block id="7595af352964f2b06057ab6310fdff44" category="inline-link">Visualizza le autorizzazioni AWS per il connettore</block>
@@ -3937,4 +3936,5 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="f5d22e387d3dd91dbc45f16de7949a06" category="list-text">Selezionare *Support Direct API Traffic*.</block>
   <block id="0515ac140ab701cd78614b76c8296d4f" category="paragraph">La creazione del connettore da BlueXP implementa un'istanza EC2 in AWS usando una configurazione predefinita. Dopo aver creato il connettore, non si dovrebbe passare a un tipo di istanza EC2 più piccolo che ha meno CPU o RAM. <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>.</block>
   <block id="b1f8391bb8c209468262aa239bef0d41" category="paragraph">La creazione di Connector implementa un'istanza di macchina virtuale in Google Cloud utilizzando una configurazione predefinita. Dopo aver creato il connettore, non si dovrebbe passare a un'istanza VM più piccola con meno CPU o RAM. <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>.</block>
+  <block id="7c3d026f5f0bf0d01848d386f69159eb" category="paragraph"><block ref="7295f02a3c546b103864aa8261ac9cab" category="inline-link-rx"></block>.</block>
 </blocks>

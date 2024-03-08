@@ -42,7 +42,7 @@ Il servizio IMDS (Instance Metadata Service) viene attivato come segue nelle ist
 * Per Cloud Volumes ONTAP, IMDSv1 è attivato per impostazione predefinita sulle istanze nuove ed esistenti. Se si preferisce, è possibile configurare manualmente IMDSv2 sulle istanze EC2.
 
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["Scopri come configurare IMDSv2 sulle istanze esistenti"].
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["Scopri come configurare IMDSv2 sulle istanze esistenti"].
 
 
 
