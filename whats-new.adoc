@@ -939,6 +939,116 @@ link:task-managing-netapp-accounts.html#allow-third-party-services["Scopri di pi
 
 
 
+== 8 marzo 2021
+
+Questo aggiornamento include miglioramenti a diverse funzioni e servizi.
+
+
+
+=== Miglioramenti di Cloud Volumes ONTAP
+
+Questa release di Cloud Manager include miglioramenti alla gestione di Cloud Volumes ONTAP.
+
+
+
+==== Miglioramenti disponibili in tutti i cloud provider
+
+Cloud Manager è ora in grado di implementare e gestire Cloud Volumes ONTAP 9,9.0.
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_new_990.html["Scopri le nuove funzionalità incluse in questa release di Cloud Volumes ONTAP"^].
+
+
+
+==== Miglioramenti disponibili in AWS
+
+* È ora possibile implementare Cloud Volumes ONTAP 9.8 nell'ambiente dei servizi cloud commerciali AWS (C2S).
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Scopri come iniziare a utilizzare C2S"^]
+
+* Cloud Manager ti ha sempre abilitato per crittografare i dati Cloud Volumes ONTAP utilizzando il servizio di gestione delle chiavi (KMS) di AWS. A partire da Cloud Volumes ONTAP 9.9.0, i dati sui dischi EBS e i dati a livelli S3 vengono crittografati se si seleziona un CMK gestito dal cliente. In precedenza, solo i dati EBS sarebbero stati crittografati.
++
+Tenere presente che è necessario fornire al ruolo IAM Cloud Volumes ONTAP l'accesso per utilizzare il CMK.
+
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-kms.html["Scopri di più sulla configurazione di AWS KMS con Cloud Volumes ONTAP"^]
+
+
+
+
+
+==== Potenziamento disponibile in Azure
+
+È ora possibile implementare Cloud Volumes ONTAP 9.8 nel dipartimento della difesa di Azure (DOD) Impact Level 6 (IL6).
+
+
+
+==== Miglioramenti disponibili in Google Cloud
+
+* Abbiamo ridotto il numero di indirizzi IP richiesti per Cloud Volumes ONTAP 9.8 e versioni successive in Google Cloud. Per impostazione predefinita, è richiesto un indirizzo IP in meno (abbiamo unificato la LIF di intercluster con la LIF di gestione dei nodi). È inoltre possibile saltare la creazione della LIF di gestione SVM quando si utilizza l'API, riducendo la necessità di un indirizzo IP aggiuntivo.
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html["Scopri di più sui requisiti degli indirizzi IP in Google Cloud"^]
+
+* Quando si implementa una coppia Cloud Volumes ONTAP ha in Google Cloud, è ora possibile scegliere VPC condivisi per VPC-1, VPC-2 e VPC-3. In precedenza, solo VPC-0 poteva essere un VPC condiviso. Questa modifica è supportata con Cloud Volumes ONTAP 9.8 e versioni successive.
++
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html["Scopri di più sui requisiti di rete di Google Cloud"^]
+
+
+
+
+
+=== Miglioramenti al connettore
+
+* Cloud Manager invia ora una notifica agli utenti Admin tramite un'e-mail quando un connettore non è in esecuzione.
++
+Mantenere i connettori attivi e funzionanti consente di garantire la migliore gestione di Cloud Volumes ONTAP e altri servizi cloud NetApp.
+
+* Ora Cloud Manager visualizza una notifica se è necessario modificare il tipo di istanza per il connettore.
++
+La modifica del tipo di istanza consente di utilizzare le nuove funzioni e funzionalità attualmente mancanti.
+
+
+
+
+
+=== Miglioramenti apportati a Cloud Sync
+
+* Cloud Sync ora supporta le relazioni di sincronizzazione tra lo storage ONTAP S3 e i server SMB:
++
+** Storage ONTAP S3 su un server SMB
+** Un server per PMI nello storage ONTAP S3
++
+https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships.html["Visualizzare le relazioni di sincronizzazione supportate"^]
+
+
+
+* Cloud Sync consente ora di unificare la configurazione di un gruppo di broker dati direttamente dall'interfaccia utente.
++
+Si sconsiglia di modificare la configurazione autonomamente. È necessario consultare NetApp per capire quando modificare la configurazione e come modificarla.
+
++
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-data-brokers.html#set-up-a-unified-configuration["Scopri di più su come definire una configurazione unificata"^]
+
+
+
+
+
+=== Miglioramenti al tiering cloud
+
+* Durante il tiering in Google Cloud Storage, è possibile applicare una regola del ciclo di vita in modo che i dati su più livelli passino da una classe di storage Standard a uno storage nearline, Coldline o di archivio a costi più bassi dopo 30 giorni.
+* Cloud Tiering ora viene visualizzato se hai dei cluster ONTAP on-premise non rilevati, in modo che puoi aggiungerli a Cloud Manager per abilitare il tiering o altri servizi in questi cluster.
++
+https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["Scopri come scoprire questi cluster aggiuntivi"^]
+
+
+
+
+
+=== Miglioramenti di Azure NetApp Files
+
+Ora puoi modificare in maniera dinamica il livello di servizio per un volume per soddisfare le esigenze dei carichi di lavoro e ottimizzare i costi. Il volume viene spostato nell'altro pool di capacità senza alcun impatto sul volume. https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html#change-the-volumes-service-level["Scopri di più"^]
+
+
+
 == 9 febbraio 2021
 
 
