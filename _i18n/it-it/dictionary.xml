@@ -1075,14 +1075,12 @@
   <block id="39ac68e476b37c123efa68256cf31a7d" category="cell">Passare da un'area di lavoro all'altra</block>
   <block id="838203d064fe980b5ae00097d667d9f4" category="cell">Visualizzare i risultati della scansione di classificazione BlueXP</block>
   <block id="93b557fcf4dca896b9a77328a5ae0e92" category="cell">Eliminare gli ambienti di lavoro</block>
-  <block id="ff1717f17ee6eef1b2a1bb43f6547a36" category="cell">Connettere i cluster Kubernetes agli ambienti di lavoro</block>
   <block id="778cfbd8e3739e3af0e367072a92b2c3" category="cell">Ricevere il report Cloud Volumes ONTAP</block>
   <block id="91ddd20c84fc1e8ded7b005f805d8705" category="cell">Creare connettori</block>
   <block id="044b77b68a82998776d7f4dc9b550bee" category="cell">Gestire gli account BlueXP</block>
   <block id="1eda8b1f4dfa35b119f2a579170d4546" category="cell">Gestire le credenziali</block>
   <block id="d7cea5f953c31662cd13f98b3b7d8608" category="cell">Modificare le impostazioni di BlueXP</block>
   <block id="59d212e47ec92d175a35d52f6c448d89" category="cell">Visualizza e gestisci la dashboard di supporto</block>
-  <block id="309a17e5c03cbe61700c1e46eb38532f" category="cell">Rimuovere gli ambienti di lavoro da BlueXP</block>
   <block id="768acef28167e99aae88f7c6d5d9322a" category="inline-link-macro">Impostazione di aree di lavoro e utenti nell'account BlueXP</block>
   <block id="efb23fed841e93229b5eba2d12143dd0" category="list-text"><block ref="efb23fed841e93229b5eba2d12143dd0" category="inline-link-macro-rx"></block></block>
   <block id="5cc33db7bd831802e558ae70eb573d98" category="inline-link-macro">Gestione delle aree di lavoro e degli utenti nell'account BlueXP</block>
@@ -3984,4 +3982,5 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="b29f8ca8f9e48d5b3100564f6829e5f6" category="paragraph"><block ref="b29f8ca8f9e48d5b3100564f6829e5f6" category="inline-link-rx"></block></block>
   <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">Miglioramenti di Azure NetApp Files</block>
   <block id="d63816bce1f68b3d99c6b101eb23f900" category="paragraph">Ora puoi modificare in maniera dinamica il livello di servizio per un volume per soddisfare le esigenze dei carichi di lavoro e ottimizzare i costi. Il volume viene spostato nell'altro pool di capacità senza alcun impatto sul volume.<block ref="1c1fc3f10579c2dcdaafa6f121b73c03" category="inline-link-rx"></block></block>
+  <block id="849f31cbd6498a40e853e0172989edd1" category="cell">Rimuovere gli ambienti di lavoro da un'area di lavoro</block>
 </blocks>
