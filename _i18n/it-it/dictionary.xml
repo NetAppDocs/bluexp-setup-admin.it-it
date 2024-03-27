@@ -2314,7 +2314,6 @@ Si noti che la pagina viene aggiornata tra il test della connessione e l'abilita
   <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">Queste credenziali NSS sono associate all'ID account BlueXP specifico. Gli utenti che appartengono all'account BlueXP possono accedere a queste credenziali da *Support &gt; NSS Management*.</block>
   <block id="a046fbde0a8e04968445555624e37a69" category="summary">Se le policy aziendali richiedono l'utilizzo di un server proxy per tutte le comunicazioni a Internet, è necessario configurare i connettori in modo che utilizzino tale server proxy. Se non è stato configurato un connettore per l'utilizzo di un server proxy durante l'installazione, è possibile configurare il connettore per l'utilizzo di tale server proxy in qualsiasi momento.</block>
   <block id="146adb7944757e88795676b780c31811" category="doc">Configurare un connettore per l'utilizzo di un server proxy</block>
-  <block id="9d8704731bd068bd3be5ad98b7941cba" category="paragraph">BlueXP supporta HTTP e HTTPS. Il server proxy può trovarsi nel cloud o nella rete.</block>
   <block id="30d7902c191c571f1aa091af3df65f3d" category="paragraph">Se non è disponibile un indirizzo IP pubblico o un gateway NAT, la configurazione del connettore per l'utilizzo di un server proxy fornisce l'accesso a Internet in uscita. Questo server proxy fornisce solo il connettore con una connessione in uscita. Non fornisce alcuna connettività per i sistemi Cloud Volumes ONTAP.</block>
   <block id="66dcf6df2e799ff19e8fe5b0ed10a143" category="paragraph">Se i sistemi Cloud Volumes ONTAP non dispongono di una connessione Internet in uscita per inviare messaggi AutoSupport, BlueXP configura automaticamente i sistemi Cloud Volumes ONTAP in modo che utilizzino un server proxy incluso nel connettore. L'unico requisito è garantire che il gruppo di sicurezza del connettore consenta le connessioni in entrata sulla porta 3128. Dopo aver implementato il connettore, aprire questa porta.</block>
   <block id="58dcadbd8de2066b4071d6ed4e0b4baf" category="section-title">Attivare un proxy su un connettore</block>
@@ -2817,7 +2816,6 @@ Si noti che la pagina viene aggiornata tra il test della connessione e l'abilita
 \https://blob.core.microsoft.scloud
 \https://core.microsoft.scloud</block>
   <block id="8ec83edee8d0c8a3dd001c3d7e558479" category="cell">Per gestire le risorse nell'area Azure IL6.</block>
-  <block id="5b9a9863d7ad33310f21a8e9b1c1d682" category="paragraph">Con la modalità privata, l'unica volta in cui BlueXP invia il traffico in uscita è al provider cloud per creare un sistema Cloud Volumes ONTAP.</block>
   <block id="41d07a4a0a908721d3dbbf8c6e1a98a4" category="paragraph">Se si intende creare sistemi Cloud Volumes ONTAP, BlueXP richiede le autorizzazioni del provider di servizi cloud. È necessario impostare le autorizzazioni nel provider cloud e associarle all'istanza di Connector dopo l'installazione.</block>
   <block id="3d715e57805c2356f84c41d139ed45c5" category="paragraph">Se si intende installare il connettore on-premise, è necessario fornire le autorizzazioni utilizzando le chiavi di accesso AWS o un'entità di servizio Azure. Le altre opzioni non sono supportate.</block>
   <block id="68f824a5014b20fc98aea0beb5945581" category="paragraph">Utilizzare un ruolo IAM per fornire al connettore le autorizzazioni. Sarà necessario associare manualmente il ruolo all'istanza EC2 per il connettore.</block>
@@ -3847,11 +3845,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">Sarà necessario aggiornare la posizione di backup per ciascun sistema Cloud Volumes ONTAP.</block>
   <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">Eseguire il seguente comando dall'interfaccia CLI di Cloud Volumes ONTAP per visualizzare la destinazione di backup corrente:</block>
   <block id="78cae36205d703274f695ea4e85f6ffe" category="list-text">Eseguire il seguente comando per aggiornare l'indirizzo IP della destinazione di backup:</block>
-  <block id="95371958414dbd4f614d7ff8348b9b31" category="paragraph">Poiché IMDSv2 è ora la versione predefinita su una nuova istanza EC2, è necessario modificare le opzioni dei metadati dell'istanza per ripristinare l'utilizzo di IMDSv1.</block>
-  <block id="c637448044ff305c64a7c1cd8b77b196" category="inline-link">Documentazione AWS: Ripristinare l'utilizzo di IMDSv1</block>
-  <block id="dd3ddc1f5982d8946100b097e7993378" category="paragraph"><block ref="dd3ddc1f5982d8946100b097e7993378" category="inline-link-rx"></block></block>
-  <block id="a781cb38c0c2c5288c02850fcd3cda7d" category="list-text">IMDSv1</block>
-  <block id="1b863f7993d117f5ab767043f7a0bcdb" category="list-text">Il servizio metadati istanza versione 1 (IMDSv1) è necessario per le istanze EC2. Il connettore non è supportato con IMDSv2.</block>
   <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bbd3f8aeec942b5e418da40a3101ed3e" category="paragraph"><block ref="bbd3f8aeec942b5e418da40a3101ed3e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="list-text">Protezione ransomware</block>
@@ -3996,4 +3989,15 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="inline-link">Informazioni sulla modalità privata</block>
   <block id="cdeb608610a882c24cefcb7daa878a1d" category="list-text"><block ref="cdeb608610a882c24cefcb7daa878a1d" category="inline-link-rx"></block></block>
   <block id="de945439c2ef8db914ae9a056d6763b1" category="section-title">Rilascio in modalità privata (3,9.35)</block>
+  <block id="63d6aff1d21e14755a0a0cd9fcdbe7fc" category="paragraph">BlueXP non supporta i server proxy trasparenti.</block>
+  <block id="a8080c542b2627e36657b832e30937bf" category="paragraph">+
+Con la modalità privata, l'unica volta in cui BlueXP invia il traffico in uscita è al provider cloud per creare un sistema Cloud Volumes ONTAP.</block>
+  <block id="79911dec911bf03733bda7065e7e3964" category="section-title">I server proxy trasparenti non sono supportati</block>
+  <block id="d0da98586108cb1be969ff43380eee45" category="paragraph">BlueXP non supporta i server proxy trasparenti con il connettore.</block>
+  <block id="eb38246be0b09c0a9d91cb2085b20b5d" category="inline-link-macro">Ulteriori informazioni sull'utilizzo di un server proxy con il connettore</block>
+  <block id="20cac3f0e9288e4238db227a684ecc49" category="paragraph"><block ref="cad892d1cc18ace00e67298d6d6448d0" category="inline-link-macro-rx"></block>.</block>
+  <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">Configurazioni supportate</block>
+  <block id="7d207720727cb20f87ab53c6a1b2514b" category="list-text">BlueXP supporta HTTP e HTTPS.</block>
+  <block id="add3a67a28c550a2cc27b87a5a61ea8e" category="list-text">Il server proxy può trovarsi nel cloud o nella rete.</block>
+  <block id="8ddee083db5cf3707b8335f563d2c755" category="list-text">BlueXP non supporta i server proxy trasparenti.</block>
 </blocks>

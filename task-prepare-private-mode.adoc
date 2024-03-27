@@ -177,10 +177,12 @@ Server proxy:: Se l'organizzazione richiede la distribuzione di un server proxy 
 * Indirizzo IP
 * Credenziali
 * Certificato HTTPS
+
+
+BlueXP non supporta i server proxy trasparenti.
+
 +
 Con la modalità privata, l'unica volta in cui BlueXP invia il traffico in uscita è al provider cloud per creare un sistema Cloud Volumes ONTAP.
-
-
 
 --
 Porte:: Non c'è traffico in entrata verso il connettore, a meno che non venga avviato.

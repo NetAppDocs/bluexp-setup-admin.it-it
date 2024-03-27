@@ -124,6 +124,8 @@ Server proxy:: Se l'organizzazione richiede la distribuzione di un server proxy 
 * Certificato HTTPS
 
 
+BlueXP non supporta i server proxy trasparenti.
+
 --
 
 

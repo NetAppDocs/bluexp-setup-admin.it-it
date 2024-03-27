@@ -24,6 +24,14 @@ Queste limitazioni sono specifiche per l'installazione e l'amministrazione di Bl
 
 
 
+=== I server proxy trasparenti non sono supportati
+
+BlueXP non supporta i server proxy trasparenti con il connettore.
+
+link:task-configuring-proxy.html["Ulteriori informazioni sull'utilizzo di un server proxy con il connettore"].
+
+
+
 === Possibile conflitto con gli indirizzi IP compresi nell'intervallo 172
 
 BlueXP implementa il connettore con due interfacce che hanno indirizzi IP negli intervalli 172.17.0.0/16 e 172.18.0.0/16.
