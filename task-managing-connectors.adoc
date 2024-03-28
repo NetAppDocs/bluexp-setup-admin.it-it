@@ -149,6 +149,13 @@ Se richiesto dai criteri di protezione, è possibile configurare le istanze EC2 
 
 .Prima di iniziare
 * La versione del connettore deve essere 3.9.38 o successiva.
+* Cloud Volumes ONTAP deve eseguire una delle seguenti versioni:
++
+** 9.12.1 P2 (o qualsiasi patch successivo)
+** 9.13.0 P4 (o qualsiasi patch successivo)
+** 9.13.1 o qualsiasi versione successiva a questa release
+
+
 * Questa modifica richiede il riavvio delle istanze di Cloud Volumes ONTAP.
 
 
