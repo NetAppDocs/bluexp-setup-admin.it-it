@@ -23,7 +23,11 @@ Queste regole in entrata si applicano a tutti i modelli di implementazione BlueX
 | Protocollo | Porta | Scopo 
 
 
-| HTTP | 80 | Fornisce l'accesso HTTP dai browser Web client all'interfaccia utente locale 
+| HTTP | 80  a| 
+* Fornisce l'accesso HTTP dai browser Web client all'interfaccia utente locale
+* Utilizzato durante il processo di aggiornamento di Cloud Volumes ONTAP
+
+
 
 
 | HTTPS | 443 | Fornisce l'accesso HTTPS dai browser Web client all'interfaccia utente locale 
