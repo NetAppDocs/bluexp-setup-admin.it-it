@@ -18,6 +18,18 @@ Scopri le novità delle funzionalità di amministrazione di BlueXP: Account Blue
 
 
 
+== 11 aprile 2024
+
+
+
+=== Update di Docker Engine
+
+Abbiamo aggiornato i requisiti di Docker Engine per specificare la versione massima supportata del connettore, ovvero 25,0.5. La versione minima supportata è ancora 19,3.1.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["Visualizza i requisiti dell'host del connettore"].
+
+
+
 == 26 marzo 2024
 
 
@@ -78,7 +90,7 @@ https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-pr
 
 Il servizio IMDS (Instance Metadata Service) viene attivato come segue nelle istanze EC2:
 
-* Per le nuove implementazioni di connettori da BlueXP, da AWS Marketplace o utilizzando https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Script di terraform"^], IMDSv2 è attivato per impostazione predefinita nell'istanza EC2.
+* Per implementazioni di nuovi connettori da BlueXP o che utilizzano https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Script di terraform"^], IMDSv2 è attivato per impostazione predefinita nell'istanza EC2.
 * Se si avvia una nuova istanza EC2 in AWS e quindi si installa manualmente il software del connettore, anche IMDSv2 viene attivato per impostazione predefinita.
 * Per i connettori esistenti, IMDSv1 è ancora supportato, ma è possibile configurare manualmente IMDSv2 sull'istanza EC2, se si preferisce.
 * Per Cloud Volumes ONTAP, IMDSv1 è attivato per impostazione predefinita sulle istanze nuove ed esistenti. Se si preferisce, è possibile configurare manualmente IMDSv2 sulle istanze EC2.

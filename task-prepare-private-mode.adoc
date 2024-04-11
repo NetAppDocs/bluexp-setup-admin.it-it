@@ -79,7 +79,17 @@ Il connettore è supportato in Google Cloud su un'istanza di macchina virtuale c
 --
 Spazio su disco in /opz:: 100 GiB di spazio deve essere disponibile
 Spazio su disco in /var:: 20 GiB di spazio deve essere disponibile
-Motore Docker:: Prima di installare il connettore, è necessario installare Docker Engine versione 19.3.1 o successiva sull'host. https://docs.docker.com/engine/install/["Visualizzare le istruzioni di installazione"^]
+Motore Docker:: Prima di installare il connettore, è necessario disporre di Docker Engine sull'host.
++
+--
+* La versione minima supportata è 19,3.1.
+* La versione massima supportata è 25,0.5.
++
+https://docs.docker.com/engine/install/["Visualizzare le istruzioni di installazione"^]
+
+
+
+--
 
 
 
