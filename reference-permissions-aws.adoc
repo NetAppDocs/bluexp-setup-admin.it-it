@@ -59,7 +59,6 @@ Il secondo criterio fornisce le autorizzazioni per i seguenti servizi:
 
 * Caching edge
 * Kubernetes
-* Risoluzione dei problemi
 
 
 [role="tabbed-block"]
@@ -1279,22 +1278,6 @@ Il connettore effettua le seguenti richieste API per rilevare e gestire i cluste
 * eks:ListClusters
 * eks: DescripbeCluster
 * iam:GetInstanceProfile
-
-
-
-
-=== Risoluzione dei problemi
-
-Il connettore effettua le seguenti richieste API per gestire i tag sulle risorse AWS quando si utilizza la soluzione BlueXP:
-
-* ec2:CreateTag
-* ec2:DeleteMags
-* ec2:DescripteTag
-* Tag:getResources
-* Tag:getTagKeys
-* Tag:getTagValues
-* Tag:tagResources
-* Tag:UntagResources
 
 
 

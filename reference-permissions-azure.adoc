@@ -731,20 +731,6 @@ Il connettore effettua le seguenti richieste API per rilevare e gestire i cluste
 
 
 
-=== Risoluzione dei problemi
-
-Il connettore effettua le seguenti richieste API per gestire i tag sulle risorse Azure quando si utilizza la soluzione BlueXP:
-
-* Microsoft.Resources/resources/Read
-* Microsoft.Resources/subscriptions/operationresults/Read
-* Microsoft.Resources/subscriptions/resourceGroups/Read
-* Microsoft.Resources/subscriptions/resourcegroup/resources/Read
-* Microsoft.Resources/tags/Read
-* Microsoft.Resources/tags/write
-
-
-
-
 === Tiering
 
 Il connettore crea le seguenti richieste API quando si imposta il tiering BlueXP.
