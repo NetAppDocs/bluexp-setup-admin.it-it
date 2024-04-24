@@ -6,6 +6,12 @@ Accedere al portale Azure e assegnare il ruolo personalizzato Azure alla macchin
 
 .Fasi
 . Dal portale Azure, aprire il servizio *Subscriptions* e selezionare l'abbonamento.
++
+È importante assegnare il ruolo dal servizio *Sottoscrizioni* perché questo specifica l'ambito dell'assegnazione del ruolo al livello di sottoscrizione. L'oggetto _scope_ definisce l'insieme di risorse a cui si applica l'accesso. Se specifichi un ambito a un livello diverso (ad esempio, a livello di macchina virtuale), la tua capacità di completare azioni da BlueXP sarà interessata.
+
++
+https://learn.microsoft.com/en-us/azure/role-based-access-control/scope-overview["Documentazione Microsoft Azure: Comprensione dell'ambito per i role-based access control Azure"^]
+
 . Selezionare *Access Control (IAM)* > *Add* > *Add role assignment*.
 . Nella scheda *ruolo*, selezionare il ruolo *operatore BlueXP* e selezionare *Avanti*.
 +
@@ -15,7 +21,7 @@ NOTE: BlueXP Operator è il nome predefinito fornito nel criterio BlueXP. Se si 
 . Nella scheda *membri*, completare la seguente procedura:
 +
 .. Assegnare l'accesso a un'identità * gestita.
-.. Selezionare *Select members*, selezionare l'abbonamento in cui è stata creata la macchina virtuale Connector, scegliere *Virtual Machine*, quindi selezionare la macchina virtuale Connector.
+.. Selezionare *Seleziona membri*, selezionare l'abbonamento in cui è stata creata la macchina virtuale del connettore, in *identità gestita*, scegliere *macchina virtuale*, quindi selezionare la macchina virtuale del connettore.
 .. Selezionare *Seleziona*.
 .. Selezionare *Avanti*.
 .. Selezionare *Rivedi + assegna*.
