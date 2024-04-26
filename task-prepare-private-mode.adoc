@@ -37,7 +37,7 @@ link:concept-modes.html["Scopri come funziona la modalità privata"].
 
 In modalità privata, è possibile installare il connettore on-premise o nel cloud installando manualmente il connettore sul proprio host Linux.
 
-Se si desidera creare un sistema Cloud Volumes ONTAP in Google Cloud, il connettore deve essere in esecuzione in Google Cloud - non può essere eseguito on-premise.
+Il punto in cui viene installato il connettore determina quali servizi e funzionalità di BlueXP sono disponibili quando si utilizza la modalità privata. Ad esempio, per implementare e gestire Cloud Volumes ONTAP, il connettore deve essere installato nel cloud. link:concept-modes.html#private-mode["Ulteriori informazioni sulla modalità privata"].
 
 
 
@@ -210,11 +210,9 @@ Enable NTP (attiva NTP):: Se stai pensando di utilizzare la classificazione Blue
 
 == Passaggio 5: Preparare le autorizzazioni del cloud
 
-Se si intende creare sistemi Cloud Volumes ONTAP, BlueXP richiede le autorizzazioni del provider di servizi cloud. È necessario impostare le autorizzazioni nel provider cloud e associarle all'istanza di Connector dopo l'installazione.
+Se il connettore è installato nel cloud e intendi creare sistemi Cloud Volumes ONTAP, BlueXP richiede le autorizzazioni del tuo cloud provider. È necessario impostare le autorizzazioni nel provider cloud e associarle all'istanza di Connector dopo l'installazione.
 
 Per visualizzare i passaggi richiesti, selezionare l'opzione di autenticazione che si desidera utilizzare per il provider di servizi cloud.
-
-Se si intende installare il connettore on-premise, è necessario fornire le autorizzazioni utilizzando le chiavi di accesso AWS o un'entità di servizio Azure. Le altre opzioni non sono supportate.
 
 [role="tabbed-block"]
 ====
