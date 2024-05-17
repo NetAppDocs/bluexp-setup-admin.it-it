@@ -33,6 +33,7 @@ Se hai implementato il connettore da BlueXP o dal mercato del cloud provider, pr
 +
 Il sistema operativo non include una GUI. Per accedere al sistema, è necessario utilizzare un terminale.
 
+* L'installazione include Docker Engine, il tool richiesto per l'orchestrazione del container.
 * Il nome utente per l'istanza EC2 Linux è ubuntu (per i connettori creati prima di maggio 2023, il nome utente era EC2-user).
 * Il disco di sistema predefinito è un disco gp2 da 100 GiB.
 
@@ -48,6 +49,7 @@ Se hai implementato il connettore da BlueXP o dal mercato del cloud provider, pr
 +
 Il sistema operativo non include una GUI. Per accedere al sistema, è necessario utilizzare un terminale.
 
+* L'installazione include Docker Engine, il tool richiesto per l'orchestrazione del container.
 * Il disco di sistema predefinito è un disco SSD premium da 100 GiB.
 
 
@@ -62,6 +64,7 @@ Se il connettore è stato implementato da BlueXP, tenere presente quanto segue:
 +
 Il sistema operativo non include una GUI. Per accedere al sistema, è necessario utilizzare un terminale.
 
+* L'installazione include Docker Engine, il tool richiesto per l'orchestrazione del container.
 * Il disco di sistema predefinito è un disco persistente SSD da 100 GiB.
 
 
@@ -83,7 +86,7 @@ I file di log sono contenuti nelle seguenti cartelle:
 oppure
 * /opt/application/netapp/service-manager-2/logs (a partire dalle nuove installazioni 3.9.23)
 +
-I log in queste cartelle forniscono dettagli sulle immagini del connettore e del docker.
+I registri in queste cartelle forniscono dettagli sul connettore.
 
 * /opt/application/netapp/cloudmanager/docker_occm/data/log
 +

@@ -108,15 +108,13 @@ Per aggiornare il connettore e i relativi componenti Docker.
 --
 
 
-Server proxy:: Se l'organizzazione richiede la distribuzione di un server proxy per tutto il traffico Internet in uscita, ottenere le seguenti informazioni sul proxy HTTP o HTTPS. Queste informazioni devono essere fornite durante l'installazione.
+Server proxy:: Se l'organizzazione richiede la distribuzione di un server proxy per tutto il traffico Internet in uscita, ottenere le seguenti informazioni sul proxy HTTP o HTTPS. Queste informazioni devono essere fornite durante l'installazione. BlueXP non supporta i server proxy trasparenti.
 +
 --
 * Indirizzo IP
 * Credenziali
 * Certificato HTTPS
 
-
-BlueXP non supporta i server proxy trasparenti.
 
 --
 

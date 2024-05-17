@@ -31,8 +31,8 @@ Tenere presente quanto segue:
 * Per visualizzare istruzioni dettagliate sull'utilizzo di questi criteri, fare riferimento alle seguenti pagine:
 +
 ** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["Impostare le autorizzazioni per un'implementazione di AWS Marketplace"]
-** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Impostare le autorizzazioni per le implementazioni on-premise"]
-** link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità limitata"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Impostare le autorizzazioni per le implementazioni on-premise"]
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità limitata"]
 ** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità privata"]
 
 
@@ -1256,6 +1256,9 @@ Il connettore effettua le seguenti richieste API per implementare e gestire Clou
 
 
 | ec2:ModifyVolume | No | Sì | No 
+
+
+| Verifica se la zona di disponibilità è una zona locale AWS e convalida che tutti i parametri di implementazione sono compatibili | EC2:DescribeAvailabilityZones | Sì | No | Sì 
 |===
 
 
@@ -1288,13 +1291,11 @@ Man mano che le autorizzazioni vengono aggiunte e rimosse, le annoteremo nelle s
 
 
 
-=== 8 marzo 2024
+=== 9 maggio 2024
 
-La seguente autorizzazione è ora inclusa nel criterio del connettore:
+Per Cloud Volumes ONTAP sono ora necessarie le seguenti autorizzazioni:
 
 EC2:DescribeAvailabilityZones
-
-Questa autorizzazione è necessaria per una prossima release. Aggiorneremo le note di rilascio con ulteriori dettagli quando tale release sarà disponibile.
 
 
 

@@ -16,6 +16,10 @@ summary: 'Il modo in cui accedi ad BlueXP dipende dalla modalità di implementaz
 [role="lead"]
 Il modo in cui accedi ad BlueXP dipende dalla modalità di implementazione di BlueXP che stai utilizzando per l'account.
 
+Il connettore include un'interfaccia utente locale, accessibile dall'host del connettore. Questa interfaccia utente è fornita per i clienti che utilizzano BlueXP in modalità limitata o privata. Quando si utilizza BlueXP in modalità standard, è necessario accedere all'interfaccia utente da https://console.bluexp.netapp.com/["Console SaaS BlueXP"^]
+
+link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"].
+
 [role="tabbed-block"]
 ====
 .Modalità standard

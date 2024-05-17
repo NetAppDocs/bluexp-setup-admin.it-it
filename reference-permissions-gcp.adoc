@@ -25,7 +25,7 @@ Il ruolo personalizzato mostrato di seguito fornisce le autorizzazioni necessari
 È necessario applicare questo ruolo personalizzato a un account di servizio che viene collegato alla macchina virtuale del connettore.
 
 * link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["Impostare le autorizzazioni di Google Cloud per la modalità standard"]
-* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità limitata"]
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità limitata"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità privata"]
 
 

@@ -19,6 +19,8 @@ sidebar:
       url: "/whats-new.html"
     - title: Limitazioni note
       url: "/reference-limitations.html"
+    - title: Modifiche ai sistemi operativi Linux supportati
+      url: "/reference-connector-operating-system-changes.html"
   - title: Inizia subito
     entries:
     - title: Scopri le nozioni di base
@@ -115,15 +117,23 @@ sidebar:
         url: "/reference-user-roles.html"
     - title: Connettori
       entries:
-      - title: Individuare l'ID di sistema di un connettore
-        url: "/task-finding-system-id.html"
-      - title: Gestire i connettori esistenti
-        url: "/task-managing-connectors.html"
+      - title: Gestire la VM e il sistema operativo
+        url: "/task-maintain-connectors.html"
       - title: Installare un certificato HTTPS per un accesso sicuro
         url: "/task-installing-https-cert.html"
       - title: Configurare un connettore per l'utilizzo di un server proxy
         url: "/task-configuring-proxy.html"
-      - title: Configurazione predefinita per il connettore
+      - title: Richiedere l'uso di IMDSv2 su istanze EC2
+        url: "/task-require-imdsv2.html"
+      - title: Aggiornare un connettore quando si utilizza la modalità privata
+        url: "/task-upgrade-connector.html"
+      - title: Utilizzare più connettori
+        url: "/task-manage-multiple-connectors.html"
+      - title: Eseguire la ricerca guasti del connettore
+        url: "/task-troubleshoot-connector.html"
+      - title: Disinstallare e rimuovere il connettore
+        url: "/task-uninstall-connector.html"
+      - title: Configurazione predefinita
         url: "/reference-connector-default-config.html"
     - title: Credenziali e iscrizioni
       entries:

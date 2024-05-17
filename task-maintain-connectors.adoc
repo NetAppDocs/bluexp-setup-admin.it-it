@@ -1,0 +1,117 @@
+---
+sidebar: sidebar 
+permalink: task-maintain-connectors.html 
+keywords: connector operating system, connector maintenance, vm maintenance, os updates, operating system updates, stop connector, restart connector 
+summary: 'La manutenzione del sistema operativo sull"host del connettore è responsabilità dell"utente. Ad esempio, è necessario applicare gli aggiornamenti per la protezione al sistema operativo sull"host del connettore seguendo le procedure standard dell"azienda per la distribuzione del sistema operativo.' 
+---
+= Eseguire la manutenzione del connettore VM e del sistema operativo
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La manutenzione del sistema operativo sull'host del connettore è responsabilità dell'utente. Ad esempio, è necessario applicare gli aggiornamenti per la protezione al sistema operativo sull'host del connettore seguendo le procedure standard dell'azienda per la distribuzione del sistema operativo.
+
+
+TIP: Se si dispone di un connettore esistente, è necessario essere a conoscenza di link:reference-connector-operating-system-changes.html["Modifiche ai sistemi operativi Linux supportati"].
+
+
+
+== Patch del sistema operativo e il connettore
+
+Non è necessario arrestare alcun servizio sull'host del connettore quando si applicano le patch di sicurezza del sistema operativo.
+
+
+
+== Tipo di macchina virtuale o istanza
+
+Se hai creato un connettore direttamente da BlueXP, BlueXP ha implementato un'istanza di macchina virtuale nel cloud provider utilizzando una configurazione predefinita. Dopo aver creato il connettore, non si dovrebbe passare a un'istanza VM più piccola con meno CPU o RAM.
+
+I requisiti della CPU e della RAM sono i seguenti:
+
+CPU:: 4 core o 4 vCPU
+RAM:: 14 GB
+
+
+link:reference-connector-default-config.html["Informazioni sulla configurazione predefinita del connettore"].
+
+
+
+== Arresto dell'avvio del connettore VM
+
+Se devi arrestare e quindi avviare la macchina virtuale del connettore, dovresti farlo dalla console del tuo cloud provider o utilizzando le procedure standard per la gestione in loco.
+
+link:concept-connectors.html#connectors-must-be-operational-at-all-times["Tenere presente che il connettore deve essere sempre operativo"].
+
+
+
+== Connettersi alla macchina virtuale Linux
+
+Per connettersi alla macchina virtuale Linux su cui viene eseguito il connettore, è possibile utilizzare le opzioni di connettività disponibili presso il provider di servizi cloud.
+
+AWS:: Quando è stata creata l'istanza del connettore in AWS, sono stati forniti una chiave di accesso AWS e una chiave segreta. È possibile utilizzare questa coppia di chiavi per SSH all'istanza. Il nome utente per l'istanza EC2 Linux è ubuntu (per i connettori creati prima di maggio 2023, il nome utente era EC2-user).
++
+--
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS Docs (documenti AWS): Connettersi all'istanza di Linux"^]
+
+--
+Azure:: Quando è stata creata la Connector VM in Azure, è stato specificato un nome utente e si è scelto di autenticarsi con una password o una chiave pubblica SSH. Utilizzare il metodo di autenticazione scelto per la connessione alla macchina virtuale.
++
+--
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Azure Docs: SSH nella macchina virtuale"^]
+
+--
+Google Cloud:: Non è possibile specificare un metodo di autenticazione quando si crea un connettore in Google Cloud. Tuttavia, è possibile connettersi all'istanza di Linux VM utilizzando Google Cloud Console o Google Cloud CLI (gcloud).
++
+--
+https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google Cloud Docs: Connessione a macchine virtuali Linux"^]
+
+--
+
+
+
+
+== Modificare l'indirizzo IP di un connettore
+
+Se necessario per la tua azienda, puoi modificare l'indirizzo IP interno e l'indirizzo IP pubblico dell'istanza del connettore assegnata automaticamente dal tuo cloud provider.
+
+.Fasi
+. Seguire le istruzioni del provider cloud per modificare l'indirizzo IP locale o l'indirizzo IP pubblico (o entrambi) per l'istanza del connettore.
+. Se è stato modificato l'indirizzo IP pubblico ed è necessario connettersi all'interfaccia utente locale in esecuzione sul connettore, riavviare l'istanza del connettore per registrare il nuovo indirizzo IP con BlueXP.
+. Se è stato modificato l'indirizzo IP privato, aggiornare la posizione di backup per i file di configurazione Cloud Volumes ONTAP in modo che i backup vengano inviati al nuovo indirizzo IP privato sul connettore.
++
+Sarà necessario aggiornare la posizione di backup per ciascun sistema Cloud Volumes ONTAP.
+
++
+.. Eseguire il seguente comando dall'interfaccia CLI di Cloud Volumes ONTAP per visualizzare la destinazione di backup corrente:
++
+[source, cli]
+----
+system configuration backup show
+----
+.. Eseguire il seguente comando per aggiornare l'indirizzo IP della destinazione di backup:
++
+[source, cli]
+----
+system configuration backup settings modify -destination <target-location>
+----
+
+
+
+
+
+
+== Modificare gli URI di un connettore
+
+Aggiungere e rimuovere l'URI (Uniform Resource Identifier) per un connettore.
+
+.Fasi
+. Selezionare l'elenco a discesa *Connector* dall'intestazione BlueXP.
+. Selezionare *Gestisci connettori*.
+. Selezionare il menu delle azioni per un connettore e selezionare *Edit URI* (Modifica URI).
+. Aggiungere e rimuovere URI, quindi selezionare *Apply* (Applica).
+

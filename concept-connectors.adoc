@@ -153,10 +153,10 @@ Per informazioni su come impostare le autorizzazioni, fare riferimento a quanto 
 ** link:concept-install-options-aws.html["Opzioni di installazione del connettore in AWS"]
 ** link:concept-install-options-azure.html["Opzioni di installazione del connettore in Azure"]
 ** link:concept-install-options-google.html["Opzioni di installazione del connettore in Google Cloud"]
-** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Impostare le autorizzazioni cloud per le implementazioni on-premise"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Impostare le autorizzazioni cloud per le implementazioni on-premise"]
 
 
-* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità limitata"]
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità limitata"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità privata"]
 
 
@@ -175,7 +175,7 @@ Di solito aggiorniamo il software del connettore ogni mese per introdurre nuove 
 
 Quando si utilizza BlueXP in modalità standard o limitata, il connettore aggiorna automaticamente il proprio software all'ultima versione, a condizione che disponga di accesso a Internet outbound per ottenere l'aggiornamento software. Se si utilizza BlueXP in modalità privata, è necessario aggiornare manualmente il connettore.
 
-link:task-managing-connectors.html["Scopri come aggiornare manualmente il software del connettore"].
+link:task-upgrade-connector.html["Scopri come aggiornare manualmente il software del connettore"].
 
 
 
@@ -183,7 +183,7 @@ link:task-managing-connectors.html["Scopri come aggiornare manualmente il softwa
 
 La manutenzione del sistema operativo sull'host del connettore è responsabilità dell'utente. Ad esempio, è necessario applicare gli aggiornamenti per la protezione al sistema operativo sull'host del connettore seguendo le procedure standard dell'azienda per la distribuzione del sistema operativo.
 
-Tenere presente che non è necessario interrompere alcun servizio sull'host del connettore quando si esegue un aggiornamento del sistema operativo.
+Tenere presente che non è necessario interrompere alcun servizio sull'host del connettore quando si applicano aggiornamenti di protezione minori.
 
 Se è necessario arrestare e avviare la macchina virtuale del connettore, è necessario farlo dalla console del provider di cloud o utilizzando le procedure standard per la gestione on-premise.
 
@@ -191,15 +191,11 @@ Se è necessario arrestare e avviare la macchina virtuale del connettore, è nec
 
 
 
-== Ambienti di lavoro multipli
+== Più ambienti di lavoro e connettori
 
 Un connettore può gestire più ambienti di lavoro in BlueXP. Il numero massimo di ambienti di lavoro che un singolo connettore deve gestire varia. Dipende dal tipo di ambiente di lavoro, dal numero di volumi, dalla quantità di capacità gestita e dal numero di utenti.
 
 Se disponi di un'implementazione su larga scala, collabora con il tuo rappresentante NetApp per dimensionare il tuo ambiente. In caso di problemi durante il percorso, contattaci utilizzando la chat integrata nel prodotto.
-
-
-
-== Connettori multipli
 
 In alcuni casi, potrebbe essere necessario un solo connettore, ma potrebbero essere necessari due o più connettori.
 
@@ -207,33 +203,4 @@ Ecco alcuni esempi:
 
 * Si dispone di un ambiente multi-cloud (ad esempio, AWS e Azure) e si preferisce avere un connettore in AWS e un altro in Azure. Ciascuno di essi gestisce i sistemi Cloud Volumes ONTAP in esecuzione in tali ambienti.
 * Un provider di servizi potrebbe utilizzare un account BlueXP per fornire servizi ai propri clienti, mentre utilizza un altro account per fornire il disaster recovery per una delle proprie business unit. Ciascun account dispone di connettori separati.
-
-
-
-
-=== Quando cambiare
-
-Quando si crea il primo connettore, BlueXP utilizza automaticamente tale connettore per ogni ambiente di lavoro aggiuntivo creato. Una volta creato un connettore aggiuntivo, è necessario passare da un connettore all'altro per visualizzare gli ambienti di lavoro specifici di ciascun connettore.
-
-link:task-managing-connectors.html["Scopri come passare da un connettore all'altro"].
-
-
-
-=== Disaster recovery
-
-È possibile gestire un ambiente di lavoro con più connettori contemporaneamente per scopi di disaster recovery. Se un connettore si spegne, è possibile passare all'altro connettore per gestire immediatamente l'ambiente di lavoro.
-
-Per impostare questa configurazione:
-
-. link:task-managing-connectors.html["Passare a un altro connettore"].
-. Scopri l'ambiente di lavoro esistente.
-+
-** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-adding-systems.html["Aggiungere sistemi Cloud Volumes ONTAP esistenti a BlueXP"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Scopri i cluster ONTAP"^]
-
-
-. Impostare https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-storage-management.html["Modalità di gestione della capacità"^]
-+
-Solo il connettore principale deve essere impostato su *Automatic Mode* (modalità automatica). Se si passa a un altro connettore per scopi di DR, è possibile modificare la modalità di gestione della capacità in base alle esigenze.
-
 
