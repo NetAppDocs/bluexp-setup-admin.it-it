@@ -124,9 +124,20 @@ rm /var/run/docker.sock
 Podman è disponibile presso i repository ufficiali di Red Hat Enterprise Linux.
 
 +
+Per Red Hat Enterprise Linux 9:
+
++
 [source, cli]
 ----
 sudo dnf install podman-2:4.6.1
+----
++
+Per Red Hat Enterprise Linux 8:
+
++
+[source, cli]
+----
+sudo dnf install podman-3:4.6.1
 ----
 . Abilitare e avviare il servizio podman.socket.
 +
@@ -319,6 +330,8 @@ Enable NTP (attiva NTP):: Se stai pensando di utilizzare la classificazione Blue
 == Passaggio 4: Impostare le autorizzazioni per il connettore
 
 Un account di servizio Google Cloud è necessario per fornire a Connector le autorizzazioni necessarie per gestire le risorse in Google Cloud. Quando si crea il connettore, è necessario associare questo account di servizio alla macchina virtuale del connettore.
+
+È responsabilità dell'utente aggiornare il ruolo personalizzato man mano che vengono aggiunte nuove autorizzazioni nelle versioni successive. Se sono necessarie nuove autorizzazioni, queste verranno elencate nelle note sulla versione.
 
 .Fasi
 . Creare un ruolo personalizzato in Google Cloud:

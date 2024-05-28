@@ -4,6 +4,8 @@
 
 Un account di servizio Google Cloud è necessario per fornire a Connector le autorizzazioni necessarie per gestire le risorse in Google Cloud. Quando si crea il connettore, è necessario associare questo account di servizio alla macchina virtuale del connettore.
 
+È responsabilità dell'utente aggiornare il ruolo personalizzato man mano che vengono aggiunte nuove autorizzazioni nelle versioni successive. Se sono necessarie nuove autorizzazioni, queste verranno elencate nelle note sulla versione.
+
 .Fasi
 . Creare un ruolo personalizzato in Google Cloud:
 +

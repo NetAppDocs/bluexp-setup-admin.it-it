@@ -24,9 +24,9 @@ Le policy IAM disponibili di seguito forniscono le autorizzazioni necessarie a u
 
 Tenere presente quanto segue:
 
-* Se si crea un connettore in una regione AWS standard direttamente da BlueXP, BlueXP applica automaticamente i criteri al connettore. In questo caso, non è necessario eseguire alcuna operazione.
+* Se si crea un connettore in una regione AWS standard direttamente da BlueXP, BlueXP applica automaticamente i criteri al connettore.
 * È necessario impostare autonomamente i criteri se si implementa il connettore da AWS Marketplace, se si installa manualmente il connettore su un host Linux o se si desidera aggiungere ulteriori credenziali AWS a BlueXP.
-* Inoltre, è necessario assicurarsi che i criteri siano aggiornati quando vengono aggiunte nuove autorizzazioni nelle release successive.
+* In entrambi i casi, è necessario assicurarsi che i criteri siano aggiornati man mano che vengono aggiunte nuove autorizzazioni nelle versioni successive. Se sono necessarie nuove autorizzazioni, queste verranno elencate nelle note sulla versione.
 * Se necessario, è possibile limitare le policy IAM utilizzando il modulo IAM `Condition` elemento. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["Documentazione AWS: Elemento Condition"^]
 * Per visualizzare istruzioni dettagliate sull'utilizzo di questi criteri, fare riferimento alle seguenti pagine:
 +

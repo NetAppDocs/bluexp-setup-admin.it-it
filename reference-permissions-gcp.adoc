@@ -29,7 +29,7 @@ Il ruolo personalizzato mostrato di seguito fornisce le autorizzazioni necessari
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità privata"]
 
 
-Inoltre, è necessario assicurarsi che il ruolo sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive.
+Inoltre, è necessario assicurarsi che il ruolo sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive. Se sono necessarie nuove autorizzazioni, queste verranno elencate nelle note sulla versione.
 
 [source, yaml]
 ----

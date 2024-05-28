@@ -22,19 +22,20 @@ Quando BlueXP avvia la macchina virtuale del connettore in Azure, allega un ruol
 
 Il ruolo personalizzato mostrato di seguito fornisce le autorizzazioni necessarie a un connettore per gestire le risorse e i processi all'interno della rete Azure.
 
-Quando si crea un connettore direttamente da BlueXP, BlueXP applica automaticamente questo ruolo personalizzato al connettore.
+Tenere presente quanto segue:
 
-Se si implementa il connettore da Azure Marketplace o se si installa manualmente il connettore su un host Linux, sarà necessario impostare autonomamente il ruolo personalizzato.
+* Quando si crea un connettore direttamente da BlueXP, BlueXP applica automaticamente questo ruolo personalizzato al connettore.
+* Se si implementa il connettore da Azure Marketplace o se si installa manualmente il connettore su un host Linux, sarà necessario impostare autonomamente il ruolo personalizzato.
+* In entrambi i casi, è necessario assicurarsi che il ruolo sia aggiornato man mano che vengono aggiunte nuove autorizzazioni nelle versioni successive. Se sono necessarie nuove autorizzazioni, queste verranno elencate nelle note sulla versione.
+* Per visualizzare istruzioni dettagliate sull'utilizzo di questi criteri, fare riferimento alle seguenti pagine:
++
+** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Impostare le autorizzazioni per un'implementazione di Azure Marketplace"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Impostare le autorizzazioni per le implementazioni on-premise"]
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità limitata"]
+** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità privata"]
 
-Per visualizzare istruzioni dettagliate sull'utilizzo di questi criteri, fare riferimento alle seguenti pagine:
-
-* link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Impostare le autorizzazioni per un'implementazione di Azure Marketplace"]
-* link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Impostare le autorizzazioni per le implementazioni on-premise"]
-* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità limitata"]
-* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità privata"]
 
 
-Inoltre, è necessario assicurarsi che il ruolo sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive.
 
 [source, json]
 ----

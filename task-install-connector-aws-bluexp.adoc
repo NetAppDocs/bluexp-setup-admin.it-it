@@ -150,16 +150,13 @@ Con entrambe le opzioni, il primo passo è creare un criterio IAM. Questo criter
 
 Se necessario, è possibile limitare la policy IAM utilizzando il modulo IAM `Condition` elemento. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["Documentazione AWS: Elemento Condition"^]
 
-
-TIP: Quando BlueXP crea il connettore, applica un nuovo set di autorizzazioni all'istanza del connettore che consente al connettore di gestire le risorse AWS.
-
 .Fasi
 . Accedere alla console AWS IAM.
 . Selezionare *Criteri > Crea policy*.
 . Selezionare *JSON*.
 . Copiare e incollare il seguente criterio:
 +
-Si ricorda che questo criterio contiene solo le autorizzazioni necessarie per avviare l'istanza di Connector in AWS da BlueXP. link:reference-permissions-aws.html["Visualizza le autorizzazioni richieste per l'istanza del connettore"].
+Questo criterio contiene solo le autorizzazioni necessarie per avviare l'istanza di Connector in AWS da BlueXP. Quando BlueXP crea il connettore, applica un nuovo set di autorizzazioni all'istanza del connettore che consente al connettore di gestire le risorse AWS. link:reference-permissions-aws.html["Visualizza le autorizzazioni richieste per l'istanza del connettore"].
 
 +
 [source, json]
@@ -275,7 +272,9 @@ Ora dovresti disporre di un ruolo IAM con le autorizzazioni richieste o di un ut
 Creare il connettore direttamente dalla console BlueXP basata sul Web.
 
 .A proposito di questa attività
-La creazione del connettore da BlueXP implementa un'istanza EC2 in AWS usando una configurazione predefinita. Dopo aver creato il connettore, non si dovrebbe passare a un tipo di istanza EC2 più piccolo che ha meno CPU o RAM. link:reference-connector-default-config.html["Informazioni sulla configurazione predefinita del connettore"].
+* La creazione del connettore da BlueXP implementa un'istanza EC2 in AWS usando una configurazione predefinita. Dopo aver creato il connettore, non si dovrebbe passare a un tipo di istanza EC2 più piccolo che ha meno CPU o RAM. link:reference-connector-default-config.html["Informazioni sulla configurazione predefinita del connettore"].
+* Quando BlueXP crea il connettore, crea un ruolo IAM e un profilo di istanza per l'istanza. Questo ruolo include autorizzazioni che consentono al connettore di gestire le risorse AWS. È necessario assicurarsi che il ruolo sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle versioni successive. link:reference-permissions-aws.html["Ulteriori informazioni sulla politica IAM per il connettore"].
+
 
 .Prima di iniziare
 Dovresti disporre di quanto segue:

@@ -167,6 +167,8 @@ Per visualizzare le autorizzazioni esatte necessarie al connettore per le operaz
 * link:reference-permissions-gcp.html["Scopri come Connector utilizza le autorizzazioni Google Cloud"]
 
 
+È responsabilità dell'utente aggiornare i criteri del connettore man mano che vengono aggiunte nuove autorizzazioni nelle versioni successive. Se sono necessarie nuove autorizzazioni, queste verranno elencate nelle note sulla versione.
+
 
 
 == Aggiornamenti del connettore

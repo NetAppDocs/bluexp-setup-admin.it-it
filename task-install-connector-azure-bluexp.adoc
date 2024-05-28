@@ -161,7 +161,7 @@ Si noti che è possibile creare un ruolo personalizzato di Azure utilizzando il 
 . Copiare le autorizzazioni richieste per un nuovo ruolo personalizzato in Azure e salvarle in un file JSON.
 +
 
-NOTE: Questo ruolo personalizzato contiene solo le autorizzazioni necessarie per avviare la macchina virtuale del connettore in Azure da BlueXP. Non utilizzare questa policy per altre situazioni. Quando BlueXP crea il connettore, applica un nuovo set di autorizzazioni alla macchina virtuale del connettore che consente al connettore di gestire le risorse nell'ambiente di cloud pubblico.
+NOTE: Questo ruolo personalizzato contiene solo le autorizzazioni necessarie per avviare la macchina virtuale del connettore in Azure da BlueXP. Non utilizzare questa policy per altre situazioni. Quando BlueXP crea il connettore, applica un nuovo set di autorizzazioni alla macchina virtuale del connettore che consente al connettore di gestire le risorse di Azure.
 
 +
 [source, json]
@@ -420,7 +420,9 @@ L'entità del servizio è ora impostata e l'ID dell'applicazione (client), l'ID 
 Creare il connettore direttamente dalla console BlueXP basata sul Web.
 
 .A proposito di questa attività
-La creazione del connettore da BlueXP implementa una macchina virtuale in Azure usando una configurazione predefinita. Dopo aver creato il connettore, non si dovrebbe passare a un tipo di VM più piccolo che abbia meno CPU o RAM. link:reference-connector-default-config.html["Informazioni sulla configurazione predefinita del connettore"].
+* La creazione del connettore da BlueXP implementa una macchina virtuale in Azure usando una configurazione predefinita. Dopo aver creato il connettore, non si dovrebbe passare a un tipo di VM più piccolo che abbia meno CPU o RAM. link:reference-connector-default-config.html["Informazioni sulla configurazione predefinita del connettore"].
+* Quando BlueXP implementa il connettore, crea un ruolo personalizzato e lo assegna alla macchina virtuale del connettore. Questo ruolo include autorizzazioni che consentono al connettore di gestire le risorse di Azure. È necessario assicurarsi che il ruolo sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle versioni successive. link:reference-permissions-azure.html["Ulteriori informazioni sul ruolo personalizzato per il connettore"].
+
 
 .Prima di iniziare
 Dovresti disporre di quanto segue:
