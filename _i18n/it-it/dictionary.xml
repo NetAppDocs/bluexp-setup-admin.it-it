@@ -4185,4 +4185,17 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="df6a3e698694ef43588c621a4f033d31" category="inline-link-macro">Ulteriori informazioni sulla politica IAM per il connettore</block>
   <block id="1fb320e90a252e8c1b4c19e3cbd46329" category="list-text">Quando BlueXP crea il connettore, crea un ruolo IAM e un profilo di istanza per l'istanza. Questo ruolo include autorizzazioni che consentono al connettore di gestire le risorse AWS. È necessario assicurarsi che il ruolo sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle versioni successive. <block ref="7c04064b609d1f2f70bc0b0dc253bdfa" category="inline-link-macro-rx"></block>.</block>
   <block id="4560d9b851db1f575c8bd1ba53369c0a" category="paragraph">Inoltre, è necessario assicurarsi che il ruolo sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive. Se sono necessarie nuove autorizzazioni, queste verranno elencate nelle note sulla versione.</block>
+  <block id="74ee4e65950c57ed59a7a33de5a179e6" category="section-title">4 giugno 2024</block>
+  <block id="87174c130fb334601e88a5630bf24478" category="section-title">Rilascio in modalità privata (3,9.40)</block>
+  <block id="3a88f5b91fe23c6da00e330b440f9fd7" category="paragraph">Una nuova versione in modalità privata è ora disponibile per il download dal sito di supporto NetApp. Questa release include le seguenti versioni dei servizi BlueXP che sono supportate in modalità privata.</block>
+  <block id="4f56b8c7a0f62edc59659cfaecc68958" category="paragraph">Si noti che questa versione in modalità privata _non_ include il supporto per il connettore con Red Hat Enterprise Linux 8 e 9.</block>
+  <block id="f691a3ef752f6e51a74183a6b7b1c432" category="cell">3.9.40</block>
+  <block id="918de91f5332dad6620331712ef5c21d" category="cell">15 maggio 2024 (versione 1,31)</block>
+  <block id="64cc8195fcb01e582343c910736d1abd" category="paragraph">Per ulteriori informazioni su ciò che è incluso nelle versioni di questi servizi BlueXP, fai riferimento alle note della release per ogni servizio BlueXP.</block>
+  <block id="451cc12943297b25b1cf250cc5d0e60a" category="inline-link">Scopri le novità del backup e recovery di BlueXP</block>
+  <block id="d846859679a4eca86e97e1887623b347" category="list-text"><block ref="d846859679a4eca86e97e1887623b347" category="inline-link-rx"></block></block>
+  <block id="dd890c1f1f06a084e8274154f3f07ebe" category="inline-link">Scopri le novità della classificazione BlueXP</block>
+  <block id="0dcda936d538d36f9e02f54b88ffefca" category="list-text"><block ref="0dcda936d538d36f9e02f54b88ffefca" category="inline-link-rx"></block></block>
+  <block id="d06e6f96135d8cd2fa9fea9a4d9de16b" category="inline-link">Scopri le novità della gestione Cloud Volumes ONTAP in BlueXP</block>
+  <block id="29e66847d781138b54aa8aa55b70fb20" category="list-text"><block ref="29e66847d781138b54aa8aa55b70fb20" category="inline-link-rx"></block></block>
 </blocks>
