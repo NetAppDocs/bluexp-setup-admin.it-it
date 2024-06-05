@@ -165,12 +165,6 @@ Il backup e il ripristino dei dati applicativi, dei dati delle macchine virtuali
 | Classificazione  a| 
 Supportato nelle regioni governative con modalità limitata. Non supportato in aree commerciali o in aree sovrane con modalità limitata.
 
-Si applicano le seguenti limitazioni:
-
-* Impossibile eseguire la scansione di account OneDrive, SharePoint e Google Drive.
-* La funzionalità dell'etichetta AIP (Microsoft Azure Information Protection) non può essere integrata.
-
-
 
 
 | Cloud Volumes ONTAP | Supporto completo 
