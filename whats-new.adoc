@@ -79,7 +79,7 @@ A questo punto, la versione 3.9.40 è disponibile per la modalità standard e la
 
 ==== Supporto per RHEL 8 e 9
 
-Il connettore è ora supportato sugli host che eseguono le seguenti versioni di Red Hat Enterprise Linux con _nuove_ installazioni di connettori:
+Il connettore è ora supportato sugli host che eseguono le seguenti versioni di Red Hat Enterprise Linux con _nuove_ installazioni di connettori quando si utilizza BlueXP in modalità standard o limitata:
 
 * da 8,6 a 8,9
 * da 9,1 a 9,3
