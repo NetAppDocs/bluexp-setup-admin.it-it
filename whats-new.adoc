@@ -18,6 +18,18 @@ Scopri le novità delle funzionalità di amministrazione di BlueXP: Account Blue
 
 
 
+== 12 giugno 2024
+
+
+
+=== Connettore 3.9.41
+
+Questa versione di BlueXP Connector include piccoli miglioramenti alla sicurezza e correzioni di bug.
+
+La versione 3.9.41 è disponibile per la modalità standard e la modalità limitata.
+
+
+
 == 4 giugno 2024
 
 

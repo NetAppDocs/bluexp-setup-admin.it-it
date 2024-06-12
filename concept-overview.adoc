@@ -47,7 +47,6 @@ Mobilità:: Sposta i dati dove servono sincronizzando, copiando, tiering e memor
 +
 --
 * https://bluexp.netapp.com/cloud-sync-service["Copia e sincronizzazione"^]
-* https://bluexp.netapp.com/global-file-cache["Caching edge"^]
 * https://bluexp.netapp.com/cloud-tiering["Tiering"^]
 
 
