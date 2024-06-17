@@ -64,7 +64,17 @@ RAM:: 14 GB
 Tipo di istanza AWS EC2:: Un tipo di istanza che soddisfa i requisiti di CPU e RAM indicati in precedenza. Si consiglia di utilizzare t3.xlarge.
 Coppia di chiavi:: Quando si crea il connettore, è necessario selezionare una coppia di chiavi EC2 da utilizzare con l'istanza.
 Spazio su disco in /opz:: 100 GiB di spazio deve essere disponibile
++
+--
+BlueXP utilizza `/opt` per installare `/opt/application/netapp` directory e il suo contenuto.
+
+--
 Spazio su disco in /var:: 20 GiB di spazio deve essere disponibile
++
+--
+BlueXP richiede questo spazio in `/var` Perché Docker o Podman sono progettati per creare i container all'interno di questa directory. In particolare, creeranno contenitori in `/var/lib/containers/storage` directory. Montaggi esterni o collegamenti simbolici non funzionano per questo spazio.
+
+--
 Tool di orchestrazione del container:: A seconda del sistema operativo in uso, prima di installare il connettore è necessario utilizzare Podman o Docker Engine.
 +
 --
