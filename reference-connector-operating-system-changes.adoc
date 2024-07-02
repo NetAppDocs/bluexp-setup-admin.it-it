@@ -51,7 +51,7 @@ Aggiornamenti RHEL:: Se si dispone già di un connettore in esecuzione su un hos
 
 == Fine del supporto per RHEL 7 e CentOS 7
 
-Il 30 giugno 2024, RHEL 7 arriverà alla fine della manutenzione (EOM), mentre CentOS 7 arriverà alla fine del ciclo di vita (EOL). NetApp continuerà a supportare il connettore su queste distribuzioni Linux fino al 30 giugno 2024.
+Il 30 giugno 2024, RHEL 7 ha raggiunto la fine della manutenzione (EOM), mentre CentOS 7 ha raggiunto la fine del ciclo di vita (EOL). NetApp ha smesso di supportare il connettore su queste distribuzioni Linux il 30 giugno 2024.
 
 https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-end-of-maintenance["Red Hat: Cosa sapere su Red Hat Enterprise Linux 7 dopo la manutenzione"^]
 
@@ -81,9 +81,6 @@ Per questo sistema operativo è necessario Docker Engine. Podman non è supporta
 
 Di seguito è riportato un riepilogo del supporto del sistema operativo descritto nelle sezioni precedenti.
 
-
-NOTE: NetApp continuerà a supportare il connettore su RHEL 7 e CentOS 7 fino al 30 giugno 2024.
-
 [role="tabbed-block"]
 ====
 .Modalità standard
@@ -92,10 +89,8 @@ Installazione manuale::
 +
 --
 * Ubuntu 22,04 LTS
-* CentOS da 7,6 a 7,9
 * Red Hat Enterprise Linux
 +
-** da 7,6 a 7,9
 ** da 8,6 a 8,9
 ** da 9,1 a 9,3
 
@@ -115,10 +110,8 @@ Installazione manuale::
 +
 --
 * Ubuntu 22,04 LTS
-* CentOS da 7,6 a 7,9
 * Red Hat Enterprise Linux
 +
-** da 7,6 a 7,9
 ** da 8,6 a 8,9
 ** da 9,1 a 9,3
 
@@ -133,15 +126,7 @@ Implementazione da Azure Marketplace:: Ubuntu 22,04 LTS
 --
 .Modalità privata
 --
-Installazione manuale::
-+
---
-* Ubuntu 22,04 LTS
-* CentOS da 7,6 a 7,9
-* Red Hat Enterprise Linux da 7,6 a 7,9
-
-
---
+Installazione manuale:: Ubuntu 22,04 LTS
 
 
 --

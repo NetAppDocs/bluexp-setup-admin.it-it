@@ -30,16 +30,8 @@ Sistemi operativi supportati::
 +
 --
 * Ubuntu 22,04 LTS
-* CentOS da 7,6 a 7,9
-+
-NetApp continuerà a supportare il connettore con CentOS 7 fino al 30 giugno 2024.
-
 * Red Hat Enterprise Linux
 +
-** da 7,6 a 7,9
-+
-NetApp continuerà a supportare il connettore con RHEL 7 fino al 30 giugno 2024.
-
 ** da 8,6 a 8,9
 ** da 9,1 a 9,3
 +
@@ -53,12 +45,7 @@ Il connettore è supportato dalle versioni in lingua inglese di questi sistemi o
 
 
 --
-Hypervisor:: È richiesto un hypervisor bare metal o in hosting certificato per l'esecuzione di Ubuntu, CentOS o Red Hat Enterprise Linux.
-+
---
-https://access.redhat.com/articles/973163["Soluzione Red Hat: Quali hypervisor sono certificati per eseguire Red Hat Enterprise Linux?"^]
-
---
+Hypervisor:: È necessario un hypervisor bare metal o in hosting certificato per l'esecuzione di un sistema operativo supportato.
 CPU:: 4 core o 4 vCPU
 RAM:: 14 GB
 Spazio su disco in /opz:: 100 GiB di spazio deve essere disponibile
@@ -87,7 +74,7 @@ Per Podman devono essere soddisfatti i seguenti prerequisiti:
 ** Podman-compose deve essere aggiunto alla variabile di ambiente PATH
 
 
-* Docker Engine è richiesto per Ubuntu, CentOS e Red Hat Enterprise Linux 7.
+* Docker Engine è richiesto per Ubuntu.
 +
 ** La versione minima supportata è 19,3.1.
 ** La versione massima supportata è 25,0.5.
@@ -105,7 +92,7 @@ Per Podman devono essere soddisfatti i seguenti prerequisiti:
 A seconda del sistema operativo in uso, prima di installare il connettore è necessario utilizzare Podman o Docker Engine.
 
 * Podman è necessario per Red Hat Enterprise Linux 8 e 9.
-* Docker Engine è richiesto per Ubuntu, CentOS e Red Hat Enterprise Linux 7.
+* Docker Engine è richiesto per Ubuntu.
 
 
 .Fasi
