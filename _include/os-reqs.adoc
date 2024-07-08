@@ -75,7 +75,7 @@ BlueXP richiede questo spazio in `/var` Perché Docker o Podman sono progettati 
 Motore Docker:: Prima di installare il connettore, è necessario disporre di Docker Engine sull'host.
 +
 --
-* La versione minima supportata è 19,3.1.
+* La versione minima supportata è 23,0.6.
 * La versione massima supportata è 25,0.5.
 +
 https://docs.docker.com/engine/install/["Visualizzare le istruzioni di installazione"^]
@@ -101,7 +101,7 @@ Per Podman devono essere soddisfatti i seguenti prerequisiti:
 
 * Docker Engine è richiesto per Ubuntu.
 +
-** La versione minima supportata è 19,3.1.
+** La versione minima supportata è 23,0.6.
 ** La versione massima supportata è 25,0.5.
 
 
