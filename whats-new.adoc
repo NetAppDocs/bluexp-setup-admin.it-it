@@ -26,6 +26,8 @@ Scopri le novità delle funzionalità di amministrazione di BlueXP: Account Blue
 
 Questa versione include miglioramenti minori, correzioni di bug e supporto per il connettore nell'area AWS Canada West (Calgary).
 
+La versione 3.9.42 è disponibile per la modalità standard e la modalità limitata.
+
 
 
 === Aggiornamento dei requisiti di Docker Engine
