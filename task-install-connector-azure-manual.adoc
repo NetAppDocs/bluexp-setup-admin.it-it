@@ -32,7 +32,7 @@ Sistemi operativi supportati::
 * Ubuntu 22,04 LTS
 * Red Hat Enterprise Linux
 +
-** da 8,6 a 8,9
+** da 8,6 a 8,10
 ** da 9,1 a 9,3
 +
 L'host deve essere registrato con Red Hat Subscription Management. Se non è registrato, l'host non può accedere ai repository per aggiornare il software di terze parti richiesto durante l'installazione del connettore.

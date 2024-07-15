@@ -18,15 +18,65 @@ Quando aggiungiamo e rimuoviamo il supporto per il connettore su specifici siste
 
 
 
+== Sistemi operativi supportati
+
+Il connettore BlueXP è supportato dai seguenti sistemi operativi Linux.
+
+[role="tabbed-block"]
+====
+.Modalità standard
+--
+Installazione manuale::
++
+--
+* Ubuntu 22,04 LTS
+* Red Hat Enterprise Linux
++
+** da 8,6 a 8,10
+** da 9,1 a 9,3
+
+
+
+
+--
+Implementazione da BlueXP:: Ubuntu 22,04 LTS
+Implementazione da AWS Marketplace:: Ubuntu 22,04 LTS
+Implementazione da Azure Marketplace:: Ubuntu 22,04 LTS
+
+
+--
+.Modalità limitata
+--
+Installazione manuale::
++
+--
+* Ubuntu 22,04 LTS
+* Red Hat Enterprise Linux
++
+** da 8,6 a 8,10
+** da 9,1 a 9,3
+
+
+
+
+--
+Implementazione da AWS Marketplace:: Ubuntu 22,04 LTS
+Implementazione da Azure Marketplace:: Ubuntu 22,04 LTS
+
+
+--
+.Modalità privata
+--
+Installazione manuale:: Ubuntu 22,04 LTS
+
+
+--
+====
+
+
 == Supporto per RHEL 8 e 9
 
-A partire dalla release 3.9.40, BlueXP supporta il connettore con le seguenti versioni di Red Hat Enterprise Linux (RHEL):
-
-* da 8,6 a 8,9
-* da 9,1 a 9,3
-
-
-Tenere presente quanto segue sul supporto per queste versioni RHEL:
+Tenere presente quanto segue sul supporto per RHEL 8 e 9:
 
 Limitazioni::
 +
@@ -77,62 +127,6 @@ Per questo sistema operativo è necessario Docker Engine. Podman non è supporta
 
 
 
-== Riepilogo dei sistemi operativi supportati
-
-Di seguito è riportato un riepilogo del supporto del sistema operativo descritto nelle sezioni precedenti.
-
-[role="tabbed-block"]
-====
-.Modalità standard
---
-Installazione manuale::
-+
---
-* Ubuntu 22,04 LTS
-* Red Hat Enterprise Linux
-+
-** da 8,6 a 8,9
-** da 9,1 a 9,3
-
-
-
-
---
-Implementazione da BlueXP:: Ubuntu 22,04 LTS
-Implementazione da AWS Marketplace:: Ubuntu 22,04 LTS
-Implementazione da Azure Marketplace:: Ubuntu 22,04 LTS
-
-
---
-.Modalità limitata
---
-Installazione manuale::
-+
---
-* Ubuntu 22,04 LTS
-* Red Hat Enterprise Linux
-+
-** da 8,6 a 8,9
-** da 9,1 a 9,3
-
-
-
-
---
-Implementazione da AWS Marketplace:: Ubuntu 22,04 LTS
-Implementazione da Azure Marketplace:: Ubuntu 22,04 LTS
-
-
---
-.Modalità privata
---
-Installazione manuale:: Ubuntu 22,04 LTS
-
-
---
-====
-
-
 == Link correlati
 
 
@@ -160,8 +154,4 @@ Fare riferimento alle pagine seguenti per riscoprire gli ambienti di lavoro dopo
 * https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-working-env.html["Creare un ambiente di lavoro Azure NetApp Files"^]
 * https://docs.netapp.com/us-en/bluexp-e-series/task-discover-e-series.html["Scopri i sistemi e-Series"^]
 * https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html["Scopri i sistemi StorageGRID"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-aws.html["Aggiungi un cluster Amazon Kubernetes"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-azure.html["Aggiungere un cluster Azure Kubernetes"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-gke.html["Aggiungi un cluster Google Cloud Kubernetes"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-openshift.html["Importare un cluster OpenShift"^]
 
