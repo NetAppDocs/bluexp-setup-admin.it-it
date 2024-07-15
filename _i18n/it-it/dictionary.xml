@@ -4204,4 +4204,5 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="5bde46ec5f2d435355447c38b00c1d9c" category="section-title">15 luglio 2024</block>
   <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">Supporto per RHEL 8,10</block>
   <block id="562442342bba071ba7f2e5fa834d4464" category="paragraph">BlueXP ora supporta l'installazione del connettore su un host Red Hat Enterprise Linux 8,10 quando si utilizza la modalità standard o limitata.</block>
+  <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">Il supporto per RHEL 8,10 inizia con la versione 3.9.40 del connettore.</block>
 </blocks>

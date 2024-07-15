@@ -26,6 +26,8 @@ Scopri le novità delle funzionalità di amministrazione di BlueXP: Account Blue
 
 BlueXP ora supporta l'installazione del connettore su un host Red Hat Enterprise Linux 8,10 quando si utilizza la modalità standard o limitata.
 
+Il supporto per RHEL 8,10 inizia con la versione 3.9.40 del connettore.
+
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Informazioni sul supporto per RHEL 8 e 9 con il connettore"].
 
 
