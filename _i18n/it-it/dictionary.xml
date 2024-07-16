@@ -2120,8 +2120,6 @@ oppure</block>
   <block id="801fb8cfbc6e3ffd99fcb50ae87133bd" category="paragraph"><block ref="cd13f88aaa57bb10606ac0df26b2eb23" category="inline-link-macro-rx"></block>.</block>
   <block id="b5599f9f352b1fa4cb2153ba99bdb13c" category="list-text">Un ruolo IAM con un criterio allegato che include le autorizzazioni richieste per il connettore.</block>
   <block id="dfcbfa4ce7dbf520f2b737359dfbc591" category="list-text">Autorizzazioni per iscriversi e annullare l'iscrizione da AWS Marketplace per l'utente IAM.</block>
-  <block id="7c9b14f6116e140202c359bff8bc86c2" category="inline-link">Pagina BlueXP su AWS Marketplace</block>
-  <block id="3a1757ca714434ada3988895ed0a0fab" category="list-text">Accedere alla<block ref="aa1bf3a3349706e28315b07c47668a91" category="inline-link-rx"></block></block>
   <block id="648fca9db3d7e8e554a59d3519d8b0f6" category="inline-image-macro">Una schermata che mostra i pulsanti continua a iscriversi e continua a configurazione su AWS Marketplace.</block>
   <block id="973e3a2a390bb57ce9d9e16ac0145023" category="paragraph"><block ref="973e3a2a390bb57ce9d9e16ac0145023" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7c36ac5a8d104c08bd1c9905b4e5d437" category="paragraph">Questi passaggi descrivono come avviare l'istanza dalla console EC2 perché la console consente di associare un ruolo IAM all'istanza del connettore. Ciò non è possibile utilizzando l'azione *Launch from Website* (Avvia dal sito Web).</block>
@@ -4205,4 +4203,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">Supporto per RHEL 8,10</block>
   <block id="562442342bba071ba7f2e5fa834d4464" category="paragraph">BlueXP ora supporta l'installazione del connettore su un host Red Hat Enterprise Linux 8,10 quando si utilizza la modalità standard o limitata.</block>
   <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">Il supporto per RHEL 8,10 inizia con la versione 3.9.40 del connettore.</block>
+  <block id="95dfe7c62c6772d34f6255b3027f736d" category="inline-link">BlueXP Connector listing on the AWS Marketplace</block>
+  <block id="0017322d56b9d155b01ac8380335c15b" category="list-text">Go to the<block ref="00e748787e3cd0352ad19292d67af7aa" category="inline-link-rx"></block></block>
 </blocks>
