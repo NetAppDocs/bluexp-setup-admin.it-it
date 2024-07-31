@@ -32,7 +32,7 @@ Tenere presente quanto segue:
 ** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Impostare le autorizzazioni per un'implementazione di Azure Marketplace"]
 ** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Impostare le autorizzazioni per le implementazioni on-premise"]
 ** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità limitata"]
-** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità privata"]
+** link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità privata"]
 
 
 

@@ -26,7 +26,7 @@ Il ruolo personalizzato mostrato di seguito fornisce le autorizzazioni necessari
 
 * link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["Impostare le autorizzazioni di Google Cloud per la modalità standard"]
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità limitata"]
-* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità privata"]
+* link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità privata"]
 
 
 Inoltre, è necessario assicurarsi che il ruolo sia aggiornato quando vengono aggiunte nuove autorizzazioni nelle release successive. Se sono necessarie nuove autorizzazioni, queste verranno elencate nelle note sulla versione.

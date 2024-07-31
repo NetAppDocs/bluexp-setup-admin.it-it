@@ -22,7 +22,7 @@ Prima di iniziare, dovresti avere una conoscenza di link:concept-netapp-accounts
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] link:task-prepare-private-mode.html["Prepararsi per l'implementazione"]
 [role="quick-margin-list"]
-. Prepara un host Linux dedicato che soddisfi i requisiti di CPU, RAM, spazio su disco, motore Docker e altro ancora.
+. Preparare un host Linux dedicato che soddisfi i requisiti di CPU, RAM, spazio su disco, strumento di orchestrazione dei container e altro ancora.
 . Configurare una rete che fornisca accesso alle reti di destinazione.
 . Per le implementazioni cloud, imposta le autorizzazioni nel tuo cloud provider in modo da poter associare tali autorizzazioni al connettore dopo l'installazione del software.
 

@@ -25,15 +25,11 @@ Scaricare il programma di installazione del prodotto dal NetApp Support Site e i
 Se si desidera utilizzare BlueXP in https://aws.amazon.com/federal/secret-cloud/["Cloud segreto AWS"^] o il https://aws.amazon.com/federal/top-secret-cloud/["Cloud AWS top secret"^], quindi seguire le istruzioni separate per iniziare a utilizzare questi ambienti. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Scopri come iniziare a utilizzare Cloud Volumes ONTAP nel cloud segreto AWS o nel cloud top secret"^]
 
 .Prima di iniziare
-Per installare il connettore sono necessari i privilegi di root.
+* Per installare il connettore sono necessari i privilegi di root.
+* A seconda del sistema operativo in uso, prima di installare il connettore è necessario utilizzare Podman o Docker Engine.
+
 
 .Fasi
-. Verifica che Docker sia abilitato e in esecuzione.
-+
-[source, cli]
-----
-sudo systemctl enable docker && sudo systemctl start docker
-----
 . Scaricare il software del connettore da https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Sito di supporto NetApp"^]
 +
 Assicurarsi di scaricare il programma di installazione offline per le reti private senza accesso a Internet.
@@ -106,7 +102,7 @@ Fornire a BlueXP le autorizzazioni precedentemente impostate.
 
 Se si desidera creare ambienti di lavoro Cloud Volumes ONTAP, è necessario fornire a BlueXP le autorizzazioni cloud precedentemente configurate.
 
-link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Scopri come preparare le autorizzazioni cloud"].
+link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["Scopri come preparare le autorizzazioni cloud"].
 
 [role="tabbed-block"]
 ====

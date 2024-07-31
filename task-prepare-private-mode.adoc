@@ -46,10 +46,23 @@ Il punto in cui viene installato il connettore determina quali servizi e funzion
 Il software del connettore deve essere eseguito su un host che soddisfi i requisiti specifici del sistema operativo, della RAM, dei requisiti delle porte e così via.
 
 Host dedicato:: Il connettore non è supportato su un host condiviso con altre applicazioni. L'host deve essere un host dedicato.
-Sistema operativo supportato:: Ubuntu 22,04 LTS
+Sistema operativo supportato::
 +
 --
-Il connettore è supportato nelle versioni in lingua inglese di questo sistema operativo.
+* Ubuntu 22,04 LTS
+* Red Hat Enterprise Linux
++
+** da 8,6 a 8,10
+** da 9,1 a 9,3
++
+L'host deve essere registrato con Red Hat Subscription Management. Se non è registrato, l'host non può accedere ai repository per aggiornare il software di terze parti richiesto durante l'installazione del connettore.
+
++
+Il connettore è supportato dalle versioni in lingua inglese di questi sistemi operativi.
+
+
+
+
 
 --
 Hypervisor:: È necessario un hypervisor bare metal o in hosting certificato per l'esecuzione di un sistema operativo supportato.
@@ -75,13 +88,25 @@ Spazio su disco in /var:: 20 GiB di spazio deve essere disponibile
 BlueXP richiede questo spazio in `/var` Perché Docker o Podman sono progettati per creare i container all'interno di questa directory. In particolare, creeranno contenitori in `/var/lib/containers/storage` directory. Montaggi esterni o collegamenti simbolici non funzionano per questo spazio.
 
 --
-Motore Docker:: Prima di installare il connettore, è necessario disporre di Docker Engine sull'host.
+Tool di orchestrazione del container:: A seconda del sistema operativo in uso, prima di installare il connettore è necessario utilizzare Podman o Docker Engine.
 +
 --
-* La versione minima supportata è 23,0.6.
-* La versione massima supportata è 25,0.5.
+* Podman versione 4.6.1 è richiesto per Red Hat Enterprise Linux 8 e 9.
 +
-https://docs.docker.com/engine/install/["Visualizzare le istruzioni di installazione"^]
+Per Podman devono essere soddisfatti i seguenti prerequisiti:
+
++
+** Il servizio podman.socket deve essere attivato e avviato
+** python3 deve essere installato
+** Il pacchetto podman-Compose versione 1.0.6 deve essere installato
+** Podman-compose deve essere aggiunto alla variabile di ambiente PATH
+
+
+* Docker Engine è richiesto per Ubuntu.
++
+** La versione minima supportata è 23,0.6.
+** La versione massima supportata è 25,0.5.
+
 
 
 
@@ -90,7 +115,121 @@ https://docs.docker.com/engine/install/["Visualizzare le istruzioni di installaz
 
 
 
-== Fase 4: Preparare il collegamento in rete per il connettore
+== Passaggio 4: Installare Podman o Docker Engine
+
+Devi preparare l'host per il connettore installando Podman o Docker Engine.
+
+A seconda del sistema operativo in uso, prima di installare il connettore è necessario utilizzare Podman o Docker Engine.
+
+* Podman è necessario per Red Hat Enterprise Linux 8 e 9.
+* Docker Engine è richiesto per Ubuntu.
+
+
+.Fasi
+[role="tabbed-block"]
+====
+.Podman
+--
+Installare Podman 4,6.1.
+
+.Fasi
+. Rimuovere il pacchetto podman-docker se è installato sull'host.
++
+[source, cli]
+----
+dnf remove podman-docker
+rm /var/run/docker.sock
+----
+. Installa Podman.
++
+Podman è disponibile presso i repository ufficiali di Red Hat Enterprise Linux.
+
++
+Per Red Hat Enterprise Linux 9:
+
++
+[source, cli]
+----
+sudo dnf install podman-2:4.6.1
+----
++
+Per Red Hat Enterprise Linux 8:
+
++
+[source, cli]
+----
+sudo dnf install podman-3:4.6.1
+----
+. Abilitare e avviare il servizio podman.socket.
++
+[source, cli]
+----
+sudo systemctl enable --now podman.socket
+----
+. Installare python3.
++
+[source, cli]
+----
+sudo dnf install python3
+----
+. Installare il pacchetto repository EPEL se non è già disponibile sul sistema.
++
+Questo passaggio è necessario perché podman-compose è disponibile nel repository Extra Packages for Enterprise Linux (EPEL).
+
++
+Per Red Hat Enterprise Linux 9:
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+----
++
+Per Red Hat Enterprise Linux 8:
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+----
+. Installare il pacchetto podman-Compose 1,0.6.
++
+[source, cli]
+----
+sudo dnf install podman-compose-1.0.6
+----
++
+
+NOTE: Utilizzando il `dnf install` Il comando soddisfa il requisito per aggiungere podman-compose alla variabile di ambiente PATH. Il comando di installazione aggiunge podman-componete a /usr/bin, che è già incluso in `secure_path` sull'host.
+
+
+
+--
+.Motore Docker
+--
+Installare una versione di Docker Engine tra la versione 23.0.6 e la 25,0.5.
+
+.Fasi
+. Installazione di Docker Engine.
++
+https://docs.docker.com/engine/install/["Consulta le istruzioni di installazione di Docker"^]
+
++
+Assicurati di seguire la procedura per installare una versione specifica di Docker Engine. L'installazione della versione più recente installerà una versione di Docker che BlueXP non supporta.
+
+. Verifica che Docker sia abilitato e in esecuzione.
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+
+
+--
+====
+
+
+== Fase 5: Preparare il collegamento in rete
 
 Configura la tua rete in modo che il connettore possa gestire risorse e processi all'interno del tuo ambiente di cloud pubblico. Oltre a disporre di una rete virtuale e di una subnet per il connettore, è necessario assicurarsi che siano soddisfatti i seguenti requisiti.
 
@@ -202,7 +341,7 @@ Enable NTP (attiva NTP):: Se stai pensando di utilizzare la classificazione Blue
 
 
 
-== Passaggio 5: Preparare le autorizzazioni del cloud
+== Passaggio 6: Preparare le autorizzazioni del cloud
 
 Se il connettore è installato nel cloud e intendi creare sistemi Cloud Volumes ONTAP, BlueXP richiede le autorizzazioni del tuo cloud provider. È necessario impostare le autorizzazioni nel provider cloud e associarle all'istanza di Connector dopo l'installazione.
 
@@ -515,7 +654,7 @@ A questo punto si dispone di un account di servizio che è possibile assegnare a
 ====
 
 
-== Passaggio 6: Abilitare le API di Google Cloud
+== Passaggio 7: Abilitare le API di Google Cloud
 
 Per implementare Cloud Volumes ONTAP in Google Cloud sono necessarie diverse API.
 

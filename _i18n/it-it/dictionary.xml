@@ -132,7 +132,6 @@
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link-macro">Avviso per BlueXP</block>
   <block id="98a041bbcf45b807a22068084127e26d" category="paragraph"><block ref="98a041bbcf45b807a22068084127e26d" category="inline-link-macro-rx"></block></block>
   <block id="077d70acc6fcd0e9c32a626a8ef8e416" category="paragraph">Inizia a utilizzare BlueXP in modalità privata preparando l'ambiente e implementando il connettore.</block>
-  <block id="19b89452bb4e16dbfc6dc9d3fbbf8fc1" category="list-text">Prepara un host Linux dedicato che soddisfi i requisiti di CPU, RAM, spazio su disco, motore Docker e altro ancora.</block>
   <block id="8cb1247d6f1cd796c983b5b1cfbbd285" category="list-text">Configurare una rete che fornisca accesso alle reti di destinazione.</block>
   <block id="31b22ac218f817003d8419ad3518a02a" category="list-text">Per le implementazioni cloud, imposta le autorizzazioni nel tuo cloud provider in modo da poter associare tali autorizzazioni al connettore dopo l'installazione del software.</block>
   <block id="817e58b984e5e3e7eeaf7dcb9b540fed" category="list-text">Installare il software del connettore sul proprio host Linux.</block>
@@ -3317,10 +3316,8 @@ Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono
   <block id="9f1bd247464191c700cb44116139a226" category="section-title">Fase 1: Installare il connettore</block>
   <block id="0c636bde157e77551496ec8461e40dcc" category="section-title">Fase 2: Configurare BlueXP</block>
   <block id="60a2819d83a7d683770230c16623234f" category="section-title">Fase 3: Fornire le autorizzazioni ad BlueXP</block>
-  <block id="33df6c8bf79bb883818929fadd08fde2" category="paragraph"><block ref="c830bbf16033728edff10270fb2e90fe" category="inline-link-macro-rx"></block>.</block>
   <block id="895abbd8e532d17f2ca587c540bce83a" category="list-text"><block ref="895abbd8e532d17f2ca587c540bce83a" category="inline-link-macro-rx"></block></block>
   <block id="72323525d86fb9af6692c45c5d227ba4" category="list-text"><block ref="72323525d86fb9af6692c45c5d227ba4" category="inline-link-macro-rx"></block></block>
-  <block id="9a1ba924530ef064e3af892730568dd2" category="list-text"><block ref="9a1ba924530ef064e3af892730568dd2" category="inline-link-macro-rx"></block></block>
   <block id="dcaf9d9995c1cce5dfb4399e2434754e" category="summary">Per installare manualmente il connettore sul proprio host Linux, è necessario rivedere i requisiti dell'host, configurare la rete, preparare le autorizzazioni di Azure, installare il connettore e quindi fornire le autorizzazioni preparate.</block>
   <block id="4a121ca6348602c8e2772e9488d338a9" category="doc">Installare manualmente il connettore in Azure</block>
   <block id="38c977ce808382575da9f341bee1d199" category="paragraph">Dovresti rivedere <block ref="a2e83c328c5fe53a1b055bac582f41f6" category="inline-link-macro-rx"></block>.</block>
@@ -3395,8 +3392,6 @@ membro: Account di servizio BlueXP come serviceAccount.user</block>
   <block id="7670b3e7fd0d9b5404a8ab86daf87444" category="section-title">Passaggio 1: Comprendere il funzionamento della modalità privata</block>
   <block id="6a0acc770010231bcc42930780e10a7e" category="section-title">Passaggio 2: Esaminare le opzioni di installazione</block>
   <block id="50c4903873872ea1d14776db2fb74652" category="section-title">Fase 3: Esaminare i requisiti dell'host</block>
-  <block id="ba9523b755dd436b9804d56f2425702a" category="section-title">Fase 4: Preparare il collegamento in rete per il connettore</block>
-  <block id="4a34940e5f45b6eb76dabb3e23de10f0" category="section-title">Passaggio 5: Preparare le autorizzazioni del cloud</block>
   <block id="ed699bb1e56dba725718c6f093e80619" category="section-title">Passaggio 6: Abilitare le API di Google Cloud</block>
   <block id="755bdc98f2ba455bba23e5d86a671294" category="section-title">Fase 1: Comprendere il funzionamento della modalità limitata</block>
   <block id="62e5d1121361ae6a6b8f2f35c9e1b534" category="list-text">In modalità limitata, l'interfaccia utente di BlueXP è accessibile dal connettore. Quando si utilizza l'interfaccia utente di BlueXP, si contatta alcuni endpoint per completare le attività di gestione dei dati. Questi endpoint vengono contattati dal computer di un utente quando si completano azioni specifiche dalla console BlueXP.</block>
@@ -3992,10 +3987,7 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="7dffd01ec33485e74fcb637e0b8fe15a" category="list-text">Quando il connettore è installato su un host RHEL 8 o 9, il backup e recovery di BlueXP presenta limitazioni relative al ripristino di file singoli e alla scansione ransomware. Per ulteriori informazioni, fare riferimento a.<block ref="a84971be17ca73ce2bed9722547a4b2a" category="inline-link-rx"></block></block>
   <block id="b6417b62aacc6d16c1ae7a79d851d413" category="list-text">La classificazione BlueXP è supportata se installi il connettore su un host RHEL 8 o 9 che risiede on-premise. Non è supportato se l'host RHEL 8 o 9 si trova in AWS, Azure o Google Cloud.</block>
   <block id="b71010c70a84a098ff97c54119ce9797" category="list-text">Podman è necessario come strumento di orchestrazione del container quando si installa il connettore su un host RHEL 8 o 9. Docker Engine non è supportato da RHEL 8 e 9.</block>
-  <block id="b20f6232e01f99983ab6adfc3cb4648e" category="inline-link-macro">Visualizza i requisiti per Podman</block>
-  <block id="5965bb30c82006f547e51cea08649d28" category="paragraph"><block ref="b6742b68d5770c57e621fe89da84d99c" category="inline-link-macro-rx"></block>.</block>
   <block id="6949300ff5b5cf6bb192114a06c923bb" category="list-text">Modalità di distribuzione</block>
-  <block id="f6b985bf429f605650402152a53dd500" category="list-text">RHEL 8 e 9 sono supportati quando si utilizza BlueXP in modalità standard o limitata.</block>
   <block id="62ee52388b4c1539a4b357c9c16e57c6" category="list-text">Solo nuove installazioni manuali</block>
   <block id="362134ff254c022479b85d3cb9afd90c" category="list-text">RHEL 8 e 9 sono supportati con _nuove_ installazioni di connettori quando si installa manualmente il connettore sugli host in esecuzione on-premise o nel cloud.</block>
   <block id="ba657bf59cdaa129ee6a10872f7d63cf" category="list-text">Aggiornamenti RHEL</block>
@@ -4019,10 +4011,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="21b3bbb098ff9926f5de185468b47efd" category="list-text">Implementazione da Azure Marketplace</block>
   <block id="fd976d7410ccbb05f33da778aade918e" category="section-title">Come iniziare con RHEL 8 e 9</block>
   <block id="19fbd5208079427f7255588fa19e6216" category="paragraph">Fare riferimento alle pagine seguenti per i dettagli sui requisiti host, i requisiti Podman e i passaggi per installare Podman e il connettore:</block>
-  <block id="c7ebd4cc461f15f97b0c6bb4d8aa138a" category="list-text"><block ref="f3e58ec45f13e79fe493e5ac40efdaef" category="inline-link-rx"></block> (modalità standard)</block>
-  <block id="0a33569de64145f5ddb030c5c68f0e2f" category="list-text"><block ref="ce02a119fe20803f37d74f2f696ae608" category="inline-link-rx"></block> (modalità standard)</block>
-  <block id="b9ab4eedcc76eaef5111c38dd7cf6955" category="list-text"><block ref="adf5c1237bee96f4b87ff5eb3fd3c25b" category="inline-link-rx"></block> (modalità standard)</block>
-  <block id="1d054abd9ef4fcc0992047bc974a0ca7" category="list-text"><block ref="5f47d3df7f8a6f7d2b2dc0a0630af052" category="inline-link-rx"></block> (modalità standard)</block>
   <block id="9f1e71ff4946538e6e8d4160102056bb" category="list-text"><block ref="9f1e71ff4946538e6e8d4160102056bb" category="inline-link-rx"></block></block>
   <block id="cd4dc0cbdf60f743093e390cb5077d8b" category="section-title">Come riscoprire gli ambienti di lavoro</block>
   <block id="8c3d753bf73570be606a9b0e412a89ca" category="paragraph">Fare riferimento alle pagine seguenti per riscoprire gli ambienti di lavoro dopo l'implementazione di un nuovo connettore.</block>
@@ -4165,7 +4153,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="4fe47b0a38e9cc2f08e1ebd6f66fc340" category="paragraph">BlueXP utilizza<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> per installare<block ref="a23365e1ae67810a7446b65d3be9a5d0" prefix=" " category="inline-code"></block> directory e il suo contenuto.</block>
   <block id="6625b96831c913865dcc04d700d00a02" category="paragraph">BlueXP richiede questo spazio in<block ref="ca905eb4a00d34150573153a09e2e79b" prefix=" " category="inline-code"></block> Perché Docker o Podman sono progettati per creare i container all'interno di questa directory. In particolare, creeranno contenitori in<block ref="af5045a6e72956f67984a97cd3e8b9da" prefix=" " category="inline-code"></block> directory. Montaggi esterni o collegamenti simbolici non funzionano per questo spazio.</block>
   <block id="2e71b3fb71d89f18906d4807a6011e20" category="list-text">Sistema operativo supportato</block>
-  <block id="16affed9b9386a1e06dfd59de9b05f10" category="paragraph">Il connettore è supportato nelle versioni in lingua inglese di questo sistema operativo.</block>
   <block id="06cfdcafd69514150ade31a714fa78db" category="list-text">È necessario un hypervisor bare metal o in hosting certificato per l'esecuzione di un sistema operativo supportato.</block>
   <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">Docker Engine è richiesto per Ubuntu.</block>
   <block id="eb79e7adcda869f967a810da89679252" category="paragraph">Il 30 giugno 2024, RHEL 7 ha raggiunto la fine della manutenzione (EOM), mentre CentOS 7 ha raggiunto la fine del ciclo di vita (EOL). NetApp ha smesso di supportare il connettore su queste distribuzioni Linux il 30 giugno 2024.</block>
@@ -4205,4 +4192,23 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">Il supporto per RHEL 8,10 inizia con la versione 3.9.40 del connettore.</block>
   <block id="95dfe7c62c6772d34f6255b3027f736d" category="inline-link">BlueXP Connector listing on the AWS Marketplace</block>
   <block id="0017322d56b9d155b01ac8380335c15b" category="list-text">Go to the<block ref="00e748787e3cd0352ad19292d67af7aa" category="inline-link-rx"></block></block>
+  <block id="6c3a57872e006099844f13049e7b1891" category="list-text"><block ref="6c3a57872e006099844f13049e7b1891" category="inline-link-macro-rx"></block></block>
+  <block id="00e6604adbc44c85a390ab929076d0bb" category="list-text">RHEL 8 e 9 sono supportati quando si utilizza BlueXP in modalità standard, limitata e privata.</block>
+  <block id="f3e58ec45f13e79fe493e5ac40efdaef" category="list-text"><block ref="f3e58ec45f13e79fe493e5ac40efdaef" category="inline-link-rx"></block></block>
+  <block id="ce02a119fe20803f37d74f2f696ae608" category="list-text"><block ref="ce02a119fe20803f37d74f2f696ae608" category="inline-link-rx"></block></block>
+  <block id="adf5c1237bee96f4b87ff5eb3fd3c25b" category="list-text"><block ref="adf5c1237bee96f4b87ff5eb3fd3c25b" category="inline-link-rx"></block></block>
+  <block id="5f47d3df7f8a6f7d2b2dc0a0630af052" category="list-text"><block ref="5f47d3df7f8a6f7d2b2dc0a0630af052" category="inline-link-rx"></block></block>
+  <block id="f19b5217f0e887d7e5547d736ab648ff" category="paragraph"><block ref="f19b5217f0e887d7e5547d736ab648ff" category="inline-link-rx"></block></block>
+  <block id="bce5cf056b28239df2bdb7b2083217ac" category="paragraph"><block ref="242e7f2f46e42a12308aa354a9159aef" category="inline-link-macro-rx"></block>.</block>
+  <block id="b25308e5b7cefc33ec331b935d12e84d" category="paragraph">Devi preparare l'host per il connettore installando Podman o Docker Engine.</block>
+  <block id="4f11400d5bfc49418f8fe9e78ffbc58c" category="section-title">31 luglio 2024</block>
+  <block id="b9cf377931ad2ee7b1d42618c6c12fa5" category="section-title">Rilascio in modalità privata (3,9.42)</block>
+  <block id="5d515ef1c3774ed67ad6115621a1ca59" category="paragraph">Una nuova versione in modalità privata è ora disponibile per il download dal sito di supporto NetApp.</block>
+  <block id="de4d4b8489d091cd028889fa8739a4a3" category="paragraph">Questa versione include il supporto per l'installazione del connettore su un host Red Hat Enterprise Linux 8 o 9 quando si utilizza BlueXP in modalità privata. Sono supportate le seguenti versioni di RHEL:</block>
+  <block id="2791ae5af0f1b2a708aaa92b1fddb49e" category="section-title">Versioni incluse in questa release</block>
+  <block id="ee91704d04c9c24001ba7aa413122767" category="paragraph">Questa release include le seguenti versioni dei servizi BlueXP che sono supportate in modalità privata.</block>
+  <block id="58660abbd738b63f91f751c0fcd3787d" category="cell">3.9.42</block>
+  <block id="09fcc3c3a46a63684b907c89bb2e4b7b" category="cell">18 luglio 2024</block>
+  <block id="4736cb006ef02fa673f618379e2106bd" category="cell">1 luglio 2024 (versione 1,33)</block>
+  <block id="8009eebf05fd33b87750f8b4048986f7" category="cell">10 giugno 2024</block>
 </blocks>
