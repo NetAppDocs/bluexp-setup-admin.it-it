@@ -28,7 +28,7 @@ I seguenti dettagli di configurazione si applicano se il connettore è stato imp
 
 Se hai implementato il connettore da BlueXP o dal mercato del cloud provider, prendi nota di quanto segue:
 
-* Il tipo di istanza EC2 è t3.xlarge.
+* Il tipo di istanza EC2 è t3.2xlarge.
 * Il sistema operativo per l'immagine è Ubuntu 22,04 LTS.
 +
 Il sistema operativo non include una GUI. Per accedere al sistema, è necessario utilizzare un terminale.
@@ -44,7 +44,7 @@ Il sistema operativo non include una GUI. Per accedere al sistema, è necessario
 
 Se hai implementato il connettore da BlueXP o dal mercato del cloud provider, prendi nota di quanto segue:
 
-* Il tipo di macchina virtuale è DS3 v2.
+* Il tipo di VM è Standard_D8s_v3.
 * Il sistema operativo per l'immagine è Ubuntu 22,04 LTS.
 +
 Il sistema operativo non include una GUI. Per accedere al sistema, è necessario utilizzare un terminale.
@@ -59,7 +59,7 @@ Il sistema operativo non include una GUI. Per accedere al sistema, è necessario
 
 Se il connettore è stato implementato da BlueXP, tenere presente quanto segue:
 
-* L'istanza della macchina virtuale è n2-standard-4.
+* L'istanza della macchina virtuale è n2-standard-8.
 * Il sistema operativo per l'immagine è Ubuntu 22,04 LTS.
 +
 Il sistema operativo non include una GUI. Per accedere al sistema, è necessario utilizzare un terminale.

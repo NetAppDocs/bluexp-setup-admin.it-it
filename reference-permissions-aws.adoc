@@ -45,22 +45,6 @@ Selezionare la propria regione per visualizzare le policy richieste:
 ====
 Per le regioni standard, le autorizzazioni sono distribuite in due policy. Sono necessarie due policy a causa di un limite massimo di dimensioni dei caratteri per le policy gestite in AWS.
 
-Il primo criterio fornisce le autorizzazioni per i seguenti servizi:
-
-* Discovery bucket Amazon S3
-* Backup e recovery
-* Classificazione
-* Cloud Volumes ONTAP
-* FSX per ONTAP
-* Tiering
-
-
-Il secondo criterio fornisce le autorizzazioni per i seguenti servizi:
-
-* Caching edge
-* Kubernetes
-
-
 [role="tabbed-block"]
 =====
 .Policy n. 1
@@ -1260,29 +1244,6 @@ Il connettore effettua le seguenti richieste API per implementare e gestire Clou
 
 | Verifica se la zona di disponibilità è una zona locale AWS e convalida che tutti i parametri di implementazione sono compatibili | EC2:DescribeAvailabilityZones | Sì | No | Sì 
 |===
-
-
-=== Caching edge
-
-Il connettore effettua le seguenti richieste API per implementare istanze di caching edge BlueXP durante l'implementazione:
-
-* Cloudformation:DescripteStack
-* Cloudwatch:GetMetricStatistics
-* Cloudformation:ListStack
-
-
-
-
-=== Kubernetes
-
-Il connettore effettua le seguenti richieste API per rilevare e gestire i cluster Amazon EKS:
-
-* ec2:DescripteRegions
-* eks:ListClusters
-* eks: DescripbeCluster
-* iam:GetInstanceProfile
-
-
 
 
 == Registro delle modifiche

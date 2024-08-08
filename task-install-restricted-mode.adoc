@@ -60,7 +60,7 @@ Questi passaggi descrivono come avviare l'istanza dalla console EC2 perché la c
 +
 ** *Nome e tag*: Immettere un nome e tag per l'istanza.
 ** *Immagine dell'applicazione e del sistema operativo*: Saltare questa sezione. Il connettore AMI è già selezionato.
-** *Tipo di istanza*: A seconda della disponibilità della regione, scegliere un tipo di istanza che soddisfi i requisiti di RAM e CPU (si consiglia t3.xlarge).
+** *Tipo di istanza*: A seconda della disponibilità della regione, scegliere un tipo di istanza che soddisfi i requisiti di RAM e CPU (si consiglia t3.2xlarge).
 ** *Coppia di chiavi (login)*: Selezionare la coppia di chiavi che si desidera utilizzare per connettersi in modo sicuro all'istanza.
 ** *Impostazioni di rete*: Modificare le impostazioni di rete in base alle esigenze:
 +
@@ -123,7 +123,7 @@ image:screenshot-gov-cloud-mktp.png["Una schermata che mostra l'offerta BlueXP d
 
 . Seguire le istruzioni per configurare e implementare l'istanza:
 +
-** *Scegliere un tipo di istanza*: A seconda della disponibilità della regione, scegliere uno dei tipi di istanza supportati (si consiglia t3.xlarge).
+** *Scegliere un tipo di istanza*: A seconda della disponibilità della regione, scegliere uno dei tipi di istanza supportati (si consiglia t3.2xlarge).
 +
 link:task-prepare-restricted-mode.html["Esaminare i requisiti dell'istanza"].
 
@@ -174,7 +174,7 @@ link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Scopri 
 Durante la configurazione della macchina virtuale, tenere presente quanto segue:
 
 +
-** *Dimensione della macchina virtuale*: Scegli una dimensione della macchina virtuale che soddisfi i requisiti di CPU e RAM. Si consiglia DS3 v2.
+** *Dimensione della macchina virtuale*: Scegli una dimensione della macchina virtuale che soddisfi i requisiti di CPU e RAM. Si consiglia di utilizzare Standard_D8s_v3.
 ** *Dischi*: Il connettore può funzionare in modo ottimale con dischi HDD o SSD.
 ** *Public IP*: Se si desidera utilizzare un indirizzo IP pubblico con la macchina virtuale del connettore, l'indirizzo IP deve utilizzare una SKU di base per garantire che BlueXP utilizzi questo indirizzo IP pubblico.
 +

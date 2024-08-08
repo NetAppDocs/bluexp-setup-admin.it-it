@@ -147,9 +147,9 @@ Una volta creato il connettore, sarà necessario implementare questo requisito d
 
 Quando si crea il connettore, è necessario scegliere un tipo di macchina virtuale che soddisfi i seguenti requisiti.
 
-CPU:: 4 core o 4 vCPU
-RAM:: 14 GB
-Dimensione delle macchine virtuali Azure:: Un tipo di istanza che soddisfa i requisiti di CPU e RAM indicati in precedenza. Si consiglia DS3 v2.
+CPU:: 8 core o 8 vCPU
+RAM:: 32 GB
+Dimensione delle macchine virtuali Azure:: Un tipo di istanza che soddisfa i requisiti di CPU e RAM indicati in precedenza. Si consiglia di utilizzare Standard_D8s_v3.
 
 
 
@@ -409,7 +409,7 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-onco
 Durante la configurazione della macchina virtuale, tenere presente quanto segue:
 
 +
-** *Dimensione della macchina virtuale*: Scegli una dimensione della macchina virtuale che soddisfi i requisiti di CPU e RAM. Si consiglia DS3 v2.
+** *Dimensione della macchina virtuale*: Scegli una dimensione della macchina virtuale che soddisfi i requisiti di CPU e RAM. Si consiglia di utilizzare Standard_D8s_v3.
 ** *Dischi*: Il connettore può funzionare in modo ottimale con dischi HDD o SSD.
 ** *Network Security group*: Il connettore richiede connessioni in entrata utilizzando SSH, HTTP e HTTPS.
 +

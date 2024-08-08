@@ -46,9 +46,9 @@ Il connettore è supportato dalle versioni in lingua inglese di questi sistemi o
 
 --
 Hypervisor:: È necessario un hypervisor bare metal o in hosting certificato per l'esecuzione di un sistema operativo supportato.
-CPU:: 4 core o 4 vCPU
-RAM:: 14 GB
-Tipo di macchina Google Cloud:: Un tipo di istanza che soddisfa i requisiti di CPU e RAM indicati in precedenza. Consigliamo n2-standard-4.
+CPU:: 8 core o 8 vCPU
+RAM:: 32 GB
+Tipo di macchina Google Cloud:: Un tipo di istanza che soddisfa i requisiti di CPU e RAM indicati in precedenza. Consigliamo n2-standard-8.
 +
 --
 Il connettore è supportato in Google Cloud su un'istanza di macchina virtuale con un sistema operativo che supporta https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["Funzioni di VM schermate"^]
@@ -66,10 +66,39 @@ Spazio su disco in /var:: 20 GiB di spazio deve essere disponibile
 BlueXP richiede questo spazio in `/var` Perché Docker o Podman sono progettati per creare i container all'interno di questa directory. In particolare, creeranno contenitori in `/var/lib/containers/storage` directory. Montaggi esterni o collegamenti simbolici non funzionano per questo spazio.
 
 --
+
+
+[[podman-versions]]
 Tool di orchestrazione del container:: A seconda del sistema operativo in uso, prima di installare il connettore è necessario utilizzare Podman o Docker Engine.
 +
 --
-* Podman versione 4.6.1 è richiesto per Red Hat Enterprise Linux 8 e 9.
+* Podman è necessario per Red Hat Enterprise Linux 8 e 9.
++
+[cols="50a,50a"]
+|===
+| Versione di RHEL | Versione Podman supportata 
+
+
+ a| 
+RHEL da 8,6 a 8,9
+ a| 
+Podman 4.6.1
+
+
+
+ a| 
+RHEL 8,10
+ a| 
+Podman 4.6.1 e 4.9.4
+
+
+
+ a| 
+RHEL da 9,1 a 9,3
+ a| 
+Podman 4.6.1
+
+|===
 +
 Per Podman devono essere soddisfatti i seguenti prerequisiti:
 
@@ -106,7 +135,7 @@ A seconda del sistema operativo in uso, prima di installare il connettore è nec
 ====
 .Podman
 --
-Installare Podman 4,6.1.
+Installa una versione supportata di Podman. <<podman-versions,Visualizza le versioni di Podman supportate da BlueXP >>.
 
 .Fasi
 . Rimuovere il pacchetto podman-docker se è installato sull'host.
@@ -126,16 +155,22 @@ Per Red Hat Enterprise Linux 9:
 +
 [source, cli]
 ----
-sudo dnf install podman-2:4.6.1
+sudo dnf install podman-2:<version>
 ----
++
+Dove <version> è la versione supportata di Podman che stai installando. <<podman-versions,Visualizza le versioni di Podman supportate da BlueXP >>.
+
 +
 Per Red Hat Enterprise Linux 8:
 
 +
 [source, cli]
 ----
-sudo dnf install podman-3:4.6.1
+sudo dnf install podman-3:<version>
 ----
++
+Dove <version> è la versione supportata di Podman che stai installando. <<podman-versions,Visualizza le versioni di Podman supportate da BlueXP >>.
+
 . Abilitare e avviare il servizio podman.socket.
 +
 [source, cli]

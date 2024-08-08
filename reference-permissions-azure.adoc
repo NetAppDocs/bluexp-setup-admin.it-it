@@ -166,7 +166,10 @@ Tenere presente quanto segue:
                     "Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action",
                     "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
                     "Microsoft.Compute/images/write",
-                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read"
+                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/write",
+                    "Microsoft.Compute/virtualMachineScaleSets/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/delete"
     ],
     "NotActions": [],
     "AssignableScopes": [],
@@ -698,38 +701,16 @@ Il connettore effettua le seguenti richieste API per implementare e gestire Clou
 
 
 | Crittografare gli account storage durante la creazione | Microsoft.ManagedIdentity/userAssistedIdentities/assign/action | Sì | Sì | No 
+
+
+.3+| Utilizzare i set di scale della macchina virtuale in modalità di orchestrazione flessibile per specificare zone specifiche per Cloud Volumes ONTAP | Microsoft: Calcolo/virtualizzaMachineScaleSets/scrittura | Sì | No | No 
+
+
+| Microsoft: Compute/VirtualMachineScaleSets/Read | Sì | No | No 
+
+
+| Microsoft: Compute/virtualMachineScaleSets/DELETE | No | No | Sì 
 |===
-
-
-=== Caching edge
-
-Il connettore effettua le seguenti richieste API quando si utilizza il caching edge BlueXP:
-
-* Microsoft.Insights/metriche/lettura
-* Microsoft.Compute/virtualMachines/extensions/write
-* Microsoft.Compute/virtualMachines/extensions/read
-* Microsoft.Compute/virtualMachines/extensions/delete
-* Microsoft.Compute/virtualMachines/delete
-* Microsoft.Network/networkInterfaces/delete
-* Microsoft.Network/networkSecurityGroups/delete
-* Microsoft.Resources/Deployments/delete
-
-
-
-
-=== Kubernetes
-
-Il connettore effettua le seguenti richieste API per rilevare e gestire i cluster in esecuzione in Azure Kubernetes Service (AKS):
-
-* Microsoft.Compute/virtualMachines/read
-* Microsoft.Resources/subscriptions/locations/Read
-* Microsoft.Resources/subscriptions/operationresults/Read
-* Microsoft.Resources/subscriptions/resourceGroups/Read
-* Microsoft.Resources/subscriptions/resourcegroup/resources/Read
-* Microsoft.ContainerService/managedClusters/Read
-* Microsoft.ContainerService/managedClusters/listClusterUserCredential/action
-
-
 
 
 === Tiering
@@ -754,6 +735,17 @@ Il connettore esegue le seguenti richieste API per le operazioni quotidiane.
 == Registro delle modifiche
 
 Man mano che le autorizzazioni vengono aggiunte e rimosse, le annoteremo nelle sezioni seguenti.
+
+
+
+=== 7 agosto 2024
+
+Le seguenti autorizzazioni sono state aggiunte al criterio JSON perché sono necessarie per il supporto Cloud Volumes ONTAP dei set di dimensioni della macchina virtuale:
+
+* Microsoft: Calcolo/virtualizzaMachineScaleSets/scrittura
+* Microsoft: Compute/VirtualMachineScaleSets/Read
+* Microsoft: Compute/virtualMachineScaleSets/DELETE
+
 
 
 

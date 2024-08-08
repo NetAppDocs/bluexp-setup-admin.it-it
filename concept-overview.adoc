@@ -56,7 +56,6 @@ Protezione:: Utilizza meccanismi di protezione automatici per proteggere i dati 
 --
 * https://bluexp.netapp.com/cloud-backup["Backup e recovery"^]
 * https://bluexp.netapp.com/replication["Replica"^]
-* https://bluexp.netapp.com/solutions/kubernetes["Data Protection per i workload Kubernetes"^]
 
 
 --

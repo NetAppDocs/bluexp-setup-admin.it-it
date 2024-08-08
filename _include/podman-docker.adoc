@@ -13,7 +13,7 @@ A seconda del sistema operativo in uso, prima di installare il connettore è nec
 ====
 .Podman
 --
-Installare Podman 4,6.1.
+Installa una versione supportata di Podman. <<podman-versions,Visualizza le versioni di Podman supportate da BlueXP >>.
 
 .Fasi
 . Rimuovere il pacchetto podman-docker se è installato sull'host.
@@ -33,16 +33,22 @@ Per Red Hat Enterprise Linux 9:
 +
 [source, cli]
 ----
-sudo dnf install podman-2:4.6.1
+sudo dnf install podman-2:<version>
 ----
++
+Dove <version> è la versione supportata di Podman che stai installando. <<podman-versions,Visualizza le versioni di Podman supportate da BlueXP >>.
+
 +
 Per Red Hat Enterprise Linux 8:
 
 +
 [source, cli]
 ----
-sudo dnf install podman-3:4.6.1
+sudo dnf install podman-3:<version>
 ----
++
+Dove <version> è la versione supportata di Podman che stai installando. <<podman-versions,Visualizza le versioni di Podman supportate da BlueXP >>.
+
 . Abilitare e avviare il servizio podman.socket.
 +
 [source, cli]

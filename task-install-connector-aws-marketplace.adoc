@@ -165,9 +165,9 @@ Ora si dispone di un ruolo IAM che è possibile associare all'istanza EC2 durant
 
 Quando si crea il connettore, è necessario scegliere un tipo di istanza EC2 che soddisfi i seguenti requisiti.
 
-CPU:: 4 core o 4 vCPU
-RAM:: 14 GB
-Tipo di istanza AWS EC2:: Un tipo di istanza che soddisfa i requisiti di CPU e RAM indicati in precedenza. Si consiglia di utilizzare t3.xlarge.
+CPU:: 8 core o 8 vCPU
+RAM:: 32 GB
+Tipo di istanza AWS EC2:: Un tipo di istanza che soddisfa i requisiti di CPU e RAM indicati in precedenza. Si consiglia di utilizzare t3.2xlarge.
 
 
 
@@ -204,7 +204,7 @@ Questi passaggi descrivono come avviare l'istanza dalla console EC2 perché la c
 +
 ** *Nome e tag*: Immettere un nome e tag per l'istanza.
 ** *Immagine dell'applicazione e del sistema operativo*: Saltare questa sezione. Il connettore AMI è già selezionato.
-** *Tipo di istanza*: A seconda della disponibilità della regione, scegliere un tipo di istanza che soddisfi i requisiti di RAM e CPU (si consiglia t3.xlarge).
+** *Tipo di istanza*: A seconda della disponibilità della regione, scegliere un tipo di istanza che soddisfi i requisiti di RAM e CPU (si consiglia t3.2xlarge).
 ** *Coppia di chiavi (login)*: Selezionare la coppia di chiavi che si desidera utilizzare per connettersi in modo sicuro all'istanza.
 ** *Impostazioni di rete*: Modificare le impostazioni di rete in base alle esigenze:
 +
