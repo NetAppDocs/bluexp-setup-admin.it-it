@@ -50,6 +50,7 @@ Sebbene non sia necessario un connettore per il rilevamento diretto di un cluste
 +
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Scopri di più sulle opzioni di rilevamento e gestione dei cluster ONTAP on-premise"^]
 
+* Aggiornamenti software
 * Sostenibilità
 
 

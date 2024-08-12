@@ -4199,4 +4199,5 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">Miglioramenti della dashboard di supporto</block>
   <block id="a0b762f6b2d72a69263357ecbb8decbc" category="paragraph">Quando si accede a<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block>, BlueXP  utilizza un certificato autofirmato per l'accesso HTTPS. Se richiesto dall'azienda, è possibile installare un certificato firmato da un'autorità di certificazione (CA), che fornisce una protezione migliore rispetto a un certificato autofirmato. Dopo aver installato il certificato, BlueXP  utilizza il certificato firmato dalla CA quando gli utenti accedono alla console basata sul Web.</block>
   <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">8 agosto 2024</block>
+  <block id="5009e1070e5138d1308165bc75e5706b" category="list-text">Aggiornamenti software</block>
 </blocks>
