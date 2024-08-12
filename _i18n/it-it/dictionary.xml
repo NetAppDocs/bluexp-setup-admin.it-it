@@ -186,7 +186,6 @@
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">SSH (22) è necessario solo se è necessario connettersi all'host per la risoluzione dei problemi.</block>
   <block id="288bb352dffecbb16aa463067359ba15" category="summary">Per impostazione predefinita, BlueXP utilizza un certificato autofirmato per l'accesso HTTPS alla console Web. È possibile installare un certificato firmato da un'autorità di certificazione (CA), che offre una protezione migliore rispetto a un certificato autofirmato.</block>
   <block id="5df0e72b51c6390f3f3b21f402ba3612" category="doc">Installare un certificato HTTPS per un accesso sicuro</block>
-  <block id="094e745d52cd94c819bfa88386ee94b4" category="paragraph">Per impostazione predefinita, BlueXP utilizza un certificato autofirmato per l'accesso HTTPS alla console Web. Se richiesto dall'azienda, è possibile installare un certificato firmato da un'autorità di certificazione (CA), che fornisce una protezione migliore rispetto a un certificato autofirmato.</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">Prima di iniziare</block>
   <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">Scopri come</block>
   <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">È necessario creare un connettore prima di poter modificare le impostazioni di BlueXP. <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>.</block>
@@ -4057,29 +4056,15 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="33ff271280dc3e0c2c15bf39aeefdeb9" category="list-text">Il tipo di istanza EC2 è t3.2xlarge.</block>
   <block id="f637fe372218bb6ee39fd481301dc99f" category="list-text">Il tipo di VM è Standard_D8s_v3.</block>
   <block id="d8c41b98cc9656d72fb99f79ff2425ba" category="list-text">L'istanza della macchina virtuale è n2-standard-8.</block>
-  <block id="d44b908365d28414a72f5b042c756f89" category="cell">Utilizzare i set di scale della macchina virtuale in modalità di orchestrazione flessibile per specificare zone specifiche per Cloud Volumes ONTAP</block>
-  <block id="e32bb1c8b64cbfd8bf1712551cd39a15" category="cell">Microsoft: Calcolo/virtualizzaMachineScaleSets/scrittura</block>
-  <block id="da4802bef00f05ba8274ecb054d0388f" category="cell">Microsoft: Compute/VirtualMachineScaleSets/Read</block>
-  <block id="d1cca5c5928df2cf3cc230adb4148b49" category="cell">Microsoft: Compute/virtualMachineScaleSets/DELETE</block>
-  <block id="b8b20e3ad75113ec2b241d05fd702223" category="section-title">7 agosto 2024</block>
-  <block id="51ec06da7f63e08ee6add2ed46d50777" category="paragraph">Le seguenti autorizzazioni sono state aggiunte al criterio JSON perché sono necessarie per il supporto Cloud Volumes ONTAP dei set di dimensioni della macchina virtuale:</block>
   <block id="784880161a798d3c05d73e33c5740f73" category="list-text">*Dimensione della macchina virtuale*: Scegli una dimensione della macchina virtuale che soddisfi i requisiti di CPU e RAM. Si consiglia di utilizzare Standard_D8s_v3.</block>
   <block id="23997c4fb216c03ff31d0f8094671142" category="list-text">*CPU*: 8 core o 8 vCPU</block>
   <block id="3baace5508f5436415356f7f1c718d50" category="list-text">*RAM*: 32 GB</block>
   <block id="e5ee5282a10eef25059e919331c8ea5e" category="list-text">*Tipo di macchina*: Si consiglia n2-standard-8.</block>
   <block id="4ea5b82f34f27448cadea5ae611c81ba" category="list-text">*Scegliere un tipo di istanza*: A seconda della disponibilità della regione, scegliere uno dei tipi di istanza supportati (si consiglia t3.2xlarge).</block>
   <block id="d44724be897a214586cbd2c8b32fb39d" category="list-text">Al momento, vengono inviate notifiche via email per i seguenti servizi e funzionalità di BlueXP : Connector, Digital Wallet di BlueXP , copia e sincronizzazione di BlueXP , backup e ripristino di BlueXP  e tiering BlueXP . Ulteriori servizi verranno aggiunti nelle versioni future.</block>
-  <block id="7940343b35479ccb2e54485d30ff86b4" category="section-title">8 ago 2024</block>
   <block id="34c56ac41d4e5a004cc5b7c87b0e2d87" category="section-title">Connettore 3.9.43</block>
   <block id="be1b4db310d7b6590c7af9eb4751b6ce" category="paragraph">Questa versione include miglioramenti minori, correzioni di bug e il requisito per le nuove autorizzazioni di Azure.</block>
   <block id="05797637e0cfec59d8a5478eba1acfdf" category="paragraph">La versione 3.9.43 è disponibile per la modalità standard e la modalità limitata.</block>
-  <block id="1933591d3cd5758cc59a0316d8d38362" category="section-title">Aggiornamento delle autorizzazioni di Azure</block>
-  <block id="257ae732be2a868d9475f68f934cf7b1" category="paragraph">Abbiamo aggiornato la policy del connettore per Azure in modo da includere le seguenti autorizzazioni:</block>
-  <block id="c78a856f5972910d86f9b588fe9783e6" category="paragraph">Queste autorizzazioni sono necessarie per il supporto Cloud Volumes ONTAP dei set di dimensioni della macchina virtuale. Se si dispone di connettori esistenti e si desidera utilizzare questa nuova funzione, sarà necessario aggiungere tali autorizzazioni ai ruoli personalizzati associati alle credenziali Azure.</block>
-  <block id="33deee49118b5c8f42cddf68ea82eb12" category="inline-link">Ulteriori informazioni sul supporto Cloud Volumes ONTAP per i set di scalabilità delle macchine virtuali</block>
-  <block id="6f165e27b35c2eee0268707accdba9ba" category="list-text"><block ref="6f165e27b35c2eee0268707accdba9ba" category="inline-link-rx"></block></block>
-  <block id="21952e368aec0a06297b408b56d39588" category="inline-link">Visualizzare le autorizzazioni di Azure per il connettore</block>
-  <block id="aee78f717e27d8af727663a423980af9" category="list-text"><block ref="30ea7e04713feb92caddbe86eeb922d8" category="inline-link-rx"></block>.</block>
   <block id="45c4fb485dfa6a5d0af975aa668648a9" category="section-title">Aggiornamento dei requisiti di CPU e RAM</block>
   <block id="07279af47b8b78d8d96257fb42d7c5d9" category="paragraph">Per garantire una maggiore affidabilità e migliorare le prestazioni di BlueXP  e del connettore, sono ora necessarie CPU e RAM aggiuntive per la macchina virtuale del connettore:</block>
   <block id="ab0a05181cb2ac15cc8151f858731517" category="list-text">CPU: 8 core o 8 vCPU (il requisito precedente era 4)</block>
@@ -4212,4 +4197,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">Miglioramenti di Azure NetApp Files</block>
   <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">9 febbraio 2021</block>
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">Miglioramenti della dashboard di supporto</block>
+  <block id="a0b762f6b2d72a69263357ecbb8decbc" category="paragraph">Quando si accede a<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block>, BlueXP  utilizza un certificato autofirmato per l'accesso HTTPS. Se richiesto dall'azienda, è possibile installare un certificato firmato da un'autorità di certificazione (CA), che fornisce una protezione migliore rispetto a un certificato autofirmato. Dopo aver installato il certificato, BlueXP  utilizza il certificato firmato dalla CA quando gli utenti accedono alla console basata sul Web.</block>
+  <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">8 agosto 2024</block>
 </blocks>

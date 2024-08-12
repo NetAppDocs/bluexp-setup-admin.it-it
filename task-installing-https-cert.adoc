@@ -14,7 +14,7 @@ summary: 'Per impostazione predefinita, BlueXP utilizza un certificato autofirma
 
 
 [role="lead"]
-Per impostazione predefinita, BlueXP utilizza un certificato autofirmato per l'accesso HTTPS alla console Web. Se richiesto dall'azienda, è possibile installare un certificato firmato da un'autorità di certificazione (CA), che fornisce una protezione migliore rispetto a un certificato autofirmato.
+Quando si accede a https://console.bluexp.netapp.com/["Console BlueXP basata su web"^], BlueXP  utilizza un certificato autofirmato per l'accesso HTTPS. Se richiesto dall'azienda, è possibile installare un certificato firmato da un'autorità di certificazione (CA), che fornisce una protezione migliore rispetto a un certificato autofirmato. Dopo aver installato il certificato, BlueXP  utilizza il certificato firmato dalla CA quando gli utenti accedono alla console basata sul Web.
 
 
 

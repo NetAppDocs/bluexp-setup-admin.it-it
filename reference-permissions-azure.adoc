@@ -701,15 +701,6 @@ Il connettore effettua le seguenti richieste API per implementare e gestire Clou
 
 
 | Crittografare gli account storage durante la creazione | Microsoft.ManagedIdentity/userAssistedIdentities/assign/action | Sì | Sì | No 
-
-
-.3+| Utilizzare i set di scale della macchina virtuale in modalità di orchestrazione flessibile per specificare zone specifiche per Cloud Volumes ONTAP | Microsoft: Calcolo/virtualizzaMachineScaleSets/scrittura | Sì | No | No 
-
-
-| Microsoft: Compute/VirtualMachineScaleSets/Read | Sì | No | No 
-
-
-| Microsoft: Compute/virtualMachineScaleSets/DELETE | No | No | Sì 
 |===
 
 
@@ -735,17 +726,6 @@ Il connettore esegue le seguenti richieste API per le operazioni quotidiane.
 == Registro delle modifiche
 
 Man mano che le autorizzazioni vengono aggiunte e rimosse, le annoteremo nelle sezioni seguenti.
-
-
-
-=== 7 agosto 2024
-
-Le seguenti autorizzazioni sono state aggiunte al criterio JSON perché sono necessarie per il supporto Cloud Volumes ONTAP dei set di dimensioni della macchina virtuale:
-
-* Microsoft: Calcolo/virtualizzaMachineScaleSets/scrittura
-* Microsoft: Compute/VirtualMachineScaleSets/Read
-* Microsoft: Compute/virtualMachineScaleSets/DELETE
-
 
 
 
