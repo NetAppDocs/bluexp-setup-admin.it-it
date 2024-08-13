@@ -4,7 +4,7 @@ permalink: task-installing-https-cert.html
 keywords: https certificate, certificate, adding, installing, ca, certificate authority, format, encoding, renewing 
 summary: 'Per impostazione predefinita, BlueXP utilizza un certificato autofirmato per l"accesso HTTPS alla console Web. È possibile installare un certificato firmato da un"autorità di certificazione (CA), che offre una protezione migliore rispetto a un certificato autofirmato.' 
 ---
-= Installare un certificato HTTPS per un accesso sicuro
+= Installare un certificato firmato dalla CA per l'accesso alla console Web
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 'Per impostazione predefinita, BlueXP utilizza un certificato autofirma
 
 
 [role="lead"]
-Quando si accede a https://console.bluexp.netapp.com/["Console BlueXP basata su web"^], BlueXP  utilizza un certificato autofirmato per l'accesso HTTPS. Se richiesto dall'azienda, è possibile installare un certificato firmato da un'autorità di certificazione (CA), che fornisce una protezione migliore rispetto a un certificato autofirmato. Dopo aver installato il certificato, BlueXP  utilizza il certificato firmato dalla CA quando gli utenti accedono alla console basata sul Web.
+Per impostazione predefinita, BlueXP  utilizza un certificato SSL autofirmato per fornire l'accesso protetto a https://console.bluexp.netapp.com/["Console BlueXP basata su web"^] mediante una connessione HTTPS. Se richiesto dall'azienda, è possibile installare un certificato firmato da un'autorità di certificazione (CA), che fornisce una protezione migliore rispetto a un certificato autofirmato. Dopo aver installato il certificato, BlueXP  utilizza il certificato firmato dalla CA quando gli utenti accedono alla console basata sul Web.
 
 
 

@@ -4197,7 +4197,13 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">Miglioramenti di Azure NetApp Files</block>
   <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">9 febbraio 2021</block>
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">Miglioramenti della dashboard di supporto</block>
-  <block id="a0b762f6b2d72a69263357ecbb8decbc" category="paragraph">Quando si accede a<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block>, BlueXP  utilizza un certificato autofirmato per l'accesso HTTPS. Se richiesto dall'azienda, è possibile installare un certificato firmato da un'autorità di certificazione (CA), che fornisce una protezione migliore rispetto a un certificato autofirmato. Dopo aver installato il certificato, BlueXP  utilizza il certificato firmato dalla CA quando gli utenti accedono alla console basata sul Web.</block>
   <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">8 agosto 2024</block>
   <block id="5009e1070e5138d1308165bc75e5706b" category="list-text">Aggiornamenti software</block>
+  <block id="66c9d0cfd45dc71069845154fb72a8b8" category="list-text">Versioni di connettori supportate</block>
+  <block id="4dc9e2f6078fbeb26bbafe7461aa7ecf" category="list-text">RHEL 8 e 9 sono supportati a partire dalle seguenti versioni del connettore:</block>
+  <block id="1316cb3dbdfa1d8facde6d30372df833" category="list-text">3.9.40 quando si utilizza BlueXP  in modalità standard o limitata</block>
+  <block id="c8fff1f28296d1ce9e5b594252b146c8" category="list-text">3.9.42 quando si utilizza BlueXP  in modalità privata</block>
+  <block id="70328d3965555bdfe7c71386e9e25887" category="doc">Installare un certificato firmato dalla CA per l'accesso alla console Web</block>
+  <block id="2f23236775b31842c7a88b27c4b2fd2d" category="paragraph">Per impostazione predefinita, BlueXP  utilizza un certificato SSL autofirmato per fornire l'accesso protetto a<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block> mediante una connessione HTTPS. Se richiesto dall'azienda, è possibile installare un certificato firmato da un'autorità di certificazione (CA), che fornisce una protezione migliore rispetto a un certificato autofirmato. Dopo aver installato il certificato, BlueXP  utilizza il certificato firmato dalla CA quando gli utenti accedono alla console basata sul Web.</block>
+  <block id="dee6ffcadeee95a4920b20e3dff92f16" category="paragraph">Tenere presente che la password predefinita è un passcode monouso (OTP) per l'indirizzo e-mail registrato. Ad ogni tentativo di accesso viene generato un nuovo OTP.</block>
 </blocks>

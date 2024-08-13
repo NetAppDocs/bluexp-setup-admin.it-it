@@ -100,6 +100,14 @@ Limitazioni::
 --
 Tool di orchestrazione del container:: Podman è necessario come strumento di orchestrazione del container quando si installa il connettore su un host RHEL 8 o 9. Docker Engine non è supportato da RHEL 8 e 9.
 Modalità di distribuzione:: RHEL 8 e 9 sono supportati quando si utilizza BlueXP in modalità standard, limitata e privata.
+Versioni di connettori supportate:: RHEL 8 e 9 sono supportati a partire dalle seguenti versioni del connettore:
++
+--
+* 3.9.40 quando si utilizza BlueXP  in modalità standard o limitata
+* 3.9.42 quando si utilizza BlueXP  in modalità privata
+
+
+--
 Solo nuove installazioni manuali:: RHEL 8 e 9 sono supportati con _nuove_ installazioni di connettori quando si installa manualmente il connettore sugli host in esecuzione on-premise o nel cloud.
 Aggiornamenti RHEL:: Se si dispone già di un connettore in esecuzione su un host RHEL 7, non è supportato l'aggiornamento del sistema operativo RHEL 7 a RHEL 8 o 9. <<Connettori esistenti su RHEL 7 o CentOS 7,Ulteriori informazioni sui connettori esistenti su RHEL 7 o CentOS 7>>.
 

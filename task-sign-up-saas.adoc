@@ -21,6 +21,11 @@ Quando accedi a BlueXP per la prima volta, BlueXP ti permette di iscriverti o di
 
 Accedi BlueXP:: Puoi iscriverti creando un login BlueXP. Questo metodo di autenticazione richiede di specificare l'indirizzo e-mail e una password. Dopo aver verificato il tuo indirizzo e-mail, puoi accedere e creare un account BlueXP, se non appartiene già a uno.
 Credenziali NSS (NetApp Support Site):: Se disponi già delle credenziali del sito di supporto NetApp, non devi iscriverti ad BlueXP. Accedi usando le tue credenziali NSS e BlueXP ti richiede di creare un account BlueXP, se non appartiene già a uno.
++
+--
+Tenere presente che la password predefinita è un passcode monouso (OTP) per l'indirizzo e-mail registrato. Ad ogni tentativo di accesso viene generato un nuovo OTP.
+
+--
 Connessione federata:: È possibile utilizzare il Single Sign-on per accedere utilizzando le credenziali della directory aziendale (identità federata). Il primo utente dell'account dell'organizzazione deve registrarsi a BlueXP o accedere utilizzando le credenziali NSS, quindi configurare la federazione delle identità. Successivamente, ogni utente successivo può semplicemente accedere utilizzando le proprie credenziali SSO.
 +
 --
