@@ -48,7 +48,7 @@ Se utilizzi BlueXP in modalità privata (in altre parole, l'host del connettore 
 . Connettersi alla macchina virtuale Linux per il connettore.
 . Dall'host Linux, eseguire i seguenti comandi:
 +
-`./opt/application/netapp/ds/cleanup.sh`
+`/opt/application/netapp/ds/cleanup.sh`
 `rm -rf /opt/application/netapp/ds`
 
 

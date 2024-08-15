@@ -87,11 +87,17 @@ Se necessario per la tua azienda, puoi modificare l'indirizzo IP interno e l'ind
 Sarà necessario aggiornare la posizione di backup per ciascun sistema Cloud Volumes ONTAP.
 
 +
-.. Eseguire il seguente comando dall'interfaccia CLI di Cloud Volumes ONTAP per visualizzare la destinazione di backup corrente:
+.. Dalla CLI di Cloud Volumes ONTAP, impostare il livello di privilegio su avanzato:
 +
 [source, cli]
 ----
-system configuration backup show
+set -privilege advanced
+----
+.. Eseguire il seguente comando per visualizzare la destinazione di backup corrente:
++
+[source, cli]
+----
+system configuration backup settings show
 ----
 .. Eseguire il seguente comando per aggiornare l'indirizzo IP della destinazione di backup:
 +
