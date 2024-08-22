@@ -18,6 +18,30 @@ Scopri le novità delle funzionalità di amministrazione di BlueXP: Account Blue
 
 
 
+== 22 ago 2024
+
+
+
+=== Connettore 3.9.43 patch
+
+Abbiamo aggiornato il connettore per supportare la versione Cloud Volumes ONTAP 9.15.1.
+
+Il supporto per questa versione include un aggiornamento della policy del connettore per Azure. Il criterio include ora le seguenti autorizzazioni:
+
+[source, json]
+----
+"Microsoft.Compute/virtualMachineScaleSets/write",
+"Microsoft.Compute/virtualMachineScaleSets/read",
+"Microsoft.Compute/virtualMachineScaleSets/delete"
+----
+Queste autorizzazioni sono necessarie per il supporto Cloud Volumes ONTAP dei set di dimensioni della macchina virtuale. Se si dispone di connettori esistenti e si desidera utilizzare questa nuova funzione, sarà necessario aggiungere tali autorizzazioni ai ruoli personalizzati associati alle credenziali Azure.
+
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Ulteriori informazioni sul supporto Cloud Volumes ONTAP per i set di scalabilità delle macchine virtuali"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Visualizzare le autorizzazioni di Azure per il connettore"].
+
+
+
+
 == 8 agosto 2024
 
 
