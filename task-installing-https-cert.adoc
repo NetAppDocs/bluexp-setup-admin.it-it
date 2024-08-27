@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-installing-https-cert.html 
 keywords: https certificate, certificate, adding, installing, ca, certificate authority, format, encoding, renewing 
-summary: 'Per impostazione predefinita, BlueXP utilizza un certificato autofirmato per l"accesso HTTPS alla console Web. È possibile installare un certificato firmato da un"autorità di certificazione (CA), che offre una protezione migliore rispetto a un certificato autofirmato.' 
+summary: 'Installare un certificato firmato CA per l"accesso dell"utente alla console basata sul Web quando si utilizza BlueXP  in modalità limitata o privata.' 
 ---
-= Installare un certificato firmato dalla CA per l'accesso alla console Web
+= Installare un certificato firmato dalla CA per l'accesso alla console basata sul Web
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: 'Per impostazione predefinita, BlueXP utilizza un certificato autofirma
 
 
 [role="lead"]
-Per impostazione predefinita, BlueXP  utilizza un certificato SSL autofirmato per fornire l'accesso protetto a https://console.bluexp.netapp.com/["Console BlueXP basata su web"^] mediante una connessione HTTPS. Se richiesto dall'azienda, è possibile installare un certificato firmato da un'autorità di certificazione (CA), che fornisce una protezione migliore rispetto a un certificato autofirmato. Dopo aver installato il certificato, BlueXP  utilizza il certificato firmato dalla CA quando gli utenti accedono alla console basata sul Web.
+Quando si utilizza BlueXP  in modalità limitata o privata, l'interfaccia utente è accessibile dalla macchina virtuale del connettore implementata nella regione cloud o in sede. Per impostazione predefinita, BlueXP  utilizza un certificato SSL autofirmato per fornire l'accesso HTTPS sicuro alla console basata sul Web in esecuzione sul connettore. Se richiesto dall'azienda, è possibile installare un certificato firmato da un'autorità di certificazione (CA), che fornisce una protezione migliore rispetto a un certificato autofirmato. Dopo aver installato il certificato, BlueXP  utilizza il certificato firmato dalla CA quando gli utenti accedono alla console basata sul Web.
 
 
 
 == Prima di iniziare
 
-È necessario creare un connettore prima di poter modificare le impostazioni di BlueXP. link:concept-connectors.html#how-to-create-a-connector["Scopri come"].
+È necessario creare un connettore prima di poter modificare le impostazioni di BlueXP. link:concept-connectors.html#how-to-create-a-connector["Scopri come creare un connettore"].
 
 
 
@@ -66,7 +66,7 @@ Il certificato deve utilizzare il formato X.509 codificato con Privacy Enhanced 
 
 
 .Risultato
-BlueXP utilizza ora il certificato firmato dalla CA per fornire un accesso HTTPS sicuro. L'immagine seguente mostra un account BlueXP configurato per l'accesso sicuro:
+BlueXP utilizza ora il certificato firmato dalla CA per fornire un accesso HTTPS sicuro. L'immagine seguente mostra un connettore configurato per l'accesso sicuro:
 
 image:screenshot_https_cert.gif["Schermata: Mostra la pagina di configurazione HTTPS dopo l'installazione di un certificato firmato. La pagina mostra le proprietà del certificato e un'opzione per rinnovarlo."]
 
