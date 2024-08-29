@@ -69,7 +69,7 @@ Come risultato di questa modifica, il tipo di istanza VM predefinita quando si i
 * Google Cloud: N2-standard-8
 
 
-Questo requisito si applica ai connettori nuovi ed esistenti.
+I requisiti aggiornati della CPU e della RAM si applicano a tutti i nuovi connettori. Per i connettori esistenti, si consiglia di aumentare la CPU e la RAM per fornire prestazioni e affidabilità migliori.
 
 
 

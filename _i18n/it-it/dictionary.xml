@@ -4063,7 +4063,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="43a4336ace07071a0817d23211d30402" category="list-text">AWS: t3.2xlarge</block>
   <block id="70e7db9a896d903493a8716aa3885ee7" category="list-text">Azure: Standard_D8s_v3</block>
   <block id="1a0e003291457a847a85677ad5244c4e" category="list-text">Google Cloud: N2-standard-8</block>
-  <block id="7ef0b49c93a0c955c309b5fea693d698" category="paragraph">Questo requisito si applica ai connettori nuovi ed esistenti.</block>
   <block id="fecbdb7e41beb7c2b4125b62d71b116d" category="section-title">Supporto per Podman 4.9.4 con RHEL 8,10</block>
   <block id="601e92646453def880eec16da18e4390" category="paragraph">Podman versione 4.9.4 è ora supportata quando si installa il connettore su un host Red Hat Enterprise Linux 8,10.</block>
   <block id="18ecc589a4f329e3ba95ac4e285b4504" category="section-title">Convalida utente per federazione identità</block>
@@ -4221,4 +4220,5 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="e7b76852295808494e2734a85e108067" category="paragraph">BlueXP utilizza ora il certificato firmato dalla CA per fornire un accesso HTTPS sicuro. L'immagine seguente mostra un connettore configurato per l'accesso sicuro:</block>
   <block id="1b41af4e937fd3b48c53451988ba06b5" category="inline-link">Ulteriori informazioni sulla versione Cloud Volumes ONTAP 9.15.1</block>
   <block id="dcc26903c10160517882b9dad3e9f26f" category="list-text"><block ref="dcc26903c10160517882b9dad3e9f26f" category="inline-link-rx"></block></block>
+  <block id="9d97f1d57b6500707266656cdf2bf526" category="paragraph">I requisiti aggiornati della CPU e della RAM si applicano a tutti i nuovi connettori. Per i connettori esistenti, si consiglia di aumentare la CPU e la RAM per fornire prestazioni e affidabilità migliori.</block>
 </blocks>
