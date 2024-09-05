@@ -2019,14 +2019,11 @@ oppure</block>
   <block id="7c36ac5a8d104c08bd1c9905b4e5d437" category="paragraph">Questi passaggi descrivono come avviare l'istanza dalla console EC2 perché la console consente di associare un ruolo IAM all'istanza del connettore. Ciò non è possibile utilizzando l'azione *Launch from Website* (Avvia dal sito Web).</block>
   <block id="b3472ff32fca13e95a664d2516fabc9d" category="list-text">Seguire le istruzioni per configurare e implementare l'istanza:</block>
   <block id="d062afbb0dab008c992fc7630e6e5b1d" category="list-text">*Nome e tag*: Immettere un nome e tag per l'istanza.</block>
-  <block id="5fa511356078e407d467aeb21afa8311" category="list-text">*Immagine dell'applicazione e del sistema operativo*: Saltare questa sezione. Il connettore AMI è già selezionato.</block>
   <block id="3346e4a27b0ab9e94d29515e25908ed6" category="inline-link-macro">Esaminare i requisiti dell'istanza</block>
   <block id="a2edeeec0c237aa79e3b1f0eb87b07e4" category="list-text">*Coppia di chiavi (login)*: Selezionare la coppia di chiavi che si desidera utilizzare per connettersi in modo sicuro all'istanza.</block>
   <block id="db8b616682d262766c36f81013b4f840" category="list-text">*Impostazioni di rete*: Modificare le impostazioni di rete in base alle esigenze:</block>
   <block id="c04d267ebc445e8f04c29787ecab6547" category="list-text">Scegliere il VPC e la subnet desiderati.</block>
   <block id="f851630c999713801d4adbdaeecfc902" category="list-text">Specificare se l'istanza deve avere un indirizzo IP pubblico.</block>
-  <block id="d0bf1fb8b3ea2c1aed553c11fcfc2431" category="list-text">Specificare le impostazioni del firewall che abilitano i metodi di connessione richiesti per l'istanza del connettore: SSH, HTTP e HTTPS.</block>
-  <block id="2cff93ab04445d2412fc49f1670cf749" category="paragraph">Sono necessarie altre regole per configurazioni specifiche.</block>
   <block id="752330cdb2fab31ec29aaa286269a882" category="list-text">*Dettagli avanzati*: In *Profilo istanza IAM*, scegliere il ruolo IAM che include le autorizzazioni richieste per il connettore.</block>
   <block id="10a3df02c55e733eca6fef076545645a" category="paragraph">AWS avvia il software con le impostazioni specificate. L'istanza di Connector e il software dovrebbero essere in esecuzione in circa cinque minuti.</block>
   <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">Identity Federation consente il single sign-on con BlueXP, in modo che gli utenti possano accedere utilizzando le credenziali della propria identità aziendale. Per iniziare, scopri come funziona la federazione delle identità con BlueXP e consulta una panoramica del processo di installazione.</block>
@@ -3049,9 +3046,6 @@ Questo endpoint è richiesto solo nelle regioni governative di Azure.</block>
   <block id="0447e5af15c21fbb6eee1972d30cef83" category="list-text">Scegli *Amazon Web Services* come cloud provider e seleziona *continua*.</block>
   <block id="15de410cab5b286c0cff40620cbbc2f8" category="list-text">Selezionare *continua* per prepararsi all'implementazione utilizzando la guida all'interno del prodotto. Ogni fase della guida all'interno del prodotto include le informazioni contenute in questa pagina della documentazione.</block>
   <block id="43c314e15e760781773285daf91c0ad5" category="list-text">Selezionare *Skip to Deployment* (passa alla distribuzione) se si è già pronti seguendo la procedura riportata in questa pagina.</block>
-  <block id="21d86ad4e09aa752397558f2a4a4d776" category="list-text">Nella pagina Marketplace, selezionare *Continue to Subscribe*, quindi selezionare *Continue to Configuration*.</block>
-  <block id="62e122f28cedb83482c8d975a0ebbc6b" category="list-text">Modificare una delle opzioni predefinite e selezionare *Continue to Launch* (continua fino all'avvio).</block>
-  <block id="b5db57dbb4b1fc339bfbf2e32844ab33" category="list-text">In *Choose Action* (Scegli azione), selezionare *Launch through EC2* (Avvia tramite EC2*), quindi selezionare *Launch* (Avvia).</block>
   <block id="a77947bca5ad1214f93361073cfddb0a" category="list-text">*Riepilogo*: Esaminare il riepilogo e selezionare *Avvia istanza*.</block>
   <block id="6cd4b1aeb7ee91ddbd1d37ee958a2b58" category="list-text">Selezionare *Let's start*.</block>
   <block id="1ce857b02028095dcbdb6522daf11862" category="list-text">Selezionare *Get it now* (Ottieni ora), quindi selezionare *Continue* (continua).</block>
@@ -4023,7 +4017,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="09fcc3c3a46a63684b907c89bb2e4b7b" category="cell">18 luglio 2024</block>
   <block id="4736cb006ef02fa673f618379e2106bd" category="cell">1 luglio 2024 (versione 1,33)</block>
   <block id="8009eebf05fd33b87750f8b4048986f7" category="cell">10 giugno 2024</block>
-  <block id="d2c0dfc6934302fa99dba597124c94a2" category="list-text">*Tipo di istanza*: A seconda della disponibilità della regione, scegliere un tipo di istanza che soddisfi i requisiti di RAM e CPU (si consiglia t3.2xlarge).</block>
   <block id="eefc3c2b6ca2400b2ae57e8da8247c03" category="list-text">8 core o 8 vCPU</block>
   <block id="911ede8df5585598c294830dafe276fa" category="list-text">32 GB</block>
   <block id="3cb4677fb343d8a6f3ab8d904462fda9" category="list-text">Un tipo di istanza che soddisfa i requisiti di CPU e RAM indicati in precedenza. Si consiglia di utilizzare t3.2xlarge.</block>
@@ -4221,4 +4214,14 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="1b41af4e937fd3b48c53451988ba06b5" category="inline-link">Ulteriori informazioni sulla versione Cloud Volumes ONTAP 9.15.1</block>
   <block id="dcc26903c10160517882b9dad3e9f26f" category="list-text"><block ref="dcc26903c10160517882b9dad3e9f26f" category="inline-link-rx"></block></block>
   <block id="9d97f1d57b6500707266656cdf2bf526" category="paragraph">I requisiti aggiornati della CPU e della RAM si applicano a tutti i nuovi connettori. Per i connettori esistenti, si consiglia di aumentare la CPU e la RAM per fornire prestazioni e affidabilità migliori.</block>
+  <block id="f24abcf11233503db09edba21b8e5cdb" category="list-text">Nella pagina Marketplace, selezionare *continua a sottoscrivere*.</block>
+  <block id="b57313d1cbeb83e2be3f889cd8fc5526" category="list-text">Per abbonarsi al software, selezionare *Accept Terms* (Accetta termini).</block>
+  <block id="b33dcc2933561e1bbdc43d2b68e8ab24" category="paragraph">Il processo di sottoscrizione può richiedere alcuni minuti.</block>
+  <block id="11c2c43373c3fc2b79b1a6f46f2372bf" category="list-text">Al termine del processo di abbonamento, selezionare *continua a configurazione*.</block>
+  <block id="84bdd294c5ae866bbc0419f7bba9f368" category="paragraph"><block ref="84bdd294c5ae866bbc0419f7bba9f368" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2630dda750b0b4c54559adbe4e5daa21" category="list-text">Nella pagina *Configura questo software*, accertati di aver selezionato la regione corretta, quindi seleziona *continua per avviare*.</block>
+  <block id="4a3fda2105dbdf853aa237113073a9f0" category="list-text">Nella pagina *Avvia questo software*, in *Scegli azione*, selezionare *Avvia attraverso EC2*, quindi selezionare *Avvia*.</block>
+  <block id="e5df21e6d1c0f91eabeef6ab2202379e" category="list-text">*Immagini dell'applicazione e del sistema operativo*: Saltare questa sezione. Il connettore AMI è già selezionato.</block>
+  <block id="60297aa5897806a96d1aabe6d5990c43" category="list-text">*Tipo di istanza*: A seconda della disponibilità della regione, scegliere un tipo di istanza che soddisfi i requisiti di RAM e CPU (t3,2xlarge è preselezionato e consigliato).</block>
+  <block id="2ff5664491ece284c069195a204d44c0" category="list-text">Specificare le impostazioni del gruppo di protezione che abilitano i metodi di connessione richiesti per l'istanza del connettore: SSH, HTTP e HTTPS.</block>
 </blocks>
