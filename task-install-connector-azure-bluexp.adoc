@@ -14,10 +14,12 @@ summary: Per creare un connettore in Azure da BlueXP, devi configurare il networ
 
 
 [role="lead"]
-Per creare un connettore in Azure da BlueXP, devi configurare il networking, preparare le autorizzazioni di Azure e quindi creare il connettore.
+Un connettore è il software NetApp eseguito nella tua rete cloud o sulla rete on-premise che ti permette di utilizzare tutte le funzionalità e i servizi BlueXP . Una delle opzioni di installazione disponibili è creare un connettore in Azure direttamente da BlueXP . Per creare un connettore in Azure da BlueXP, devi configurare il networking, preparare le autorizzazioni di Azure e quindi creare il connettore.
 
 .Prima di iniziare
-Dovresti rivedere link:reference-limitations.html["Limitazioni del connettore"].
+* Si dovrebbe avere un link:concept-connectors.html["Informazioni sui connettori"].
+* Dovresti rivedere link:reference-limitations.html["Limitazioni del connettore"].
+
 
 
 

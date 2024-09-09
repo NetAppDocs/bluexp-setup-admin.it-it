@@ -14,10 +14,12 @@ summary: Per creare un connettore dal marketplace AWS, devi configurare la tua r
 
 
 [role="lead"]
-Per creare un connettore dal marketplace AWS, devi configurare la tua rete, preparare le autorizzazioni AWS, rivedere i requisiti delle istanze e creare quindi il connettore.
+Un connettore è il software NetApp eseguito nella tua rete cloud o sulla rete on-premise che ti permette di utilizzare tutte le funzionalità e i servizi BlueXP . Una delle opzioni di installazione disponibili consiste nella creazione di un connettore in AWS direttamente dal marketplace AWS. Per creare un connettore dal marketplace AWS, devi configurare la tua rete, preparare le autorizzazioni AWS, rivedere i requisiti delle istanze e creare quindi il connettore.
 
 .Prima di iniziare
-Dovresti rivedere link:reference-limitations.html["Limitazioni del connettore"].
+* Si dovrebbe avere un link:concept-connectors.html["Informazioni sui connettori"].
+* Dovresti rivedere link:reference-limitations.html["Limitazioni del connettore"].
+
 
 
 

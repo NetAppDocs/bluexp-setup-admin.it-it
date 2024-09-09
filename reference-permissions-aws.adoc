@@ -337,44 +337,6 @@ Per le regioni standard, le autorizzazioni sono distribuite in due policy. Sono 
     "Statement": [
         {
             "Action": [
-                "ec2:DescribeRegions",
-                "eks:ListClusters",
-                "eks:DescribeCluster",
-                "iam:GetInstanceProfile"
-            ],
-            "Resource": "*",
-            "Effect": "Allow",
-            "Sid": "K8sServicePolicy"
-        },
-        {
-            "Action": [
-                "cloudformation:DescribeStacks",
-                "cloudwatch:GetMetricStatistics",
-                "cloudformation:ListStacks"
-            ],
-            "Resource": "*",
-            "Effect": "Allow",
-            "Sid": "GFCservicePolicy"
-        },
-        {
-            "Condition": {
-                "StringLike": {
-                    "ec2:ResourceTag/GFCInstance": "*"
-                }
-            },
-            "Action": [
-                "ec2:StartInstances",
-                "ec2:TerminateInstances",
-                "ec2:AttachVolume",
-                "ec2:DetachVolume"
-            ],
-            "Resource": [
-                "arn:aws:ec2:*:*:instance/*"
-            ],
-            "Effect": "Allow"
-        },
-        {
-            "Action": [
                 "ec2:CreateTags",
                 "ec2:DeleteTags",
                 "ec2:DescribeTags",
@@ -1250,6 +1212,57 @@ Il connettore effettua le seguenti richieste API per implementare e gestire Clou
 
 Man mano che le autorizzazioni vengono aggiunte e rimosse, le annoteremo nelle sezioni seguenti.
 
+
+
+=== 9 settembre 2024
+
+I permessi sono stati rimossi dalla policy n. 2 per le regioni standard perché BlueXP  non supporta più il caching edge di BlueXP  e il rilevamento e la gestione dei cluster Kubernetes.
+
+.Visualizzare le autorizzazioni rimosse dal criterio
+[%collapsible]
+====
+[source, json]
+----
+        {
+            "Action": [
+                "ec2:DescribeRegions",
+                "eks:ListClusters",
+                "eks:DescribeCluster",
+                "iam:GetInstanceProfile"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "K8sServicePolicy"
+        },
+        {
+            "Action": [
+                "cloudformation:DescribeStacks",
+                "cloudwatch:GetMetricStatistics",
+                "cloudformation:ListStacks"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "GFCservicePolicy"
+        },
+        {
+            "Condition": {
+                "StringLike": {
+                    "ec2:ResourceTag/GFCInstance": "*"
+                }
+            },
+            "Action": [
+                "ec2:StartInstances",
+                "ec2:TerminateInstances",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:*:instance/*"
+            ],
+            "Effect": "Allow"
+        },
+----
+====
 
 
 === 9 maggio 2024

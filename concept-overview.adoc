@@ -22,7 +22,7 @@ NetApp BlueXP offre alla tua organizzazione un singolo piano di controllo che ti
 
 La piattaforma BlueXP offre quattro pilastri principali per la gestione dei dati: Storage, mobilità, protezione, analisi e controllo.
 
-Storage:: Scopri, implementa e gestisci lo storage, sia in AWS, Azure, Google Cloud o on-premise.
+Storage:: Scopri, implementa e gestisci lo storage, in AWS, Azure, Google Cloud o on-premise.
 +
 --
 * Configurazione e utilizzo https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] per una gestione dei dati efficiente e multiprotocollo tra i cloud.

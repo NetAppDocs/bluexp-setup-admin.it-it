@@ -14,10 +14,12 @@ summary: 'Per installare manualmente il connettore sul proprio host Linux, è ne
 
 
 [role="lead"]
-Per installare manualmente il connettore sul proprio host Linux, è necessario rivedere i requisiti dell'host, configurare la rete, preparare le autorizzazioni di Azure, installare il connettore e quindi fornire le autorizzazioni preparate.
+Un connettore è il software NetApp eseguito nella tua rete cloud o sulla rete on-premise che ti permette di utilizzare tutte le funzionalità e i servizi BlueXP . Una delle opzioni di installazione disponibili consiste nell'installare manualmente il software del connettore su un host Linux in esecuzione in Azure. Per installare manualmente il connettore sul proprio host Linux, è necessario rivedere i requisiti dell'host, configurare la rete, preparare le autorizzazioni di Azure, installare il connettore e quindi fornire le autorizzazioni preparate.
 
 .Prima di iniziare
-Dovresti rivedere link:reference-limitations.html["Limitazioni del connettore"].
+* Si dovrebbe avere un link:concept-connectors.html["Informazioni sui connettori"].
+* Dovresti rivedere link:reference-limitations.html["Limitazioni del connettore"].
+
 
 
 
@@ -33,7 +35,7 @@ Sistemi operativi supportati::
 * Red Hat Enterprise Linux
 +
 ** da 8,6 a 8,10
-** da 9,1 a 9,3
+** da 9,1 a 9,4
 +
 L'host deve essere registrato con Red Hat Subscription Management. Se non è registrato, l'host non può accedere ai repository per aggiornare il software di terze parti richiesto durante l'installazione del connettore.
 
@@ -67,37 +69,12 @@ BlueXP richiede questo spazio in `/var` Perché Docker o Podman sono progettati 
 Tool di orchestrazione del container:: A seconda del sistema operativo in uso, prima di installare il connettore è necessario utilizzare Podman o Docker Engine.
 +
 --
-* Podman è necessario per Red Hat Enterprise Linux 8 e 9.
-+
-[cols="50a,50a"]
-|===
-| Versione di RHEL | Versione Podman supportata 
-
-
- a| 
-RHEL da 8,6 a 8,9
- a| 
-Podman 4.6.1
-
-
-
- a| 
-RHEL 8,10
- a| 
-Podman 4.6.1 e 4.9.4
-
-
-
- a| 
-RHEL da 9,1 a 9,3
- a| 
-Podman 4.6.1
-
-|===
+* Podman è necessario per Red Hat Enterprise Linux.
 +
 Per Podman devono essere soddisfatti i seguenti prerequisiti:
 
 +
+** È richiesta la versione 4.6.1 o 4.9.4 di Podman
 ** Il servizio podman.socket deve essere attivato e avviato
 ** python3 deve essere installato
 ** Il pacchetto podman-Compose versione 1.0.6 deve essere installato
@@ -107,7 +84,10 @@ Per Podman devono essere soddisfatti i seguenti prerequisiti:
 * Docker Engine è richiesto per Ubuntu.
 +
 ** La versione minima supportata è 23,0.6.
-** La versione massima supportata è 25,0.5.
+** La versione massima supportata è 26,0.0.
++
+Si noti che Docker Engine 26 è supportato con _nuove_ installazioni di connettori a partire dalla versione 3.9.44 del connettore.
+
 
 
 
@@ -213,7 +193,7 @@ NOTE: Utilizzando il `dnf install` Il comando soddisfa il requisito per aggiunge
 --
 .Motore Docker
 --
-Installare una versione di Docker Engine tra la versione 23.0.6 e la 25,0.5.
+Installare una versione supportata di Docker Engine. <<podman-versions,Consulta le versioni di Docker Engine supportate da BlueXP >>.
 
 .Fasi
 . Installazione di Docker Engine.
