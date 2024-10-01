@@ -92,7 +92,7 @@ Per Podman devono essere soddisfatti i seguenti prerequisiti:
 | Connettori creati prima della versione 3.9.44 | 23.0.6 | 25.0.5 
 |===
 +
-https://docs.docker.com/engine/install/["Visualizzare le istruzioni di installazione"^]
+https://docs.docker.com/engine/install/["Consulta le istruzioni di installazione di Docker"^]
 
 
 
@@ -242,6 +242,7 @@ Endpoint contattati durante l'installazione manuale:: Quando si installa manualm
 --
 * \https://support.netapp.com
 * \https://mysupport.netapp.com
+* \https://signin.b2c.NetApp.com (questo endpoint è l'URL CNAME per \https://mysupport.NetApp.com)
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
 * \https://production-artifacts.cloudmanager.cloud.netapp.com

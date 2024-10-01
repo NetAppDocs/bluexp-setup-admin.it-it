@@ -26,7 +26,20 @@ Quando si utilizza BlueXP  in modalità limitata o privata, l'interfaccia utent
 
 == Installare un certificato HTTPS
 
-Installare un certificato firmato da una CA per un accesso sicuro.
+Installare un certificato firmato da una CA per un accesso sicuro alla console basata sul Web in esecuzione sul connettore.
+
+.A proposito di questa attività
+È possibile installare il certificato utilizzando una delle seguenti opzioni:
+
+* Generare una richiesta di firma del certificato (CSR) da BlueXP , inoltrare la richiesta di certificato a una CA, quindi installare il certificato firmato dalla CA sul connettore.
++
+La coppia di chiavi utilizzata da BlueXP  per generare la CSR viene memorizzata internamente sul connettore. BlueXP  recupera automaticamente la stessa coppia di chiavi (chiave privata) quando si installa il certificato sul connettore.
+
+* Installare un certificato firmato CA già esistente.
++
+Con questa opzione, la CSR non viene generata tramite BlueXP . La CSR viene generata separatamente e la chiave privata viene memorizzata esternamente. Quando si installa il certificato, viene fornita la chiave privata a BlueXP .
+
+
 
 .Fasi
 . Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *impostazione HTTPS*.
