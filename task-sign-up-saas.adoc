@@ -19,14 +19,14 @@ BlueXP è accessibile da una console basata su web. Quando inizia con BlueXP, il
 .A proposito di questa attività
 Quando accedi a BlueXP per la prima volta, BlueXP ti permette di iscriverti o di accedere usando una delle seguenti opzioni:
 
-Accedi BlueXP:: Puoi iscriverti creando un login BlueXP. Questo metodo di autenticazione richiede di specificare l'indirizzo e-mail e una password. Dopo aver verificato il tuo indirizzo e-mail, puoi accedere e creare un account BlueXP, se non appartiene già a uno.
-Credenziali NSS (NetApp Support Site):: Se disponi già delle credenziali del sito di supporto NetApp, non devi iscriverti ad BlueXP. Accedi usando le tue credenziali NSS e BlueXP ti richiede di creare un account BlueXP, se non appartiene già a uno.
+Accedi BlueXP:: Puoi iscriverti creando un login BlueXP. Questo metodo di autenticazione richiede di specificare l'indirizzo e-mail e una password. Dopo aver verificato l'indirizzo e-mail, è possibile accedere e creare un'organizzazione BlueXP , se non si appartiene già a una di esse.
+Credenziali NSS (NetApp Support Site):: Se disponi già delle credenziali del sito di supporto NetApp, non devi iscriverti ad BlueXP. L'utente accede utilizzando le proprie credenziali NSS, quindi BlueXP  richiede di creare un'organizzazione BlueXP , se non appartiene già a una.
 +
 --
 Tenere presente che la password predefinita è un passcode monouso (OTP) per l'indirizzo e-mail registrato. Ad ogni tentativo di accesso viene generato un nuovo OTP.
 
 --
-Connessione federata:: È possibile utilizzare il Single Sign-on per accedere utilizzando le credenziali della directory aziendale (identità federata). Il primo utente dell'account dell'organizzazione deve registrarsi a BlueXP o accedere utilizzando le credenziali NSS, quindi configurare la federazione delle identità. Successivamente, ogni utente successivo può semplicemente accedere utilizzando le proprie credenziali SSO.
+Connessione federata:: È possibile utilizzare il Single Sign-on per accedere utilizzando le credenziali della directory aziendale (identità federata). Il primo utente dell'account dell'organizzazione deve registrarsi a BlueXP o accedere utilizzando le credenziali NSS, quindi configurare la federazione delle identità. Successivamente, è possibile aggiungere membri dell'identità aziendale all'organizzazione. Tali utenti possono quindi accedere utilizzando le proprie credenziali SSO.
 +
 --
 link:concept-federation.html["Scopri come utilizzare la federazione delle identità con BlueXP"].
@@ -38,7 +38,7 @@ link:concept-federation.html["Scopri come utilizzare la federazione delle identi
 . Aprire un browser Web e accedere a. https://console.bluexp.netapp.com["Console BlueXP"^]
 . Se si dispone di un account del sito di supporto NetApp o se è già stata impostata la federazione delle identità, immettere l'indirizzo e-mail associato all'account direttamente nella pagina *Accedi*.
 +
-Se disponi di un account NSS, puoi saltare la pagina di registrazione. BlueXP ti iscriverà come parte di questo login iniziale.
+In entrambi i casi, BlueXP  ti registrerà come parte di questo accesso iniziale.
 
 . Se desideri iscriverti creando un login BlueXP, seleziona *Iscriviti*.
 +
@@ -53,18 +53,21 @@ Questo passaggio è necessario prima di poter accedere a BlueXP.
 
 
 . Dopo aver effettuato l'accesso, leggere il Contratto di licenza con l'utente finale e accettare i termini.
-. Nella pagina *Benvenuto*, immettere un nome per l'account.
 +
-Se la tua azienda dispone già di un account e vuoi iscriverti, devi chiudere BlueXP e chiedere al proprietario di associarti all'account. Dopo che il proprietario ti ha aggiunto, puoi accedere e accedere all'account. link:task-managing-netapp-accounts.html#add-users["Scopri come aggiungere membri a un account esistente"].
+Se l'account utente non appartiene già a un'organizzazione BlueXP , verrà richiesto di crearne uno.
+
+. Nella pagina *Benvenuto*, immettere un nome per la propria organizzazione BlueXP .
++
+Un'organizzazione è l'elemento di primo livello della gestione delle identità e degli accessi (IAM) di BlueXP . link:concept-identity-and-access-management.html["Ulteriori informazioni su BlueXP  IAM"].
 
 +
-Un account è l'elemento di primo livello della piattaforma per le identità di NetApp. Consente di aggiungere e gestire utenti, ruoli, autorizzazioni e ambienti di lavoro.
+Se la vostra azienda ha già un'organizzazione BlueXP  e desiderate unirvi a essa, chiudete BlueXP  e chiedete al proprietario di associarvi all'organizzazione. Dopo che il proprietario ti ha aggiunto, puoi accedere e accedere all'account. link:task-iam-manage-members-permissions#add-members["Scopri come aggiungere membri a un'organizzazione esistente"].
 
 +
-image:screenshot-account-selection.png["Una schermata della pagina di benvenuto che viene visualizzata quando accedi con un nuovo account che non appartiene a un account."]
+image:screenshot-create-organization.png["Schermata della pagina di benvenuto visualizzata quando si accede con un nuovo account utente non appartenente a un'organizzazione."]
 
-. Selezionare *Crea account*.
+. Selezionare *Let's Start*.
 
 
 .Risultato
-Ora disponi di un account e di un account di accesso BlueXP. Nella maggior parte dei casi, il passaggio successivo consiste nella creazione di un connettore che connette i servizi di BlueXP al tuo ambiente di cloud ibrido.
+Ora avete un login BlueXP  e un'organizzazione. Nella maggior parte dei casi, il passaggio successivo consiste nella creazione di un connettore che connette i servizi di BlueXP al tuo ambiente di cloud ibrido.

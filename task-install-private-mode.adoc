@@ -129,7 +129,7 @@ Fornire a BlueXP la chiave di accesso AWS per un utente IAM che dispone delle au
 .Fasi
 . Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
 +
-image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
+image:screenshot-settings-icon-organization.png["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
 
 . Selezionare *Aggiungi credenziali* e seguire la procedura guidata.
 +
@@ -186,7 +186,7 @@ Fornire a BlueXP le credenziali per l'entità del servizio Azure precedentemente
 .Fasi
 . Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
 +
-image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
+image:screenshot-settings-icon-organization.png["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
 
 . Selezionare *Aggiungi credenziali* e seguire la procedura guidata.
 +

@@ -289,7 +289,7 @@ Se hai appena creato queste credenziali nel tuo cloud provider, potrebbero esser
 .Fasi
 . Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
 +
-image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
+image:screenshot-settings-icon-organization.png["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
 
 . Selezionare *Aggiungi credenziali* e seguire la procedura guidata.
 +
@@ -357,13 +357,13 @@ Verrai reindirizzato al sito Web di BlueXP.
 
 .. Dalla pagina *Subscription Assignment*:
 +
-*** Seleziona gli account BlueXP a cui desideri associare questo abbonamento.
-*** Nel campo *Sostituisci abbonamento esistente*, scegli se desideri sostituire automaticamente l'abbonamento esistente per un account con questo nuovo abbonamento.
+*** Seleziona le organizzazioni o gli account BlueXP  a cui desideri associare questo abbonamento.
+*** Nel campo *Sostituisci abbonamento esistente*, scegliere se sostituire automaticamente l'abbonamento esistente per un'organizzazione o un account con questo nuovo abbonamento.
 +
-BlueXP sostituisce l'abbonamento esistente per tutte le credenziali dell'account con questo nuovo abbonamento. Se un insieme di credenziali non è mai stato associato a un abbonamento, questo nuovo abbonamento non sarà associato a tali credenziali.
+BlueXP  sostituisce l'abbonamento esistente per tutte le credenziali dell'organizzazione o dell'account con questo nuovo abbonamento. Se un insieme di credenziali non è mai stato associato a un abbonamento, questo nuovo abbonamento non sarà associato a tali credenziali.
 
 +
-Per tutti gli altri account, è necessario associare manualmente l'abbonamento ripetendo questa procedura.
+Per tutte le altre organizzazioni o account, è necessario associare manualmente l'abbonamento ripetendo questi passaggi.
 
 *** Selezionare *Salva*.
 +
@@ -386,7 +386,7 @@ Modificare le credenziali Azure in BlueXP modificando i dettagli relativi alle c
 
 .Fasi
 . Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
-. Nella pagina *credenziali account*, selezionare il menu delle azioni per un set di credenziali, quindi selezionare *Modifica credenziali*.
+. Nella pagina *credenziali organizzazione* o *credenziali account*, selezionare il menu azione per un set di credenziali, quindi selezionare *Modifica credenziali*.
 . Apportare le modifiche richieste, quindi selezionare *Applica*.
 
 
@@ -398,6 +398,6 @@ Se non hai più bisogno di una serie di credenziali, puoi eliminarle da BlueXP. 
 
 .Fasi
 . Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
-. Nella pagina *credenziali account*, selezionare il menu delle azioni per un set di credenziali, quindi selezionare *Elimina credenziali*.
+. Nella pagina *credenziali organizzazione* o *credenziali account*, selezionare il menu azione per un set di credenziali, quindi selezionare *Elimina credenziali*.
 . Selezionare *Delete* per confermare.
 

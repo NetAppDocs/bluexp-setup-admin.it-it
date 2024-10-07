@@ -30,7 +30,7 @@ Questa fase invia la richiesta di trasferimento a NetApp.
 
 .. Nella finestra di dialogo a comparsa, selezionare *Registra con NetApp, Inc.*
 +
-Questa fase deve essere completata per collegare l'abbonamento a Google Cloud al tuo account BlueXP. Il processo di collegamento di un abbonamento non viene completato fino a quando non si viene reindirizzati da questa pagina e si accede a BlueXP.
+Questo passaggio deve essere completato per collegare l'abbonamento a Google Cloud con l'organizzazione o l'account BlueXP . Il processo di collegamento di un abbonamento non viene completato fino a quando non si viene reindirizzati da questa pagina e si accede a BlueXP.
 
 +
 image:screenshot_gcp_marketplace_register.png["Schermata di una finestra a comparsa di registrazione."]
@@ -41,13 +41,13 @@ image:screenshot_gcp_marketplace_register.png["Schermata di una finestra a compa
 NOTE: Se qualcuno della tua organizzazione ha già sottoscritto l'abbonamento a NetApp BlueXP dal tuo account di fatturazione, verrai reindirizzato a. https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["La pagina Cloud Volumes ONTAP sul sito Web di BlueXP"^] invece. In caso di imprevisti, contatta il tuo team di vendita NetApp. Google abilita un solo abbonamento per account di fatturazione Google.
 
 +
-*** Seleziona gli account BlueXP a cui desideri associare questo abbonamento.
-*** Nel campo *Sostituisci abbonamento esistente*, scegli se desideri sostituire automaticamente l'abbonamento esistente per un account con questo nuovo abbonamento.
+*** Seleziona le organizzazioni o gli account BlueXP  a cui desideri associare questo abbonamento.
+*** Nel campo *Sostituisci abbonamento esistente*, scegliere se sostituire automaticamente l'abbonamento esistente per un'organizzazione o un account con questo nuovo abbonamento.
 +
-BlueXP sostituisce l'abbonamento esistente per tutte le credenziali dell'account con questo nuovo abbonamento. Se un insieme di credenziali non è mai stato associato a un abbonamento, questo nuovo abbonamento non sarà associato a tali credenziali.
+BlueXP  sostituisce l'abbonamento esistente per tutte le credenziali dell'organizzazione o dell'account con questo nuovo abbonamento. Se un insieme di credenziali non è mai stato associato a un abbonamento, questo nuovo abbonamento non sarà associato a tali credenziali.
 
 +
-Per tutti gli altri account, è necessario associare manualmente l'abbonamento ripetendo questa procedura.
+Per tutte le altre organizzazioni o account, è necessario associare manualmente l'abbonamento ripetendo questi passaggi.
 
 *** Selezionare *Salva*.
 +

@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: task-iam-associate-connectors.html 
+keywords: connector, associate connector, folder, project, associate folder with connector, associate project with connector, associate connector with project, associate connector with resource 
+summary: 'Se i membri dell"organizzazione devono utilizzare un connettore in un altro progetto, è necessario creare un"associazione da BlueXP  IAM.' 
+---
+= Associare un connettore BlueXP  ad altre cartelle e progetti
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È necessario un connettore per gestire diversi tipi di ambienti di lavoro di BlueXP . Quando un _amministratore di organizzazione_ crea un connettore, BlueXP  associa automaticamente tale connettore all'organizzazione e al progetto attualmente selezionato. L'amministratore _dell'organizzazione_ ha automaticamente accesso a quel connettore da qualsiasi punto dell'organizzazione. Gli altri membri dell'organizzazione possono accedere a tale connettore solo dal progetto in cui è stato creato, a meno che non si associ tale connettore ad altri progetti dalla gestione delle identità e degli accessi (IAM) di BlueXP .
+
+.Prima di iniziare
+È necessario comprendere il funzionamento dell'associazione dei connettori. link:concept-identity-and-access-management.html#associate-connectors["Informazioni sull'uso dei connettori con BlueXP  IAM"].
+
+.A proposito di questa attività
+* Quando una _cartella o un project admin_ visualizza la pagina *connettori*, la pagina visualizza tutti i connettori nell'organizzazione. Tuttavia, un membro con questo ruolo può solo visualizzare e associare i connettori alle cartelle e ai progetti per i quali dispongono delle autorizzazioni. link:reference-iam-predefined-roles.html["Ulteriori informazioni sulle azioni che possono essere completate da _una cartella o da un amministratore di progetto_"].
+* A causa di un problema noto, la pagina connettori in BlueXP  IAM visualizza tutti i vecchi connettori rimossi in precedenza da BlueXP .
+
+
+.Fasi
+. Nella parte superiore destra della console di BlueXP , selezionare image:icon-settings-option.png["L'icona delle impostazioni che viene visualizzata nella parte superiore destra della console Web di BlueXP ."] > *Gestione identità e accessi*.
+. Selezionare *connettori*.
+. Dalla tabella, individuare il connettore che si desidera associare.
++
+Per trovare un connettore specifico, è possibile utilizzare la ricerca sopra la tabella e filtrare il contenuto della tabella selezionando una parte specifica della gerarchia delle risorse.
+
+. Per visualizzare prima le cartelle e i progetti a cui è associato il connettore, selezionare image:icon-action.png["Un'icona con tre punti affiancati"] e quindi *Visualizza dettagli*.
++
+BlueXP  visualizza i dettagli relativi alle cartelle e ai progetti a cui è associato il connettore.
+
+. Selezionare *Associa a cartella o progetto*.
+. Selezionare una cartella o un progetto, quindi selezionare *Accetta*.
+. Per associare il connettore a una cartella o un progetto aggiuntivo, selezionare *Aggiungi una cartella o un progetto* e quindi selezionare la cartella o il progetto.
+. Selezionare *Associa connettore*.
+
+
+.Risultato
+BlueXP  associa il connettore alle cartelle e ai progetti selezionati. I membri che dispongono delle autorizzazioni per tali cartelle e progetti possono ora selezionare il connettore.
+
+.Al termine
+Se si desidera associare le risorse gestite dal connettore alle stesse cartelle e progetti, è possibile farlo dalla pagina risorse.
+
+link:task-iam-manage-resources.html#associate-resource["Informazioni su come associare una risorsa a cartelle e progetti"].
+
+.Informazioni correlate
+* link:concept-connectors.html["Ulteriori informazioni sui connettori BlueXP "]
+* link:concept-identity-and-access-management.html["Informazioni sulla gestione delle identità e degli accessi di BlueXP "]
+* link:task-iam-get-started.html["Introduzione a BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Ulteriori informazioni sull'API per BlueXP  IAM"^]
+

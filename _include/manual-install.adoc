@@ -103,7 +103,7 @@ https://_ipaddress_[]
 
 . Dopo aver effettuato l'accesso, configurare il connettore:
 +
-.. Specificare l'account BlueXP da associare al connettore.
+.. Specificare l'organizzazione BlueXP  da associare al connettore.
 .. Immettere un nome per il sistema.
 .. In *stai eseguendo in un ambiente protetto?* Mantieni disattivata la modalità limitata.
 +
@@ -115,4 +115,4 @@ La modalità limitata deve essere disattivata perché questa procedura descrive 
 
 
 .Risultato
-Il connettore è ora installato e configurato con l'account BlueXP.
+Il connettore è ora installato e configurato con l'organizzazione BlueXP .

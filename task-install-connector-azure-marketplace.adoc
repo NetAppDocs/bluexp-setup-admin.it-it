@@ -110,7 +110,7 @@ Per aggiornare il connettore e i relativi componenti Docker.
 --
 
 
-Server proxy:: Se l'organizzazione richiede la distribuzione di un server proxy per tutto il traffico Internet in uscita, ottenere le seguenti informazioni sul proxy HTTP o HTTPS. Queste informazioni devono essere fornite durante l'installazione. BlueXP non supporta i server proxy trasparenti.
+Server proxy:: Se l'azienda richiede la distribuzione di un server proxy per tutto il traffico Internet in uscita, ottenere le seguenti informazioni sul proxy HTTP o HTTPS. Queste informazioni devono essere fornite durante l'installazione. BlueXP non supporta i server proxy trasparenti.
 +
 --
 * Indirizzo IP
@@ -433,7 +433,7 @@ https://_ipaddress_[]
 
 . Dopo aver effettuato l'accesso, configurare il connettore:
 +
-.. Specificare l'account BlueXP da associare al connettore.
+.. Specificare l'organizzazione BlueXP  da associare al connettore.
 .. Immettere un nome per il sistema.
 .. In *stai eseguendo in un ambiente protetto?* Mantieni disattivata la modalità limitata.
 +
@@ -445,7 +445,7 @@ La modalità limitata deve essere disattivata perché questa procedura descrive 
 
 
 .Risultato
-Il connettore è ora installato e configurato con l'account BlueXP.
+Il connettore è ora installato e configurato con l'organizzazione BlueXP .
 
 Se disponi di storage Azure Blob nella stessa iscrizione di Azure in cui hai creato il connettore, visualizzerai automaticamente un ambiente di lavoro dello storage di Azure Blob su BlueXP Canvas. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Scopri come gestire lo storage BLOB di Azure da BlueXP"^]
 
@@ -499,7 +499,7 @@ Accedere alla https://console.bluexp.netapp.com["Console BlueXP"^] Per iniziare 
 .Fasi
 . Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
 +
-image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
+image:screenshot-settings-icon-organization.png["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
 
 . Selezionare *Aggiungi credenziali* e seguire la procedura guidata.
 +

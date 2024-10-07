@@ -1,0 +1,144 @@
+---
+sidebar: sidebar 
+permalink: task-iam-manage-resources.html 
+keywords: resource, hierarchy, association, access, resource permissions, resource hierarchy, iam, identity and access management 
+summary: 'Gestire la gerarchia delle risorse dell"organizzazione associando le risorse a progetti e cartelle specifici.' 
+---
+= Gestire la gerarchia delle risorse nell'organizzazione BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Quando si utilizza BlueXP  Identity and Access Management (IAM) per associare un membro all'organizzazione, si forniscono le autorizzazioni a livello di organizzazione, cartella o progetto. Per garantire che tali membri dispongano delle autorizzazioni per accedere alle risorse appropriate, è necessario gestire la gerarchia delle risorse dell'organizzazione associando le risorse a progetti e cartelle specifici. Un _resource_ è un ambiente di lavoro che BlueXP  gestisce già.
+
+
+
+== Visualizzare le risorse dell'organizzazione
+
+Per iniziare a gestire la gerarchia delle risorse, è necessario conoscere le risorse associate all'organizzazione.
+
+.Fasi
+. Nella parte superiore destra della console di BlueXP , selezionare image:icon-settings-option.png["L'icona delle impostazioni che viene visualizzata nella parte superiore destra della console Web di BlueXP ."] > *Gestione identità e accessi*.
+. Selezionare *risorse*.
+
+
+.Risultato
+Le risorse associate all'organizzazione vengono visualizzate nella tabella *risorse*.
+
+.Quali sono le prossime novità?
+Per trovare una risorsa specifica, è possibile <<find-resources,consente di cercare e filtrare il contenuto della tabella>>.
+
+Una volta trovata la risorsa desiderata, è possibile eseguire una delle seguenti operazioni:
+
+* <<view-folders-and-projects,Visualizzare le cartelle e i progetti associati alla risorsa>>
+* <<associate-resource,Associare la risorsa a cartelle e progetti aggiuntivi>>
+* <<remove-resource,Rimuovere la risorsa da una cartella o da un progetto>>
+
+
+
+
+== Trova risorse specifiche nella tua organizzazione
+
+Se l'organizzazione dispone di un numero elevato di risorse, è possibile utilizzare le opzioni di ricerca e filtro per trovare una risorsa specifica.
+
+.Fasi
+. Dalla pagina *risorse*, selezionare *Ricerca avanzata e filtraggio*.
+. Utilizzare una delle opzioni disponibili per trovare la risorsa desiderata:
++
+** *Cerca per nome risorsa*: Immettere una stringa di testo e selezionare *Aggiungi*.
+** *Piattaforma*: Selezionare una o più piattaforme, ad esempio Amazon Web Services.
+** *Risorse*: Selezionare una o più risorse, ad esempio Cloud Volumes ONTAP.
+** *Organizzazione, cartella o progetto*: Selezionare l'intera organizzazione, una cartella specifica o un progetto specifico.
+
+
+. Selezionare *Cerca*.
+
+
+.Risultato
+Il contenuto della tabella risorse viene aggiornato per visualizzare le risorse corrispondenti alle selezioni di ricerca e filtro.
+
+
+
+== Associare una risorsa a cartelle e progetti
+
+Se si desidera rendere disponibile una risorsa a un'altra cartella o progetto nell'organizzazione, è necessario creare un'associazione tra la cartella o il progetto e la risorsa.
+
+.Prima di iniziare
+È necessario comprendere il funzionamento dell'associazione delle risorse. link:concept-identity-and-access-management.html#resources["Informazioni sulle risorse, incluso quando associare una risorsa a una cartella"].
+
+.Fasi
+. Dalla pagina *risorse*, individuare una risorsa nella tabella, selezionare image:icon-action.png["Un'icona con tre punti affiancati"] e quindi selezionare *Associa a cartelle o progetti*.
+. Selezionare una cartella o un progetto, quindi selezionare *Accetta*.
+. Per associare una cartella o un progetto aggiuntivo, selezionare *Aggiungi cartella o progetto*, quindi selezionare la cartella o il progetto.
++
+Nota: È possibile selezionare solo le cartelle e i progetti per i quali si dispone delle autorizzazioni di amministratore.
+
+. Selezionare *Associa risorse*.
+
+
+.Risultato
+BlueXP  associa la risorsa alle cartelle e ai progetti selezionati.
+
+* Se la risorsa è stata associata a progetti, i membri che dispongono delle autorizzazioni per tali progetti ora possono accedere alla risorsa in BlueXP .
+* Se la risorsa è stata associata a una cartella, un _amministratore cartella o progetto_ può ora accedere alla risorsa dall'interno di BlueXP  IAM. link:concept-identity-and-access-management.html#resources["Informazioni sull'associazione di una risorsa a una cartella"].
+
+
+.Al termine
+Se la risorsa associata viene rilevata utilizzando un connettore BlueXP  e sono presenti altri membri nell'organizzazione, è necessario associare il connettore al progetto a cui è ora associata la risorsa. In caso contrario, il connettore e la relativa risorsa associata non sono accessibili da BlueXP  Canvas da membri che non hanno il ruolo di _amministratore dell'organizzazione_.
+
+link:task-iam-associate-connectors.html["Scopri come associare un connettore a una cartella o a un progetto"].
+
+
+
+== Visualizzare le cartelle e i progetti associati a una risorsa
+
+Per identificare la posizione in cui una risorsa è disponibile nella gerarchia dell'organizzazione, è possibile visualizzare le cartelle e i progetti associati a tale risorsa.
+
+.Fasi
+. Dalla pagina *risorse*, individuare una risorsa nella tabella, selezionare image:icon-action.png["Un'icona con tre punti affiancati"] e quindi *Visualizza dettagli*.
+
+
+.Risultato
+BlueXP  visualizza le cartelle e i progetti associati alla risorsa.
+
+Nell'esempio seguente viene illustrata una risorsa associata a un progetto.
+
+image:screenshot-iam-resource-details.png["Schermata della pagina dei dettagli delle risorse che mostra una risorsa associata a un progetto direttamente sotto l'organizzazione."]
+
+.Quali sono le prossime novità?
+* È possibile <<associate-resource,associare la risorsa a un progetto o a una cartella aggiuntivi>>.
+* È possibile <<remove-resource,rimuovere la risorsa da una cartella o un progetto specifico>>.
+* Se è necessario determinare quali membri dell'organizzazione hanno accesso alla risorsa, è possibile link:task-iam-manage-folders-projects.html#view-associated-resources-members["visualizzare i membri che hanno accesso alle cartelle e ai progetti associati alla risorsa"].
+
+
+
+
+== Rimuovere una risorsa da una cartella o da un progetto
+
+Per rimuovere una risorsa da una cartella o da un progetto, è necessario rimuovere l'associazione tra la cartella o il progetto e la risorsa. Dopo aver rimosso l'associazione, i membri dell'organizzazione non possono più gestire la risorsa dalla cartella o dal progetto.
+
+.A proposito di questa attività
+Se si desidera rimuovere una risorsa scoperta dall'intera organizzazione, è necessario rimuovere l'ambiente di lavoro da BlueXP  Canvas.
+
+.Fasi
+. Dalla pagina *risorse*, individuare una risorsa nella tabella, selezionare image:icon-action.png["Un'icona con tre punti affiancati"] e quindi *Visualizza dettagli*.
+. Per la cartella o il progetto per cui si desidera rimuovere la risorsa, selezionare image:icon-delete.png["Un'icona di un immondizia CAN"]
+. Confermare che si desidera rimuovere l'associazione selezionando *Elimina*.
+
+
+.Risultato
+BlueXP  rimuove l'associazione. I membri non possono più accedere alla risorsa da quella cartella o progetto.
+
+
+
+== Informazioni correlate
+
+* link:concept-identity-and-access-management.html["Informazioni sulla gestione delle identità e degli accessi di BlueXP "]
+* link:task-iam-get-started.html["Introduzione a BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Ulteriori informazioni sull'API per BlueXP  IAM"^]
+

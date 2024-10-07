@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-monitor-cm-operations.html 
-keywords: administer, monitor, account, timeline, notifications, alerts, events, notification center, email 
-summary: 'È possibile monitorare lo stato delle operazioni eseguite da BlueXP per verificare l"eventuale presenza di problemi da risolvere. È possibile visualizzare lo stato nel Centro notifiche, nella Timeline o inviare notifiche all"e-mail.' 
+keywords: administer, monitor, timeline, notifications, alerts, events, notification center, email 
+summary: 'È possibile monitorare lo stato delle operazioni eseguite da BlueXP per verificare l"eventuale presenza di problemi da risolvere. È possibile visualizzare lo stato nella timeline, nel Centro notifiche o inviare le notifiche al messaggio di posta elettronica.' 
 ---
-= Monitorare le operazioni nell'account
+= Monitorare le operazioni BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: 'È possibile monitorare lo stato delle operazioni eseguite da BlueXP p
 
 
 [role="lead"]
-È possibile monitorare lo stato delle operazioni eseguite da BlueXP per verificare l'eventuale presenza di problemi da risolvere. È possibile visualizzare lo stato nel Centro notifiche, nella Timeline o inviare notifiche all'e-mail.
+È possibile monitorare lo stato delle operazioni eseguite da BlueXP per verificare l'eventuale presenza di problemi da risolvere. È possibile visualizzare lo stato nella timeline, nel Centro notifiche o inviare le notifiche al messaggio di posta elettronica.
 
-La seguente tabella fornisce un confronto tra il Centro notifiche e la cronologia, in modo da poter capire cosa offre ciascuno di essi.
+La tabella seguente fornisce un confronto tra la cronologia e il Centro notifiche, in modo da poter comprendere ciò che ciascuno ha da offrire.
 
 [cols="47,47"]
 |===
@@ -38,8 +38,27 @@ La seguente tabella fornisce un confronto tra il Centro notifiche e la cronologi
 | Filtra i risultati in base all'importanza | Filtra per servizio, azione, utente, stato e altro ancora 
 
 
-| Consente di inviare notifiche via email agli utenti account e ad altri utenti | Nessuna funzionalità di posta elettronica 
+| Offre la possibilità di inviare notifiche via e-mail agli utenti e ad altri utenti | Nessuna funzionalità di posta elettronica 
 |===
+
+
+== Controlla l'attività dell'utente dalla timeline BlueXP 
+
+La timeline di BlueXP  mostra le azioni completate dagli utenti per gestire l'organizzazione o l'account. Ciò include azioni di gestione come l'associazione di utenti, la creazione di ambienti di lavoro, la creazione di connettori e altro ancora.
+
+Controllare la cronologia può essere utile se è necessario identificare chi ha eseguito un'azione specifica o se è necessario identificare lo stato di un'azione.
+
+.Fasi
+. Nella parte superiore destra della console di BlueXP , selezionare image:icon-settings-option.png["L'icona delle impostazioni che viene visualizzata nella parte superiore destra della console Web di BlueXP ."] > *Timeline*.
+. Utilizzare i filtri sopra la tabella per modificare le azioni da visualizzare nella tabella.
++
+Ad esempio, è possibile utilizzare il filtro *Servizio* per visualizzare le azioni relative a un servizio BlueXP  specifico oppure utilizzare il filtro *utente* per visualizzare le azioni relative a un account utente specifico.
+
+
+
+.Risultato
+La timeline si aggiorna per mostrare le azioni di gestione completate.
+
 
 
 == Monitorare le attività utilizzando il Centro notifiche
@@ -50,7 +69,15 @@ Le notifiche tengono traccia dell'avanzamento delle operazioni avviate in BlueXP
 
 image:screenshot_notification_full.png["Una schermata che mostra l'elenco delle notifiche correnti nel Centro notifiche."]
 
-È inoltre possibile configurare BlueXP in modo che invii determinati tipi di notifiche via email, in modo da essere informato di importanti attività del sistema anche quando non si è connessi al sistema. I messaggi di posta elettronica possono essere inviati a tutti gli utenti che fanno parte del tuo account BlueXP o a qualsiasi altro destinatario che deve essere a conoscenza di determinati tipi di attività del sistema. Scopri come <<Consente di impostare le notifiche e-mail,consente di impostare le notifiche e-mail>>.
+È inoltre possibile configurare BlueXP in modo che invii determinati tipi di notifiche via email, in modo da essere informato di importanti attività del sistema anche quando non si è connessi al sistema. I messaggi e-mail possono essere inviati a tutti gli utenti che fanno parte dell'organizzazione o dell'account BlueXP  dell'utente o a qualsiasi altro destinatario che deve essere a conoscenza di determinati tipi di attività di sistema. Vedere come fare per <<Consente di impostare le notifiche e-mail,consente di impostare le notifiche e-mail>>.
+
+
+
+=== Confronto tra il Centro notifiche e gli avvisi BlueXP 
+
+Il Centro notifiche consente di visualizzare lo stato delle operazioni avviate da BlueXP  e di impostare le notifiche di avviso per determinati tipi di attività del sistema. Mentre gli avvisi BlueXP  ti permettono di visualizzare problemi o rischi potenziali nell'ambiente di storage ONTAP correlati a capacità, disponibilità, performance, protezione e sicurezza.
+
+https://docs.netapp.com/us-en/bluexp-alerts/index.html["Ulteriori informazioni sugli avvisi BlueXP "^]
 
 
 
@@ -106,7 +133,7 @@ image:screenshot_notification_dismiss1.png["Una schermata che mostra come chiude
 
 === Consente di impostare le notifiche e-mail
 
-È possibile inviare tramite e-mail tipi specifici di notifiche in modo da essere informati di importanti attività del sistema anche quando non si è connessi a BlueXP. I messaggi di posta elettronica possono essere inviati a tutti gli utenti che fanno parte del tuo account BlueXP o a qualsiasi altro destinatario che deve essere a conoscenza di determinati tipi di attività del sistema.
+È possibile inviare tramite e-mail tipi specifici di notifiche in modo da essere informati di importanti attività del sistema anche quando non si è connessi a BlueXP. I messaggi e-mail possono essere inviati a tutti gli utenti che fanno parte dell'organizzazione o dell'account BlueXP  dell'utente o a qualsiasi altro destinatario che deve essere a conoscenza di determinati tipi di attività di sistema.
 
 [NOTE]
 ====
@@ -115,18 +142,18 @@ image:screenshot_notification_dismiss1.png["Una schermata che mostra come chiude
 
 
 ====
-I filtri impostati nel Centro notifiche non determinano i tipi di notifiche che verranno inviate tramite e-mail. Per impostazione predefinita, gli account Admins di BlueXP riceveranno e-mail per tutte le notifiche "critiche" e "consigliate". Queste notifiche si applicano a tutti i servizi: Non è possibile scegliere di ricevere notifiche solo per alcuni servizi, ad esempio Connectors o BlueXP backup e recovery.
+I filtri impostati nel Centro notifiche non determinano i tipi di notifiche che verranno inviate tramite e-mail. Per impostazione predefinita, qualsiasi amministratore BlueXP  riceverà e-mail per tutte le notifiche "critiche" e "raccomandazioni". Queste notifiche si applicano a tutti i servizi: Non è possibile scegliere di ricevere notifiche solo per alcuni servizi, ad esempio Connectors o BlueXP backup e recovery.
 
 Tutti gli altri utenti e destinatari sono configurati per non ricevere alcuna email di notifica, pertanto dovrai configurare le impostazioni di notifica per eventuali utenti aggiuntivi.
 
-Per personalizzare le impostazioni delle notifiche, è necessario essere un amministratore dell'account.
+Per personalizzare le impostazioni delle notifiche, è necessario essere un amministratore di BlueXP .
 
 .Fasi
 . Dalla barra dei menu di BlueXP, selezionare *Impostazioni > Impostazioni avvisi e notifiche*.
 +
 image:screenshot-settings-notifications.png["Una schermata che mostra come visualizzare la pagina Impostazioni avvisi e notifiche."]
 
-. Selezionare uno o più utenti dalla scheda _account Users_ o dalla scheda _Additional Recipients_ e scegliere il tipo di notifica da inviare:
+. Selezionare uno o più utenti dalla scheda _utenti_ o dalla scheda _destinatari aggiuntivi_ e scegliere il tipo di notifiche da inviare:
 +
 ** Per apportare modifiche a un singolo utente, selezionare il menu nella colonna Notifiche dell'utente, selezionare i tipi di notifica da inviare e selezionare *Applica*.
 ** Per apportare modifiche a più utenti, selezionare la casella corrispondente a ciascun utente, selezionare *Gestisci notifiche e-mail*, selezionare i tipi di notifiche da inviare e selezionare *Applica*.
@@ -141,7 +168,7 @@ image:screenshot-change-notifications.png["Una schermata che mostra come modific
 
 === Aggiungere altri destinatari di posta elettronica
 
-Gli utenti visualizzati nella scheda _account Users_ vengono popolati automaticamente dagli utenti dell'account BlueXP (dal link:task-managing-netapp-accounts.html#create-and-manage-users["Pagina Manage account (Gestisci account)"]). È possibile aggiungere indirizzi e-mail nella scheda _destinatari aggiuntivi_ per altre persone o gruppi che non hanno accesso a BlueXP, ma che devono essere avvisati di determinati tipi di avvisi e notifiche.
+Gli utenti visualizzati nella scheda _utenti_ vengono compilati automaticamente dagli utenti dell'organizzazione o dell'account BlueXP . È possibile aggiungere indirizzi e-mail nella scheda _destinatari aggiuntivi_ per altre persone o gruppi che non hanno accesso a BlueXP, ma che devono essere avvisati di determinati tipi di avvisi e notifiche.
 
 .Fasi
 . Dalla pagina Impostazioni avvisi e notifiche, selezionare *Aggiungi nuovi destinatari*.
@@ -150,19 +177,3 @@ image:screenshot-add-email-recipient.png["Una schermata che mostra come aggiunge
 
 . Immettere il nome, l'indirizzo e-mail e selezionare i tipi di notifica che il destinatario riceverà, quindi selezionare *Aggiungi nuovo destinatario*.
 
-
-
-
-== Controllare l'attività dell'utente nell'account
-
-La cronologia di BlueXP mostra le azioni che gli utenti hanno completato per gestire l'account. Ciò include azioni di gestione come l'associazione di utenti, la creazione di aree di lavoro, la creazione di connettori e altro ancora.
-
-Controllare la cronologia può essere utile se è necessario identificare chi ha eseguito un'azione specifica o se è necessario identificare lo stato di un'azione.
-
-.Fasi
-. Dalla barra dei menu di BlueXP, selezionare *Impostazioni > Timeline*.
-. Nella sezione filtri, selezionare *Servizio*, attivare *locazione* e selezionare *Applica*.
-
-
-.Risultato
-La cronologia viene aggiornata per mostrare le azioni di gestione dell'account.

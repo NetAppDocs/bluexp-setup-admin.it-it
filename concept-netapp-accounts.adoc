@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-netapp-accounts.html 
-keywords: accounts, workspaces, Connector, users, BlueXP website, admin, Account Admin, Workspace Admin, account settings, workspaces, users, members, connector, service connector, user accounts, what are users, what is a workspace, users and workspaces, bluexp account, netapp account 
-summary: 'Un account BlueXP offre la multi-tenancy per la tua organizzazione, consentendo di organizzare utenti e risorse in aree di lavoro isolate. Ad esempio, un gruppo di utenti può distribuire e gestire ambienti di lavoro Cloud Volumes ONTAP in un"area di lavoro non visibile agli utenti che gestiscono ambienti di lavoro in un"altra area di lavoro.' 
+keywords: accounts, workspaces, users, admin, Account Admin, Workspace Admin, account settings, workspaces, users, members, connector, service connector, user accounts, what are users, what is a workspace, users and workspaces, bluexp account, netapp account 
+summary: Un account BlueXP  consente di gestire gli utenti e organizzare le risorse in aree di lavoro isolate quando si utilizza la modalità limitata o privata. 
 ---
 = Scopri di più sugli account BlueXP
 :hardbreaks:
@@ -14,7 +14,17 @@ summary: 'Un account BlueXP offre la multi-tenancy per la tua organizzazione, co
 
 
 [role="lead"]
-Un _account BlueXP_ fornisce la multi-tenancy per la tua organizzazione, consentendo di organizzare utenti e risorse in _aree di lavoro_ isolate. Ad esempio, un gruppo di utenti può distribuire e gestire ambienti di lavoro Cloud Volumes ONTAP in un'area di lavoro non visibile agli utenti che gestiscono ambienti di lavoro in un'altra area di lavoro.
+Quando si utilizza BlueXP  in modalità limitata o privata, si utilizzerà un account _BlueXP _ per gestire gli utenti e organizzare le risorse in _aree di lavoro_ isolate. Ad esempio, un gruppo di utenti può distribuire e gestire ambienti di lavoro Cloud Volumes ONTAP in un'area di lavoro non visibile agli utenti che gestiscono ambienti di lavoro in un'altra area di lavoro.
+
+Se utilizzi BlueXP  in modalità standard, non avrai un account BlueXP . Avrete invece un'organizzazione _BlueXP _ gestita utilizzando la gestione delle identità e degli accessi (IAM) di BlueXP .
+
+* link:concept-identity-and-access-management.html["Ulteriori informazioni su BlueXP  IAM"]
+* link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"]
+
+
+
+
+== Panoramica
 
 Quando accedi per la prima volta a BlueXP, ti viene richiesto di selezionare o creare un account. Ad esempio, se non si dispone ancora di un account, viene visualizzata la seguente schermata:
 
@@ -25,14 +35,6 @@ BlueXP account Admins può quindi modificare le impostazioni per questo account 
 image:screenshot-account-settings.png["Una schermata che mostra il widget Manage account (Gestisci account) da cui è possibile gestire utenti, aree di lavoro e connettori."]
 
 link:task-managing-netapp-accounts.html["Scopri come gestire il tuo account BlueXP"].
-
-
-
-== Modalità di implementazione
-
-BlueXP offre le seguenti modalità di implementazione per l'account: Modalità standard, modalità limitata e modalità privata. Queste modalità supportano ambienti con diversi livelli di sicurezza e limitazioni di connettività.
-
-link:concept-modes.html["Scopri di più sulle modalità di implementazione di BlueXP"].
 
 
 

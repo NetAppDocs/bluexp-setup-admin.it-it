@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-managing-netapp-accounts.html 
 keywords: account settings, workspaces, Connector, account admin, workspace admin, users, associate, disassociate, add user, add users, user management, administer, user, management, member, remove user, remove users, remove, delete, account, user account, user accounts, add workspace, setup workspace, workspace, Connector, manage Connector, manage workspace, associate Connector, service account 
-summary: 'Quando si crea un account BlueXP, questo include solo un singolo utente amministratore e un"area di lavoro. È possibile gestire l"account in base alle esigenze dell"organizzazione aggiungendo utenti, creando account di servizio per scopi di automazione, aggiungendo aree di lavoro e altro ancora.' 
+summary: Gestisci il tuo account BlueXP  aggiungendo utenti, creando account di servizio per scopi di automazione, aggiungendo aree di lavoro e molto altro. 
 ---
 = Gestisci il tuo account BlueXP
 :hardbreaks:
@@ -14,9 +14,13 @@ summary: 'Quando si crea un account BlueXP, questo include solo un singolo utent
 
 
 [role="lead"]
-Quando si crea un account BlueXP, questo include solo un singolo utente amministratore e un'area di lavoro. È possibile gestire l'account in base alle esigenze dell'organizzazione aggiungendo utenti, creando account di servizio per scopi di automazione, aggiungendo aree di lavoro e altro ancora.
+Quando utilizzi BlueXP  in modalità limitata o privata, utilizzerai un account _BlueXP _ per gestire gli utenti e organizzare le risorse. Quando si crea l'account, questo include solo un singolo utente amministratore e un'area di lavoro. È possibile gestire l'account in base alle proprie esigenze aggiungendo utenti, creando account di servizio a scopo di automazione, aggiungendo aree di lavoro e altro ancora.
 
-link:concept-netapp-accounts.html["Scopri come funzionano gli account BlueXP"].
+Se utilizzi BlueXP  in modalità standard, non avrai un account BlueXP . Avrete invece un'organizzazione _BlueXP _ gestita utilizzando la gestione delle identità e degli accessi (IAM) di BlueXP .
+
+* link:concept-identity-and-access-management.html["Ulteriori informazioni su BlueXP  IAM"]
+* link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"]
+
 
 
 

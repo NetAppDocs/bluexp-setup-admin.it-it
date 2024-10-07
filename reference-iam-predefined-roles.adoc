@@ -1,0 +1,112 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-predefined-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management 
+summary: 'La gestione delle identità e degli accessi di BlueXP  include diversi ruoli predefiniti che è possibile assegnare ai membri dell"organizzazione.' 
+---
+= Ruoli e autorizzazioni IAM BlueXP  predefiniti
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP  Identity and Access Management (IAM) include diversi ruoli predefiniti che è possibile assegnare ai membri dell'organizzazione in diversi livelli della gerarchia delle risorse. Prima di assegnare questi ruoli, è necessario comprendere le autorizzazioni incluse in ciascun ruolo.
+
+
+
+== Amministratore dell'organizzazione
+
+Descrizione:: Garantisce il controllo completo dell'intera organizzazione di BlueXP .
+Permessi:: Un membro che ha questo ruolo può completare tutte le azioni in BlueXP .
+
+
+
+
+== Amministratore cartella o progetto
+
+Descrizione:: Fornisce il controllo completo di uno o più progetti e cartelle.
++
+--
+Se si assegna questo ruolo a livello di cartella, il membro dispone delle autorizzazioni per tutti i progetti associati a tale cartella.
+
+--
+Permessi:: Un membro che ha questo ruolo può completare le seguenti azioni in BlueXP :
++
+--
+* Gestire tutti gli ambienti di lavoro nei progetti e nelle cartelle per i quali dispongono delle autorizzazioni
+* Utilizzare tutti i servizi BlueXP 
+* Da BlueXP  IAM, un amministratore di una cartella può amministrare le cartelle, i progetti e le risorse derivate da tale cartella:
++
+** Aggiungere cartelle o progetti all'interno della cartella
+** Modificare cartelle e progetti: I loro nomi, le risorse associate e l'accesso dei membri
+** Eliminare cartelle e progetti
+** Aggiungere un account utente e associare un ruolo a livello di cartella o progetto
+** Associare un connettore a una cartella o a un progetto
+** Aggiungere un ruolo a un membro a livello di cartella o progetto
+** Visualizzare le risorse associate a cartelle e progetti
+** Associare le risorse visualizzabili a cartelle o progetti aggiuntivi
+** Dissociare una risorsa da una cartella o da un progetto
+
+
+* Da BlueXP  IAM, un amministratore di un progetto può amministrare il progetto e le risorse associate nel modo seguente:
++
+** Modificare il progetto: Il suo nome, le risorse associate e l'accesso dei membri
+** Aggiungere un account utente e associare un ruolo a livello di progetto
+** Associare un connettore a un progetto, se il membro dispone delle autorizzazioni di amministratore per altri progetti che hanno altri connettori associati
+** Aggiungere un ruolo a un membro a livello di progetto
+** Visualizzare le risorse associate al progetto
+** Associare le risorse al progetto, se il membro dispone delle autorizzazioni di amministratore per altri progetti che dispongono di altre risorse associate
+** Dissociare una risorsa dal progetto
+** Eliminare il progetto
+
+
+* Gestire le credenziali da Impostazioni > credenziali
+* Visualizza la timeline di BlueXP 
+* Registrati BlueXP  per supportare e inviare i casi
+
+
+--
+
+
+
+
+== Amministratore SnapCenter
+
+Descrizione:: Consente di eseguire il backup delle snapshot da cluster ONTAP on-premise utilizzando il backup e recovery di BlueXP  per le applicazioni.
+Permessi:: Un membro che ha questo ruolo può completare le seguenti azioni in BlueXP :
++
+--
+* Completare qualsiasi azione da Backup e ripristino > applicazioni
+* Gestire tutti gli ambienti di lavoro nei progetti e nelle cartelle per i quali dispongono delle autorizzazioni
+* Utilizzare tutti i servizi BlueXP 
+
+
+--
+
+
+
+
+== Visualizzatore di classificazione
+
+Descrizione:: Consente di visualizzare i risultati delle scansioni di classificazione BlueXP .
+Permessi:: Visualizzare le informazioni sulla conformità e generare report per le risorse a cui hanno l'autorizzazione di accedere. Questi utenti non possono abilitare o disabilitare la scansione di volumi, bucket o schemi di database.
++
+--
+Non sono disponibili altre azioni per un membro che ha questo ruolo.
+
+--
+
+
+
+
+== Link correlati
+
+* link:concept-identity-and-access-management.html["Informazioni sulla gestione delle identità e degli accessi di BlueXP "]
+* link:task-iam-get-started.html["Introduzione a BlueXP  IAM"]
+* link:task-iam-manage-members-permissions.html["Gestire i membri BlueXP  e le relative autorizzazioni"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Ulteriori informazioni sull'API per BlueXP  IAM"^]
+

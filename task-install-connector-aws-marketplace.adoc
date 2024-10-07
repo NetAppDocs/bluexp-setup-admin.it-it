@@ -97,7 +97,7 @@ Per aggiornare il connettore e i relativi componenti Docker.
 --
 
 
-Server proxy:: Se l'organizzazione richiede la distribuzione di un server proxy per tutto il traffico Internet in uscita, ottenere le seguenti informazioni sul proxy HTTP o HTTPS. Queste informazioni devono essere fornite durante l'installazione. BlueXP non supporta i server proxy trasparenti.
+Server proxy:: Se l'azienda richiede la distribuzione di un server proxy per tutto il traffico Internet in uscita, ottenere le seguenti informazioni sul proxy HTTP o HTTPS. Queste informazioni devono essere fornite durante l'installazione. BlueXP non supporta i server proxy trasparenti.
 +
 --
 * Indirizzo IP
@@ -243,7 +243,7 @@ https://_ipaddress_[]
 
 . Dopo aver effettuato l'accesso, configurare il connettore:
 +
-.. Specificare l'account BlueXP da associare al connettore.
+.. Specificare l'organizzazione BlueXP  da associare al connettore.
 .. Immettere un nome per il sistema.
 .. In *stai eseguendo in un ambiente protetto?* Mantieni disattivata la modalità limitata.
 +
@@ -255,7 +255,7 @@ La modalità limitata deve essere disattivata perché questa procedura descrive 
 
 
 .Risultato
-Il connettore è ora installato e configurato con l'account BlueXP.
+Il connettore viene ora installato e configurato con l'organizzazione BlueXP .
 
 Aprire un browser Web e accedere a. https://console.bluexp.netapp.com["Console BlueXP"^] Per iniziare a utilizzare il connettore con BlueXP.
 

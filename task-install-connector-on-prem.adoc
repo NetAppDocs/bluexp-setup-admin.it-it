@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-install-connector-on-prem.html 
 keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install 
-summary: 'Installa un connettore in loco, quindi effettua l"accesso e impostalo per utilizzare il tuo account BlueXP .' 
+summary: 'Installa un connettore on-premise, quindi effettua l"accesso e configuralo per lavorare con la tua organizzazione BlueXP .' 
 ---
 = Installare e configurare un connettore in loco
 :hardbreaks:
@@ -28,26 +28,64 @@ Un connettore è il software NetApp eseguito nella tua rete cloud o sulla rete o
 Il software del connettore deve essere eseguito su un host che soddisfi i requisiti specifici del sistema operativo, della RAM, dei requisiti delle porte e così via. Assicurarsi che l'host soddisfi questi requisiti prima di installare il connettore.
 
 Host dedicato:: Il connettore non è supportato su un host condiviso con altre applicazioni. L'host deve essere un host dedicato.
-Sistemi operativi supportati::
-+
---
-* Ubuntu 22,04 LTS
-* Red Hat Enterprise Linux
-+
-** da 8,6 a 8,10
-** da 9,1 a 9,4
-+
-L'host deve essere registrato con Red Hat Subscription Management. Se non è registrato, l'host non può accedere ai repository per aggiornare il software di terze parti richiesto durante l'installazione del connettore.
-
-+
-Il connettore è supportato dalle versioni in lingua inglese di questi sistemi operativi.
-
-
-
-
-
---
 Hypervisor:: È necessario un hypervisor bare metal o in hosting certificato per l'esecuzione di un sistema operativo supportato.
+[[podman-versions]]requisiti del sistema operativo e del contenitore:: BlueXP  supporta il connettore con i seguenti sistemi operativi quando si utilizza BlueXP  in modalità standard o limitata. Prima di installare il connettore è necessario uno strumento di orchestrazione del container.
++
+--
+[cols="2a,2a,2a,2a,2a"]
+|===
+| Sistema operativo | Versioni di OS supportate | Versioni di connettori supportate | Attrezzo contenitore richiesto | SELinux 
+
+
+ a| 
+Red Hat Enterprise Linux
+ a| 
+da 9,1 a 9,4
+
+da 8,6 a 8,10
+ a| 
+3.9.40 o versione successiva con BlueXP  in modalità standard o limitata
+ a| 
+Podman versione 4.6.1 o 4.9.4
+
+<<podman-configuration,Visualizza i requisiti di configurazione di Podman>>.
+ a| 
+Supportato in modalità di applicazione o permissiva
+
+
+
+ a| 
+Ubuntu
+ a| 
+24,04 LTS
+ a| 
+3.9.45 o versione successiva con BlueXP  in modalità standard o limitata
+ a| 
+Docker Engine 26.0.0
+ a| 
+Non supportato
+
+
+
+ a| 
+22,04 LTS
+ a| 
+3.9.29 o versione successiva
+ a| 
+Docker Engine da 23.0.6 a 26.0.0
+
+26.0.0 è supportato con _nuovo_ connettore 3.9.44 o installazioni successive
+ a| 
+Non supportato
+
+|===
+Note:
+
+* Il connettore è supportato dalle versioni in lingua inglese di questi sistemi operativi.
+* Per RHEL, l'host deve essere registrato con Red Hat Subscription Management. Se non è registrato, l'host non può accedere ai repository per aggiornare il software di terze parti richiesto durante l'installazione del connettore.
+
+
+--
 CPU:: 8 core o 8 vCPU
 RAM:: 32 GB
 Spazio su disco in /opz:: 100 GiB di spazio deve essere disponibile
@@ -62,40 +100,6 @@ Spazio su disco in /var:: 20 GiB di spazio deve essere disponibile
 BlueXP richiede questo spazio in `/var` Perché Docker o Podman sono progettati per creare i container all'interno di questa directory. In particolare, creeranno contenitori in `/var/lib/containers/storage` directory. Montaggi esterni o collegamenti simbolici non funzionano per questo spazio.
 
 --
-Tool di orchestrazione del container:: A seconda del sistema operativo in uso, prima di installare il connettore è necessario utilizzare Podman o Docker Engine.
-+
---
-[[podman-versions]]
-* Podman è necessario per Red Hat Enterprise Linux.
-+
-Per Podman devono essere soddisfatti i seguenti prerequisiti:
-
-+
-** È richiesta la versione 4.6.1 o 4.9.4 di Podman
-** Il servizio podman.socket deve essere attivato e avviato
-** python3 deve essere installato
-** Il pacchetto podman-Compose versione 1.0.6 deve essere installato
-** Podman-compose deve essere aggiunto alla variabile di ambiente PATH
-
-
-* Docker Engine è richiesto per Ubuntu.
-+
-[cols="3*"]
-|===
-| Versione connettore | Versione minima di Docker Engine | Versione massima di Docker Engine 
-
-
-| _Nuova_ installazione del connettore a partire da 3.9.44 | 23.0.6 | 26.0.0 
-
-
-| Connettori creati prima della versione 3.9.44 | 23.0.6 | 25.0.5 
-|===
-+
-https://docs.docker.com/engine/install/["Consulta le istruzioni di installazione di Docker"^]
-
-
-
---
 
 
 
@@ -105,7 +109,13 @@ https://docs.docker.com/engine/install/["Consulta le istruzioni di installazione
 A seconda del sistema operativo in uso, prima di installare il connettore è necessario utilizzare Podman o Docker Engine.
 
 * Podman è necessario per Red Hat Enterprise Linux 8 e 9.
++
+<<podman-versions,Visualizza le versioni di Podman supportate da BlueXP >>.
+
 * Docker Engine è richiesto per Ubuntu.
++
+<<podman-versions,Consulta le versioni di Docker Engine supportate da BlueXP >>.
+
 
 
 .Fasi
@@ -113,7 +123,13 @@ A seconda del sistema operativo in uso, prima di installare il connettore è nec
 ====
 .Podman
 --
-Installa una versione supportata di Podman. <<podman-versions,Visualizza le versioni di Podman supportate da BlueXP >>.
+Per installare Podman e configurarlo in modo che soddisfi i seguenti requisiti, procedere come segue:
+
+* Il servizio podman.socket deve essere attivato e avviato
+* python3 deve essere installato
+* Il pacchetto podman-Compose versione 1.0.6 deve essere installato
+* Podman-compose deve essere aggiunto alla variabile di ambiente PATH
+
 
 .Fasi
 . Rimuovere il pacchetto podman-docker se è installato sull'host.
@@ -196,13 +212,10 @@ NOTE: Utilizzando il `dnf install` Il comando soddisfa il requisito per aggiunge
 --
 .Motore Docker
 --
-Installare una versione supportata di Docker Engine. <<podman-versions,Consulta le versioni di Docker Engine supportate da BlueXP >>.
+Segui la documentazione di Docker per installare Docker Engine.
 
 .Fasi
-. Installazione di Docker Engine.
-+
-https://docs.docker.com/engine/install/["Consulta le istruzioni di installazione di Docker"^]
-
+. https://docs.docker.com/engine/install/["Consulta le istruzioni di installazione di Docker"^]
 +
 Assicurati di seguire la procedura per installare una versione specifica di Docker Engine. L'installazione della versione più recente installerà una versione di Docker che BlueXP non supporta.
 
@@ -343,7 +356,7 @@ Per aggiornare il connettore e i relativi componenti Docker.
 --
 
 
-Server proxy:: Se l'organizzazione richiede la distribuzione di un server proxy per tutto il traffico Internet in uscita, ottenere le seguenti informazioni sul proxy HTTP o HTTPS. Queste informazioni devono essere fornite durante l'installazione. BlueXP non supporta i server proxy trasparenti.
+Server proxy:: Se l'azienda richiede la distribuzione di un server proxy per tutto il traffico Internet in uscita, ottenere le seguenti informazioni sul proxy HTTP o HTTPS. Queste informazioni devono essere fornite durante l'installazione. BlueXP non supporta i server proxy trasparenti.
 +
 --
 * Indirizzo IP
@@ -672,7 +685,7 @@ Il connettore è ora installato. Al termine dell'installazione, il servizio di c
 
 == Fase 6: Configurare il connettore
 
-Registrati o accedi e configura Connector per lavorare con l'account BlueXP.
+Registrati o accedi e configura il connettore per lavorare con la tua organizzazione BlueXP .
 
 .Fasi
 . Aprire un browser Web e immettere il seguente URL:
@@ -685,7 +698,7 @@ _Ipaddress_ può essere localhost, un indirizzo IP privato o un indirizzo IP pub
 . Iscriviti o accedi.
 . Dopo aver effettuato l'accesso, configurare BlueXP:
 +
-.. Specificare l'account BlueXP da associare al connettore.
+.. Specificare l'organizzazione BlueXP  da associare al connettore.
 .. Immettere un nome per il sistema.
 .. In *stai eseguendo in un ambiente protetto?* Mantieni disattivata la modalità limitata.
 +
@@ -715,7 +728,7 @@ Se queste credenziali sono state appena create in AWS, potrebbero essere necessa
 .Fasi
 . Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
 +
-image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
+image:screenshot-settings-icon-organization.png["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
 
 . Selezionare *Aggiungi credenziali* e seguire la procedura guidata.
 +
@@ -741,7 +754,7 @@ Se queste credenziali sono state appena create in Azure, potrebbero essere neces
 .Fasi
 . Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
 +
-image:screenshot_settings_icon.gif["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
+image:screenshot-settings-icon-organization.png["Una schermata che mostra l'icona Settings (Impostazioni) in alto a destra della console BlueXP."]
 
 . Selezionare *Aggiungi credenziali* e seguire la procedura guidata.
 +

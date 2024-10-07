@@ -1,0 +1,86 @@
+---
+sidebar: sidebar 
+permalink: task-iam-switch-organizations-projects.html 
+keywords: switch organizations, switch projects, projects, organizations, change, switch, change organizations, change projects, iam, identity and access management, switch connectors 
+summary: 'Passare da un"organizzazione all"altra, a un progetto o a un connettore per accedere alle risorse ad esso associate.' 
+---
+= Passa da un'organizzazione, un progetto e un connettore BlueXP  all'altra
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile appartenere a più organizzazioni BlueXP  o disporre delle autorizzazioni per accedere a più progetti o connettori all'interno di un'organizzazione BlueXP . Quando necessario, è possibile passare facilmente da un'organizzazione all'altra, da un progetto all'altro e da un connettore all'altro per accedere alle risorse associate a tale organizzazione, progetto o connettore.
+
+
+TIP: È possibile appartenere a più organizzazioni se si è invitati a partecipare a un'altra organizzazione o se si è creata personalmente un'organizzazione aggiuntiva. È possibile creare un'organizzazione aggiuntiva utilizzando l'API. https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/post-organizations.html["Scopri come creare una nuova organizzazione"^]
+
+
+
+== Passare da un'organizzazione all'altra
+
+Se si è membri di più organizzazioni, è possibile passare da una all'altra in qualsiasi momento.
+
+.Fasi
+. Nella parte superiore di BlueXP , selezionare *Organizzazione*.
++
+image:screenshot-iam-switch-organizations.png["Schermata del banner superiore di BlueXP  in cui è possibile selezionare l'elenco a discesa Organizzazione e selezionare un'altra organizzazione."]
+
+. Selezionare un'altra organizzazione, quindi selezionare *Cambia*.
+
+
+.Risultato
+BlueXP  passa all'organizzazione selezionata e visualizza le risorse associate a tale organizzazione.
+
+
+
+== Passare da un progetto all'altro
+
+Se l'organizzazione include più progetti e si dispone dell'accesso a tali progetti, è possibile passare da un progetto all'altro in qualsiasi momento.
+
+.Prima di iniziare
+È necessario trovarsi su qualsiasi pagina della console BlueXP  diversa dalle pagine IAM (Identity and Access Management) di BlueXP . Non è possibile passare a un altro progetto quando si visualizza una delle pagine IAM.
+
+.Fasi
+. Nella parte superiore di BlueXP , selezionare *progetto*.
++
+image:screenshot-iam-switch-projects.png["Schermata del banner superiore di BlueXP  in cui è possibile selezionare l'elenco a discesa Scope (ambito) e quindi selezionare un altro progetto."]
+
+. Sfogliare le cartelle e i progetti dell'organizzazione, selezionare il progetto desiderato, quindi selezionare *Cambia*.
++
+image:screenshot-iam-switch-projects-select.png["Schermata del menu Scope in cui è possibile selezionare un nuovo progetto."]
+
+
+
+.Risultato
+BlueXP  passa al progetto selezionato e visualizza le risorse associate a tale progetto.
+
+
+
+== Passare da un connettore all'altro
+
+Se si dispone di più connettori, è possibile passare da uno all'altro per visualizzare gli ambienti di lavoro associati a uno specifico connettore.
+
+.Fasi
+. Nella parte superiore di BlueXP , selezionare *connettore*.
+. Selezionare un altro connettore, quindi selezionare *Switch*.
+
+
+.Risultato
+BlueXP  aggiorna e mostra gli ambienti di lavoro associati al connettore selezionato.
+
+.Link correlato
+link:task-iam-associate-connectors.html["Associa i connettori a cartelle e progetti"].
+
+
+
+== Informazioni correlate
+
+* link:concept-identity-and-access-management.html["Informazioni sulla gestione delle identità e degli accessi di BlueXP "]
+* link:task-iam-get-started.html["Introduzione a BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Ulteriori informazioni sull'API per BlueXP  IAM"^]
+

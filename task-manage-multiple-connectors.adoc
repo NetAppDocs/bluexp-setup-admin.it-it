@@ -27,7 +27,7 @@ Ad esempio, supponiamo di lavorare in un ambiente multi-cloud. In AWS potrebbe e
 .Fase
 . Selezionare l'elenco a discesa *Connector*, selezionare un altro connettore, quindi *Switch*.
 +
-image:screenshot_connector_switch.gif["Una schermata che mostra l'icona del connettore nell'intestazione e l'azione Switch."]
+image:screenshot-connector-switch.png["Una schermata che mostra l'icona del connettore nell'intestazione e l'azione Switch."]
 
 
 

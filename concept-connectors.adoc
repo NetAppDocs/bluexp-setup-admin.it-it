@@ -118,6 +118,12 @@ Se si desidera utilizzare i servizi BlueXP con Google Cloud, è necessario utili
 
 
 
+== Comunicazioni con i cloud provider
+
+Il connettore utilizza TLS 1,2 per tutte le comunicazioni con AWS, Azure e Google Cloud.
+
+
+
 == Modalità limitata e modalità privata
 
 Per utilizzare BlueXP in modalità limitata o privata, è possibile iniziare a utilizzare BlueXP installando il connettore e accedendo all'interfaccia utente in esecuzione localmente sul connettore.
@@ -128,7 +134,7 @@ link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"].
 
 == Come creare un connettore
 
-Un account Admin BlueXP può creare un connettore direttamente da BlueXP, dal mercato del tuo cloud provider o installando manualmente il software sul tuo host Linux. Il modo in cui iniziare dipende dall'utilizzo di BlueXP in modalità standard, limitata o privata.
+Puoi creare un connettore direttamente da BlueXP , dal marketplace del tuo cloud provider o installando manualmente il software sul tuo host Linux. Il modo in cui iniziare dipende dall'utilizzo di BlueXP in modalità standard, limitata o privata.
 
 * link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"]
 * link:task-quick-start-standard-mode.html["Inizia subito con BlueXP in modalità standard"]
@@ -171,11 +177,11 @@ Per visualizzare le autorizzazioni esatte necessarie al connettore per le operaz
 
 == Aggiornamenti del connettore
 
-Di solito aggiorniamo il software del connettore ogni mese per introdurre nuove funzionalità e migliorare la stabilità. Sebbene la maggior parte dei servizi e delle funzionalità della piattaforma BlueXP sia offerta tramite software basato su SaaS, alcune funzionalità dipendono dalla versione del connettore. Che include la gestione Cloud Volumes ONTAP, la gestione del cluster ONTAP on-premise, le impostazioni e la guida.
+Di solito aggiorniamo il software del connettore ogni mese per introdurre nuove funzionalità e migliorare la stabilità. Mentre la maggior parte dei servizi e delle funzionalità della piattaforma BlueXP  sono offerti tramite software basato su SaaS, alcune funzionalità dipendono dalla versione del connettore. Che include la gestione Cloud Volumes ONTAP, la gestione del cluster ONTAP on-premise, le impostazioni e la guida.
 
 Quando si utilizza BlueXP in modalità standard o limitata, il connettore aggiorna automaticamente il proprio software all'ultima versione, a condizione che disponga di accesso a Internet outbound per ottenere l'aggiornamento software. Se si utilizza BlueXP in modalità privata, è necessario aggiornare manualmente il connettore.
 
-link:task-upgrade-connector.html["Scopri come aggiornare manualmente il software del connettore"].
+link:task-upgrade-connector.html["Informazioni su come aggiornare manualmente il software del connettore quando si utilizza la modalità privata"].
 
 
 
@@ -202,5 +208,5 @@ In alcuni casi, potrebbe essere necessario un solo connettore, ma potrebbero ess
 Ecco alcuni esempi:
 
 * Si dispone di un ambiente multi-cloud (ad esempio, AWS e Azure) e si preferisce avere un connettore in AWS e un altro in Azure. Ciascuno di essi gestisce i sistemi Cloud Volumes ONTAP in esecuzione in tali ambienti.
-* Un provider di servizi potrebbe utilizzare un account BlueXP per fornire servizi ai propri clienti, mentre utilizza un altro account per fornire il disaster recovery per una delle proprie business unit. Ciascun account dispone di connettori separati.
+* Un service provider potrebbe utilizzare un'organizzazione BlueXP  per fornire servizi ai propri clienti, utilizzando al tempo stesso un'altra organizzazione per fornire il disaster recovery a una delle proprie business unit. Ogni organizzazione avrebbe connettori separati.
 

@@ -4,7 +4,7 @@ permalink: concept-federation.html
 keywords: identity federation, federation, federated identity, set up identity federation, set up federated connection, federated connection 
 summary: Identity Federation consente il single sign-on con BlueXP, in modo che gli utenti possano accedere utilizzando le credenziali della propria identità aziendale. Per iniziare, scopri come funziona la federazione delle identità con BlueXP e consulta una panoramica del processo di installazione. 
 ---
-= Utilizzo della federazione delle identità con BlueXP
+= Abilitare il single sign-on utilizzando la federazione delle identità con BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

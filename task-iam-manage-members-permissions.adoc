@@ -1,0 +1,307 @@
+---
+sidebar: sidebar 
+permalink: task-iam-manage-members-permissions.html 
+keywords: user, service account, member, role, permissions, organization, project, folder, iam, identity and access management 
+summary: 'Gestire i membri dell"organizzazione per fornire autorizzazioni a diversi livelli della gerarchia delle risorse dell"organizzazione.' 
+---
+= Aggiungere membri BlueXP  IAM e gestire le relative autorizzazioni
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP  Identity and Access Management (IAM) consente di aggiungere membri all'organizzazione e assegnare loro uno o più ruoli all'interno della gerarchia delle risorse. Un _ruolo_ contiene un insieme di autorizzazioni che consente a un membro di eseguire azioni specifiche a un livello specifico della gerarchia delle risorse. È possibile associare nuovi account utente e account di servizio, gestire i ruoli dei membri e altro ancora.
+
+
+TIP: Per evitare di perdere l'accesso all'organizzazione BlueXP , è consigliabile avere due membri con il ruolo di amministratore dell'organizzazione.
+
+.A proposito di questa attività
+Quando una _cartella o un project admin_ visualizza la pagina *membri*, la pagina visualizza tutti i membri dell'organizzazione. Tuttavia, un membro con questo ruolo può solo visualizzare e gestire le autorizzazioni dei membri per le cartelle e i progetti per i quali dispone delle autorizzazioni. link:reference-iam-predefined-roles.html["Ulteriori informazioni sulle azioni che possono essere completate da _una cartella o da un amministratore di progetto_"].
+
+
+
+== Aggiungere membri alla propria organizzazione
+
+È possibile aggiungere due tipi di membri all'organizzazione: Un account utente e un account di servizio. Un account di servizio viene in genere utilizzato da un'applicazione per completare attività specifiche senza l'intervento umano.
+
+[role="tabbed-block"]
+====
+.Account utente
+--
+.Fasi
+. Se l'utente non lo ha già fatto, chiedere di andare al https://bluexp.netapp.com/["Sito Web di NetApp BlueXP"^] e registrarsi.
++
+Quando l'utente si iscrive, deve completare la pagina *Iscrizione*, verificare il proprio indirizzo e-mail, quindi effettuare l'accesso. Quando viene richiesto di creare un'organizzazione, l'utente deve chiudere BlueXP  e comunicare che ha creato il proprio account utente. È quindi possibile aggiungere l'utente all'organizzazione BlueXP  esistente.
+
++
+link:task-sign-up-saas.html["Scopri come iscriverti a BlueXP "].
+
+. Nella parte superiore destra della console di BlueXP , selezionare image:icon-settings-option.png["L'icona delle impostazioni che viene visualizzata nella parte superiore destra della console Web di BlueXP ."] > *Gestione identità e accessi*.
+. Selezionare *membri*.
+. Selezionare *Aggiungi un membro*.
+. Per aggiungere il membro, completare i passaggi nella finestra di dialogo:
++
+** *Tipo di entità*: Tenere selezionato *utente*.
+** *E-mail dell'utente*: Immettere l'indirizzo e-mail dell'utente associato all'accesso BlueXP  creato.
+** *Selezionare un'organizzazione, una cartella o un progetto*: Scegliere il livello della gerarchia delle risorse per cui il membro deve disporre delle autorizzazioni.
++
+Tenere presente quanto segue:
+
++
+*** È possibile selezionare solo le cartelle e i progetti per i quali si dispone delle autorizzazioni di amministratore.
+*** Se si seleziona l'organizzazione o una cartella, il membro disporrà delle autorizzazioni per tutti gli elementi che risiedono all'interno dell'organizzazione o della cartella.
+
+
+** *Selezionare un ruolo*: Scegliere un ruolo che fornisca al membro le autorizzazioni per le risorse associate all'organizzazione, alla cartella o al progetto selezionato.
++
+*** Se è stata selezionata l'organizzazione, è possibile scegliere un ruolo diverso da *cartella o project admin*.
+*** Se è stata selezionata una cartella o un progetto, è possibile scegliere un ruolo diverso da *Amministratore organizzazione*.
++
+link:reference-iam-predefined-roles.html["Informazioni sui ruoli IAM predefiniti"].
+
+
+
+** *Aggiungi ruolo*: Se si desidera fornire l'accesso ad altre cartelle o progetti all'interno dell'organizzazione, selezionare *Aggiungi ruolo*, specificare un'altra cartella o progetto, quindi scegliere un ruolo.
+
+
+. Selezionare *Aggiungi*.
+
+
+.Risultato
+BlueXP  aggiunge l'utente all'organizzazione.
+
+.Quali sono le prossime novità?
+L'utente deve ricevere un'e-mail da NetApp BlueXP . L'e-mail include informazioni che il membro può utilizzare per accedere a BlueXP .
+
+--
+.Account di servizio
+--
+.Fasi
+. Nella parte superiore destra della console di BlueXP , selezionare image:icon-settings-option.png["L'icona delle impostazioni che viene visualizzata nella parte superiore destra della console Web di BlueXP ."] > *Gestione identità e accessi*.
+. Selezionare *membri*.
+. Selezionare *Aggiungi un membro*.
+. Per aggiungere il membro, completare i passaggi nella finestra di dialogo:
++
+** *Tipo di entità*: Selezionare *account di servizio*.
+** *Nome account servizio*: Immettere un nome per l'account servizio.
+** *Selezionare un'organizzazione, una cartella o un progetto*: Scegliere il livello della gerarchia delle risorse per cui il membro deve disporre delle autorizzazioni.
++
+Tenere presente quanto segue:
+
++
+*** È possibile selezionare solo le cartelle e i progetti per i quali si dispone delle autorizzazioni di amministratore.
+*** Se si seleziona l'organizzazione o una cartella, il membro disporrà delle autorizzazioni per tutti gli elementi che risiedono all'interno dell'organizzazione o della cartella.
+
+
+** *Selezionare un ruolo*: Scegliere un ruolo che fornisca al membro le autorizzazioni per le risorse associate all'organizzazione, alla cartella o al progetto selezionato.
++
+*** Se è stata selezionata l'organizzazione, è possibile scegliere un ruolo diverso da *cartella o project admin*.
+*** Se è stata selezionata una cartella o un progetto, è possibile scegliere un ruolo diverso da *Amministratore organizzazione*.
++
+link:reference-iam-predefined-roles.html["Informazioni sui ruoli IAM predefiniti"].
+
+
+
+** *Aggiungi ruolo*: Se si desidera fornire l'accesso ad altre cartelle o progetti all'interno dell'organizzazione, selezionare *Aggiungi ruolo*, specificare un'altra cartella o progetto, quindi scegliere un ruolo.
+
+
+. Selezionare *Aggiungi*.
+. Scaricare o copiare l'ID client e il segreto client.
++
+Il segreto del client è visibile una sola volta e non viene memorizzato da BlueXP. Copia o scarica il segreto e conservalo in modo sicuro. Tenere presente che è possibile ricreare l'ID client e il segreto client in un secondo momento.
+
+. Selezionare *Chiudi*.
+
+
+.Risultato
+BlueXP  aggiunge l'account del servizio all'organizzazione.
+
+--
+====
+
+
+== Visualizzare i membri dell'organizzazione
+
+È possibile visualizzare un elenco di tutti i membri della propria organizzazione BlueXP . Per comprendere quali risorse e autorizzazioni sono disponibili per un membro, è possibile visualizzare i ruoli assegnati al membro a diversi livelli della gerarchia delle risorse dell'organizzazione.
+
+.A proposito di questa attività
+La pagina *membri* mostra i dettagli su due tipi di membri: Account utente e account di servizio.
+
+.Fasi
+. Nella parte superiore destra della console di BlueXP , selezionare image:icon-settings-option.png["L'icona delle impostazioni che viene visualizzata nella parte superiore destra della console Web di BlueXP ."] > *Gestione identità e accessi*.
+. Selezionare *membri*.
++
+I membri dell'organizzazione vengono visualizzati nella tabella *membri*.
+
+. Dalla pagina *membri*, selezionare un membro della tabella, quindi selezionare image:icon-action.png["Un'icona con tre punti affiancati"]*Visualizza dettagli*.
+
+
+.Risultato
+BlueXP  visualizza i dettagli relativi al membro, che includono le cartelle e i progetti per i quali il membro dispone delle autorizzazioni nella gerarchia delle risorse dell'organizzazione.
+
+Ecco un esempio di membro a cui è stato assegnato il ruolo _cartella o project admin_ per una cartella, che fornisce le autorizzazioni per i tre progetti nella cartella.
+
+image:screenshot-iam-member-details.png["Schermata della pagina dei dettagli per un membro che dispone delle autorizzazioni per un progetto e una cartella."]
+
+Ecco un altro esempio che mostra un membro che ha il ruolo di amministratore dell'organizzazione, che consente all'utente di accedere a tutte le risorse dell'organizzazione.
+
+image:screenshot-iam-member-details-org-admin.png["Schermata della pagina dei dettagli di un membro che dispone delle autorizzazioni di amministratore dell'organizzazione."]
+
+.Informazioni correlate
+link:task-iam-manage-folders-projects.html#view-associated-resources-members["Consente di visualizzare tutti i membri associati a una cartella o a un progetto specifico"].
+
+
+
+== Gestire le autorizzazioni di un membro
+
+Un ruolo definisce le autorizzazioni assegnate a un membro a livello di organizzazione, cartella o progetto. A ciascun membro dell'organizzazione può essere assegnato un ruolo a diversi livelli della gerarchia dell'organizzazione. Può avere lo stesso ruolo o un ruolo diverso. Ad esempio, è possibile assegnare un ruolo membro A per il progetto 1 e un ruolo B per il progetto 2.
+
+
+TIP: A un membro a cui è assegnato il ruolo di amministratore dell'organizzazione non possono essere assegnati ruoli aggiuntivi. Dispongono già di autorizzazioni per l'intera organizzazione.
+
+
+
+=== Aggiungere un ruolo a un membro
+
+Fornire a un membro autorizzazioni aggiuntive nell'organizzazione aggiungendo ruoli applicabili a livello di organizzazione, cartella o progetto.
+
+.Fasi
+. Dalla pagina *membri*, selezionare un membro della tabella, quindi selezionare *Aggiungi un image:icon-action.png["Un'icona con tre punti affiancati"]ruolo*.
+. Per aggiungere un ruolo, completare i passaggi nella finestra di dialogo:
++
+** *Selezionare un'organizzazione, una cartella o un progetto*: Scegliere il livello della gerarchia delle risorse per cui il membro deve disporre delle autorizzazioni.
++
+Se si seleziona l'organizzazione o una cartella, il membro disporrà delle autorizzazioni per tutti gli elementi che risiedono all'interno dell'organizzazione o della cartella.
+
+** *Selezionare un ruolo*: Scegliere un ruolo che fornisca al membro le autorizzazioni per le risorse associate all'organizzazione, alla cartella o al progetto selezionato.
++
+*** Se è stata selezionata l'organizzazione, è possibile scegliere un ruolo diverso da *cartella o project admin*.
+*** Se è stata selezionata una cartella o un progetto, è possibile scegliere un ruolo diverso da *Amministratore organizzazione*.
++
+link:reference-iam-predefined-roles.html["Informazioni sui ruoli IAM predefiniti"].
+
+
+
+** *Aggiungi ruolo*: Se si desidera fornire l'accesso ad altre cartelle o progetti all'interno dell'organizzazione, selezionare *Aggiungi ruolo*, specificare un'altra cartella o progetto, quindi scegliere un ruolo.
+
+
+. Selezionare *Aggiungi nuovi ruoli*.
+
+
+.Risultato
+BlueXP  aggiunge i ruoli. Il membro dispone ora delle autorizzazioni per le risorse nell'organizzazione, nella cartella o nel progetto selezionato.
+
+
+
+=== Passare da un ruolo all'altro
+
+Se è necessario modificare le autorizzazioni di un membro, è possibile modificare il ruolo associato a tale membro a livello di organizzazione, cartella o progetto.
+
+Se è necessario modificare i ruoli per più membri dell'organizzazione, è possibile utilizzare un'azione bulk per completare le modifiche contemporaneamente.
+
+[role="tabbed-block"]
+====
+.Un membro
+--
+.Fasi
+. Dalla pagina *membri*, selezionare un membro della tabella, quindi selezionare image:icon-action.png["Un'icona con tre punti affiancati"]*Visualizza dettagli*.
+. Nella tabella, accedere all'organizzazione, alla cartella o al progetto e selezionare un nuovo ruolo.
+
+
+.Risultato
+BlueXP  aggiorna i ruoli associati a quel membro a livello di organizzazione, cartella e progetto.
+
+--
+.Più membri
+--
+.Fasi
+. Dalla pagina *Organizzazione*, selezionare un progetto o una cartella nella tabella, quindi selezionare image:icon-action.png["Un'icona con tre punti affiancati"]*Modifica organizzazione*, *Modifica cartella* o *Modifica progetto*.
+. Nella pagina *Modifica*, selezionare *accesso*.
+. Selezionare tutti i membri o selezionare singolarmente due o più membri.
+. Selezionare *Definisci ruolo*.
++
+image:screenshot-iam-define-role.png["Schermata della parte Access della finestra di dialogo Edit (Modifica) che consente di scegliere l'azione Definisci ruolo dopo aver selezionato due o più membri."]
+
+. Selezionare il ruolo che si desidera assegnare ai membri, quindi selezionare *Definisci*.
+
+
+.Risultato
+BlueXP  aggiorna i ruoli per tutti i membri selezionati.
+
+--
+====
+
+
+=== Rimuovere le autorizzazioni per una cartella o un progetto
+
+È possibile rimuovere le autorizzazioni di un membro a una cartella o a un progetto specifico rimuovendo il suo ruolo.
+
+.A proposito di questa attività
+Se un membro dispone delle autorizzazioni per _una sola cartella o progetto nell'organizzazione, non è possibile rimuovere tale ruolo. Sono disponibili due opzioni:
+
+* Se si desidera che il membro disponga delle autorizzazioni per un'altra parte della gerarchia delle risorse, è necessario aggiungere prima quel ruolo e quindi eliminare il ruolo esistente.
+* Se non si desidera che il membro disponga delle autorizzazioni necessarie, è sufficiente rimuovere il membro dall'organizzazione.
+
+
+.Fasi
+. Dalla pagina *membri*, selezionare un membro della tabella, quindi selezionare image:icon-action.png["Un'icona con tre punti affiancati"]*Visualizza dettagli*.
+. Nella tabella, selezionare la cartella o il livello del progetto, quindi scegliere image:icon-delete.png["Un'icona di un immondizia CAN"]
+
+
+.Risultato
+BlueXP  rimuove le autorizzazioni per quel membro a livello di cartella o progetto.
+
+
+
+== Ricreare le credenziali per un account di servizio
+
+È possibile ricreare le credenziali (ID client e segreto client) per un account di servizio in qualsiasi momento. È possibile ricreare le credenziali in caso di perdita o se l'azienda richiede la rotazione delle credenziali di protezione dopo un determinato periodo di tempo.
+
+.A proposito di questa attività
+La ricreazione delle credenziali elimina le credenziali esistenti per l'account del servizio, quindi crea nuove credenziali. Non sarà possibile utilizzare le credenziali precedenti.
+
+.Fasi
+. Nella parte superiore destra della console di BlueXP , selezionare image:icon-settings-option.png["L'icona delle impostazioni che viene visualizzata nella parte superiore destra della console Web di BlueXP ."] > *Gestione identità e accessi*.
+. Selezionare *membri*.
+. Nella tabella *membri*, accedere a un account di servizio, selezionare image:icon-action.png["Un'icona con tre punti affiancati"] e quindi *Ricrea segreti*.
+. Selezionare *Ricrea*.
+. Scaricare o copiare l'ID client e il segreto client.
++
+Il segreto del client è visibile una sola volta e non viene memorizzato da BlueXP. Copia o scarica il segreto e conservalo in modo sicuro.
+
+. Selezionare *Chiudi*.
+
+
+.Risultato
+All'account del servizio sono ora associati un nuovo ID client e una nuova password client.
+
+
+
+== Rimuovere un membro dall'organizzazione
+
+Potrebbe essere necessario rimuovere un membro dall'organizzazione, ad esempio se ha lasciato l'azienda.
+
+.A proposito di questa attività
+Questa attività non elimina l'account BlueXP  del membro o l'account del sito di supporto NetApp. Rimuove semplicemente il membro e le relative autorizzazioni dall'organizzazione.
+
+.Fasi
+. Dalla pagina *membri*, selezionare un membro della tabella, quindi selezionare image:icon-action.png["Un'icona con tre punti affiancati"]*Elimina utente*.
+. Confermare che si desidera rimuovere il membro dall'organizzazione.
+
+
+.Risultato
+BlueXP  rimuove il membro. Se il membro accede nuovamente a BlueXP , non avrà più accesso all'organizzazione BlueXP .
+
+
+
+== Informazioni correlate
+
+* link:concept-identity-and-access-management.html["Informazioni sulla gestione delle identità e degli accessi di BlueXP "]
+* link:task-iam-get-started.html["Introduzione a BlueXP  IAM"]
+* link:reference-iam-predefined-roles.html["Ruoli IAM BlueXP  predefiniti"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Ulteriori informazioni sull'API per BlueXP  IAM"^]
+

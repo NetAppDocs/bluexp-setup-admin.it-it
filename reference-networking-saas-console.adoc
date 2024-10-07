@@ -4,7 +4,7 @@ permalink: reference-networking-saas-console.html
 keywords: networking, urls, endpoints, web browser, console, network, set up networking 
 summary: Quando utilizzi la console basata sul web BlueXP fornita attraverso il livello SaaS, contatta diversi endpoint quando completi alcuni task amministrativi. I computer che accedono alla console BlueXP devono disporre di connessioni a questi endpoint. 
 ---
-= Preparazione del networking per l'utilizzo della console BlueXP
+= Preparare il collegamento in rete per la console BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -74,7 +74,7 @@ Servizi AWS (amazonaws.com):
 |===
 Oltre a questi endpoint, è anche necessario garantire che il connettore disponga dell'accesso a Internet in uscita per contattare endpoint specifici per le operazioni quotidiane. Puoi trovare l'elenco di questi endpoint seguendo i link nella sezione successiva.
 
-.Link correlati
+.Informazioni correlate
 * Preparare il collegamento in rete per il connettore
 +
 ** link:task-install-connector-aws-bluexp.html#step-1-set-up-networking["Configurare la rete AWS"]
