@@ -4815,7 +4815,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="402601978c4c05e28bf41ea74b2c118a" category="list-text">_Compliance Viewer_ è ora _Classification Viewer_</block>
   <block id="396758cef44fe7d4ebed2010a8ee7761" category="list-text">In Impostazioni, è possibile accedere alla gestione delle identità e degli accessi di BlueXP  per usufruire di questi miglioramenti</block>
   <block id="0909fc2dd5049052e70dfa0e18f7fbcf" category="inline-image-macro">Una schermata di BlueXP  che mostra l'organizzazione e il progetto selezionabili dalla parte superiore dell'interfaccia, nonché la gestione delle identità e degli accessi, disponibile dal menu Impostazioni.</block>
-  <block id="bc9b550d1734b431c662a14aa92c06df" category="paragraph"><block ref="bc9b550d1734b431c662a14aa92c06df" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d9c4ef914f4f136c37c3df051aaedb70" category="list-text">Non sono state apportate modifiche agli utenti esistenti o agli ambienti di lavoro.</block>
   <block id="31243c2d285073a1e31df388c65d726f" category="list-text">Sebbene i nomi dei ruoli siano cambiati, non vi sono differenze dal punto di vista delle autorizzazioni. Gli utenti continueranno ad avere accesso agli stessi ambienti di lavoro di prima.</block>
   <block id="694ce83c478c161c3ac05490450e107e" category="list-text">Non sono state apportate modifiche alla modalità di accesso a BlueXP . BlueXP  IAM funziona con gli accessi cloud NetApp, le credenziali del sito di supporto NetApp e le connessioni federate proprio come gli account BlueXP .</block>
@@ -4850,4 +4849,12 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="4e9a240c5fb31e56c6b0ab71a915953f" category="sidebar">Ruoli IAM predefiniti</block>
   <block id="1326a41ad4b26f3395b0f54dd9172b2b" category="sidebar">Scopri di più sugli account</block>
   <block id="df583ae7ba964fd4806b55904da81813" category="list-text">Avvisi</block>
+  <block id="c8e7383477673ee726b6ba29dc487444" category="list-text">IMPOSTARE IL limite di hop di risposta quando si utilizza IMDSv2</block>
+  <block id="3e732c9d6276fdfd4d8499b951b6b262" category="list-text">Se IMDSv2 è attivato sull'istanza EC2 (questa è l'impostazione predefinita per le nuove istanze EC2), è necessario modificare il limite PUT Response hop sull'istanza a 3. Se non si modifica il limite dell'istanza EC2, viene visualizzato un errore di inizializzazione dell'interfaccia utente quando si tenta di configurare il connettore.</block>
+  <block id="8d8efedf65fe740dfe59c5779c9d745c" category="list-text"><block ref="8d8efedf65fe740dfe59c5779c9d745c" category="inline-link-macro-rx"></block></block>
+  <block id="75c0fbf84b1614b17a984df62bf849f6" category="inline-link">Documentazione AWS: Modifica del limite di hop della risposta PUT</block>
+  <block id="ca7f44589a06d75665d92002d6148e98" category="list-text"><block ref="ca7f44589a06d75665d92002d6148e98" category="inline-link-rx"></block></block>
+  <block id="f08676e8a1e41f582ac0537747703230" category="paragraph"><block ref="f08676e8a1e41f582ac0537747703230" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4d3e366c7ef57f5c2037203fa77c103c" category="list-text"><block ref="4d3e366c7ef57f5c2037203fa77c103c" category="inline-link-rx"></block></block>
+  <block id="6b7b64b4bdd6080baf05e2c37372258a" category="list-text"><block ref="6b7b64b4bdd6080baf05e2c37372258a" category="inline-link-rx"></block></block>
 </blocks>

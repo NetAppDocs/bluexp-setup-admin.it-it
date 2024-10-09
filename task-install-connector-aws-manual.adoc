@@ -90,6 +90,14 @@ CPU:: 8 core o 8 vCPU
 RAM:: 32 GB
 Tipo di istanza AWS EC2:: Un tipo di istanza che soddisfa i requisiti di CPU e RAM indicati in precedenza. Si consiglia di utilizzare t3.2xlarge.
 Coppia di chiavi:: Quando si crea il connettore, è necessario selezionare una coppia di chiavi EC2 da utilizzare con l'istanza.
+IMPOSTARE IL limite di hop di risposta quando si utilizza IMDSv2:: Se IMDSv2 è attivato sull'istanza EC2 (questa è l'impostazione predefinita per le nuove istanze EC2), è necessario modificare il limite PUT Response hop sull'istanza a 3. Se non si modifica il limite dell'istanza EC2, viene visualizzato un errore di inizializzazione dell'interfaccia utente quando si tenta di configurare il connettore.
++
+--
+* link:task-require-imdsv2.html["Richiedi l'utilizzo di IMDSv2 sulle istanze di Amazon EC2"]
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-PUT-response-hop-limit["Documentazione AWS: Modifica del limite di hop della risposta PUT"^]
+
+
+--
 Spazio su disco in /opz:: 100 GiB di spazio deve essere disponibile
 +
 --
