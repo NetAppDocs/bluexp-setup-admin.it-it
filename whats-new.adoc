@@ -18,6 +18,16 @@ Scopri le novità delle funzionalità di amministrazione di BlueXP : Gestione d
 
 
 
+== 10 ottobre 2024
+
+
+
+=== Connettore 3.9.45 patch
+
+Questa patch include correzioni di bug.
+
+
+
 == 7 ottobre 2024
 
 

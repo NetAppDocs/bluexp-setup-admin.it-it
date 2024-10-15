@@ -170,12 +170,6 @@ link:reference-iam-predefined-roles.html["Informazioni sui ruoli predefiniti IAM
 
 
 
-==== Ruoli personalizzati
-
-Al momento i ruoli personalizzati non sono supportati.
-
-
-
 === Connettori
 
 Quando un _amministratore di organizzazione_ crea un connettore, BlueXP  associa automaticamente tale connettore all'organizzazione e al progetto attualmente selezionato. L'amministratore _dell'organizzazione_ ha automaticamente accesso a quel connettore da qualsiasi punto dell'organizzazione. Tuttavia, se nell'organizzazione sono presenti altri membri con ruoli diversi, tali membri possono accedere a tale connettore solo dal progetto in cui è stato creato, a meno che non si associ tale connettore ad altri progetti.

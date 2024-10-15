@@ -101,7 +101,7 @@ IMPOSTARE IL limite di hop di risposta quando si utilizza IMDSv2:: Se IMDSv2 è 
 Spazio su disco in /opz:: 100 GiB di spazio deve essere disponibile
 +
 --
-BlueXP utilizza `/opt` per installare `/opt/application/netapp` directory e il suo contenuto.
+BlueXP  utilizza `/opt` per installare la `/opt/application/netapp` directory e il relativo contenuto.
 
 --
 Spazio su disco in /var:: 20 GiB di spazio deve essere disponibile

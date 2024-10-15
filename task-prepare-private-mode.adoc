@@ -106,7 +106,7 @@ Il connettore è supportato in Google Cloud su un'istanza di macchina virtuale c
 Spazio su disco in /opz:: 100 GiB di spazio deve essere disponibile
 +
 --
-BlueXP utilizza `/opt` per installare `/opt/application/netapp` directory e il suo contenuto.
+BlueXP  utilizza `/opt` per installare la `/opt/application/netapp` directory e il relativo contenuto.
 
 --
 Spazio su disco in /var:: 20 GiB di spazio deve essere disponibile
