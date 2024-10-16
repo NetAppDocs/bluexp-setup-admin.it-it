@@ -3889,7 +3889,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="3baace5508f5436415356f7f1c718d50" category="list-text">*RAM*: 32 GB</block>
   <block id="e5ee5282a10eef25059e919331c8ea5e" category="list-text">*Tipo di macchina*: Si consiglia n2-standard-8.</block>
   <block id="4ea5b82f34f27448cadea5ae611c81ba" category="list-text">*Scegliere un tipo di istanza*: A seconda della disponibilità della regione, scegliere uno dei tipi di istanza supportati (si consiglia t3.2xlarge).</block>
-  <block id="d44724be897a214586cbd2c8b32fb39d" category="list-text">Al momento, vengono inviate notifiche via email per i seguenti servizi e funzionalità di BlueXP : Connector, Digital Wallet di BlueXP , copia e sincronizzazione di BlueXP , backup e ripristino di BlueXP  e tiering BlueXP . Ulteriori servizi verranno aggiunti nelle versioni future.</block>
   <block id="34c56ac41d4e5a004cc5b7c87b0e2d87" category="section-title">Connettore 3.9.43</block>
   <block id="05797637e0cfec59d8a5478eba1acfdf" category="paragraph">La versione 3.9.43 è disponibile per la modalità standard e la modalità limitata.</block>
   <block id="45c4fb485dfa6a5d0af975aa668648a9" category="section-title">Aggiornamento dei requisiti di CPU e RAM</block>
@@ -4858,4 +4857,5 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">10 ottobre 2024</block>
   <block id="9071c576479353103106b574601bd920" category="section-title">Connettore 3.9.45 patch</block>
   <block id="d8497d3046f15c93d3e5c40856129331" category="paragraph">Questa patch include correzioni di bug.</block>
+  <block id="ab99e6e0b893c9db1dce5c6dc26245bc" category="list-text">Le notifiche vengono inviate tramite e-mail per le seguenti funzioni e servizi BlueXP : Connettore, portafoglio digitale BlueXP , copia e sincronizzazione BlueXP  e backup e ripristino BlueXP .</block>
 </blocks>

@@ -137,7 +137,7 @@ image:screenshot_notification_dismiss1.png["Una schermata che mostra come chiude
 
 [NOTE]
 ====
-* Al momento, vengono inviate notifiche via email per i seguenti servizi e funzionalità di BlueXP : Connector, Digital Wallet di BlueXP , copia e sincronizzazione di BlueXP , backup e ripristino di BlueXP  e tiering BlueXP . Ulteriori servizi verranno aggiunti nelle versioni future.
+* Le notifiche vengono inviate tramite e-mail per le seguenti funzioni e servizi BlueXP : Connettore, portafoglio digitale BlueXP , copia e sincronizzazione BlueXP  e backup e ripristino BlueXP .
 * L'invio di notifiche e-mail non è supportato quando il connettore viene installato in un sito senza accesso a Internet.
 
 
