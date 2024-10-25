@@ -14,9 +14,13 @@ summary: Quando utilizzi la console basata sul web BlueXP fornita attraverso il 
 
 
 [role="lead"]
-Quando utilizzi la console basata sul web BlueXP fornita attraverso il livello SaaS, contatta diversi endpoint quando completi alcuni task amministrativi. I computer che accedono alla console BlueXP devono disporre di connessioni a questi endpoint.
+Quando si accede e si utilizza la console basata sul Web di BlueXP , BlueXP  contatta diversi endpoint per completare le azioni avviate. I computer che accedono alla console di BlueXP  devono disporre di connessioni a questi endpoint.
 
-Questi endpoint vengono contattati dal computer di un utente quando si completano azioni specifiche dalla console BlueXP. Fai anche riferimento ai requisiti di rete per il connettore e per servizi BlueXP specifici. Per ulteriori informazioni, fare riferimento ai link correlati alla fine di questa pagina.
+Questi endpoint vengono contattati in due scenari:
+
+* Dal computer di un utente durante il completamento di azioni specifiche da https://console.bluexp.netapp.com["Console BlueXP basata su web"^] che sono disponibili come Software as a Service (SaaS).
+* Dal computer di un utente quando si apre un browser Web, immettere l'indirizzo IP dell'host del connettore, quindi accedere e configurare il connettore. Questi passi sono necessari se si installa manualmente il connettore.
+
 
 [cols="2*"]
 |===
@@ -24,7 +28,10 @@ Questi endpoint vengono contattati dal computer di un utente quando si completan
 
 
 | \https://console.bluexp.netapp.com
-\https://*.console.bluexp.netapp.com | Il browser Web contatta questi URL quando si utilizza la console basata su Web BlueXP. 
+\https://*.console.bluexp.netapp.com | Questo è l'endpoint inserito nel browser Web per utilizzare la console basata su Web di BlueXP . 
+
+
+| \https://api.bluexp.netapp.com | La console basata sul Web di BlueXP  contatta questo endpoint per interagire con l'API BlueXP  per azioni relative ad autorizzazione, licenze, sottoscrizioni, credenziali, notifiche e altro ancora. 
 
 
 | \https://aiq.netapp.com | Richieste per accedere al Digital Advisor di BlueXP. 

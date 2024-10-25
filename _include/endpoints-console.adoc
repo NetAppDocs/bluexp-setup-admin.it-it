@@ -1,0 +1,11 @@
+= 
+:allow-uri-read: 
+
+
+Endpoint contattati dai computer quando si utilizza la console basata sul Web di BlueXP :: I computer che accedono alla console BlueXP  da un browser Web devono essere in grado di contattare diversi endpoint. È necessario utilizzare la console BlueXP  per configurare il connettore e per l'uso quotidiano di BlueXP .
++
+--
+link:reference-networking-saas-console.html["Preparare il collegamento in rete per la console BlueXP "].
+
+--
+

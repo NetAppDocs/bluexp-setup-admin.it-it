@@ -14,7 +14,7 @@ summary: 'Implementare il connettore in modalità limitata in modo da poter util
 
 
 [role="lead"]
-Implementare il connettore in modalità limitata in modo da poter utilizzare BlueXP con connettività in uscita limitata al livello BlueXP SaaS. Per iniziare, installare il connettore, configurare BlueXP accedendo all'interfaccia utente in esecuzione sul connettore, quindi fornire le autorizzazioni cloud precedentemente impostate.
+Implementa il connettore in modalità limitata in modo da poter utilizzare BlueXP  con connettività in uscita limitata al livello SaaS (Software as a Service) di BlueXP . Per iniziare, installare il connettore, configurare BlueXP accedendo all'interfaccia utente in esecuzione sul connettore, quindi fornire le autorizzazioni cloud precedentemente impostate.
 
 
 

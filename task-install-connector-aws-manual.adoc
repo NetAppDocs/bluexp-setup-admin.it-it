@@ -50,7 +50,7 @@ Podman versione 4.6.1 o 4.9.4
 
 <<podman-configuration,Visualizza i requisiti di configurazione di Podman>>.
  a| 
-Supportato in modalità di applicazione o permissiva
+Supportato in modalità enforcing o permissiva ^1^
 
 
 
@@ -81,8 +81,9 @@ Non supportato
 |===
 Note:
 
-* Il connettore è supportato dalle versioni in lingua inglese di questi sistemi operativi.
-* Per RHEL, l'host deve essere registrato con Red Hat Subscription Management. Se non è registrato, l'host non può accedere ai repository per aggiornare il software di terze parti richiesto durante l'installazione del connettore.
+. La gestione dei sistemi Cloud Volumes ONTAP non è supportata dai connettori che hanno SELinux abilitato sul sistema operativo.
+. Il connettore è supportato dalle versioni in lingua inglese di questi sistemi operativi.
+. Per RHEL, l'host deve essere registrato con Red Hat Subscription Management. Se non è registrato, l'host non può accedere ai repository per aggiornare il software di terze parti richiesto durante l'installazione del connettore.
 
 
 --
@@ -249,6 +250,14 @@ Connessioni alle reti di destinazione:: Un connettore richiede una connessione d
 
 
 Accesso a Internet in uscita:: La posizione di rete in cui si implementa il connettore deve disporre di una connessione Internet in uscita per contattare endpoint specifici.
+
+
+Endpoint contattati dai computer quando si utilizza la console basata sul Web di BlueXP :: I computer che accedono alla console BlueXP  da un browser Web devono essere in grado di contattare diversi endpoint. È necessario utilizzare la console BlueXP  per configurare il connettore e per l'uso quotidiano di BlueXP .
++
+--
+link:reference-networking-saas-console.html["Preparare il collegamento in rete per la console BlueXP "].
+
+--
 
 
 Endpoint contattati durante l'installazione manuale:: Quando si installa manualmente il connettore sul proprio host Linux, il programma di installazione del connettore richiede l'accesso ai seguenti URL durante il processo di installazione:

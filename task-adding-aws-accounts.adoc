@@ -162,7 +162,7 @@ Aggiungere le credenziali AWS a BlueXP fornendo l'ARN di un ruolo IAM che assegn
 
 === Impostare il ruolo IAM
 
-Impostare un ruolo IAM che consenta al layer BlueXP SaaS di assumere il ruolo.
+Impostare un ruolo IAM che consenta al livello SaaS (Software as a Service) di BlueXP  di assumere il ruolo.
 
 .Fasi
 . Accedere alla console IAM nell'account di destinazione.

@@ -16,7 +16,7 @@ summary: Le limitazioni note identificano piattaforme, dispositivi o funzioni no
 [role="lead"]
 Le limitazioni note identificano piattaforme, dispositivi o funzioni non supportate da questa versione del prodotto o che non interagiscono correttamente con esso. Esaminare attentamente queste limitazioni.
 
-Queste limitazioni sono specifiche per l'installazione e l'amministrazione di BlueXP: Il connettore, la piattaforma SaaS e molto altro ancora.
+Queste limitazioni sono specifiche per la configurazione e l'amministrazione di BlueXP : Il connettore, la piattaforma SaaS (software as a service) e altro ancora.
 
 
 

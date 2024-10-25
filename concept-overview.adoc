@@ -14,7 +14,7 @@ summary: NetApp BlueXP offre alla tua organizzazione un singolo piano di control
 
 
 [role="lead"]
-NetApp BlueXP offre alla tua organizzazione un singolo piano di controllo che ti aiuta a creare, proteggere e gestire i dati nei tuoi ambienti on-premise e cloud. La piattaforma SaaS BlueXP include servizi che forniscono gestione dello storage, mobilità dei dati, data Protection e analisi e controllo dei dati. Le funzionalità di gestione vengono fornite tramite una console basata su web e API.
+NetApp BlueXP offre alla tua organizzazione un singolo piano di controllo che ti aiuta a creare, proteggere e gestire i dati nei tuoi ambienti on-premise e cloud. La piattaforma BlueXP  Software as a Service (SaaS) include servizi che forniscono gestione dello storage, mobilità dei dati, protezione dei dati, analisi e controllo dei dati. Le funzionalità di gestione vengono fornite tramite una console basata su web e API.
 
 
 

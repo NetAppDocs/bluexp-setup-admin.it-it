@@ -67,7 +67,7 @@ Podman versione 4.6.1 o 4.9.4
 
 <<podman-configuration,Visualizza i requisiti di configurazione di Podman>>.
  a| 
-Supportato in modalità di applicazione o permissiva
+Supportato in modalità enforcing o permissiva ^1^
 
 
 
@@ -87,8 +87,9 @@ Non supportato
 |===
 Note:
 
-* Il connettore è supportato dalle versioni in lingua inglese di questi sistemi operativi.
-* Per RHEL, l'host deve essere registrato con Red Hat Subscription Management. Se non è registrato, l'host non può accedere ai repository per aggiornare il software di terze parti richiesto durante l'installazione del connettore.
+. La gestione dei sistemi Cloud Volumes ONTAP non è supportata dai connettori che hanno SELinux abilitato sul sistema operativo.
+. Il connettore è supportato dalle versioni in lingua inglese di questi sistemi operativi.
+. Per RHEL, l'host deve essere registrato con Red Hat Subscription Management. Se non è registrato, l'host non può accedere ai repository per aggiornare il software di terze parti richiesto durante l'installazione del connettore.
 
 
 --
