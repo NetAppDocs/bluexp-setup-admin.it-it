@@ -275,6 +275,9 @@ Preparare la rete per l'accesso dell'utente alla console BlueXP:: In modalità l
 | Endpoint | Scopo 
 
 
+| \https://api.bluexp.netapp.com | La console basata sul Web di BlueXP  contatta questo endpoint per interagire con l'API BlueXP  per azioni relative ad autorizzazione, licenze, sottoscrizioni, credenziali, notifiche e altro ancora. 
+
+
 | \https://signin.b2c.netapp.com | Necessario per aggiornare le credenziali NetApp Support Site (NSS) o per aggiungere nuove credenziali NSS a BlueXP. 
 
 
