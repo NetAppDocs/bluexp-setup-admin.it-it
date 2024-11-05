@@ -49,10 +49,7 @@ Ad esempio, è possibile associare un sistema Cloud Volumes ONTAP a più progett
 
 Questi miglioramenti forniscono un migliore controllo sulle azioni che gli utenti possono eseguire e sulle risorse a cui possono accedere.
 
-
-
-==== In che modo BlueXP  IAM influisce sul tuo account esistente
-
+.In che modo BlueXP  IAM influisce sul tuo account esistente
 Quando accedi a BlueXP , noterai queste modifiche:
 
 * Il tuo _account_ è ora chiamato _organizzazione_
@@ -77,22 +74,13 @@ Tenere presente quanto segue:
 * Se disponete di più account BlueXP , ora avete più organizzazioni BlueXP .
 
 
-
-
-==== API per BlueXP  IAM
-
+.API per BlueXP  IAM
 Questa modifica introduce una nuova API per BlueXP  IAM, ma è compatibile con le versioni precedenti dell'API di tenancy precedente. https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Ulteriori informazioni sull'API per BlueXP  IAM"^]
 
-
-
-==== Modalità di distribuzione supportate
-
+.Modalità di distribuzione supportate
 BlueXP  IAM è supportato quando si utilizza BlueXP  in modalità standard. Se utilizzi BlueXP  in modalità limitata o privata, continuerai a utilizzare un _account_ di BlueXP  per gestire aree di lavoro, utenti e risorse.
 
-
-
-==== Dove andare
-
+.Dove andare
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html["Ulteriori informazioni su BlueXP  IAM"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["Introduzione a BlueXP  IAM"]
 
@@ -105,10 +93,7 @@ Questa versione include il supporto esteso del sistema operativo e le correzioni
 
 La versione 3.9.45 è disponibile per la modalità standard e la modalità limitata.
 
-
-
-==== Supporto per Ubuntu 24,04 LTS
-
+.Supporto per Ubuntu 24,04 LTS
 A partire dalla versione 3.9.45, BlueXP  ora supporta nuove installazioni del connettore sugli host LTS di Ubuntu 24,04 quando si utilizza BlueXP  in modalità standard o limitata.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["Visualizza i requisiti dell'host del connettore"].
@@ -196,20 +181,14 @@ Questa versione include il supporto per Docker Engine 26, un miglioramento dei c
 
 La versione 3.9.44 è disponibile per la modalità standard e la modalità limitata.
 
-
-
-==== Supporto di Docker Engine 26 con le nuove installazioni
-
+.Supporto di Docker Engine 26 con le nuove installazioni
 A partire dalla versione 3.9.44 del connettore, Docker Engine 26 è ora supportato con _nuove_ installazioni di connettori sugli host Ubuntu.
 
 Se si dispone di un connettore esistente creato prima della release 3.9.44, Docker Engine 25.0.5 resta la versione massima supportata sugli host Ubuntu.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["Scopri di più sui requisiti di Docker Engine"].
 
-
-
-==== Certificato SSL aggiornato per l'accesso all'interfaccia utente locale
-
+.Certificato SSL aggiornato per l'accesso all'interfaccia utente locale
 Quando si utilizza BlueXP  in modalità limitata o privata, l'interfaccia utente è accessibile dalla macchina virtuale del connettore implementata nella regione cloud o in sede. Per impostazione predefinita, BlueXP  utilizza un certificato SSL autofirmato per fornire l'accesso HTTPS sicuro alla console basata sul Web in esecuzione sul connettore.
 
 In questa versione, abbiamo apportato modifiche al certificato SSL per i connettori nuovi ed esistenti:
@@ -333,10 +312,7 @@ Se si utilizza la federazione delle identità con BlueXP , ogni utente che acce
 
 Una nuova versione in modalità privata è ora disponibile per il download dal sito di supporto NetApp.
 
-
-
-==== Supporto per RHEL 8 e 9
-
+.Supporto per RHEL 8 e 9
 Questa versione include il supporto per l'installazione del connettore su un host Red Hat Enterprise Linux 8 o 9 quando si utilizza BlueXP in modalità privata. Sono supportate le seguenti versioni di RHEL:
 
 * da 8,6 a 8,10
@@ -349,10 +325,7 @@ Dovresti essere a conoscenza dei requisiti di Podman, delle limitazioni note, di
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Informazioni sul supporto per RHEL 8 e 9 con il connettore"].
 
-
-
-==== Versioni incluse in questa release
-
+.Versioni incluse in questa release
 Questa release include le seguenti versioni dei servizi BlueXP che sono supportate in modalità privata.
 
 [cols="2*"]
@@ -503,10 +476,7 @@ Questa versione di BlueXP Connector include il supporto per ulteriori sistemi op
 
 A questo punto, la versione 3.9.40 è disponibile per la modalità standard e la modalità limitata.
 
-
-
-==== Supporto per RHEL 8 e 9
-
+.Supporto per RHEL 8 e 9
 Il connettore è ora supportato sugli host che eseguono le seguenti versioni di Red Hat Enterprise Linux con _nuove_ installazioni di connettori quando si utilizza BlueXP in modalità standard o limitata:
 
 * da 8,6 a 8,9
@@ -519,18 +489,12 @@ Dovresti essere a conoscenza dei requisiti di Podman, delle limitazioni note, di
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Informazioni sul supporto per RHEL 8 e 9 con il connettore"].
 
-
-
-==== Fine del supporto per RHEL 7 e CentOS 7
-
+.Fine del supporto per RHEL 7 e CentOS 7
 Il 30 giugno 2024, RHEL 7 arriverà alla fine della manutenzione (EOM), mentre CentOS 7 arriverà alla fine del ciclo di vita (EOL). NetApp continuerà a supportare il connettore su queste distribuzioni Linux fino al 30 giugno 2024.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Scopri come procedere se disponi già di un connettore in esecuzione su RHEL 7 o CentOS 7"].
 
-
-
-==== Aggiornamento delle autorizzazioni AWS
-
+.Aggiornamento delle autorizzazioni AWS
 Nella release 3.9.38, abbiamo aggiornato la policy del connettore per AWS in modo da includere l'autorizzazione "EC2:DescribeAvailabilityZones". Questa autorizzazione è ora necessaria per supportare le zone locali di AWS con Cloud Volumes ONTAP.
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["Visualizza le autorizzazioni AWS per il connettore"].
@@ -633,10 +597,7 @@ Questa nuova versione è disponibile per il download dal sito del supporto NetAp
 
 A questo punto, la versione 3.9.38 è disponibile per la modalità standard e la modalità limitata. Questa release include il supporto per IMDSv2 in AWS e un aggiornamento dei permessi AWS.
 
-
-
-==== Supporto di IMDSv2
-
+.Supporto di IMDSv2
 BlueXP ora supporta Amazon EC2 Instance Metadata Service versione 2 (IMDSv2) con l'istanza del connettore e con le istanze di Cloud Volumes ONTAP. IMDSv2 fornisce una maggiore protezione contro le vulnerabilità. In precedenza era supportato solo IMDSv1.
 
 https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["Scopri di più su IMDSv2 dal blog sulla sicurezza AWS"^]
@@ -652,10 +613,7 @@ Il servizio IMDS (Instance Metadata Service) viene attivato come segue nelle ist
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-require-imdsv2.html["Scopri come configurare IMDSv2 sulle istanze esistenti"].
 
-
-
-==== Aggiornamento delle autorizzazioni AWS
-
+.Aggiornamento delle autorizzazioni AWS
 Abbiamo aggiornato la policy del connettore per AWS in modo da includere l'autorizzazione "EC2:DescribeAvailabilityZones". Questa autorizzazione è necessaria per una prossima release. Aggiorneremo le note di rilascio con ulteriori dettagli quando tale release sarà disponibile.
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["Visualizza le autorizzazioni AWS per il connettore"].
@@ -1556,18 +1514,12 @@ Questo aggiornamento include miglioramenti a diverse funzioni e servizi.
 
 Questa release di Cloud Manager include miglioramenti alla gestione di Cloud Volumes ONTAP.
 
-
-
-==== Miglioramenti disponibili in tutti i cloud provider
-
+.Miglioramenti disponibili in tutti i cloud provider
 Cloud Manager è ora in grado di implementare e gestire Cloud Volumes ONTAP 9,9.0.
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap/reference_new_990.html["Scopri le nuove funzionalità incluse in questa release di Cloud Volumes ONTAP"^].
 
-
-
-==== Miglioramenti disponibili in AWS
-
+.Miglioramenti disponibili in AWS
 * È ora possibile implementare Cloud Volumes ONTAP 9.8 nell'ambiente dei servizi cloud commerciali AWS (C2S).
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Scopri come iniziare a utilizzare C2S"^]
@@ -1581,16 +1533,10 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-kms.htm
 
 
 
-
-
-==== Potenziamento disponibile in Azure
-
+.Potenziamento disponibile in Azure
 È ora possibile implementare Cloud Volumes ONTAP 9.8 nel dipartimento della difesa di Azure (DOD) Impact Level 6 (IL6).
 
-
-
-==== Miglioramenti disponibili in Google Cloud
-
+.Miglioramenti disponibili in Google Cloud
 * Abbiamo ridotto il numero di indirizzi IP richiesti per Cloud Volumes ONTAP 9.8 e versioni successive in Google Cloud. Per impostazione predefinita, è richiesto un indirizzo IP in meno (abbiamo unificato la LIF di intercluster con la LIF di gestione dei nodi). È inoltre possibile saltare la creazione della LIF di gestione SVM quando si utilizza l'API, riducendo la necessità di un indirizzo IP aggiuntivo.
 +
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html["Scopri di più sui requisiti degli indirizzi IP in Google Cloud"^]
