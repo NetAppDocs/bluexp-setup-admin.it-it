@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-iam-manage-folders-projects.html 
-keywords: folders, projects, resource hierarchy, create folders, create projects, iam, identity and access management 
+keywords: folders, projects, resource hierarchy, create folders, create projects, iam, identity and access management, project id 
 summary: La gestione delle identità e degli accessi di BlueXP  consente di rappresentare una gerarchia completa delle risorse mediante cartelle e progetti. 
 ---
 = Organizzare le risorse in BlueXP  IAM con cartelle e progetti
@@ -145,6 +145,23 @@ Se l'accesso ai membri è stato fornito a un livello superiore della gerarchia (
 
 .Risultato
 BlueXP  aggiorna i membri che hanno accesso alla cartella o al progetto.
+
+
+
+== Ottenere l'ID per un progetto
+
+Se si utilizza l'API BlueXP , potrebbe essere necessario ottenere l'ID per un progetto. Ad esempio, quando si crea un ambiente di lavoro Cloud Volumes ONTAP.
+
+.Fasi
+. Dalla pagina *Organizzazione*, selezionare un progetto nella tabella e scegliere image:icon-action.png["Un'icona con tre punti affiancati"]
++
+Viene visualizzato l'ID progetto.
+
+. Per copiare l'ID, selezionare il pulsante Copia.
++
+image:screenshot-iam-project-id.png["Una schermata della tabella cartelle e progetti che mostra l'ID progetto per selezionare il menu azione per un progetto."]
+
+
 
 
 
