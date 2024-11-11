@@ -764,7 +764,7 @@ Le sezioni seguenti descrivono come utilizzare le autorizzazioni per ciascun ser
 
 === Amazon FSX per ONTAP
 
-Il connettore effettua le seguenti richieste API per gestire Amazon FSX per ONTAP:
+Il connettore richiede le seguenti API per gestire un file system Amazon FSX per ONTAP:
 
 * ec2:DescripbeInstances
 * ec2:DescripbeInstanceStatus
