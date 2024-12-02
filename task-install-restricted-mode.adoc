@@ -320,9 +320,9 @@ Configurare BlueXP.
 Quando si accede alla console BlueXP per la prima volta, viene richiesto di scegliere un account a cui associare il connettore ed è necessario attivare la modalità limitata.
 
 .Prima di iniziare
-La persona che configura BlueXP  Connector deve accedere a BlueXP  utilizzando un login che non appartiene a un'organizzazione BlueXP  che opera in modalità standard.
+La persona che configura BlueXP  Connector deve accedere a BlueXP  utilizzando un accesso che non appartiene a un account o a un'organizzazione BlueXP .
 
-Se il tuo login BlueXP  è associato a un'organizzazione che opera in modalità standard, dovrai registrarti con un nuovo login BlueXP  o con le credenziali del sito di supporto NetApp che non appartengono a un'organizzazione. In caso contrario, non viene visualizzata l'opzione di attivazione della modalità limitata nella schermata di configurazione.
+Se il tuo login BlueXP  è associato a un altro account o organizzazione, dovrai registrarti con un nuovo login BlueXP . In caso contrario, non viene visualizzata l'opzione di attivazione della modalità limitata nella schermata di configurazione.
 
 .Fasi
 . Aprire un browser Web da un host connesso all'istanza del connettore e immettere il seguente URL:
