@@ -18,6 +18,29 @@ Scopri le novità delle funzionalità di amministrazione di BlueXP : Gestione d
 
 
 
+== 9 dicembre 2024
+
+
+
+=== Connettore 3.9.47
+
+Questa versione di BlueXP  Connector include correzioni di bug e una modifica agli endpoint contattati durante l'installazione del connettore.
+
+A questo punto, la versione 3.9.47 è disponibile per la modalità standard e la modalità limitata.
+
+.Endpoint per contattare il supporto NetApp durante l'installazione
+Quando si installa manualmente il connettore, il programma di installazione non contatta più \https://support.NetApp.com.
+
+Il programma di installazione contatta comunque \https://mysupport.NetApp.com.
+
+
+
+=== Gestione delle identità e degli accessi BlueXP 
+
+La pagina connettori elenca solo i connettori attualmente disponibili. Non visualizza più i connettori rimossi.
+
+
+
 == 26 novembre 2024
 
 
@@ -53,7 +76,7 @@ Per ulteriori informazioni sulla modalità privata, inclusa la modalità di aggi
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Informazioni sulla modalità privata"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Scopri come iniziare a utilizzare BlueXP in modalità privata"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Informazioni su come aggiornare il connettore quando si utilizza la modalità privata"]s
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Informazioni su come aggiornare il connettore quando si utilizza la modalità privata"]
 
 
 
@@ -1134,7 +1157,7 @@ https://bluexp.netapp.com["Scopri di più dal sito Web BlueXP"^]
 Nuovo menu di navigazione:: Nel menu di navigazione di BlueXP, i servizi sono ora organizzati in base alle categorie e sono denominati in base alle loro funzionalità. Ad esempio, puoi accedere al backup e al ripristino BlueXP dalla categoria *protezione*.
 +
 --
-image:screenshot-navigation-menu.png["Schermata del menu di navigazione di BlueXP che mostra categorie come Storage e Health."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-navigation-menu.png["Schermata del menu di navigazione di BlueXP che mostra categorie come Storage e Health."]
 
 --
 Integrazioni di nuovi prodotti::
@@ -1510,7 +1533,7 @@ Gli account NetApp Support Site (NSS) sono ora gestiti dalla dashboard di suppor
 
 link:task-adding-nss-accounts.html["Scopri come gestire gli account NSS"].
 
-image:screenshot_nss_management.png["Schermata della scheda Gestione NSS nella dashboard di supporto, in cui è possibile aggiungere account NSS."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot_nss_management.png["Schermata della scheda Gestione NSS nella dashboard di supporto, in cui è possibile aggiungere account NSS."]
 
 
 

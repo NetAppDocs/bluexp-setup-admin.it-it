@@ -21,7 +21,6 @@ summary: 'Se i membri dell"organizzazione devono utilizzare un connettore in un 
 
 .A proposito di questa attività
 * Quando una _cartella o un project admin_ visualizza la pagina *connettori*, la pagina visualizza tutti i connettori nell'organizzazione. Tuttavia, un membro con questo ruolo può solo visualizzare e associare i connettori alle cartelle e ai progetti per i quali dispongono delle autorizzazioni. link:reference-iam-predefined-roles.html["Ulteriori informazioni sulle azioni che possono essere completate da _una cartella o da un amministratore di progetto_"].
-* A causa di un problema noto, la pagina connettori in BlueXP  IAM visualizza tutti i vecchi connettori rimossi in precedenza da BlueXP .
 
 
 .Fasi

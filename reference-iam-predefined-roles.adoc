@@ -18,63 +18,65 @@ BlueXP  Identity and Access Management (IAM) include diversi ruoli predefiniti 
 
 
 
-== Amministratore dell'organizzazione
+== Ruoli della piattaforma
 
-Descrizione:: Garantisce il controllo completo dell'intera organizzazione di BlueXP .
-Permessi:: Un membro che ha questo ruolo può completare tutte le azioni in BlueXP .
+BlueXP  IAM include due ruoli di piattaforma: Amministratore dell'organizzazione e cartella o Amministratore del progetto. La principale differenza tra i due ruoli della piattaforma BlueXP  IAM è l'ambito. Il ruolo di amministratore dell'organizzazione dispone delle autorizzazioni per tutte le cartelle e i progetti, mentre l'amministratore della cartella o del progetto dispone solo delle autorizzazioni per la cartella o il progetto a cui sono stati assegnati.
+
+Il ruolo di amministratore cartella o progetto non può creare connettori.
+
+Permessi::
 
 
+[cols="24,19,19"]
+|===
+| Attività | Amministratore dell'organizzazione | Cartella o Amministratore progetto 
 
 
-== Amministratore cartella o progetto
+| Creare connettori | Sì | No 
 
-Descrizione:: Fornisce il controllo completo di uno o più progetti e cartelle.
+
+| Creare, modificare o eliminare ambienti di lavoro (aggiungere o rilevare nuove risorse utilizzando BlueXP  Canvas) | Sì | Sì 
+
+
+| Creare progetti/cartelle, incluse la ridenominazione, l'eliminazione e la modifica | Sì | Sì 
+
+
+| Assegnare ruoli e aggiungere utenti | Sì | Sì 
+
+
+| Associare risorse e connettori a cartelle e progetti | Sì | Sì 
+
+
+| Gestire le credenziali da Impostazioni > credenziali | Sì | Sì 
+
+
+| Visualizza la timeline di BlueXP  | Sì | Sì 
+
+
+| Utilizza i servizi BlueXP  | Sì | Sì 
+
+
+| Registrati BlueXP  per supportare e inviare i casi | Sì | Sì 
+|===
+Esempio di ruoli organizzativi in BlueXP  per una grande organizzazione multinazionale:: XYZ Corporation, una multinazionale, intende separare l'accesso alle risorse di storage dei dati in base alle aree geografiche: Nord America, Europa e Asia-Pacifico. Vogliono che ogni regione abbia il controllo esclusivo sulle proprie risorse, pur mantenendo una supervisione centralizzata.
 +
 --
-Se si assegna questo ruolo a livello di cartella, il membro dispone delle autorizzazioni per tutti i progetti associati a tale cartella.
+A tal fine, una persona a cui è stato assegnato il ruolo di amministratore dell'organizzazione in BlueXP  di XYZ Corporation crea un ambiente di lavoro iniziale e quindi crea cartelle separate in BlueXP  per ciascuna regione. La cartella di ogni regione contiene progetti (con risorse associate) correlati a tale regione. L'amministratore dell'organizzazione assegna a un utente BlueXP  in ciascuna regione il ruolo di amministratore cartella/progetto.
 
---
-Permessi:: Un membro che ha questo ruolo può completare le seguenti azioni in BlueXP :
-+
---
-* Gestire tutti gli ambienti di lavoro nei progetti e nelle cartelle per i quali dispongono delle autorizzazioni
-* Utilizzare tutti i servizi BlueXP 
-* Da BlueXP  IAM, un amministratore di una cartella può amministrare le cartelle, i progetti e le risorse derivate da tale cartella:
-+
-** Aggiungere cartelle o progetti all'interno della cartella
-** Modificare cartelle e progetti: I loro nomi, le risorse associate e l'accesso dei membri
-** Eliminare cartelle e progetti
-** Aggiungere un account utente e associare un ruolo a livello di cartella o progetto
-** Associare un connettore a una cartella o a un progetto
-** Aggiungere un ruolo a un membro a livello di cartella o progetto
-** Visualizzare le risorse associate a cartelle e progetti
-** Associare le risorse visualizzabili a cartelle o progetti aggiuntivi
-** Dissociare una risorsa da una cartella o da un progetto
-
-
-* Da BlueXP  IAM, un amministratore di un progetto può amministrare il progetto e le risorse associate nel modo seguente:
-+
-** Modificare il progetto: Il suo nome, le risorse associate e l'accesso dei membri
-** Aggiungere un account utente e associare un ruolo a livello di progetto
-** Associare un connettore a un progetto, se il membro dispone delle autorizzazioni di amministratore per altri progetti che hanno altri connettori associati
-** Aggiungere un ruolo a un membro a livello di progetto
-** Visualizzare le risorse associate al progetto
-** Associare le risorse al progetto, se il membro dispone delle autorizzazioni di amministratore per altri progetti che dispongono di altre risorse associate
-** Dissociare una risorsa dal progetto
-** Eliminare il progetto
-
-
-* Gestire le credenziali da Impostazioni > credenziali
-* Visualizza la timeline di BlueXP 
-* Registrati BlueXP  per supportare e inviare i casi
-
+Una volta completata la configurazione iniziale, gli amministratori regionali con il ruolo di amministratore cartella o progetto possono creare nuovi ambienti di lavoro e aggiungere utenti all'interno delle rispettive aree geografiche. Questi amministratori regionali possono anche aggiungere/rimuovere/rinominare cartelle e progetti a cui sono assegnati. L'amministratore dell'organizzazione eredita le autorizzazioni per qualsiasi nuovo ambiente di lavoro o risorsa, mantenendo la visibilità dell'utilizzo dello storage nell'intera organizzazione.
 
 --
 
 
 
 
-== Amministratore SnapCenter
+== Ruoli nei servizi dati
+
+I ruoli dei servizi dati possono completare le proprie attività in qualsiasi progetto o cartella.
+
+
+
+=== Amministratore SnapCenter
 
 Descrizione:: Consente di eseguire il backup delle snapshot da cluster ONTAP on-premise utilizzando il backup e recovery di BlueXP  per le applicazioni.
 Permessi:: Un membro che ha questo ruolo può completare le seguenti azioni in BlueXP :
@@ -90,7 +92,7 @@ Permessi:: Un membro che ha questo ruolo può completare le seguenti azioni in B
 
 
 
-== Visualizzatore di classificazione
+=== Visualizzatore di classificazione
 
 Descrizione:: Consente di visualizzare i risultati delle scansioni di classificazione BlueXP .
 Permessi:: Visualizzare le informazioni sulla conformità e generare report per le risorse a cui hanno l'autorizzazione di accedere. Questi utenti non possono abilitare o disabilitare la scansione di volumi, bucket o schemi di database.

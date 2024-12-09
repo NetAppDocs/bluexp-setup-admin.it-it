@@ -5,7 +5,6 @@
 Endpoint contattati durante l'installazione manuale:: Quando si installa manualmente il connettore sul proprio host Linux, il programma di installazione del connettore richiede l'accesso ai seguenti URL durante il processo di installazione:
 +
 --
-* \https://support.netapp.com
 * \https://mysupport.netapp.com
 * \https://signin.b2c.NetApp.com (questo endpoint è l'URL CNAME per \https://mysupport.NetApp.com)
 * \https://cloudmanager.cloud.netapp.com/tenancy
