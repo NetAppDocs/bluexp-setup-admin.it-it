@@ -479,37 +479,19 @@
   <block id="681992b8581f6d4247af5523a14d0ce4" category="list-text">Motore Docker</block>
   <block id="9f0bb2acc3984bc2da2e5e566dd4bc0a" category="doc">Scopri BlueXP</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">Caratteristiche</block>
-  <block id="e250797f3ba805eed2f7fad2419fdd05" category="paragraph">La piattaforma BlueXP offre quattro pilastri principali per la gestione dei dati: Storage, mobilità, protezione, analisi e controllo.</block>
-  <block id="8c4aa541ee911e8d80451ef8cc304806" category="list-text">Storage</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="inline-link">Cloud Volumes ONTAP</block>
-  <block id="4066a2484747588656be41f7c6f52cf0" category="list-text">Configurazione e utilizzo<block ref="f57700eb7f072532c25bc35835afbefb" category="inline-link-rx"></block> per una gestione dei dati efficiente e multiprotocollo tra i cloud.</block>
-  <block id="17a28f89a71d8bcba39452a2fd7343db" category="list-text">Configurare e utilizzare i servizi di file storage nel cloud:</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link">Azure NetApp Files</block>
-  <block id="d03fba385c4e1320cb0846a9690ea3db" category="list-text"><block ref="d03fba385c4e1320cb0846a9690ea3db" category="inline-link-rx"></block></block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link">Amazon FSX per ONTAP</block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link">Cloud Volumes Service per Google Cloud</block>
-  <block id="bb5abe8201599db6217db0b48efaaf5c" category="list-text"><block ref="bb5abe8201599db6217db0b48efaaf5c" category="inline-link-rx"></block></block>
-  <block id="f06223f9afc23bac523c7b9854772040" category="inline-link">storage on-premise</block>
-  <block id="cb11e2080182d06a67c487a84e30d491" category="list-text">Rilevare e gestire<block ref="3908ac962ccecd5304bef31bbe1227cb" category="inline-link-rx"></block>:</block>
   <block id="6b068f0a943d421535c7d8d412ee3522" category="list-text">Sistemi e-Series</block>
   <block id="3404cce75db90acf6a9d52860721a139" category="list-text">Cluster ONTAP</block>
   <block id="7fcb7f97cbc710b693fef37b5e86770f" category="list-text">Sistemi StorageGRID</block>
-  <block id="340a76e3aef8e862f5fd79411261b297" category="list-text">Mobilità</block>
   <block id="e216b7a924341f796bca310d1d812baf" category="inline-link">Copia e sincronizzazione</block>
-  <block id="f74f0f0050569783e8c306d738c4d91e" category="list-text"><block ref="f74f0f0050569783e8c306d738c4d91e" category="inline-link-rx"></block></block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="inline-link">Tiering</block>
-  <block id="81bcb3e3c1a8f797192f8c3c33e62033" category="list-text"><block ref="81bcb3e3c1a8f797192f8c3c33e62033" category="inline-link-rx"></block></block>
-  <block id="83f1d9ca1a0c4c2fc51a371c0d773f76" category="list-text">Protezione</block>
-  <block id="ed1891c7b97e1ba412c8496f2aa85fbf" category="list-text">Utilizza meccanismi di protezione automatici per proteggere i dati da perdita di dati, interruzioni non pianificate, ransomware e altre minacce informatiche.</block>
   <block id="be062cdcabbb3055334e8f19b4bdf378" category="inline-link">Backup e recovery</block>
-  <block id="118f003038811dac1d88399f8ad54969" category="list-text"><block ref="118f003038811dac1d88399f8ad54969" category="inline-link-rx"></block></block>
   <block id="8c340dc334134096f68b880b42a8692c" category="inline-link">Replica</block>
-  <block id="e5335d776982e29d68ce5591f7857b38" category="list-text"><block ref="e5335d776982e29d68ce5591f7857b38" category="inline-link-rx"></block></block>
-  <block id="27d62ce672b932b5110b78a6ca41f5d9" category="list-text">Analisi e controllo</block>
   <block id="5c9335b28e6277ddbe0137f04e5e58a7" category="inline-link">Classificazione</block>
-  <block id="3e347fe716ab17eefd02acef8c0347bf" category="list-text"><block ref="3e347fe716ab17eefd02acef8c0347bf" category="inline-link-rx"></block></block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="inline-link">Consulente digitale</block>
-  <block id="86d4d1274a29106954740fc239a0af79" category="list-text"><block ref="86d4d1274a29106954740fc239a0af79" category="inline-link-rx"></block></block>
   <block id="902e65d33784bd8924eb05e622aa2dda" category="section-title">Cloud provider supportati</block>
   <block id="0cf89ba9f6178dc91d18ec5c2aec1c61" category="paragraph">BlueXP consente di gestire lo storage cloud e utilizzare i servizi cloud in Amazon Web Services, Microsoft Azure e Google Cloud.</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">Costo</block>
@@ -2815,8 +2797,6 @@ Questo endpoint è richiesto solo nelle regioni governative di Azure.</block>
   <block id="37b89c92faa8fead3ede2cb2c162ef52" category="inline-link-macro">Visualizza le autorizzazioni richieste per l'istanza del connettore</block>
   <block id="ee0f5d3d76febb57f0cd8c307401026c" category="paragraph">Per prepararsi all'implementazione di un marketplace, creare policy IAM in AWS e allegarle a un ruolo IAM. Quando si crea il connettore da AWS Marketplace, viene richiesto di selezionare il ruolo IAM.</block>
   <block id="b8173d0c4669ed6158a49dda320b1515" category="paragraph">A seconda dei servizi BlueXP che si intende utilizzare, potrebbe essere necessario creare una seconda policy. Per le regioni standard, le autorizzazioni sono distribuite in due policy. Sono necessarie due policy a causa di un limite massimo di dimensioni dei caratteri per le policy gestite in AWS. <block ref="60507836418f54f0b2b646fcefa2cf2c" category="inline-link-macro-rx"></block>.</block>
-  <block id="ad76b7ae56285d87ab9015cde946bbf4" category="list-text"><block ref="ad76b7ae56285d87ab9015cde946bbf4" category="inline-link-rx"></block></block>
-  <block id="89db269549ff807cf08533caabe7fa9b" category="list-text"><block ref="89db269549ff807cf08533caabe7fa9b" category="inline-link-rx"></block></block>
   <block id="64f210f4d96dcba2f41cec7b537055f7" category="list-text">Comprensione dei requisiti di CPU e RAM per l'istanza.</block>
   <block id="fbeff5cf304fefe21e93306905a53be6" category="inline-link-macro">Esaminare i requisiti dell'istanza</block>
   <block id="faa2f324a4d310b356e12aa82056254e" category="paragraph"><block ref="c95ec05c4ecf0f3a1ae9ac9ed3381eba" prefix="" category="inline-code"></block></block>
@@ -3231,8 +3211,6 @@ membro: Account di servizio BlueXP come serviceAccount.user</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">Per supporto tecnico relativo a un file service di un cloud provider, alla sua infrastruttura o a una soluzione che utilizza il servizio, fare riferimento a "Guida in linea" nella documentazione BlueXP relativa a quel prodotto.</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">Per ricevere supporto tecnico specifico di BlueXP e delle relative soluzioni e servizi storage, utilizza le opzioni di supporto descritte di seguito.</block>
   <block id="0b440ac3de48c7d11ee5fad31e6b4f12" category="paragraph">Questa versione contiene piccoli miglioramenti e correzioni di bug.</block>
-  <block id="fbfcc41262435943a07339aac43c3871" category="summary">NetApp BlueXP offre alla tua organizzazione un singolo piano di controllo che ti aiuta a creare, proteggere e gestire i dati nei tuoi ambienti on-premise e cloud. La piattaforma SaaS BlueXP include servizi che forniscono gestione dello storage, mobilità dei dati, data Protection e analisi e controllo dei dati. Le funzionalità di gestione vengono fornite tramite una console basata su web e API.</block>
-  <block id="17b1e045b0e19ff6f254c01b1f9a9131" category="list-text">Utilizza strumenti per monitorare, mappare e ottimizzare l'infrastruttura e lo storage dei dati. Ottieni informazioni utilizzabili per ottimizzare salute, resilienza e economia dello storage.</block>
   <block id="ca61c00bb942882ff64e228d1e677f97" category="paragraph">Per utilizzare BlueXP in modalità limitata o privata è necessario un connettore.</block>
   <block id="25a9b1247ec1fd14b6ef367a6910af4a" category="inline-link-macro">Inizia subito con BlueXP in modalità standard</block>
   <block id="53307bf922b08c003dac0571547a263c" category="list-text"><block ref="53307bf922b08c003dac0571547a263c" category="inline-link-macro-rx"></block></block>
@@ -4051,7 +4029,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="9aa917589a67807ae517fb9273102cfc" category="list-text">In modalità privata, il connettore è supportato nel cloud o on-premise.</block>
   <block id="d807dd72163fd15a4c8f1c109e3e464f" category="list-text">Le installazioni manuali del connettore sono supportate sul vostro host Linux nel cloud o in sede.</block>
   <block id="93c8aa442d9657958e3a6b431149b6c7" category="list-text">L'interfaccia utente è accessibile dal connettore implementato nell'area cloud o in sede.</block>
-  <block id="293b0d6507d1bd7abf464948b7ee72e3" category="list-text">Scopri, implementa e gestisci lo storage, in AWS, Azure, Google Cloud o on-premise.</block>
   <block id="697e19b973c6dfabc32eda21853b990c" category="inline-link">Installare e configurare un connettore in loco</block>
   <block id="66579202619073ba384ce27dfcd8dff1" category="list-text"><block ref="66579202619073ba384ce27dfcd8dff1" category="inline-link-rx"></block></block>
   <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">9 settembre 2024</block>
@@ -4303,13 +4280,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="a5a81005322e1187e396e2f1252dca71" category="inline-link-macro">Ulteriori informazioni su BlueXP  IAM</block>
   <block id="0a3f88a939958973fc19097a4507c320" category="list-text"><block ref="0a3f88a939958973fc19097a4507c320" category="inline-link-macro-rx"></block></block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="inline-link">Amazon FSX per NetApp ONTAP</block>
-  <block id="9c4a7c12354adf4b9769466219528866" category="list-text"><block ref="9c4a7c12354adf4b9769466219528866" category="inline-link-rx"></block></block>
-  <block id="00838ef59a9253836a006f7f6c950540" category="list-text">Sposta i dati dove è necessario sincronizzando, copiando e eseguendo il tiering.</block>
-  <block id="567df595b15ee514a60197cd2704d121" category="list-text"><block ref="567df595b15ee514a60197cd2704d121" category="inline-link-rx"></block></block>
-  <block id="ecbf594bb3a0b1f21d5ca3e417aec924" category="list-text"><block ref="ecbf594bb3a0b1f21d5ca3e417aec924" category="inline-link-rx"></block></block>
-  <block id="0e8ea8e34a0c202eee5118a2cb8b1245" category="inline-link">Scopri di più su come puoi utilizzare BlueXP  per gestire i dati nel tuo ambiente di multicloud ibrido</block>
-  <block id="0db222e907cad49a37eadf66bb039f71" category="paragraph"><block ref="0db222e907cad49a37eadf66bb039f71" category="inline-link-rx"></block></block>
-  <block id="e941556cb9de65414ef1016588b14a16" category="paragraph">BlueXP  include una console basata sul Web fornita attraverso il livello SaaS, un sistema di gestione delle risorse e degli accessi e connettori che gestiscono gli ambienti di lavoro e abilitano i servizi cloud BlueXP .</block>
   <block id="b92add9eaaadea48e36392b833f28648" category="paragraph">BlueXP  è accessibile tramite a<block ref="2f36e092fa6569e04c3ec0f6ff9041a3" category="inline-link-rx"></block> e API. Questa esperienza SaaS ti consente di accedere automaticamente alle funzionalità più recenti non appena vengono rilasciate e di passare facilmente da un'organizzazione, un progetto e un connettore BlueXP  all'altro.</block>
   <block id="99acbaa3cb87e4fe6650072fa6b0a905" category="section-title">Gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP </block>
   <block id="6634ed0b00a5c7441cfb3ec2c18b56d8" category="paragraph">BlueXP  Identity and Access Management (IAM) è un modello di gestione delle risorse e degli accessi che fornisce una gestione granulare delle risorse e delle autorizzazioni:</block>
@@ -4321,7 +4291,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="b2bb1015f4cde818ea1f13912e4e1755" category="inline-link-macro">Ulteriori informazioni su BlueXP  IAM</block>
   <block id="1c675fd28ce69ed7126f32d646676158" category="list-text"><block ref="1c675fd28ce69ed7126f32d646676158" category="inline-link-macro-rx"></block></block>
   <block id="8fbf37ccd9a099359c44e494e119477c" category="paragraph">Non è necessario un connettore per iniziare a utilizzare BlueXP, ma è necessario creare un connettore per sbloccare tutte le funzionalità e i servizi di BlueXP. Un connettore consente la gestione di risorse e processi in ambienti on-premise e cloud. È necessario gestire gli ambienti di lavoro (ad esempio, Cloud Volumes ONTAP) e utilizzare molti servizi BlueXP .</block>
-  <block id="f2dac34fd4c65525dd66bb810768bb27" category="paragraph">BlueXP  è supportato in ambienti con limitazioni di sicurezza e connettività. È possibile utilizzare _restricted mode_ o _private mode_ per limitare la connettività in uscita al layer BlueXP SaaS.</block>
   <block id="cdf60a7d13d1d74e115661d87ae97a3f" category="list-text">Ubuntu 24,04 LTS</block>
   <block id="b6f945763d62ac8e8f24fb52111049ee" category="summary">La gestione delle identità e degli accessi di BlueXP  include diversi ruoli predefiniti che è possibile assegnare ai membri dell'organizzazione.</block>
   <block id="9a4737feea9b9d5b10fea0c8478ac45b" category="doc">Ruoli e autorizzazioni IAM BlueXP  predefiniti</block>
@@ -4904,4 +4873,58 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="1f86b1e4048d088ce153a6f451fb30d6" category="section-title">9 dicembre 2024</block>
   <block id="6dbd17d362d540a01bdcf61fb73192e3" category="paragraph"><block ref="6dbd17d362d540a01bdcf61fb73192e3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8aed33df97a7e5d16736c205973e6239" category="paragraph"><block ref="8aed33df97a7e5d16736c205973e6239" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0c203240d7d7088c0a43d84641289267" category="summary">NetApp BlueXP offre alla tua organizzazione un singolo piano di controllo che ti aiuta a creare, proteggere e gestire i dati nei tuoi ambienti on-premise e cloud.</block>
+  <block id="1abbc9b3f7ef6da2c82af17a4e17d91d" category="paragraph">BlueXP  offre controllo unificato dello storage nel multicloud ibrido e nei servizi dati integrati per proteggere, mettere al sicuro e ottimizzare i dati.</block>
+  <block id="3c916fa6dfbc9f3d399c969d9c767df5" category="section-title">Controllo unificato dello storage da BlueXP  Canvas</block>
+  <block id="9feded36752088310319aa4add1d9bc6" category="paragraph">_BlueXP  Canvas_ ti permette di rilevare, implementare, ottimizzare e gestire lo storage cloud e on-premise. Canvas offre una singola ubicazione per tutta la gestione dello storage.</block>
+  <block id="a7a49fddbe3307c59d164dd83ddf376d" category="section-title">Storage cloud e on-premise supportato</block>
+  <block id="5a19e2344fd7397565c50e4554947edb" category="paragraph">BlueXP  ti consente di gestire i seguenti tipi di storage da BlueXP  Canvas:</block>
+  <block id="165168c444979fab1fc4b5f5234e8edb" category="list-text">Soluzioni di cloud storage</block>
+  <block id="a77255c8473fd0c82b986bb6ce8b7d4d" category="list-text">Storage a oggetti e flash on-premise</block>
+  <block id="b9c8cb06fa02abe70007fad1ae9d0b57" category="list-text">Storage a oggetti cloud</block>
+  <block id="00bb240da1e628695b0b4b9a35b415e9" category="section-title">Gestione dello storage dagli ambienti di lavoro</block>
+  <block id="d5d09c8a04d93eaf08592bf42a80b066" category="paragraph">In BlueXP  Canvas, _ambienti di lavoro_ rappresentano il cloud e lo storage on-premise che hai scoperto o implementato. Puoi selezionare un ambiente di lavoro e integrarlo con i servizi dati BlueXP  oppure entrare nell'ambiente di lavoro per completare azioni di gestione dello storage come l'aggiunta di volumi.</block>
+  <block id="7eea8ba09f9fe322cb11baf7a5867123" category="inline-image-macro">Uno screenshot di BlueXP  Canvas che mostra diversi ambienti di lavoro, uno dei quali selezionato e mostra la possibilità di abilitare i servizi dati di BlueXP  o di selezionare Inserisci ambiente di lavoro per la gestione dello storage.</block>
+  <block id="3b5e2810d2c4d23cff3f78705d592aaa" category="paragraph"><block ref="3b5e2810d2c4d23cff3f78705d592aaa" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="23f9f5b793c30aaa036bf6bf045da10f" category="section-title">Servizi integrati per proteggere, proteggere e ottimizzare i dati</block>
+  <block id="98165eb3dfced987bf0a8b76a2804492" category="paragraph">BlueXP  include una suite completa di servizi dati integrati per aiutarti a mantenere la sicurezza, l'integrità e la disponibilità dei dati nei tuoi ambienti di storage on-premise e di cloud.</block>
+  <block id="f7ce517e0d71a43254b7a55670a9b018" category="list-text">Avvisi BlueXP</block>
+  <block id="2d5c8aeda2ab373d4a288e3bb0e951b0" category="list-text">Visualizza i problemi di capacità, disponibilità, performance, protezione e sicurezza del tuo ambiente ONTAP.</block>
+  <block id="2b86317cf346d1bf47abc8c04df6f353" category="list-text">Catalogo di automazione BlueXP</block>
+  <block id="5d880ed9e8bc81eec72f5edb5332637d" category="list-text">Utilizza soluzioni basate su script per automatizzare l'installazione e l'integrazione di prodotti e servizi NetApp.</block>
+  <block id="ede1cce9f240fed5ecc4264bd699cee1" category="list-text">Backup e ripristino BlueXP</block>
+  <block id="a3460dd01b0f0c32632246bf209e730f" category="list-text">Backup e ripristino di dati on-premise e cloud.</block>
+  <block id="2090f2d846793f153b9266c648b079ef" category="list-text">Prepara la privacy dei dati delle applicazioni e degli ambienti cloud.</block>
+  <block id="7c3a23f387fffbae2b30f2fdcf4eb3e3" category="list-text">Operazioni cloud BlueXP</block>
+  <block id="a17d9dd4943af64ba04db4529621baf0" category="list-text">Ottieni visibilità sulla spesa per il cloud computing e identifica i potenziali risparmi.</block>
+  <block id="9b4b22e819a51a3523fc811f5d93370a" category="list-text">Copia e sincronizzazione BlueXP</block>
+  <block id="9f47c7f98e6626074067a711fc1863ea" category="list-text">Sincronizza i dati tra data store on-premise e cloud.</block>
+  <block id="046d76eda0c1ca3ef0dc85e15394ce90" category="list-text">BlueXP Digital Advisor</block>
+  <block id="6f46f51af0fa796b3853885705907e6f" category="list-text">Utilizza gli analytics predittivi e il supporto proattivo per ottimizzare l'infrastruttura dati.</block>
+  <block id="7b432de78427e2c7ffdddf3f0a09ce52" category="list-text">Portafoglio digitale BlueXP</block>
+  <block id="5928ade999566a2ca0d839d3c191b3f1" category="list-text">Gestire e monitorare le licenze e le sottoscrizioni.</block>
+  <block id="c08885153d0680dab7349b930f5310c4" category="list-text">Disaster recovery di BlueXP</block>
+  <block id="c7b1fe992423d57d0e492585ff631c02" category="list-text">Proteggi i workload VMware on-premise utilizzando VMware Cloud su Amazon FSX per ONTAP come sito di disaster recovery.</block>
+  <block id="71bd4794c020a7645a4cfe74173f4058" category="list-text">Efficienza economica di BlueXP</block>
+  <block id="068ff21264880d35ad4153fad90e3828" category="list-text">Identificare i cluster con capacità bassa attuale o prevista e implementare il tiering dei dati o consigli aggiuntivi sulla capacità.</block>
+  <block id="dd7c710b103a018a2046baa2f5052ed9" category="list-text">Resilienza operativa BlueXP</block>
+  <block id="00ac035a0893138aed2f04da8c8223d3" category="list-text">Implementazione di soluzioni automatizzate per il rischio di configurazione del firmware e del software per mantenere lo stato di salute dei cluster ONTAP.</block>
+  <block id="67ecb6c0a19888100e5352d06f886856" category="list-text">Protezione ransomware BlueXP</block>
+  <block id="a8dd42d088a97f32bf9a4c69abc2517a" category="list-text">Rileva le anomalie che potrebbero causare attacchi ransomware. Proteggi e ripristina i carichi di lavoro.</block>
+  <block id="3ffe2e9dffcfea6ba0652c1f11e54fc1" category="list-text">Replica BlueXP</block>
+  <block id="852e5aa5bab2b81469e97f26b6e2b7f3" category="list-text">Replica dei dati tra sistemi storage per supportare backup e disaster recovery.</block>
+  <block id="8e28797de414b72e6beab6ed5932133f" category="list-text">Aggiornamenti software BlueXP</block>
+  <block id="e5f69c6478276f31149c942722646515" category="list-text">Automatizzare la valutazione, la pianificazione e l'esecuzione degli upgrade ONTAP.</block>
+  <block id="0519e7e082ac907bdeb4ef1c92c001ad" category="list-text">Dashboard di sostenibilità BlueXP</block>
+  <block id="b6ec628f73e9b33a6ae94b2c3ef2879b" category="list-text">Analizza la sostenibilità dei tuoi sistemi storage.</block>
+  <block id="078be6a9f1dfaaea5e7153ff9ec78760" category="list-text">Tiering BlueXP</block>
+  <block id="c6844dc3fe4e51f03d9c9209b1f58fc4" category="list-text">Estendi il tuo storage ONTAP on-premise al cloud.</block>
+  <block id="5f63db6bf0512dc0612ee852c1faf373" category="list-text">Caching del volume BlueXP</block>
+  <block id="d0e71bba7a9d538f008b05b19274bfe1" category="list-text">Creare un volume cache scrivibile per accelerare l'accesso ai dati o trasferire il traffico dai volumi ad accesso elevato.</block>
+  <block id="428b0b39be2352757edeb5f9f12a7bdd" category="list-text">Fabbrica dei carichi di lavoro BlueXP</block>
+  <block id="c2f4c01ba651c0bc1e3f5840352d4723" category="list-text">Progetta, configura e utilizza i carichi di lavoro chiave con Amazon FSX per NetApp ONTAP.</block>
+  <block id="2f47462f5ecdfc3f796e73d2d39a84c8" category="inline-link">Scopri di più su BlueXP  e sui servizi dati disponibili</block>
+  <block id="936eb1752a4903797cd8c4e6f2cfa68b" category="paragraph"><block ref="936eb1752a4903797cd8c4e6f2cfa68b" category="inline-link-rx"></block></block>
+  <block id="e444b5bc216b871d85a48d564b7ce0c4" category="paragraph">BlueXP  include una console basata sul Web fornita attraverso il livello SaaS, un sistema di gestione delle risorse e degli accessi, connettori che gestiscono gli ambienti di lavoro e abilitano i servizi cloud BlueXP  e diverse modalità di implementazione per soddisfare i requisiti aziendali.</block>
+  <block id="c7c20b1a51c664c1850bab1281296aca" category="paragraph">BlueXP  offre tre modalità di implementazione. _Modalità standard_ sfrutta il livello SaaS (Software as a Service) di BlueXP  per fornire funzionalità complete. Se l'ambiente in uso presenta limitazioni di sicurezza e connettività, _modalità limitata_ e _modalità privata_ limitano la connettività in uscita al livello SaaS di BlueXP .</block>
 </blocks>
