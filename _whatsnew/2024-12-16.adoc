@@ -1,0 +1,40 @@
+= Nuovi endpoint sicuri per ottenere immagini del connettore
+:allow-uri-read: 
+
+
+
+
+=== Nuovi endpoint sicuri per ottenere immagini del connettore
+
+Quando si installa il connettore o quando si verifica un aggiornamento automatico, il connettore contatta i repository per scaricare le immagini per l'installazione o l'aggiornamento. Per impostazione predefinita, il connettore ha sempre contattato i seguenti endpoint:
+
+* \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
+
+
+Il primo endpoint include un carattere jolly perché non possiamo fornire una posizione definitiva. Il bilanciamento del carico del repository viene gestito dal provider di servizi, il che significa che i download possono avvenire da endpoint diversi.
+
+Per una maggiore sicurezza, il connettore può ora scaricare le immagini di installazione e aggiornamento da endpoint dedicati:
+
+* \https://bluexpinfraprod.eastus2.data.azurecr.io
+* \https://bluexpinfraprod.azurecr.io
+
+
+Si consiglia di iniziare a utilizzare questi nuovi endpoint rimuovendo gli endpoint esistenti dalle regole del firewall e consentendo i nuovi endpoint.
+
+Questi nuovi endpoint sono supportati a partire dalla versione 3.9.47 del connettore. Non c'è compatibilità con le versioni precedenti del connettore.
+
+Tenere presente quanto segue:
+
+* Gli endpoint esistenti sono ancora supportati. Se non si desidera utilizzare i nuovi endpoint, non è necessario apportare modifiche.
+* Il connettore contatta prima i punti finali esistenti. Se tali endpoint non sono accessibili, il connettore contatta automaticamente i nuovi endpoint.
+* I nuovi endpoint non sono supportati nei seguenti scenari:
++
+** Se il connettore è installato in un'area governativa.
+** Se utilizzi il connettore con backup e recovery di BlueXP  o protezione dal ransomware BlueXP .
+
+
++
+Per entrambi questi scenari, è possibile continuare a utilizzare gli endpoint esistenti.
+
+

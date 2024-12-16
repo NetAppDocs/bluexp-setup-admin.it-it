@@ -268,12 +268,34 @@ Endpoint contattati durante l'installazione manuale:: Quando si installa manualm
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
-* \https://*.blob.core.windows.net
-* \https://cloudmanagerinfraprod.azurecr.io
+* Per ottenere le immagini, l'installatore deve accedere a uno di questi due gruppi di endpoint:
 +
+** Opzione 1 (consigliata):
++
+*** \https://bluexpinfraprod.eastus2.data.azurecr.io
+*** \https://bluexpinfraprod.azurecr.io
+
+
+** Opzione 2:
++
+*** \https://*.blob.core.windows.net
+*** \https://cloudmanagerinfraprod.azurecr.io
+
+
+
+
++
+Gli endpoint elencati nell'opzione 1 sono consigliati perché sono più sicuri. Si consiglia di impostare il firewall in modo che consenta gli endpoint elencati nell'opzione 1, impedendo al contempo gli endpoint elencati nell'opzione 2. Tenere presente quanto segue su questi endpoint:
+
++
+** Gli endpoint elencati nell'opzione 1 sono supportati a partire dalla versione 3.9.47 del connettore. Non c'è compatibilità con le versioni precedenti del connettore.
+** Il connettore contatta prima gli endpoint elencati nell'opzione 2. Se tali endpoint non sono accessibili, il connettore contatta automaticamente gli endpoint elencati nell'opzione 1.
+** Gli endpoint dell'opzione 1 non sono supportati se utilizzi il connettore con backup e recovery BlueXP  o protezione ransomware BlueXP . In questo caso, è possibile disabilitare gli endpoint elencati nell'opzione 1, consentendo allo stesso tempo gli endpoint elencati nell'opzione 2.
+
+
+
+
 L'host potrebbe tentare di aggiornare i pacchetti del sistema operativo durante l'installazione. L'host può contattare diversi siti di mirroring per questi pacchetti di sistemi operativi.
-
-
 
 --
 
@@ -312,15 +334,7 @@ Per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al suppor
 
 
  a| 
-\https://*.api.bluexp.netapp.com
-
-\https://api.bluexp.netapp.com
-
-\https://*.cloudmanager.cloud.netapp.com
-
-\https://cloudmanager.cloud.netapp.com
-
-\https://netapp-cloud-account.auth0.com
+\https://\*.api.BlueXP .NetApp.com \https://api.BlueXP .NetApp.com \https://*.cloudmanager.cloud.NetApp.com \https://cloudmanager.cloud.NetApp.com \https://NetApp-cloud-account.auth0.com
  a| 
 Fornire funzionalità e servizi SaaS all'interno di BlueXP.
 
@@ -329,13 +343,28 @@ Tenere presente che il connettore sta contattando "cloudmanager.cloud.netapp.com
 
 
  a| 
-\https://*.blob.core.windows.net
+Scegliere tra due serie di endpoint:
 
-\https://cloudmanagerinfraprod.azurecr.io
+* Opzione 1 (consigliata) ^1^
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io
+
+* Opzione 2
++
+\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
+
+
  a| 
-Per aggiornare il connettore e i relativi componenti Docker.
+Per ottenere le immagini per gli aggiornamenti dei connettori.
 
 |===
+^1^ gli endpoint elencati nell'opzione 1 sono consigliati perché sono più sicuri. Si consiglia di impostare il firewall in modo che consenta gli endpoint elencati nell'opzione 1, impedendo al contempo gli endpoint elencati nell'opzione 2. Tenere presente quanto segue su questi endpoint:
+
+* Gli endpoint elencati nell'opzione 1 sono supportati a partire dalla versione 3.9.47 del connettore. Non c'è compatibilità con le versioni precedenti del connettore.
+* Il connettore contatta prima gli endpoint elencati nell'opzione 2. Se tali endpoint non sono accessibili, il connettore contatta automaticamente gli endpoint elencati nell'opzione 1.
+* Gli endpoint dell'opzione 1 non sono supportati se utilizzi il connettore con backup e recovery BlueXP  o protezione ransomware BlueXP . In questo caso, è possibile disabilitare gli endpoint elencati nell'opzione 1, consentendo allo stesso tempo gli endpoint elencati nell'opzione 2.
+
+
 --
 
 

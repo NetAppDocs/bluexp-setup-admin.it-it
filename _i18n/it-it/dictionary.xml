@@ -171,12 +171,8 @@
   <block id="ec646b7b2f70895a68ca206afb2d6108" category="list-text">S3 (Simple Storage Service)</block>
   <block id="aec651d37f6f533a4066a1ac8774d6b0" category="inline-link">Per ulteriori informazioni, fare riferimento alla documentazione AWS</block>
   <block id="db9e137068a05efe5440105c2494b7f1" category="cell">Per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al supporto NetApp.</block>
-  <block id="37ba276f010f4ea07f1196b487811443" category="paragraph">\https://*.api.bluexp.netapp.com</block>
   <block id="e1095ff19466581c5274f67123c95036" category="paragraph">\https://api.bluexp.netapp.com</block>
-  <block id="9e434ddc2ad4b9de005368b77254223d" category="paragraph">\https://*.cloudmanager.cloud.netapp.com</block>
-  <block id="115781a0043a85f8707c5c99fd02dc75" category="paragraph">\https://cloudmanager.cloud.netapp.com</block>
   <block id="23486ca53d499245ebae5460cf6d10ad" category="paragraph">Fornire funzionalità e servizi SaaS all'interno di BlueXP.</block>
-  <block id="065880318484084e9bfe33ea9c6a8702" category="cell">Per aggiornare il connettore e i relativi componenti Docker.</block>
   <block id="824f455afa0ae197e5e7156988b6dc50" category="section-title">Server proxy</block>
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="section-title">Porte</block>
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">HTTP (80) e HTTPS (443) forniscono l'accesso all'interfaccia utente locale, che verrà utilizzata in rare circostanze.</block>
@@ -890,7 +886,6 @@
   <block id="25b6fc1a8ebb7aa3a82a611b3dc7cc8d" category="inline-link-macro">Policy di implementazione del connettore per Azure</block>
   <block id="9cbe008fc71c240a16ab125b2873fe44" category="inline-link-macro">Analisi dell'utilizzo delle autorizzazioni da parte di BlueXP</block>
   <block id="1985b326c07cdcb2a260ae0c0c6fde8d" category="inline-link">identità gestita assegnata dal sistema</block>
-  <block id="d47be244f383106c84a24b1e4ba4fea6" category="paragraph">Quando BlueXP implementa la macchina virtuale del connettore in Azure, abilita una<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block> sulla macchina virtuale, crea un ruolo personalizzato e lo assegna alla macchina virtuale. Il ruolo fornisce a BlueXP le autorizzazioni necessarie per gestire le risorse e i processi all'interno dell'abbonamento Azure. <block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>.</block>
   <block id="825a028e49bfdd88d5c17500e011aaf5" category="inline-image-macro">Immagine concettuale che mostra BlueXP che implementa un connettore in un account e un abbonamento Azure. Viene attivata un'identità gestita assegnata dal sistema e viene assegnato un ruolo personalizzato alla macchina virtuale del connettore.</block>
   <block id="4ba8970a06f2fd9f7ce2b5459745a3f0" category="paragraph"><block ref="4ba8970a06f2fd9f7ce2b5459745a3f0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="98c16c747c940667876d314b6eb47dba" category="inline-image-macro">Una schermata che mostra l'opzione Switch account (Cambia account) nella pagina Details &amp;amp; Credentials (Dettagli &amp;amp; credenziali).</block>
@@ -2732,8 +2727,6 @@ Il rilevamento senza connettore (rilevamento diretto) non è supportato.</block>
   <block id="7cbd2e15c5d25612181f48c177cab04b" category="paragraph">Questo endpoint è necessario per installare manualmente il connettore e per aggiornare il connettore e i relativi componenti Docker.</block>
   <block id="49145759efbc79c21fc5ba75bb2aaf72" category="paragraph">A seguito di questa modifica, un connettore in un'area governativa di Azure non contatta più il seguente endpoint:</block>
   <block id="979b0001d7bec41aff8509faf7b59bef" category="paragraph">Si noti che questo endpoint è ancora necessario per tutte le altre configurazioni in modalità limitata e per la modalità standard.</block>
-  <block id="b7e5db85ee5e5c349f5841d09bf19cbe" category="paragraph">Questo endpoint non è richiesto nelle regioni governative di Azure.</block>
-  <block id="8e1098945acc0cdc1dade8505d9ce607" category="paragraph">Questo endpoint è richiesto solo nelle regioni governative di Azure.</block>
   <block id="297a49f6150dc8dc8d45620c0f09f393" category="list-text">Se si desidera gestire le risorse in altri progetti Google Cloud, concedere l'accesso aggiungendo l'account del servizio con il ruolo BlueXP a tale progetto. Dovrai ripetere questo passaggio per ogni progetto.</block>
   <block id="1f7d098197ba2def0ffc66c388b2aa6c" category="paragraph">Se si crea un nuovo ambiente di lavoro per Cloud Volumes ONTAP, BlueXP seleziona queste credenziali AWS per impostazione predefinita:</block>
   <block id="1c16bd0b2377f4460ae56ecb40a419ae" category="paragraph">Nota: Puoi scegliere le sottoscrizioni Azure associate a questo ruolo. Ogni abbonamento scelto fornisce le autorizzazioni di connessione per gestire le risorse in tale abbonamento (ad esempio, Cloud Volumes ONTAP).</block>
@@ -2785,14 +2778,7 @@ Il rilevamento senza connettore (rilevamento diretto) non è supportato.</block>
 \https://cloudkms.googleapis.com/v1
 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
   <block id="641d1f191c2b819061a8e9b6046fdbeb" category="paragraph">| per gestire le risorse in Google Cloud.</block>
-  <block id="cbb0e5cc736eaf87107f863bf695f576" category="paragraph">| \https://*.api.bluexp.netapp.com</block>
   <block id="6032f72586d36689e65d40f24d6a282a" category="paragraph">| fornire funzionalità e servizi SaaS all'interno di BlueXP.</block>
-  <block id="315cc875789c13a43c4e0c550413aeb3" category="paragraph">| \https://*.blob.core.windows.net</block>
-  <block id="f921751bfd3f9ccb8d1939fdcf454c55" category="paragraph">| per aggiornare il connettore e i relativi componenti Docker.</block>
-  <block id="8e999f16c9e1bf3513a187ca219b352d" category="paragraph">\https://cloudmanagerinfraprod.azurecr.io
-Questo endpoint non è richiesto nelle regioni governative di Azure.</block>
-  <block id="badc30c7f0d12562a8053216959ee48c" category="paragraph">\https://occmclientinfragov.azurecr.us
-Questo endpoint è richiesto solo nelle regioni governative di Azure.</block>
   <block id="d7a02621d52c29a3c5f7895e817cba5b" category="list-text">Catalogo di automazione</block>
   <block id="37b89c92faa8fead3ede2cb2c162ef52" category="inline-link-macro">Visualizza le autorizzazioni richieste per l'istanza del connettore</block>
   <block id="ee0f5d3d76febb57f0cd8c307401026c" category="paragraph">Per prepararsi all'implementazione di un marketplace, creare policy IAM in AWS e allegarle a un ruolo IAM. Quando si crea il connettore da AWS Marketplace, viene richiesto di selezionare il ruolo IAM.</block>
@@ -3026,7 +3012,6 @@ Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono
   <block id="60c6ee9a22a8a9d78e90e7b6417781b1" category="list-text">Il nome utente per l'istanza EC2 Linux è ubuntu (per i connettori creati prima di maggio 2023, il nome utente era EC2-user).</block>
   <block id="2a3be610e29cddb2c56aa61b555b895a" category="list-text">Quando è stata creata l'istanza del connettore in AWS, sono stati forniti una chiave di accesso AWS e una chiave segreta. È possibile utilizzare questa coppia di chiavi per SSH all'istanza. Il nome utente per l'istanza EC2 Linux è ubuntu (per i connettori creati prima di maggio 2023, il nome utente era EC2-user).</block>
   <block id="04e4cf5594e5bdae569d4fdcee8b46a6" category="list-text">Quando è stata creata la Connector VM in Azure, è stato specificato un nome utente e si è scelto di autenticarsi con una password o una chiave pubblica SSH. Utilizzare il metodo di autenticazione scelto per la connessione alla macchina virtuale.</block>
-  <block id="300f031c227ed1b4448a8bb51abec2bb" category="paragraph">\https://netapp-cloud-account.auth0.com</block>
   <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">Iscriviti a BlueXP dal marketplace AWS</block>
   <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">Iscriviti a BlueXP da Azure Marketplace</block>
   <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Iscriviti a BlueXP da Google Cloud Marketplace</block>
@@ -4927,4 +4912,57 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="936eb1752a4903797cd8c4e6f2cfa68b" category="paragraph"><block ref="936eb1752a4903797cd8c4e6f2cfa68b" category="inline-link-rx"></block></block>
   <block id="e444b5bc216b871d85a48d564b7ce0c4" category="paragraph">BlueXP  include una console basata sul Web fornita attraverso il livello SaaS, un sistema di gestione delle risorse e degli accessi, connettori che gestiscono gli ambienti di lavoro e abilitano i servizi cloud BlueXP  e diverse modalità di implementazione per soddisfare i requisiti aziendali.</block>
   <block id="c7c20b1a51c664c1850bab1281296aca" category="paragraph">BlueXP  offre tre modalità di implementazione. _Modalità standard_ sfrutta il livello SaaS (Software as a Service) di BlueXP  per fornire funzionalità complete. Se l'ambiente in uso presenta limitazioni di sicurezza e connettività, _modalità limitata_ e _modalità privata_ limitano la connettività in uscita al livello SaaS di BlueXP .</block>
+  <block id="670c21c09cc12fa2b540e85129379b5e" category="paragraph">| \https://\*.api.BlueXP .NetApp.com \https://api.BlueXP .NetApp.com \https://*.cloudmanager.cloud.NetApp.com \https://cloudmanager.cloud.NetApp.com \https://NetApp-cloud-account.auth0.com</block>
+  <block id="1eda4150e04890cf41a6ea76d98f697a" category="paragraph">A| scegliere tra due serie di endpoint:</block>
+  <block id="5f6428bd6c6248b828101aca600e81cd" category="list-text">Opzione 1 (consigliata) ^1^</block>
+  <block id="7d9fb0da2a7d9c9f4e35c19e20d063fa" category="paragraph">\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io</block>
+  <block id="e24963e40778134b357f4a5eac58e1f5" category="list-text">Opzione 2</block>
+  <block id="136fa3635085015cd64da15749cb05d3" category="paragraph">\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io</block>
+  <block id="ba7444feff898fd31052b2c3d71eb3bc" category="paragraph">| per ottenere immagini per gli aggiornamenti dei connettori.</block>
+  <block id="98514385a1eee063dc909984510770cc" category="paragraph">^1^ gli endpoint elencati nell'opzione 1 sono consigliati perché sono più sicuri. Si consiglia di impostare il firewall in modo che consenta gli endpoint elencati nell'opzione 1, impedendo al contempo gli endpoint elencati nell'opzione 2. Tenere presente quanto segue su questi endpoint:</block>
+  <block id="730c1767bb447dca00c8c31982caa0e8" category="paragraph">+ * gli endpoint elencati nell'opzione 1 sono supportati a partire dalla versione 3.9.47 del connettore. Non c'è compatibilità con le versioni precedenti del connettore. * Il connettore contatta prima i punti finali elencati nell'opzione 2. Se tali endpoint non sono accessibili, il connettore contatta automaticamente gli endpoint elencati nell'opzione 1. * Gli endpoint dell'opzione 1 non sono supportati se si utilizza il connettore con backup e ripristino BlueXP  o protezione ransomware BlueXP . In questo caso, è possibile disabilitare gli endpoint elencati nell'opzione 1, consentendo allo stesso tempo gli endpoint elencati nell'opzione 2.</block>
+  <block id="feba1f9c9ed23d57a6a6b22c3aee5bf0" category="paragraph">| se il connettore si trova in una regione del governo AWS: \https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io</block>
+  <block id="e2fb4de75efd2de9f857c298fc2dedf1" category="paragraph">| per ottenere immagini per gli aggiornamenti del connettore quando il connettore viene installato in una regione AWS Government.</block>
+  <block id="d6e105e0a43b0f59c5054550eb57e887" category="paragraph">| se il connettore si trova in una regione di Azure Government: \https://*.blob.core.windows.net \https://occmclientinfragov.azurecr.us</block>
+  <block id="030609409e7ee56f73f54985a1ac8e7b" category="paragraph">| per ottenere immagini per gli aggiornamenti del connettore quando il connettore è installato in un'area di Azure Government.</block>
+  <block id="257dc55948667c2bded118f045b26704" category="paragraph">A| se il connettore si trova in una regione commerciale o sovrana, è possibile scegliere tra due serie di endpoint:</block>
+  <block id="2372eafae2ad885dc502beb3fb342503" category="paragraph">| per ottenere immagini per gli aggiornamenti dei connettori quando il connettore viene installato in una regione commerciale o sovrana.</block>
+  <block id="938bc2259b1b16dfbf9d1ea13da23930" category="list-text">Per ottenere le immagini, l'installatore deve accedere a uno di questi due gruppi di endpoint:</block>
+  <block id="947479331852b9cc69da9bbd894654d1" category="list-text">Opzione 1 (consigliata):</block>
+  <block id="534d469c55031860cef85b868a9332d8" category="list-text">\https://bluexpinfraprod.eastus2.data.azurecr.io</block>
+  <block id="a86a33f4f6d9c203eb747987b6d104ca" category="list-text">\https://bluexpinfraprod.azurecr.io</block>
+  <block id="eb499f7aadd76ba50d5925ea6552dcff" category="list-text">Opzione 2:</block>
+  <block id="61544f9ceda91554eec420c29453fe62" category="list-text">Quando si installa manualmente il connettore sul proprio host Linux, il programma di installazione del connettore richiede l'accesso a diversi URL durante il processo di installazione.</block>
+  <block id="a8565aa4839817f4f46d7e5c184c47e5" category="list-text">I seguenti endpoint vengono sempre contattati indipendentemente dal punto in cui si installa il connettore:</block>
+  <block id="97f55477feef294b3e2c4fa6015719fa" category="list-text">Se si installa il connettore in un'area di AWS Government, l'installatore deve accedere anche a questi endpoint:</block>
+  <block id="13a671e048cea402a53e9e2f012a3ae5" category="list-text">Se si installa il connettore in un'area di Azure Government, il programma di installazione deve accedere anche a questi endpoint:</block>
+  <block id="414389f3238c146f25f4038ff7741948" category="list-text">Se si installa il connettore in una regione commerciale o sovrana, è possibile scegliere tra due serie di endpoint:</block>
+  <block id="1c65ce30d8659b289e38be6782d58dd0" category="paragraph">Gli endpoint elencati nell'opzione 1 sono consigliati perché sono più sicuri. Si consiglia di impostare il firewall in modo che consenta gli endpoint elencati nell'opzione 1, impedendo al contempo gli endpoint elencati nell'opzione 2. Nota quanto segue su questi endpoint: ** Gli endpoint elencati nell'opzione 1 sono supportati a partire dalla versione 3.9.47 del connettore. Non c'è compatibilità con le versioni precedenti del connettore. ** Il connettore contatta prima gli endpoint elencati nell'opzione 2. Se tali endpoint non sono accessibili, il connettore contatta automaticamente gli endpoint elencati nell'opzione 1. ** Gli endpoint dell'opzione 1 non sono supportati se si utilizza il connettore con backup e ripristino BlueXP  o protezione ransomware BlueXP . In questo caso, è possibile disabilitare gli endpoint elencati nell'opzione 1, consentendo allo stesso tempo gli endpoint elencati nell'opzione 2.</block>
+  <block id="ab83866f9abfe93d14a14fa21b156b05" category="doc">Nuovi endpoint sicuri per ottenere immagini del connettore</block>
+  <block id="78efdac7339a3a2a767f54e63e415b79" category="paragraph">Quando si installa il connettore o quando si verifica un aggiornamento automatico, il connettore contatta i repository per scaricare le immagini per l'installazione o l'aggiornamento. Per impostazione predefinita, il connettore ha sempre contattato i seguenti endpoint:</block>
+  <block id="e5eb8016a9764345b2f3dd5672e2f245" category="paragraph">Il primo endpoint include un carattere jolly perché non possiamo fornire una posizione definitiva. Il bilanciamento del carico del repository viene gestito dal provider di servizi, il che significa che i download possono avvenire da endpoint diversi.</block>
+  <block id="5a04f5940b391aa471ffcf2f682f6390" category="paragraph">Per una maggiore sicurezza, il connettore può ora scaricare le immagini di installazione e aggiornamento da endpoint dedicati:</block>
+  <block id="6265c6aedeb8e4c15d99cb681317d569" category="paragraph">Si consiglia di iniziare a utilizzare questi nuovi endpoint rimuovendo gli endpoint esistenti dalle regole del firewall e consentendo i nuovi endpoint.</block>
+  <block id="0569478319ea7c217c7aeaef42de04a2" category="paragraph">Questi nuovi endpoint sono supportati a partire dalla versione 3.9.47 del connettore. Non c'è compatibilità con le versioni precedenti del connettore.</block>
+  <block id="b7045cdc7261ab3a7b9e78efb0461bfa" category="list-text">Gli endpoint esistenti sono ancora supportati. Se non si desidera utilizzare i nuovi endpoint, non è necessario apportare modifiche.</block>
+  <block id="4cd508d6b82e76524216714f78d79d2c" category="list-text">Il connettore contatta prima i punti finali esistenti. Se tali endpoint non sono accessibili, il connettore contatta automaticamente i nuovi endpoint.</block>
+  <block id="a5f507c0714656865b1f8986b83613de" category="list-text">I nuovi endpoint non sono supportati nei seguenti scenari:</block>
+  <block id="6b4d63c99144b38df035c167f8c99b23" category="list-text">Se il connettore è installato in un'area governativa.</block>
+  <block id="b90e6d21a82e89d9e93683b887fce78e" category="list-text">Se utilizzi il connettore con backup e recovery di BlueXP  o protezione dal ransomware BlueXP .</block>
+  <block id="8ad91183ee4d83d215423d96651219b3" category="paragraph">Per entrambi questi scenari, è possibile continuare a utilizzare gli endpoint esistenti.</block>
+  <block id="f75f2bfc89f28bf6c3d0cd6ecc334d38" category="paragraph">Quando BlueXP  implementa la macchina virtuale Connector in Azure, attiva un sulla macchina virtuale, crea un<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block> ruolo personalizzato e lo assegna alla macchina virtuale. Il ruolo fornisce a BlueXP le autorizzazioni necessarie per gestire le risorse e i processi all'interno dell'abbonamento Azure. <block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>.</block>
+  <block id="74f0517d27c893250b30440df50aedff" category="paragraph">\https://\*.api.BlueXP .NetApp.com \https://api.BlueXP .NetApp.com \https://*.cloudmanager.cloud.NetApp.com \https://cloudmanager.cloud.NetApp.com \https://NetApp-cloud-account.auth0.com</block>
+  <block id="929fbbf8aa4e2b9b9d79089f06f4a42b" category="paragraph">Scegliere tra due serie di endpoint:</block>
+  <block id="aaecfad986484269a7c076712941aa35" category="paragraph">Per ottenere le immagini per gli aggiornamenti dei connettori.</block>
+  <block id="0e268539cbf07323a5b9a48997c1d209" category="list-text">Gli endpoint elencati nell'opzione 1 sono supportati a partire dalla versione 3.9.47 del connettore. Non c'è compatibilità con le versioni precedenti del connettore.</block>
+  <block id="e8707387f125fbbc4fea2bcf7fb74c5c" category="list-text">Il connettore contatta prima gli endpoint elencati nell'opzione 2. Se tali endpoint non sono accessibili, il connettore contatta automaticamente gli endpoint elencati nell'opzione 1.</block>
+  <block id="4780ada9ee9a956e6ffeed073bbca78a" category="list-text">Gli endpoint dell'opzione 1 non sono supportati se utilizzi il connettore con backup e recovery BlueXP  o protezione ransomware BlueXP . In questo caso, è possibile disabilitare gli endpoint elencati nell'opzione 1, consentendo allo stesso tempo gli endpoint elencati nell'opzione 2.</block>
+  <block id="f079ba6f508e4d8fffaecae1a59c5bf3" category="paragraph">Gli endpoint elencati nell'opzione 1 sono consigliati perché sono più sicuri. Si consiglia di impostare il firewall in modo che consenta gli endpoint elencati nell'opzione 1, impedendo al contempo gli endpoint elencati nell'opzione 2. Tenere presente quanto segue su questi endpoint:</block>
+  <block id="335c5fa07bab41313fe3574d00015e28" category="paragraph">Se il connettore si trova in una regione del governo AWS: \https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io</block>
+  <block id="8f250cee3d9453c744424495f2571a74" category="paragraph">Per ottenere immagini per gli aggiornamenti del connettore quando il connettore viene installato in una regione AWS Government.</block>
+  <block id="a082af315082759bee1f9bba491f14f8" category="paragraph">Se il connettore si trova in una regione di Azure Government: \https://*.blob.core.windows.net \https://occmclientinfragov.azurecr.us</block>
+  <block id="cb6ffdd85c34b43b9e70c8dcf3c0e51c" category="paragraph">Per ottenere immagini per gli aggiornamenti del connettore quando il connettore è installato in un'area di Azure Government.</block>
+  <block id="815ee4222e11b0d1d149ad24cabecc80" category="paragraph">Se il connettore si trova in una regione commerciale o sovrana, è possibile scegliere tra due serie di endpoint:</block>
+  <block id="ad262fe50d2ecf5a3aae7409b3eda8e2" category="paragraph">Per ottenere immagini per gli aggiornamenti dei connettori quando il connettore viene installato in una regione commerciale o sovrana.</block>
+  <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">16 dicembre 2024</block>
 </blocks>

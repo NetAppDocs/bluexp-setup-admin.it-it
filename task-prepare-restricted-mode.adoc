@@ -293,22 +293,54 @@ Preparare la rete per l'accesso dell'utente alla console BlueXP:: In modalità l
 --
 
 
-Endpoint contattati durante l'installazione manuale:: Quando si installa manualmente il connettore sul proprio host Linux, il programma di installazione del connettore richiede l'accesso ai seguenti URL durante il processo di installazione:
+Endpoint contattati durante l'installazione manuale:: Quando si installa manualmente il connettore sul proprio host Linux, il programma di installazione del connettore richiede l'accesso a diversi URL durante il processo di installazione.
 +
 --
-* \https://mysupport.netapp.com
-* \https://signin.b2c.NetApp.com (questo endpoint è l'URL CNAME per \https://mysupport.NetApp.com)
-* \https://cloudmanager.cloud.netapp.com/tenancy
-* \https://stream.cloudmanager.cloud.netapp.com
-* \https://production-artifacts.cloudmanager.cloud.netapp.com
-* \https://*.blob.core.windows.net
-* \https://cloudmanagerinfraprod.azurecr.io
+* I seguenti endpoint vengono sempre contattati indipendentemente dal punto in cui si installa il connettore:
 +
-Questo endpoint non è richiesto nelle regioni governative di Azure.
+** \https://mysupport.netapp.com
+** \https://signin.b2c.NetApp.com (questo endpoint è l'URL CNAME per \https://mysupport.NetApp.com)
+** \https://cloudmanager.cloud.netapp.com/tenancy
+** \https://stream.cloudmanager.cloud.netapp.com
+** \https://production-artifacts.cloudmanager.cloud.netapp.com
 
-* \https://occmclientinfragov.azurecr.us
+
+* Se si installa il connettore in un'area di AWS Government, l'installatore deve accedere anche a questi endpoint:
 +
-Questo endpoint è richiesto solo nelle regioni governative di Azure.
+** \https://*.blob.core.windows.net
+** \https://cloudmanagerinfraprod.azurecr.io
+
+
+* Se si installa il connettore in un'area di Azure Government, il programma di installazione deve accedere anche a questi endpoint:
++
+** \https://*.blob.core.windows.net
+** \https://occmclientinfragov.azurecr.us
+
+
+* Se si installa il connettore in una regione commerciale o sovrana, è possibile scegliere tra due serie di endpoint:
++
+** Opzione 1 (consigliata):
++
+*** \https://bluexpinfraprod.eastus2.data.azurecr.io
+*** \https://bluexpinfraprod.azurecr.io
+
+
+** Opzione 2:
++
+*** \https://*.blob.core.windows.net
+*** \https://cloudmanagerinfraprod.azurecr.io
+
+
+
+
++
+Gli endpoint elencati nell'opzione 1 sono consigliati perché sono più sicuri. Si consiglia di impostare il firewall in modo che consenta gli endpoint elencati nell'opzione 1, impedendo al contempo gli endpoint elencati nell'opzione 2. Tenere presente quanto segue su questi endpoint:
+
++
+** Gli endpoint elencati nell'opzione 1 sono supportati a partire dalla versione 3.9.47 del connettore. Non c'è compatibilità con le versioni precedenti del connettore.
+** Il connettore contatta prima gli endpoint elencati nell'opzione 2. Se tali endpoint non sono accessibili, il connettore contatta automaticamente gli endpoint elencati nell'opzione 1.
+** Gli endpoint dell'opzione 1 non sono supportati se utilizzi il connettore con backup e recovery BlueXP  o protezione ransomware BlueXP . In questo caso, è possibile disabilitare gli endpoint elencati nell'opzione 1, consentendo allo stesso tempo gli endpoint elencati nell'opzione 2.
+
 
 
 
@@ -392,15 +424,7 @@ Per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al suppor
 
 
  a| 
-\https://*.api.bluexp.netapp.com
-
-\https://api.bluexp.netapp.com
-
-\https://*.cloudmanager.cloud.netapp.com
-
-\https://cloudmanager.cloud.netapp.com
-
-\https://netapp-cloud-account.auth0.com
+\https://\*.api.BlueXP .NetApp.com \https://api.BlueXP .NetApp.com \https://*.cloudmanager.cloud.NetApp.com \https://cloudmanager.cloud.NetApp.com \https://NetApp-cloud-account.auth0.com
  a| 
 Fornire funzionalità e servizi SaaS all'interno di BlueXP.
 
@@ -409,17 +433,42 @@ Tenere presente che il connettore sta contattando "cloudmanager.cloud.netapp.com
 
 
  a| 
-\https://*.blob.core.windows.net
-
-\https://cloudmanagerinfraprod.azurecr.io
-Questo endpoint non è richiesto nelle regioni governative di Azure.
-
-\https://occmclientinfragov.azurecr.us
-Questo endpoint è richiesto solo nelle regioni governative di Azure.
+Se il connettore si trova in una regione del governo AWS: \https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
  a| 
-Per aggiornare il connettore e i relativi componenti Docker.
+Per ottenere immagini per gli aggiornamenti del connettore quando il connettore viene installato in una regione AWS Government.
+
+
+
+ a| 
+Se il connettore si trova in una regione di Azure Government: \https://*.blob.core.windows.net \https://occmclientinfragov.azurecr.us
+ a| 
+Per ottenere immagini per gli aggiornamenti del connettore quando il connettore è installato in un'area di Azure Government.
+
+
+
+ a| 
+Se il connettore si trova in una regione commerciale o sovrana, è possibile scegliere tra due serie di endpoint:
+
+* Opzione 1 (consigliata) ^1^
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io
+
+* Opzione 2
++
+\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
+
+
+ a| 
+Per ottenere immagini per gli aggiornamenti dei connettori quando il connettore viene installato in una regione commerciale o sovrana.
 
 |===
+^1^ gli endpoint elencati nell'opzione 1 sono consigliati perché sono più sicuri. Si consiglia di impostare il firewall in modo che consenta gli endpoint elencati nell'opzione 1, impedendo al contempo gli endpoint elencati nell'opzione 2. Tenere presente quanto segue su questi endpoint:
+
+* Gli endpoint elencati nell'opzione 1 sono supportati a partire dalla versione 3.9.47 del connettore. Non c'è compatibilità con le versioni precedenti del connettore.
+* Il connettore contatta prima gli endpoint elencati nell'opzione 2. Se tali endpoint non sono accessibili, il connettore contatta automaticamente gli endpoint elencati nell'opzione 1.
+* Gli endpoint dell'opzione 1 non sono supportati se utilizzi il connettore con backup e recovery BlueXP  o protezione ransomware BlueXP . In questo caso, è possibile disabilitare gli endpoint elencati nell'opzione 1, consentendo allo stesso tempo gli endpoint elencati nell'opzione 2.
+
+
 --
 
 
