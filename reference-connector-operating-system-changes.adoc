@@ -136,7 +136,7 @@ Se si dispone già di un connettore in esecuzione su RHEL 7 o CentOS 7, non è s
 
 
 
-== Link correlati
+== Informazioni correlate
 
 
 

@@ -16,7 +16,7 @@ summary: 'Per risolvere i problemi relativi al connettore, è possibile collabor
 [role="lead"]
 Per risolvere i problemi relativi al connettore, è possibile collaborare con il supporto NetApp che potrebbe richiedere l'ID del sistema, la versione del connettore o i messaggi AutoSupport più recenti. Inoltre, puoi consultare la Knowledge base di NetApp per risolvere autonomamente i problemi.
 
-.Link correlato
+.Informazioni correlate
 link:task-get-help.html["Ottieni assistenza dal supporto NetApp"].
 
 

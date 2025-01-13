@@ -71,5 +71,5 @@ Se utilizzi BlueXP  in modalità standard, non avrai un account BlueXP . Avret
 
 | Visualizza e gestisci la dashboard di supporto | Sì | Sì | No | No 
 |===
-.Link correlato
+.Informazioni correlate
 link:task-managing-netapp-accounts.html["Gestisci il tuo account BlueXP"]

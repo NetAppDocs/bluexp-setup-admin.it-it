@@ -23,9 +23,9 @@ La gestione delle identità e degli accessi (IAM) di BlueXP  consente di organi
 Quando si crea un'organizzazione BlueXP , questa include un singolo progetto. È possibile creare ulteriori progetti per gestire le risorse dell'organizzazione. È possibile, facoltativamente, creare cartelle per raggruppare i progetti correlati.
 
 .A proposito di questa attività
-La profondità della gerarchia dell'organizzazione può scendere a 7 livelli. Di conseguenza, è possibile creare cartelle nidificate fino a 6 livelli. L'ultima cartella nidificata può quindi includere i progetti al settimo livello della gerarchia.
+La profondità della gerarchia delle risorse dell'organizzazione può scendere a 7 livelli. Di conseguenza, è possibile creare cartelle nidificate fino a 6 livelli. L'ultima cartella nidificata può quindi includere i progetti al settimo livello della gerarchia.
 
-L'immagine seguente illustra la profondità massima della gerarchia dell'organizzazione:
+L'immagine seguente illustra la profondità massima della gerarchia delle risorse dell'organizzazione:
 
 image:screenshot-iam-max-depth.png["Una schermata che mostra un'organizzazione, sei cartelle nidificate e un progetto nell'ultima cartella nidificata."]
 
@@ -55,97 +55,6 @@ link:reference-iam-predefined-roles.html["Informazioni sui ruoli IAM predefiniti
 . Selezionare *Aggiungi*.
 
 
-.Risultato
-BlueXP  crea la cartella o il progetto e associa le risorse e i membri specificati.
-
-
-
-== Visualizzare le risorse e i membri associati a una cartella o a un progetto
-
-Per verificare che le risorse siano organizzate in modo appropriato e accessibili ai membri appropriati dell'organizzazione, è possibile visualizzare le risorse e i membri associati a una cartella o a un progetto.
-
-.Fasi
-. Dalla pagina *Organizzazione*, selezionare un progetto o una cartella nella tabella, quindi selezionare image:icon-action.png["Un'icona con tre punti affiancati"]*Modifica cartella* o *Modifica progetto*.
-+
-image:screenshot-iam-edit-project.png["Schermata della pagina Organizzazione che mostra l'opzione Modifica progetto quando si seleziona il menu azione per un progetto nella tabella."]
-
-. Nella pagina *Modifica*, visualizzare i dettagli relativi alle risorse associate e all'accesso dei membri:
-+
-** Selezionare *risorse* per visualizzare le risorse associate. Nella tabella, la colonna *Stato* identifica le risorse associate alla cartella o al progetto.
-+
-image:screenshot-iam-allocated-resources.png["Schermata della pagina Modifica progetto che mostra le risorse disponibili che è possibile associare o disassociare al progetto."]
-
-** Selezionare *Access* per visualizzare i membri che hanno accesso alla cartella o al progetto.
-+
-image:screenshot-iam-member-access.png["Una schermata della pagina Modifica progetto che mostra i membri che hanno accesso al progetto."]
-
-
-
-
-
-.Quali sono le prossime novità?
-Se necessario, è possibile <<modify-resources,modificare le risorse associate>> o <<modify-members,modificare l'accesso dei membri>>.
-
-
-
-== Modificare le risorse associate a una cartella o a un progetto
-
-È possibile modificare le risorse associate a una cartella o a un progetto associando o disassociando una risorsa. Ad esempio, è possibile associare una risorsa a un altro progetto perché tale risorsa ha capacità che un altro team può utilizzare.
-
-.Prima di iniziare
-link:concept-identity-and-access-management.html#associate-resource-folder["Scopri quando è possibile associare una risorsa a una cartella"].
-
-.Fasi
-. Dalla pagina *Organizzazione*, selezionare un progetto o una cartella nella tabella, quindi selezionare image:icon-action.png["Un'icona con tre punti affiancati"]*Modifica cartella* o *Modifica progetto*.
-. Nella pagina *Modifica*, selezionare *risorse*.
-+
-Nella tabella, la colonna *Stato* identifica le risorse associate alla cartella o al progetto.
-
-. Selezionare le risorse che si desidera associare o dissociare.
-. A seconda delle risorse selezionate, selezionare *Associa al progetto* o *Disassocia al progetto*.
-+
-image:screenshot-iam-associate-resources.png["Schermata della pagina Modifica progetto che mostra l'opzione Associa risorse disponibile dopo aver selezionato le risorse non attualmente associate."]
-
-. Selezionare *Applica*
-
-
-.Risultato
-BlueXP  associa le risorse alla cartella o al progetto. I membri dell'organizzazione che dispongono delle autorizzazioni per tale cartella o progetto possono ora accedere alle risorse associate.
-
-
-
-== Modificare l'accesso dei membri a una cartella o a un progetto
-
-Modificare l'accesso dei membri a una cartella o a un progetto per assicurarsi che i membri giusti abbiano accesso alle risorse associate alla cartella o al progetto.
-
-.Fasi
-. Dalla pagina *Organizzazione*, selezionare un progetto o una cartella nella tabella, quindi selezionare image:icon-action.png["Un'icona con tre punti affiancati"]*Modifica cartella* o *Modifica progetto*.
-. Nella pagina *Modifica*, selezionare *accesso*.
-+
-BlueXP  visualizza l'elenco dei membri che hanno accesso alla cartella o al progetto.
-
-. Modifica accesso membro:
-+
-** *Aggiungi un membro*: Seleziona il membro che desideri aggiungere alla cartella o al progetto e assegna loro un ruolo.
-** *Modifica ruolo di un membro*: Per tutti i membri con un ruolo diverso da Amministratore organizzazione, selezionare il ruolo esistente e scegliere un nuovo ruolo.
-+
-Se è stato fornito un ruolo a un livello superiore della gerarchia (a livello di cartella o organizzazione), è necessario valutare se modificare il ruolo a un livello inferiore o superiore. Ad esempio, se è stato assegnato il ruolo _cartella o project admin_ a livello di cartella, la modifica del ruolo a livello di progetto in autorizzazioni di livello inferiore non modificherà le autorizzazioni per il membro. Poiché i ruoli vengono ereditati dalla gerarchia dell'organizzazione, il membro disporrebbe comunque delle autorizzazioni di amministratore a livello di progetto.
-
-+
-link:concept-identity-and-access-management.html#role-inheritance["Ulteriori informazioni sull'ereditarietà dei ruoli"].
-
-** *Rimuovi accesso membro*: Per i membri che hanno un ruolo definito nella cartella o nel progetto per cui stai visualizzando, puoi rimuovere il loro accesso.
-+
-Se l'accesso ai membri è stato fornito a un livello superiore della gerarchia (a livello di cartella o organizzazione), non è possibile rimuovere l'accesso ai membri durante la visualizzazione di questa cartella o progetto. È necessario passare a quella parte della gerarchia. In alternativa, è possibile link:task-iam-manage-members-permissions.html#manage-permissions["Gestire le autorizzazioni dalla pagina membri"].
-
-
-
-. Selezionare *Applica*.
-
-
-.Risultato
-BlueXP  aggiorna i membri che hanno accesso alla cartella o al progetto.
-
 
 
 == Ottenere l'ID per un progetto
@@ -174,9 +83,6 @@ Se necessario, è possibile modificare il nome delle cartelle e dei progetti.
 . Nella pagina *Modifica*, immettere un nuovo nome e selezionare *Applica*.
 
 
-.Risultato
-BlueXP  aggiorna il nome della cartella o del progetto.
-
 
 
 == Eliminare una cartella o un progetto
@@ -193,8 +99,82 @@ BlueXP  aggiorna il nome della cartella o del progetto.
 . Confermare che si desidera eliminare la cartella o il progetto.
 
 
-.Risultato
-BlueXP  elimina la cartella o il progetto. Tale cartella o progetto non è più disponibile per i membri dell'organizzazione.
+
+
+== Visualizzare le risorse associate a una cartella o a un progetto
+
+Per verificare che le risorse siano organizzate in modo appropriato e accessibili ai membri appropriati dell'organizzazione, è possibile visualizzare le risorse e i membri associati a una cartella o a un progetto.
+
+.Fasi
+. Dalla pagina *Organizzazione*, selezionare un progetto o una cartella nella tabella, quindi selezionare image:icon-action.png["Un'icona con tre punti affiancati"]*Modifica cartella* o *Modifica progetto*.
++
+image:screenshot-iam-edit-project.png["Schermata della pagina Organizzazione che mostra l'opzione Modifica progetto quando si seleziona il menu azione per un progetto nella tabella."]
+
+. Nella pagina *Modifica*, è possibile visualizzare i dettagli relativi alla cartella o al progetto selezionato espandendo le sezioni *risorse* o *accesso*.
++
+** Selezionare *risorse* per visualizzare le risorse associate. Nella tabella, la colonna *Stato* identifica le risorse associate alla cartella o al progetto.
++
+image:screenshot-iam-allocated-resources.png["Schermata della pagina Modifica progetto che mostra le risorse disponibili che è possibile associare o disassociare al progetto."]
+
+
+
+
+
+
+
+== Modificare le risorse associate a una cartella o a un progetto
+
+È possibile modificare le risorse associate a una cartella o a un progetto associando o disassociando una risorsa. Ad esempio, è possibile associare una risorsa a un altro progetto perché tale risorsa ha capacità che un altro team può utilizzare. Una volta associata una risorsa a una cartella o a un progetto, i membri dell'organizzazione che dispongono delle autorizzazioni per tale cartella o progetto possono accedere alla risorsa associata.
+
+.Prima di iniziare
+link:concept-identity-and-access-management.html#associate-resource-folder["Scopri quando è possibile associare una risorsa a una cartella"].
+
+.Fasi
+. Dalla pagina *Organizzazione*, selezionare un progetto o una cartella nella tabella, quindi selezionare image:icon-action.png["Un'icona con tre punti affiancati"]*Modifica cartella* o *Modifica progetto*.
+. Nella pagina *Modifica*, selezionare *risorse*.
++
+Nella tabella, la colonna *Stato* identifica le risorse associate alla cartella o al progetto.
+
+. Selezionare le risorse che si desidera associare o dissociare.
+. A seconda delle risorse selezionate, selezionare *Associa al progetto* o *Disassocia al progetto*.
++
+image:screenshot-iam-associate-resources.png["Schermata della pagina Modifica progetto che mostra l'opzione Associa risorse disponibile dopo aver selezionato le risorse non attualmente associate."]
+
+. Selezionare *Applica*
+
+
+
+
+== Visualizzare i membri associati a una cartella o a un progetto
+
+* Selezionare *Access* per visualizzare i membri che hanno accesso alla cartella o al progetto.
++
+image:screenshot-iam-member-access.png["Una schermata della pagina Modifica progetto che mostra i membri che hanno accesso al progetto."]
+
+
+
+
+
+== Modificare l'accesso dei membri a una cartella o a un progetto
+
+Modificare l'accesso dei membri a una cartella o a un progetto per assicurarsi che i membri giusti abbiano accesso alle risorse associate alla cartella o al progetto.
+
+Se l'accesso ai membri è stato fornito a un livello superiore della gerarchia (a livello di cartella o organizzazione), non è possibile rimuovere o modificare l'accesso ai membri durante la visualizzazione della cartella o del progetto di livello inferiore. È necessario passare a quella parte della gerarchia e aggiornare le autorizzazioni del membro. In alternativa, è possibile link:task-iam-manage-members-permissions.html#manage-permissions["Gestire le autorizzazioni dalla pagina membri"].
+
+link:concept-identity-and-access-management.html#role-inheritance["Ulteriori informazioni sull'ereditarietà dei ruoli"].
+
+.Fasi
+. Dalla pagina *Organizzazione*, selezionare un progetto o una cartella nella tabella, quindi selezionare image:icon-action.png["Un'icona con tre punti affiancati"]*Modifica cartella* o *Modifica progetto*.
+. Nella pagina *Modifica*, selezionare *accesso* per visualizzare l'elenco dei membri che hanno accesso alla cartella o al progetto selezionato.
+. Modifica accesso membro:
++
+** *Aggiungi un membro*: Seleziona il membro che desideri aggiungere alla cartella o al progetto e assegna loro un ruolo.
+** *Modifica ruolo di un membro*: Per tutti i membri con un ruolo diverso da Amministratore organizzazione, selezionare il ruolo esistente e scegliere un nuovo ruolo.
+** *Rimuovi accesso membro*: Per i membri che hanno un ruolo definito nella cartella o nel progetto per cui stai visualizzando, puoi rimuovere il loro accesso.
+
+
+. Selezionare *Applica*.
+
 
 
 

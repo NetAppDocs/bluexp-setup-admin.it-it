@@ -73,7 +73,7 @@ Se si dispone di più connettori, è possibile passare da uno all'altro per visu
 .Risultato
 BlueXP  aggiorna e mostra gli ambienti di lavoro associati al connettore selezionato.
 
-.Link correlato
+.Informazioni correlate
 link:task-iam-associate-connectors.html["Associa i connettori a cartelle e progetti"].
 
 

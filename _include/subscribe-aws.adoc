@@ -2,16 +2,20 @@
 :allow-uri-read: 
 
 
+Il seguente video illustra i passaggi per abbonarsi a BlueXP  dal marketplace AWS:
+
+.Iscriviti a BlueXP dal marketplace AWS
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .Fasi
 . Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
-. Selezionare il menu delle azioni per una serie di credenziali, quindi selezionare *Associa abbonamento*.
+. Selezionare il menu azione per un set di credenziali, quindi selezionare *Configura sottoscrizione*.
 +
 Selezionare le credenziali associate a un connettore. Non puoi associare un abbonamento al marketplace alle credenziali associate a BlueXP.
 
 +
 image:screenshot_associate_subscription.png["Schermata del menu delle azioni per un set di credenziali esistenti."]
 
-. Per associare le credenziali a un abbonamento esistente, selezionare l'abbonamento dall'elenco a discesa e selezionare *Associa*.
+. Per associare le credenziali a un abbonamento esistente, selezionare l'abbonamento dall'elenco a discesa e selezionare *Configura*.
 . Per associare le credenziali a un nuovo abbonamento, selezionare *Aggiungi abbonamento > continua* e seguire la procedura descritta in AWS Marketplace:
 +
 .. Selezionare *Visualizza opzioni di acquisto*.
@@ -31,12 +35,6 @@ BlueXP  sostituisce l'abbonamento esistente per tutte le credenziali dell'organ
 Per tutte le altre organizzazioni o account, è necessario associare manualmente l'abbonamento ripetendo questi passaggi.
 
 *** Selezionare *Salva*.
-+
-Il seguente video mostra i passaggi per iscriversi a AWS Marketplace:
-
-+
-.Iscriviti a BlueXP dal marketplace AWS
-video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 
 
 

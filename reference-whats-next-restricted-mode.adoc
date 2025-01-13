@@ -27,5 +27,5 @@ Per assistenza, consultare la documentazione relativa a questi servizi:
 * https://docs.netapp.com/us-en/bluexp-replication/index.html["Documenti di replica"^]
 
 
-.Link correlato
+.Informazioni correlate
 link:concept-modes.html["Modalità di implementazione di BlueXP"]

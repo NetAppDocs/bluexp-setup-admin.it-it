@@ -1044,7 +1044,6 @@
   <block id="3c2636f752222ce604af87906e481f03" category="list-text"><block ref="3c2636f752222ce604af87906e481f03" category="inline-link-rx"></block></block>
   <block id="7596270426e8c5f92be308ff330e0e64" category="inline-link">Documenti di replica</block>
   <block id="17ba1853097c1b83e5a82753f8133c2e" category="list-text"><block ref="17ba1853097c1b83e5a82753f8133c2e" category="inline-link-rx"></block></block>
-  <block id="06afa66cf6eca938a45be835a47030e1" category="paragraph-title">Link correlato</block>
   <block id="2579d10862aa7770a64b058fb84ce858" category="inline-link-macro">Modalità di implementazione di BlueXP</block>
   <block id="672184337bf12286628179253519271e" category="paragraph"><block ref="672184337bf12286628179253519271e" category="inline-link-macro-rx"></block></block>
   <block id="01da112af45ab74fbf33e58033fbd785" category="summary">È possibile gestire le credenziali Google Cloud associate all'istanza di Connector VM associando un abbonamento al marketplace e risolvendo i problemi del processo di abbonamento. Entrambe queste attività garantiscono che sia possibile utilizzare l'abbonamento al marketplace per pagare i servizi BlueXP.</block>
@@ -2487,9 +2486,6 @@ Si noti che la pagina viene aggiornata tra il test della connessione e l'abilita
   <block id="3fa57b54a57f48366778b5343dad7a48" category="section-title">Aggiungi credenziali a BlueXP per Amazon FSX per ONTAP</block>
   <block id="0919fa8ef252f518174a76feefbed72b" category="inline-link">Documentazione BlueXP per Amazon FSX per ONTAP</block>
   <block id="4f75e9590de3cece316768ef4b82f1ed" category="paragraph">Per ulteriori informazioni, fare riferimento a.<block ref="c186ea5d7dffe196818c2e5a7f99ad62" category="inline-link-rx"></block></block>
-  <block id="94935dba78b982df4dbaaf55737f4d0b" category="section-title">Associare un abbonamento AWS</block>
-  <block id="490ff557e203933a15d8fe5bc6dad106" category="paragraph">Dopo aver aggiunto le credenziali AWS a BlueXP, è possibile associare un abbonamento AWS Marketplace a tali credenziali. L'abbonamento consente di pagare Cloud Volumes ONTAP a una tariffa oraria (PAYGO) o utilizzando un contratto annuale e di utilizzare altri servizi BlueXP.</block>
-  <block id="5eae6608f40144c94d96a8f0a1602c97" category="paragraph">Esistono due scenari in cui è possibile associare un abbonamento AWS Marketplace dopo aver aggiunto le credenziali a BlueXP:</block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">Scopri come creare un connettore</block>
   <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">È necessario creare un connettore prima di poter modificare le impostazioni di BlueXP. <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>.</block>
   <block id="583059f51a0b347f747db9f8d2421392" category="paragraph"><block ref="583059f51a0b347f747db9f8d2421392" category="inline-image-macro-rx" type="image"></block></block>
@@ -2943,7 +2939,6 @@ Il rilevamento senza connettore (rilevamento diretto) non è supportato.</block>
   <block id="57ed1d98795cc2b599a80064fd2b2bbf" category="paragraph"><block ref="57ed1d98795cc2b599a80064fd2b2bbf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">Il seguente video mostra i passaggi per iscriversi a Azure Marketplace:</block>
   <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">Il seguente video mostra i passaggi per iscriversi a Google Cloud Marketplace:</block>
-  <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">Il seguente video mostra i passaggi per iscriversi a AWS Marketplace:</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -3286,7 +3281,6 @@ membro: Account di servizio BlueXP come serviceAccount.user</block>
   <block id="240d9c0eecb88b98c7fc253d7a1ea3e9" category="section-title">Posso spostare gli ambienti di lavoro Cloud Volumes ONTAP esistenti su un account AWS diverso?</block>
   <block id="48fee81c8905ac5f4a12516fa379b0f7" category="paragraph">No, non è possibile spostare le risorse AWS associate al tuo ambiente di lavoro Cloud Volumes ONTAP su un account AWS diverso.</block>
   <block id="a0b5de080d56bb71b1a6a7c72fd88757" category="doc">Gestisci le credenziali AWS e le iscrizioni al marketplace per BlueXP</block>
-  <block id="8fda5ebe3faa8194a970ad5e0645d8c7" category="list-text">Vuoi modificare l'iscrizione al marketplace AWS associata alle credenziali AWS.</block>
   <block id="0b3b411ceb545e69a73eeeea9e0f4812" category="doc">Gestisci le credenziali di Azure e le iscrizioni al marketplace per BlueXP</block>
   <block id="f2427bd8db58aeac7d862aab97ae63df" category="list-text">Vuoi modificare l'iscrizione ad Azure Marketplace associata alle credenziali Azure.</block>
   <block id="183f3a1e578d0dce86eeb393edf40a5d" category="list-text">Ubuntu 22,04 LTS</block>
@@ -4387,8 +4381,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="888af4d1c4f4f8cf5928fe9cc5ae80c1" category="paragraph">La gestione delle identità e degli accessi (IAM) di BlueXP  consente di organizzare le risorse NetApp utilizzando progetti e cartelle. Un _project_ rappresenta un'area di lavoro in BlueXP  a cui i membri dell'organizzazione hanno accesso per gestire _risorse_ (ad esempio, un sistema Cloud Volumes ONTAP). Una _cartella_ raggruppa i progetti correlati. Dopo aver organizzato le risorse in cartelle e progetti, è possibile concedere un accesso granulare alle risorse, fornendo ai membri dell'organizzazione le autorizzazioni per cartelle e progetti specifici.</block>
   <block id="c08b7d4448e95633b73e2495389e853c" category="section-title">Aggiungere una cartella o un progetto</block>
   <block id="9b72b5a70aa482b566f3aded23197da9" category="paragraph">Quando si crea un'organizzazione BlueXP , questa include un singolo progetto. È possibile creare ulteriori progetti per gestire le risorse dell'organizzazione. È possibile, facoltativamente, creare cartelle per raggruppare i progetti correlati.</block>
-  <block id="b9b4d0d7c739aa9127b9919f23478743" category="paragraph">La profondità della gerarchia dell'organizzazione può scendere a 7 livelli. Di conseguenza, è possibile creare cartelle nidificate fino a 6 livelli. L'ultima cartella nidificata può quindi includere i progetti al settimo livello della gerarchia.</block>
-  <block id="5ed844477243e17219a5a1bb8244cb94" category="paragraph">L'immagine seguente illustra la profondità massima della gerarchia dell'organizzazione:</block>
   <block id="de599df9f91a76585a5d0e5049f80230" category="inline-image-macro">Una schermata che mostra un'organizzazione, sei cartelle nidificate e un progetto nell'ultima cartella nidificata.</block>
   <block id="140320cb76bc5580566bd6ef83ee9d69" category="paragraph"><block ref="140320cb76bc5580566bd6ef83ee9d69" category="inline-image-macro-rx" type="image"></block></block>
   <block id="54f6cd3aa5e387ea27f8d46fcd265b0f" category="list-text">Dalla pagina *Organizzazione*, selezionare *Aggiungi cartella o progetto*.</block>
@@ -4403,24 +4395,17 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">Se necessario, selezionare *Aggiungi un membro* per specificare altri membri dell'organizzazione che devono avere accesso alla cartella o al progetto, quindi selezionare un ruolo. Un ruolo definisce le autorizzazioni di cui dispongono i membri per la cartella o il progetto.</block>
   <block id="23b701226cc247c8895ac46e9cd633ab" category="inline-link-macro">Informazioni sui ruoli IAM predefiniti</block>
   <block id="8d9ad9660b2859a6d51b88d7e31b54d2" category="paragraph"><block ref="ac90d6f587d2b5ff3fb7bb93da707f89" category="inline-link-macro-rx"></block>.</block>
-  <block id="13ea0232702fea363d7f4aaffe9ba8f1" category="paragraph">BlueXP  crea la cartella o il progetto e associa le risorse e i membri specificati.</block>
-  <block id="698adc884d432ec429a17995e5d34320" category="section-title">Visualizzare le risorse e i membri associati a una cartella o a un progetto</block>
   <block id="903a5130798fef050adcb933e11d9330" category="paragraph">Per verificare che le risorse siano organizzate in modo appropriato e accessibili ai membri appropriati dell'organizzazione, è possibile visualizzare le risorse e i membri associati a una cartella o a un progetto.</block>
   <block id="5d051468e96f24341fd4c6192e28f6e2" category="list-text">Dalla pagina *Organizzazione*, selezionare un progetto o una cartella nella tabella, quindi selezionare <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*Modifica cartella* o *Modifica progetto*.</block>
   <block id="3f6ecf327501ffc3f265d065c39f55b6" category="inline-image-macro">Schermata della pagina Organizzazione che mostra l'opzione Modifica progetto quando si seleziona il menu azione per un progetto nella tabella.</block>
   <block id="f8731f9389f28c059bc2471d56363fcd" category="paragraph"><block ref="f8731f9389f28c059bc2471d56363fcd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="71aa242e147c147797dbd6f9f41b801c" category="list-text">Nella pagina *Modifica*, visualizzare i dettagli relativi alle risorse associate e all'accesso dei membri:</block>
   <block id="a470fed0aa4603c3c8d460c4028252f1" category="list-text">Selezionare *risorse* per visualizzare le risorse associate. Nella tabella, la colonna *Stato* identifica le risorse associate alla cartella o al progetto.</block>
   <block id="c2fdbd86cd719dffbb80161af27b0ec9" category="inline-image-macro">Schermata della pagina Modifica progetto che mostra le risorse disponibili che è possibile associare o disassociare al progetto.</block>
   <block id="65381685a85e45e94ee53dbceff322ff" category="paragraph"><block ref="65381685a85e45e94ee53dbceff322ff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6b1db5558a176057dbfc6d02d715d5ee" category="list-text">Selezionare *Access* per visualizzare i membri che hanno accesso alla cartella o al progetto.</block>
   <block id="68f9e92246f3af16e2706083b8012f92" category="inline-image-macro">Una schermata della pagina Modifica progetto che mostra i membri che hanno accesso al progetto.</block>
   <block id="e537768f43901c1791172250c6c08115" category="paragraph"><block ref="e537768f43901c1791172250c6c08115" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9e17333b6af28e20b12b88031ec846a2" category="inline-xref">modificare le risorse associate</block>
-  <block id="d6b7bb304d4f265bbfd145a745c68eed" category="inline-xref">modificare l'accesso dei membri</block>
-  <block id="ba165dec55dcb067d55d8a2bbb32e738" category="paragraph">Se necessario, è possibile <block ref="fa5515ea77ce1b6a8dbcd79e2fc3ca20" category="inline-xref-macro-rx"></block> o <block ref="50dc3585d06eec07143d3dfe141dd3c9" category="inline-xref-macro-rx"></block>.</block>
   <block id="df3e2bd0fe2ced6b1bd1a55dad748146" category="section-title">Modificare le risorse associate a una cartella o a un progetto</block>
-  <block id="a6393b52680d3f8c4ed45e505093ff28" category="paragraph">È possibile modificare le risorse associate a una cartella o a un progetto associando o disassociando una risorsa. Ad esempio, è possibile associare una risorsa a un altro progetto perché tale risorsa ha capacità che un altro team può utilizzare.</block>
   <block id="0727cfa5c59f7b7114ac7246e406611c" category="list-text">Nella pagina *Modifica*, selezionare *risorse*.</block>
   <block id="d66e1bd376f74d0703fc72b368b92cd7" category="paragraph">Nella tabella, la colonna *Stato* identifica le risorse associate alla cartella o al progetto.</block>
   <block id="95e3e0534ba1d2354c42f80be5302007" category="list-text">Selezionare le risorse che si desidera associare o dissociare.</block>
@@ -4428,26 +4413,20 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="152ff89b1af4f8995e50a4b8f158db52" category="inline-image-macro">Schermata della pagina Modifica progetto che mostra l'opzione Associa risorse disponibile dopo aver selezionato le risorse non attualmente associate.</block>
   <block id="883f9a97670aa2ea1a29d0163ef97be1" category="paragraph"><block ref="883f9a97670aa2ea1a29d0163ef97be1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c16f1c2a54634bdad6dee177f8131ef5" category="list-text">Selezionare *Applica*</block>
-  <block id="2020ca2154e03d2358d7a18c7bd4e4ee" category="paragraph">BlueXP  associa le risorse alla cartella o al progetto. I membri dell'organizzazione che dispongono delle autorizzazioni per tale cartella o progetto possono ora accedere alle risorse associate.</block>
   <block id="19df46354fac1ffd06065f8388377f84" category="section-title">Modificare l'accesso dei membri a una cartella o a un progetto</block>
   <block id="710dfcb474fc8ee49343c58686c8aded" category="paragraph">Modificare l'accesso dei membri a una cartella o a un progetto per assicurarsi che i membri giusti abbiano accesso alle risorse associate alla cartella o al progetto.</block>
   <block id="91686a8345015e73c2baa91ffbe5ecd6" category="list-text">Nella pagina *Modifica*, selezionare *accesso*.</block>
-  <block id="a8781f46e241d03a4d2657a4d6f9a9b2" category="paragraph">BlueXP  visualizza l'elenco dei membri che hanno accesso alla cartella o al progetto.</block>
   <block id="904a2691210bbfe6dfc1b17db516d71c" category="list-text">Modifica accesso membro:</block>
   <block id="b49630790a232696bd0f62fa51014e55" category="list-text">*Aggiungi un membro*: Seleziona il membro che desideri aggiungere alla cartella o al progetto e assegna loro un ruolo.</block>
   <block id="a4f439c667db8a94e9e3159df300905d" category="list-text">*Modifica ruolo di un membro*: Per tutti i membri con un ruolo diverso da Amministratore organizzazione, selezionare il ruolo esistente e scegliere un nuovo ruolo.</block>
-  <block id="ec947f15d50d5e45f56ce8c956d581f0" category="paragraph">Se è stato fornito un ruolo a un livello superiore della gerarchia (a livello di cartella o organizzazione), è necessario valutare se modificare il ruolo a un livello inferiore o superiore. Ad esempio, se è stato assegnato il ruolo _cartella o project admin_ a livello di cartella, la modifica del ruolo a livello di progetto in autorizzazioni di livello inferiore non modificherà le autorizzazioni per il membro. Poiché i ruoli vengono ereditati dalla gerarchia dell'organizzazione, il membro disporrebbe comunque delle autorizzazioni di amministratore a livello di progetto.</block>
   <block id="6774afc9942c8dcab2e06828e8f199cb" category="inline-link-macro">Ulteriori informazioni sull'ereditarietà dei ruoli</block>
   <block id="8945f05b50a19ebe83ee85e629a09120" category="paragraph"><block ref="e2e11ae218588663759cb10a40da4876" category="inline-link-macro-rx"></block>.</block>
   <block id="961a7d705cef5925f92fdc2102dfe17d" category="list-text">*Rimuovi accesso membro*: Per i membri che hanno un ruolo definito nella cartella o nel progetto per cui stai visualizzando, puoi rimuovere il loro accesso.</block>
   <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">Gestire le autorizzazioni dalla pagina membri</block>
-  <block id="e8600e476151636aa41417322bf8eecb" category="paragraph">Se l'accesso ai membri è stato fornito a un livello superiore della gerarchia (a livello di cartella o organizzazione), non è possibile rimuovere l'accesso ai membri durante la visualizzazione di questa cartella o progetto. È necessario passare a quella parte della gerarchia. In alternativa, è possibile <block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>.</block>
   <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">Selezionare *Applica*.</block>
-  <block id="d93816509ec30392c51369fac191445e" category="paragraph">BlueXP  aggiorna i membri che hanno accesso alla cartella o al progetto.</block>
   <block id="7f394af8afb3598061eec3ed6197180d" category="section-title">Rinominare una cartella o un progetto</block>
   <block id="f8ca84129dded5d2d753c0d0cc1ddea1" category="paragraph">Se necessario, è possibile modificare il nome delle cartelle e dei progetti.</block>
   <block id="ec4b36b02d2682a0624b6df463ee2789" category="list-text">Nella pagina *Modifica*, immettere un nuovo nome e selezionare *Applica*.</block>
-  <block id="d8f0fb037537a867a046608fffa33518" category="paragraph">BlueXP  aggiorna il nome della cartella o del progetto.</block>
   <block id="03b976867f3d4bd64ebf2dde3b296e4d" category="section-title">Eliminare una cartella o un progetto</block>
   <block id="0a868630764e886d94bedbbfd727e6f4" category="paragraph">È possibile eliminare le cartelle e i progetti di cui non si ha più bisogno.</block>
   <block id="11c35e27e51a047151d75fb0ede09570" category="inline-xref">Scopri come dissociare le risorse</block>
@@ -4455,7 +4434,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="aa028ced940586c19c0a4e4d80b01fd3" category="list-text">Una cartella non deve contenere sottocartelle o progetti. È necessario eliminare prima le cartelle e i progetti.</block>
   <block id="fe7e8f43628806d12162357cbc6c575a" category="list-text">Dalla pagina *Organizzazione*, selezionare un progetto o una cartella nella tabella, quindi selezionare <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*Elimina*.</block>
   <block id="48a726f3d57687547ef8fb70fab0c713" category="list-text">Confermare che si desidera eliminare la cartella o il progetto.</block>
-  <block id="d8fe55db78c51b6f4ff410e959687f9f" category="paragraph">BlueXP  elimina la cartella o il progetto. Tale cartella o progetto non è più disponibile per i membri dell'organizzazione.</block>
   <block id="0574e6792e501b2d7f486dd56c08812e" category="summary">Gestire i membri dell'organizzazione per fornire autorizzazioni a diversi livelli della gerarchia delle risorse dell'organizzazione.</block>
   <block id="f9c68f2e2a54251bd4aa39562ccd5a0a" category="doc">Aggiungere membri BlueXP  IAM e gestire le relative autorizzazioni</block>
   <block id="4e1b8aff40899e4c95a3c48a1d8be909" category="paragraph">BlueXP  Identity and Access Management (IAM) consente di aggiungere membri all'organizzazione e assegnare loro uno o più ruoli all'interno della gerarchia delle risorse. Un _ruolo_ contiene un insieme di autorizzazioni che consente a un membro di eseguire azioni specifiche a un livello specifico della gerarchia delle risorse. È possibile associare nuovi account utente e account di servizio, gestire i ruoli dei membri e altro ancora.</block>
@@ -4546,13 +4524,7 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="6e49938f1c5b86ad879eeaf086442b08" category="list-text">Confermare che si desidera rimuovere il membro dall'organizzazione.</block>
   <block id="75e73ef4d25f9f9ea49c38a3bcb941e4" category="paragraph">BlueXP  rimuove il membro. Se il membro accede nuovamente a BlueXP , non avrà più accesso all'organizzazione BlueXP .</block>
   <block id="2fe6c9d572351b2d4e0b387a62bdf1e2" category="summary">Gestire la gerarchia delle risorse dell'organizzazione associando le risorse a progetti e cartelle specifici.</block>
-  <block id="dacc6cf59d7e0f66f697ef48b807951c" category="paragraph">Quando si utilizza BlueXP  Identity and Access Management (IAM) per associare un membro all'organizzazione, si forniscono le autorizzazioni a livello di organizzazione, cartella o progetto. Per garantire che tali membri dispongano delle autorizzazioni per accedere alle risorse appropriate, è necessario gestire la gerarchia delle risorse dell'organizzazione associando le risorse a progetti e cartelle specifici. Un _resource_ è un ambiente di lavoro che BlueXP  gestisce già.</block>
   <block id="98ca801aa8933a24531043c30c475e2e" category="section-title">Visualizzare le risorse dell'organizzazione</block>
-  <block id="8271e2759587670b87881a1e083e0a52" category="paragraph">Per iniziare a gestire la gerarchia delle risorse, è necessario conoscere le risorse associate all'organizzazione.</block>
-  <block id="95c9ea5440ca8b54a3d3dae8e1d1f492" category="list-text">Selezionare *risorse*.</block>
-  <block id="90eb4a50a957d74015adf452111a7dd5" category="paragraph">Le risorse associate all'organizzazione vengono visualizzate nella tabella *risorse*.</block>
-  <block id="573f6fc7f3c18fb7721ddccfe2520412" category="inline-xref">consente di cercare e filtrare il contenuto della tabella</block>
-  <block id="74a216516ae6f979fa921c96dd5057a8" category="paragraph">Per trovare una risorsa specifica, è possibile <block ref="2fd3d11c7689796e93f3888013589416" category="inline-xref-macro-rx"></block>.</block>
   <block id="7e2927a58abcc62c9eb5c28962dc9573" category="paragraph">Una volta trovata la risorsa desiderata, è possibile eseguire una delle seguenti operazioni:</block>
   <block id="d488db7f816284f6712caf2d76eb5169" category="inline-xref">Visualizzare le cartelle e i progetti associati alla risorsa</block>
   <block id="ea450edd18061a7cc42c1dc5a73807e9" category="list-text"><block ref="725a161a6f11aca02e0e25e2ae9628c0" category="inline-xref-macro-rx"></block></block>
@@ -4560,25 +4532,19 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="e43736ff73ca6844bfafd7ef8dc58bad" category="list-text"><block ref="7d9c5683f2b3adedfbcf34a695515c4d" category="inline-xref-macro-rx"></block></block>
   <block id="b6af3f20458abefb8743e926f21c0677" category="inline-xref">Rimuovere la risorsa da una cartella o da un progetto</block>
   <block id="1797f1c38c97687b6136c8e69786e0a2" category="list-text"><block ref="bb02d809bee1364f03f71b60d989a04d" category="inline-xref-macro-rx"></block></block>
-  <block id="a29510a9013088f354480f508c907c2e" category="section-title">Trova risorse specifiche nella tua organizzazione</block>
-  <block id="1acca7d7f6a7f4515e946bae053cbc27" category="paragraph">Se l'organizzazione dispone di un numero elevato di risorse, è possibile utilizzare le opzioni di ricerca e filtro per trovare una risorsa specifica.</block>
-  <block id="a89524edc025c255e3e415e871e88e5d" category="list-text">Dalla pagina *risorse*, selezionare *Ricerca avanzata e filtraggio*.</block>
   <block id="3d1bc41342a56d581edf9d1765f01a0b" category="list-text">Utilizzare una delle opzioni disponibili per trovare la risorsa desiderata:</block>
   <block id="48ca2619b5dca392dc3969df94469cf3" category="list-text">*Cerca per nome risorsa*: Immettere una stringa di testo e selezionare *Aggiungi*.</block>
   <block id="b2efca9e0863336ee0d7aa6af1771c24" category="list-text">*Piattaforma*: Selezionare una o più piattaforme, ad esempio Amazon Web Services.</block>
   <block id="e6d1209910233e075e359b7fdb3892a8" category="list-text">*Risorse*: Selezionare una o più risorse, ad esempio Cloud Volumes ONTAP.</block>
   <block id="4a42d7a28e04f8a9b2270b8906ae904c" category="list-text">*Organizzazione, cartella o progetto*: Selezionare l'intera organizzazione, una cartella specifica o un progetto specifico.</block>
   <block id="fb3b214ed2681d71df95f0a2e1ad7ee8" category="list-text">Selezionare *Cerca*.</block>
-  <block id="de1dcc903e0def1031803a58221b8303" category="paragraph">Il contenuto della tabella risorse viene aggiornato per visualizzare le risorse corrispondenti alle selezioni di ricerca e filtro.</block>
   <block id="6b979ebd5780c7df2c462682bbe1749e" category="section-title">Associare una risorsa a cartelle e progetti</block>
-  <block id="6f4141394827d668d7827055e97c0bb9" category="paragraph">Se si desidera rendere disponibile una risorsa a un'altra cartella o progetto nell'organizzazione, è necessario creare un'associazione tra la cartella o il progetto e la risorsa.</block>
   <block id="123b63ad16a2eb2123e4d954ed9b410d" category="inline-link-macro">Informazioni sulle risorse, incluso quando associare una risorsa a una cartella</block>
   <block id="aa17a9cf1b2a8bd01a901a0eb2e99eee" category="paragraph">È necessario comprendere il funzionamento dell'associazione delle risorse. <block ref="a1afb03a32649c13d619ffef925eefd6" category="inline-link-macro-rx"></block>.</block>
   <block id="0ba76e0dec90ea0767d0bea623254565" category="list-text">Dalla pagina *risorse*, individuare una risorsa nella tabella, selezionare <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> e quindi selezionare *Associa a cartelle o progetti*.</block>
   <block id="40604a706a532d51e9c0e2942f20bbbd" category="list-text">Per associare una cartella o un progetto aggiuntivo, selezionare *Aggiungi cartella o progetto*, quindi selezionare la cartella o il progetto.</block>
   <block id="227d0042933a910c506c0345c27ef64f" category="paragraph">Nota: È possibile selezionare solo le cartelle e i progetti per i quali si dispone delle autorizzazioni di amministratore.</block>
   <block id="5c4e241b983cce10c131e9a51dc2f2e5" category="list-text">Selezionare *Associa risorse*.</block>
-  <block id="71e4a1d057d7694dd5ea8710ca5d07a9" category="paragraph">BlueXP  associa la risorsa alle cartelle e ai progetti selezionati.</block>
   <block id="f487d6f4a22314a7fc4b480b252f4981" category="list-text">Se la risorsa è stata associata a progetti, i membri che dispongono delle autorizzazioni per tali progetti ora possono accedere alla risorsa in BlueXP .</block>
   <block id="6330741dc930a8e0cff70d2bbd0c2a2d" category="inline-link-macro">Informazioni sull'associazione di una risorsa a una cartella</block>
   <block id="0764009847ea7e98389494f95f4d739e" category="list-text">Se la risorsa è stata associata a una cartella, un _amministratore cartella o progetto_ può ora accedere alla risorsa dall'interno di BlueXP  IAM. <block ref="a53b921d2a913725c8b4e28a24824743" category="inline-link-macro-rx"></block>.</block>
@@ -4586,7 +4552,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="3a04b19767b9262d748f5bc93b4d433d" category="section-title">Visualizzare le cartelle e i progetti associati a una risorsa</block>
   <block id="012ed1b51c49e99d9e7c8472bbf96c42" category="paragraph">Per identificare la posizione in cui una risorsa è disponibile nella gerarchia dell'organizzazione, è possibile visualizzare le cartelle e i progetti associati a tale risorsa.</block>
   <block id="ae35c12a9d0798db618751302c4603bd" category="list-text">Dalla pagina *risorse*, individuare una risorsa nella tabella, selezionare <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> e quindi *Visualizza dettagli*.</block>
-  <block id="147b2b655dda25ecac27a2d7381599e4" category="paragraph">BlueXP  visualizza le cartelle e i progetti associati alla risorsa.</block>
   <block id="0d8f80667cd7bc86a6f6ea26c12d18b9" category="paragraph">Nell'esempio seguente viene illustrata una risorsa associata a un progetto.</block>
   <block id="a46cbe82e9adff7ecc82d6eadb58aa97" category="inline-image-macro">Schermata della pagina dei dettagli delle risorse che mostra una risorsa associata a un progetto direttamente sotto l'organizzazione.</block>
   <block id="7cadbb5f400f149f938a910df5c5cb0d" category="paragraph"><block ref="7cadbb5f400f149f938a910df5c5cb0d" category="inline-image-macro-rx" type="image"></block></block>
@@ -4601,7 +4566,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="7f6be6d71b75090da3f7888443a6d4f8" category="paragraph">Se si desidera rimuovere una risorsa scoperta dall'intera organizzazione, è necessario rimuovere l'ambiente di lavoro da BlueXP  Canvas.</block>
   <block id="4fc3c6ef596dbec8a3af38f79c84cf02" category="list-text">Per la cartella o il progetto per cui si desidera rimuovere la risorsa, selezionare <block ref="5aa3fbfa4a030d3d0fb7677a91fd2eba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ece216a1c354b015ef19084b08f5e92f" category="list-text">Confermare che si desidera rimuovere l'associazione selezionando *Elimina*.</block>
-  <block id="4cc93df03851cba78d596a3fa944ce1a" category="paragraph">BlueXP  rimuove l'associazione. I membri non possono più accedere alla risorsa da quella cartella o progetto.</block>
   <block id="08599f4c51d7b3ffe063f2612e7c4f5e" category="summary">Se necessario, è possibile modificare il nome dell'organizzazione BlueXP .</block>
   <block id="3b2af1e86badf70e10ee3dd7bd601881" category="paragraph">Se necessario, è possibile modificare il nome dell'organizzazione BlueXP  da Gestione identità e accessi (IAM) di BlueXP . Il nome dell'organizzazione viene visualizzato nella parte superiore della console basata sul Web di BlueXP  e nelle pagine IAM.</block>
   <block id="8bf336ab115156eac88db2970ab0e70d" category="list-text">Dalla pagina *Organizzazione*, passare alla prima riga della tabella, selezionare <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> e quindi *Modifica organizzazione*.</block>
@@ -4965,4 +4929,27 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="815ee4222e11b0d1d149ad24cabecc80" category="paragraph">Se il connettore si trova in una regione commerciale o sovrana, è possibile scegliere tra due serie di endpoint:</block>
   <block id="ad262fe50d2ecf5a3aae7409b3eda8e2" category="paragraph">Per ottenere immagini per gli aggiornamenti dei connettori quando il connettore viene installato in una regione commerciale o sovrana.</block>
   <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">16 dicembre 2024</block>
+  <block id="67f44df0b66677509cb8a85769f34ee3" category="paragraph">Il seguente video illustra i passaggi per abbonarsi a BlueXP  dal marketplace AWS:</block>
+  <block id="96be219c15e8fd2a25d382cfbe8aba22" category="list-text">Selezionare il menu azione per un set di credenziali, quindi selezionare *Configura sottoscrizione*.</block>
+  <block id="f9ffa76e11dc9be1f06d413d4c1da4ed" category="list-text">Per associare le credenziali a un abbonamento esistente, selezionare l'abbonamento dall'elenco a discesa e selezionare *Configura*.</block>
+  <block id="e7225dcfe470884c10cd0ab60d4ad033" category="section-title">Informazioni correlate</block>
+  <block id="ff462988ef2bf728297fe5ed85ddc08d" category="section-title">Configurare un'iscrizione AWS</block>
+  <block id="b8da1935866ccfc3044b85a99232dc4f" category="paragraph">Dopo aver aggiunto le tue credenziali AWS a BlueXP , puoi configurare un'iscrizione ad AWS Marketplace con tali credenziali. L'abbonamento consente di pagare Cloud Volumes ONTAP a una tariffa oraria (PAYGO) o utilizzando un contratto annuale e di utilizzare altri servizi BlueXP.</block>
+  <block id="98ab56b1913a765c1df746951483fcf9" category="paragraph">Esistono due scenari in cui è possibile configurare un'iscrizione ad AWS Marketplace dopo aver già aggiunto le credenziali a BlueXP :</block>
+  <block id="5ae59f56e745767e7fb2cc05712fc6a6" category="list-text">Non hai configurato un abbonamento quando hai inizialmente aggiunto le credenziali a BlueXP .</block>
+  <block id="1fa2cd673301895c14fbffad8568f063" category="list-text">Vuoi modificare l'iscrizione al marketplace AWS configurata per le credenziali AWS.</block>
+  <block id="992e95d72701e4be3c32c42f86ff8eb2" category="paragraph">La profondità della gerarchia delle risorse dell'organizzazione può scendere a 7 livelli. Di conseguenza, è possibile creare cartelle nidificate fino a 6 livelli. L'ultima cartella nidificata può quindi includere i progetti al settimo livello della gerarchia.</block>
+  <block id="602717d0c1fbb3310698d48708d917bc" category="paragraph">L'immagine seguente illustra la profondità massima della gerarchia delle risorse dell'organizzazione:</block>
+  <block id="7ef08e2a2795e0ebd33ca241791da34d" category="section-title">Visualizzare le risorse associate a una cartella o a un progetto</block>
+  <block id="b9cbaac63edb6628a694750d4f1ba083" category="list-text">Nella pagina *Modifica*, è possibile visualizzare i dettagli relativi alla cartella o al progetto selezionato espandendo le sezioni *risorse* o *accesso*.</block>
+  <block id="c89793030e51a304fd86f478545c616e" category="paragraph">È possibile modificare le risorse associate a una cartella o a un progetto associando o disassociando una risorsa. Ad esempio, è possibile associare una risorsa a un altro progetto perché tale risorsa ha capacità che un altro team può utilizzare. Una volta associata una risorsa a una cartella o a un progetto, i membri dell'organizzazione che dispongono delle autorizzazioni per tale cartella o progetto possono accedere alla risorsa associata.</block>
+  <block id="e3621d23b92254c73b3a713d227a66f5" category="section-title">Visualizzare i membri associati a una cartella o a un progetto</block>
+  <block id="5ca796b399d85f3455d2d1844012b11a" category="paragraph">Se l'accesso ai membri è stato fornito a un livello superiore della gerarchia (a livello di cartella o organizzazione), non è possibile rimuovere o modificare l'accesso ai membri durante la visualizzazione della cartella o del progetto di livello inferiore. È necessario passare a quella parte della gerarchia e aggiornare le autorizzazioni del membro. In alternativa, è possibile <block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>.</block>
+  <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">Nella pagina *Modifica*, selezionare *accesso* per visualizzare l'elenco dei membri che hanno accesso alla cartella o al progetto selezionato.</block>
+  <block id="d94261042140ed4ba051dbe4ecd2eeb1" category="paragraph">Quando si utilizza BlueXP  Identity and Access Management (IAM) per associare un membro all'organizzazione, si forniscono le autorizzazioni a livello di organizzazione, cartella o progetto. Per garantire che tali membri dispongano delle autorizzazioni per accedere alle risorse appropriate, è necessario gestire la gerarchia delle risorse dell'organizzazione associando le risorse a progetti e cartelle specifici. Un _resource_ è una risorsa storage di cui BlueXP  già gestisce o è a conoscenza.</block>
+  <block id="e9c971c6d3dcc12c14f3f119d1d8f701" category="paragraph">È possibile visualizzare sia le risorse rilevate che quelle non rilevate associate all'organizzazione. Le risorse non scoperte sono in genere risorse di storage conosciute tramite il Digital Advisor per cui non hai aggiunto come ambienti di lavoro.</block>
+  <block id="7e797bc936bc19649c91fa90509a82a9" category="admonition">Le risorse Amazon FSX per NetApp ONTAP non vengono visualizzate nella pagina delle risorse IAM poiché non è possibile associarle a un ruolo IAM. Puoi visualizzare queste risorse sul rispettivo Canvas o dai workload.</block>
+  <block id="3135ebe2cc4398e8de27fc39c6eb605e" category="list-text">Selezionare *risorse* per visualizzare la pagina risorse.</block>
+  <block id="a5d2efab4d8509840f3f76fe8f0a57c1" category="list-text">Selezionare *Ricerca avanzata e filtraggio*.</block>
+  <block id="f7e276f42cb40dbaba008d93e6aff422" category="paragraph">Se si desidera rendere disponibile una risorsa alla cartella o al progetto nell'organizzazione, è necessario creare un'associazione tra la cartella o il progetto e la risorsa.</block>
 </blocks>
