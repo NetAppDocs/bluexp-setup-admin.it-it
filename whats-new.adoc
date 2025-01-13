@@ -18,6 +18,40 @@ Scopri le novità delle funzionalità di amministrazione di BlueXP : Gestione d
 
 
 
+== 13 gennaio 2025
+
+
+
+=== Connettore 3.9.48
+
+Questa versione di BlueXP Connector include piccoli miglioramenti alla sicurezza e correzioni di bug.
+
+A questo punto, la versione 3.9.48 è disponibile per la modalità standard e la modalità limitata.
+
+
+
+=== Gestione delle identità e degli accessi BlueXP 
+
+* La pagina risorse ora visualizza le risorse non rilevate. Le risorse non rilevate sono risorse di storage di cui BlueXP  conosce, ma per cui non sono stati creati ambienti di lavoro. Ad esempio, le risorse visualizzate in Digital Advisor che non dispongono ancora di ambienti di lavoro vengono visualizzate nella pagina risorse come risorse non rilevate.
+* Le risorse Amazon FSX per NetApp ONTAP non vengono visualizzate nella pagina delle risorse IAM poiché non è possibile associarle a un ruolo IAM. Puoi visualizzare queste risorse sul rispettivo Canvas o dai workload.
+
+
+
+
+=== Crea un caso di supporto per ulteriori servizi BlueXP 
+
+Dopo aver registrato BlueXP  per ricevere assistenza, puoi creare un caso di supporto direttamente dalla console basata su web di BlueXP . Quando si crea il caso, è necessario selezionare il servizio a cui è associato il problema.
+
+A partire da questa versione, è ora possibile creare un caso di supporto e associarlo a servizi BlueXP  aggiuntivi:
+
+* Disaster recovery di BlueXP
+* Protezione ransomware BlueXP
+
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["Scopri di più sulla creazione di un caso di supporto"].
+
+
+
 == 16 dicembre 2024
 
 
