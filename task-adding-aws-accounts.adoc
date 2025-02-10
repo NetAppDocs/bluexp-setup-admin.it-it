@@ -248,7 +248,7 @@ video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 Selezionare le credenziali associate a un connettore. Non puoi associare un abbonamento al marketplace alle credenziali associate a BlueXP.
 
 +
-image:screenshot_associate_subscription.png["Schermata del menu delle azioni per un set di credenziali esistenti."]
+image:screenshot_aws_configure_subscription.png["Schermata del menu delle azioni per un set di credenziali esistenti."]
 
 . Per associare le credenziali a un abbonamento esistente, selezionare l'abbonamento dall'elenco a discesa e selezionare *Configura*.
 . Per associare le credenziali a un nuovo abbonamento, selezionare *Aggiungi abbonamento > continua* e seguire la procedura descritta in AWS Marketplace:

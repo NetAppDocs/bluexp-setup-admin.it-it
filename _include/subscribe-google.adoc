@@ -4,11 +4,8 @@
 
 .Fasi
 . Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
-. Selezionare il menu delle azioni per una serie di credenziali, quindi selezionare *Associa abbonamento*.
-+
-image:screenshot_gcp_add_subscription.png["Schermata del menu delle azioni per un set di credenziali esistenti."]
-
-. Per associare le credenziali a un abbonamento esistente, selezionare un progetto e un abbonamento Google Cloud dall'elenco a discesa, quindi selezionare *Associa*.
+. Selezionare il menu azione per un set di credenziali, quindi selezionare *Configura sottoscrizione*. +nuovo screenshot necessario (TS) image:screenshot_gcp_add_subscription.png["Schermata del menu delle azioni per un set di credenziali esistenti."]
+. Per configurare un abbonamento esistente con le credenziali selezionate, selezionare un progetto Google Cloud e un abbonamento dall'elenco a discesa, quindi selezionare *Configura*.
 +
 image:screenshot_gcp_associate.gif["Una schermata di un progetto Google Cloud e di un abbonamento selezionati per le credenziali Google Cloud."]
 

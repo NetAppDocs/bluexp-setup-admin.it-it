@@ -1,0 +1,78 @@
+= Connettore 3.9.49
+:allow-uri-read: 
+
+
+
+
+=== Connettore 3.9.49
+
+Questa versione di BlueXP Connector include piccoli miglioramenti alla sicurezza e correzioni di bug.
+
+A questo punto, la versione 3.9.49 è disponibile per la modalità standard e la modalità limitata.
+
+
+
+=== Gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP 
+
+* Supporto per l'assegnazione di più ruoli a un utente.
+* I ruoli sono ora associati a una delle tre categorie seguenti: Piattaforma, applicazione e servizi dati.
+* Alla categoria dell'applicazione sono associati due nuovi ruoli: Visualizzatore di archiviazione e Amministratore di archiviazione. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Informazioni sui ruoli IAM"]
+* IAM ora utilizzato in modalità limitata BlueXP 
+
+
+
+
+==== La modalità limitata ora utilizza BlueXP  IAM
+
+La gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP  viene ora utilizzata in modalità limitata.
+
+BlueXP  Identity and Access Management (IAM) è un modello di gestione delle risorse e degli accessi che sostituisce e migliora le funzionalità precedenti fornite dagli account BlueXP  quando si utilizza BlueXP  in modalità standard e limitata.
+
+.Informazioni correlate
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-identity-and-access-management.html["Ulteriori informazioni su BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-get-started.html["Introduzione a BlueXP  IAM"]
+
+
+BlueXP  IAM offre una gestione più granulare delle risorse e delle autorizzazioni:
+
+* Un _organization_ di alto livello consente di gestire l'accesso ai vari _progetti_.
+* _Folders_ consente di raggruppare i progetti correlati.
+* La gestione avanzata delle risorse consente di associare una risorsa a una o più cartelle o progetti.
++
+Ad esempio, è possibile associare un sistema Cloud Volumes ONTAP a più progetti.
+
+* La gestione avanzata degli accessi consente di assegnare un ruolo ai membri a diversi livelli della gerarchia dell'organizzazione.
+
+
+Questi miglioramenti forniscono un migliore controllo sulle azioni che gli utenti possono eseguire e sulle risorse a cui possono accedere.
+
+.In che modo BlueXP  IAM influisce sull'account esistente in modalità limitata
+Quando accedi a BlueXP , noterai queste modifiche:
+
+* Il tuo _account_ è ora chiamato _organizzazione_
+* Le _aree di lavoro_ sono ora chiamate _progetti_
+* I nomi dei ruoli utente sono cambiati:
++
+** _Account admin_ è ora _Organization admin_
+** _Workspace admin_ è ora _cartella o project admin_
+** _Compliance Viewer_ è ora _Classification Viewer_
+
+
+* In Impostazioni, è possibile accedere alla gestione delle identità e degli accessi di BlueXP  per usufruire di questi miglioramenti
+
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-iam-introduction.png["Una schermata di BlueXP  che mostra l'organizzazione e il progetto selezionabili dalla parte superiore dell'interfaccia, nonché la gestione delle identità e degli accessi, disponibile dal menu Impostazioni."]
+
+Tenere presente quanto segue:
+
+* Non sono state apportate modifiche agli utenti esistenti o agli ambienti di lavoro.
+* Sebbene i nomi dei ruoli siano cambiati, non vi sono differenze dal punto di vista delle autorizzazioni. Gli utenti continueranno ad avere accesso agli stessi ambienti di lavoro di prima.
+* Non sono state apportate modifiche alla modalità di accesso a BlueXP . BlueXP  IAM funziona con gli accessi cloud NetApp, le credenziali del sito di supporto NetApp e le connessioni federate proprio come gli account BlueXP .
+* Se disponete di più account BlueXP , ora avete più organizzazioni BlueXP .
+
+
+.API per BlueXP  IAM
+Questa modifica introduce una nuova API per BlueXP  IAM, ma è compatibile con le versioni precedenti dell'API di tenancy precedente. https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Ulteriori informazioni sull'API per BlueXP  IAM"^]
+
+.Modalità di distribuzione supportate
+BlueXP  IAM è supportato quando si utilizza BlueXP  in modalità standard e limitata. Se utilizzi BlueXP  in modalità privata, continuerai a utilizzare un _account_ di BlueXP  per gestire aree di lavoro, utenti e risorse.

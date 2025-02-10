@@ -33,8 +33,10 @@ Se hai creato un connettore direttamente da BlueXP, BlueXP ha implementato un'is
 
 I requisiti della CPU e della RAM sono i seguenti:
 
-CPU:: 8 core o 8 vCPU
-RAM:: 32 GB
+L'host può essere di qualsiasi architettura in grado di soddisfare questi requisiti di dimensioni.
+
+* *CPU:* 8 core o 8 vCPU
+* *RAM:* 32 GB
 
 
 link:reference-connector-default-config.html["Informazioni sulla configurazione predefinita del connettore"].

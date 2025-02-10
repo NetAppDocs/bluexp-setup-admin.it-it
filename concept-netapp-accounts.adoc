@@ -14,9 +14,9 @@ summary: Un account BlueXP  consente di gestire gli utenti e organizzare le ris
 
 
 [role="lead"]
-Quando si utilizza BlueXP  in modalità limitata o privata, si utilizzerà un account _BlueXP _ per gestire gli utenti e organizzare le risorse in _aree di lavoro_ isolate. Ad esempio, un gruppo di utenti può distribuire e gestire ambienti di lavoro Cloud Volumes ONTAP in un'area di lavoro non visibile agli utenti che gestiscono ambienti di lavoro in un'altra area di lavoro.
+Quando si utilizza BlueXP  in modalità privata, si utilizzerà un account _BlueXP _ per gestire gli utenti e organizzare le risorse in _aree di lavoro_ isolate. Ad esempio, un gruppo di utenti può distribuire e gestire ambienti di lavoro Cloud Volumes ONTAP in un'area di lavoro non visibile agli utenti che gestiscono ambienti di lavoro in un'altra area di lavoro.
 
-Se utilizzi BlueXP  in modalità standard, non avrai un account BlueXP . Avrete invece un'organizzazione _BlueXP _ gestita utilizzando la gestione delle identità e degli accessi (IAM) di BlueXP .
+Se si utilizza BlueXP  in modalità standard o limitata, non si dispone di un account BlueXP . Avrete invece un'organizzazione _BlueXP _ gestita utilizzando la gestione delle identità e degli accessi (IAM) di BlueXP .
 
 * link:concept-identity-and-access-management.html["Ulteriori informazioni su BlueXP  IAM"]
 * link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"]

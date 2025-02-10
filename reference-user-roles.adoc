@@ -14,9 +14,9 @@ summary: 'I ruoli Amministratore account, Amministratore area di lavoro, Visuali
 
 
 [role="lead"]
-Quando utilizzi BlueXP  in modalità limitata o privata, utilizzerai un account _BlueXP _ per gestire gli utenti. È possibile fornire autorizzazioni specifiche agli utenti dell'account selezionando uno dei seguenti ruoli: Account Admin, Workspace Admin, Compliance Viewer e SnapCenter Admin.
+Quando utilizzi BlueXP  in modalità privata, utilizzerai un account _BlueXP _ per gestire gli utenti. È possibile fornire autorizzazioni specifiche agli utenti dell'account selezionando uno dei seguenti ruoli: Account Admin, Workspace Admin, Compliance Viewer e SnapCenter Admin.
 
-Se utilizzi BlueXP  in modalità standard, non avrai un account BlueXP . Avrete invece un'organizzazione _BlueXP _ gestita utilizzando la gestione delle identità e degli accessi (IAM) di BlueXP .
+Se si utilizza BlueXP  in modalità standard o limitata, non si dispone di un account BlueXP . Avrete invece un'organizzazione _BlueXP _ gestita utilizzando la gestione delle identità e degli accessi (IAM) di BlueXP .
 
 * link:concept-identity-and-access-management.html["Ulteriori informazioni su BlueXP  IAM"]
 * link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"]

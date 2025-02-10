@@ -14,9 +14,9 @@ summary: Gestisci il tuo account BlueXP  aggiungendo utenti, creando account di
 
 
 [role="lead"]
-Quando utilizzi BlueXP  in modalità limitata o privata, utilizzerai un account _BlueXP _ per gestire gli utenti e organizzare le risorse. Quando si crea l'account, questo include solo un singolo utente amministratore e un'area di lavoro. È possibile gestire l'account in base alle proprie esigenze aggiungendo utenti, creando account di servizio a scopo di automazione, aggiungendo aree di lavoro e altro ancora.
+Quando utilizzi BlueXP  in modalità privata, utilizzerai un account _BlueXP _ per gestire gli utenti e organizzare le risorse. Quando si crea l'account, questo include solo un singolo utente amministratore e un'area di lavoro. È possibile gestire l'account in base alle proprie esigenze aggiungendo utenti, creando account di servizio a scopo di automazione, aggiungendo aree di lavoro e altro ancora.
 
-Se utilizzi BlueXP  in modalità standard, non avrai un account BlueXP . Avrete invece un'organizzazione _BlueXP _ gestita utilizzando la gestione delle identità e degli accessi (IAM) di BlueXP .
+Se si utilizza BlueXP  in modalità standard o limitata, non si dispone di un account BlueXP . Avrete invece un'organizzazione _BlueXP _ gestita utilizzando la gestione delle identità e degli accessi (IAM) di BlueXP .
 
 * link:concept-identity-and-access-management.html["Ulteriori informazioni su BlueXP  IAM"]
 * link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"]

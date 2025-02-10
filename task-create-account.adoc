@@ -14,9 +14,9 @@ summary: 'Quando si imposta BlueXP  in modalità limitata o privata, viene rich
 
 
 [role="lead"]
-Quando si imposta BlueXP  in modalità limitata o privata, viene richiesto di creare un _account BlueXP _, che consente di gestire gli utenti e organizzare le risorse. Questo account potrebbe essere tutto ciò di cui hai bisogno, ma se la tua azienda richiede più account, dovrai creare altri account utilizzando l'API tenancy.
+Quando si imposta BlueXP  in modalità privata, viene richiesto di creare un _account BlueXP _, che consente di gestire gli utenti e organizzare le risorse. Questo account potrebbe essere tutto ciò di cui hai bisogno, ma se la tua azienda richiede più account, dovrai creare altri account utilizzando l'API tenancy.
 
-Se utilizzi BlueXP  in modalità standard, non avrai un account BlueXP . Al contrario, avrete un'organizzazione che gestite utilizzando la gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP . link:concept-identity-and-access-management.html["Ulteriori informazioni su BlueXP  IAM"].
+Se utilizzi BlueXP  in modalità standard o con restrizioni, non avrai un account BlueXP . Al contrario, avrete un'organizzazione che gestite utilizzando la gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP . link:concept-identity-and-access-management.html["Ulteriori informazioni su BlueXP  IAM"].
 
 .Fasi
 . Utilizzare la seguente chiamata API per creare un account BlueXP aggiuntivo:
