@@ -194,7 +194,7 @@ link:task-iam-manage-folders-projects.html#view-associated-resources-members["Co
 
 == Gestire i ruoli dei membri
 
-Ai membri dell'organizzazione possono essere assegnati ruoli a ciascun livello e più di un livello della gerarchia delle risorse. È possibile assegnare ruoli ai membri pertinenti alle proprie responsabilità nell'organizzazione BlueXP . Ad esempio, se nella gerarchia delle risorse sono presenti sette membri che rappresentano i rispettivi progetti (ambienti di lavoro), è possibile assegnare a qualcuno il ruolo di amministratore dello storage per tre dei progetti e quindi assegnare a un altro membro l'amministratore dello storage per i progetti rimanenti. Un'altra possibilità potrebbe essere quella di assegnare a un utente il ruolo di amministratore dello storage per l'intera organizzazione. È possibile gestire i ruoli dei membri in base alle esigenze dell'organizzazione.
+Ai membri dell'organizzazione possono essere assegnati ruoli a ciascun livello e più di un livello della gerarchia delle risorse. È possibile assegnare ruoli ai membri pertinenti alle proprie responsabilità nell'organizzazione BlueXP .
 
 È possibile annullare l'assegnazione di un ruolo a un membro, aggiungere un nuovo ruolo o entrambi. Un ruolo definisce le autorizzazioni assegnate a un membro a livello di organizzazione, cartella o progetto. È possibile assegnare ai membri ruoli pertinenti alle loro responsabilità nell'organizzazione BlueXP .
 
@@ -227,7 +227,7 @@ Fornire a un membro autorizzazioni aggiuntive nell'organizzazione aggiungendo ru
 +
 Se si seleziona l'organizzazione o una cartella, il membro disporrà delle autorizzazioni per tutti gli elementi che risiedono all'interno dell'organizzazione o della cartella.
 
-** *Selezionare una categoria*: BlueXP  separa i ruoli in tre categorie: Piattaforma, applicazione e servizi dati. link:reference-iam-predefined-roles.html["Informazioni sui ruoli IAM"^].
+** *Selezionare una categoria*: BlueXP  separa i ruoli in due categorie: Piattaforma e servizio dati. link:reference-iam-predefined-roles.html["Informazioni sui ruoli IAM"^].
 ** Selezionare un *ruolo*: Scegliere un ruolo che fornisca al membro le autorizzazioni per le risorse associate all'organizzazione, alla cartella o al progetto selezionato.
 +
 *** Se è stata selezionata l'organizzazione, è possibile scegliere un ruolo diverso da *cartella o project admin*.
@@ -252,7 +252,7 @@ link:reference-iam-predefined-roles.html["Informazioni sui ruoli IAM predefiniti
 .Fasi
 . Dalla pagina *membri*, selezionare un membro della tabella, quindi selezionare image:icon-action.png["Un'icona con tre punti affiancati"]*Visualizza dettagli*.
 . Nella tabella, espandere la riga corrispondente per l'organizzazione, la cartella o il progetto in cui si desidera modificare il ruolo assegnato del membro e selezionare *Visualizza* nella colonna *ruolo* per visualizzare i ruoli assegnati a questo membro.
-. Per modificare il ruolo di un membro, selezionare *Cambia* accanto al ruolo che si desidera modificare. È possibile modificare questo ruolo solo in un ruolo della stessa categoria. Ad esempio, è possibile passare da un ruolo applicazione a un altro. Verrà richiesto di confermare la modifica.
+. Per modificare il ruolo di un membro, selezionare *Cambia* accanto al ruolo che si desidera modificare. È possibile modificare questo ruolo solo in un ruolo della stessa categoria. Ad esempio, è possibile passare da un ruolo di servizio dati a un altro. Verrà richiesto di confermare la modifica.
 +
 .. Per annullare l'assegnazione del ruolo di un membro, selezionare image:icon-delete.png["Un'icona che assomiglia a un cestino può"] accanto al ruolo per annullare l'assegnazione del rispettivo ruolo. Verrà richiesto di confermare la rimozione.
 

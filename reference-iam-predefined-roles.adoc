@@ -14,7 +14,7 @@ summary: 'La gestione delle identità e degli accessi di BlueXP  include divers
 
 
 [role="lead"]
-BlueXP  Identity and Access Management (IAM) include diversi ruoli predefiniti che è possibile assegnare ai membri dell'organizzazione in diversi livelli della gerarchia delle risorse. Prima di assegnare questi ruoli, è necessario comprendere le autorizzazioni incluse in ciascun ruolo. I ruoli rientrano in tre categorie: Piattaforma, applicazione e servizio dati.
+BlueXP  Identity and Access Management (IAM) include diversi ruoli predefiniti che è possibile assegnare ai membri dell'organizzazione in diversi livelli della gerarchia delle risorse. Prima di assegnare questi ruoli, è necessario comprendere le autorizzazioni incluse in ciascun ruolo. I ruoli rientrano in due categorie: Piattaforma e servizio dati.
 
 
 
@@ -89,54 +89,6 @@ Esempio di ruoli organizzativi in BlueXP  per una grande organizzazione multina
 A tal fine, una persona a cui è stato assegnato il ruolo di amministratore dell'organizzazione in BlueXP  di XYZ Corporation crea un ambiente di lavoro iniziale e quindi crea cartelle separate in BlueXP  per ciascuna regione. La cartella di ogni regione contiene progetti (con risorse associate) correlati a tale regione. L'amministratore dell'organizzazione assegna a un utente BlueXP  in ciascuna regione il ruolo di amministratore cartella/progetto.
 
 Una volta completata la configurazione iniziale, gli amministratori regionali con il ruolo di amministratore cartella o progetto possono creare nuovi ambienti di lavoro e aggiungere utenti all'interno delle rispettive aree geografiche. Questi amministratori regionali possono anche aggiungere/rimuovere/rinominare cartelle e progetti a cui sono assegnati. L'amministratore dell'organizzazione eredita le autorizzazioni per qualsiasi nuovo ambiente di lavoro o risorsa, mantenendo la visibilità dell'utilizzo dello storage nell'intera organizzazione.
-
---
-
-
-
-
-== Ruoli applicazione
-
-I ruoli delle applicazioni forniscono l'accesso alle applicazioni BlueXP  come il consulente digitale Active IQ (noto anche come consulente digitale).
-
-
-
-=== Amministratore dello storage
-
-Fornisce all'utente la possibilità di eseguire funzioni di amministrazione dello storage in BlueXP , come aggiornamenti software e creazione ed eliminazione di ambienti di lavoro BlueXP .
-
-Permessi:: Può visualizzare BlueXP  Canvas. Può creare e gestire connettori BlueXP . Dispone dell'accesso in lettura/scrittura alle funzioni di salute e governance dello storage di BlueXP , tra cui:
-+
---
-* Consulente digitale
-* Resilienza operativa
-* Aggiornamenti software (possono eseguire aggiornamenti software)
-* Portafoglio digitale
-* Efficienza economica
-* Dashboard sulla sostenibilità
-* Avvisi
-
-
---
-
-
-
-
-=== Visualizzatore di archiviazione
-
-Fornisce accesso di sola lettura alle funzioni di salute e governance di BlueXP . Questo ruolo viene generalmente assegnato agli utenti responsabili del monitoraggio dello stato delle risorse di archiviazione di un'organizzazione. Gli utenti con questo ruolo possono vedere più applicazioni all'interno di BlueXP  per creare piani di aggiornamento software, piani per l'efficienza e visualizzare lo stato generale dello storage.
-
-Permessi:: Dispone di accesso in sola lettura alle funzioni di governance e salute dello storage di BlueXP , tra cui:
-+
---
-* Consulente digitale
-* Resilienza operativa
-* Aggiornamenti software (possono scaricare i piani di aggiornamento)
-* Portafoglio digitale
-* Efficienza economica
-* Dashboard sulla sostenibilità
-* Avvisi
-
 
 --
 
