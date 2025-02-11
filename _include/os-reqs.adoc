@@ -3,15 +3,6 @@
 
 
 Host dedicato:: Il connettore non è supportato su un host condiviso con altre applicazioni. L'host deve essere un host dedicato.
-+
---
-L'host può essere di qualsiasi architettura che soddisfi i seguenti requisiti di dimensioni.
-
-* *CPU:* 8 core o 8 vCPU
-* *RAM:* 32 GB
-
-
---
 
 
 Hypervisor:: È necessario un hypervisor bare metal o in hosting certificato per l'esecuzione di un sistema operativo supportato.
@@ -126,10 +117,8 @@ Note:
 --
 
 
-L'host può essere di qualsiasi architettura in grado di soddisfare questi requisiti di dimensioni.
-
-* *CPU:* 8 core o 8 vCPU
-* *RAM:* 32 GB
+CPU:: 8 core o 8 vCPU
+RAM:: 32 GB
 
 
 Tipo di istanza AWS EC2:: Un tipo di istanza che soddisfa i requisiti di CPU e RAM indicati in precedenza. Si consiglia di utilizzare t3.2xlarge.

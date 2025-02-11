@@ -4764,10 +4764,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="c16acacf37243c052df936e1994e4488" category="paragraph">A partire da questa versione, è ora possibile creare un caso di supporto e associarlo a servizi BlueXP  aggiuntivi:</block>
   <block id="6b8568e4d37788a668f2c72ae872b9a0" category="inline-link">Scopri di più sulla creazione di un caso di supporto</block>
   <block id="704c39cac41bd3edb3c4d1fc1b619590" category="paragraph"><block ref="8380621c8f80b9213ea8e8be1675d5a4" category="inline-link-rx"></block>.</block>
-  <block id="c933dbf26cb872c859f8dbb81999eff8" category="paragraph">L'host può essere di qualsiasi architettura che soddisfi i seguenti requisiti di dimensioni.</block>
-  <block id="9fc9c9f38ac896bc2bd0e275904e2b5d" category="list-text">*CPU:* 8 core o 8 vCPU</block>
-  <block id="35116a9bfaf82c27806c3c9614e3380e" category="list-text">*RAM:* 32 GB</block>
-  <block id="c0317bb7a0bafdead64d85dfbc6db80e" category="paragraph">L'host può essere di qualsiasi architettura in grado di soddisfare questi requisiti di dimensioni.</block>
   <block id="2b67fdb5c1c9190b50c83306e4021a2c" category="paragraph"><block ref="2b67fdb5c1c9190b50c83306e4021a2c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e52d2dcc592495f70c82c59eee98424f" category="list-text">Selezionare il menu azione per un set di credenziali, quindi selezionare *Configura sottoscrizione*. +nuovo screenshot necessario (TS) <block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ef5d79e3ae5671ca28e5f6e3b02eed27" category="list-text">Per configurare un abbonamento esistente con le credenziali selezionate, selezionare un progetto Google Cloud e un abbonamento dall'elenco a discesa, quindi selezionare *Configura*.</block>
@@ -4776,8 +4772,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="36cef198e9fac4b4a194f5e01017b8d1" category="list-text">Supporto per l'assegnazione di più ruoli a un utente.</block>
   <block id="6708a31732ccaf29d9ba72b524255e3e" category="list-text">I ruoli sono ora associati a una delle tre categorie seguenti: Piattaforma, applicazione e servizi dati.</block>
   <block id="035261365b324f2942fd56c2f10f6ed5" category="inline-link">Informazioni sui ruoli IAM</block>
-  <block id="ff73dba782f434133f0fc81382cc8398" category="list-text">Alla categoria dell'applicazione sono associati due nuovi ruoli: Visualizzatore di archiviazione e Amministratore di archiviazione.<block ref="ac81447e1825c80c6c47ed7167f706b3" category="inline-link-rx"></block></block>
-  <block id="67012c1335c677ff94cd2d777a3c7213" category="list-text">IAM ora utilizzato in modalità limitata BlueXP </block>
   <block id="4fafa85612a8b2fff96d593213d6a0ec" category="paragraph">La gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP  viene ora utilizzata in modalità limitata.</block>
   <block id="2f73a8cbcbf617bd5a78738929bbe5b3" category="paragraph">BlueXP  Identity and Access Management (IAM) è un modello di gestione delle risorse e degli accessi che sostituisce e migliora le funzionalità precedenti fornite dagli account BlueXP  quando si utilizza BlueXP  in modalità standard e limitata.</block>
   <block id="029ade287eade250f2c9612d148e1fad" category="paragraph-title">In che modo BlueXP  IAM influisce sull'account esistente in modalità limitata</block>
@@ -4978,4 +4972,11 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">Miglioramenti di Azure NetApp Files</block>
   <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">9 febbraio 2021</block>
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">Miglioramenti della dashboard di supporto</block>
+  <block id="2b55387dd066c5bac646ac61543d152d" category="list-text">CPU</block>
+  <block id="eefc3c2b6ca2400b2ae57e8da8247c03" category="list-text">8 core o 8 vCPU</block>
+  <block id="e53619c1fe611a51eeeb8d148ba6e532" category="list-text">RAM</block>
+  <block id="911ede8df5585598c294830dafe276fa" category="list-text">32 GB</block>
+  <block id="3a85c700de68ae35770a964c115eb7cb" category="list-title">Ulteriori miglioramenti IAM</block>
+  <block id="afa69926e5d0001214117331ecb2e622" category="list-text">Alla categoria dell'applicazione sono associati due nuovi ruoli: Visualizzatore di archiviazione e Amministratore di archiviazione.</block>
+  <block id="df90fe85a844ffa5c11d99e37754376f" category="paragraph"><block ref="df90fe85a844ffa5c11d99e37754376f" category="inline-link-rx"></block></block>
 </blocks>
