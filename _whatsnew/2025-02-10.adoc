@@ -16,16 +16,14 @@ A questo punto, la versione 3.9.49 è disponibile per la modalità standard e la
 
 * Supporto per l'assegnazione di più ruoli a un utente.
 * I ruoli sono ora associati a una delle due categorie: Piattaforma e servizio dati.
-
-
-[]
-====
 * I ruoli sono ora associati a una delle tre categorie seguenti: Piattaforma, applicazione e servizi dati.
 * Alla categoria dell'applicazione sono associati due nuovi ruoli: Visualizzatore di archiviazione e Amministratore di archiviazione. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Informazioni sui ruoli IAM"]
 * IAM ora utilizzato in modalità limitata BlueXP 
 
 
-==== la modalità limitata ora utilizza BlueXP  IAM
+
+
+==== La modalità limitata ora utilizza BlueXP  IAM
 
 La gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP  viene ora utilizzata in modalità limitata.
 
@@ -79,5 +77,3 @@ Questa modifica introduce una nuova API per BlueXP  IAM, ma è compatibile con 
 
 .Modalità di distribuzione supportate
 BlueXP  IAM è supportato quando si utilizza BlueXP  in modalità standard e limitata. Se utilizzi BlueXP  in modalità privata, continuerai a utilizzare un _account_ di BlueXP  per gestire aree di lavoro, utenti e risorse.
-
-====
