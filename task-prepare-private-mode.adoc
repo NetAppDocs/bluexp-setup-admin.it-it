@@ -46,6 +46,15 @@ Il punto in cui viene installato il connettore determina quali servizi e funzion
 Il software del connettore deve essere eseguito su un host che soddisfi i requisiti specifici del sistema operativo, della RAM, dei requisiti delle porte e così via.
 
 Host dedicato:: Il connettore non è supportato su un host condiviso con altre applicazioni. L'host deve essere un host dedicato.
++
+--
+L'host può essere di qualsiasi architettura che soddisfi i seguenti requisiti di dimensioni:
+
+* CPU: 8 core o 8 vCPU
+* RAM: 32 GB
+
+
+--
 [[podman-versions]]requisiti del sistema operativo e del contenitore:: BlueXP  supporta il connettore con i seguenti sistemi operativi quando si utilizza BlueXP  in modalità privata. Prima di installare il connettore è necessario uno strumento di orchestrazione del container.
 +
 --

@@ -48,6 +48,15 @@ Il software del connettore deve essere eseguito su un host che soddisfi i requis
 Quando si implementa il connettore da AWS o Azure Marketplace, l'immagine include il sistema operativo e i componenti software richiesti. È sufficiente scegliere un tipo di istanza che soddisfi i requisiti di CPU e RAM.
 
 Host dedicato:: Il connettore non è supportato su un host condiviso con altre applicazioni. L'host deve essere un host dedicato.
++
+--
+L'host può essere di qualsiasi architettura che soddisfi i seguenti requisiti di dimensioni:
+
+* CPU: 8 core o 8 vCPU
+* RAM: 32 GB
+
+
+--
 Hypervisor:: È necessario un hypervisor bare metal o in hosting certificato per l'esecuzione di un sistema operativo supportato.
 [[podman-versions]]requisiti del sistema operativo e del contenitore:: BlueXP  supporta il connettore con i seguenti sistemi operativi quando si utilizza BlueXP  in modalità standard o limitata. Prima di installare il connettore è necessario uno strumento di orchestrazione del container.
 +
@@ -107,8 +116,6 @@ Note:
 
 
 --
-CPU:: 8 core o 8 vCPU
-RAM:: 32 GB
 Tipo di istanza AWS EC2:: Un tipo di istanza che soddisfa i requisiti di CPU e RAM indicati in precedenza. Si consiglia di utilizzare t3.2xlarge.
 Dimensione delle macchine virtuali Azure:: Un tipo di istanza che soddisfa i requisiti di CPU e RAM indicati in precedenza. Si consiglia di utilizzare Standard_D8s_v3.
 Tipo di macchina Google Cloud:: Un tipo di istanza che soddisfa i requisiti di CPU e RAM indicati in precedenza. Consigliamo n2-standard-8.
