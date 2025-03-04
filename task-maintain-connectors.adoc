@@ -118,6 +118,7 @@ Aggiungere e rimuovere l'URI (Uniform Resource Identifier) per un connettore.
 .Fasi
 . Selezionare l'elenco a discesa *Connector* dall'intestazione BlueXP.
 . Selezionare *Gestisci connettori*.
-. Selezionare il menu delle azioni per un connettore e selezionare *Edit URI* (Modifica URI).
+. Selezionare il menu azione per un connettore e selezionare *Modifica connettore*.
+. Selezionare *URI connettore*.
 . Aggiungere e rimuovere URI, quindi selezionare *Apply* (Applica).
 
