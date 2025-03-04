@@ -409,7 +409,7 @@ Enable NTP (attiva NTP):: Se stai pensando di utilizzare la classificazione Blue
 
 
 
-== Passaggio 4: Impostare le autorizzazioni
+== Passaggio 4: Impostare le autorizzazioni di distribuzione del connettore
 
 Devi fornire le autorizzazioni di Azure a BlueXP tramite una delle seguenti opzioni:
 
@@ -421,7 +421,7 @@ Segui i passaggi per preparare le autorizzazioni per BlueXP.
 
 [role="tabbed-block"]
 ====
-.Ruolo personalizzato
+.Creare un ruolo personalizzato per la distribuzione dei connettori
 --
 Si noti che è possibile creare un ruolo personalizzato di Azure utilizzando il portale Azure, Azure PowerShell, Azure CLI o REST API. I passaggi seguenti mostrano come creare il ruolo utilizzando la CLI di Azure. Se si preferisce utilizzare un metodo diverso, fare riferimento a. https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Documentazione di Azure"^]
 

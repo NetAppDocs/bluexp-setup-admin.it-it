@@ -116,7 +116,7 @@ BlueXP richiede le autorizzazioni di Azure per il connettore e per i singoli ser
 | Obiettivo | Descrizione | Collegamento 
 
 
-| Implementa il connettore da BlueXP | Quando si implementa un connettore da BlueXP, è necessario utilizzare un account Azure o un'entità di servizio che disponga delle autorizzazioni per implementare la macchina virtuale del connettore in Azure. | link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Impostare le autorizzazioni Azure"] 
+| Implementa il connettore da BlueXP | Quando si implementa un connettore da BlueXP, è necessario utilizzare un account Azure o un'entità di servizio che disponga delle autorizzazioni per implementare la macchina virtuale del connettore in Azure. | link:task-install-connector-azure-bluexp.html#connector-custom-role["Impostare le autorizzazioni Azure"] 
 
 
 | Fornire le autorizzazioni per il connettore  a| 

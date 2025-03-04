@@ -20,7 +20,7 @@ Scopri in che modo BlueXP usa le credenziali di Azure per eseguire azioni per tu
 
 == Credenziali iniziali di Azure
 
-Quando si implementa un connettore da BlueXP, è necessario utilizzare un account Azure o un'entità di servizio che disponga delle autorizzazioni necessarie per implementare la macchina virtuale del connettore. Le autorizzazioni richieste sono elencate nella link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Policy di implementazione del connettore per Azure"].
+Quando si implementa un connettore da BlueXP, è necessario utilizzare un account Azure o un'entità di servizio che disponga delle autorizzazioni necessarie per implementare la macchina virtuale del connettore. Le autorizzazioni richieste sono elencate nella link:task-install-connector-azure-bluexp.html#connector-custom-role["Policy di implementazione del connettore per Azure"].
 
 Quando BlueXP  implementa la macchina virtuale Connector in Azure, attiva un sulla macchina virtuale, crea un https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identità gestita assegnata dal sistema"^] ruolo personalizzato e lo assegna alla macchina virtuale. Il ruolo fornisce a BlueXP le autorizzazioni necessarie per gestire le risorse e i processi all'interno dell'abbonamento Azure. link:reference-permissions-azure.html["Analisi dell'utilizzo delle autorizzazioni da parte di BlueXP"].
 
