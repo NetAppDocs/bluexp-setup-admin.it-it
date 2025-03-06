@@ -22,14 +22,6 @@ Scopri le novità delle funzionalità di amministrazione di BlueXP : Gestione d
 
 
 
-=== Connettore 3.9.50
-
-Questa versione di BlueXP  Connector include piccoli miglioramenti alla sicurezza e correzioni di bug, nonché le seguenti funzioni.
-
-A questo punto, la versione 3.9.50 è disponibile per la modalità standard e la modalità limitata.
-
-
-
 === Aggiornamento del connettore 3.9.49
 
 
