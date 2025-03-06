@@ -5025,6 +5025,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="355c51d49cd780f57fe417fdede5f61c" category="inline-link-macro">Scopri come disattivare l'aggiornamento automatico per il connettore.</block>
   <block id="530a13d3dc2fccc16ebe8e25a47286a1" category="paragraph"><block ref="530a13d3dc2fccc16ebe8e25a47286a1" category="inline-link-macro-rx"></block></block>
   <block id="8890f7f5e319bfe21969241c1f702a89" category="paragraph">La disattivazione dell'aggiornamento automatico del connettore consiste in due fasi. Innanzitutto, è necessario assicurarsi che il connettore corrente sia integro e aggiornato. Quindi, si modificherà un file di configurazione per disattivare la funzione di aggiornamento automatico.</block>
-  <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">10 marzo 2025</block>
   <block id="7c92902ee004926d50127061f6c6f6e3" category="paragraph">Per impostazione predefinita, agli utenti non viene richiesto di immettere le proprie credenziali ONTAP per accedere a Gestione di sistema di ONTAP. Tuttavia, un amministratore BlueXP  (con il ruolo di amministratore dell'organizzazione) può configurare BlueXP  in modo che richieda agli utenti di immettere le proprie credenziali ONTAP. Quando questa impostazione è attivata, gli utenti devono immettere ogni volta le proprie credenziali ONTAP.</block>
+  <block id="278edfabbac204688aa13f79c6f52497" category="section-title">6 marzo 2025</block>
 </blocks>
