@@ -41,7 +41,7 @@ link:reference-connector-default-config.html["Informazioni sulla configurazione 
 
 
 
-== Arresto dell'avvio del connettore VM
+== Arresto e avvio del connettore VM
 
 Se devi arrestare e quindi avviare la macchina virtuale del connettore, dovresti farlo dalla console del tuo cloud provider o utilizzando le procedure standard per la gestione in loco.
 
@@ -119,6 +119,6 @@ Aggiungere e rimuovere l'URI (Uniform Resource Identifier) per un connettore.
 . Selezionare l'elenco a discesa *Connector* dall'intestazione BlueXP.
 . Selezionare *Gestisci connettori*.
 . Selezionare il menu azione per un connettore e selezionare *Modifica connettore*.
-. Selezionare *URI connettore*.
+. Espandere la barra *Connector URI* per visualizzare gli URI di un connettore.
 . Aggiungere e rimuovere URI, quindi selezionare *Apply* (Applica).
 

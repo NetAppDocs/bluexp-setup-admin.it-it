@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: task-ontap-access-connector.html 
+keywords: administer, credentials, ONTAP, connector, Cloud Volumes ONTAP, on-premises, roles, permissions 
+summary: Gli amministratori possono configurare un connettore BlueXP  in modo che richieda a un utente le proprie credenziali ONTAP. 
+---
+= Applicazione delle autorizzazioni ONTAP per la visualizzazione avanzata di ONTAP (Gestore di sistema di ONTAP)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Per impostazione predefinita, le credenziali del connettore consentono agli utenti di BlueXP  di accedere alla visualizzazione avanzata (Gestione di sistema di ONTAP). È possibile configurare BlueXP  in modo che richieda agli utenti le proprie credenziali ONTAP. In questo modo si garantisce che le autorizzazioni ONTAP di un utente vengano applicate quando lavorano con i cluster ONTAP in cluster Cloud Volumes ONTAP e ONTAP on-premise.
+
+
+NOTE: Per modificare le impostazioni del connettore, è necessario disporre del ruolo di amministratore dell'organizzazione.
+
+.Fasi
+. Selezionare l'elenco a discesa *Connector* dall'intestazione BlueXP.
+. Selezionare *Gestisci connettori*.
+. Selezionare il menu azione nella riga corrispondente al connettore che si desidera modificare.
+. Espandere l'opzione *forza credenziali*.
+. Selezionare la casella di controllo per attivare l'opzione *forza credenziali*, quindi selezionare *Salva*.
+. Verificare che l'opzione sia attivata visualizzando l'opzione *forza credenziali*.
++
+image:screenshot-force-credentials-on.png["Schermata che mostra l'attivazione delle credenziali di forza"]
+
+

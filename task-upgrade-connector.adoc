@@ -4,7 +4,7 @@ permalink: task-upgrade-connector.html
 keywords: upgrade, manual upgrade, connector upgrade, manual connector upgrade, upgrade connector manually, private mode upgrade, offline upgrade, upgrade private mode 
 summary: 'BlueXP aggiorna automaticamente un connettore all"ultima release quando utilizzi BlueXP in modalità standard o limitata. Le nuove versioni vengono in genere rilasciate ogni mese per introdurre nuove funzionalità e fornire miglioramenti alla stabilità. Se si preferisce, è possibile configurare il connettore in modo che estragga gli aggiornamenti delle immagini da un repository locale. Per le implementazioni in modalità privata, è sempre necessario aggiornare manualmente il connettore.' 
 ---
-= Aggiornare un connettore quando si utilizza la modalità privata
+= Gestire gli aggiornamenti dei connettori
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,12 +14,99 @@ summary: 'BlueXP aggiorna automaticamente un connettore all"ultima release quand
 
 
 [role="lead"]
-Se si utilizza BlueXP in modalità privata, è possibile aggiornare il connettore quando è disponibile una versione più recente dal NetApp Support Site.
+Quando si utilizza BlueXP  in modalità standard o limitata, BlueXP  aggiorna automaticamente il connettore all'ultima versione, purché disponga dell'accesso a Internet in uscita per ottenere l'aggiornamento software. Se è necessario gestire manualmente quando il connettore viene aggiornato, è possibile disattivare gli aggiornamenti automatici per la modalità standard o limitata.
 
 
-TIP: Quando usi BlueXP in modalità standard o limitata, non devi aggiornare manualmente il connettore. BlueXP aggiorna automaticamente un connettore all'ultima release, a condizione che il connettore disponga di accesso a Internet in uscita per ottenere l'aggiornamento software.
+NOTE: Quando si esegue BlueXP  in modalità privata, è sempre necessario aggiornare il connettore.
 
-.A proposito di questa attività
+
+
+== Disattivare gli aggiornamenti automatici
+
+La disattivazione dell'aggiornamento automatico del connettore consiste in due fasi. In primo luogo, è necessario assicurarsi che il connettore corrente sia integro e aggiornato. Quindi, si modifica un file di configurazione per disattivare la funzione di aggiornamento automatico.
+
+
+NOTE: È possibile disattivare gli aggiornamenti automatici solo se si dispone della versione 3.9.48 o superiore del connettore.
+
+
+
+=== Verificare lo stato del connettore
+
+È necessario verificare che il connettore sia stabile e che tutti i contenitori in esecuzione sulla macchina virtuale del connettore siano funzionanti. Dopo aver disattivato gli aggiornamenti automatici, la macchina virtuale del connettore smette di cercare nuovi servizi o pacchetti di aggiornamento.
+
+Utilizzare uno dei seguenti comandi per verificare il connettore. Tutti i servizi devono avere lo stato _running_. In caso contrario, contattare l'assistenza NetApp prima di disattivare l'aggiornamento automatico.
+
+Docker::
++
+--
+[source, cli]
+----
+docker ps -a
+----
+--
+Podman::
++
+--
+[source, cli]
+----
+podman ps -a
+----
+--
+
+
+
+
+=== Disattivare l'aggiornamento automatico per il connettore
+
+Per disabilitare gli aggiornamenti automatici, impostare il flag _isUpgradeDisabled_ nel file _com/opt/application/NetApp/service-manager-2/config.json_. Per impostazione predefinita, questo flag è impostato su false e il connettore viene aggiornato automaticamente. È possibile impostare questo flag su true per disabilitare gli aggiornamenti automatici.
+
+Per riattivare l'aggiornamento automatico, procedere come segue e impostare il flag _isUpgradeDisabled_ su false.
+
+.Fasi
+. Assicurarsi di aver verificato che il connettore sia aggiornato e integro.
+. Modificare il file _/opt/application/NetApp/service-manager-2/config.json_ e modificare il valore del flag _isUpgradeDisabled_ in true, come mostrato nella parte inferiore dell'esempio.
++
+[source]
+----
+{
+  "environment": "production",
+  "proxySetting": "notConfigured",
+  "accountId": "account-NVKiCdw2",
+  "clientId": "EalzoDIDFyovsQarrXiBYa15dZZvZxD6",
+  "enc_clientSecret": "f151lvsq3NRQDGSAGV8T3YHdSch21na6MWBtTkAXHWSGpsW5UWkRhvXpTTf6lBpocXUUr4YETIZuEHz5aWDFdB0JIz65YVJX/vTKWTN2iIpH7DUTRGISKp2UCIVixtGi",
+  "version": "3.0.76",
+  "site": "stdonpremv49",
+  "company": "NetApp",
+  "systemId": "4a4c4d97-80c2-4989-8c9f-75a92925eabb",
+  "encryptedMysqlPassword": "f151lvsq3NRQDGSAGV8T3RQN7wsmegYWXg5KXWvxyMksdg51qhTSg00SvvrhXFq0",
+  "mysqlWasConfigured": true,
+  "encryptionKey": "g4/6CAp2Aclqkrl4gb1C4A==",
+  "keyStorePassword": "Netapp234",
+  "trustStorePassword": "ugauga",
+  "dockerRepoConfig": {
+    "username": "client-infra-prod-read",
+    "encryptedPassword": "f151lvsq3NRQDGSAGV8T3W7IxfTUVELHcXa44msIIsQrtrobO32gIqG9mjpz8rbVmOryIIHcZt03UBbjdwJ5/Q==",
+    "registry": "cloudmanagerinfraprod.azurecr.io",
+    "imageNamespace": "",
+    "repoType": "DEFAULT_DOCKER_REPO"
+  },
+  "isUpgradeDisabled": true,
+  "serviceAPIServerBaseUrl": "http://10.250.250.1:8890"
+}
+----
+. Salvare il file.
+. Riavviare il servizio Service Manager 2 eseguendo il seguente comando:
++
+[source, cli]
+----
+systemctl restart netapp-service-manager.service
+----
+
+
+
+
+== Aggiornare il connettore
+
 Il connettore deve essere riavviato durante il processo di aggiornamento, in modo che la console basata su Web non sia disponibile durante l'aggiornamento.
 
 .Fasi

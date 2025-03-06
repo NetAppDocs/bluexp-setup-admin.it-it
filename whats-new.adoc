@@ -18,6 +18,22 @@ Scopri le novità delle funzionalità di amministrazione di BlueXP : Gestione d
 
 
 
+== 15 febbraio 2025
+
+
+
+=== Connettore
+
+È ora possibile disattivare gli aggiornamenti automatici per il connettore. Ciò è utile se è necessario gestire manualmente gli aggiornamenti software per motivi aziendali.
+
+I clienti dovranno collegare la versione 3.9.48 o superiore del connettore possono disattivare gli aggiornamenti automatici.
+
+.Informazioni correlate
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Gestire gli aggiornamenti dei connettori"]
+
+
+
+
 == 10 febbraio 2025
 
 

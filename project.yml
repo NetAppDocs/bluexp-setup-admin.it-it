@@ -146,7 +146,7 @@ sidebar:
         url: "/task-configuring-proxy.html"
       - title: Richiedere l'uso di IMDSv2 su istanze EC2
         url: "/task-require-imdsv2.html"
-      - title: Aggiornare un connettore quando si utilizza la modalità privata
+      - title: Gestire gli aggiornamenti dei connettori
         url: "/task-upgrade-connector.html"
       - title: Utilizzare più connettori
         url: "/task-manage-multiple-connectors.html"
@@ -156,6 +156,8 @@ sidebar:
         url: "/task-uninstall-connector.html"
       - title: Configurazione predefinita
         url: "/reference-connector-default-config.html"
+      - title: Applicare le autorizzazioni ONTAP in BlueXP 
+        url: "/task-ontap-access-connector.html"
     - title: Credenziali e iscrizioni
       entries:
       - title: AWS

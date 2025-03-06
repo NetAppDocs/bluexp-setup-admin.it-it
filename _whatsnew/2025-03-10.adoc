@@ -1,0 +1,9 @@
+= Obbliga gli utenti a immettere le credenziali ONTAP per accedere alla visualizzazione avanzata (Gestione sistema ONTAP)
+:allow-uri-read: 
+
+
+
+
+=== Obbliga gli utenti a immettere le credenziali ONTAP per accedere alla visualizzazione avanzata (Gestione sistema ONTAP)
+
+È ora possibile forzare gli utenti a immettere le proprie credenziali ONTAP per accedere a Gestione di sistema di ONTAP. Questa impostazione si applica sia a Cloud Volumes ONTAP che a ONTAP on-premise. Gli utenti con il ruolo di amministratore dell'organizzazione possono configurare questa impostazione.
