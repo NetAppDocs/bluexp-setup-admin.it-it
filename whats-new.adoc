@@ -18,19 +18,46 @@ Scopri le novità delle funzionalità di amministrazione di BlueXP : Gestione d
 
 
 
-== 15 febbraio 2025
+== 10 marzo 2025
 
 
 
-=== Connettore
+=== Connettore 3.9.50
 
-È ora possibile disattivare gli aggiornamenti automatici per il connettore. Ciò è utile se è necessario gestire manualmente gli aggiornamenti software per motivi aziendali.
+Questa versione di BlueXP  Connector include piccoli miglioramenti alla sicurezza e correzioni di bug, nonché le seguenti funzioni.
 
-I clienti dovranno collegare la versione 3.9.48 o superiore del connettore possono disattivare gli aggiornamenti automatici.
+A questo punto, la versione 3.9.50 è disponibile per la modalità standard e la modalità limitata.
 
-.Informazioni correlate
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Gestire gli aggiornamenti dei connettori"]
 
+
+=== Aggiornamento del connettore 3.9.49
+
+
+
+==== Accesso a Gestione di sistema di ONTAP quando BlueXP  utilizza un connettore
+
+Un amministratore di BlueXP  (utenti con il ruolo di amministratore dell'organizzazione) può configurare BlueXP  in modo che richieda agli utenti di immettere le proprie credenziali ONTAP per accedere a Gestione di sistema di ONTAP. Quando questa impostazione è attivata, gli utenti devono immettere le proprie credenziali ONTAP ogni volta che non vengono memorizzate in BlueXP .
+
+Questa funzione è disponibile nella versione del connettore 3.9.49 e successive. link:task-ontap-access-connector.html["Informazioni su come configurare le impostazioni delle credenziali."^].
+
+
+
+=== Aggiornamento del connettore 3.9.48
+
+
+
+==== Possibilità di disattivare l'impostazione di aggiornamento automatico per il connettore
+
+È possibile disattivare la funzione di aggiornamento automatico del connettore.
+
+Quando si utilizza BlueXP  in modalità standard o limitata, BlueXP  aggiorna automaticamente il connettore all'ultima versione, purché disponga dell'accesso a Internet in uscita per ottenere l'aggiornamento software. Se è necessario gestire manualmente quando il connettore viene aggiornato, è ora possibile disattivare gli aggiornamenti automatici per la modalità standard o limitata.
+
+
+NOTE: Questa modifica non influisce sulla modalità privata BlueXP , in cui è necessario aggiornare sempre il connettore.
+
+Questa funzione è disponibile nella versione del connettore 3.9.48 e successive.
+
+link:task-upgrade-connector.html["Scopri come disattivare l'aggiornamento automatico per il connettore."^]
 
 
 
@@ -48,7 +75,8 @@ A questo punto, la versione 3.9.49 è disponibile per la modalità standard e la
 
 === Gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP 
 
-* Supporto per l'assegnazione di più ruoli a un utente.
+* Supporto per l'assegnazione di più ruoli a un utente BlueXP .
+* Supporto per l'assegnazione di un ruolo a più risorse dell'organizzazione BlueXP  (org/cartella/progetto)
 * I ruoli sono ora associati a una delle due categorie: Piattaforma e servizio dati.
 
 

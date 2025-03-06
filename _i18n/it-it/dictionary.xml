@@ -4751,7 +4751,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="ef5d79e3ae5671ca28e5f6e3b02eed27" category="list-text">Per configurare un abbonamento esistente con le credenziali selezionate, selezionare un progetto Google Cloud e un abbonamento dall'elenco a discesa, quindi selezionare *Configura*.</block>
   <block id="8e64dfb0168516c0e7f7880ae745072a" category="doc">Connettore 3.9.49</block>
   <block id="f5c64d3f640238b8d1e1ed7062c5561f" category="paragraph">A questo punto, la versione 3.9.49 è disponibile per la modalità standard e la modalità limitata.</block>
-  <block id="36cef198e9fac4b4a194f5e01017b8d1" category="list-text">Supporto per l'assegnazione di più ruoli a un utente.</block>
   <block id="4fafa85612a8b2fff96d593213d6a0ec" category="paragraph">La gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP  viene ora utilizzata in modalità limitata.</block>
   <block id="2f73a8cbcbf617bd5a78738929bbe5b3" category="paragraph">BlueXP  Identity and Access Management (IAM) è un modello di gestione delle risorse e degli accessi che sostituisce e migliora le funzionalità precedenti fornite dagli account BlueXP  quando si utilizza BlueXP  in modalità standard e limitata.</block>
   <block id="029ade287eade250f2c9612d148e1fad" category="paragraph-title">In che modo BlueXP  IAM influisce sull'account esistente in modalità limitata</block>
@@ -4974,12 +4973,7 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="7fae3ca49e7c49f36f0627788bfa6e92" category="paragraph">Una volta che BlueXP  implementa la Connector virtual machine in Azure, abilita un<block ref="3b529d5441a4ea26741352247ca08bac" category="inline-link-rx"></block> sulla macchina virtuale, crea automaticamente il ruolo necessario e lo assegna alla macchina virtuale. Il ruolo creato automaticamente fornisce a BlueXP  le autorizzazioni necessarie per gestire le risorse e i processi all'interno dell'abbonamento ad Azure. <block ref="daf58003d5227a43b6fbea1d165f6f7b" category="inline-link-macro-rx"></block>.</block>
   <block id="be77518281f390b896a01faba311cae7" category="section-title">Passaggio 4: Impostare le autorizzazioni di distribuzione del connettore</block>
   <block id="d5c982d940dee7fa8f6664ea1ab252e6" category="open-title">Creare un ruolo personalizzato per la distribuzione dei connettori</block>
-  <block id="68ea9cebb3c452c83085356b253868c5" category="paragraph">È ora possibile disattivare gli aggiornamenti automatici per il connettore. Ciò è utile se è necessario gestire manualmente gli aggiornamenti software per motivi aziendali.</block>
-  <block id="3d4e00cd939cc5521989a751b4b1dbdb" category="paragraph">I clienti dovranno collegare la versione 3.9.48 o superiore del connettore possono disattivare gli aggiornamenti automatici.</block>
   <block id="71ae02c171873e7af0f7b72300d1da9b" category="inline-link">Gestire gli aggiornamenti dei connettori</block>
-  <block id="d8d6c527b108697862bc5a357c01048f" category="list-text"><block ref="d8d6c527b108697862bc5a357c01048f" category="inline-link-rx"></block></block>
-  <block id="56997c9a04ad826028323008fa4ae68f" category="doc">Obbliga gli utenti a immettere le credenziali ONTAP per accedere alla visualizzazione avanzata (Gestione sistema ONTAP)</block>
-  <block id="7947a3598cd43dbb491dfbcdf1970bb1" category="paragraph">È ora possibile forzare gli utenti a immettere le proprie credenziali ONTAP per accedere a Gestione di sistema di ONTAP. Questa impostazione si applica sia a Cloud Volumes ONTAP che a ONTAP on-premise. Gli utenti con il ruolo di amministratore dell'organizzazione possono configurare questa impostazione.</block>
   <block id="47c94941fabbd38f1b71c23663c608d6" category="section-title">Arresto e avvio del connettore VM</block>
   <block id="90754b70edd81e7b1f33fbe6f09ee188" category="list-text">Espandere la barra *Connector URI* per visualizzare gli URI di un connettore.</block>
   <block id="fbd9d54f39ed5129df98414b561236de" category="paragraph">Gli utenti hanno bisogno delle credenziali di amministratore di ONTAP per rilevare i cluster ONTAP in BlueXP . Tuttavia, l'accesso al Gestore di sistema di ONTAP dipende dall'utilizzo o meno di un connettore.</block>
@@ -5002,7 +4996,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="651a32308986dea9de3797c8e0997c14" category="paragraph">Quando si utilizza BlueXP  in modalità standard o limitata, BlueXP  aggiorna automaticamente il connettore all'ultima versione, purché disponga dell'accesso a Internet in uscita per ottenere l'aggiornamento software. Se è necessario gestire manualmente quando il connettore viene aggiornato, è possibile disattivare gli aggiornamenti automatici per la modalità standard o limitata.</block>
   <block id="a30a1e13c5419a2d602474533f69dcd1" category="admonition">Quando si esegue BlueXP  in modalità privata, è sempre necessario aggiornare il connettore.</block>
   <block id="6c66e308926fc039cc9e20fe56d7abdf" category="section-title">Disattivare gli aggiornamenti automatici</block>
-  <block id="a1188a88192f3f804b6f1b62d79bcd67" category="paragraph">La disattivazione dell'aggiornamento automatico del connettore consiste in due fasi. In primo luogo, è necessario assicurarsi che il connettore corrente sia integro e aggiornato. Quindi, si modifica un file di configurazione per disattivare la funzione di aggiornamento automatico.</block>
   <block id="04b99f73471ca057d71f53c3f053b60e" category="admonition">È possibile disattivare gli aggiornamenti automatici solo se si dispone della versione 3.9.48 o superiore del connettore.</block>
   <block id="377245fa7e4be29c2941f9c3069eae57" category="section-title">Verificare lo stato del connettore</block>
   <block id="70a6926b672111815dfe273a0292468d" category="paragraph">È necessario verificare che il connettore sia stabile e che tutti i contenitori in esecuzione sulla macchina virtuale del connettore siano funzionanti. Dopo aver disattivato gli aggiornamenti automatici, la macchina virtuale del connettore smette di cercare nuovi servizi o pacchetti di aggiornamento.</block>
@@ -5016,6 +5009,25 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="9e3e4c61d70076bf677edfc157a67761" category="list-text">Salvare il file.</block>
   <block id="92ae5258778c2fa8ece2b13c88ec0853" category="list-text">Riavviare il servizio Service Manager 2 eseguendo il seguente comando:</block>
   <block id="0a38f6fb9751bd939880be04152c67f3" category="section-title">Aggiornare il connettore</block>
-  <block id="084d853adc45dcd521da8dd702d68cc0" category="section-title">15 febbraio 2025</block>
   <block id="ea807586843dea568060289fb3d6cc9a" category="sidebar">Applicare le autorizzazioni ONTAP in BlueXP </block>
+  <block id="4bbf2de0e52eb20a42e04cf23bdb1683" category="list-text">Supporto per l'assegnazione di più ruoli a un utente BlueXP .</block>
+  <block id="0608305ed5721ad4a69c3643b176e371" category="list-text">Supporto per l'assegnazione di un ruolo a più risorse dell'organizzazione BlueXP  (org/cartella/progetto)</block>
+  <block id="23b3b711859803a815b81aca1cc4811c" category="doc">Connettore 3.9.50</block>
+  <block id="d1ff7c4409f85da727e1eb68fa6e3a26" category="paragraph">Questa versione di BlueXP  Connector include piccoli miglioramenti alla sicurezza e correzioni di bug, nonché le seguenti funzioni.</block>
+  <block id="256d8753a695f4395908c9903ae723b2" category="paragraph">A questo punto, la versione 3.9.50 è disponibile per la modalità standard e la modalità limitata.</block>
+  <block id="66a5f69d070814deb69bf917dd07a6af" category="section-title">Aggiornamento del connettore 3.9.49</block>
+  <block id="00d64ff7da906ec5530c4e990fb334cb" category="section-title">Accesso a Gestione di sistema di ONTAP quando BlueXP  utilizza un connettore</block>
+  <block id="b539e86fbaa7eae465366a0142624ec2" category="paragraph">Un amministratore di BlueXP  (utenti con il ruolo di amministratore dell'organizzazione) può configurare BlueXP  in modo che richieda agli utenti di immettere le proprie credenziali ONTAP per accedere a Gestione di sistema di ONTAP. Quando questa impostazione è attivata, gli utenti devono immettere le proprie credenziali ONTAP ogni volta che non vengono memorizzate in BlueXP .</block>
+  <block id="990a2328425e217648ea5dd2ae370ffb" category="inline-link-macro">Informazioni su come configurare le impostazioni delle credenziali.</block>
+  <block id="65ac46c0fd2260c1febd841aed98d599" category="paragraph">Questa funzione è disponibile nella versione del connettore 3.9.49 e successive. <block ref="3a5e8b35a098e08d607fb27978dec106" category="inline-link-macro-rx"></block>.</block>
+  <block id="a03c6dfbb1d64911f1090d54175ff8d3" category="section-title">Aggiornamento del connettore 3.9.48</block>
+  <block id="1697b2b05dc5c7ad63e22e713e94ba7c" category="section-title">Possibilità di disattivare l'impostazione di aggiornamento automatico per il connettore</block>
+  <block id="91f4c340492e583f80db57f970516c1f" category="paragraph">È possibile disattivare la funzione di aggiornamento automatico del connettore.</block>
+  <block id="459e65cb3fcf9e226149b023791951b2" category="paragraph">Quando si utilizza BlueXP  in modalità standard o limitata, BlueXP  aggiorna automaticamente il connettore all'ultima versione, purché disponga dell'accesso a Internet in uscita per ottenere l'aggiornamento software. Se è necessario gestire manualmente quando il connettore viene aggiornato, è ora possibile disattivare gli aggiornamenti automatici per la modalità standard o limitata.</block>
+  <block id="01d6125faf020265bf432216c335698c" category="admonition">Questa modifica non influisce sulla modalità privata BlueXP , in cui è necessario aggiornare sempre il connettore.</block>
+  <block id="0e9ee8d377b683ca8ac77de05c3539d9" category="paragraph">Questa funzione è disponibile nella versione del connettore 3.9.48 e successive.</block>
+  <block id="355c51d49cd780f57fe417fdede5f61c" category="inline-link-macro">Scopri come disattivare l'aggiornamento automatico per il connettore.</block>
+  <block id="530a13d3dc2fccc16ebe8e25a47286a1" category="paragraph"><block ref="530a13d3dc2fccc16ebe8e25a47286a1" category="inline-link-macro-rx"></block></block>
+  <block id="8890f7f5e319bfe21969241c1f702a89" category="paragraph">La disattivazione dell'aggiornamento automatico del connettore consiste in due fasi. Innanzitutto, è necessario assicurarsi che il connettore corrente sia integro e aggiornato. Quindi, si modificherà un file di configurazione per disattivare la funzione di aggiornamento automatico.</block>
+  <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">10 marzo 2025</block>
 </blocks>

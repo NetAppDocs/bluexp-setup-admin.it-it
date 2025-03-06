@@ -14,7 +14,8 @@ A questo punto, la versione 3.9.49 è disponibile per la modalità standard e la
 
 === Gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP 
 
-* Supporto per l'assegnazione di più ruoli a un utente.
+* Supporto per l'assegnazione di più ruoli a un utente BlueXP .
+* Supporto per l'assegnazione di un ruolo a più risorse dell'organizzazione BlueXP  (org/cartella/progetto)
 * I ruoli sono ora associati a una delle due categorie: Piattaforma e servizio dati.
 
 

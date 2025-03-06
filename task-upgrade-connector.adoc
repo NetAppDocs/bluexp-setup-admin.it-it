@@ -23,7 +23,7 @@ NOTE: Quando si esegue BlueXP  in modalità privata, è sempre necessario aggio
 
 == Disattivare gli aggiornamenti automatici
 
-La disattivazione dell'aggiornamento automatico del connettore consiste in due fasi. In primo luogo, è necessario assicurarsi che il connettore corrente sia integro e aggiornato. Quindi, si modifica un file di configurazione per disattivare la funzione di aggiornamento automatico.
+La disattivazione dell'aggiornamento automatico del connettore consiste in due fasi. Innanzitutto, è necessario assicurarsi che il connettore corrente sia integro e aggiornato. Quindi, si modificherà un file di configurazione per disattivare la funzione di aggiornamento automatico.
 
 
 NOTE: È possibile disattivare gli aggiornamenti automatici solo se si dispone della versione 3.9.48 o superiore del connettore.
@@ -92,7 +92,6 @@ Per riattivare l'aggiornamento automatico, procedere come segue e impostare il f
   },
   "isUpgradeDisabled": true,
   "serviceAPIServerBaseUrl": "http://10.250.250.1:8890"
-}
 ----
 . Salvare il file.
 . Riavviare il servizio Service Manager 2 eseguendo il seguente comando:
