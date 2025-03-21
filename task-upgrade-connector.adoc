@@ -23,7 +23,7 @@ NOTE: Quando si esegue BlueXP  in modalità privata, è sempre necessario aggio
 
 == Disattivare gli aggiornamenti automatici
 
-La disattivazione dell'aggiornamento automatico del connettore consiste in due fasi. Innanzitutto, è necessario assicurarsi che il connettore corrente sia integro e aggiornato. Quindi, si modificherà un file di configurazione per disattivare la funzione di aggiornamento automatico.
+La disattivazione dell'aggiornamento automatico del connettore consiste in due fasi. Innanzitutto, è necessario assicurarsi che il connettore sia sano e aggiornato. Quindi, si modificherà un file di configurazione per disattivare la funzione di aggiornamento automatico.
 
 
 NOTE: È possibile disattivare gli aggiornamenti automatici solo se si dispone della versione 3.9.48 o superiore del connettore.
@@ -58,13 +58,14 @@ podman ps -a
 
 === Disattivare l'aggiornamento automatico per il connettore
 
-Per disabilitare gli aggiornamenti automatici, impostare il flag _isUpgradeDisabled_ nel file _com/opt/application/NetApp/service-manager-2/config.json_. Per impostazione predefinita, questo flag è impostato su false e il connettore viene aggiornato automaticamente. È possibile impostare questo flag su true per disabilitare gli aggiornamenti automatici.
+Per disabilitare gli aggiornamenti automatici, impostare il flag _isUpgradeDisabled_ nel file _com/opt/application/NetApp/service-manager-2/config.json_. Per impostazione predefinita, questo flag è impostato su false e il connettore viene aggiornato automaticamente. È possibile impostare questo flag su true per disabilitare gli aggiornamenti automatici. Prima di completare questo passaggio, è necessario conoscere la sintassi JSON.
 
 Per riattivare l'aggiornamento automatico, procedere come segue e impostare il flag _isUpgradeDisabled_ su false.
 
 .Fasi
 . Assicurarsi di aver verificato che il connettore sia aggiornato e integro.
-. Modificare il file _/opt/application/NetApp/service-manager-2/config.json_ e modificare il valore del flag _isUpgradeDisabled_ in true, come mostrato nella parte inferiore dell'esempio.
+. Creare una copia di backup del file _/opt/application/NetApp/service-manager-2/config.json_ per assicurarsi di poter ripristinare le modifiche.
+. Modificare il file _/opt/application/NetApp/service-manager-2/config.json_ e impostare il valore del flag _isUpgradeDisabled_ su true.
 +
 [source]
 ----
@@ -76,6 +77,12 @@ Per riattivare l'aggiornamento automatico, procedere come segue e impostare il f
 [source, cli]
 ----
 systemctl restart netapp-service-manager.service
+----
+. Eseguire il seguente comando e verificare che lo stato del connettore sia _Active(Running)_: _
++
+[source, cli]
+----
+systemctl status netapp-service-manager.service
 ----
 
 

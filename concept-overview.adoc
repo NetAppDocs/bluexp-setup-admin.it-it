@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-overview.html 
-keywords: overview, concepts, features, use case, cloud manager, bluexp, how bluexp works, supported cloud providers, cloud providers, hyperscalers 
+keywords: overview, concepts, features, use case, cloud manager, bluexp, how bluexp works, supported cloud providers, cloud providers, hyperscalers, aws 
 summary: NetApp BlueXP offre alla tua organizzazione un singolo piano di controllo che ti aiuta a creare, proteggere e gestire i dati nei tuoi ambienti on-premise e cloud. 
 ---
 = Scopri BlueXP
