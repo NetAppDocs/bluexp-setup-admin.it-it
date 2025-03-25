@@ -5034,4 +5034,5 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="d0ec983e93943635bce3349bbdcbf79e" category="list-text">Creare una copia di backup del file _/opt/application/NetApp/service-manager-2/config.json_ per assicurarsi di poter ripristinare le modifiche.</block>
   <block id="b8000759daeb255b90b1845748aeb18e" category="list-text">Modificare il file _/opt/application/NetApp/service-manager-2/config.json_ e impostare il valore del flag _isUpgradeDisabled_ su true.</block>
   <block id="bfd2bb89d8e4699a2a0ac8d2e111e1bb" category="list-text">Eseguire il seguente comando e verificare che lo stato del connettore sia _Active(Running)_: _</block>
+  <block id="973c3bcf96d6257755a3e8ee090eb5f1" category="list-text">Digital Wallet (solo licenze, il monitoraggio degli abbonamenti richiede un connettore)</block>
 </blocks>

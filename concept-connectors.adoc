@@ -36,7 +36,7 @@ Sebbene non sia necessario un connettore per configurare e gestire Azure NetApp 
 * Cloud Volumes Service per Google Cloud
 * Copia e sincronizzazione
 * Consulente digitale
-* Portafoglio digitale
+* Digital Wallet (solo licenze, il monitoraggio degli abbonamenti richiede un connettore)
 +
 In quasi tutti i casi, è possibile aggiungere una licenza al portafoglio digitale senza un connettore.
 
