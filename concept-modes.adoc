@@ -196,14 +196,11 @@ Per Cloud Volumes ONTAP, BYOL supporta sia licenze basate su capacità che licen
 Come iniziare con la modalità limitata:: È necessario attivare la modalità limitata quando si crea l'account BlueXP.
 +
 --
-Se non disponi ancora di un account, ti verrà richiesto di creare il tuo account e attivare la modalità limitata quando accedi a BlueXP per la prima volta da un connettore che hai installato manualmente o che hai creato dal mercato del tuo provider di servizi cloud.
+Se non si dispone ancora di un'organizzazione, verrà richiesto di creare l'organizzazione e attivare la modalità limitata quando si accede a BlueXP  per la prima volta da un connettore installato manualmente o creato dal mercato del provider cloud.
 
-Se si dispone già di un account e si desidera crearne un altro, è necessario utilizzare l'API tenancy.
-
-Tenere presente che non è possibile modificare l'impostazione della modalità limitata dopo la creazione dell'account da parte di BlueXP. Non puoi attivare la modalità limitata in un secondo momento e non puoi disattivarla in un secondo momento. Deve essere impostato al momento della creazione dell'account.
+Tenere presente che non è possibile modificare l'impostazione della modalità limitata dopo che BlueXP  ha creato l'organizzazione. Non puoi attivare la modalità limitata in un secondo momento e non puoi disattivarla in un secondo momento.
 
 * link:task-quick-start-restricted-mode.html["Scopri come iniziare a utilizzare la modalità limitata"].
-* link:task-create-account.html["Scopri come creare un account BlueXP aggiuntivo"].
 
 
 --
