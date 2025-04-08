@@ -4246,12 +4246,10 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="4fc3c6ef596dbec8a3af38f79c84cf02" category="list-text">Per la cartella o il progetto per cui si desidera rimuovere la risorsa, selezionare <block ref="5aa3fbfa4a030d3d0fb7677a91fd2eba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ece216a1c354b015ef19084b08f5e92f" category="list-text">Confermare che si desidera rimuovere l'associazione selezionando *Elimina*.</block>
   <block id="08599f4c51d7b3ffe063f2612e7c4f5e" category="summary">Se necessario, è possibile modificare il nome dell'organizzazione BlueXP .</block>
-  <block id="3b2af1e86badf70e10ee3dd7bd601881" category="paragraph">Se necessario, è possibile modificare il nome dell'organizzazione BlueXP  da Gestione identità e accessi (IAM) di BlueXP . Il nome dell'organizzazione viene visualizzato nella parte superiore della console basata sul Web di BlueXP  e nelle pagine IAM.</block>
   <block id="8bf336ab115156eac88db2970ab0e70d" category="list-text">Dalla pagina *Organizzazione*, passare alla prima riga della tabella, selezionare <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> e quindi *Modifica organizzazione*.</block>
   <block id="bd0f6a5b8c74b52e8b6d378a779a799b" category="inline-image-macro">Schermata della pagina Panoramica che mostra l'icona delle azioni e l'opzione Modifica organizzazione.</block>
   <block id="f891b6d41b0ea20e756113027427df78" category="paragraph"><block ref="f891b6d41b0ea20e756113027427df78" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b9669849e9961b7f3f4dc1a2f6787c34" category="list-text">Immettere il nome di una nuova organizzazione e selezionare *Applica*.</block>
-  <block id="814a9fcdd4787ffa2a66999138964d04" category="paragraph">BlueXP  aggiorna il nome dell'organizzazione. Il nome aggiornato dovrebbe essere visualizzato immediatamente nella parte superiore della console di BlueXP .</block>
   <block id="23a90e2bf1cd3468b9e164d1e2b979f6" category="summary">Passare da un'organizzazione all'altra, a un progetto o a un connettore per accedere alle risorse ad esso associate.</block>
   <block id="112749b02c84e8790747c190f1f78319" category="doc">Passa da un'organizzazione, un progetto e un connettore BlueXP  all'altra</block>
   <block id="c4a2bf83344fa23edffba2df8fadd3a5" category="paragraph">È possibile appartenere a più organizzazioni BlueXP  o disporre delle autorizzazioni per accedere a più progetti o connettori all'interno di un'organizzazione BlueXP . Quando necessario, è possibile passare facilmente da un'organizzazione all'altra, da un progetto all'altro e da un connettore all'altro per accedere alle risorse associate a tale organizzazione, progetto o connettore.</block>
@@ -4448,7 +4446,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="c5f7a94f7e361ce9dc993775dd14b3c1" category="inline-image-macro">Una schermata della tabella cartelle e progetti che mostra l'ID progetto per selezionare il menu azione per un progetto.</block>
   <block id="c4c78a982626adb55fd316627b7b9909" category="paragraph"><block ref="c4c78a982626adb55fd316627b7b9909" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">11 novembre 2024</block>
-  <block id="db31ae4dc32d9d514625710dfb24ee0a" category="paragraph"><block ref="52c305e9fd97fc371c1991c1470ed96b" category="inline-link-rx"></block>.</block>
   <block id="be6af94f792f554a6fe5be714926ba2a" category="paragraph">Un connettore è il software NetApp eseguito nella tua rete cloud o sulla rete on-premise che ti permette di utilizzare tutte le funzionalità e i servizi BlueXP . Per eseguire il connettore on-premise, devi rivedere i requisiti degli host, configurare la rete, preparare le autorizzazioni cloud, installare il connettore, configurare il connettore e quindi fornire le autorizzazioni preparate.</block>
   <block id="64a7a8a4f820d38dc5cedd70930717c0" category="doc">Rilascio in modalità privata (3,9.46)</block>
   <block id="d9d2db6c6792de5c6f6f1c11280bd993" category="paragraph">È ora disponibile una nuova versione in modalità privata da scaricare da<block ref="d2aa03057485a1ee4125d2121e05288d" category="inline-link-rx"></block></block>
@@ -4950,4 +4947,15 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="10c518409c3dfbdd5e9839d2076ed5da" category="cell">10 marzo 2025 (versione 1,41)</block>
   <block id="49e0c1b5be27dbeb84e3a7ca1d634276" category="cell">Andare a<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> e fare riferimento alle modifiche incluse nelle versioni da 1,38 a 1.371.41.</block>
   <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">28 marzo 2025</block>
+  <block id="cb3410a9bf17cf666d6a34ac1b7c6d6c" category="paragraph"><block ref="2416ec7d97fab7b3c3e0f434ea922dd9" category="inline-link-rx"></block>.</block>
+  <block id="1920da3586c2e2872f88b02997c971c3" category="doc">ID organizzazione e progetto</block>
+  <block id="106aaea1e5532e2978889c60809a6ba7" category="paragraph">L'organizzazione BlueXP  dispone di un nome e di un ID. È possibile scegliere un nome per identificare l'organizzazione nella distribuzione di BlueXP . Potrebbe inoltre essere necessario recuperare l'ID organizzazione per alcune integrazioni.</block>
+  <block id="93ef23628d0f701bc432c95a0b1c2f79" category="paragraph">È possibile rinominare la propria organizzazione all'interno di BlueXP . Ciò è utile se si supporta più di un'organizzazione all'interno della distribuzione di BlueXP .</block>
+  <block id="48aadcc35505b6db48ac02a9ec0cc774" category="section-title">Ottenere l'ID organizzazione</block>
+  <block id="f16a668fcd5a3f02beed85650fcb3882" category="paragraph">L'ID organizzazione viene utilizzato per alcune integrazioni con BlueXP .</block>
+  <block id="07705e77e8129994d0ee9d1cbd506a7e" category="paragraph">È possibile visualizzare l'ID organizzazione dalla pagina organizzazioni e copiarlo negli Appunti per le proprie esigenze.</block>
+  <block id="c8ac3017c892b58622f21f78871d1208" category="list-text">Selezionare la scheda *Organizzazione* per visualizzare la pagina *Organizzazione*.</block>
+  <block id="65684205c2c17c1079112735fcb6d59c" category="list-text">Nella pagina *Organizzazione*, cercare l'ID dell'organizzazione nella barra di riepilogo e copiarlo negli Appunti. È possibile salvarlo per utilizzarlo in un secondo momento o copiarlo direttamente nel punto in cui è necessario utilizzarlo.</block>
+  <block id="3b114d25af2bc979de4e8bf4773b092f" category="inline-image-macro">Una schermata della tabella cartelle e progetti che mostra l'ID progetto dopo aver selezionato il menu azione per un progetto.</block>
+  <block id="03666f94d7af611921b392c3ee39f483" category="paragraph"><block ref="03666f94d7af611921b392c3ee39f483" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
