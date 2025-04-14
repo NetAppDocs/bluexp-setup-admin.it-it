@@ -19,4 +19,4 @@ A questo punto, la versione 3.9.51 è disponibile per la modalità standard e la
 * Se si dispone del ruolo di amministratore Org, cartella o amministratore progetto, è ora possibile associare un abbonamento Keystone a un progetto IAM. L'associazione di un abbonamento Keystone a un progetto IAM consente di controllare l'accesso a Keystone all'interno di BlueXP .
 
 
-link:reference-iam-predefined-roles.html["Scopri i nuovi ruoli."^].
+link:reference-iam-predefined-roles.html["Scopri i nuovi ruoli."^]

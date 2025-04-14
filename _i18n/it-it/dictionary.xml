@@ -4923,7 +4923,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">A questo punto, la versione 3.9.51 è disponibile per la modalità standard e la modalità limitata.</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">Gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP </block>
   <block id="89e154403778feb30a369a4b9959d2e2" category="inline-link-macro">Scopri i nuovi ruoli.</block>
-  <block id="32943cfa903d06d5071cedc0af461130" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block>.</block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">14 aprile 2025</block>
   <block id="38469cab8f7065ff2b3a663e28381c62" category="list-text">Agli utenti senza l'amministratore di Org, la cartella o l'amministratore del progetto devono essere assegnati un ruolo di protezione dal ransomware per avere accesso alla protezione dal ransomware. Puoi assegnare a un utente uno di due ruoli: Amministratore della protezione ransomware o visualizzatore di protezione ransomware.</block>
   <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">Agli utenti senza l'amministratore Org, la cartella o l'amministratore del progetto deve essere assegnato un ruolo Keystone per avere accesso a Keystone. Puoi assegnare a un utente uno dei due ruoli: Amministratore Keystone o visualizzatore Keystone.</block>
@@ -5025,4 +5024,5 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="d5979f6638739f52389534c5a5861979" category="sidebar">Configurazione e amministrazione di BlueXP </block>
   <block id="9a95138b9cb83f59109eb15c038b1073" category="sidebar">Aggiungere membri e account di servizio</block>
   <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">Utilizzare i ruoli per controllare l'accesso dei membri alle risorse</block>
+  <block id="7b86bd575ced3444e23389ac71f98a8f" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block></block>
 </blocks>
