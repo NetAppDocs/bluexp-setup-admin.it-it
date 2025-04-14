@@ -3704,7 +3704,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="3216eccdc5ba0609640cf6e084e8b99b" category="list-text">Dalla CLI di Cloud Volumes ONTAP, impostare il livello di privilegio su avanzato:</block>
   <block id="12cf6b8337c04d4e7e622d1c39b40efe" category="list-text">Eseguire il seguente comando per visualizzare la destinazione di backup corrente:</block>
   <block id="eb34b10d2fd231974ff6010bc6aa4d4b" category="paragraph"><block ref="5b014535a251b1d5d0c9044a548a8e20" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
-  <block id="60b81afd9ad770d185b5a9b9f08f9809" category="sidebar">Documentazione di installazione e amministrazione di BlueXP </block>
   <block id="d44b908365d28414a72f5b042c756f89" category="cell">Utilizzare i set di scale della macchina virtuale in modalità di orchestrazione flessibile per specificare zone specifiche per Cloud Volumes ONTAP</block>
   <block id="e32bb1c8b64cbfd8bf1712551cd39a15" category="cell">Microsoft: Calcolo/virtualizzaMachineScaleSets/scrittura</block>
   <block id="da4802bef00f05ba8274ecb054d0388f" category="cell">Microsoft: Compute/VirtualMachineScaleSets/Read</block>
@@ -3870,7 +3869,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="5fdbce3d2319aac7495f83deb2cfb4ec" category="paragraph">BlueXP  IAM sostituisce e migliora le funzionalità precedenti fornite dagli account BlueXP . <block ref="05afd8790c123b20ba2a3355efdad456" category="inline-link-macro-rx"></block>.</block>
   <block id="03dc9106de5affc832d68c188393146d" category="section-title">Come funziona BlueXP  IAM</block>
   <block id="c070b3ed0873722a725505fd8f648c60" category="paragraph">BlueXP  IAM consente di concedere l'accesso alle risorse dell'organizzazione definendo quali membri dispongono delle autorizzazioni per parti specifiche della gerarchia dell'organizzazione. Ad esempio, un membro può disporre delle autorizzazioni di amministratore del progetto per un progetto che dispone di cinque risorse associate.</block>
-  <block id="7d5499ec968e6c97c7264ba95116b2d6" category="paragraph">Quando si utilizza BlueXP  IAM, è possibile gestire i seguenti componenti:</block>
   <block id="ba49e39a2ccedcfe8d31a1eb6440393b" category="list-text">L'organizzazione</block>
   <block id="60c7502b5c40479908aed919a94c1786" category="list-text">Cartelle</block>
   <block id="54e1d44609e3abed11f6e1eb6ae54988" category="list-text">Progetti</block>
@@ -3885,11 +3883,8 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="10119787527a31da075fede0d76f0203" category="inline-image-macro">Un diagramma concettuale che mostra la gerarchia delle risorse per BlueXP  IAM: Un'organizzazione, cartelle, progetti e risorse.</block>
   <block id="7e775be1764f78009e9846f9006651fa" category="paragraph"><block ref="7e775be1764f78009e9846f9006651fa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d6b258792ff06f82933c74eeb8aef591" category="section-title">Organizzazione</block>
-  <block id="31e872437335d3d81483e87525b418b2" category="paragraph">Un _organization_ è il livello superiore del sistema IAM di BlueXP  e rappresenta generalmente la vostra azienda. L'organizzazione è composta da cartelle, progetti, membri, ruoli e risorse. I connettori sono associati a progetti specifici nell'organizzazione.</block>
-  <block id="2514dc2ef1e14f7696838f5cc8280315" category="paragraph">Quando ti iscrivi a BlueXP , ti viene richiesto di creare una nuova organizzazione.</block>
   <block id="ee07c487a7e0b5c18c94b4bded207535" category="paragraph">Una _cartella_ consente di raggruppare i progetti correlati e separarli dagli altri progetti dell'organizzazione. Ad esempio, una cartella potrebbe rappresentare una posizione geografica (UE o USA Est), un sito (Londra o Toronto) o una business unit (ingegneria o marketing).</block>
   <block id="4f4b6c71ed586432b1f40e519b555023" category="paragraph">Le cartelle possono contenere progetti, altre cartelle o una combinazione di entrambe.</block>
-  <block id="229579d2bfa52f21a46468d1600ae5db" category="paragraph">Non è necessario creare cartelle. Sono opzionali.</block>
   <block id="073b4a34202498afcb0022a2400e1b32" category="paragraph">Un _project_ rappresenta un'area di lavoro in BlueXP  a cui i membri dell'organizzazione accedono da BlueXP  Canvas per gestire le risorse. Ad esempio, un progetto può includere un sistema Cloud Volumes ONTAP, un cluster ONTAP on-premise o un file system FSX per ONTAP.</block>
   <block id="420332558cea2f6b48a90723f1ba988b" category="paragraph">Un'organizzazione può avere uno o molti progetti. Un progetto può risiedere direttamente sotto l'organizzazione o all'interno di una cartella.</block>
   <block id="6df9abd9c7b51bbfb5b24919ebf7a0d9" category="paragraph">Un _resource_ è un ambiente di lavoro creato o scoperto in BlueXP .</block>
@@ -3925,10 +3920,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="f7cc750b6297ad0e9c4ddc933def018d" category="list-text">I ruoli assegnati a livello di progetto vengono ereditati da tutte le risorse associate a tale progetto.</block>
   <block id="d91e4a7f7d3d057f2ceb3bf51ca4b809" category="section-title">Ruoli multipli</block>
   <block id="3a6537a8a84cacd748ff26028e103b68" category="paragraph">È possibile assegnare a ciascun membro dell'organizzazione un ruolo a diversi livelli della gerarchia dell'organizzazione. Può avere lo stesso ruolo o un ruolo diverso. Ad esempio, è possibile assegnare un ruolo membro A per il progetto 1 e il progetto 2. In alternativa, è possibile assegnare un ruolo membro A per il progetto 1 e un ruolo B per il progetto 2.</block>
-  <block id="778cae7482baa87153f906bf3473adc3" category="section-title">Ruoli predefiniti</block>
-  <block id="befeea17a6d7eca164cf128f9bffe000" category="paragraph">BlueXP  supporta diversi ruoli predefiniti che è possibile assegnare ai membri dell'organizzazione.</block>
-  <block id="2b01a456faf456f22f55be4aabe17b53" category="inline-link-macro">Informazioni sui ruoli predefiniti IAM</block>
-  <block id="5939586d23777de38b1394aad3c31735" category="paragraph"><block ref="1d6a3b55f851d6a1155ab766483f6eac" category="inline-link-macro-rx"></block>.</block>
   <block id="1f2652079b5030c3e1f5c5b95701a71c" category="paragraph">Quando un _amministratore di organizzazione_ crea un connettore, BlueXP  associa automaticamente tale connettore all'organizzazione e al progetto attualmente selezionato. L'amministratore _dell'organizzazione_ ha automaticamente accesso a quel connettore da qualsiasi punto dell'organizzazione. Tuttavia, se nell'organizzazione sono presenti altri membri con ruoli diversi, tali membri possono accedere a tale connettore solo dal progetto in cui è stato creato, a meno che non si associ tale connettore ad altri progetti.</block>
   <block id="a84eaa1aafc5282e553ddc52e74d77b9" category="paragraph">È possibile rendere disponibile un connettore da utilizzare con un altro progetto nei seguenti casi:</block>
   <block id="9ce6bd5f8ae0c74108c66519e8a1d5dd" category="list-text">Si desidera consentire ai membri dell'organizzazione di utilizzare un connettore esistente per creare o rilevare ambienti di lavoro aggiuntivi in un altro progetto</block>
@@ -3999,7 +3990,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="8fbf37ccd9a099359c44e494e119477c" category="paragraph">Non è necessario un connettore per iniziare a utilizzare BlueXP, ma è necessario creare un connettore per sbloccare tutte le funzionalità e i servizi di BlueXP. Un connettore consente la gestione di risorse e processi in ambienti on-premise e cloud. È necessario gestire gli ambienti di lavoro (ad esempio, Cloud Volumes ONTAP) e utilizzare molti servizi BlueXP .</block>
   <block id="cdf60a7d13d1d74e115661d87ae97a3f" category="list-text">Ubuntu 24,04 LTS</block>
   <block id="b6f945763d62ac8e8f24fb52111049ee" category="summary">La gestione delle identità e degli accessi di BlueXP  include diversi ruoli predefiniti che è possibile assegnare ai membri dell'organizzazione.</block>
-  <block id="9a4737feea9b9d5b10fea0c8478ac45b" category="doc">Ruoli e autorizzazioni IAM BlueXP  predefiniti</block>
   <block id="6a476d78ce3a8169d99c99c3285fa106" category="section-title">Amministratore dell'organizzazione</block>
   <block id="b35f7cd4ff8cf3b50f8a254ff8eaab4d" category="list-text">Un membro che ha questo ruolo può completare le seguenti azioni in BlueXP :</block>
   <block id="b7468effacd77ea7140c661bd2dce11a" category="list-text">Gestire tutti gli ambienti di lavoro nei progetti e nelle cartelle per i quali dispongono delle autorizzazioni</block>
@@ -4113,7 +4103,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="dc401be3adab60c813414832f0b97d88" category="inline-link-macro">Scopri quando è possibile associare una risorsa a una cartella</block>
   <block id="d706c5ded100123a86d8602a03703158" category="paragraph"><block ref="114ceb4aae340f51ba021c40f504c25f" category="inline-link-macro-rx"></block>.</block>
   <block id="8bb3c5dc86a399d0babf2eb49831e5ec" category="list-text">*Access*: Consente di visualizzare i membri che avranno accesso alla cartella o al progetto in base alle autorizzazioni esistenti già definite nella gerarchia delle risorse.</block>
-  <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">Se necessario, selezionare *Aggiungi un membro* per specificare altri membri dell'organizzazione che devono avere accesso alla cartella o al progetto, quindi selezionare un ruolo. Un ruolo definisce le autorizzazioni di cui dispongono i membri per la cartella o il progetto.</block>
   <block id="23b701226cc247c8895ac46e9cd633ab" category="inline-link-macro">Informazioni sui ruoli IAM predefiniti</block>
   <block id="8d9ad9660b2859a6d51b88d7e31b54d2" category="paragraph"><block ref="ac90d6f587d2b5ff3fb7bb93da707f89" category="inline-link-macro-rx"></block>.</block>
   <block id="903a5130798fef050adcb933e11d9330" category="paragraph">Per verificare che le risorse siano organizzate in modo appropriato e accessibili ai membri appropriati dell'organizzazione, è possibile visualizzare le risorse e i membri associati a una cartella o a un progetto.</block>
@@ -4142,7 +4131,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="6774afc9942c8dcab2e06828e8f199cb" category="inline-link-macro">Ulteriori informazioni sull'ereditarietà dei ruoli</block>
   <block id="8945f05b50a19ebe83ee85e629a09120" category="paragraph"><block ref="e2e11ae218588663759cb10a40da4876" category="inline-link-macro-rx"></block>.</block>
   <block id="961a7d705cef5925f92fdc2102dfe17d" category="list-text">*Rimuovi accesso membro*: Per i membri che hanno un ruolo definito nella cartella o nel progetto per cui stai visualizzando, puoi rimuovere il loro accesso.</block>
-  <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">Gestire le autorizzazioni dalla pagina membri</block>
   <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">Selezionare *Applica*.</block>
   <block id="7f394af8afb3598061eec3ed6197180d" category="section-title">Rinominare una cartella o un progetto</block>
   <block id="f8ca84129dded5d2d753c0d0cc1ddea1" category="paragraph">Se necessario, è possibile modificare il nome delle cartelle e dei progetti.</block>
@@ -4155,7 +4143,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="fe7e8f43628806d12162357cbc6c575a" category="list-text">Dalla pagina *Organizzazione*, selezionare un progetto o una cartella nella tabella, quindi selezionare <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*Elimina*.</block>
   <block id="48a726f3d57687547ef8fb70fab0c713" category="list-text">Confermare che si desidera eliminare la cartella o il progetto.</block>
   <block id="0574e6792e501b2d7f486dd56c08812e" category="summary">Gestire i membri dell'organizzazione per fornire autorizzazioni a diversi livelli della gerarchia delle risorse dell'organizzazione.</block>
-  <block id="f9c68f2e2a54251bd4aa39562ccd5a0a" category="doc">Aggiungere membri BlueXP  IAM e gestire le relative autorizzazioni</block>
   <block id="4e1b8aff40899e4c95a3c48a1d8be909" category="paragraph">BlueXP  Identity and Access Management (IAM) consente di aggiungere membri all'organizzazione e assegnare loro uno o più ruoli all'interno della gerarchia delle risorse. Un _ruolo_ contiene un insieme di autorizzazioni che consente a un membro di eseguire azioni specifiche a un livello specifico della gerarchia delle risorse. È possibile associare nuovi account utente e account di servizio, gestire i ruoli dei membri e altro ancora.</block>
   <block id="5ab22546ed60fe10595d23125ed0b721" category="admonition">Per evitare di perdere l'accesso all'organizzazione BlueXP , è consigliabile avere due membri con il ruolo di amministratore dell'organizzazione.</block>
   <block id="0c33a84e89f04d016e75e654ef3ce490" category="paragraph">Quando una _cartella o un project admin_ visualizza la pagina *membri*, la pagina visualizza tutti i membri dell'organizzazione. Tuttavia, un membro con questo ruolo può solo visualizzare e gestire le autorizzazioni dei membri per le cartelle e i progetti per i quali dispone delle autorizzazioni. <block ref="c691e2b9b4224ed90bb4f1f11059b372" category="inline-link-macro-rx"></block>.</block>
@@ -4174,7 +4161,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="ef40c18024e43a3effd7c56a4ee5e3b8" category="list-text">*Selezionare un'organizzazione, una cartella o un progetto*: Scegliere il livello della gerarchia delle risorse per cui il membro deve disporre delle autorizzazioni.</block>
   <block id="6a4cc2830754c534e4d4ede0d53dd765" category="list-text">È possibile selezionare solo le cartelle e i progetti per i quali si dispone delle autorizzazioni di amministratore.</block>
   <block id="78693d86cfd1ee5b776ba655fad718c2" category="list-text">Se si seleziona l'organizzazione o una cartella, il membro disporrà delle autorizzazioni per tutti gli elementi che risiedono all'interno dell'organizzazione o della cartella.</block>
-  <block id="edd875bb1109a9f8286024a3b4794e94" category="list-text">Se è stata selezionata l'organizzazione, è possibile scegliere un ruolo diverso da *cartella o project admin*.</block>
   <block id="4361a448252604e85e36e94b87d2292d" category="list-text">Se è stata selezionata una cartella o un progetto, è possibile scegliere un ruolo diverso da *Amministratore organizzazione*.</block>
   <block id="2c83e58d75bb3a8e196e882a13fad2b6" category="paragraph">L'utente deve ricevere un'e-mail da NetApp BlueXP . L'e-mail include informazioni che il membro può utilizzare per accedere a BlueXP .</block>
   <block id="18ceb42f6a360de22895a255078e9829" category="open-title">Account di servizio</block>
@@ -4183,20 +4169,10 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="f67f980ba471dba7c5f95c824dd43bf6" category="list-text">Scaricare o copiare l'ID client e il segreto client.</block>
   <block id="8294c35652607973fb1c045f68ed7198" category="paragraph">Il segreto del client è visibile una sola volta e non viene memorizzato da BlueXP. Copia o scarica il segreto e conservalo in modo sicuro. Tenere presente che è possibile ricreare l'ID client e il segreto client in un secondo momento.</block>
   <block id="043819e1bae944c0c66cfa39d92d377a" category="section-title">Visualizzare i membri dell'organizzazione</block>
-  <block id="85f7f0a38e4d8907b849af9be7f0523b" category="paragraph">È possibile visualizzare un elenco di tutti i membri della propria organizzazione BlueXP . Per comprendere quali risorse e autorizzazioni sono disponibili per un membro, è possibile visualizzare i ruoli assegnati al membro a diversi livelli della gerarchia delle risorse dell'organizzazione.</block>
-  <block id="4bd98620ebfd813b73be1bb04c31e63a" category="paragraph">La pagina *membri* mostra i dettagli su due tipi di membri: Account utente e account di servizio.</block>
   <block id="ac926c3351f3a5bf1296ce5e7341b403" category="paragraph">I membri dell'organizzazione vengono visualizzati nella tabella *membri*.</block>
   <block id="9c537de44875b062f96c3c19b5d405f8" category="list-text">Dalla pagina *membri*, selezionare un membro della tabella, quindi selezionare <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*Visualizza dettagli*.</block>
-  <block id="6f3b2d366fd74358540895c5d487f7fc" category="paragraph">Ecco un esempio di membro a cui è stato assegnato il ruolo _cartella o project admin_ per una cartella, che fornisce le autorizzazioni per i tre progetti nella cartella.</block>
-  <block id="a6102229f11a975b96c232bac6fe4518" category="inline-image-macro">Schermata della pagina dei dettagli per un membro che dispone delle autorizzazioni per un progetto e una cartella.</block>
-  <block id="77029620a91c1437c153c854b16400d8" category="paragraph"><block ref="77029620a91c1437c153c854b16400d8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2ec798ce1d65b266be695e73de188467" category="paragraph">Ecco un altro esempio che mostra un membro che ha il ruolo di amministratore dell'organizzazione, che consente all'utente di accedere a tutte le risorse dell'organizzazione.</block>
-  <block id="8395f2651a81b25e9b7a23fbee8b9549" category="inline-image-macro">Schermata della pagina dei dettagli di un membro che dispone delle autorizzazioni di amministratore dell'organizzazione.</block>
-  <block id="3d5d541246a5be6ff781d877024461b5" category="paragraph"><block ref="3d5d541246a5be6ff781d877024461b5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c2a2a4211749f24853726e3f3a3f7a50" category="inline-link-macro">Consente di visualizzare tutti i membri associati a una cartella o a un progetto specifico</block>
   <block id="1b6d4c30361c139d898bdf90eabbe5db" category="paragraph"><block ref="f0a4010d1241fe1a26982be23d0ea714" category="inline-link-macro-rx"></block>.</block>
-  <block id="07e7a075870b5fd1a97b81d0f2032e95" category="admonition">A un membro a cui è assegnato il ruolo di amministratore dell'organizzazione non possono essere assegnati ruoli aggiuntivi. Dispongono già di autorizzazioni per l'intera organizzazione.</block>
-  <block id="ffb0fd8d3db2f95c2bb0961f852f2b9f" category="paragraph">Fornire a un membro autorizzazioni aggiuntive nell'organizzazione aggiungendo ruoli applicabili a livello di organizzazione, cartella o progetto.</block>
   <block id="276d24e9485b31bc0a3bf0758ebc947d" category="list-text">Dalla pagina *membri*, selezionare un membro della tabella, quindi selezionare *Aggiungi un <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>ruolo*.</block>
   <block id="5f4f2140800f25dcab7691933bfbdbdb" category="list-text">Per aggiungere un ruolo, completare i passaggi nella finestra di dialogo:</block>
   <block id="a09853f10b1e18c9e2f541f7e1763305" category="list-text">Selezionare *Aggiungi nuovi ruoli*.</block>
@@ -4380,11 +4356,9 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="e824a4cdd52665a1b8f0bccc58724034" category="sidebar">Gestire la gerarchia delle risorse</block>
   <block id="0baaa5b5cebd5e340294b6393a2b73f4" category="sidebar">Utilizzare la federazione delle identità con BlueXP </block>
   <block id="22bdd8c71cc34511ea88881e20f7ca21" category="sidebar">Gestione delle identità e degli accessi</block>
-  <block id="739addbbddeacc0bb15e86502b6685e9" category="sidebar">Aggiungere membri e gestire le relative autorizzazioni</block>
   <block id="2ee77c8821c341ed628d409d85faa73c" category="sidebar">Associare un connettore ad altre cartelle e progetti</block>
   <block id="0074076abc48f077b5f84eb71e8dee87" category="sidebar">Passa da un'organizzazione all'altra, a un progetto e a un connettore</block>
   <block id="902a8ce7390bb726da2910b3ec25aae6" category="sidebar">Rinominare l'organizzazione</block>
-  <block id="4e9a240c5fb31e56c6b0ab71a915953f" category="sidebar">Ruoli IAM predefiniti</block>
   <block id="1326a41ad4b26f3395b0f54dd9172b2b" category="sidebar">Scopri di più sugli account</block>
   <block id="df583ae7ba964fd4806b55904da81813" category="list-text">Avvisi</block>
   <block id="c8e7383477673ee726b6ba29dc487444" category="list-text">IMPOSTARE IL limite di hop di risposta quando si utilizza IMDSv2</block>
@@ -4477,13 +4451,10 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="1aba7245086f9fd7cc09aa3efc3bf6c3" category="paragraph">Quando si installa manualmente il connettore, il programma di installazione non contatta più \https://support.NetApp.com.</block>
   <block id="2b595e935d43f3d843783e855ec947b7" category="paragraph">Il programma di installazione contatta comunque \https://mysupport.NetApp.com.</block>
   <block id="624278dc2f533755332cf0c1ebe752d5" category="paragraph">La pagina connettori elenca solo i connettori attualmente disponibili. Non visualizza più i connettori rimossi.</block>
-  <block id="cb9e27422b343274f9974efbc9c3dbc1" category="section-title">Ruoli della piattaforma</block>
-  <block id="6573eb5e7a9033869897566e8b1b5f6a" category="paragraph">Il ruolo di amministratore cartella o progetto non può creare connettori.</block>
   <block id="36dc01ca540c36d8a66ee2b32bacb1b6" category="cell">Cartella o Amministratore progetto</block>
   <block id="10c51a836e78385fbf6ad623ad658ee0" category="cell">Creare connettori</block>
   <block id="1feb614364d6d0a180fddcd6e40a0223" category="cell">Creare, modificare o eliminare ambienti di lavoro (aggiungere o rilevare nuove risorse utilizzando BlueXP  Canvas)</block>
   <block id="15a95a870efdd28ed28ff5a317681ee4" category="cell">Assegnare ruoli e aggiungere utenti</block>
-  <block id="bc76903dd69fe38bc3b58cc4ef4a02c8" category="list-text">Esempio di ruoli organizzativi in BlueXP  per una grande organizzazione multinazionale</block>
   <block id="c89eaf90b9f27cb0ed6b4d2e288716ba" category="list-text">XYZ Corporation, una multinazionale, intende separare l'accesso alle risorse di storage dei dati in base alle aree geografiche: Nord America, Europa e Asia-Pacifico. Vogliono che ogni regione abbia il controllo esclusivo sulle proprie risorse, pur mantenendo una supervisione centralizzata.</block>
   <block id="38e4f28b5f78613457381816eb4a925e" category="paragraph">A tal fine, una persona a cui è stato assegnato il ruolo di amministratore dell'organizzazione in BlueXP  di XYZ Corporation crea un ambiente di lavoro iniziale e quindi crea cartelle separate in BlueXP  per ciascuna regione. La cartella di ogni regione contiene progetti (con risorse associate) correlati a tale regione. L'amministratore dell'organizzazione assegna a un utente BlueXP  in ciascuna regione il ruolo di amministratore cartella/progetto.</block>
   <block id="b232bda0fe68f193c9d3c56d75b4bb04" category="paragraph">Una volta completata la configurazione iniziale, gli amministratori regionali con il ruolo di amministratore cartella o progetto possono creare nuovi ambienti di lavoro e aggiungere utenti all'interno delle rispettive aree geografiche. Questi amministratori regionali possono anche aggiungere/rimuovere/rinominare cartelle e progetti a cui sono assegnati. L'amministratore dell'organizzazione eredita le autorizzazioni per qualsiasi nuovo ambiente di lavoro o risorsa, mantenendo la visibilità dell'utilizzo dello storage nell'intera organizzazione.</block>
@@ -4611,7 +4582,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="b9cbaac63edb6628a694750d4f1ba083" category="list-text">Nella pagina *Modifica*, è possibile visualizzare i dettagli relativi alla cartella o al progetto selezionato espandendo le sezioni *risorse* o *accesso*.</block>
   <block id="c89793030e51a304fd86f478545c616e" category="paragraph">È possibile modificare le risorse associate a una cartella o a un progetto associando o disassociando una risorsa. Ad esempio, è possibile associare una risorsa a un altro progetto perché tale risorsa ha capacità che un altro team può utilizzare. Una volta associata una risorsa a una cartella o a un progetto, i membri dell'organizzazione che dispongono delle autorizzazioni per tale cartella o progetto possono accedere alla risorsa associata.</block>
   <block id="e3621d23b92254c73b3a713d227a66f5" category="section-title">Visualizzare i membri associati a una cartella o a un progetto</block>
-  <block id="5ca796b399d85f3455d2d1844012b11a" category="paragraph">Se l'accesso ai membri è stato fornito a un livello superiore della gerarchia (a livello di cartella o organizzazione), non è possibile rimuovere o modificare l'accesso ai membri durante la visualizzazione della cartella o del progetto di livello inferiore. È necessario passare a quella parte della gerarchia e aggiornare le autorizzazioni del membro. In alternativa, è possibile <block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>.</block>
   <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">Nella pagina *Modifica*, selezionare *accesso* per visualizzare l'elenco dei membri che hanno accesso alla cartella o al progetto selezionato.</block>
   <block id="d94261042140ed4ba051dbe4ecd2eeb1" category="paragraph">Quando si utilizza BlueXP  Identity and Access Management (IAM) per associare un membro all'organizzazione, si forniscono le autorizzazioni a livello di organizzazione, cartella o progetto. Per garantire che tali membri dispongano delle autorizzazioni per accedere alle risorse appropriate, è necessario gestire la gerarchia delle risorse dell'organizzazione associando le risorse a progetti e cartelle specifici. Un _resource_ è una risorsa storage di cui BlueXP  già gestisce o è a conoscenza.</block>
   <block id="e9c971c6d3dcc12c14f3f119d1d8f701" category="paragraph">È possibile visualizzare sia le risorse rilevate che quelle non rilevate associate all'organizzazione. Le risorse non scoperte sono in genere risorse di storage conosciute tramite il Digital Advisor per cui non hai aggiunto come ambienti di lavoro.</block>
@@ -4638,11 +4608,7 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="8f2f21c16dc203c77301e868fae6ff8c" category="paragraph">BlueXP  IAM è supportato quando si utilizza BlueXP  in modalità standard e limitata. Se utilizzi BlueXP  in modalità privata, continuerai a utilizzare un _account_ di BlueXP  per gestire aree di lavoro, utenti e risorse.</block>
   <block id="492bd3385d9d03385f8098817a8d0196" category="paragraph">BlueXP  IAM è supportato quando si utilizza BlueXP  in modalità standard e limitata. Se utilizzi BlueXP  in modalità privata, utilizza un _account_ di BlueXP  per gestire utenti e risorse.</block>
   <block id="73f420193f5136d2f1d09a09d6f9aabb" category="paragraph">Se si utilizza BlueXP  in modalità standard o limitata, non si dispone di un account BlueXP . Avrete invece un'organizzazione _BlueXP _ gestita utilizzando la gestione delle identità e degli accessi (IAM) di BlueXP .</block>
-  <block id="5e1d7b4c2de3509435462a15161a1c7f" category="paragraph">I ruoli della piattaforma sono i ruoli più ampi che è possibile assegnare agli utenti e consentire ampie autorizzazioni per l'amministrazione di BlueXP , tra cui l'assegnazione di ruoli e l'aggiunta di utenti, nonché la possibilità di eseguire tutte le funzioni di BlueXP . BlueXP  IAM include due ruoli di piattaforma: Amministratore dell'organizzazione e cartella o Amministratore del progetto. La principale differenza tra i due ruoli della piattaforma BlueXP  IAM è l'ambito.</block>
-  <block id="64c67a7c22b0ed8bf6e82d2edf341abc" category="paragraph">Consente a un utente di accedere senza restrizioni a tutti i progetti e le cartelle all'interno di un'organizzazione, aggiungere membri a qualsiasi progetto o cartella, nonché eseguire qualsiasi attività BlueXP  e utilizzare qualsiasi servizio dati.</block>
   <block id="08fe1197004da98b5b31b7f36eb2ecd2" category="section-title">Amministratore cartella o progetto</block>
-  <block id="d35d08b038947991ac552eb86cf0f88e" category="paragraph">Consente a un utente di accedere senza restrizioni a progetti e cartelle specifici a cui sono assegnati. Può aggiungere membri ai progetti o alle cartelle che gestiscono, nonché eseguire qualsiasi attività BlueXP  e utilizzare qualsiasi servizio dati all'interno della cartella o del progetto a cui sono assegnati.</block>
-  <block id="11631a24c36e1c2153a968d2579a70d4" category="section-title">Tabella di confronto dei ruoli della piattaforma</block>
   <block id="7a6a3038937ff2733afeba79c5939221" category="cell">Creare progetti/cartelle, compresa l'eliminazione</block>
   <block id="9190c2227acc58d22f06cf5bd5f7f517" category="cell">Rinominare progetti/cartelle esistenti</block>
   <block id="f713962a8902c207873eb4046423a1bd" category="cell">Associare le risorse alle cartelle e ai progetti</block>
@@ -4650,17 +4616,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="aa3ec14d13bb1138309921733478241a" category="cell">Rimuovere i connettori da cartelle e progetti</block>
   <block id="a45abfc4b47949975fbb4a65b1c69386" category="cell">Gestire i connettori (modificare i certificati, le impostazioni e così via)</block>
   <block id="3780f4c88e2a0b66a6db0bbed86d39da" category="section-title">Ruoli applicazione</block>
-  <block id="a8cd96485fd6550be6397e836024466a" category="paragraph">I ruoli delle applicazioni forniscono l'accesso alle applicazioni BlueXP  come il consulente digitale Active IQ (noto anche come consulente digitale).</block>
-  <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="section-title">Amministratore dello storage</block>
-  <block id="5aa668ad17ac4c6dff7f61a5848484d4" category="paragraph">Fornisce all'utente la possibilità di eseguire funzioni di amministrazione dello storage in BlueXP , come aggiornamenti software e creazione ed eliminazione di ambienti di lavoro BlueXP .</block>
-  <block id="5c15172341e03d32ed74659c371f8934" category="list-text">Può visualizzare BlueXP  Canvas. Può creare e gestire connettori BlueXP . Dispone dell'accesso in lettura/scrittura alle funzioni di salute e governance dello storage di BlueXP , tra cui:</block>
-  <block id="3e13881bc2ca947e3961fcf40ae74430" category="list-text">Aggiornamenti software (possono eseguire aggiornamenti software)</block>
-  <block id="072d1a387472fb47fdfa33e48ff08ffd" category="list-text">Dashboard sulla sostenibilità</block>
-  <block id="1d63b1d397254c4d509474883c1cb2b9" category="section-title">Visualizzatore di archiviazione</block>
-  <block id="9af31d1128df8146e70487ad0eba97f4" category="paragraph">Fornisce accesso di sola lettura alle funzioni di salute e governance di BlueXP . Questo ruolo viene generalmente assegnato agli utenti responsabili del monitoraggio dello stato delle risorse di archiviazione di un'organizzazione. Gli utenti con questo ruolo possono vedere più applicazioni all'interno di BlueXP  per creare piani di aggiornamento software, piani per l'efficienza e visualizzare lo stato generale dello storage.</block>
-  <block id="a191e428602026277274d53cff237c2c" category="list-text">Dispone di accesso in sola lettura alle funzioni di governance e salute dello storage di BlueXP , tra cui:</block>
-  <block id="0920501bc6df68e157496ea6dfe73a04" category="list-text">Aggiornamenti software (possono scaricare i piani di aggiornamento)</block>
-  <block id="09246652e91bee267cf93f6b3c2e9a32" category="paragraph">I ruoli servizi dati forniscono agli utenti l'autorizzazione da utilizzare per i servizi dati all'interno dell'organizzazione, del progetto o della cartella a cui hanno accesso.</block>
   <block id="9c671793f6e87d755268257623fd8ca3" category="paragraph">Per gestire gli utenti e le relative autorizzazioni, è necessario assegnare uno dei seguenti ruoli:</block>
   <block id="e315fd1b95b71681931eeb8955a37b50" category="paragraph">Gli utenti con questo ruolo possono gestire tutti i membri</block>
   <block id="c51c480c437b7c47a9f2adb67928e089" category="paragraph">Gli utenti con questo ruolo possono gestire solo i membri della cartella o del progetto designato</block>
@@ -4669,18 +4624,9 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="516abd045e4dfab41688be05ed0e24b2" category="list-text">*Selezionare una categoria*, quindi un *ruolo* che fornisca al membro le autorizzazioni per le risorse associate all'organizzazione, alla cartella o al progetto selezionato.</block>
   <block id="5fe83be1c3cd8b5af9b7f3c7fae6d1ad" category="list-text">*Aggiungi ruolo*: Se si desidera fornire l'accesso ad altre cartelle o progetti all'interno dell'organizzazione o concedere all'utente ulteriori autorizzazioni nell'area selezionata, selezionare *Aggiungi ruolo*, specificare un'altra cartella o progetto o una categoria di ruolo diversa, quindi scegliere un ruolo.</block>
   <block id="58f4b315c1bb5704a3e82ffd26d7c1a8" category="paragraph">La rimozione di un membro dall'organizzazione non elimina l'account BlueXP  o l'account del sito di supporto NetApp del membro. Rimuove semplicemente il membro e le relative autorizzazioni dall'organizzazione.</block>
-  <block id="71a902b9bd8bd5f915e170707c50e813" category="section-title">Gestire i ruoli dei membri</block>
-  <block id="bb6a1c303d753a3800aa29f0149ef2da" category="paragraph">È possibile annullare l'assegnazione di un ruolo a un membro, aggiungere un nuovo ruolo o entrambi. Un ruolo definisce le autorizzazioni assegnate a un membro a livello di organizzazione, cartella o progetto. È possibile assegnare ai membri ruoli pertinenti alle loro responsabilità nell'organizzazione BlueXP .</block>
-  <block id="6cbcd95c7c747face3f074348da093de" category="paragraph">A ciascun membro dell'organizzazione può essere assegnato un ruolo a diversi livelli della gerarchia dell'organizzazione. Può avere lo stesso ruolo o un ruolo diverso. Ad esempio, è possibile assegnare un ruolo membro A per il progetto 1 e un ruolo B per il progetto 2.</block>
   <block id="34025ad60edecbf8612a359edaca8684" category="section-title">Visualizzare i ruoli assegnati a un membro</block>
-  <block id="914f7dbf9ae27653eb2ab889d315d7b8" category="paragraph">È possibile visualizzare un membro per verificare quali ruoli sono attualmente assegnati.</block>
-  <block id="787919896edfa2afa28d9030c2bd8ee2" category="list-text">Nella tabella, espandere la riga corrispondente per l'organizzazione, la cartella o il progetto in cui si desidera visualizzare il ruolo assegnato del membro e selezionare *Visualizza* nella colonna *ruolo*.</block>
-  <block id="3f4fb5bf409c65d0cdc07e16e971923b" category="section-title">Assegnare un ruolo</block>
-  <block id="868c665304c1cc003d592c37eb2d9284" category="inline-link-macro">Informazioni sui ruoli IAM</block>
   <block id="c46547e3019dfd55748629f99ac2f49c" category="list-text">Selezionare un *ruolo*: Scegliere un ruolo che fornisca al membro le autorizzazioni per le risorse associate all'organizzazione, alla cartella o al progetto selezionato.</block>
-  <block id="5f3c99e4fd9b4f957adfdcdde4d5a1de" category="list-text">*Aggiungi ruolo*: Se si desidera fornire l'accesso ad altre cartelle o progetti all'interno dell'organizzazione, selezionare *Aggiungi ruolo*, specificare un'altra cartella o progetto o categoria di ruolo, quindi selezionare una categoria di ruolo e un ruolo corrispondente.</block>
   <block id="068135177d9d1843118236d5f10dc5b7" category="section-title">Modificare il ruolo assegnato di un membro</block>
-  <block id="955a0a3e2fca13996f710db6f2fbe6a3" category="paragraph">È possibile modificare il ruolo assegnato per un a livello di organizzazione, cartella o progetto. I membri possono avere ruoli diversi a diversi livelli dell'organizzazione.</block>
   <block id="28e019f4a845184dbf1a98b3299252a4" category="list-text">Nella tabella, espandere la riga corrispondente per l'organizzazione, la cartella o il progetto in cui si desidera modificare il ruolo assegnato del membro e selezionare *Visualizza* nella colonna *ruolo* per visualizzare i ruoli assegnati a questo membro.</block>
   <block id="9a3441a99feefccc201b51666c68d0d2" category="inline-image-macro">Un'icona che assomiglia a un cestino può</block>
   <block id="9410d39af130c313b964685327e24e7a" category="list-text">Per annullare l'assegnazione del ruolo di un membro, selezionare <block ref="65d5e1d842da62aa3653eba17c2cb20e" category="inline-image-macro-rx" type="image"></block> accanto al ruolo per annullare l'assegnazione del rispettivo ruolo. Verrà richiesto di confermare la rimozione.</block>
@@ -4694,10 +4640,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="dcaa51b19c3334da8a1c68178fddabbe" category="paragraph">L'iscrizione ai servizi dati BlueXP  implica l'associazione di un'iscrizione al marketplace alle credenziali cloud associate a un connettore. Se hai seguito il flusso di lavoro "Get Started with standard mode" (inizia con la modalità standard), dovresti già disporre di un connettore. Per ulteriori informazioni, vedere <block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>.</block>
   <block id="c523b074da0b63e607578686184d5981" category="section-title">10 febbraio 2025</block>
   <block id="5a1f7548d3f8b383dfe658d26f915cce" category="list-text">I ruoli sono ora associati a una delle due categorie: Piattaforma e servizio dati.</block>
-  <block id="46c10ba27472d93c08d7a9eea31b47a2" category="paragraph">Esempio dell'attività: Ad esempio, se nella gerarchia delle risorse sono presenti sette progetti che rappresentano i rispettivi ambienti di lavoro, è possibile assegnare a un utente il ruolo di amministratore dello storage per tre dei progetti e quindi assegnare a un altro membro l'amministratore dello storage per i progetti rimanenti. Un'altra possibilità potrebbe essere quella di assegnare a un utente il ruolo di amministratore dello storage per l'intera organizzazione. È possibile gestire i ruoli dei membri in base alle esigenze dell'organizzazione.</block>
-  <block id="94d01a25e8d719777d74e40fde0e74eb" category="paragraph">BlueXP  Identity and Access Management (IAM) include diversi ruoli predefiniti che è possibile assegnare ai membri dell'organizzazione in diversi livelli della gerarchia delle risorse. Prima di assegnare questi ruoli, è necessario comprendere le autorizzazioni incluse in ciascun ruolo. I ruoli rientrano in due categorie: Piattaforma e servizio dati.</block>
-  <block id="e9d61c4ab8f60a06a549f931f8154bc3" category="paragraph">Ai membri dell'organizzazione possono essere assegnati ruoli a ciascun livello e più di un livello della gerarchia delle risorse. È possibile assegnare ruoli ai membri pertinenti alle proprie responsabilità nell'organizzazione BlueXP .</block>
-  <block id="8eaa33e37e898cc8fe60223764d1b067" category="list-text">*Selezionare una categoria*: BlueXP  separa i ruoli in due categorie: Piattaforma e servizio dati. <block ref="95a2a1c0b49231381e965b8dd6b00696" category="inline-link-macro-rx"></block>.</block>
   <block id="9c7bc4ef4922fcab1fc451f7902a3977" category="list-text">Per modificare il ruolo di un membro, selezionare *Cambia* accanto al ruolo che si desidera modificare. È possibile modificare questo ruolo solo in un ruolo della stessa categoria. Ad esempio, è possibile passare da un ruolo di servizio dati a un altro. Verrà richiesto di confermare la modifica.</block>
   <block id="2a3e7caa563b2592e27f3890e8d21765" category="section-title">La modalità limitata ora utilizza BlueXP  IAM</block>
   <block id="2b513ec32615ab736c1cab315db516f8" category="section-title">13 gennaio 2025</block>
@@ -4833,7 +4775,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="69ac82a1779b2cc7d528017241f5324f" category="paragraph">L'host può essere di qualsiasi architettura che soddisfi i seguenti requisiti di dimensioni:</block>
   <block id="df4af5ebfed55f726690fe09695fb1fa" category="list-text">CPU: 8 core o 8 vCPU</block>
   <block id="357a496c919d7b340d6f4582397b89b5" category="list-text">RAM: 32 GB</block>
-  <block id="e1625dbf565504d716b37b407e4f24a4" category="paragraph">La gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP  consente di organizzare e controllare l'accesso alle risorse NetApp. È possibile organizzare le risorse in base alla gerarchia dell'organizzazione. Ad esempio, è possibile organizzare le risorse in base alla posizione geografica, al sito o all'unità aziendale. È quindi possibile assegnare i ruoli IAM ai membri in determinate parti della gerarchia, impedendo così l'accesso alle risorse presenti in altre parti della gerarchia.</block>
   <block id="179864dbcf93f914bb2504e0d17f7afc" category="paragraph">Quando si implementa un connettore da BlueXP, è necessario utilizzare un account Azure o un'entità di servizio che disponga delle autorizzazioni necessarie per implementare la macchina virtuale del connettore. Le autorizzazioni richieste sono elencate nella <block ref="a3d6867da21f74b7e760876f5e090de9" category="inline-link-macro-rx"></block>.</block>
   <block id="1f0c50a54c656fee9ca2814ffcfc5d68" category="paragraph">La necessità o meno di creare questo ruolo personalizzato per il connettore dipende dal modo in cui è stato distribuito.</block>
   <block id="fa922c926b9bd1ffad4f5c26c082d203" category="paragraph-title">Implementazione da BlueXP </block>
@@ -4981,10 +4922,107 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="1fa6d342759ba5c5a8f23c210cac048c" category="doc">Connettore 3.9.51</block>
   <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">A questo punto, la versione 3.9.51 è disponibile per la modalità standard e la modalità limitata.</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">Gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP </block>
-  <block id="280cb81762489dce44889f9130b6e870" category="list-text">Ora devi assegnare ruoli agli utenti per permettere loro di avere accesso alla protezione dal ransomware. Puoi assegnare a un utente uno di due ruoli: Amministratore della protezione ransomware o visualizzatore di protezione ransomware.</block>
-  <block id="0fc0d7857aba2fcd01e923d9a32e9297" category="list-text">È ora necessario assegnare ruoli agli utenti per poter accedere a NetApp Keystone. Puoi assegnare a un utente uno dei due ruoli: Amministratore Keystone o visualizzatore Keystone.</block>
-  <block id="7fc94980a9075f2005ba4d674e6766ee" category="list-text">Ora puoi associare un abbonamento Keystone a un progetto IAM. L'associazione di un abbonamento Keystone a un progetto IAM consente di controllare l'accesso a Keystone all'interno di BlueXP .</block>
   <block id="89e154403778feb30a369a4b9959d2e2" category="inline-link-macro">Scopri i nuovi ruoli.</block>
   <block id="32943cfa903d06d5071cedc0af461130" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block>.</block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">14 aprile 2025</block>
+  <block id="38469cab8f7065ff2b3a663e28381c62" category="list-text">Agli utenti senza l'amministratore di Org, la cartella o l'amministratore del progetto devono essere assegnati un ruolo di protezione dal ransomware per avere accesso alla protezione dal ransomware. Puoi assegnare a un utente uno di due ruoli: Amministratore della protezione ransomware o visualizzatore di protezione ransomware.</block>
+  <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">Agli utenti senza l'amministratore Org, la cartella o l'amministratore del progetto deve essere assegnato un ruolo Keystone per avere accesso a Keystone. Puoi assegnare a un utente uno dei due ruoli: Amministratore Keystone o visualizzatore Keystone.</block>
+  <block id="d4d44165c3ece93b64c24e52e61879a3" category="list-text">Se si dispone del ruolo di amministratore Org, cartella o amministratore progetto, è ora possibile associare un abbonamento Keystone a un progetto IAM. L'associazione di un abbonamento Keystone a un progetto IAM consente di controllare l'accesso a Keystone all'interno di BlueXP .</block>
+  <block id="06ae2eb5f4697ec006608fbf2e1e5a5e" category="paragraph">La gestione delle identità e degli accessi (IAM) di BlueXP  è un meccanismo di controllo degli accessi fondamentale e scalabile che gestisce l'accesso degli utenti alle risorse BlueXP , concedendo livelli di autorizzazione appropriati attraverso ruoli con privilegi minimi.</block>
+  <block id="d4809de34ba9cc073d054ecbd5e6f4fa" category="paragraph">Con IAM, è possibile organizzare e controllare l'accesso alle risorse NetApp. È possibile organizzare le risorse in base alla gerarchia dell'organizzazione. Ad esempio, è possibile organizzare le risorse in base alla posizione geografica, al sito o all'unità aziendale. È quindi possibile assegnare i ruoli IAM ai membri in determinate parti della gerarchia, impedendo così l'accesso alle risorse presenti in altre parti della gerarchia.</block>
+  <block id="29869679a689db821d47cf8abfed64b1" category="paragraph">Per gestire le cartelle, gli utenti devono disporre del ruolo di amministratore dell'organizzazione o della cartella o del ruolo di amministratore del progetto. Gli utenti con ruolo di amministratore dell'organizzazione possono creare e gestire le risorse ovunque nell'organizzazione BlueXP . Gli utenti con ruolo di amministratore cartella e progetto possono farlo solo per le cartelle o i progetti a cui sono stati assegnati.</block>
+  <block id="facb12ccfc7fd1078f18b312bcd32fec" category="paragraph">Link::reference-iam-defined-roles.html[informazioni sui ruoli BlueXP .]</block>
+  <block id="723f0aaeaff3d17b73530431650056f5" category="paragraph">Quando si utilizza BlueXP  IAM, gli utenti con questi ruoli gestiscono i seguenti componenti:</block>
+  <block id="a5cd3ed116608dac017f14c046ea56bf" category="list-text">Ruoli</block>
+  <block id="a246a657e3bb11b0fad6ac951e7a7921" category="paragraph">Un _organization_ è il livello superiore del sistema IAM di BlueXP  e rappresenta generalmente la vostra azienda. L'organizzazione è costituita da risorse quali connettori, archiviazione e sottoscrizioni che è possibile organizzare in cartelle e progetti. È quindi possibile assegnare ai membri dell'organizzazione (utente) l'accesso a cartelle o progetti in base alle loro responsabilità nella gestione degli ambienti di storage.</block>
+  <block id="eaea6bbd21c34da8f5c712819b2fa7e8" category="paragraph">A seconda delle dimensioni dell'organizzazione e del numero di risorse di archiviazione disponibili, le cartelle sono uno strumento utile per tenere organizzate le risorse NetApp. Consentono inoltre di gestire meglio l'accesso se si desidera condividere l'amministrazione di cartelle diverse con utenti diversi. È possibile assegnare a un utente il ruolo di amministratore cartella o progetto per una determinata cartella e quindi gestire l'accesso alla cartella e ai relativi progetti, nonché creare nuovi progetti nella cartella.</block>
+  <block id="e89b4a6e191e212029f58a77e3906781" category="paragraph">Quando si crea una cartella, è possibile assegnarvi l'accesso degli utenti. Quando si assegna un ruolo di accesso a una cartella, l'utente può eseguire le mansioni associate a tale ruolo per tutti i progetti all'interno della rispettiva cartella. Al contrario, è possibile scegliere di concedere l'accesso utente su un progetto per progetto.</block>
+  <block id="99b209bdb6e04c3b0bb3aadbaf4809f0" category="paragraph">Puoi creare progetti multipli per fornire un accesso più granulare alle tue risorse NetApp. Per esempio, le organizzazioni più piccole possono avere un progetto per ogni unità di affari o posizione geografica. Le organizzazioni più grandi potrebbero voler organizzare le proprie risorse di storage in più progetti per ogni business unit per controllare ulteriormente l'accesso. È possibile assegnare agli utenti l'accesso alle risorse in base al progetto o alla cartella.</block>
+  <block id="31a47a2847cf69d6a86e5dc8e6475320" category="paragraph">Quando i progetti risiedono in una cartella, è possibile</block>
+  <block id="2c2e7be4268cd14a5e106bbdd7de7669" category="section-title">Ruoli di accesso</block>
+  <block id="55b6d94d9ad6439fe5c46ccdba149ed3" category="paragraph">BlueXP  supporta diversi ruoli di accesso che è possibile assegnare ai membri dell'organizzazione.</block>
+  <block id="f0b3d6677a212276d758f01224d831be" category="paragraph"><block ref="358dd7829c43f386bdd1bc16bf83b432" category="inline-link-macro-rx"></block>.</block>
+  <block id="8c3d337cee5ab07c0918b1ab7f1db96a" category="doc">Ruoli di accesso a BlueXP </block>
+  <block id="5c7fdc642eeb15903590365b16190946" category="paragraph">I ruoli di accesso di BlueXP  sono progettati per concedere il minimo privilegio a un utente affinché quest'ultimo possa eseguire le attività di gestione dello storage. Ciò garantisce una maggiore sicurezza e impedisce agli utenti di interrompere inavvertitamente i servizi di storage in cui non dispongono di autorizzazioni. I ruoli rientrano in tre categorie: Piattaforma, applicazione e servizio dati.</block>
+  <block id="6fee4cd31e4fd207650d866994c2e27b" category="paragraph">Chiunque disponga di un ruolo di piattaforma BlueXP  (Amministratore dell'organizzazione o Amministratore di progetto o cartella) può aggiungere un utente a un progetto e assegnargli un ruolo o ruoli per un progetto o una cartella specifici.</block>
+  <block id="fd2cb0f491a111c6c30e31d8550da648" category="section-title">Ruoli delle piattaforme BlueXP </block>
+  <block id="82d121fce2370e981f0805f28491d2ea" category="paragraph">I ruoli della piattaforma dispongono di autorizzazioni complete per l'amministrazione di BlueXP , inclusa l'assegnazione di ruoli e l'aggiunta di utenti, nonché la possibilità di eseguire tutte le funzioni di gestione di BlueXP  sia per le risorse di storage che per i servizi dati. BlueXP  include due ruoli a livello di piattaforma: Amministratore dell'organizzazione e cartella o Amministratore del progetto.</block>
+  <block id="2300294e5ba32a77ce27f4dea6bce375" category="paragraph-title">Esempio: Utilizzare i ruoli della piattaforma per delegare le responsabilità amministrative</block>
+  <block id="3f945256abb83dc0dc6e4ab43245f2f7" category="paragraph">Sono disponibili i seguenti ruoli della piattaforma:</block>
+  <block id="953cacffc58d4ef1c6a0d6666463490f" category="list-text">*Amministratore dell'organizzazione*: Consente a un utente di accedere senza restrizioni a tutti i progetti e le cartelle all'interno di un'organizzazione, aggiungere membri a qualsiasi progetto o cartella, nonché eseguire qualsiasi attività di gestione di BlueXP  e utilizzare qualsiasi servizio dati. Un'organizzazione deve avere almeno un amministratore dell'organizzazione.</block>
+  <block id="b9ec7cf1c2e070364443da595ac27885" category="list-text">*Amministrazione cartella o progetto*: Consente a un utente l'accesso illimitato a progetti e cartelle specifici a cui sono assegnati. Può aggiungere membri ai progetti o alle cartelle che gestiscono, nonché eseguire qualsiasi attività di gestione di BlueXP  e utilizzare qualsiasi servizio dati all'interno della cartella o del progetto a cui sono assegnati. Il ruolo di amministratore cartella o progetto non può creare connettori.</block>
+  <block id="12bf15e0266e4456919bca8fc27d8445" category="paragraph">Nella tabella seguente vengono indicate le azioni eseguibili da ogni ruolo di protezione della piattaforma BlueXP .</block>
+  <block id="d48140a7630d821243e3ac2204b3d871" category="paragraph">Di seguito è riportato un elenco dei ruoli nella categoria applicazione.</block>
+  <block id="a11961cab6627eac643ea36ae57ce8df" category="section-title">Ruoli Keystone</block>
+  <block id="2a04d5504b28b9efe0f0dfff02a03355" category="paragraph">Puoi utilizzare i seguenti ruoli per assegnare agli utenti l'accesso a Keystone.</block>
+  <block id="78fdf101e42d4e276f66b98cdfe73866" category="admonition">L'accesso a Keystone tramite BlueXP  è attualmente in versione beta. Se desideri partecipare alla beta di Keystone, contatta il tuo rappresentante NetApp.</block>
+  <block id="cdcfd0d4763f6f8983003ea128be38cf" category="list-text">*Amministratore Keystone*: Gestisci l'iscrizione Keystone e intraprendi azioni in merito ad avvisi, report e iscrizioni.</block>
+  <block id="3275a956f3a80df98f4623ac3ac931a6" category="list-text">*Keystone Viewer*: Visualizza l'iscrizione a Keystone oltre a report, avvisi e risorse.</block>
+  <block id="cb97d9e7423da9b58bc3b595cad3fe19" category="paragraph">La tabella seguente indica le azioni eseguibili da ogni ruolo Keystone.</block>
+  <block id="4420e7353184ac575b539cdce1b991db" category="cell">Funzione e azione</block>
+  <block id="3522959e95c9f2aad088e504a7c016d0" category="cell">Amministratore Keystone</block>
+  <block id="9d0ab4774b32ad710dbc8b73cdf29cce" category="cell">Visualizzatore Keystone</block>
+  <block id="3d96431c652abba07d810be9a4a3b187" category="cell">Visualizzare le seguenti schede: Abbonamento, risorse, monitoraggio e Amministrazione</block>
+  <block id="04b2aaee865f1746c975de785d02e95f" category="cell">*Pagina di iscrizione Keystone*:</block>
+  <block id="96a37a10e0f320cc761610a86cf2637c" category="cell">Può visualizzare le sottoscrizioni</block>
+  <block id="0c6e0cfae3b0f2712b3389db1db10e1b" category="cell">Può modificare o rinnovare gli abbonamenti</block>
+  <block id="86744a031b02e581d9a8908f0dbdc8c1" category="cell">*Pagina risorse Keystone*:</block>
+  <block id="7c38a1a6d325208696c25a2b660d7c45" category="cell">Visualizza risorse</block>
+  <block id="bb295074f705be0407b1b743a2f6e967" category="cell">Gestione delle risorse</block>
+  <block id="f00f11f1b7ecc36f276ac4d83ea8ba95" category="cell">*Pagina degli avvisi Keystone*:</block>
+  <block id="428c58ec1c2902ea6bff31e38cae88ff" category="cell">Visualizza avvisi</block>
+  <block id="685b0f2db45e4fc09a06ccb4695806de" category="cell">Gestire gli avvisi</block>
+  <block id="683e7b4cc33c1c5bb12cefaa8e17c9da" category="cell">Creare avvisi da soli</block>
+  <block id="203311c515509be12349a4f1fc044cd7" category="cell">*Portafoglio digitale*:</block>
+  <block id="d7609c91ac60bd14d6f61465cd81ab5a" category="cell">Consente di visualizzare il portafoglio digitale</block>
+  <block id="605bf3e1f808ef9bc9fe99c9bf4cdf1f" category="cell">*Pagina dei report Keystone*:</block>
+  <block id="df6e3c89245cdc5bf0a7191c642d6997" category="cell">Scarica i report</block>
+  <block id="61b0e09fe12f82c766454563f7be036b" category="cell">Gestire i report</block>
+  <block id="4d1159457f35bcc3ef7ee5b2f65bc124" category="cell">Creare report per sé stessi</block>
+  <block id="3b8988881170da948296006bcb3af098" category="cell">*Richieste di servizio*:</block>
+  <block id="c144ad302e0d51a72f17afbd09594ba8" category="cell">Creare richieste di servizio</block>
+  <block id="3f07e6ff7933633c723d3474e50d9d65" category="cell">Può visualizzare la richiesta di servizio creata da qualsiasi utente all'interno dell'organizzazione</block>
+  <block id="aafdddc00f0073d6f8feca81436dbc0f" category="paragraph">Di seguito è riportato l'elenco dei ruoli nella categoria servizi dati.</block>
+  <block id="452c59bc627cf63c04afb8e67c894d8f" category="paragraph">La classificazione non ha un ruolo di amministratore.</block>
+  <block id="6e4131153ef85e6099f1a34150c48c4e" category="paragraph">Puoi utilizzare i seguenti ruoli per assegnare agli utenti l'accesso alla protezione dal ransomware.</block>
+  <block id="bdcfe1c3dfeb861ab87e4cc4b8edc1fc" category="list-text">*Amministratore della protezione ransomware*: Consente di gestire le azioni nelle schede Protect, Alerts, Recover, Settings e Reports.</block>
+  <block id="2342f940e11a97078a40faa46aad14e1" category="list-text">*Visualizzatore protezione ransomware*: Consente di visualizzare i dati del carico di lavoro, visualizzare i dati degli avvisi, scaricare i dati di recupero e scaricare i report.</block>
+  <block id="38af51c4aaeb25c0489791e4bbad2347" category="paragraph">La tabella seguente indica le azioni eseguibili da ogni ruolo di protezione ransomware BlueXP .</block>
+  <block id="a95fe9e5a7b678fa4abc81ea69f1e257" category="cell">Amministratore della protezione dal ransomware</block>
+  <block id="6a05decc7d63f19c1d5812a3c728ce8a" category="cell">Visualizzatore di protezione dal ransomware</block>
+  <block id="b60c44c6bbbb3793d0c08c34cd6e2382" category="cell">Visualizza dashboard e tutte le schede</block>
+  <block id="78c7efbfa07116553a52f59800129dde" category="cell">Inizia la prova gratuita</block>
+  <block id="42174d568723a8694dc7e6dfd143cb12" category="cell">Avvia il rilevamento dei carichi di lavoro</block>
+  <block id="26548eb85488e3cdc0f0b9b27802995f" category="cell">*Nella scheda protezione*:</block>
+  <block id="0ceaa792ae3f25d0f79dcd1125e9284e" category="cell">Aggiungere, modificare o eliminare i criteri</block>
+  <block id="bf4011ddd9ae5a6521f75843972999ab" category="cell">Proteggere i carichi di lavoro</block>
+  <block id="21a74bcaa4f6aef211c1ce1e13ed98fe" category="cell">Identificazione dei dati sensibili</block>
+  <block id="c102bfc829ed11fa589522aa305984a3" category="cell">Modificare la protezione del carico di lavoro</block>
+  <block id="d1e541a95d5060702dc6153a411c6c35" category="cell">Visualizzare i dettagli del carico di lavoro</block>
+  <block id="4330b42a340140b836c42bbe9c7105be" category="cell">Scaricare i dati</block>
+  <block id="b1e60ac72e50f485ca0a5ea9c82143d2" category="cell">*Nella scheda Avvisi*:</block>
+  <block id="9f64c529078a13eebc43993d1ac578d4" category="cell">Visualizzare i dettagli degli avvisi</block>
+  <block id="f700fad2259a25a87fbe56ba2810e8ff" category="cell">Modifica stato incidente</block>
+  <block id="ef9988f85b068b8709daa3be2c31fca3" category="cell">Visualizzare i dettagli dell'incidente</block>
+  <block id="38de1b212ca13fa4c230f4c20adbb48a" category="cell">Ottieni l'elenco completo dei file interessati</block>
+  <block id="4b1b2c63b979feafab4b35d6b2307876" category="cell">Scarica i dati degli avvisi</block>
+  <block id="b338bf8c8e0fbc61d8a0fad3b4a74e35" category="cell">*Nella scheda Recupera*:</block>
+  <block id="f5f949f53a00b2da6ffa7a9f7a0fd0f8" category="cell">Scaricare i file interessati</block>
+  <block id="65ca8041cc328ebb64db5f8368a9101a" category="cell">Ripristina il workload</block>
+  <block id="4ebc1406711ca6754873e22a81f31c6f" category="cell">Scaricare i dati di ripristino</block>
+  <block id="a4f2411faacb07693dd051a3d2d9f97e" category="cell">*Nella scheda Impostazioni*:</block>
+  <block id="988c84a947938e98e39deda3665fae89" category="cell">Aggiungere o modificare le destinazioni di backup</block>
+  <block id="08fec10c338548595a28b0310a1c0600" category="cell">Aggiungere o modificare target SIEM</block>
+  <block id="1ed006cd78ff9bf590a02c6fc268141f" category="cell">*Nella scheda rapporti*:</block>
+  <block id="4d2ba7b1416b46d72e4a391ee901ec54" category="paragraph">SnapCenter non ha un ruolo di spettatore.</block>
+  <block id="b5d12b62e8878125882ab75bf3c30b5a" category="paragraph">Se necessario, selezionare *Aggiungi un membro* per specificare altri membri dell'organizzazione che devono avere accesso alla cartella o al progetto, quindi selezionare un ruolo. Un ruolo di accesso definisce le autorizzazioni di cui dispongono i membri per la cartella o il progetto.</block>
+  <block id="eca36d51093f2e51afd4eb802cf98239" category="inline-link-macro">Gestire i ruoli dalla pagina membri</block>
+  <block id="af604cf2b2afd9d725da34221d04ae6a" category="paragraph">Se l'accesso ai membri è stato fornito a un livello superiore della gerarchia (a livello di cartella o organizzazione), non è possibile rimuovere o modificare il loro ruolo durante la visualizzazione della cartella o del progetto di livello inferiore. È necessario passare a quella parte della gerarchia e aggiornare il ruolo del membro. In alternativa, è possibile <block ref="af57133875ea4f57510f09c053d32073" category="inline-link-macro-rx"></block>.</block>
+  <block id="e07d586e54fb2ecc1791d2d434436330" category="doc">Aggiungere membri BlueXP  e gestire le relative autorizzazioni</block>
+  <block id="45fa36bab7b7452cfb911598ccd2d223" category="inline-link-macro">Scoprite come utilizzare i ruoli per controllare l'accesso alle risorse BlueXP .</block>
+  <block id="eef972128da3061d69cdfbbd20808652" category="paragraph">È possibile visualizzare un elenco di tutti i membri della propria organizzazione BlueXP . Per comprendere quali risorse e autorizzazioni sono disponibili per un membro, è possibile visualizzare i ruoli assegnati al membro a diversi livelli della gerarchia delle risorse dell'organizzazione. <block ref="4e7a66baee137600d665a8be3cbcb6a5" category="inline-link-macro-rx"></block></block>
+  <block id="57c4db21a8e5f9688baa21606de89184" category="paragraph">È possibile visualizzare sia gli account utente che gli account di servizio dalla pagina *membri*.</block>
+  <block id="d5979f6638739f52389534c5a5861979" category="sidebar">Configurazione e amministrazione di BlueXP </block>
+  <block id="9a95138b9cb83f59109eb15c038b1073" category="sidebar">Aggiungere membri e account di servizio</block>
+  <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">Utilizzare i ruoli per controllare l'accesso dei membri alle risorse</block>
 </blocks>

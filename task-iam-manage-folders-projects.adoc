@@ -45,10 +45,10 @@ link:concept-identity-and-access-management.html#associate-resource-folder["Scop
 
 ** *Access*: Consente di visualizzare i membri che avranno accesso alla cartella o al progetto in base alle autorizzazioni esistenti già definite nella gerarchia delle risorse.
 +
-Se necessario, selezionare *Aggiungi un membro* per specificare altri membri dell'organizzazione che devono avere accesso alla cartella o al progetto, quindi selezionare un ruolo. Un ruolo definisce le autorizzazioni di cui dispongono i membri per la cartella o il progetto.
+Se necessario, selezionare *Aggiungi un membro* per specificare altri membri dell'organizzazione che devono avere accesso alla cartella o al progetto, quindi selezionare un ruolo. Un ruolo di accesso definisce le autorizzazioni di cui dispongono i membri per la cartella o il progetto.
 
 +
-link:reference-iam-predefined-roles.html["Informazioni sui ruoli IAM predefiniti"].
+link:reference-iam-predefined-roles.html["Ulteriori informazioni sui ruoli di accesso"].
 
 
 
@@ -159,7 +159,7 @@ image:screenshot-iam-member-access.png["Una schermata della pagina Modifica prog
 
 Modificare l'accesso dei membri a una cartella o a un progetto per assicurarsi che i membri giusti abbiano accesso alle risorse associate alla cartella o al progetto.
 
-Se l'accesso ai membri è stato fornito a un livello superiore della gerarchia (a livello di cartella o organizzazione), non è possibile rimuovere o modificare l'accesso ai membri durante la visualizzazione della cartella o del progetto di livello inferiore. È necessario passare a quella parte della gerarchia e aggiornare le autorizzazioni del membro. In alternativa, è possibile link:task-iam-manage-members-permissions.html#manage-permissions["Gestire le autorizzazioni dalla pagina membri"].
+Se l'accesso ai membri è stato fornito a un livello superiore della gerarchia (a livello di cartella o organizzazione), non è possibile rimuovere o modificare il loro ruolo durante la visualizzazione della cartella o del progetto di livello inferiore. È necessario passare a quella parte della gerarchia e aggiornare il ruolo del membro. In alternativa, è possibile link:task-iam-manage-roles.html#manage-permissions["Gestire i ruoli dalla pagina membri"].
 
 link:concept-identity-and-access-management.html#role-inheritance["Ulteriori informazioni sull'ereditarietà dei ruoli"].
 

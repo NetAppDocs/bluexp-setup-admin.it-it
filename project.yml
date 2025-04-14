@@ -11,7 +11,7 @@ settings:
   langs: it-it,us-en,de-de,es-es,fr-fr,pt-br,ja-jp,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: Documentazione di installazione e amministrazione di BlueXP 
+  - title: Configurazione e amministrazione di BlueXP 
     url: "/index.html"
   - title: Note di rilascio
     entries:
@@ -115,8 +115,10 @@ sidebar:
         url: "/task-iam-get-started.html"
       - title: Organizzare le risorse con cartelle e progetti
         url: "/task-iam-manage-folders-projects.html"
-      - title: Aggiungere membri e gestire le relative autorizzazioni
+      - title: Aggiungere membri e account di servizio
         url: "/task-iam-manage-members-permissions.html"
+      - title: Utilizzare i ruoli per controllare l'accesso dei membri alle risorse
+        url: "/task-iam-manage-roles.html"
       - title: Gestire la gerarchia delle risorse
         url: "/task-iam-manage-resources.html"
       - title: Associare un connettore ad altre cartelle e progetti
@@ -127,7 +129,7 @@ sidebar:
         url: "/task-iam-rename-organization.html"
       - title: Monitorare o controllare l'attività IAM
         url: "/task-iam-audit-actions-timeline.html"
-      - title: Ruoli IAM predefiniti
+      - title: Ruoli di accesso a BlueXP 
         url: "/reference-iam-predefined-roles.html"
     - title: Account BlueXP  (solo modalità privata)
       entries:
