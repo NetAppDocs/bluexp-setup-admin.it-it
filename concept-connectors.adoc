@@ -22,7 +22,7 @@ Se si esegue BlueXP  in modalità standard, non sarà necessario installare un 
 
 == Cosa si può fare senza un connettore in modalità standard
 
-Alcuni dei servizi più importanti di BlueXP  sono disponibili senza l'installazione di un connettore se si esegue in modalità standard.
+Puoi iniziare a utilizzare BlueXP  per gestire in modo centralizzato le risorse di storage senza installare un connettore se il sistema è in esecuzione in modalità standard.
 
 È possibile utilizzare le seguenti funzionalità e servizi BlueXP senza un connettore:
 
