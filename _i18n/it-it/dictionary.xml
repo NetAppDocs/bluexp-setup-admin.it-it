@@ -4944,7 +4944,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="0e231d3391a335865e696150143618bc" category="cell">Visitare il<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> e fare riferimento alle modifiche incluse nella versione di marzo 2024.</block>
   <block id="10c518409c3dfbdd5e9839d2076ed5da" category="cell">10 marzo 2025 (versione 1,41)</block>
   <block id="49e0c1b5be27dbeb84e3a7ca1d634276" category="cell">Andare a<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> e fare riferimento alle modifiche incluse nelle versioni da 1,38 a 1.371.41.</block>
-  <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">28 marzo 2025</block>
   <block id="cb3410a9bf17cf666d6a34ac1b7c6d6c" category="paragraph"><block ref="2416ec7d97fab7b3c3e0f434ea922dd9" category="inline-link-rx"></block>.</block>
   <block id="1920da3586c2e2872f88b02997c971c3" category="doc">ID organizzazione e progetto</block>
   <block id="106aaea1e5532e2978889c60809a6ba7" category="paragraph">L'organizzazione BlueXP  dispone di un nome e di un ID. È possibile scegliere un nome per identificare l'organizzazione nella distribuzione di BlueXP . Potrebbe inoltre essere necessario recuperare l'ID organizzazione per alcune integrazioni.</block>
@@ -4979,4 +4978,13 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="e666f475ae71221ef0568980f94a0316" category="paragraph"><block ref="a51247ccde87e175c686e81825c9f657" category="inline-link-macro-rx"></block>. * *Aggiungi ruolo*: Se si desidera fornire l'accesso ad altre cartelle o progetti all'interno dell'organizzazione, selezionare *Aggiungi ruolo*, specificare un'altra cartella o progetto o categoria di ruolo, quindi selezionare una categoria di ruolo e un ruolo corrispondente.</block>
   <block id="88ccee89efe2b556b8fcc7b01ae63c9f" category="paragraph">È possibile modificare i ruoli assegnati a un membro nel caso in cui sia necessario regolare l'accesso di un utente.</block>
   <block id="bd572303cf9daecbf8e01f72f337d250" category="list-text">È possibile modificare un ruolo esistente per un membro o rimuovere un ruolo.</block>
+  <block id="1fa6d342759ba5c5a8f23c210cac048c" category="doc">Connettore 3.9.51</block>
+  <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">A questo punto, la versione 3.9.51 è disponibile per la modalità standard e la modalità limitata.</block>
+  <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">Gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP </block>
+  <block id="280cb81762489dce44889f9130b6e870" category="list-text">Ora devi assegnare ruoli agli utenti per permettere loro di avere accesso alla protezione dal ransomware. Puoi assegnare a un utente uno di due ruoli: Amministratore della protezione ransomware o visualizzatore di protezione ransomware.</block>
+  <block id="0fc0d7857aba2fcd01e923d9a32e9297" category="list-text">È ora necessario assegnare ruoli agli utenti per poter accedere a NetApp Keystone. Puoi assegnare a un utente uno dei due ruoli: Amministratore Keystone o visualizzatore Keystone.</block>
+  <block id="7fc94980a9075f2005ba4d674e6766ee" category="list-text">Ora puoi associare un abbonamento Keystone a un progetto IAM. L'associazione di un abbonamento Keystone a un progetto IAM consente di controllare l'accesso a Keystone all'interno di BlueXP .</block>
+  <block id="89e154403778feb30a369a4b9959d2e2" category="inline-link-macro">Scopri i nuovi ruoli.</block>
+  <block id="32943cfa903d06d5071cedc0af461130" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block>.</block>
+  <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">14 aprile 2025</block>
 </blocks>
