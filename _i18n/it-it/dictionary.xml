@@ -5006,7 +5006,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="d5979f6638739f52389534c5a5861979" category="sidebar">Configurazione e amministrazione di BlueXP </block>
   <block id="9a95138b9cb83f59109eb15c038b1073" category="sidebar">Aggiungere membri e account di servizio</block>
   <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">Utilizzare i ruoli per controllare l'accesso dei membri alle risorse</block>
-  <block id="7b86bd575ced3444e23389ac71f98a8f" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block></block>
   <block id="e5a26c78a572123c5a5e442167efbf6e" category="paragraph">Un connettore è il software NetApp installato che esegue le azioni che BlueXP  deve eseguire per gestire l'infrastruttura storage. Non è necessario un connettore per molte delle funzioni di BlueXP , ma alcune funzioni non sono disponibili.</block>
   <block id="9097a69a8c3aa1836902abae4c2af6b5" category="paragraph">Se si esegue BlueXP  in modalità standard, non sarà necessario installare un connettore per eseguire alcuni dei servizi di BlueXP , come aggiornamenti software e Digital Wallet. Tuttavia, alcuni dei servizi premium di BlueXP  come la protezione dal ransomware o il disaster recovery richiedono l'installazione di un connettore. Se si utilizza BlueXP  in modalità limitata o privata, è necessario installare un connettore.</block>
   <block id="c9ea5b101d4c3beb590e4912f1117899" category="section-title">Cosa si può fare senza un connettore in modalità standard</block>
@@ -5050,4 +5049,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="86429eb78c6bc64d5f1ce4125590fe22" category="paragraph">^3^ sebbene non sia necessario un connettore per il rilevamento diretto di un cluster ONTAP in sede, è necessario un connettore per sfruttare le funzionalità aggiuntive di BlueXP .<block ref="04529f27c98d308747ea6be915c240c4" category="inline-link-rx"></block></block>
   <block id="9c723fb8e231218b213744c9ee3160ca" category="paragraph">Puoi installare manualmente un connettore su un host Linux in esecuzione in Azure. Per installare manualmente il connettore sul proprio host Linux, è necessario rivedere i requisiti dell'host, configurare la rete, preparare le autorizzazioni di Azure, installare il connettore e quindi fornire le autorizzazioni preparate.</block>
   <block id="e6ddd5a54a1d2f8ae254b9358dfed6b9" category="paragraph">Puoi iniziare a utilizzare BlueXP  per gestire in modo centralizzato le risorse di storage senza installare un connettore se il sistema è in esecuzione in modalità standard.</block>
+  <block id="e179a365cbbaaab0ffe96afa0b1123f8" category="paragraph"><block ref="e179a365cbbaaab0ffe96afa0b1123f8" category="inline-link-macro-rx"></block></block>
+  <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">28 marzo 2025</block>
 </blocks>
