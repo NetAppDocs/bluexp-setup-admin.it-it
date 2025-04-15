@@ -4925,7 +4925,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="befeea17a6d7eca164cf128f9bffe000" category="paragraph">BlueXP  supporta diversi ruoli predefiniti che è possibile assegnare ai membri dell'organizzazione.</block>
   <block id="2b01a456faf456f22f55be4aabe17b53" category="inline-link-macro">Informazioni sui ruoli predefiniti IAM</block>
   <block id="5939586d23777de38b1394aad3c31735" category="paragraph"><block ref="1d6a3b55f851d6a1155ab766483f6eac" category="inline-link-macro-rx"></block>.</block>
-  <block id="9a4737feea9b9d5b10fea0c8478ac45b" category="doc">Ruoli e autorizzazioni IAM BlueXP  predefiniti</block>
   <block id="94d01a25e8d719777d74e40fde0e74eb" category="paragraph">BlueXP  Identity and Access Management (IAM) include diversi ruoli predefiniti che è possibile assegnare ai membri dell'organizzazione in diversi livelli della gerarchia delle risorse. Prima di assegnare questi ruoli, è necessario comprendere le autorizzazioni incluse in ciascun ruolo. I ruoli rientrano in due categorie: Piattaforma e servizio dati.</block>
   <block id="cb9e27422b343274f9974efbc9c3dbc1" category="section-title">Ruoli della piattaforma</block>
   <block id="5e1d7b4c2de3509435462a15161a1c7f" category="paragraph">I ruoli della piattaforma sono i ruoli più ampi che è possibile assegnare agli utenti e consentire ampie autorizzazioni per l'amministrazione di BlueXP , tra cui l'assegnazione di ruoli e l'aggiunta di utenti, nonché la possibilità di eseguire tutte le funzioni di BlueXP . BlueXP  IAM include due ruoli di piattaforma: Amministratore dell'organizzazione e cartella o Amministratore del progetto. La principale differenza tra i due ruoli della piattaforma BlueXP  IAM è l'ambito.</block>
@@ -4934,7 +4933,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="6573eb5e7a9033869897566e8b1b5f6a" category="paragraph">Il ruolo di amministratore cartella o progetto non può creare connettori.</block>
   <block id="11631a24c36e1c2153a968d2579a70d4" category="section-title">Tabella di confronto dei ruoli della piattaforma</block>
   <block id="bc76903dd69fe38bc3b58cc4ef4a02c8" category="list-text">Esempio di ruoli organizzativi in BlueXP  per una grande organizzazione multinazionale</block>
-  <block id="09246652e91bee267cf93f6b3c2e9a32" category="paragraph">I ruoli servizi dati forniscono agli utenti l'autorizzazione da utilizzare per i servizi dati all'interno dell'organizzazione, del progetto o della cartella a cui hanno accesso.</block>
   <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">Se necessario, selezionare *Aggiungi un membro* per specificare altri membri dell'organizzazione che devono avere accesso alla cartella o al progetto, quindi selezionare un ruolo. Un ruolo definisce le autorizzazioni di cui dispongono i membri per la cartella o il progetto.</block>
   <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">Gestire le autorizzazioni dalla pagina membri</block>
   <block id="5ca796b399d85f3455d2d1844012b11a" category="paragraph">Se l'accesso ai membri è stato fornito a un livello superiore della gerarchia (a livello di cartella o organizzazione), non è possibile rimuovere o modificare l'accesso ai membri durante la visualizzazione della cartella o del progetto di livello inferiore. È necessario passare a quella parte della gerarchia e aggiornare le autorizzazioni del membro. In alternativa, è possibile <block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>.</block>
@@ -4972,7 +4970,72 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="0d11271abad1cfef17e56e17367d09de" category="paragraph">È possibile installare un connettore su uno dei computer locali. Per eseguire il connettore on-premise, devi rivedere i requisiti degli host, configurare la rete, preparare le autorizzazioni cloud, installare il connettore, configurare il connettore e quindi fornire le autorizzazioni preparate.</block>
   <block id="60b81afd9ad770d185b5a9b9f08f9809" category="sidebar">Documentazione di installazione e amministrazione di BlueXP</block>
   <block id="739addbbddeacc0bb15e86502b6685e9" category="sidebar">Aggiungere membri e gestire le relative autorizzazioni</block>
-  <block id="4e9a240c5fb31e56c6b0ab71a915953f" category="sidebar">Ruoli IAM predefiniti</block>
   <block id="c86bd67be80794fcaa3f1d91aa8b2899" category="inline-link-macro">Ulteriori informazioni sui ruoli di accesso.</block>
   <block id="5a4d408bd57f7cf7efbd6cf878c737a7" category="paragraph"><block ref="5a4d408bd57f7cf7efbd6cf878c737a7" category="inline-link-macro-rx"></block></block>
+  <block id="8c3d337cee5ab07c0918b1ab7f1db96a" category="inline-link-macro">Ruoli di accesso a BlueXP</block>
+  <block id="a7d6279e87395342f6ca8ef1ab6ad3ca" category="list-text"><block ref="a7d6279e87395342f6ca8ef1ab6ad3ca" category="inline-link-macro-rx"></block></block>
+  <block id="3780f4c88e2a0b66a6db0bbed86d39da" category="section-title">Ruoli applicazione</block>
+  <block id="d48140a7630d821243e3ac2204b3d871" category="paragraph">Di seguito è riportato un elenco dei ruoli nella categoria applicazione.</block>
+  <block id="a11961cab6627eac643ea36ae57ce8df" category="section-title">Ruoli Keystone</block>
+  <block id="2a04d5504b28b9efe0f0dfff02a03355" category="paragraph">Puoi utilizzare i seguenti ruoli per assegnare agli utenti l'accesso a Keystone.</block>
+  <block id="78fdf101e42d4e276f66b98cdfe73866" category="admonition">L'accesso a Keystone tramite BlueXP  è attualmente in versione beta. Se desideri partecipare alla beta di Keystone, contatta il tuo rappresentante NetApp.</block>
+  <block id="cdcfd0d4763f6f8983003ea128be38cf" category="list-text">*Amministratore Keystone*: Gestisci l'iscrizione Keystone e intraprendi azioni in merito ad avvisi, report e iscrizioni.</block>
+  <block id="3275a956f3a80df98f4623ac3ac931a6" category="list-text">*Keystone Viewer*: Visualizza l'iscrizione a Keystone oltre a report, avvisi e risorse.</block>
+  <block id="147e83598b37ab6627136a0fbebd7717" category="paragraph">La tabella seguente indica le azioni che ogni ruolo Keystone può eseguire.</block>
+  <block id="4420e7353184ac575b539cdce1b991db" category="cell">Funzione e azione</block>
+  <block id="3522959e95c9f2aad088e504a7c016d0" category="cell">Amministratore Keystone</block>
+  <block id="9d0ab4774b32ad710dbc8b73cdf29cce" category="cell">Visualizzatore Keystone</block>
+  <block id="3d96431c652abba07d810be9a4a3b187" category="cell">Visualizzare le seguenti schede: Abbonamento, risorse, monitoraggio e Amministrazione</block>
+  <block id="04b2aaee865f1746c975de785d02e95f" category="cell">*Pagina di iscrizione Keystone*:</block>
+  <block id="96a37a10e0f320cc761610a86cf2637c" category="cell">Può visualizzare le sottoscrizioni</block>
+  <block id="0c6e0cfae3b0f2712b3389db1db10e1b" category="cell">Può modificare o rinnovare gli abbonamenti</block>
+  <block id="86744a031b02e581d9a8908f0dbdc8c1" category="cell">*Pagina risorse Keystone*:</block>
+  <block id="7c38a1a6d325208696c25a2b660d7c45" category="cell">Visualizza risorse</block>
+  <block id="bb295074f705be0407b1b743a2f6e967" category="cell">Gestione delle risorse</block>
+  <block id="f00f11f1b7ecc36f276ac4d83ea8ba95" category="cell">*Pagina degli avvisi Keystone*:</block>
+  <block id="428c58ec1c2902ea6bff31e38cae88ff" category="cell">Visualizza avvisi</block>
+  <block id="685b0f2db45e4fc09a06ccb4695806de" category="cell">Gestire gli avvisi</block>
+  <block id="683e7b4cc33c1c5bb12cefaa8e17c9da" category="cell">Creare avvisi da soli</block>
+  <block id="203311c515509be12349a4f1fc044cd7" category="cell">*Portafoglio digitale*:</block>
+  <block id="d7609c91ac60bd14d6f61465cd81ab5a" category="cell">Consente di visualizzare il portafoglio digitale</block>
+  <block id="605bf3e1f808ef9bc9fe99c9bf4cdf1f" category="cell">*Pagina dei report Keystone*:</block>
+  <block id="df6e3c89245cdc5bf0a7191c642d6997" category="cell">Scarica i report</block>
+  <block id="61b0e09fe12f82c766454563f7be036b" category="cell">Gestire i report</block>
+  <block id="4d1159457f35bcc3ef7ee5b2f65bc124" category="cell">Creare report per sé stessi</block>
+  <block id="3b8988881170da948296006bcb3af098" category="cell">*Richieste di servizio*:</block>
+  <block id="c144ad302e0d51a72f17afbd09594ba8" category="cell">Creare richieste di servizio</block>
+  <block id="3f07e6ff7933633c723d3474e50d9d65" category="cell">Può visualizzare la richiesta di servizio creata da qualsiasi utente all'interno dell'organizzazione</block>
+  <block id="aafdddc00f0073d6f8feca81436dbc0f" category="paragraph">Di seguito è riportato l'elenco dei ruoli nella categoria servizi dati.</block>
+  <block id="452c59bc627cf63c04afb8e67c894d8f" category="paragraph">La classificazione non ha un ruolo di amministratore.</block>
+  <block id="6e4131153ef85e6099f1a34150c48c4e" category="paragraph">Puoi utilizzare i seguenti ruoli per assegnare agli utenti l'accesso alla protezione dal ransomware.</block>
+  <block id="bdcfe1c3dfeb861ab87e4cc4b8edc1fc" category="list-text">*Amministratore della protezione ransomware*: Consente di gestire le azioni nelle schede Protect, Alerts, Recover, Settings e Reports.</block>
+  <block id="2342f940e11a97078a40faa46aad14e1" category="list-text">*Visualizzatore protezione ransomware*: Consente di visualizzare i dati del carico di lavoro, visualizzare i dati degli avvisi, scaricare i dati di recupero e scaricare i report.</block>
+  <block id="38af51c4aaeb25c0489791e4bbad2347" category="paragraph">La tabella seguente indica le azioni eseguibili da ogni ruolo di protezione ransomware BlueXP .</block>
+  <block id="a95fe9e5a7b678fa4abc81ea69f1e257" category="cell">Amministratore della protezione dal ransomware</block>
+  <block id="6a05decc7d63f19c1d5812a3c728ce8a" category="cell">Visualizzatore di protezione dal ransomware</block>
+  <block id="b60c44c6bbbb3793d0c08c34cd6e2382" category="cell">Visualizza dashboard e tutte le schede</block>
+  <block id="78c7efbfa07116553a52f59800129dde" category="cell">Inizia la prova gratuita</block>
+  <block id="42174d568723a8694dc7e6dfd143cb12" category="cell">Avvia il rilevamento dei carichi di lavoro</block>
+  <block id="26548eb85488e3cdc0f0b9b27802995f" category="cell">*Nella scheda protezione*:</block>
+  <block id="0ceaa792ae3f25d0f79dcd1125e9284e" category="cell">Aggiungere, modificare o eliminare i criteri</block>
+  <block id="bf4011ddd9ae5a6521f75843972999ab" category="cell">Proteggere i carichi di lavoro</block>
+  <block id="21a74bcaa4f6aef211c1ce1e13ed98fe" category="cell">Identificazione dei dati sensibili</block>
+  <block id="c102bfc829ed11fa589522aa305984a3" category="cell">Modificare la protezione del carico di lavoro</block>
+  <block id="d1e541a95d5060702dc6153a411c6c35" category="cell">Visualizzare i dettagli del carico di lavoro</block>
+  <block id="4330b42a340140b836c42bbe9c7105be" category="cell">Scaricare i dati</block>
+  <block id="b1e60ac72e50f485ca0a5ea9c82143d2" category="cell">*Nella scheda Avvisi*:</block>
+  <block id="9f64c529078a13eebc43993d1ac578d4" category="cell">Visualizzare i dettagli degli avvisi</block>
+  <block id="f700fad2259a25a87fbe56ba2810e8ff" category="cell">Modifica stato incidente</block>
+  <block id="ef9988f85b068b8709daa3be2c31fca3" category="cell">Visualizzare i dettagli dell'incidente</block>
+  <block id="38de1b212ca13fa4c230f4c20adbb48a" category="cell">Ottieni l'elenco completo dei file interessati</block>
+  <block id="4b1b2c63b979feafab4b35d6b2307876" category="cell">Scarica i dati degli avvisi</block>
+  <block id="b338bf8c8e0fbc61d8a0fad3b4a74e35" category="cell">*Nella scheda Recupera*:</block>
+  <block id="f5f949f53a00b2da6ffa7a9f7a0fd0f8" category="cell">Scaricare i file interessati</block>
+  <block id="65ca8041cc328ebb64db5f8368a9101a" category="cell">Ripristina il workload</block>
+  <block id="4ebc1406711ca6754873e22a81f31c6f" category="cell">Scaricare i dati di ripristino</block>
+  <block id="a4f2411faacb07693dd051a3d2d9f97e" category="cell">*Nella scheda Impostazioni*:</block>
+  <block id="988c84a947938e98e39deda3665fae89" category="cell">Aggiungere o modificare le destinazioni di backup</block>
+  <block id="08fec10c338548595a28b0310a1c0600" category="cell">Aggiungere o modificare target SIEM</block>
+  <block id="1ed006cd78ff9bf590a02c6fc268141f" category="cell">*Nella scheda rapporti*:</block>
+  <block id="4d2ba7b1416b46d72e4a391ee901ec54" category="paragraph">SnapCenter non ha un ruolo di spettatore.</block>
 </blocks>
