@@ -14,7 +14,7 @@ summary: 'Per installare manualmente il connettore sul proprio host Linux, è ne
 
 
 [role="lead"]
-Un connettore è il software NetApp eseguito nella tua rete cloud o sulla rete on-premise che ti permette di utilizzare tutte le funzionalità e i servizi BlueXP . Una delle opzioni di installazione disponibili consiste nell'installare manualmente il software Connector su un host Linux in esecuzione in Google Cloud. Per installare manualmente il connettore sul proprio host Linux, è necessario rivedere i requisiti dell'host, configurare la rete, preparare le autorizzazioni di Google Cloud, abilitare le API, installare il connettore e quindi fornire le autorizzazioni preparate.
+È possibile installare manualmente q Connector su un host Linux in esecuzione in Google Cloud. Per installare manualmente il connettore sul proprio host Linux, è necessario rivedere i requisiti dell'host, configurare la rete, preparare le autorizzazioni di Google Cloud, abilitare le API, installare il connettore e quindi fornire le autorizzazioni preparate.
 
 .Prima di iniziare
 * Si dovrebbe avere un link:concept-connectors.html["Informazioni sui connettori"].

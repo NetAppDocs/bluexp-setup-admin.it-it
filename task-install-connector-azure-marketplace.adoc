@@ -14,7 +14,7 @@ summary: Per creare un connettore da Azure Marketplace, è necessario configurar
 
 
 [role="lead"]
-Un connettore è il software NetApp eseguito nella tua rete cloud o sulla rete on-premise che ti permette di utilizzare tutte le funzionalità e i servizi BlueXP . Una delle opzioni di installazione disponibili consiste nella creazione di un connettore in Azure direttamente da Azure Marketplace. Per creare un connettore da Azure Marketplace, è necessario configurare la rete, preparare le autorizzazioni di Azure, rivedere i requisiti delle istanze e quindi creare il connettore.
+Puoi creare un connettore in Azure direttamente da Azure Marketplace. Per creare un connettore da Azure Marketplace, è necessario configurare la rete, preparare le autorizzazioni di Azure, rivedere i requisiti delle istanze e quindi creare il connettore.
 
 .Prima di iniziare
 * Si dovrebbe avere un link:concept-connectors.html["Informazioni sui connettori"].

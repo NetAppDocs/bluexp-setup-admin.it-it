@@ -14,7 +14,7 @@ summary: 'Installa un connettore on-premise, quindi effettua l"accesso e configu
 
 
 [role="lead"]
-Un connettore è il software NetApp eseguito nella tua rete cloud o sulla rete on-premise che ti permette di utilizzare tutte le funzionalità e i servizi BlueXP . Per eseguire il connettore on-premise, devi rivedere i requisiti degli host, configurare la rete, preparare le autorizzazioni cloud, installare il connettore, configurare il connettore e quindi fornire le autorizzazioni preparate.
+È possibile installare un connettore su uno dei computer locali. Per eseguire il connettore on-premise, devi rivedere i requisiti degli host, configurare la rete, preparare le autorizzazioni cloud, installare il connettore, configurare il connettore e quindi fornire le autorizzazioni preparate.
 
 .Prima di iniziare
 * Si dovrebbe avere un link:concept-connectors.html["Informazioni sui connettori"].
