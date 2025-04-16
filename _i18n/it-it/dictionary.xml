@@ -4893,7 +4893,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">A questo punto, la versione 3.9.51 è disponibile per la modalità standard e la modalità limitata.</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">Gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP </block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">14 aprile 2025</block>
-  <block id="38469cab8f7065ff2b3a663e28381c62" category="list-text">Agli utenti senza l'amministratore di Org, la cartella o l'amministratore del progetto devono essere assegnati un ruolo di protezione dal ransomware per avere accesso alla protezione dal ransomware. Puoi assegnare a un utente uno di due ruoli: Amministratore della protezione ransomware o visualizzatore di protezione ransomware.</block>
   <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">Agli utenti senza l'amministratore Org, la cartella o l'amministratore del progetto deve essere assegnato un ruolo Keystone per avere accesso a Keystone. Puoi assegnare a un utente uno dei due ruoli: Amministratore Keystone o visualizzatore Keystone.</block>
   <block id="d4d44165c3ece93b64c24e52e61879a3" category="list-text">Se si dispone del ruolo di amministratore Org, cartella o amministratore progetto, è ora possibile associare un abbonamento Keystone a un progetto IAM. L'associazione di un abbonamento Keystone a un progetto IAM consente di controllare l'accesso a Keystone all'interno di BlueXP .</block>
   <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">28 marzo 2025</block>
@@ -5038,4 +5037,5 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="08fec10c338548595a28b0310a1c0600" category="cell">Aggiungere o modificare target SIEM</block>
   <block id="1ed006cd78ff9bf590a02c6fc268141f" category="cell">*Nella scheda rapporti*:</block>
   <block id="4d2ba7b1416b46d72e4a391ee901ec54" category="paragraph">SnapCenter non ha un ruolo di spettatore.</block>
+  <block id="198726f3c4a7290d3254fd163158a5d0" category="list-text">Agli utenti senza l'amministratore di Org, la cartella o l'amministratore del progetto devono essere assegnati un ruolo di protezione dal ransomware per avere accesso alla protezione dal ransomware. Puoi assegnare a un utente uno di due ruoli: Amministratore della protezione ransomware o visualizzatore di protezione ransomware.</block>
 </blocks>
