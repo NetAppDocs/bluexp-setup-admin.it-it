@@ -71,8 +71,6 @@ Si noti che gli endpoint elencati di seguito sono tutte le voci CNAME.
 
 | fornire funzionalità e servizi SaaS all'interno di BlueXP.
 
-Tenere presente che il connettore sta contattando "cloudmanager.cloud.netapp.com", ma inizierà a contattare "api.bluexp.netapp.com" in una versione successiva.
-
 A| scegliere tra due serie di endpoint:
 
 * Opzione 1 (consigliata) ^1^

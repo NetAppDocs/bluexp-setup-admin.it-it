@@ -87,8 +87,6 @@ Per ottenere informazioni sulle licenze e inviare messaggi AutoSupport al suppor
  a| 
 Fornire funzionalità e servizi SaaS all'interno di BlueXP.
 
-Tenere presente che il connettore sta contattando "cloudmanager.cloud.netapp.com", ma inizierà a contattare "api.bluexp.netapp.com" in una versione successiva.
-
 
 
  a| 
