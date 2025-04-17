@@ -159,7 +159,7 @@ image:screenshot-iam-member-access.png["Una schermata della pagina Modifica prog
 
 Modificare l'accesso dei membri a una cartella o a un progetto per assicurarsi che i membri giusti abbiano accesso alle risorse associate alla cartella o al progetto.
 
-Se l'accesso ai membri è stato fornito a un livello superiore della gerarchia (a livello di cartella o organizzazione), non è possibile rimuovere o modificare l'accesso ai membri durante la visualizzazione della cartella o del progetto di livello inferiore. È necessario passare a quella parte della gerarchia e aggiornare le autorizzazioni del membro. In alternativa, è possibile link:task-iam-manage-members-permissions.html#manage-permissions["Gestire le autorizzazioni dalla pagina membri"].
+Se l'accesso ai membri è stato fornito a un livello superiore della gerarchia (a livello di cartella o organizzazione), non è possibile rimuovere o modificare l'accesso ai membri durante la visualizzazione della cartella o del progetto di livello inferiore. È necessario passare a quella parte della gerarchia e aggiornare le autorizzazioni del membro. In alternativa, è possibile link:task-iam-manage-roles.html#manage-permissions["Gestire le autorizzazioni dalla pagina membri"].
 
 link:concept-identity-and-access-management.html#role-inheritance["Ulteriori informazioni sull'ereditarietà dei ruoli"].
 

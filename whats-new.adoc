@@ -1840,15 +1840,11 @@ link:task-managing-netapp-accounts.html#create-and-manage-service-accounts["Scop
 
 Ora puoi consentire anteprime private nel tuo account per accedere ai nuovi servizi cloud di NetApp man mano che vengono resi disponibili come anteprima in Cloud Manager.
 
-link:task-managing-netapp-accounts.html#allow-private-previews["Scopri di più su questa opzione"].
-
 
 
 === Servizi di terze parti
 
 Puoi anche consentire ai servizi di terze parti del tuo account di accedere ai servizi di terze parti disponibili in Cloud Manager.
-
-link:task-managing-netapp-accounts.html#allow-third-party-services["Scopri di più su questa opzione"].
 
 
 
