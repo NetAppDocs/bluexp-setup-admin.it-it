@@ -14,13 +14,13 @@ summary: 'La gestione delle identità e degli accessi di BlueXP  include divers
 
 
 [role="lead"]
-BlueXP  Identity and Access Management (IAM) include diversi ruoli predefiniti che è possibile assegnare ai membri dell'organizzazione in diversi livelli della gerarchia delle risorse. Prima di assegnare questi ruoli, è necessario comprendere le autorizzazioni incluse in ciascun ruolo. I ruoli rientrano in due categorie: Piattaforma e servizio dati.
+BlueXP  Identity and Access Management (IAM) include diversi ruoli predefiniti che è possibile assegnare ai membri dell'organizzazione in diversi livelli della gerarchia delle risorse. Prima di assegnare questi ruoli, è necessario comprendere le autorizzazioni incluse in ciascun ruolo. I ruoli rientrano nelle seguenti categorie: Piattaforma, applicazione e servizio dati.
 
 
 
 == Ruoli della piattaforma
 
-I ruoli della piattaforma sono i ruoli più ampi che è possibile assegnare agli utenti e consentire ampie autorizzazioni per l'amministrazione di BlueXP , tra cui l'assegnazione di ruoli e l'aggiunta di utenti, nonché la possibilità di eseguire tutte le funzioni di BlueXP . BlueXP  IAM include due ruoli di piattaforma: Amministratore dell'organizzazione e cartella o Amministratore del progetto. La principale differenza tra i due ruoli della piattaforma BlueXP  IAM è l'ambito.
+I ruoli della piattaforma sono i ruoli più ampi che puoi assegnare agli utenti e consentire tutte le autorizzazioni per l'amministrazione BlueXP, inclusa l'assegnazione di ruoli e l'aggiunta di utenti. Gli utenti con ruoli della piattaforma hanno accesso a tutti i servizi dati e le applicazioni all'interno di BlueXP . BlueXP  IAM include due ruoli di piattaforma: Amministratore dell'organizzazione e cartella o Amministratore del progetto. La principale differenza tra i due ruoli della piattaforma BlueXP  IAM è l'ambito.
 
 
 
@@ -32,7 +32,7 @@ Consente a un utente di accedere senza restrizioni a tutti i progetti e le carte
 
 === Amministratore cartella o progetto
 
-Consente a un utente di accedere senza restrizioni a progetti e cartelle specifici a cui sono assegnati. Può aggiungere membri ai progetti o alle cartelle che gestiscono, nonché eseguire qualsiasi attività BlueXP  e utilizzare qualsiasi servizio dati all'interno della cartella o del progetto a cui sono assegnati.
+Consente a un utente di accedere senza restrizioni a progetti e cartelle specifici a cui sono assegnati. Può aggiungere membri alle cartelle o ai progetti gestiti, nonché eseguire qualsiasi attività BlueXP  e utilizzare qualsiasi servizio dati o applicazione sulle risorse all'interno della cartella o del progetto a cui sono assegnati.
 
 Il ruolo di amministratore cartella o progetto non può creare connettori.
 
@@ -42,7 +42,7 @@ Il ruolo di amministratore cartella o progetto non può creare connettori.
 
 [cols="24,19,19"]
 |===
-| Attività | Amministratore dell'organizzazione | Cartella o Amministratore progetto 
+| Attività | Amministratore dell'organizzazione | Amministratore cartella o progetto 
 
 
 | Creare connettori | Sì | No 
@@ -51,10 +51,10 @@ Il ruolo di amministratore cartella o progetto non può creare connettori.
 | Creare, modificare o eliminare ambienti di lavoro (aggiungere o rilevare nuove risorse utilizzando BlueXP  Canvas) | Sì | Sì 
 
 
-| Creare progetti/cartelle, compresa l'eliminazione | Sì | No 
+| Creare cartelle e progetti, compresa l'eliminazione | Sì | No 
 
 
-| Rinominare progetti/cartelle esistenti | Sì | Sì 
+| Rinominare le cartelle e i progetti esistenti | Sì | Sì 
 
 
 | Assegnare ruoli e aggiungere utenti | Sì | Sì 
@@ -63,13 +63,13 @@ Il ruolo di amministratore cartella o progetto non può creare connettori.
 | Associare le risorse alle cartelle e ai progetti | Sì | Sì 
 
 
-| Associare i connettori a cartelle e progetti | Sì | No 
+| Associa i connettori a cartelle e progetti | Sì | No 
 
 
 | Rimuovere i connettori da cartelle e progetti | Sì | No 
 
 
-| Gestire i connettori (modificare i certificati, le impostazioni e così via) | Sì | No 
+| Gestisci connettori (modifica certificati, impostazioni e così via) | Sì | No 
 
 
 | Gestire le credenziali da Impostazioni > credenziali | Sì | Sì 
@@ -97,7 +97,7 @@ Una volta completata la configurazione iniziale, gli amministratori regionali co
 
 == Ruoli applicazione
 
-Di seguito è riportato un elenco dei ruoli nella categoria applicazione.
+Di seguito è riportato un elenco dei ruoli nella categoria dell'applicazione. Ogni ruolo concede autorizzazioni specifiche all'interno dell'ambito designato. Gli utenti che non dispongono del ruolo richiesto dell'applicazione o di un ruolo della piattaforma non potranno accedere all'applicazione.
 
 
 
@@ -129,14 +129,14 @@ Sì
 3+| *Pagina di iscrizione Keystone*: 
 
 
-| Può visualizzare le sottoscrizioni  a| 
+| Visualizzare le iscrizioni  a| 
 Sì
  a| 
 Sì
 
 
 
-| Può modificare o rinnovare gli abbonamenti  a| 
+| Modificare o rinnovare gli abbonamenti  a| 
 Sì
  a| 
 No
@@ -228,7 +228,7 @@ No
 
 
 
-| Può visualizzare la richiesta di servizio creata da qualsiasi utente all'interno dell'organizzazione  a| 
+| Richieste di servizio CView create da qualsiasi utente all'interno dell'organizzazione  a| 
 Sì
  a| 
 Sì
@@ -236,9 +236,9 @@ Sì
 |===
 
 
-== Ruoli nei servizi dati
+== Ruoli servizi dati
 
-Di seguito è riportato l'elenco dei ruoli nella categoria servizi dati.
+Di seguito è riportato un elenco dei ruoli nella categoria del servizio dati. Ogni ruolo concede autorizzazioni specifiche all'interno dell'ambito designato. Gli utenti che non hanno il ruolo di servizio dati richiesto o un ruolo di piattaforma non potranno accedere al servizio dati.
 
 
 
