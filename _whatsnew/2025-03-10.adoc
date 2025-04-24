@@ -8,6 +8,12 @@
 
 Questa versione di BlueXP Connector include piccoli miglioramenti alla sicurezza e correzioni di bug.
 
+* La gestione dei sistemi Cloud Volumes ONTAP è ora supportata dai connettori che hanno SELinux abilitato sul sistema operativo.
++
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["Ulteriori informazioni su SELinux"^]
+
+
+
 A questo punto, la versione 3.9.50 è disponibile per la modalità standard e la modalità limitata.
 
 

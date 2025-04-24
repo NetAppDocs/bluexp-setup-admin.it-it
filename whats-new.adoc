@@ -82,6 +82,12 @@ Per ulteriori informazioni sulla modalità privata, inclusa la modalità di aggi
 
 Questa versione di BlueXP Connector include piccoli miglioramenti alla sicurezza e correzioni di bug.
 
+* La gestione dei sistemi Cloud Volumes ONTAP è ora supportata dai connettori che hanno SELinux abilitato sul sistema operativo.
++
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["Ulteriori informazioni su SELinux"^]
+
+
+
 A questo punto, la versione 3.9.50 è disponibile per la modalità standard e la modalità limitata.
 
 
@@ -125,6 +131,31 @@ Questa funzione è disponibile nella versione del connettore 3.9.48 e successive
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Scopri come disattivare l'aggiornamento automatico per il connettore."^]
 
+
+
+== 18 febbraio 2025
+
+
+
+=== Rilascio in modalità privata (3,9.48)
+
+È ora disponibile una nuova versione in modalità privata da scaricare da https://mysupport.netapp.com/site/downloads["Sito di supporto NetApp"^]
+
+La versione 3.9.48 include aggiornamenti ai seguenti componenti e servizi BlueXP .
+
+[cols="3*"]
+|===
+| Componente o servizio | Versione inclusa in questa release | Cambia dalla precedente versione in modalità privata 
+
+
+| Connettore | 3.9.48 | Andare a https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-48["Novità della pagina BlueXP  Connector"] e fare riferimento alle modifiche incluse per le versioni 3,9.48. 
+
+
+| Backup e recovery | 21 febbraio 2025 | Visitare il https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Novità della pagina di backup e ripristino di BlueXP"^] e fare riferimento alle modifiche incluse nella versione di febbraio 2025. 
+
+
+| Classificazione | 22 gennaio 2025 (versione 1,39) | Andare a https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Novità della pagina di classificazione BlueXP"^] e fare riferimento alle modifiche incluse nella versione 1,39. 
+|===
 
 
 == 10 febbraio 2025
