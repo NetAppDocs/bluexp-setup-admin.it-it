@@ -95,7 +95,7 @@ Per motivi di sicurezza, è necessario aggiornare le credenziali NSS ogni 90 gio
 
 Le credenziali scadute possono interrompere quanto segue, ma non si limitano a:
 
-* aggiornamenti delle licenze nel portafoglio digitale, il che significa che non potrai sfruttare la capacità appena acquistata.
+* Aggiornamenti delle licenze nel portafoglio digitale, il che significa che non potrai sfruttare la capacità appena acquistata.
 * Possibilità di inviare e tenere traccia dei casi di supporto.
 
 
