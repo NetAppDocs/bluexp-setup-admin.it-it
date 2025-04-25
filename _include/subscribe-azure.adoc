@@ -8,9 +8,6 @@
 +
 Selezionare le credenziali associate a un connettore. Non puoi associare un abbonamento al marketplace alle credenziali associate a BlueXP.
 
-+
-image:screenshot_azure_add_subscription.png["Schermata del menu delle azioni per un set di credenziali esistenti."]
-
 . Per associare le credenziali a un abbonamento esistente, selezionare l'abbonamento dall'elenco a discesa e selezionare *Configura*.
 . Per associare le credenziali a un nuovo abbonamento, selezionare *Aggiungi abbonamento > continua* e seguire la procedura in Azure Marketplace:
 +
