@@ -35,9 +35,6 @@ _silent_ esegue lo script senza richiedere conferma.
 
 
 
-.Risultato
-Il software del connettore è ora disinstallato dall'host Linux.
-
 
 
 == Disinstallare il connettore quando si utilizza la modalità privata
@@ -48,13 +45,31 @@ Se utilizzi BlueXP in modalità privata (in altre parole, l'host del connettore 
 . Connettersi alla macchina virtuale Linux per il connettore.
 . Dall'host Linux, eseguire i seguenti comandi:
 +
-`/opt/application/netapp/ds/cleanup.sh`
-`rm -rf /opt/application/netapp/ds`
+[source, cli]
+----
+/opt/application/netapp/ds/cleanup.sh
+rm -rf /opt/application/netapp/
+----
+. Dall'host Linux, rimuovere i vecchi file di immagine del contenitore ora inutilizzati. Ciò garantisce che vi sia spazio sufficiente nella directory /var per la reinstallazione.
++
+[role="tabbed-block"]
+====
+.Podman
+--
+[source, cli]
+----
+podman system prune --all
+----
+--
+.Docker
+--
+[source, cli]
+----
+docker system prune -a
+----
+--
+====
 
-
-
-.Risultato
-Il software del connettore è ora disinstallato dall'host Linux.
 
 
 
@@ -77,6 +92,3 @@ image:screenshot_connector_remove.gif["Una schermata del widget Connector in cui
 
 . Inserire il nome del connettore da confermare, quindi selezionare *Remove* (Rimuovi).
 
-
-.Risultato
-BlueXP rimuove il connettore dai record.

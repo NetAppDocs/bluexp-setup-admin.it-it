@@ -189,7 +189,7 @@ link:task-upgrade-connector.html["Informazioni su come aggiornare manualmente il
 
 == Manutenzione del sistema operativo e delle macchine virtuali
 
-La manutenzione del sistema operativo sull'host del connettore è responsabilità dell'utente. Ad esempio, è necessario applicare gli aggiornamenti per la protezione al sistema operativo sull'host del connettore seguendo le procedure standard dell'azienda per la distribuzione del sistema operativo.
+La manutenzione del sistema operativo sull'host del connettore è responsabilità del cliente. Ad esempio, il cliente deve applicare gli aggiornamenti per la protezione al sistema operativo sull'host del connettore seguendo le procedure standard dell'azienda per la distribuzione del sistema operativo.
 
 Tenere presente che non è necessario interrompere alcun servizio sull'host del connettore quando si applicano aggiornamenti di protezione minori.
 
