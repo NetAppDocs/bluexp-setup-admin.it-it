@@ -1,0 +1,310 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-storage-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
+summary: 'La gestione delle identità e degli accessi di BlueXP  fornisce due ruoli amministrativi che è possibile assegnare ai membri dell"organizzazione.' 
+---
+= Ruoli di accesso allo storage per BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile assegnare i seguenti ruoli agli utenti per fornire loro accesso alle funzionalità di gestione dello storage in BlueXP  associate a risorse di storage supportate. Agli utenti può essere assegnato un ruolo di amministratore che consente loro di intervenire nella gestione dello storage o un ruolo di spettatore se hanno solo responsabilità di monitoraggio.
+
+È possibile assegnare ruoli allo storage agli utenti per le seguenti risorse e caratteristiche:
+
+Risorse di storage:
+
+* Cluster ONTAP on-premise
+* StorageGRID
+* E-Series
+
+
+Funzionalità e servizi BlueXP :
+
+* Consulente digitale
+* Aggiornamenti software
+* Resilienza operativa
+* Efficienza economica
+* Sostenibilità
+
+
+.Esempio per ruoli storage in BlueXP 
+XYZ Corporation, una multinazionale, ha un grande team di ingegneri dello storage e amministratori dello storage. Vogliono fornire a questo team gli strumenti per gestire le risorse storage per le rispettive regioni, ma limitano l'accesso alle attività di amministrazione principali di BlueXP  come la gestione degli utenti, la creazione di connettori e strumenti di gestione dei costi come il Digital Wallet.
+
+All'interno di un team di 12, a due utenti viene assegnato il ruolo *Visualizzatore archiviazione* che consente loro di monitorare le risorse di archiviazione associate ai progetti BlueXP  a cui sono assegnati. Gli altri nove ricoprono il ruolo di *amministratore dello storage*, che include la possibilità di gestire gli aggiornamenti software, accedere a ONTAP System Manager tramite BlueXP  e rilevare le risorse di storage (aggiungere ambienti di lavoro). A una persona del team viene assegnato il ruolo *System Health Specialist* in modo che possa gestire lo stato delle risorse di storage nella propria regione, senza modificare o eliminare alcun ambiente di lavoro. Questa persona può inoltre eseguire aggiornamenti software sulle risorse di archiviazione per i progetti assegnati.
+
+L'organizzazione dispone di due utenti aggiuntivi con il ruolo di amministratore dell'organizzazione* che possono gestire tutti gli aspetti di BlueXP , tra cui la gestione degli utenti, la creazione di connettori e strumenti di gestione dei costi come il portafoglio digitale, oltre a diversi utenti con il ruolo di amministratore *cartella o progetto* che possono eseguire attività di amministrazione BlueXP  per le cartelle e i progetti a cui sono assegnati.
+
+Nella tabella seguente vengono indicate le azioni eseguibili da ciascun ruolo storage BlueXP .
+
+[cols="40,20a,20a,20a"]
+|===
+| Funzione e azione | Amministratore dello storage | Specialista di salute del sistema | Visualizzatore di archiviazione 
+
+
+4+| *Tela*: 
+
+
+| Scoprire nuove risorse (creare un nuovo ambiente di lavoro)  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+
+
+
+| Visualizzare le risorse rilevate  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+
+
+
+| Eliminare gli ambienti di lavoro  a| 
+Sì
+ a| 
+No
+ a| 
+No
+
+
+
+| Modificare gli ambienti di lavoro  a| 
+Sì
+ a| 
+No
+ a| 
+No
+
+
+
+| *Crea connettore*  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+4+| *Consulente digitale* 
+
+
+| Visualizzare tutte le pagine e le funzioni  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+4+| *Portafoglio digitale* 
+
+
+| Visualizzare tutte le pagine e le funzioni  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+4+| *Aggiornamenti software* 
+
+
+| Visualizza la landing page e i consigli  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+| Esaminate le potenziali raccomandazioni sulla versione e i vantaggi principali  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+| Consente di visualizzare i dettagli dell'aggiornamento di un cluster  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+| Eseguire controlli pre-aggiornamento e scaricare il piano di aggiornamento  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+| Installare gli aggiornamenti software  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+
+
+
+4+| *Resilienza operativa* 
+
+
+| Esaminare i problemi di rischio per la sicurezza  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+| Scarica i playbook Ansible  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+
+
+
+| Risolvere i problemi automaticamente  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+
+
+
+4+| *Efficienza economica* 
+
+
+| Esaminare lo stato della pianificazione della capacità  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+| Scegli l'azione successiva (Best practice, livello)  a| 
+Sì
+ a| 
+No
+ a| 
+No
+
+
+
+| Tier cold data to cloud storage e liberare storage  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+
+
+
+| Impostare i promemoria  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+4+| *Sostenibilità* 
+
+
+| Visualizza dashboard e consigli  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+| Scaricare i dati del report  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+| Modificare la percentuale di attenuazione del carbonio  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+
+
+
+| Suggerimenti per la riparazione  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+
+
+
+| Rinviare le raccomandazioni  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+
+
+
+4+| *Accesso a Gestione di sistema* 
+
+
+| È possibile immettere le credenziali  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+
+
+
+4+| *Credenziali* 
+
+
+| Credenziali dell'utente  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+
+|===

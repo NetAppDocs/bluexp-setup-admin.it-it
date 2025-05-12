@@ -1,0 +1,23 @@
+= Connettore 3.9.52
+:allow-uri-read: 
+
+
+
+
+=== Connettore 3.9.52
+
+Questa versione di BlueXP  Connector include piccoli miglioramenti alla sicurezza e correzioni di bug, oltre ad alcuni aggiornamenti aggiuntivi.
+
+A questo punto, la versione 3.9.52 è disponibile per la modalità standard e la modalità limitata.
+
+
+
+==== Supporto di Docker 27 e Docker 28
+
+Docker 27 e Docker 28 sono ora supportati con il connettore.
+
+
+
+=== Amministrazione Keystone disponibile in BlueXP 
+
+La versione beta di NetApp Keystone in BlueXP  ha aggiunto l'accesso all'amministrazione Keystone. È possibile accedere alla pagina di registrazione per NetApp Keystone beta dalla barra di navigazione a sinistra di BlueXP .

@@ -1,0 +1,186 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-ransomware-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
+summary: 'La gestione delle identità e degli accessi di BlueXP  fornisce due ruoli amministrativi che è possibile assegnare ai membri dell"organizzazione.' 
+---
+= Ruoli di accesso alla protezione dal ransomware per BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+I ruoli ransomware sono progettati per fornire accesso al servizio di protezione dal ransomware. Agli utenti può essere assegnato un ruolo amministrativo che consente loro di intervenire nella protezione dal ransomware o un ruolo di spettatore se si limitano a svolgere responsabilità di monitoraggio. I due ruoli sono: Amministratore di protezione ransomware e visualizzatore di protezione ransomware. La differenza principale tra i due ruoli consiste nelle azioni che possono intraprendere nella protezione ransomware.
+
+La tabella seguente indica le azioni eseguibili da ogni ruolo di protezione ransomware BlueXP .
+
+[cols="40,20a,20a"]
+|===
+| Funzione e azione | Amministratore della protezione dal ransomware | Visualizzatore di protezione dal ransomware 
+
+
+| Visualizza dashboard e tutte le schede  a| 
+Sì
+ a| 
+Sì
+
+
+
+| Inizia la prova gratuita  a| 
+Sì
+ a| 
+No
+
+
+
+| Avvia il rilevamento dei carichi di lavoro  a| 
+Sì
+ a| 
+No
+
+
+
+3+| *Nella scheda protezione*: 
+
+
+| Aggiungere, modificare o eliminare i criteri  a| 
+Sì
+ a| 
+No
+
+
+
+| Proteggere i carichi di lavoro  a| 
+Sì
+ a| 
+No
+
+
+
+| Identificazione dei dati sensibili  a| 
+Sì
+ a| 
+No
+
+
+
+| Modificare la protezione del carico di lavoro  a| 
+Sì
+ a| 
+No
+
+
+
+| Visualizzare i dettagli del carico di lavoro  a| 
+Sì
+ a| 
+Sì
+
+
+
+| Scaricare i dati  a| 
+Sì
+ a| 
+Sì
+
+
+
+3+| *Nella scheda Avvisi*: 
+
+
+| Visualizzare i dettagli degli avvisi  a| 
+Sì
+ a| 
+Sì
+
+
+
+| Modifica stato incidente  a| 
+Sì
+ a| 
+No
+
+
+
+| Visualizzare i dettagli dell'incidente  a| 
+Sì
+ a| 
+Sì
+
+
+
+| Ottieni l'elenco completo dei file interessati  a| 
+Sì
+ a| 
+No
+
+
+
+| Scarica i dati degli avvisi  a| 
+Sì
+ a| 
+Sì
+
+
+
+3+| *Nella scheda Recupera*: 
+
+
+| Scaricare i file interessati  a| 
+Sì
+ a| 
+No
+
+
+
+| Ripristina il workload  a| 
+Sì
+ a| 
+No
+
+
+
+| Scaricare i dati di ripristino  a| 
+Sì
+ a| 
+Sì
+
+
+
+| Scarica i report  a| 
+Sì
+ a| 
+Sì
+
+
+
+3+| *Nella scheda Impostazioni*: 
+
+
+| Aggiungere o modificare le destinazioni di backup  a| 
+Sì
+ a| 
+No
+
+
+
+| Aggiungere o modificare target SIEM  a| 
+Sì
+ a| 
+No
+
+
+
+3+| *Nella scheda rapporti*: 
+
+
+| Scarica i report  a| 
+Sì
+ a| 
+Sì
+
+|===

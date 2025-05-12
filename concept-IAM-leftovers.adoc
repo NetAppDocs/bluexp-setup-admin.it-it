@@ -1,34 +1,8 @@
----
-sidebar: sidebar 
-permalink: concept-identity-and-access-management.html 
-keywords: iam overview, overview, how iam works, iam example, organization, folders, projects, resources, members, roles, permissions, resource hierarchy, identity and access management, access roles, iam 
-summary: 'La gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP  consente di controllare l"accesso alle risorse dell"organizzazione.' 
----
-= Informazioni sulla gestione delle identità e degli accessi di BlueXP 
-:hardbreaks:
+= Organizzazione
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
-[role="lead"]
-La gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP  consente di organizzare e controllare l'accesso alle risorse NetApp. È possibile organizzare le risorse in base alla gerarchia dell'organizzazione. Ad esempio, è possibile organizzare le risorse in base alla posizione geografica, al sito o all'unità aziendale. È quindi possibile assegnare i ruoli IAM ai membri in determinate parti della gerarchia, impedendo così l'accesso alle risorse presenti in altre parti della gerarchia.
-
-BlueXP  IAM sostituisce e migliora le funzionalità precedenti fornite dagli account BlueXP . link:whats-new.html#iam["Ulteriori informazioni sull'introduzione di BlueXP  IAM"].
-
-BlueXP  IAM è supportato quando si utilizza BlueXP  in modalità standard e limitata. Se utilizzi BlueXP  in modalità privata, utilizza un _account_ di BlueXP  per gestire utenti e risorse.
-
-* link:concept-netapp-accounts.html["Scopri di più sugli account BlueXP"]
-* link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"]
-
-
-
-
-== Come funziona BlueXP  IAM
-
-BlueXP  IAM consente di concedere l'accesso alle risorse dell'organizzazione definendo quali membri dispongono delle autorizzazioni per parti specifiche della gerarchia dell'organizzazione. Ad esempio, un membro può disporre delle autorizzazioni di amministratore del progetto per un progetto che dispone di cinque risorse associate.
+Le sezioni seguenti descrivono i diversi componenti dell'utilizzo di IAM in BlueXP .
 
 Quando si utilizza BlueXP  IAM, è possibile gestire i seguenti componenti:
 
@@ -69,8 +43,6 @@ Una _cartella_ consente di raggruppare i progetti correlati e separarli dagli al
 
 Le cartelle possono contenere progetti, altre cartelle o una combinazione di entrambe.
 
-Non è necessario creare cartelle. Sono opzionali.
-
 
 
 === Progetti
@@ -96,7 +68,7 @@ TIP: È inoltre possibile associare un connettore a un'altra cartella o progetto
 
 ==== Quando associare una risorsa a una cartella
 
-È inoltre possibile associare una risorsa a una cartella, ma questa opzione è facoltativa e soddisfa le esigenze di un caso di utilizzo specifico.
+È possibile organizzare le risorse in cartelle quando è necessario separare le responsabilità o le risorse di archiviazione.
 
 Un _amministratore di organizzazione_ potrebbe associare una risorsa a una cartella in modo che un _amministratore di cartella o progetto_ possa quindi associare tale risorsa ai progetti appropriati che risiedono nella cartella.
 
@@ -164,7 +136,7 @@ Progetti:: I ruoli assegnati a livello di progetto vengono ereditati da tutte le
 
 ==== Ruoli di accesso
 
-BlueXP  supporta diversi ruoli predefiniti che è possibile assegnare ai membri dell'organizzazione.
+BlueXP  supporta diversi ruoli di accesso che è possibile assegnare ai membri dell'organizzazione.
 
 link:reference-iam-predefined-roles.html["Ulteriori informazioni sui ruoli di accesso"].
 
@@ -196,57 +168,4 @@ L'associazione di un connettore a una cartella non rende automaticamente accessi
 +
 Un _amministratore di organizzazione_ potrebbe associare un connettore a una cartella in modo che _amministratore di cartella o progetto_ possa decidere di associare quel connettore ai progetti appropriati che risiedono nella cartella.
 
-
-
-
-
-== Esempi di IAM
-
-Gli esempi seguenti mostrano come configurare l'organizzazione.
-
-
-
-=== Organizzazione semplice
-
-Il diagramma seguente mostra un semplice esempio di un'organizzazione che utilizza il progetto predefinito senza cartelle. Un singolo membro gestisce l'intera organizzazione.
-
-image:diagram-iam-example-hierarchy-simple.png["Diagramma concettuale che mostra un'organizzazione con un progetto, risorse associate e un amministratore dell'organizzazione."]
-
-
-
-=== Organizzazione avanzata
-
-Il diagramma seguente mostra un'organizzazione che utilizza le cartelle per organizzare i progetti per ogni posizione geografica dell'azienda. Ogni progetto dispone di una propria serie di risorse associate. I membri includono un amministratore dell'organizzazione e un amministratore per ciascuna cartella dell'organizzazione.
-
-image:diagram-iam-example-hierarchy-advanced.png["Un diagramma concettuale che mostra un'organizzazione con tre cartelle, ciascuna con tre progetti e le risorse associate. Ci sono quattro membri: Un amministratore dell'organizzazione e tre amministratori di cartelle."]
-
-
-
-== Cosa puoi fare con BlueXP  IAM
-
-Gli esempi seguenti descrivono come utilizzare IAM per gestire l'organizzazione BlueXP :
-
-* Assegnare ruoli specifici a membri specifici in modo che possano completare solo le attività richieste.
-* Modificare le autorizzazioni dei membri perché hanno spostato i reparti o perché hanno responsabilità aggiuntive.
-* Rimuovere un utente che ha lasciato l'azienda.
-* Aggiungere cartelle o progetti alla gerarchia poiché una nuova business unit ha aggiunto lo spazio di archiviazione NetApp.
-* Associare una risorsa a un altro progetto perché tale risorsa ha capacità che un altro team può utilizzare.
-* Visualizzare le risorse a cui un membro può accedere.
-* Visualizzare i membri e le risorse associati a un progetto specifico.
-
-
-
-
-== Dove andare
-
-* link:task-iam-get-started.html["Introduzione a BlueXP  IAM"]
-* link:task-iam-manage-folders-projects.html["Organizzare le risorse in BlueXP  con cartelle e progetti"]
-* link:task-iam-manage-members-permissions.html["Gestire i membri BlueXP  e le relative autorizzazioni"]
-* link:task-iam-manage-resources.html["Gestire la gerarchia delle risorse nell'organizzazione BlueXP "]
-* link:task-iam-associate-connectors.html["Associa i connettori a cartelle e progetti"]
-* link:task-iam-switch-organizations-projects.html["Passare da un progetto BlueXP  all'altro e viceversa"]
-* link:task-iam-rename-organization.html["Rinomina la tua organizzazione BlueXP "]
-* link:task-iam-audit-actions-timeline.html["Monitorare o controllare l'attività IAM"]
-* link:reference-iam-predefined-roles.html["Ruoli di accesso a BlueXP"]
-* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["Ulteriori informazioni sull'API per BlueXP  IAM"^]
 
