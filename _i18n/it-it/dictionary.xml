@@ -5039,19 +5039,10 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="7f2befb18aac1f714ed732d436d27957" category="cell"><block ref="7f2befb18aac1f714ed732d436d27957" category="inline-link-macro-rx"></block></block>
   <block id="62263858ac3fcc39efab4f2c55c4b609" category="cell">Consente a un utente di accedere senza restrizioni a progetti e cartelle specifici a cui sono assegnati. Può aggiungere membri alle cartelle o ai progetti gestiti, nonché eseguire qualsiasi attività BlueXP  e utilizzare qualsiasi servizio dati o applicazione sulle risorse all'interno della cartella o del progetto a cui sono assegnati. Il ruolo di amministratore cartella o progetto NON PUÒ creare connettori.</block>
   <block id="ee1afb77ea65d6282a6b2db5ef1c9599" category="cell">Ruolo dell'applicazione</block>
-  <block id="cfc1bf581403883b7597ea57212f92d0" category="cell"><block ref="cfc1bf581403883b7597ea57212f92d0" category="inline-link-macro-rx"></block></block>
   <block id="ff7835459affd6ea09ace7258f1ea831" category="cell">Gli utenti con il ruolo di amministratore Keystone possono creare richieste di servizio. Permette agli utenti di monitorare e visualizzare i consumi, gli asset e le informazioni amministrative all'interno del tenant Keystone a cui accedono.</block>
-  <block id="eee920c46940781b9236f383eb481644" category="cell"><block ref="eee920c46940781b9236f383eb481644" category="inline-link-macro-rx"></block></block>
-  <block id="1457cd573aaf85c5528a52382534d843" category="cell">Gli utenti con il ruolo di visualizzatore Keystone NON POSSONO effettuare richieste di servizio. Permette agli utenti di monitorare e visualizzare i consumi, gli asset e le informazioni amministrative all'interno del tenant Keystone a cui accedono. ////</block>
   <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="inline-link-macro">Amministratore dello storage</block>
-  <block id="1a137246f35bc1bb21510edbe9caad21" category="cell"><block ref="1a137246f35bc1bb21510edbe9caad21" category="inline-link-macro-rx"></block></block>
-  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">Amministrare la salute e le funzioni di governance dello storage, rilevare le risorse di storage e modificare ed eliminare gli ambienti di lavoro esistenti.</block>
   <block id="1d63b1d397254c4d509474883c1cb2b9" category="inline-link-macro">Visualizzatore di archiviazione</block>
-  <block id="59f722e254214ae7991868e178f8311d" category="cell"><block ref="59f722e254214ae7991868e178f8311d" category="inline-link-macro-rx"></block></block>
-  <block id="7276a8e39254ac9c35a2e44a3d09f7ef" category="cell">Vedere le funzioni di salute e governance dello storage e visualizzare le risorse storage scoperte in precedenza. Impossibile rilevare, modificare o eliminare gli ambienti di lavoro storage esistenti.</block>
   <block id="172d68d57647cf0cb58a3cbcac52a80d" category="inline-link-macro">Specialista di salute del sistema</block>
-  <block id="92c9978d93758d2c0ddea09cb5842e0f" category="cell"><block ref="92c9978d93758d2c0ddea09cb5842e0f" category="inline-link-macro-rx"></block></block>
-  <block id="d5ce9b158c00a4469a72ebb1ff919ca7" category="cell">Amministrare le funzioni di storage e salute e governance, tutte le autorizzazioni dell'amministratore dello storage, tranne che non può modificare o eliminare gli ambienti di lavoro esistenti. ////</block>
   <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">Ruolo servizio dati</block>
   <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">Amministratore classificazione</block>
   <block id="951e833c91b111e3d8854609f6e22cd0" category="cell">Consente di visualizzare i risultati delle scansioni di classificazione BlueXP . La classificazione non ha un ruolo di spettatore. Gli utenti con questo ruolo possono visualizzare le informazioni sulla conformità e generare report per le risorse a cui hanno l'autorizzazione di accedere. Questi utenti non possono abilitare o disabilitare la scansione di volumi, bucket o schemi di database.</block>
@@ -5111,4 +5102,7 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="5f04b1505df8c3795b59e8cd4a8e01e3" category="sidebar">Ulteriori informazioni sui ruoli di accesso di BlueXP </block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">Ruoli nei servizi dati</block>
   <block id="0310ff69ee2ad8b9fa1fbf2f23946a8e" category="sidebar">Ruoli di protezione dal ransomware</block>
+  <block id="fae8f53075db25f03200e0538d6a6e22" category="cell"><block ref="fae8f53075db25f03200e0538d6a6e22" category="inline-link-macro-rx"></block></block>
+  <block id="46956ceeec4262cb23c44eb7922de7ec" category="cell"><block ref="46956ceeec4262cb23c44eb7922de7ec" category="inline-link-macro-rx"></block></block>
+  <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">Gli utenti con il ruolo di visualizzatore Keystone NON POSSONO creare richieste di servizio. Permette agli utenti di monitorare e visualizzare i consumi, gli asset e le informazioni amministrative all'interno del tenant Keystone a cui accedono.</block>
 </blocks>

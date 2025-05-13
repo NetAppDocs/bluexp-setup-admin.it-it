@@ -46,19 +46,10 @@ NOTE: L'accesso a Keystone tramite BlueXP  è attualmente in versione beta. Se 
 | Ruolo dell'applicazione | Responsabilità 
 
 
-| link:reference-iam-keystone-roles.html["Amministratore Keystone"] | Gli utenti con il ruolo di amministratore Keystone possono creare richieste di servizio. Permette agli utenti di monitorare e visualizzare i consumi, gli asset e le informazioni amministrative all'interno del tenant Keystone a cui accedono. 
+| link:reference-iam-keystone-roles.html["Amministratore Keystone"^] | Gli utenti con il ruolo di amministratore Keystone possono creare richieste di servizio. Permette agli utenti di monitorare e visualizzare i consumi, gli asset e le informazioni amministrative all'interno del tenant Keystone a cui accedono. 
 
 
-| link:reference-iam-keystone-roles.html["Visualizzatore Keystone"] | Gli utenti con il ruolo di visualizzatore Keystone NON POSSONO effettuare richieste di servizio. Permette agli utenti di monitorare e visualizzare i consumi, gli asset e le informazioni amministrative all'interno del tenant Keystone a cui accedono. //// 
-
-
-| link:reference-iam-storage-roles.html["Amministratore dello storage"] | Amministrare la salute e le funzioni di governance dello storage, rilevare le risorse di storage e modificare ed eliminare gli ambienti di lavoro esistenti. 
-
-
-| link:reference-iam-storage-roles.html["Visualizzatore di archiviazione"] | Vedere le funzioni di salute e governance dello storage e visualizzare le risorse storage scoperte in precedenza. Impossibile rilevare, modificare o eliminare gli ambienti di lavoro storage esistenti. 
-
-
-| link:reference-iam-storage-roles.html["Specialista di salute del sistema"] | Amministrare le funzioni di storage e salute e governance, tutte le autorizzazioni dell'amministratore dello storage, tranne che non può modificare o eliminare gli ambienti di lavoro esistenti. //// 
+| link:reference-iam-keystone-roles.html["Visualizzatore Keystone"^] | Gli utenti con il ruolo di visualizzatore Keystone NON POSSONO creare richieste di servizio. Permette agli utenti di monitorare e visualizzare i consumi, gli asset e le informazioni amministrative all'interno del tenant Keystone a cui accedono. 
 |===
 
 
