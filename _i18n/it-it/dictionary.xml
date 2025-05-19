@@ -5105,4 +5105,7 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="fae8f53075db25f03200e0538d6a6e22" category="cell"><block ref="fae8f53075db25f03200e0538d6a6e22" category="inline-link-macro-rx"></block></block>
   <block id="46956ceeec4262cb23c44eb7922de7ec" category="cell"><block ref="46956ceeec4262cb23c44eb7922de7ec" category="inline-link-macro-rx"></block></block>
   <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">Gli utenti con il ruolo di visualizzatore Keystone NON POSSONO creare richieste di servizio. Permette agli utenti di monitorare e visualizzare i consumi, gli asset e le informazioni amministrative all'interno del tenant Keystone a cui accedono.</block>
+  <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">Gli endpoint sicuri per i download dei connettori sono ora supportati per backup e recovery e protezione dal ransomware</block>
+  <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">Ulteriori informazioni sugli endpoint sicuri per il download dei connettori.</block>
+  <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">Se stai utilizzando backup e recovery o protezione ransomware, ora puoi utilizzare endpoint sicuri per il download dei connettori. <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
 </blocks>
