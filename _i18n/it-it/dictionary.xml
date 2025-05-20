@@ -5108,4 +5108,5 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">Gli endpoint sicuri per i download dei connettori sono ora supportati per backup e recovery e protezione dal ransomware</block>
   <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">Ulteriori informazioni sugli endpoint sicuri per il download dei connettori.</block>
   <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">Se stai utilizzando backup e recovery o protezione ransomware, ora puoi utilizzare endpoint sicuri per il download dei connettori. <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
+  <block id="299e5505ce975112afaefec130cc83e0" category="paragraph">7,9</block>
 </blocks>
