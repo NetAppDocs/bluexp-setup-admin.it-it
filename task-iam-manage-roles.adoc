@@ -14,16 +14,16 @@ summary: La gestione delle identità e degli accessi di BlueXP  consente di rap
 
 
 [role="lead"]
-BlueXP  consente di assegnare ruoli agli utenti in base alle operazioni da eseguire e alla posizione in cui si trovano.
+In BlueXP puoi assegnare ruoli agli utenti in base a cosa devono fare e dove.
 
-Gli utenti con ruoli di amministratore dell'organizzazione, cartella o progetto hanno la responsabilità di assegnare ruoli ad altri utenti. È possibile assegnare ruoli di accesso a progetti o cartelle. Ad esempio, puoi assegnare a un utente il ruolo di amministratore della protezione ransomware per un progetto e il ruolo di amministratore SnapCenter per un progetto diverso. In alternativa, se un utente richiede il ruolo Amministratore classificazione per tutti i progetti all'interno di una cartella specifica, è possibile concedere loro questo ruolo di accesso a livello di cartella.
+Gli utenti con il ruolo di *Amministratore dell'organizzazione* o *Amministratore della cartella o del progetto* hanno la responsabilità di assegnare ruoli ad altri utenti. È possibile assegnare ruoli di accesso a progetti o cartelle. Ad esempio, puoi assegnare a un utente il ruolo di amministratore della protezione ransomware per un progetto e il ruolo di amministratore SnapCenter per un progetto diverso. In alternativa, se un utente richiede il ruolo Amministratore classificazione per tutti i progetti all'interno di una cartella specifica, è possibile concedere loro questo ruolo di accesso a livello di cartella.
 
 Utilizza i ruoli di accesso per assegnare l'accesso alle risorse di storage in base alle attività BlueXP  specifiche che gli utenti devono eseguire. Ad esempio, se un utente BlueXP  deve interagire con i servizi di protezione dal ransomware, deve avere un ruolo di accesso che includa autorizzazioni di visualizzazione o amministrative per il servizio di protezione dal ransomware per il progetto per cui viene concesso il ruolo di accesso.
 
 Assegnare ruoli agli utenti in base alla strategia IAM per una maggiore protezione. I ruoli IAM di BlueXP  sono progettati per garantire che gli utenti abbiano accesso solo a ciò di cui hanno bisogno.
 
 
-NOTE: Ricorda che non puoi concedere direttamente alle risorse. Le risorse devono essere assegnate prima ai progetti. È consigliabile impostare la gerarchia delle risorse prima di assegnare l'accesso agli utenti. link:task-iam-manage-folders-projects.html["Informazioni su come organizzare le risorse in BlueXP  IAM con cartelle e progetti."]
+NOTE: Ricorda che non puoi concedere direttamente l'accesso alle risorse. Le risorse devono essere assegnate prima ai progetti. È consigliabile impostare la gerarchia delle risorse prima di assegnare l'accesso agli utenti. link:task-iam-manage-folders-projects.html["Informazioni su come organizzare le risorse in BlueXP  IAM con cartelle e progetti."]
 
 
 
@@ -41,7 +41,7 @@ Se si dispone del ruolo _cartella o project admin_, nella pagina vengono visuali
 
 == Aggiungere un ruolo di accesso a un membro
 
-In genere, al membro viene assegnato un ruolo quando viene aggiunto all'organizzazione. Tuttavia, è possibile aggiornare il ruolo di un membro in qualsiasi momento rimuovendo un ruolo o aggiungendo un ruolo diverso. È possibile rimuovere l'accesso di un utente a un progetto rimuovendo il suo ruolo.
+In genere, al membro viene assegnato un ruolo quando viene aggiunto all'organizzazione. Tuttavia, puoi aggiornare il ruolo di un membro in qualsiasi momento rimuovendo un ruolo o aggiungendone uno diverso. È possibile rimuovere l'accesso di un utente a un progetto rimuovendo il suo ruolo.
 
 È possibile assegnare a un utente un ruolo di accesso per l'organizzazione, la cartella o il progetto.
 

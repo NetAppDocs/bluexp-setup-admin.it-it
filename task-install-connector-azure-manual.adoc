@@ -138,11 +138,14 @@ A seconda del sistema operativo in uso, prima di installare il connettore è nec
 --
 Per installare Podman e configurarlo in modo che soddisfi i seguenti requisiti, procedere come segue:
 
-* Il servizio podman.socket deve essere attivato e avviato
-* python3 deve essere installato
-* Il pacchetto podman-Compose versione 1.0.6 deve essere installato
-* Podman-compose deve essere aggiunto alla variabile di ambiente PATH
+* Abilita e avvia il servizio podman.socket
+* Installare python3
+* Installa il pacchetto podman-compose versione 1.0.6
+* Aggiungere podman-compose alla variabile d'ambiente PATH
 
+
+
+NOTE: Quando si utilizza Podman, modificare la porta del servizio aardvark-dns (predefinita: 53) dopo l'installazione del connettore per evitare conflitti con la porta DNS sull'host. Seguire le istruzioni per configurare la porta.
 
 .Fasi
 . Rimuovere il pacchetto podman-docker se è installato sull'host.
@@ -723,6 +726,27 @@ Ad esempio:
 +
 --cakert specifica un certificato firmato da CA da utilizzare per l'accesso HTTPS tra il connettore e il server proxy. Questo parametro è necessario solo se si specifica un server proxy HTTPS o se il proxy è un proxy di intercettazione.
 
+. Se hai utilizzato Podman, dovrai modificare la porta aardvark-dns.
++
+.. Eseguire l'SSH sulla macchina virtuale BlueXP Connector.
+.. Aprire il file podman _/usr/share/containers/containers.conf_ e modificare la porta scelta per il servizio DNS di Aardvark. Ad esempio, impostarla su 54.
++
+[source, cli]
+----
+vi /usr/share/containers/containers.conf
+...
+# Port to use for dns forwarding daemon with netavark in rootful bridge
+# mode and dns enabled.
+# Using an alternate port might be useful if other DNS services should
+# run on the machine.
+#
+dns_bind_port = 54
+...
+Esc:wq
+----
+.. Riavviare la macchina virtuale Connector.
+
+
 . Attendere il completamento dell'installazione.
 +
 Al termine dell'installazione, il servizio di connessione (occm) viene riavviato due volte se si specifica un server proxy.
@@ -743,9 +767,6 @@ La modalità limitata deve essere disattivata perché questa procedura descrive 
 
 
 
-
-.Risultato
-Il connettore è ora installato e configurato con l'organizzazione BlueXP .
 
 Se disponi di storage Azure Blob nella stessa iscrizione di Azure in cui hai creato il connettore, visualizzerai automaticamente un ambiente di lavoro dello storage di Azure Blob su BlueXP Canvas. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Scopri come gestire lo storage BLOB di Azure da BlueXP"^]
 

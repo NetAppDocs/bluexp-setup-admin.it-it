@@ -152,11 +152,14 @@ A seconda del sistema operativo in uso, prima di installare il connettore è nec
 --
 Per installare Podman e configurarlo in modo che soddisfi i seguenti requisiti, procedere come segue:
 
-* Il servizio podman.socket deve essere attivato e avviato
-* python3 deve essere installato
-* Il pacchetto podman-Compose versione 1.0.6 deve essere installato
-* Podman-compose deve essere aggiunto alla variabile di ambiente PATH
+* Abilita e avvia il servizio podman.socket
+* Installare python3
+* Installa il pacchetto podman-compose versione 1.0.6
+* Aggiungere podman-compose alla variabile d'ambiente PATH
 
+
+
+NOTE: Quando si utilizza Podman, modificare la porta del servizio aardvark-dns (predefinita: 53) dopo l'installazione del connettore per evitare conflitti con la porta DNS sull'host. Seguire le istruzioni per configurare la porta.
 
 .Fasi
 . Rimuovere il pacchetto podman-docker se è installato sull'host.

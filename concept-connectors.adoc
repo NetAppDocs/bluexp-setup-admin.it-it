@@ -94,14 +94,6 @@ La presente documentazione è disciplinata dall'EULA. Se il prodotto non viene u
 
 
 
-=== Impatto su Cloud Volumes ONTAP
-
-Un connettore è un componente chiave per lo stato e il funzionamento di Cloud Volumes ONTAP. Se un connettore viene spento, i sistemi PAYGO Cloud Volumes ONTAP e i sistemi BYOL basati sulla capacità si arrestano dopo aver perso la comunicazione con un connettore per più di 14 giorni. Questo accade perché il connettore aggiorna le licenze sul sistema ogni giorno.
-
-Se il sistema Cloud Volumes ONTAP dispone di una licenza BYOL basata su nodo, il sistema rimane in esecuzione dopo 14 giorni perché la licenza è installata sul sistema Cloud Volumes ONTAP.
-
-
-
 == Posizioni supportate
 
 Un connettore è supportato nelle seguenti posizioni:

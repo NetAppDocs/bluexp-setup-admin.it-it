@@ -16,6 +16,9 @@ summary: 'La gestione delle identità e degli accessi di BlueXP  fornisce due r
 [role="lead"]
 È possibile assegnare i seguenti ruoli agli utenti per fornire loro accesso alle funzionalità di gestione dello storage in BlueXP  associate a risorse di storage supportate. Agli utenti può essere assegnato un ruolo di amministratore che consente loro di intervenire nella gestione dello storage o un ruolo di spettatore se hanno solo responsabilità di monitoraggio.
 
+
+NOTE: Questi ruoli non sono disponibili nell'API di partnership BlueXP.
+
 È possibile assegnare ruoli allo storage agli utenti per le seguenti risorse e caratteristiche:
 
 Risorse di storage:

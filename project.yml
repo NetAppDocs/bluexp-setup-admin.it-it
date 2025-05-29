@@ -139,6 +139,8 @@ sidebar:
           entries:
           - title: Ruoli Keystone
             url: "/reference-iam-keystone-roles.html"
+          - title: Ruoli di archiviazione
+            url: "/reference-iam-storage.roles.html"
         - title: Ruoli nei servizi dati
           entries:
           - title: Ruoli di protezione dal ransomware
