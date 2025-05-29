@@ -23,7 +23,7 @@ La gestione delle identità e degli accessi (IAM) di BlueXP  consente di organi
 Quando si crea un'organizzazione BlueXP , questa include un singolo progetto. È possibile creare ulteriori progetti per gestire le risorse dell'organizzazione. È possibile, facoltativamente, creare cartelle per raggruppare i progetti correlati.
 
 .A proposito di questa attività
-La profondità della gerarchia delle risorse dell'organizzazione può scendere a 7 livelli. Di conseguenza, è possibile creare cartelle nidificate fino a 6 livelli. L'ultima cartella nidificata può quindi includere i progetti al settimo livello della gerarchia.
+La gerarchia delle risorse della tua organizzazione può avere fino a 7 livelli, con cartelle nidificate fino a 6 livelli e progetti al settimo livello.
 
 L'immagine seguente illustra la profondità massima della gerarchia delle risorse dell'organizzazione:
 
@@ -38,7 +38,7 @@ image:screenshot-iam-max-depth.png["Una schermata che mostra un'organizzazione, 
 ** *Nome e posizione*: Immettere un nome e scegliere una posizione nella gerarchia per la cartella o il progetto. Una cartella o un progetto può risiedere direttamente sotto l'organizzazione o all'interno di una cartella.
 ** *Risorse*: Selezionare le risorse che si desidera associare alla cartella o al progetto.
 +
-È possibile selezionare solo le risorse associate al padre della cartella o del progetto. Se il padre è l'organizzazione, è possibile scegliere una delle risorse dell'organizzazione. Se l'elemento padre è una cartella, è possibile selezionare solo una delle risorse associate alla cartella.
+È possibile selezionare le risorse associate alla cartella o al progetto padre: tutte le risorse per un'organizzazione padre oppure risorse specifiche per una cartella padre.
 
 +
 link:concept-identity-and-access-management.html#associate-resource-folder["Scopri quando è possibile associare una risorsa a una cartella"].
@@ -64,11 +64,11 @@ Se si utilizza l'API BlueXP , potrebbe essere necessario ottenere l'ID per un p
 .Fasi
 . Dalla pagina *Organizzazione*, selezionare un progetto nella tabella e scegliere image:icon-action.png["Un'icona con tre punti affiancati"]
 +
-Viene visualizzato l'ID progetto.
+Il sistema visualizza l'ID del progetto.
 
 . Per copiare l'ID, selezionare il pulsante Copia.
 +
-image:screenshot-iam-project-id.png["Una schermata della tabella cartelle e progetti che mostra l'ID progetto per selezionare il menu azione per un progetto."]
+image:screenshot-iam-project-id.png["Una schermata della tabella cartelle e progetti che mostra l'ID progetto dopo aver selezionato il menu azione per un progetto."]
 
 
 
@@ -124,7 +124,7 @@ image:screenshot-iam-allocated-resources.png["Schermata della pagina Modifica pr
 
 == Modificare le risorse associate a una cartella o a un progetto
 
-È possibile modificare le risorse associate a una cartella o a un progetto associando o disassociando una risorsa. Ad esempio, è possibile associare una risorsa a un altro progetto perché tale risorsa ha capacità che un altro team può utilizzare. Una volta associata una risorsa a una cartella o a un progetto, i membri dell'organizzazione che dispongono delle autorizzazioni per tale cartella o progetto possono accedere alla risorsa associata.
+I membri con autorizzazioni per una cartella o un progetto possono accedere alle risorse associate.
 
 .Prima di iniziare
 link:concept-identity-and-access-management.html#associate-resource-folder["Scopri quando è possibile associare una risorsa a una cartella"].
@@ -157,9 +157,9 @@ image:screenshot-iam-member-access.png["Una schermata della pagina Modifica prog
 
 == Modificare l'accesso dei membri a una cartella o a un progetto
 
-Modificare l'accesso dei membri a una cartella o a un progetto per assicurarsi che i membri giusti abbiano accesso alle risorse associate alla cartella o al progetto.
+Modificare l'accesso dei membri per garantire che solo i membri autorizzati possano accedere alle risorse associate.
 
-Se l'accesso ai membri è stato fornito a un livello superiore della gerarchia (a livello di cartella o organizzazione), non è possibile rimuovere o modificare l'accesso ai membri durante la visualizzazione della cartella o del progetto di livello inferiore. È necessario passare a quella parte della gerarchia e aggiornare le autorizzazioni del membro. In alternativa, è possibile link:task-iam-manage-roles.html#manage-permissions["Gestire le autorizzazioni dalla pagina membri"].
+L'accesso dei membri concesso a un livello gerarchico superiore non può essere modificato ai livelli inferiori. È necessario passare a quella parte della gerarchia e aggiornare le autorizzazioni del membro. In alternativa, è possibile link:task-iam-manage-roles.html#manage-permissions["Gestire le autorizzazioni dalla pagina membri"].
 
 link:concept-identity-and-access-management.html#role-inheritance["Ulteriori informazioni sull'ereditarietà dei ruoli"].
 

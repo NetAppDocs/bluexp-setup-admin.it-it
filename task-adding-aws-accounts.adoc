@@ -235,7 +235,7 @@ Sostituendo l'attuale sottoscrizione al marketplace con una nuova sottoscrizione
 
 
 .Prima di iniziare
-È necessario creare un connettore prima di poter modificare le impostazioni di BlueXP. link:concept-connectors.html#how-to-create-a-connector["Scopri come creare un connettore"].
+È necessario creare un connettore prima di poter modificare le impostazioni di BlueXP. link:concept-connectors.html#connector-installation["Scopri come creare un connettore"].
 
 Il seguente video illustra i passaggi per abbonarsi a BlueXP  dal marketplace AWS:
 

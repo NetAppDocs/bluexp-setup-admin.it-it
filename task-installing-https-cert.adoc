@@ -20,7 +20,7 @@ Quando si utilizza BlueXP  in modalità limitata o privata, l'interfaccia utent
 
 == Prima di iniziare
 
-È necessario creare un connettore prima di poter modificare le impostazioni di BlueXP. link:concept-connectors.html#how-to-create-a-connector["Scopri come creare un connettore"].
+È necessario creare un connettore prima di poter modificare le impostazioni di BlueXP. link:concept-connectors.html#connector-installation["Scopri come creare un connettore"].
 
 
 

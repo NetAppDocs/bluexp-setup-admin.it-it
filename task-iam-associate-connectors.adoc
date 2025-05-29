@@ -22,13 +22,13 @@ summary: 'Se i membri dell"organizzazione devono utilizzare un connettore in un 
 
 
 .Fasi
-. Nella parte superiore destra della console di BlueXP , selezionare image:icon-settings-option.png["L'icona delle impostazioni che viene visualizzata nella parte superiore destra della console Web di BlueXP ."] > *Gestione identità e accessi*.
+. Nella parte superiore destra della console di BlueXP , selezionare image:icon-settings-option.png["Icona delle impostazioni"] > *Gestione identità e accessi*.
 . Selezionare *connettori*.
 . Dalla tabella, individuare il connettore che si desidera associare.
 +
-Per trovare un connettore specifico, è possibile utilizzare la ricerca sopra la tabella e filtrare il contenuto della tabella selezionando una parte specifica della gerarchia delle risorse.
+Utilizza la ricerca sopra la tabella per trovare un connettore specifico o filtra la tabella in base alla gerarchia delle risorse.
 
-. Per visualizzare prima le cartelle e i progetti a cui è associato il connettore, selezionare image:icon-action.png["Un'icona con tre punti affiancati"] e quindi *Visualizza dettagli*.
+. Per visualizzare le cartelle e i progetti collegati al Connettore, selezionare image:icon-action.png["Un'icona con tre punti"] e poi seleziona *Visualizza dettagli*.
 +
 BlueXP  visualizza i dettagli relativi alle cartelle e ai progetti a cui è associato il connettore.
 

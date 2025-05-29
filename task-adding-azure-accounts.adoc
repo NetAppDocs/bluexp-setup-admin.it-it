@@ -284,7 +284,7 @@ Dopo aver fornito un account Azure con le autorizzazioni richieste, è possibile
 Se hai appena creato queste credenziali nel tuo cloud provider, potrebbero essere necessari alcuni minuti prima che siano disponibili per l'utilizzo. Attendere alcuni minuti prima di aggiungere le credenziali a BlueXP.
 
 .Prima di iniziare
-È necessario creare un connettore prima di poter modificare le impostazioni di BlueXP. link:concept-connectors.html#how-to-create-a-connector["Scopri come creare un connettore"].
+È necessario creare un connettore prima di poter modificare le impostazioni di BlueXP. link:concept-connectors.html#connector-installation["Scopri come creare un connettore"].
 
 .Fasi
 . Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
@@ -334,7 +334,7 @@ Sostituendo l'attuale sottoscrizione al marketplace con una nuova sottoscrizione
 
 
 .Prima di iniziare
-È necessario creare un connettore prima di poter modificare le impostazioni di BlueXP. link:concept-connectors.html#how-to-create-a-connector["Scopri come"].
+È necessario creare un connettore prima di poter modificare le impostazioni di BlueXP. link:concept-connectors.html#connector-installation["Scopri come creare un connettore"] .
 
 .Fasi
 . Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
