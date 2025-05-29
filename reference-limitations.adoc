@@ -36,7 +36,7 @@ link:task-configuring-proxy.html["Ulteriori informazioni sull'utilizzo di un ser
 
 BlueXP implementa il connettore con due interfacce che hanno indirizzi IP negli intervalli 172.17.0.0/16 e 172.18.0.0/16.
 
-Se la rete dispone di una subnet configurata con uno di questi intervalli, potrebbero verificarsi errori di connettività da BlueXP. Ad esempio, il rilevamento dei cluster ONTAP on-premise in BlueXP potrebbe non riuscire.
+Se la rete dispone di una subnet configurata con uno di questi intervalli, potrebbero verificarsi errori di connettività da BlueXP. Ad esempio, l'individuazione di cluster ONTAP locali in BlueXP potrebbe non riuscire.
 
 Consultare l'articolo della Knowledge base link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/Cloud_Manager_shows_inactive_as_Connector_IP_range_in_172.x.x.x_conflict_with_docker_network["Conflitto IP del connettore BlueXP con la rete esistente"] Per istruzioni su come modificare l'indirizzo IP delle interfacce del connettore.
 

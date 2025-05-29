@@ -96,7 +96,7 @@ No, non è possibile spostare le risorse di Azure associate al tuo ambiente di l
 
 
 
-=== Come funzionano le credenziali per le implementazioni del marketplace e le implementazioni on-premise?
+=== Come funzionano le credenziali per le distribuzioni sul marketplace e le distribuzioni on-premise?
 
 Le sezioni precedenti descrivono il metodo di implementazione consigliato per il connettore, fornito da BlueXP. È inoltre possibile implementare un connettore in Azure da Azure Marketplace e installare il software del connettore sul proprio host Linux.
 
@@ -109,7 +109,7 @@ Per informazioni su come impostare le autorizzazioni, fare riferimento alle segu
 * Modalità standard
 +
 ** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Impostare le autorizzazioni per un'implementazione di Azure Marketplace"]
-** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Impostare le autorizzazioni per le implementazioni on-premise"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Impostare le autorizzazioni per le distribuzioni in locale"]
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Impostare le autorizzazioni per la modalità limitata"]

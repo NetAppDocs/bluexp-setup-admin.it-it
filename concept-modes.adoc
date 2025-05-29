@@ -166,9 +166,7 @@ Supportato nelle regioni governative con modalità limitata. Non supportato in a
 | Portafoglio digitale | Per la modalità limitata, puoi utilizzare il portafoglio digitale con le opzioni di licenza supportate elencate di seguito. 
 
 
-| Cluster ONTAP on-premise | Sono supportati sia il rilevamento con un connettore che il rilevamento senza un connettore (rilevamento diretto).
-
-Quando si rileva un cluster on-premise con un connettore, la visualizzazione avanzata (System Manager) non è supportata. 
+| Cluster ONTAP on-premise | Sono supportati sia il rilevamento con un connettore che il rilevamento senza un connettore (rilevamento diretto). Quando si rileva un cluster on-premises con un connettore, la visualizzazione avanzata (System Manager) non è supportata. 
 
 
 | Replica | Supportato nelle regioni governative con modalità limitata. Non supportato in aree commerciali o in aree sovrane con modalità limitata. 
@@ -251,7 +249,7 @@ Servizi BlueXP supportati nelle implementazioni cloud:: BlueXP supporta i seguen
 Il rilevamento senza connettore (rilevamento diretto) non è supportato. 
 |===
 --
-Servizi BlueXP supportati nelle implementazioni on-premise:: BlueXP supporta i seguenti servizi di storage e dati con modalità privata quando il connettore viene installato in sede:
+Servizi BlueXP supportati nelle distribuzioni on-premise:: BlueXP supporta i seguenti servizi di storage e dati con modalità privata quando il connettore viene installato in sede:
 +
 --
 [cols="2*"]
@@ -343,7 +341,7 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
 | Storage Google Cloud | No | No 
 
 
-| Cluster ONTAP on-premise | Sì | Sì 
+| Cluster ONTAP on-premises | Sì | Sì 
 
 
 | E-Series | No | No 

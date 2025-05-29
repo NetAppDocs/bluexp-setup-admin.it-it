@@ -79,10 +79,10 @@ BlueXP  include una suite completa di servizi dati integrati per aiutarti a man
 
 Avvisi BlueXP:: Visualizza i problemi di capacità, disponibilità, performance, protezione e sicurezza del tuo ambiente ONTAP.
 Catalogo di automazione BlueXP:: Utilizza soluzioni basate su script per automatizzare l'installazione e l'integrazione di prodotti e servizi NetApp.
-Backup e ripristino BlueXP:: Backup e ripristino di dati on-premise e cloud.
+Backup e ripristino BlueXP:: Esegui il backup e il ripristino dei dati nel cloud e in locale.
 Classificazione BlueXP:: Prepara la privacy dei dati delle applicazioni e degli ambienti cloud.
 Operazioni cloud BlueXP:: Ottieni visibilità sulla spesa per il cloud computing e identifica i potenziali risparmi.
-Copia e sincronizzazione BlueXP:: Sincronizza i dati tra data store on-premise e cloud.
+Copia e sincronizzazione BlueXP:: Sincronizza i dati tra archivi dati locali e cloud.
 BlueXP Digital Advisor:: Utilizza gli analytics predittivi e il supporto proattivo per ottimizzare l'infrastruttura dati.
 Portafoglio digitale BlueXP:: Gestire e monitorare le licenze e le sottoscrizioni.
 Disaster recovery di BlueXP:: Proteggi i workload VMware on-premise utilizzando VMware Cloud su Amazon FSX per ONTAP come sito di disaster recovery.
@@ -92,7 +92,7 @@ Protezione ransomware BlueXP:: Rileva le anomalie che potrebbero causare attacch
 Replica BlueXP:: Replica dei dati tra sistemi storage per supportare backup e disaster recovery.
 Aggiornamenti software BlueXP:: Automatizzare la valutazione, la pianificazione e l'esecuzione degli upgrade ONTAP.
 Dashboard di sostenibilità BlueXP:: Analizza la sostenibilità dei tuoi sistemi storage.
-Tiering BlueXP:: Estendi il tuo storage ONTAP on-premise al cloud.
+Tiering BlueXP:: Estendi il tuo storage ONTAP locale al cloud.
 Caching del volume BlueXP:: Creare un volume cache scrivibile per accelerare l'accesso ai dati o trasferire il traffico dai volumi ad accesso elevato.
 Fabbrica dei carichi di lavoro BlueXP:: Progetta, configura e utilizza i carichi di lavoro chiave con Amazon FSX per NetApp ONTAP.
 

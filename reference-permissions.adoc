@@ -184,7 +184,7 @@ Quando si utilizza il backup e ripristino di BlueXP per eseguire il backup di Cl
 
 
 
-| Eseguire il backup dei cluster ONTAP on-premise su Google Cloud | Quando si utilizza il backup e ripristino di BlueXP per eseguire il backup dei cluster ONTAP on-premise, è necessario aggiungere le autorizzazioni al connettore per utilizzare la funzionalità di ricerca e ripristino. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["Permessi per la funzionalità di ricerca  Restore"^] 
+| Eseguire il backup dei cluster ONTAP on-premise su Google Cloud | Quando si utilizza il backup e il ripristino di BlueXP per eseguire il backup di cluster ONTAP locali, è necessario aggiungere autorizzazioni al connettore per poter utilizzare la funzionalità "Cerca e ripristina". | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["Permessi per la funzionalità di ricerca  Restore"^] 
 |===
 
 

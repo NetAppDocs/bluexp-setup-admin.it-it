@@ -859,7 +859,6 @@
   <block id="a5cd95b551d8bf545c63c76c6fb91786" category="paragraph">Per le implementazioni on-premise, non è possibile impostare un'identità gestita per il connettore, ma è possibile fornire le autorizzazioni utilizzando un'identità di servizio.</block>
   <block id="53c512e9599c71e1a585d636a5229820" category="list-text">Modalità standard</block>
   <block id="4275ae61422c34253a59329bd20a0449" category="inline-link-macro">Impostare le autorizzazioni Azure</block>
-  <block id="12f7970cff397ea2f0846f3904f8e00f" category="inline-link-macro">Impostare le autorizzazioni cloud per le implementazioni on-premise</block>
   <block id="07999df8a3fec91dcf6daa7e52777cc7" category="list-text"><block ref="07999df8a3fec91dcf6daa7e52777cc7" category="inline-link-macro-rx"></block></block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link-macro">Scopri le modalità di implementazione di BlueXP</block>
   <block id="d8c1ee023ea7a4705048e3464cfcb854" category="list-text"><block ref="d8c1ee023ea7a4705048e3464cfcb854" category="inline-link-macro-rx"></block></block>
@@ -1243,7 +1242,6 @@
   <block id="025a22cb479bbf0e83048a4ae6ffaaa0" category="paragraph">Con le prime due opzioni, BlueXP utilizza AWS Security Token Service per ottenere credenziali temporanee che ruotano costantemente. Questo processo è la Best practice: È automatico e sicuro.</block>
   <block id="f265ab1711375ae7a7a4e8594c5e1395" category="paragraph">Se si forniscono chiavi di accesso AWS a BlueXP, è necessario ruotarle aggiornandole in BlueXP a intervalli regolari. Si tratta di un processo completamente manuale.</block>
   <block id="ccd2fd61b259ee660f0c8a22d4d70882" category="summary">Il connettore utilizza le porte in entrata se installato manualmente su un host Linux on-premise. Potrebbe essere necessario fare riferimento a queste porte per scopi di pianificazione.</block>
-  <block id="e3d41d6e94475edc27ad068b42448e0e" category="doc">Porte per il connettore on-premise</block>
   <block id="5f8de67c0199ff42bf6b781ec98f1ce8" category="paragraph">Il connettore utilizza porte _inbound_ se installato manualmente su un host Linux on-premise. Potrebbe essere necessario fare riferimento a queste porte per scopi di pianificazione.</block>
   <block id="12d823193ac650eb174ac6e076ca93b8" category="paragraph">Queste regole in entrata si applicano a tutti i modelli di implementazione BlueXP.</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">Protocollo</block>
@@ -1295,7 +1293,6 @@
   <block id="83e566847d42782b3343e108150d7f57" category="section-title">Limitazioni del connettore</block>
   <block id="911d15b7ac55478d2b567e8488658687" category="section-title">Possibile conflitto con gli indirizzi IP compresi nell'intervallo 172</block>
   <block id="efdb2123102821583a0af000d2fa9040" category="paragraph">BlueXP implementa il connettore con due interfacce che hanno indirizzi IP negli intervalli 172.17.0.0/16 e 172.18.0.0/16.</block>
-  <block id="5646658d58bb92ba775a6c2cd024ef17" category="paragraph">Se la rete dispone di una subnet configurata con uno di questi intervalli, potrebbero verificarsi errori di connettività da BlueXP. Ad esempio, il rilevamento dei cluster ONTAP on-premise in BlueXP potrebbe non riuscire.</block>
   <block id="4195cd5f5be4f9f1f03edcb9e48c9b07" category="inline-link-macro">Conflitto IP del connettore BlueXP con la rete esistente</block>
   <block id="290b978e42f71f7d091ff656795a223e" category="paragraph">Consultare l'articolo della Knowledge base <block ref="ec3dc3610ab92c8939c1af12267841a7" category="inline-link-macro-rx"></block> Per istruzioni su come modificare l'indirizzo IP delle interfacce del connettore.</block>
   <block id="1bc21092e961975ea4123f4414693f69" category="section-title">La decrittografia SSL non è supportata</block>
@@ -1366,10 +1363,7 @@
   <block id="4e46804b204e02c9bd12cc6d7232cca6" category="list-text">È ora possibile caricare gli allegati quando si crea un caso di supporto o quando si aggiornano le note del caso per un caso di supporto esistente.</block>
   <block id="72c3a2be47cc6617cea246e89af67993" category="inline-link">Scopri come creare e gestire i casi di supporto</block>
   <block id="e076d1de7062df2857bf544f4a4aa82d" category="paragraph"><block ref="c7a2ab7c05c0b984c7e95e609cb46e34" category="inline-link-rx"></block>.</block>
-  <block id="1765dff10197df4bf080f41e5537f2a5" category="list-text">Questa versione del connettore include anche miglioramenti Cloud Volumes ONTAP e miglioramenti del cluster ONTAP on-premise.</block>
   <block id="55a6750574b4447541f67bb4e01cab9a" category="list-text"><block ref="55a6750574b4447541f67bb4e01cab9a" category="inline-link-rx"></block></block>
-  <block id="6ff2a7981cc8a7efd758e8ffec4cc69e" category="inline-link">Scopri i miglioramenti del cluster on-premise di ONTAP</block>
-  <block id="6ee17626d7e1b5c782c10c267de6f85c" category="list-text"><block ref="6ee17626d7e1b5c782c10c267de6f85c" category="inline-link-rx"></block></block>
   <block id="ce47c670900f3fe8347a2fc95ff710d8" category="list-text">La funzione di ricerca è ora disponibile nella console BlueXP. A questo punto, è possibile utilizzare la ricerca per trovare i servizi e le funzionalità di BlueXP.</block>
   <block id="da1115c120e230094c1f271ddc8b2faa" category="paragraph"><block ref="da1115c120e230094c1f271ddc8b2faa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a48a6aaa99b4cf4a4e641c293de897fa" category="inline-link">Scopri come gestire i tuoi casi di supporto</block>
@@ -1415,7 +1409,6 @@
   <block id="609db1dbd04bb2ee742cb4078546018c" category="list-text">L'URL della console BlueXP è stato aggiornato a.<block ref="d4d03fd3c2a1ab003ebd5cf52ee8df58" category="inline-link-rx"></block></block>
   <block id="4a11791a9bd4070a9cb5e2e709d06351" category="list-text">Il connettore è ora supportato nella regione di Google Cloud Israele.</block>
   <block id="b48a790ba42e24d7c2c6394ead9c61e4" category="list-text"><block ref="b48a790ba42e24d7c2c6394ead9c61e4" category="inline-link-rx"></block></block>
-  <block id="e88218c7954191edd5ee25a2260fe7c2" category="list-text"><block ref="e88218c7954191edd5ee25a2260fe7c2" category="inline-link-rx"></block></block>
   <block id="c35e844c4a277ceb06b238910d3b86e7" category="list-text">Gli abbonamenti PAYGO e i contratti annuali per BlueXP sono ora disponibili per la visualizzazione e la gestione dal portafoglio digitale.</block>
   <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">Scopri come gestire gli abbonamenti</block>
   <block id="a36a7ffe5c1160531a9a2bc1012be15f" category="paragraph"><block ref="a36a7ffe5c1160531a9a2bc1012be15f" category="inline-link-rx"></block></block>
@@ -1461,7 +1454,6 @@
   <block id="fb9fefdc512037af8c4c1f84c436bd8e" category="list-text">Il connettore è ora supportato nella regione di AWS Jakarta (ap-sud-est-3).</block>
   <block id="49ed7ab586a5135eae3ee7b3aea2ae20" category="list-text">Il connettore è ora supportato nella regione sud-orientale del Brasile Azure.</block>
   <block id="046fc05000d85b784cc7466da1c65e32" category="list-text"><block ref="046fc05000d85b784cc7466da1c65e32" category="inline-link-rx"></block></block>
-  <block id="e9917715e557501b320f321479432f1b" category="list-text"><block ref="e9917715e557501b320f321479432f1b" category="inline-link-rx"></block></block>
   <block id="8156333613ef46e2aeaf70650af07b00" category="paragraph">Abbiamo aggiornato il connettore per introdurre correzioni di bug. La soluzione più importante è un problema che influisce sull'implementazione di Cloud Volumes ONTAP in Google Cloud quando il connettore si trova in un VPC condiviso.</block>
   <block id="b11df59ba05c25c3a8734d54b7501ae7" category="list-text">Delhi (asia-Sud 2)</block>
   <block id="68fb6cfeb81e52feef062b88d7037b7e" category="list-text">Melbourne (australia-sud-est 2)</block>
@@ -1605,8 +1597,6 @@
   <block id="fced466a309d5f02b614e19af9c50a3a" category="paragraph">Per assistenza, consultare la seguente documentazione:</block>
   <block id="c5fbee6586294d81141f8dd158707985" category="inline-link">Scopri i cluster ONTAP on-premise</block>
   <block id="f19b6baefd30f42b716828a3ce67d843" category="list-text"><block ref="f19b6baefd30f42b716828a3ce67d843" category="inline-link-rx"></block></block>
-  <block id="36eb10a8720e9fc3cc595882ff021ccf" category="inline-link">Eseguire la scansione on-premise dei dati del volume ONTAP utilizzando la classificazione BlueXP</block>
-  <block id="eb14ba8446024f1dd902949682a561b2" category="list-text"><block ref="eb14ba8446024f1dd902949682a561b2" category="inline-link-rx"></block></block>
   <block id="2fc22405cb36e8596d9bdb7b52cbf10c" category="summary">È possibile ottenere ulteriori informazioni sul connettore prima di implementarlo o se è necessario risolvere eventuali problemi.</block>
   <block id="6e8114a6676a5923599d8d78479d23d8" category="doc">Configurazione predefinita per il connettore</block>
   <block id="ebed13b527202f35f3ec91ab58b5a4c2" category="paragraph">Potrebbe essere necessario ottenere ulteriori informazioni sulla configurazione del connettore prima di implementarlo o se è necessario risolvere eventuali problemi.</block>
@@ -1716,7 +1706,6 @@ oppure</block>
   <block id="6a5be3e06b444aea04beccda3bc9e1d6" category="list-text">Eseguire lo script di disinstallazione dall'host Linux:</block>
   <block id="0bb43692ecd0352eecc69c235e34d6f0" category="paragraph">_silent_ esegue lo script senza richiedere conferma.</block>
   <block id="c89064bda3f1ae133a231f5b1f44c3b0" category="list-text">Dall'host Linux, eseguire i seguenti comandi:</block>
-  <block id="111374538bcb0d5c90baaab097278e39" category="doc">Configurare il networking on-premise</block>
   <block id="8efafb8ae5af62e571308cca0bdcb4f0" category="paragraph">Quando si installa manualmente il connettore sul proprio host Linux, il programma di installazione del connettore richiede l'accesso ai seguenti URL durante il processo di installazione:</block>
   <block id="068395f3cd26ca40ad905de3790c9435" category="cell">Per gestire le risorse nelle aree pubbliche di Azure.</block>
   <block id="232055d452a21264f8d549e50d695b18" category="cell">Per gestire le risorse nelle regioni Azure China.</block>
@@ -2237,8 +2226,6 @@ Si noti che la pagina viene aggiornata tra il test della connessione e l'abilita
   <block id="dd37176246e6abf3e559086afcadce82" category="paragraph">In quasi tutti i casi, è possibile aggiungere una licenza al portafoglio digitale senza un connettore.</block>
   <block id="184e70c253a2ad370c338775e7482497" category="list-text">Rilevamento diretto dei cluster ONTAP on-premise</block>
   <block id="ef67c5eab6f3bfee1596c3f8734a88c7" category="paragraph">Sebbene non sia necessario un connettore per il rilevamento diretto di un cluster ONTAP on-premise, è necessario un connettore per sfruttare le funzionalità aggiuntive di BlueXP.</block>
-  <block id="eec3baeb5aa60415324495790bc2f136" category="inline-link">Scopri di più sulle opzioni di rilevamento e gestione dei cluster ONTAP on-premise</block>
-  <block id="dc4523bb6eb17a07ae9db37489829969" category="paragraph"><block ref="dc4523bb6eb17a07ae9db37489829969" category="inline-link-rx"></block></block>
   <block id="098ba24e143dd197f509e41083f0103e" category="section-title">Quando è necessario un connettore</block>
   <block id="234eb6bb27d592cbf06aa6537a33a380" category="list-text">Funzionalità di gestione di Amazon FSX per ONTAP</block>
   <block id="d79294e72dc3584cc12c98a7a931315d" category="list-text">Storage Amazon S3</block>
@@ -2247,7 +2234,6 @@ Si noti che la pagina viene aggiornata tra il test della connessione e l'abilita
   <block id="9fc1f8c97e791c3c5fa11f21f2c02740" category="list-text">Integrazione del cluster ONTAP on-premise con i servizi dati BlueXP</block>
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">Caching dei volumi</block>
   <block id="5bf7ac4937c946ab4eedfb091ffa67ab" category="section-title">I connettori devono essere sempre operativi</block>
-  <block id="5e546ca24430fc2b79e0e409176438c9" category="paragraph">La presente documentazione è disciplinata dall'EULA. Se il prodotto non viene utilizzato in conformità con la documentazione, la funzionalità e il funzionamento del prodotto, nonché i diritti dell'utente previsti dal Contratto di licenza con l'utente finale, potrebbero risentire negativamente.</block>
   <block id="ff0e00d64f60db5d99e55c6d706306cc" category="section-title">Posizioni supportate</block>
   <block id="6beccc67ff905f7da0b29dece26b0485" category="list-text">Amazon Web Services</block>
   <block id="1668ca1bd914c1d847f23b491319ac91" category="list-text">Microsoft Azure</block>
@@ -2255,7 +2241,6 @@ Si noti che la pagina viene aggiornata tra il test della connessione e l'abilita
   <block id="695e0a47c56539eb9bcf6290d1c797d8" category="list-text">On-premise</block>
   <block id="11cac4cf4114aafe53015559291d52ce" category="paragraph">Per utilizzare BlueXP in modalità limitata o privata, è possibile iniziare a utilizzare BlueXP installando il connettore e accedendo all'interfaccia utente in esecuzione localmente sul connettore.</block>
   <block id="31f2b2cbba0d986ad6ce5bec030a9de1" category="paragraph"><block ref="d8c1ee023ea7a4705048e3464cfcb854" category="inline-link-macro-rx"></block>.</block>
-  <block id="fa1f9e92f4f0aa51cba859b2dbc37a02" category="section-title">Come creare un connettore</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="section-title">Permessi</block>
   <block id="11fde693c59aa81cdd27bb562b84f44b" category="paragraph">Sono necessarie autorizzazioni specifiche per creare il connettore direttamente da BlueXP e un altro set di autorizzazioni per l'istanza del connettore stesso. Se si crea il connettore in AWS o Azure direttamente da BlueXP, BlueXP crea il connettore con le autorizzazioni necessarie.</block>
   <block id="338a6f193e9988b8f40b3128d5e4ffb7" category="inline-link-macro">Scopri come il connettore utilizza le autorizzazioni AWS</block>
@@ -2266,7 +2251,6 @@ Si noti che la pagina viene aggiornata tra il test della connessione e l'abilita
   <block id="e3ab4c013397e346e8f211ff03ac44b2" category="list-text"><block ref="e3ab4c013397e346e8f211ff03ac44b2" category="inline-link-macro-rx"></block></block>
   <block id="538fc0c04ce8a0ef5cf78a12dbe8f68a" category="section-title">Aggiornamenti del connettore</block>
   <block id="2162bc1fbb13d2539c146b3472921eb5" category="paragraph"><block ref="7270aabdb0c26b6b937d76a49fcda623" category="inline-xref-macro-rx"></block>.</block>
-  <block id="aa043b4c9a6fa32b0f3811520156579a" category="list-text">Si dispone di un ambiente multi-cloud (ad esempio, AWS e Azure) e si preferisce avere un connettore in AWS e un altro in Azure. Ciascuno di essi gestisce i sistemi Cloud Volumes ONTAP in esecuzione in tali ambienti.</block>
   <block id="645a84975202e30700b572b49a5ee29d" category="section-title">Disaster recovery</block>
   <block id="9702ba80b5da1f1cf46d6eb4c043a20a" category="paragraph">È possibile gestire un ambiente di lavoro con più connettori contemporaneamente per scopi di disaster recovery. Se un connettore si spegne, è possibile passare all'altro connettore per gestire immediatamente l'ambiente di lavoro.</block>
   <block id="fc08f20f6fe5ef74616fbc4c310758ef" category="list-text">Scopri l'ambiente di lavoro esistente.</block>
@@ -2442,9 +2426,6 @@ Si noti che la pagina viene aggiornata tra il test della connessione e l'abilita
   <block id="0a44fe605745a017fde35750e5fae36a" category="paragraph">Supportato nelle regioni governative con modalità limitata. Non supportato in aree commerciali o in aree sovrane con modalità limitata.</block>
   <block id="8adfa152daa2970174717fd5e24151b2" category="cell">Per la modalità limitata, puoi utilizzare il portafoglio digitale con le opzioni di licenza supportate elencate di seguito.</block>
   <block id="6c253a8aff5dfa835a77545b3006abc8" category="cell">Cluster ONTAP on-premise</block>
-  <block id="2bd6e3220a2a60e7217c63bc76d9f73c" category="cell">Sono supportati sia il rilevamento con un connettore che il rilevamento senza un connettore (rilevamento diretto).
-
-Quando si rileva un cluster on-premise con un connettore, la visualizzazione avanzata (System Manager) non è supportata.</block>
   <block id="c26e19b0ab82c81e1df83e4f6d44e6af" category="list-text">Con la modalità limitata sono supportate le seguenti opzioni di licenza:</block>
   <block id="b012b5d8eb383d0a82055699469c06d6" category="list-text">Abbonamenti al marketplace (contratti orari e annuali)</block>
   <block id="7fe4c05710aa3ce341a005ab26b2dfdf" category="list-text">Per Cloud Volumes ONTAP, sono supportate solo le licenze basate sulla capacità.</block>
@@ -2469,7 +2450,6 @@ Quando si rileva un cluster on-premise con un connettore, la visualizzazione ava
   <block id="71fa0def55e8ba28f8cea8204dcaaf4f" category="cell">Richiede la connettività dal cloud (dove è installato il connettore) all'ambiente on-premise.
 
 Il rilevamento senza connettore (rilevamento diretto) non è supportato.</block>
-  <block id="99f9fe7adce4b6282eee924da977b6d4" category="list-text">Servizi BlueXP supportati nelle implementazioni on-premise</block>
   <block id="614a24e7adcef9d83ca4454cd4443cbd" category="list-text">BlueXP supporta i seguenti servizi di storage e dati con modalità privata quando il connettore viene installato in sede:</block>
   <block id="53a7caecec393fdcc143318b6a21f701" category="list-text">Le uniche origini dati supportate sono quelle che è possibile rilevare localmente.</block>
   <block id="ad85db404f0dfc2267b348299aa513b9" category="inline-link">Visualizzare le fonti che è possibile scoprire localmente</block>
@@ -2494,7 +2474,6 @@ Il rilevamento senza connettore (rilevamento diretto) non è supportato.</block>
   <block id="270fcb785810d0206945029bb05f4e97" category="cell">Amazon S3</block>
   <block id="52745271323ee9ea30e3a37d0338d118" category="cell">Azure Blob</block>
   <block id="833c2c211a541e50ad94433664e4b5c1" category="cell">Storage Google Cloud</block>
-  <block id="d0f1687c68ee0f0d9bac765716d18923" category="cell">Cluster ONTAP on-premise</block>
   <block id="4a17f9505c41e2b9d2fdf8e21809e428" category="cell">E-Series</block>
   <block id="392d70ca39f31f10bd637936769788df" category="cell">StorageGRID</block>
   <block id="1376d64de9953f470f0708fc6e330334" category="cell">*Servizi*</block>
@@ -2655,7 +2634,6 @@ Il rilevamento senza connettore (rilevamento diretto) non è supportato.</block>
   <block id="dc5b71cece1f13a67fc01472a59d8781" category="inline-link">Permessi per i CMEK</block>
   <block id="73206ed184feb2313c9f626b7f266208" category="list-text"><block ref="73206ed184feb2313c9f626b7f266208" category="inline-link-rx"></block></block>
   <block id="6e9436752850e460930666efdaf1e025" category="cell">Eseguire il backup dei cluster ONTAP on-premise su Google Cloud</block>
-  <block id="c37ee52df9a55f654f757f6a622c2ab8" category="cell">Quando si utilizza il backup e ripristino di BlueXP per eseguire il backup dei cluster ONTAP on-premise, è necessario aggiungere le autorizzazioni al connettore per utilizzare la funzionalità di ricerca e ripristino.</block>
   <block id="072b4c796b4a06820f943c41d4da3162" category="cell"><block ref="6a045f48523c0716d40c678a68c87636" category="inline-link-rx"></block></block>
   <block id="045416b62d2dbcb0a3156290bfb14bc5" category="paragraph">Oltre a questi endpoint, è anche necessario garantire che il connettore disponga dell'accesso a Internet in uscita per contattare endpoint specifici per le operazioni quotidiane. Puoi trovare l'elenco di questi endpoint seguendo i link nella sezione successiva.</block>
   <block id="33afe8d49ba0b54b76d44e7f5b190b53" category="section-title">Preparare il networking per i servizi BlueXP</block>
@@ -2700,7 +2678,6 @@ Il rilevamento senza connettore (rilevamento diretto) non è supportato.</block>
   <block id="23822bdcf5039c31a637229d8ca51ffa" category="paragraph"><block ref="23822bdcf5039c31a637229d8ca51ffa" category="inline-link-rx"></block></block>
   <block id="d00604985bd7a191952bde8a0cec39fd" category="paragraph">Questo collegamento è accessibile anche dall'interfaccia utente di BlueXP nella pagina Timeline.</block>
   <block id="23c565330e0f5d82619b18108f5a32ca" category="list-text"><block ref="23c565330e0f5d82619b18108f5a32ca" category="inline-link-rx"></block></block>
-  <block id="405527e38d3c42926031f86b50d381d4" category="list-text"><block ref="405527e38d3c42926031f86b50d381d4" category="inline-link-rx"></block></block>
   <block id="b5163cd43881e34d9478fc7e00e66e62" category="list-text">Nella pagina *Log in*, viene richiesto di inserire l'indirizzo e-mail associato al login. Dopo aver selezionato *Avanti*, BlueXP richiede di autenticare utilizzando il metodo di autenticazione associato all'accesso:</block>
   <block id="3de985fb980dfcce5f5196709e3e62ce" category="list-text">Selezionare *Criteri &gt; Crea policy*.</block>
   <block id="d36ec2dc8acd5ade1fda1b4397ccc99a" category="list-text">Selezionare *JSON*.</block>
@@ -2886,7 +2863,6 @@ Inoltre, è necessario assicurarsi che il criterio sia aggiornato quando vengono
   <block id="99b431ba0bae952794b186c1e8ca969f" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> <block ref="f4c0bdac7b3aa5cf7bf7f433238f96a2" category="inline-link-macro-rx"></block></block>
   <block id="f4426e4062930abb33465fb5b79b35dc" category="inline-link-macro">Impostare le autorizzazioni per un'implementazione di Azure Marketplace</block>
   <block id="d16dc391acdc52d611958fdd5ca48d52" category="list-text"><block ref="d16dc391acdc52d611958fdd5ca48d52" category="inline-link-macro-rx"></block></block>
-  <block id="8790c01539f52b3b7d7f0f32b6631813" category="inline-link-macro">Impostare le autorizzazioni per le implementazioni on-premise</block>
   <block id="643063b79f29bba54b69c5a3d47a8da5" category="summary">Per creare un connettore in AWS da BlueXP, devi configurare il tuo networking, preparare le autorizzazioni AWS e quindi creare il connettore.</block>
   <block id="a9b34414733cf4871ed4d1f23b7438dd" category="doc">Crea un connettore in AWS da BlueXP</block>
   <block id="70d8bd725ea77c6a4b800edb3d5b9f5f" category="section-title">Fase 1: Configurare la rete</block>
@@ -3086,7 +3062,6 @@ membro: Account di servizio BlueXP come serviceAccount.user</block>
   <block id="0fa4c0b97cc5b7972696a2ba8c38b9c8" category="paragraph">Se disponi di più credenziali Azure che appartengono a diverse iscrizioni ad Azure, queste possono essere associate alla stessa iscrizione ad Azure Marketplace o a diverse iscrizioni al marketplace.</block>
   <block id="4666e56ab2715e92af8b4dbb7fc97357" category="section-title">Posso spostare gli ambienti di lavoro Cloud Volumes ONTAP esistenti in un'altra iscrizione ad Azure?</block>
   <block id="cd0af57faab800d64dbc9b6686539495" category="paragraph">No, non è possibile spostare le risorse di Azure associate al tuo ambiente di lavoro Cloud Volumes ONTAP in un'altra sottoscrizione di Azure.</block>
-  <block id="94db8f0d9e472465df4f4a2373f34e15" category="section-title">Come funzionano le credenziali per le implementazioni del marketplace e le implementazioni on-premise?</block>
   <block id="459f61ebe7bde01cca8ed21d42e836ca" category="paragraph">Quando si implementa un connettore in Google Cloud, BlueXP crea un set predefinito di credenziali associate all'istanza della macchina virtuale del connettore. In qualsiasi momento, puoi modificare l'iscrizione di Google Cloud Marketplace associata a queste credenziali. L'abbonamento consente di creare un sistema Cloud Volumes ONTAP pay-as-you-go e di utilizzare altri servizi BlueXP.</block>
   <block id="9e2bbef36ac6bd075f201eb1ac82fddb" category="paragraph">Sostituendo l'attuale sottoscrizione al marketplace con una nuova sottoscrizione, l'abbonamento al marketplace viene modificato per qualsiasi ambiente di lavoro Cloud Volumes ONTAP esistente e per tutti i nuovi ambienti di lavoro.</block>
   <block id="6f3c919771c405c0014ee0f6d72d3149" category="summary">Scopri in che modo BlueXP usa le credenziali di Google Cloud per eseguire azioni per tuo conto e come tali credenziali sono associate alle iscrizioni al marketplace. Comprendere questi dettagli può essere utile quando si gestiscono le credenziali per uno o più progetti Google Cloud. Ad esempio, è possibile ottenere informazioni sull'account del servizio associato alla macchina virtuale del connettore.</block>
@@ -3204,7 +3179,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="6cc6d549680ee5bae0375022aa7c117c" category="paragraph">NetApp BlueXP estende e migliora le funzionalità fornite tramite Cloud Manager. BlueXP è un piano di controllo unificato che offre un'esperienza multicloud ibrida per servizi di storage e dati in ambienti on-premise e cloud.</block>
   <block id="4860911c5c67c5e04987564884e8b85e" category="list-text">Esperienza di gestione unificata</block>
   <block id="c3eb39b445a75ad05505fe32c6f061df" category="list-text">BlueXP consente di gestire tutte le risorse di storage e dati da un'unica interfaccia.</block>
-  <block id="a28e6578744ceeb545878235d414e497" category="paragraph">È possibile utilizzare BlueXP per creare e amministrare lo storage cloud (ad esempio, Cloud Volumes ONTAP e Azure NetApp Files), per spostare, proteggere e analizzare i dati e per controllare molti dispositivi storage on-premise e edge.</block>
   <block id="fc8ff23d0bf81d0f8427b5c75023f80e" category="inline-link">Scopri di più dal sito Web BlueXP</block>
   <block id="6680bbdbd7bdd3c542020121df4cb264" category="paragraph"><block ref="6680bbdbd7bdd3c542020121df4cb264" category="inline-link-rx"></block></block>
   <block id="31f0834695d820dc381e57397e466d12" category="list-text">Nuovo menu di navigazione</block>
@@ -3212,7 +3186,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="7cb04a79785e33be744a126127319a35" category="inline-image-macro">Schermata del menu di navigazione di BlueXP che mostra categorie come Storage e Health.</block>
   <block id="68d4f3d7366b4ea59a65f0c44540e368" category="list-text">Integrazioni di nuovi prodotti</block>
   <block id="cf6a3994dac804af910024cf740e14ac" category="list-text">Ora puoi gestire i bucket Amazon S3 negli account AWS in cui è installato il connettore.</block>
-  <block id="054332983ba253fe4573945dcdbc8109" category="list-text">Ora puoi gestire più sistemi storage on-premise, come e-Series e StorageGRID.</block>
   <block id="bcaa38b35b3f595027217ec10755368a" category="list-text">Ora è possibile utilizzare i servizi dati precedentemente disponibili solo come servizio standalone con un'interfaccia utente separata, come BlueXP Digital Advisor (Active IQ).</block>
   <block id="d59048f21fd887ad520398ce677be586" category="list-text">Scopri di più</block>
   <block id="72098f7f145b12a125b92539edd37f4a" category="inline-link">Gestire i bucket Amazon S3</block>
@@ -3333,7 +3306,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="a51f8f17029baacb9ec578d529b96fc1" category="inline-link">Scopri di più su come definire una configurazione unificata</block>
   <block id="ba6ad1a8a7ff7fed9858ae1a6056a044" category="paragraph"><block ref="ba6ad1a8a7ff7fed9858ae1a6056a044" category="inline-link-rx"></block></block>
   <block id="b4baef0a3a494382cb3865753733f031" category="list-text">Durante il tiering in Google Cloud Storage, è possibile applicare una regola del ciclo di vita in modo che i dati su più livelli passino da una classe di storage Standard a uno storage nearline, Coldline o di archivio a costi più bassi dopo 30 giorni.</block>
-  <block id="d85e79234e503ba2929218e38d0c7268" category="list-text">Cloud Tiering ora viene visualizzato se hai dei cluster ONTAP on-premise non rilevati, in modo che puoi aggiungerli a Cloud Manager per abilitare il tiering o altri servizi in questi cluster.</block>
   <block id="da79c9a9c81722678ed4139ebb8929d9" category="inline-link">Scopri come scoprire questi cluster aggiuntivi</block>
   <block id="b29f8ca8f9e48d5b3100564f6829e5f6" category="paragraph"><block ref="b29f8ca8f9e48d5b3100564f6829e5f6" category="inline-link-rx"></block></block>
   <block id="d63816bce1f68b3d99c6b101eb23f900" category="paragraph">Ora puoi modificare in maniera dinamica il livello di servizio per un volume per soddisfare le esigenze dei carichi di lavoro e ottimizzare i costi. Il volume viene spostato nell'altro pool di capacità senza alcun impatto sul volume.<block ref="1c1fc3f10579c2dcdaafa6f121b73c03" category="inline-link-rx"></block></block>
@@ -3382,7 +3354,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="437c802c34c0b8670d61901c4e05641e" category="inline-link-macro">Ulteriori informazioni sulla modalità privata</block>
   <block id="d05ac7ff6398ff4f2b0bd26105dd1697" category="paragraph">Il punto in cui viene installato il connettore determina quali servizi e funzionalità di BlueXP sono disponibili quando si utilizza la modalità privata. Ad esempio, per implementare e gestire Cloud Volumes ONTAP, il connettore deve essere installato nel cloud. <block ref="11a7253f43076934a5664eb6b2874efc" category="inline-link-macro-rx"></block>.</block>
   <block id="60a1a3ba0b214492b5ab5c5bd4a52eb0" category="paragraph">Se il connettore è installato nel cloud e intendi creare sistemi Cloud Volumes ONTAP, BlueXP richiede le autorizzazioni del tuo cloud provider. È necessario impostare le autorizzazioni nel provider cloud e associarle all'istanza di Connector dopo l'installazione.</block>
-  <block id="939d44d1e911e1f0f7039e74b3562137" category="list-text"><block ref="939d44d1e911e1f0f7039e74b3562137" category="inline-link-macro-rx"></block></block>
   <block id="9bf0216383a3ff083b86cdd433d2e65e" category="list-text"><block ref="9bf0216383a3ff083b86cdd433d2e65e" category="inline-link-macro-rx"></block></block>
   <block id="26553f927e14d69ad84c658048155fb4" category="summary">Se utilizzi più connettori, BlueXP ti permette di alternarli direttamente dalla console. È inoltre possibile gestire un unico ambiente di lavoro con più connettori.</block>
   <block id="7473cbb9b768b471bd45e7579b544a3a" category="doc">Utilizzare più connettori</block>
@@ -3484,9 +3455,7 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="ae205f602e7bb700e8f3f1c9a194a3e4" category="section-title">Passaggio 4: Impostare le autorizzazioni cloud</block>
   <block id="b94d9194c0f0e59de690d8a088d1601b" category="section-title">Fase 5: Installare il connettore</block>
   <block id="d918fe97b966ce7fb324a30c883b1d7f" category="section-title">Fase 6: Configurare il connettore</block>
-  <block id="76eda41f130889296c61f521e20a1006" category="list-text"><block ref="76eda41f130889296c61f521e20a1006" category="inline-link-macro-rx"></block></block>
   <block id="166140f584d4544702260c25a6b8eab6" category="section-title">Più ambienti di lavoro e connettori</block>
-  <block id="7a5c1d5a09d9f5a762327becef29fd1a" category="list-text"><block ref="7a5c1d5a09d9f5a762327becef29fd1a" category="inline-link-macro-rx"></block></block>
   <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">17 maggio 2024</block>
   <block id="32d1e3d3ebe78d37dbdfcf9933b0cf90" category="paragraph">Questa versione di BlueXP Connector include il supporto per ulteriori sistemi operativi, piccoli miglioramenti alla sicurezza e correzioni di bug.</block>
   <block id="94f95548313e6f5528b5011a7d10e19f" category="paragraph">A questo punto, la versione 3.9.40 è disponibile per la modalità standard e la modalità limitata.</block>
@@ -3808,8 +3777,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="c64577fbea6506f38ae9b43ab46da844" category="paragraph">Per tutte le altre organizzazioni o account, è necessario associare manualmente l'abbonamento ripetendo questi passaggi.</block>
   <block id="aed7c8a25120d41eacc3c97ed0b851e5" category="paragraph">Questo passaggio deve essere completato per collegare l'abbonamento a Google Cloud con l'organizzazione o l'account BlueXP . Il processo di collegamento di un abbonamento non viene completato fino a quando non si viene reindirizzati da questa pagina e si accede a BlueXP.</block>
   <block id="6c42d9d3f2de2ec585181e975309fcf0" category="section-title">Comunicazioni con i cloud provider</block>
-  <block id="f9a30311177259db80d6ef6b5bc77f80" category="paragraph">Il connettore utilizza TLS 1,2 per tutte le comunicazioni con AWS, Azure e Google Cloud.</block>
-  <block id="62e253e417ca4e6f13ae9fae3d41704e" category="paragraph">Puoi creare un connettore direttamente da BlueXP , dal marketplace del tuo cloud provider o installando manualmente il software sul tuo host Linux. Il modo in cui iniziare dipende dall'utilizzo di BlueXP in modalità standard, limitata o privata.</block>
   <block id="429ef702d7e67a893ea297da8613a472" category="inline-link-macro">Informazioni su come aggiornare manualmente il software del connettore quando si utilizza la modalità privata</block>
   <block id="1178d8df6f45ec63d153216266770ffa" category="paragraph"><block ref="8ab15d11feb9213cf5a6950e71fe0578" category="inline-link-macro-rx"></block>.</block>
   <block id="8f65178ee55c2c64ee3bef58afe9c682" category="list-text">Un service provider potrebbe utilizzare un'organizzazione BlueXP  per fornire servizi ai propri clienti, utilizzando al tempo stesso un'altra organizzazione per fornire il disaster recovery a una delle proprie business unit. Ogni organizzazione avrebbe connettori separati.</block>
@@ -4087,13 +4054,10 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="48a726f3d57687547ef8fb70fab0c713" category="list-text">Confermare che si desidera eliminare la cartella o il progetto.</block>
   <block id="0574e6792e501b2d7f486dd56c08812e" category="summary">Gestire i membri dell'organizzazione per fornire autorizzazioni a diversi livelli della gerarchia delle risorse dell'organizzazione.</block>
   <block id="4e1b8aff40899e4c95a3c48a1d8be909" category="paragraph">BlueXP  Identity and Access Management (IAM) consente di aggiungere membri all'organizzazione e assegnare loro uno o più ruoli all'interno della gerarchia delle risorse. Un _ruolo_ contiene un insieme di autorizzazioni che consente a un membro di eseguire azioni specifiche a un livello specifico della gerarchia delle risorse. È possibile associare nuovi account utente e account di servizio, gestire i ruoli dei membri e altro ancora.</block>
-  <block id="5ab22546ed60fe10595d23125ed0b721" category="admonition">Per evitare di perdere l'accesso all'organizzazione BlueXP , è consigliabile avere due membri con il ruolo di amministratore dell'organizzazione.</block>
-  <block id="0c33a84e89f04d016e75e654ef3ce490" category="paragraph">Quando una _cartella o un project admin_ visualizza la pagina *membri*, la pagina visualizza tutti i membri dell'organizzazione. Tuttavia, un membro con questo ruolo può solo visualizzare e gestire le autorizzazioni dei membri per le cartelle e i progetti per i quali dispone delle autorizzazioni. <block ref="c691e2b9b4224ed90bb4f1f11059b372" category="inline-link-macro-rx"></block>.</block>
   <block id="e3a1bd8f43fc761424ef512d07c27a8b" category="section-title">Aggiungere membri alla propria organizzazione</block>
   <block id="488cf26f47d26088a59a4ac2eaef1a3e" category="paragraph">È possibile aggiungere due tipi di membri all'organizzazione: Un account utente e un account di servizio. Un account di servizio viene in genere utilizzato da un'applicazione per completare attività specifiche senza l'intervento umano.</block>
   <block id="2fa104cdb397e386efece8c040a2e601" category="open-title">Account utente</block>
   <block id="55116207f6aac3a1c7009f777207f1eb" category="list-text">Se l'utente non lo ha già fatto, chiedere di andare al<block ref="2fbfa33fd647f6f78a572269d50d0708" category="inline-link-rx"></block> e registrarsi.</block>
-  <block id="f535d18baa302d9949025f9cdeb6dae8" category="paragraph">Quando l'utente si iscrive, deve completare la pagina *Iscrizione*, verificare il proprio indirizzo e-mail, quindi effettuare l'accesso. Quando viene richiesto di creare un'organizzazione, l'utente deve chiudere BlueXP  e comunicare che ha creato il proprio account utente. È quindi possibile aggiungere l'utente all'organizzazione BlueXP  esistente.</block>
   <block id="a03a7a8bd694ce33c9c0c2cfdb88ceeb" category="inline-link-macro">Scopri come iscriverti a BlueXP </block>
   <block id="cf2da96b6ab9e2a236b955bf0f10d6cf" category="paragraph"><block ref="0ad6f11c6cde9791902ac82d37c3487c" category="inline-link-macro-rx"></block>.</block>
   <block id="ea06d0aa9a6946f5aa264a3c85890998" category="list-text">Selezionare *membri*.</block>
@@ -4105,14 +4069,11 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="6a4cc2830754c534e4d4ede0d53dd765" category="list-text">È possibile selezionare solo le cartelle e i progetti per i quali si dispone delle autorizzazioni di amministratore.</block>
   <block id="78693d86cfd1ee5b776ba655fad718c2" category="list-text">Se si seleziona l'organizzazione o una cartella, il membro disporrà delle autorizzazioni per tutti gli elementi che risiedono all'interno dell'organizzazione o della cartella.</block>
   <block id="4361a448252604e85e36e94b87d2292d" category="list-text">Se è stata selezionata una cartella o un progetto, è possibile scegliere un ruolo diverso da *Amministratore organizzazione*.</block>
-  <block id="2c83e58d75bb3a8e196e882a13fad2b6" category="paragraph">L'utente deve ricevere un'e-mail da NetApp BlueXP . L'e-mail include informazioni che il membro può utilizzare per accedere a BlueXP .</block>
   <block id="18ceb42f6a360de22895a255078e9829" category="open-title">Account di servizio</block>
   <block id="3cf18c3e40a1206110812c369cc39dee" category="list-text">*Tipo di entità*: Selezionare *account di servizio*.</block>
   <block id="79cb42be7b748ee1bfa8b8bda6dcca1e" category="list-text">*Nome account servizio*: Immettere un nome per l'account servizio.</block>
   <block id="f67f980ba471dba7c5f95c824dd43bf6" category="list-text">Scaricare o copiare l'ID client e il segreto client.</block>
-  <block id="8294c35652607973fb1c045f68ed7198" category="paragraph">Il segreto del client è visibile una sola volta e non viene memorizzato da BlueXP. Copia o scarica il segreto e conservalo in modo sicuro. Tenere presente che è possibile ricreare l'ID client e il segreto client in un secondo momento.</block>
   <block id="043819e1bae944c0c66cfa39d92d377a" category="section-title">Visualizzare i membri dell'organizzazione</block>
-  <block id="ac926c3351f3a5bf1296ce5e7341b403" category="paragraph">I membri dell'organizzazione vengono visualizzati nella tabella *membri*.</block>
   <block id="9c537de44875b062f96c3c19b5d405f8" category="list-text">Dalla pagina *membri*, selezionare un membro della tabella, quindi selezionare <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*Visualizza dettagli*.</block>
   <block id="c2a2a4211749f24853726e3f3a3f7a50" category="inline-link-macro">Consente di visualizzare tutti i membri associati a una cartella o a un progetto specifico</block>
   <block id="1b6d4c30361c139d898bdf90eabbe5db" category="paragraph"><block ref="f0a4010d1241fe1a26982be23d0ea714" category="inline-link-macro-rx"></block>.</block>
@@ -4124,12 +4085,9 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="46008f3c0187ee8bc97921f4799f037a" category="list-text">Se si desidera che il membro disponga delle autorizzazioni per un'altra parte della gerarchia delle risorse, è necessario aggiungere prima quel ruolo e quindi eliminare il ruolo esistente.</block>
   <block id="a55ecc4bf928da93f86f41bb1fa482cc" category="inline-image-macro">Un'icona di un immondizia CAN</block>
   <block id="a657b530c9804722859fcb4792bf4466" category="section-title">Ricreare le credenziali per un account di servizio</block>
-  <block id="4e62056c599bc8dfbb5e6f1f5a707256" category="paragraph">È possibile ricreare le credenziali (ID client e segreto client) per un account di servizio in qualsiasi momento. È possibile ricreare le credenziali in caso di perdita o se l'azienda richiede la rotazione delle credenziali di protezione dopo un determinato periodo di tempo.</block>
-  <block id="0bf91f2741972566e7b71facbe211ab9" category="paragraph">La ricreazione delle credenziali elimina le credenziali esistenti per l'account del servizio, quindi crea nuove credenziali. Non sarà possibile utilizzare le credenziali precedenti.</block>
   <block id="bb0f4333667b84217bd737a0e3fc6024" category="list-text">Nella tabella *membri*, accedere a un account di servizio, selezionare <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> e quindi *Ricrea segreti*.</block>
   <block id="8de213850e1e3dc79a14014382d25163" category="list-text">Selezionare *Ricrea*.</block>
   <block id="4137654b2b560bb6af478553cbc120b2" category="section-title">Rimuovere un membro dall'organizzazione</block>
-  <block id="05dc5a4527f82cde43f14fa38fb2640e" category="paragraph">Potrebbe essere necessario rimuovere un membro dall'organizzazione, ad esempio se ha lasciato l'azienda.</block>
   <block id="0479745abf593369ddbda5e8df849e57" category="list-text">Dalla pagina *membri*, selezionare un membro della tabella, quindi selezionare <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*Elimina utente*.</block>
   <block id="6e49938f1c5b86ad879eeaf086442b08" category="list-text">Confermare che si desidera rimuovere il membro dall'organizzazione.</block>
   <block id="2fe6c9d572351b2d4e0b387a62bdf1e2" category="summary">Gestire la gerarchia delle risorse dell'organizzazione associando le risorse a progetti e cartelle specifici.</block>
@@ -4416,12 +4374,10 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="2b86317cf346d1bf47abc8c04df6f353" category="list-text">Catalogo di automazione BlueXP</block>
   <block id="5d880ed9e8bc81eec72f5edb5332637d" category="list-text">Utilizza soluzioni basate su script per automatizzare l'installazione e l'integrazione di prodotti e servizi NetApp.</block>
   <block id="ede1cce9f240fed5ecc4264bd699cee1" category="list-text">Backup e ripristino BlueXP</block>
-  <block id="a3460dd01b0f0c32632246bf209e730f" category="list-text">Backup e ripristino di dati on-premise e cloud.</block>
   <block id="2090f2d846793f153b9266c648b079ef" category="list-text">Prepara la privacy dei dati delle applicazioni e degli ambienti cloud.</block>
   <block id="7c3a23f387fffbae2b30f2fdcf4eb3e3" category="list-text">Operazioni cloud BlueXP</block>
   <block id="a17d9dd4943af64ba04db4529621baf0" category="list-text">Ottieni visibilità sulla spesa per il cloud computing e identifica i potenziali risparmi.</block>
   <block id="9b4b22e819a51a3523fc811f5d93370a" category="list-text">Copia e sincronizzazione BlueXP</block>
-  <block id="9f47c7f98e6626074067a711fc1863ea" category="list-text">Sincronizza i dati tra data store on-premise e cloud.</block>
   <block id="046d76eda0c1ca3ef0dc85e15394ce90" category="list-text">BlueXP Digital Advisor</block>
   <block id="6f46f51af0fa796b3853885705907e6f" category="list-text">Utilizza gli analytics predittivi e il supporto proattivo per ottimizzare l'infrastruttura dati.</block>
   <block id="7b432de78427e2c7ffdddf3f0a09ce52" category="list-text">Portafoglio digitale BlueXP</block>
@@ -4441,7 +4397,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="0519e7e082ac907bdeb4ef1c92c001ad" category="list-text">Dashboard di sostenibilità BlueXP</block>
   <block id="b6ec628f73e9b33a6ae94b2c3ef2879b" category="list-text">Analizza la sostenibilità dei tuoi sistemi storage.</block>
   <block id="078be6a9f1dfaaea5e7153ff9ec78760" category="list-text">Tiering BlueXP</block>
-  <block id="c6844dc3fe4e51f03d9c9209b1f58fc4" category="list-text">Estendi il tuo storage ONTAP on-premise al cloud.</block>
   <block id="5f63db6bf0512dc0612ee852c1faf373" category="list-text">Caching del volume BlueXP</block>
   <block id="d0e71bba7a9d538f008b05b19274bfe1" category="list-text">Creare un volume cache scrivibile per accelerare l'accesso ai dati o trasferire il traffico dai volumi ad accesso elevato.</block>
   <block id="428b0b39be2352757edeb5f9f12a7bdd" category="list-text">Fabbrica dei carichi di lavoro BlueXP</block>
@@ -4547,12 +4502,9 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="f713962a8902c207873eb4046423a1bd" category="cell">Associare le risorse alle cartelle e ai progetti</block>
   <block id="9c671793f6e87d755268257623fd8ca3" category="paragraph">Per gestire gli utenti e le relative autorizzazioni, è necessario assegnare uno dei seguenti ruoli:</block>
   <block id="e315fd1b95b71681931eeb8955a37b50" category="paragraph">Gli utenti con questo ruolo possono gestire tutti i membri</block>
-  <block id="c51c480c437b7c47a9f2adb67928e089" category="paragraph">Gli utenti con questo ruolo possono gestire solo i membri della cartella o del progetto designato</block>
-  <block id="a5aee08a089c901f8eb42f2d09ad05cd" category="paragraph">È possibile aggiungere un account di servizio direttamente da BlueXP . Tuttavia, gli utenti devono prima iscriversi all'account BlueXP  prima di poterli aggiungere a un'organizzazione o assegnare un ruolo.</block>
   <block id="e882dcb285b727741daef45bc38e2d7b" category="paragraph">Per gestire gli utenti e le relative autorizzazioni, è necessario disporre del ruolo *Amministratore organizzazione* o del ruolo *cartella o Amministratore progetto*. Ricordare che gli utenti con il ruolo *cartella o project admin* possono gestire solo i membri per la cartella o i progetti di cui dispongono delle autorizzazioni di amministratore.</block>
   <block id="516abd045e4dfab41688be05ed0e24b2" category="list-text">*Selezionare una categoria*, quindi un *ruolo* che fornisca al membro le autorizzazioni per le risorse associate all'organizzazione, alla cartella o al progetto selezionato.</block>
   <block id="5fe83be1c3cd8b5af9b7f3c7fae6d1ad" category="list-text">*Aggiungi ruolo*: Se si desidera fornire l'accesso ad altre cartelle o progetti all'interno dell'organizzazione o concedere all'utente ulteriori autorizzazioni nell'area selezionata, selezionare *Aggiungi ruolo*, specificare un'altra cartella o progetto o una categoria di ruolo diversa, quindi scegliere un ruolo.</block>
-  <block id="58f4b315c1bb5704a3e82ffd26d7c1a8" category="paragraph">La rimozione di un membro dall'organizzazione non elimina l'account BlueXP  o l'account del sito di supporto NetApp del membro. Rimuove semplicemente il membro e le relative autorizzazioni dall'organizzazione.</block>
   <block id="34025ad60edecbf8612a359edaca8684" category="section-title">Visualizzare i ruoli assegnati a un membro</block>
   <block id="c46547e3019dfd55748629f99ac2f49c" category="list-text">Selezionare un *ruolo*: Scegliere un ruolo che fornisca al membro le autorizzazioni per le risorse associate all'organizzazione, alla cartella o al progetto selezionato.</block>
   <block id="068135177d9d1843118236d5f10dc5b7" category="section-title">Modificare il ruolo assegnato di un membro</block>
@@ -4861,7 +4813,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="dd42f0ca79b192af5e1f5734b490f194" category="paragraph">I connettori sono una parte fondamentale dell'architettura del servizio BlueXP. È tua responsabilità garantire che i connettori pertinenti siano sempre attivi, operativi e accessibili. Sebbene il servizio sia progettato per superare brevi interruzioni della disponibilità del connettore, è necessario intraprendere azioni immediate quando è necessario rimediare ai guasti dell'infrastruttura.</block>
   <block id="a92005953b68970af3654f93b3a572c1" category="paragraph">Un connettore è supportato nelle seguenti posizioni:</block>
   <block id="c6c3b56410517700ef27e6cfa0cae38d" category="paragraph">Un connettore in Azure deve essere implementato nella stessa regione di Azure dei sistemi Cloud Volumes ONTAP che gestisce o nel<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> per i sistemi Cloud Volumes ONTAP. Questo requisito garantisce che venga utilizzata una connessione Azure Private link tra Cloud Volumes ONTAP e gli account storage associati.<block ref="ebdf8919a4d90c512f0e43f5b0739281" category="inline-link-rx"></block></block>
-  <block id="be6236f35c24aae3ee086b3f6ec01213" category="paragraph">Di solito aggiorniamo il software del connettore ogni mese per introdurre nuove funzionalità e migliorare la stabilità. Mentre la maggior parte dei servizi e delle funzionalità della piattaforma BlueXP  sono offerti tramite software basato su SaaS, alcune funzionalità dipendono dalla versione del connettore. Che include la gestione Cloud Volumes ONTAP, la gestione del cluster ONTAP on-premise, le impostazioni e la guida.</block>
   <block id="4102d173f8e2253a011fe9286a6db2a3" category="paragraph">Un connettore può gestire più ambienti di lavoro in BlueXP. Il numero massimo di ambienti di lavoro che un singolo connettore deve gestire varia. Dipende dal tipo di ambiente di lavoro, dal numero di volumi, dalla quantità di capacità gestita e dal numero di utenti.</block>
   <block id="63e8317d7c5806dc1cb56752525c4d52" category="paragraph">Se disponi di un'implementazione su larga scala, collabora con il tuo rappresentante NetApp per dimensionare il tuo ambiente. In caso di problemi durante il percorso, contattaci utilizzando la chat integrata nel prodotto.</block>
   <block id="18d5aadda239c924412f84368e73290b" category="paragraph">In alcuni casi, potrebbe essere necessario un solo connettore, ma potrebbero essere necessari due o più connettori.</block>
@@ -5135,4 +5086,51 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="12815307393fa19648b391d49b4282e4" category="section-title">Aggiungere un ruolo di accesso a un membro</block>
   <block id="e1c2f7c4dfacd1ec651c2d8a7b88a182" category="paragraph">In genere, al membro viene assegnato un ruolo quando viene aggiunto all'organizzazione. Tuttavia, puoi aggiornare il ruolo di un membro in qualsiasi momento rimuovendo un ruolo o aggiungendone uno diverso. È possibile rimuovere l'accesso di un utente a un progetto rimuovendo il suo ruolo.</block>
   <block id="7654fe6ca44295ba5f844fc9798f0103" category="sidebar">Ruoli di archiviazione</block>
+  <block id="b317bc8015ab38ad52bce34c9ef3ed4f" category="section-title">Come funzionano le credenziali per le distribuzioni sul marketplace e le distribuzioni on-premise?</block>
+  <block id="56e4e843754027d4bb0539f8e0c4faea" category="inline-link-macro">Impostare le autorizzazioni per le distribuzioni in locale</block>
+  <block id="3d0af4236ade79fa9ba92e57deb0baaa" category="list-text"><block ref="3d0af4236ade79fa9ba92e57deb0baaa" category="inline-link-macro-rx"></block></block>
+  <block id="9b049adb8a41cc7a0f049e9ffbda62b5" category="inline-link">Scopri di più sulle opzioni di individuazione e gestione per i cluster ONTAP locali</block>
+  <block id="6a9bba218e71d2777929e42afb6991ea" category="paragraph"><block ref="6a9bba218e71d2777929e42afb6991ea" category="inline-link-rx"></block></block>
+  <block id="f8a0b666073e2361543027ae29d21758" category="paragraph">La presente documentazione è disciplinata dall'EULA. Se il prodotto non viene utilizzato in conformità alla documentazione, la funzionalità e il funzionamento del prodotto, nonché i diritti dell'utente previsti dall'EULA, potrebbero risultarne negativamente compromessi.</block>
+  <block id="df3adb56314efbe583d898e1faf75d5b" category="paragraph">Il connettore utilizza TLS 1,3 per tutte le comunicazioni con AWS, Azure e Google Cloud.</block>
+  <block id="ebe9346393421eaeddb4b80d87a1e3e3" category="section-title">Come installare un connettore</block>
+  <block id="06f256a533d5a20ddffc37beb9565bc4" category="paragraph">Puoi installare un Connector direttamente da BlueXP, dal marketplace del tuo provider cloud oppure installando manualmente il software sul tuo host Linux. Il modo in cui iniziare dipende dall'utilizzo di BlueXP in modalità standard, limitata o privata.</block>
+  <block id="57d93d5e81bafd40970707a32bf098e7" category="inline-link-macro">Impostare le autorizzazioni cloud per le distribuzioni on-premise</block>
+  <block id="12368f54b2e6a4e2dd993defc6b725e9" category="list-text"><block ref="12368f54b2e6a4e2dd993defc6b725e9" category="inline-link-macro-rx"></block></block>
+  <block id="cccc2b687799dea05d000964281fe94d" category="paragraph">Di solito aggiorniamo il software del connettore ogni mese per introdurre nuove funzionalità e migliorare la stabilità. Mentre la maggior parte dei servizi e delle funzionalità della piattaforma BlueXP  sono offerti tramite software basato su SaaS, alcune funzionalità dipendono dalla versione del connettore. Sono inclusi la gestione di Cloud Volumes ONTAP, la gestione dei cluster ONTAP locali, le impostazioni e la guida.</block>
+  <block id="df2b2e3ed2e29dcb18914cf19445462e" category="list-text">Hai un ambiente multicloud (ad esempio, AWS e Azure) e preferisci avere un connettore in AWS e un altro in Azure. Ciascuno di essi gestisce i sistemi Cloud Volumes ONTAP in esecuzione in tali ambienti.</block>
+  <block id="303dd9be0eeb1860776aa43ceeb3e470" category="cell">Sono supportati sia il rilevamento con un connettore che il rilevamento senza un connettore (rilevamento diretto). Quando si rileva un cluster on-premises con un connettore, la visualizzazione avanzata (System Manager) non è supportata.</block>
+  <block id="4487b7b02fe57e6e8bdfe54c2ad74d34" category="list-text">Servizi BlueXP supportati nelle distribuzioni on-premise</block>
+  <block id="caf4a30b20a11e01cd72ece077ed9e50" category="cell">Cluster ONTAP on-premises</block>
+  <block id="0912b43cc7311cb2cc7bce5ac8b068fe" category="list-text">Esegui il backup e il ripristino dei dati nel cloud e in locale.</block>
+  <block id="ce77730dd6dbc743a3b153b41918d0fc" category="list-text">Sincronizza i dati tra archivi dati locali e cloud.</block>
+  <block id="0bc1c35cddc206d6a1870748d6b782d8" category="list-text">Estendi il tuo storage ONTAP locale al cloud.</block>
+  <block id="a849a8a45d50681fc0b30ac28b4d11e1" category="paragraph">Se la rete dispone di una subnet configurata con uno di questi intervalli, potrebbero verificarsi errori di connettività da BlueXP. Ad esempio, l'individuazione di cluster ONTAP locali in BlueXP potrebbe non riuscire.</block>
+  <block id="f35e114f48c5f22c2fe8ecda03690d52" category="inline-link-macro">Configurare la rete locale</block>
+  <block id="0de6919a4162aaaea1163fcece2a0a16" category="list-text"><block ref="0de6919a4162aaaea1163fcece2a0a16" category="inline-link-macro-rx"></block></block>
+  <block id="508ef8cc04a12b92629c3959ece8d473" category="cell">Quando si utilizza il backup e il ripristino di BlueXP per eseguire il backup di cluster ONTAP locali, è necessario aggiungere autorizzazioni al connettore per poter utilizzare la funzionalità "Cerca e ripristina".</block>
+  <block id="0b7a047195bdd655b80be504a06e7bbe" category="doc">Porte per il connettore locale</block>
+  <block id="e6929928a5493903d213002ab8ecbfe4" category="inline-link">Scansiona i dati del volume ONTAP locale utilizzando la classificazione BlueXP</block>
+  <block id="4599c08645d7102b295f6f73ef9fe891" category="list-text"><block ref="4599c08645d7102b295f6f73ef9fe891" category="inline-link-rx"></block></block>
+  <block id="7a38f6c0fc484a193bd9b10fd9107151" category="paragraph">Suggerimento: assicurati che due membri abbiano il ruolo di amministratore dell'organizzazione per evitare di perdere l'accesso alla tua organizzazione BlueXP.</block>
+  <block id="f2822d5dedda5be93d6f6e298458878b" category="paragraph">Gli utenti con questo ruolo possono gestire solo i membri di una cartella o di un progetto designato</block>
+  <block id="822c446995ebe71a6c753c700e7dd2b0" category="paragraph">È possibile aggiungere un account di servizio direttamente da BlueXP . Gli utenti devono creare un account BlueXP prima di essere aggiunti a un'organizzazione o di vedersi assegnato un ruolo.</block>
+  <block id="d0dc99396b7d861a7866a8e109f9b1c6" category="paragraph">Dopo la registrazione, gli utenti compilano la pagina di *Registrazione*, controllano la propria email e accedono. Se viene richiesto di creare un'organizzazione, devono chiudere BlueXP e informarti della creazione del loro account. È quindi possibile aggiungere l'utente all'organizzazione BlueXP  esistente.</block>
+  <block id="08a2395e6fbea42394d928f53df9f3e7" category="paragraph">L'utente riceve un'e-mail da NetApp BlueXP contenente le informazioni che i membri utilizzano per accedere a BlueXP.</block>
+  <block id="00407d7a171d24d8741b64c4670528bc" category="paragraph">lueXP mostra il segreto del client solo una volta e non lo memorizza. Copia o scarica il segreto e conservalo in modo sicuro. Tenere presente che è possibile ricreare l'ID client e il segreto client in un secondo momento.</block>
+  <block id="981e68aebbf5499db66d9a2b0c273b16" category="paragraph">Nella tabella *Membri* vengono visualizzati i membri della tua organizzazione.</block>
+  <block id="e4cb5729a397d486706aec2c33ce4ea6" category="paragraph">Potrebbe essere necessario rimuovere un membro dalla tua organizzazione, ad esempio se abbandona l'azienda.</block>
+  <block id="a8b5ca2eacd6c76f00fb50a8de358707" category="paragraph">La rimozione di un membro comporta la revoca delle autorizzazioni, ma mantiene i suoi account BlueXP e NetApp Support Site.</block>
+  <block id="9db713593f37da13d4833a36d120ccfd" category="paragraph">Creare nuove credenziali in caso di smarrimento o quando è necessario aggiornare le credenziali di sicurezza.</block>
+  <block id="52f5be4f784cf685f0ad8a80aedf6b64" category="paragraph">La ricreazione delle credenziali elimina le credenziali esistenti per l'account del servizio, quindi crea nuove credenziali. Non è possibile utilizzare le credenziali precedenti.</block>
+  <block id="81bce7de713bcaf7549f55a3a0969660" category="paragraph">BlueXP visualizza il segreto del client solo una volta e non lo memorizza da nessuna parte. Copia o scarica il segreto e conservalo in modo sicuro.</block>
+  <block id="78ce04965d900b7ef35dfc2218778225" category="list-text">Questa versione del Connector include anche miglioramenti di Cloud Volumes ONTAP e miglioramenti del cluster ONTAP locale.</block>
+  <block id="797ea56826da2367a2d9d995e3baa7ce" category="inline-link">Scopri i miglioramenti del cluster ONTAP on-premises</block>
+  <block id="6b5f698f33fda7e21ffb6353943e1348" category="list-text"><block ref="6b5f698f33fda7e21ffb6353943e1348" category="inline-link-rx"></block></block>
+  <block id="ffdf38e49e65f18329f7f8e5beb3abaf" category="list-text"><block ref="ffdf38e49e65f18329f7f8e5beb3abaf" category="inline-link-rx"></block></block>
+  <block id="09798dd0fb4ac612714839b6f2723d58" category="list-text"><block ref="09798dd0fb4ac612714839b6f2723d58" category="inline-link-rx"></block></block>
+  <block id="2b514d363c7b672f94e04264ce6b6266" category="paragraph">È possibile utilizzare BlueXP per creare e amministrare l'archiviazione cloud (ad esempio, Cloud Volumes ONTAP e Azure NetApp Files), per spostare, proteggere e analizzare i dati e per controllare numerosi dispositivi di archiviazione locali ed edge.</block>
+  <block id="ab244aa8ea93b8114e0cc9009af3f81b" category="list-text">Ora puoi gestire più sistemi di archiviazione in sede, come E-Series e StorageGRID.</block>
+  <block id="036d3952a98988224205b6f039be487f" category="list-text"><block ref="036d3952a98988224205b6f039be487f" category="inline-link-rx"></block></block>
+  <block id="6a3405f47013290acf99c18684c84269" category="list-text">Cloud Tiering ora visualizza se sono presenti cluster ONTAP locali non scoperti, in modo da poterli aggiungere a Cloud Manager per abilitare il tiering o altri servizi su tali cluster.</block>
 </blocks>
