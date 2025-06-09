@@ -14,7 +14,7 @@ summary: 'BlueXP aggiorna automaticamente un connettore all"ultima release quand
 
 
 [role="lead"]
-Quando si utilizza BlueXP  in modalità standard o limitata, BlueXP  aggiorna automaticamente il connettore all'ultima versione, purché disponga dell'accesso a Internet in uscita per ottenere l'aggiornamento software. Se è necessario gestire manualmente quando il connettore viene aggiornato, è possibile disattivare gli aggiornamenti automatici per la modalità standard o limitata.
+Quando utilizzi la modalità standard o quella limitata, BlueXP aggiorna automaticamente il tuo Connector all'ultima versione, a patto che il Connector abbia accesso a Internet in uscita per ottenere l'aggiornamento software. Se è necessario gestire manualmente quando il connettore viene aggiornato, è possibile disattivare gli aggiornamenti automatici per la modalità standard o limitata.
 
 
 NOTE: Quando si esegue BlueXP  in modalità privata, è sempre necessario aggiornare il connettore.

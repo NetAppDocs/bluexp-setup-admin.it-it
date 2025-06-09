@@ -20,14 +20,14 @@ BlueXP  Identity and Access Management (IAM) include diversi ruoli predefiniti 
 
 == Ruoli della piattaforma
 
-I ruoli della piattaforma sono i ruoli più ampi che puoi assegnare agli utenti e consentire tutte le autorizzazioni per l'amministrazione BlueXP, inclusa l'assegnazione di ruoli e l'aggiunta di utenti. Gli utenti con ruoli della piattaforma hanno accesso a tutti i servizi dati e le applicazioni all'interno di BlueXP . BlueXP IAM include due ruoli di piattaforma: amministratore dell'organizzazione e amministratore della cartella o del progetto. La principale differenza tra i due ruoli della piattaforma BlueXP  IAM è l'ambito.
+I ruoli della piattaforma concedono tutte le autorizzazioni per l'amministrazione di BlueXP, inclusa l'assegnazione dei ruoli e l'aggiunta di utenti. Gli utenti con ruoli della piattaforma hanno accesso a tutti i servizi dati e le applicazioni all'interno di BlueXP . BlueXP IAM include due ruoli di piattaforma: amministratore dell'organizzazione e amministratore della cartella o del progetto. La principale differenza tra i due ruoli della piattaforma BlueXP  IAM è l'ambito.
 
 [cols="1,2"]
 |===
 | Ruolo piattaforma | Responsabilità 
 
 
-| link:reference-iam-platform-roles.html["Amministratore org"] | Consente a un utente di accedere senza restrizioni a tutti i progetti e le cartelle all'interno di un'organizzazione, aggiungere membri a qualsiasi progetto o cartella, nonché eseguire qualsiasi attività BlueXP  e utilizzare qualsiasi servizio dati. Gli utenti con questo ruolo hanno il compito di organizzare e gestire l'intero ambiente BlueXP . Possono creare cartelle e progetti, assegnare ruoli e aggiungere utenti a qualsiasi progetto o cartella. Possono anche gestire tutti gli ambienti di lavoro all'interno dell'organizzazione. Questo è l'unico ruolo di accesso che può creare connettori. 
+| link:reference-iam-platform-roles.html["Amministratore org"] | Consente a un utente di accedere senza restrizioni a tutti i progetti e le cartelle all'interno di un'organizzazione, aggiungere membri a qualsiasi progetto o cartella, nonché eseguire qualsiasi attività BlueXP  e utilizzare qualsiasi servizio dati. Gli utenti con questo ruolo organizzano e gestiscono l'intero ambiente BlueXP. Creano cartelle e progetti, assegnano ruoli, aggiungono utenti e possono gestire tutti gli ambienti di lavoro, se in possesso delle credenziali necessarie. Questo è l'unico ruolo di accesso che può creare connettori. 
 
 
 | link:reference-iam-platform-roles.html["Amministratore cartella o progetto"] | Consente a un utente di accedere senza restrizioni a progetti e cartelle specifici a cui sono assegnati. Può aggiungere membri alle cartelle o ai progetti gestiti, nonché eseguire qualsiasi attività BlueXP  e utilizzare qualsiasi servizio dati o applicazione sulle risorse all'interno della cartella o del progetto a cui sono assegnati. Il ruolo di amministratore cartella o progetto NON PUÒ creare connettori. 
@@ -37,9 +37,6 @@ I ruoli della piattaforma sono i ruoli più ampi che puoi assegnare agli utenti 
 == Ruoli applicazione
 
 Di seguito è riportato un elenco dei ruoli nella categoria dell'applicazione. Ogni ruolo concede autorizzazioni specifiche all'interno dell'ambito designato. Gli utenti che non dispongono del ruolo richiesto dell'applicazione o di un ruolo della piattaforma non potranno accedere all'applicazione.
-
-
-NOTE: L'accesso a Keystone tramite BlueXP  è attualmente in versione beta. Se desideri partecipare alla beta di Keystone, contatta il tuo rappresentante NetApp.
 
 [cols="1,2"]
 |===
@@ -80,16 +77,7 @@ Di seguito è riportato un elenco dei ruoli nella categoria del servizio dati. O
 | link:reference-iam-ransomware-roles.html["Visualizzatore di protezione dal ransomware"] | Visualizza i dati dei carichi di lavoro, visualizza i dati di avviso, scarica i dati di recovery e scarica i report nel servizio di protezione dal ransomware. 
 
 
-| Amministratore SnapCenter  a| 
-Consente di eseguire il backup delle snapshot da cluster ONTAP on-premise utilizzando il backup e recovery di BlueXP  per le applicazioni. Un membro che ha questo ruolo può completare le seguenti azioni in BlueXP :
-
-* Completare qualsiasi azione da Backup e ripristino > applicazioni
-* Gestire tutti gli ambienti di lavoro nei progetti e nelle cartelle per i quali dispongono delle autorizzazioni
-* Utilizzare tutti i servizi BlueXP 
-
-
-SnapCenter non ha un ruolo di spettatore.
-
+| Amministratore SnapCenter | Consente di eseguire il backup delle snapshot da cluster ONTAP on-premise utilizzando il backup e recovery di BlueXP  per le applicazioni. Un membro che ha questo ruolo può completare le seguenti azioni in BlueXP: * Completare qualsiasi azione da Backup e ripristino > Applicazioni * Gestire tutti gli ambienti di lavoro nei progetti e nelle cartelle per cui dispone delle autorizzazioni * Utilizzare tutti i servizi BlueXP SnapCenter non ha un ruolo di visualizzatore. 
 |===
 
 

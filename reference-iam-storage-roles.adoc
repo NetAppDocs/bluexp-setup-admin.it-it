@@ -14,12 +14,12 @@ summary: 'La gestione delle identità e degli accessi di BlueXP  fornisce due r
 
 
 [role="lead"]
-È possibile assegnare i seguenti ruoli agli utenti per fornire loro accesso alle funzionalità di gestione dello storage in BlueXP  associate a risorse di storage supportate. Agli utenti può essere assegnato un ruolo di amministratore che consente loro di intervenire nella gestione dello storage o un ruolo di spettatore se hanno solo responsabilità di monitoraggio.
+È possibile assegnare i seguenti ruoli agli utenti per fornire loro accesso alle funzionalità di gestione dello storage in BlueXP  associate a risorse di storage supportate. È possibile assegnare agli utenti un ruolo amministrativo per la gestione dell'archiviazione o un ruolo di visualizzatore per il monitoraggio.
 
 
 NOTE: Questi ruoli non sono disponibili nell'API di partnership BlueXP.
 
-È possibile assegnare ruoli allo storage agli utenti per le seguenti risorse e caratteristiche:
+Gli amministratori possono assegnare ruoli di archiviazione agli utenti per le seguenti risorse e funzionalità di archiviazione:
 
 Risorse di storage:
 
@@ -38,13 +38,13 @@ Funzionalità e servizi BlueXP :
 
 
 .Esempio per ruoli storage in BlueXP 
-XYZ Corporation, una multinazionale, ha un grande team di ingegneri dello storage e amministratori dello storage. Vogliono fornire a questo team gli strumenti per gestire le risorse storage per le rispettive regioni, ma limitano l'accesso alle attività di amministrazione principali di BlueXP  come la gestione degli utenti, la creazione di connettori e strumenti di gestione dei costi come il Digital Wallet.
+XYZ Corporation, una multinazionale, ha un grande team di ingegneri dello storage e amministratori dello storage. Consentono a questo team di gestire le risorse di archiviazione per le proprie regioni, limitando al contempo l'accesso alle attività principali di BlueXP, come la gestione degli utenti, la creazione di connettori e gli strumenti di gestione dei costi, come il portafoglio digitale.
 
 All'interno di un team di 12, a due utenti viene assegnato il ruolo *Visualizzatore archiviazione* che consente loro di monitorare le risorse di archiviazione associate ai progetti BlueXP  a cui sono assegnati. Gli altri nove ricoprono il ruolo di *amministratore dello storage*, che include la possibilità di gestire gli aggiornamenti software, accedere a ONTAP System Manager tramite BlueXP  e rilevare le risorse di storage (aggiungere ambienti di lavoro). A una persona del team viene assegnato il ruolo *System Health Specialist* in modo che possa gestire lo stato delle risorse di storage nella propria regione, senza modificare o eliminare alcun ambiente di lavoro. Questa persona può inoltre eseguire aggiornamenti software sulle risorse di archiviazione per i progetti assegnati.
 
 L'organizzazione dispone di due utenti aggiuntivi con il ruolo di amministratore dell'organizzazione* che possono gestire tutti gli aspetti di BlueXP , tra cui la gestione degli utenti, la creazione di connettori e strumenti di gestione dei costi come il portafoglio digitale, oltre a diversi utenti con il ruolo di amministratore *cartella o progetto* che possono eseguire attività di amministrazione BlueXP  per le cartelle e i progetti a cui sono assegnati.
 
-Nella tabella seguente vengono indicate le azioni eseguibili da ciascun ruolo storage BlueXP .
+Nella tabella seguente vengono illustrate le azioni eseguite da ciascun ruolo di archiviazione BlueXP.
 
 [cols="40,20a,20a,20a"]
 |===

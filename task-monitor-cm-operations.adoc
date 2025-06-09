@@ -44,7 +44,7 @@ La tabella seguente fornisce un confronto tra la cronologia e il Centro notifich
 
 == Controlla l'attività dell'utente dalla timeline BlueXP 
 
-La timeline di BlueXP  mostra le azioni completate dagli utenti per gestire l'organizzazione o l'account. Ciò include azioni di gestione come l'associazione di utenti, la creazione di ambienti di lavoro, la creazione di connettori e altro ancora.
+La cronologia mostra le azioni completate dagli utenti per gestire la tua organizzazione o il tuo account. Ciò include azioni di gestione come l'associazione di utenti, la creazione di ambienti di lavoro, la creazione di connettori e altro ancora.
 
 Controllare la cronologia può essere utile se è necessario identificare chi ha eseguito un'azione specifica o se è necessario identificare lo stato di un'azione.
 
@@ -137,7 +137,7 @@ image:screenshot_notification_dismiss1.png["Una schermata che mostra come chiude
 
 [NOTE]
 ====
-* Le notifiche vengono inviate tramite e-mail per le seguenti funzioni e servizi BlueXP : Connettore, portafoglio digitale BlueXP , copia e sincronizzazione BlueXP  e backup e ripristino BlueXP .
+* Le notifiche vengono inviate tramite e-mail per le seguenti funzionalità e servizi: Connector, portafoglio digitale, copia e sincronizzazione, backup e ripristino.
 * L'invio di notifiche e-mail non è supportato quando il connettore viene installato in un sito senza accesso a Internet.
 
 
@@ -146,7 +146,7 @@ I filtri impostati nel Centro notifiche non determinano i tipi di notifiche che 
 
 Tutti gli altri utenti e destinatari sono configurati per non ricevere alcuna email di notifica, pertanto dovrai configurare le impostazioni di notifica per eventuali utenti aggiuntivi.
 
-Per personalizzare le impostazioni delle notifiche, è necessario essere un amministratore di BlueXP .
+Per personalizzare le impostazioni delle notifiche, devi avere il ruolo di amministratore dell'organizzazione.
 
 .Fasi
 . Dalla barra dei menu di BlueXP, selezionare *Impostazioni > Impostazioni avvisi e notifiche*.
@@ -168,7 +168,7 @@ image:screenshot-change-notifications.png["Una schermata che mostra come modific
 
 === Aggiungere altri destinatari di posta elettronica
 
-Gli utenti visualizzati nella scheda _utenti_ vengono compilati automaticamente dagli utenti dell'organizzazione o dell'account BlueXP . È possibile aggiungere indirizzi e-mail nella scheda _destinatari aggiuntivi_ per altre persone o gruppi che non hanno accesso a BlueXP, ma che devono essere avvisati di determinati tipi di avvisi e notifiche.
+Gli utenti visualizzati nella scheda _Utenti_ vengono automaticamente inseriti tra gli utenti della tua organizzazione o del tuo account. È possibile aggiungere indirizzi e-mail nella scheda _destinatari aggiuntivi_ per altre persone o gruppi che non hanno accesso a BlueXP, ma che devono essere avvisati di determinati tipi di avvisi e notifiche.
 
 .Fasi
 . Dalla pagina Impostazioni avvisi e notifiche, selezionare *Aggiungi nuovi destinatari*.

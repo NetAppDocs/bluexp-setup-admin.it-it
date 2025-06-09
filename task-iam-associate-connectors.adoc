@@ -13,7 +13,7 @@ summary: 'Se i membri dell"organizzazione devono utilizzare un connettore in un 
 :imagesdir: ./media/
 
 
- When an _Organization admin_ creates a Connector, BlueXP automatically associates that Connector with the organization and the currently selected project. The _Organization admin_ automatically has access to that Connector from anywhere in the organization. Other members in your organization can only access that Connector from the project in which it was created, unless you associate that Connector with other projects from BlueXP identity and access management (IAM).
+ When an _Organization admin_ creates a Connector, it is automatcially associated with currently selected project within the organization. Although someone with the _Organization admin_  can access to that Connector from anywhere in the organization. Other members in your organization can only access that Connector from the project in which it was created, unless you associate that Connector with other projects.
 .Prima di iniziare
 È necessario comprendere il funzionamento dell'associazione dei connettori. link:concept-identity-and-access-management.html#associate-connectors["Informazioni sull'uso dei connettori con BlueXP  IAM"].
 
@@ -37,9 +37,6 @@ BlueXP  visualizza i dettagli relativi alle cartelle e ai progetti a cui è ass
 . Per associare il connettore a una cartella o un progetto aggiuntivo, selezionare *Aggiungi una cartella o un progetto* e quindi selezionare la cartella o il progetto.
 . Selezionare *Associa connettore*.
 
-
-.Risultato
-BlueXP  associa il connettore alle cartelle e ai progetti selezionati. I membri che dispongono delle autorizzazioni per tali cartelle e progetti possono ora selezionare il connettore.
 
 .Al termine
 Se si desidera associare le risorse gestite dal connettore alle stesse cartelle e progetti, è possibile farlo dalla pagina risorse.

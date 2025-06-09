@@ -4,7 +4,7 @@ permalink: task-subscribe-standard-mode.html
 keywords: subscribe, subscription, marketplace subscription, paygo, contract, annual contract 
 summary: 'Iscriviti a BlueXP dal mercato del tuo cloud provider per pagare i servizi BlueXP a una tariffa oraria o attraverso un contratto annuale. Se hai acquistato una licenza da NetApp, devi anche iscriverti all"offerta Marketplace. La licenza viene sempre addebitata per prima, ma l"utente verrà addebitato alla tariffa oraria se supera la capacità concessa in licenza o se scade il termine della licenza.' 
 ---
-= Sottoscrizione ai servizi dati BlueXP  (modalità standard)
+= Iscriviti a NetApp Intelligent Services (modalità standard)
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: 'Iscriviti a BlueXP dal mercato del tuo cloud provider per pagare i ser
 
 
 [role="lead"]
-Iscriviti a BlueXP dal mercato del tuo cloud provider per pagare i servizi BlueXP a una tariffa oraria (PAYGO) o attraverso un contratto annuale. Se hai acquistato una licenza da NetApp (BYOL), devi anche iscriverti all'offerta Marketplace. La licenza viene sempre addebitata per prima, ma l'utente verrà addebitato alla tariffa oraria se supera la capacità concessa in licenza o se scade il termine della licenza.
+Abbonati a NetApp Intelligent Services dal marketplace del tuo provider cloud per pagare i servizi dati a una tariffa oraria (PAYGO) o tramite un contratto annuale. Se hai acquistato una licenza da NetApp (BYOL), devi anche iscriverti all'offerta Marketplace. La licenza viene sempre addebitata per prima, ma l'utente verrà addebitato alla tariffa oraria se supera la capacità concessa in licenza o se scade il termine della licenza.
 
-L'iscrizione al marketplace consente di addebitare i seguenti servizi dati BlueXP :
+Un abbonamento al marketplace consente di addebitare i seguenti servizi dati NetApp:
 
 * Backup e recovery
 * Cloud Volumes ONTAP
@@ -25,16 +25,18 @@ L'iscrizione al marketplace consente di addebitare i seguenti servizi dati BlueX
 * Disaster recovery
 
 
+La classificazione è abilitata tramite l'abbonamento, ma il suo utilizzo è gratuito.
+
 .Prima di iniziare
-L'iscrizione ai servizi dati BlueXP  implica l'associazione di un'iscrizione al marketplace alle credenziali cloud associate a un connettore. Se hai seguito il flusso di lavoro "Get Started with standard mode" (inizia con la modalità standard), dovresti già disporre di un connettore. Per ulteriori informazioni, vedere link:task-quick-start-standard-mode.html["Avvio rapido per BlueXP in modalità standard"].
+L'abbonamento ai servizi dati comporta l'associazione di un abbonamento al marketplace alle credenziali cloud associate a un connettore. Se hai seguito il flusso di lavoro "Get Started with standard mode" (inizia con la modalità standard), dovresti già disporre di un connettore. Per ulteriori informazioni, vedere link:task-quick-start-standard-mode.html["Avvio rapido per BlueXP in modalità standard"].
 
 [role="tabbed-block"]
 ====
 .AWS
 --
-Il seguente video illustra i passaggi per abbonarsi a BlueXP  dal marketplace AWS:
+Il seguente video mostra i passaggi per abbonarsi a NetApp Intelligent Services da AWS Marketplace:
 
-.Iscriviti a BlueXP dal marketplace AWS
+.Iscriviti a NetApp Intelligent Services da AWS Marketplace
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .Fasi
 . Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
@@ -75,7 +77,7 @@ Per tutte le altre organizzazioni o account, è necessario associare manualmente
 .Azure
 --
 .Fasi
-. Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
+. Nell'angolo in alto a destra della console, seleziona l'icona Impostazioni e seleziona *Credenziali*.
 . Selezionare il menu azione per un set di credenziali, quindi selezionare *Configura sottoscrizione*.
 +
 Selezionare le credenziali associate a un connettore. Non puoi associare un abbonamento al marketplace alle credenziali associate a BlueXP.
@@ -88,7 +90,7 @@ Selezionare le credenziali associate a un connettore. Non puoi associare un abbo
 .. Compila il modulo e seleziona *Iscriviti*.
 .. Una volta completato il processo di iscrizione, selezionare *Configura account*.
 +
-Verrai reindirizzato al sito Web di BlueXP.
+Verrai reindirizzato a BlueXP.
 
 .. Dalla pagina *Subscription Assignment*:
 +
@@ -105,7 +107,7 @@ Per tutte le altre organizzazioni o account, è necessario associare manualmente
 Il seguente video mostra i passaggi per iscriversi a Azure Marketplace:
 
 +
-.Iscriviti a BlueXP da Azure Marketplace
+.Iscriviti a NetApp Intelligent Services da Azure Marketplace
 video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 
@@ -117,7 +119,7 @@ video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 .Google Cloud
 --
 .Fasi
-. Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
+. Nell'angolo in alto a destra della console, seleziona l'icona Impostazioni e seleziona *Credenziali*.
 . Selezionare il menu azione per un set di credenziali, quindi selezionare *Configura sottoscrizione*. +nuovo screenshot necessario (TS) image:screenshot_gcp_add_subscription.png["Schermata del menu delle azioni per un set di credenziali esistenti."]
 . Per configurare un abbonamento esistente con le credenziali selezionate, selezionare un progetto Google Cloud e un abbonamento dall'elenco a discesa, quindi selezionare *Configura*.
 +
@@ -129,7 +131,7 @@ image:screenshot_gcp_associate.gif["Una schermata di un progetto Google Cloud e 
 NOTE: Prima di completare i seguenti passaggi, assicurarsi di disporre dei privilegi di Billing Admin nell'account Google Cloud e di un account di accesso BlueXP.
 
 +
-.. Dopo essere stati reindirizzati a https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Pagina NetApp BlueXP su Google Cloud Marketplace"^], assicurarsi che il progetto corretto sia selezionato nel menu di navigazione superiore.
+.. Dopo essere stato reindirizzato al  https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Pagina di NetApp Intelligent Services su Google Cloud Marketplace"^] , assicurati che sia selezionato il progetto corretto nel menu di navigazione in alto.
 +
 image:screenshot_gcp_cvo_marketplace.png["Una schermata della pagina del marketplace Cloud Volumes ONTAP in Google Cloud."]
 
@@ -181,8 +183,8 @@ image:screenshot_gcp_associate.gif["Schermata della pagina di assegnazione dell'
 ====
 .Informazioni correlate
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Gestire le licenze BYOL basate sulla capacità per Cloud Volumes ONTAP"^]
-* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Gestire le licenze BYOL per i servizi dati BlueXP"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Gestire le credenziali AWS e le sottoscrizioni per BlueXP"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Gestire le credenziali e le sottoscrizioni di Azure per BlueXP"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["Gestire le credenziali e le sottoscrizioni di Google Cloud per BlueXP"]
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Gestire le licenze BYOL per i servizi dati"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Gestisci le credenziali e gli abbonamenti AWS"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Gestire le credenziali e le sottoscrizioni di Azure"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["Gestisci le credenziali e gli abbonamenti di Google Cloud"]
 

@@ -22,7 +22,7 @@ link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"].
 
 == Disinstallare il connettore quando si utilizza la modalità standard o limitata
 
-Se stai utilizzando BlueXP in modalità standard o limitata (in altre parole, l'host del connettore dispone di connettività in uscita), segui la procedura riportata di seguito per disinstallare il software del connettore.
+Se si utilizza la modalità standard o quella limitata (in altre parole, se l'host del connettore dispone di connettività in uscita), è necessario seguire i passaggi indicati di seguito per disinstallare il software del connettore.
 
 .Fasi
 . Connettersi alla macchina virtuale Linux per il connettore.
@@ -39,7 +39,7 @@ _silent_ esegue lo script senza richiedere conferma.
 
 == Disinstallare il connettore quando si utilizza la modalità privata
 
-Se utilizzi BlueXP in modalità privata (in altre parole, l'host del connettore ha _nessuna_ connettività in uscita), segui la procedura riportata di seguito per disinstallare il software del connettore.
+Se si utilizza la modalità privata (in altre parole, l'host del connettore non ha _nessuna_ connettività in uscita), è necessario seguire i passaggi sottostanti per disinstallare il software del connettore.
 
 .Fase
 . Connettersi alla macchina virtuale Linux per il connettore.
@@ -50,7 +50,7 @@ Se utilizzi BlueXP in modalità privata (in altre parole, l'host del connettore 
 /opt/application/netapp/ds/cleanup.sh
 rm -rf /opt/application/netapp/
 ----
-. Dall'host Linux, rimuovere i vecchi file di immagine del contenitore ora inutilizzati. Ciò garantisce che vi sia spazio sufficiente nella directory /var per la reinstallazione.
+. Dall'host Linux, eliminare i vecchi file immagine del contenitore inutilizzati per liberare spazio nella directory /var per la reinstallazione.
 +
 [role="tabbed-block"]
 ====
@@ -80,7 +80,7 @@ Se un connettore non è attivo, è possibile rimuoverlo dall'elenco dei connetto
 Tenere presente quanto segue per la rimozione di un connettore:
 
 * Questa azione non elimina la macchina virtuale.
-* Questa azione non può essere annullata - una volta rimosso un connettore da BlueXP, non è possibile aggiungerlo nuovamente.
+* Questa azione non può essere annullata: una volta rimosso un connettore, non sarà più possibile aggiungerlo di nuovo.
 
 
 .Fasi

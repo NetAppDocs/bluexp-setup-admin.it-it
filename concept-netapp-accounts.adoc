@@ -14,9 +14,9 @@ summary: Un account BlueXP  consente di gestire gli utenti e organizzare le ris
 
 
 [role="lead"]
-Quando si utilizza BlueXP  in modalità privata, si utilizzerà un account _BlueXP _ per gestire gli utenti e organizzare le risorse in un _workspace_ isolato.
+Quando utilizzi la modalità privata, utilizzerai un _account BlueXP_ per gestire gli utenti e organizzare le risorse in uno _spazio di lavoro_ isolato.
 
-Se si utilizza BlueXP  in modalità standard o limitata, non si dispone di un account BlueXP . Avrete invece un'organizzazione _BlueXP _ gestita utilizzando la gestione delle identità e degli accessi (IAM) di BlueXP .
+Se utilizzi la modalità standard o quella limitata, non avrai un account. Avrai invece un'_organizzazione_ che gestirai tramite la gestione delle identità e degli accessi (IAM).
 
 * link:concept-identity-and-access-management.html["Ulteriori informazioni su BlueXP  IAM"]
 * link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"]
@@ -38,15 +38,15 @@ link:task-managing-netapp-accounts.html["Scopri come gestire il tuo account Blue
 
 == Membri
 
-I membri sono utenti BlueXP che si associano al proprio account BlueXP. L'associazione di un utente a un account e all'area di lavoro in tale account consente agli utenti di creare e gestire ambienti di lavoro in BlueXP .
+I membri sono utenti che associ al tuo account. Associare un utente a un account e al tuo spazio di lavoro in quell'account consente a tali utenti di creare e gestire ambienti di lavoro.
 
 
 
 == Area di lavoro
 
-In BlueXP, un'area di lavoro isola qualsiasi numero di _ambienti di lavoro_ da altri utenti dell'account. Gli utenti BlueXP  (membri) non possono accedere agli ambienti di lavoro in un'area di lavoro a meno che non siano associati a tale area di lavoro.
+Un'area di lavoro isola un numero qualsiasi di _ambienti di lavoro_ dagli altri utenti dell'account. Gli utenti (membri) non possono accedere agli ambienti di lavoro di un'area di lavoro a meno che non siano associati a tale area di lavoro.
 
-Un ambiente di lavoro rappresenta i sistemi storage come il tuo cluster ONTAP on-premise.
+Un ambiente di lavoro rappresenta un sistema di archiviazione come il cluster ONTAP locale.
 
 La modalità privata BlueXP  supporta solo un'area di lavoro.
 
@@ -54,8 +54,8 @@ La modalità privata BlueXP  supporta solo un'area di lavoro.
 
 == Connettori
 
-Un connettore esegue le azioni che BlueXP deve eseguire per gestire l'infrastruttura dati. Il connettore viene eseguito su un'istanza di macchina virtuale implementata nel cloud provider o su un host on-premise configurato.
+Un connettore esegue le azioni necessarie per gestire la tua infrastruttura dati. Il connettore viene eseguito su un'istanza di macchina virtuale implementata nel cloud provider o su un host on-premise configurato.
 
-È possibile utilizzare un connettore con più di un servizio BlueXP. Ad esempio, se stai utilizzando un connettore per gestire il backup e il ripristino, puoi utilizzare lo stesso connettore con un altro servizio come il tiering BlueXP .
+È possibile utilizzare un connettore con più di un servizio dati. Ad esempio, se si utilizza un connettore per gestire backup e ripristino, è possibile utilizzare lo stesso connettore con un altro servizio, come il tiering.
 
 link:concept-connectors.html["Scopri di più sui connettori"].

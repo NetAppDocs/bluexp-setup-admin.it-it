@@ -74,7 +74,7 @@ image:screenshot-help-support.png["Schermata del menu Help (Guida) in cui Suppor
 .. Selezionare *Send AutoSupport* (Invia messaggio) per inviare direttamente il messaggio al supporto NetApp.
 +
 
-NOTE: Quando si sceglie di far inviare il messaggio AutoSupport a BlueXP , possono essere necessarie fino a cinque ore perché BlueXP  carica automaticamente i saldi quando vengono inviati i messaggi AutoSupport. Se la comunicazione con il supporto NetApp è sensibile al tempo, è necessario scaricare il file e inviarlo all'assistenza NetApp.
+NOTE: BlueXP potrebbe impiegare fino a cinque ore per inviare i messaggi di AutoSupport a causa del bilanciamento del carico. Per comunicazioni urgenti, scaricare il file e inviarlo manualmente.
 
 
 

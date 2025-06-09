@@ -27,6 +27,9 @@ summary: 'Per installare manualmente il connettore sul proprio host Linux, è ne
 
 Il software del connettore deve essere eseguito su un host che soddisfi i requisiti specifici del sistema operativo, della RAM, dei requisiti delle porte e così via.
 
+
+NOTE: Il connettore riserva l'intervallo di UID e GID compreso tra 19000 e 19200. Questo intervallo è fisso e non può essere modificato. Se un software di terze parti sul tuo host utilizza UID o GID compresi in questo intervallo, l'installazione del connettore non andrà a buon fine. NetApp consiglia di utilizzare un host privo di software di terze parti per evitare conflitti.
+
 Host dedicato:: Il connettore non è supportato su un host condiviso con altre applicazioni. L'host deve essere un host dedicato.
 +
 --

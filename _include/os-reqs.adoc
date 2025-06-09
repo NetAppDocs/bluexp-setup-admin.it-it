@@ -14,6 +14,9 @@ L'host può essere di qualsiasi architettura che soddisfi i seguenti requisiti d
 --
 
 
+
+NOTE: Il connettore riserva l'intervallo di UID e GID compreso tra 19000 e 19200. Questo intervallo è fisso e non può essere modificato. Se un software di terze parti sul tuo host utilizza UID o GID compresi in questo intervallo, l'installazione del connettore non andrà a buon fine. NetApp consiglia di utilizzare un host privo di software di terze parti per evitare conflitti.
+
 Hypervisor:: È necessario un hypervisor bare metal o in hosting certificato per l'esecuzione di un sistema operativo supportato.
 
 

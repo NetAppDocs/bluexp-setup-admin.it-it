@@ -14,7 +14,7 @@ summary: Identity Federation consente il single sign-on con BlueXP, in modo che 
 
 
 [role="lead"]
-_Identity Federation_ abilita il single sign-on con BlueXP, in modo che gli utenti possano accedere utilizzando le credenziali della tua identità aziendale. Per iniziare, scopri come funziona la federazione delle identità con BlueXP e consulta una panoramica del processo di installazione.
+_Identity Federation_ abilita il single sign-on con BlueXP, in modo che gli utenti possano accedere utilizzando le credenziali della tua identità aziendale. Per iniziare, scopri come funziona la federazione delle identità e poi leggi una panoramica del processo di configurazione.
 
 
 
@@ -26,7 +26,7 @@ Se si utilizzano le credenziali NetApp Support Site (NSS) per accedere a BlueXP,
 * Inviare il modulo all'indirizzo e-mail specificato nel modulo
 
 
-Il team di gestione delle identità e degli accessi di NetApp esaminerà la tua richiesta.
+Il team NetApp Identity and Access Management esamina la tua richiesta.
 
 
 
@@ -38,7 +38,7 @@ La seguente immagine mostra il funzionamento della federazione di identità con 
 
 image:diagram-identity-federation.png["Diagramma che mostra un utente che esegue l'autenticazione con BlueXP e una connessione tra BlueXP e un provider di identità che autentica l'utente."]
 
-. Un utente inserisce il proprio indirizzo e-mail nella pagina di accesso di BlueXP.
+. L'utente inserisce il proprio indirizzo e-mail nella pagina di accesso di BlueXP.
 . BlueXP identifica che il dominio di posta elettronica fa parte di una connessione federata e invia la richiesta di autenticazione al provider di identità utilizzando la connessione trusted.
 +
 Quando si imposta una connessione federata, BlueXP utilizza sempre tale connessione federata per l'autenticazione.
@@ -67,7 +67,7 @@ BlueXP supporta solo SSO avviato da service provider (SP-Initiated). SSO avviato
 
 == Panoramica del processo di installazione
 
-Prima di impostare una connessione tra BlueXP e il provider di gestione delle identità, è necessario comprendere i passaggi necessari per prepararsi di conseguenza.
+Prima di impostare una connessione tra BlueXP e il tuo provider di gestione delle identità, è opportuno comprendere i passaggi necessari per la preparazione.
 
 Questi passaggi sono specifici per gli utenti che accedono a BlueXP utilizzando un login cloud NetApp. Se si utilizzano le credenziali NSS per accedere a BlueXP, <<Federazione di identità con credenziali NSS,Scopri come configurare la federazione delle identità con le credenziali NSS>>.
 
@@ -116,7 +116,7 @@ Per completare questo passaggio, è necessario ottenere quanto segue dall'ammini
 Dopo aver creato la connessione utilizzando queste informazioni, la pagina Federation Setup elenca i parametri che è possibile inviare all'amministratore di ad per completare la configurazione nel passaggio successivo.
 
 
-NOTE: Prendere nota della data di scadenza del certificato. È necessario tornare alla pagina Federation Setup e aggiornare il certificato _prima_ che scada. Questa è la tua responsabilità. BlueXP non tiene traccia della data di scadenza. È meglio collaborare con il tuo team ad per ricevere avvisi puntuali.
+NOTE: Prendere nota della data di scadenza del certificato. È necessario tornare alla pagina Federation Setup e aggiornare il certificato _prima_ che scada. Questa è la tua responsabilità. BlueXP non tiene traccia della data di scadenza, quindi è necessario monitorare e aggiornare il certificato prima della scadenza. È consigliabile collaborare con il team IT per ricevere avvisi in tempo.
 
 
 

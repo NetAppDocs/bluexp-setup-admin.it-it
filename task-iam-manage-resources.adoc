@@ -14,16 +14,16 @@ summary: 'Gestire la gerarchia delle risorse dell"organizzazione associando le r
 
 
 [role="lead"]
-Quando si utilizza BlueXP  Identity and Access Management (IAM) per associare un membro all'organizzazione, si forniscono le autorizzazioni a livello di organizzazione, cartella o progetto. Per garantire che tali membri dispongano delle autorizzazioni per accedere alle risorse appropriate, è necessario gestire la gerarchia delle risorse dell'organizzazione associando le risorse a progetti e cartelle specifici. Un _resource_ è una risorsa storage di cui BlueXP  già gestisce o è a conoscenza.
+Quando si associa un membro alla propria organizzazione, si forniscono autorizzazioni a livello di organizzazione, cartella o progetto. Per garantire che tali membri dispongano delle autorizzazioni per accedere alle risorse appropriate, è necessario gestire la gerarchia delle risorse dell'organizzazione associando le risorse a progetti e cartelle specifici. Un _resource_ è una risorsa storage di cui BlueXP  già gestisce o è a conoscenza.
 
 
 
 == Visualizzare le risorse dell'organizzazione
 
-È possibile visualizzare sia le risorse rilevate che quelle non rilevate associate all'organizzazione. Le risorse non scoperte sono in genere risorse di storage conosciute tramite il Digital Advisor per cui non hai aggiunto come ambienti di lavoro.
+È possibile visualizzare sia le risorse rilevate che quelle non rilevate associate all'organizzazione. Le risorse non scoperte sono risorse di archiviazione identificate dal consulente digitale ma non aggiunte come ambienti di lavoro.
 
 
-NOTE: Le risorse Amazon FSX per NetApp ONTAP non vengono visualizzate nella pagina delle risorse IAM poiché non è possibile associarle a un ruolo IAM. Puoi visualizzare queste risorse sul rispettivo Canvas o dai workload.
+NOTE: La pagina delle risorse IAM non visualizza le risorse Amazon FSx for NetApp ONTAP perché non è possibile associarle a un ruolo IAM. Puoi visualizzare queste risorse sul rispettivo Canvas o dai workload.
 
 .Fasi
 . Nella parte superiore destra della console di BlueXP , selezionare image:icon-settings-option.png["L'icona delle impostazioni che viene visualizzata nella parte superiore destra della console Web di BlueXP ."] > *Gestione identità e accessi*.
@@ -44,7 +44,7 @@ NOTE: Le risorse Amazon FSX per NetApp ONTAP non vengono visualizzate nella pagi
 
 == Associare una risorsa a cartelle e progetti
 
-Se si desidera rendere disponibile una risorsa alla cartella o al progetto nell'organizzazione, è necessario creare un'associazione tra la cartella o il progetto e la risorsa.
+Per rendere una risorsa disponibile per una cartella o un progetto, associa la risorsa alla cartella o al progetto.
 
 .Prima di iniziare
 È necessario comprendere il funzionamento dell'associazione delle risorse. link:concept-identity-and-access-management.html#resources["Informazioni sulle risorse, incluso quando associare una risorsa a una cartella"].
@@ -93,7 +93,7 @@ NOTE: Se è necessario determinare quali membri dell'organizzazione hanno access
 
 == Rimuovere una risorsa da una cartella o da un progetto
 
-Per rimuovere una risorsa da una cartella o da un progetto, è necessario rimuovere l'associazione tra la cartella o il progetto e la risorsa. Dopo aver rimosso l'associazione, i membri dell'organizzazione non possono più gestire la risorsa dalla cartella o dal progetto.
+Per rimuovere una risorsa da una cartella o da un progetto, è necessario rimuovere l'associazione tra la cartella o il progetto e la risorsa. La rimozione dell'associazione impedisce ai membri dell'organizzazione di gestire la risorsa nella cartella o nel progetto.
 
 
 NOTE: Se si desidera rimuovere una risorsa scoperta dall'intera organizzazione, è necessario rimuovere l'ambiente di lavoro da BlueXP  Canvas.

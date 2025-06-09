@@ -3,7 +3,7 @@
 
 
 .Fasi
-. Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.
+. Nell'angolo in alto a destra della console, seleziona l'icona Impostazioni e seleziona *Credenziali*.
 . Selezionare il menu azione per un set di credenziali, quindi selezionare *Configura sottoscrizione*.
 +
 Selezionare le credenziali associate a un connettore. Non puoi associare un abbonamento al marketplace alle credenziali associate a BlueXP.
@@ -16,7 +16,7 @@ Selezionare le credenziali associate a un connettore. Non puoi associare un abbo
 .. Compila il modulo e seleziona *Iscriviti*.
 .. Una volta completato il processo di iscrizione, selezionare *Configura account*.
 +
-Verrai reindirizzato al sito Web di BlueXP.
+Verrai reindirizzato a BlueXP.
 
 .. Dalla pagina *Subscription Assignment*:
 +
@@ -33,7 +33,7 @@ Per tutte le altre organizzazioni o account, è necessario associare manualmente
 Il seguente video mostra i passaggi per iscriversi a Azure Marketplace:
 
 +
-.Iscriviti a BlueXP da Azure Marketplace
+.Iscriviti a NetApp Intelligent Services da Azure Marketplace
 video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 

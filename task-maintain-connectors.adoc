@@ -14,7 +14,7 @@ summary: 'La manutenzione del sistema operativo sull"host del connettore è resp
 
 
 [role="lead"]
-La manutenzione del sistema operativo sull'host del connettore è responsabilità dell'utente. Ad esempio, è necessario applicare gli aggiornamenti per la protezione al sistema operativo sull'host del connettore seguendo le procedure standard dell'azienda per la distribuzione del sistema operativo.
+La manutenzione del sistema operativo sull'host Connector è responsabilità del cliente. Ad esempio, il cliente deve applicare gli aggiornamenti di sicurezza al sistema operativo sull'host Connector seguendo le procedure standard aziendali per la distribuzione del sistema operativo.
 
 
 TIP: Se si dispone di un connettore esistente, è necessario essere a conoscenza di link:reference-connector-operating-system-changes.html["Modifiche ai sistemi operativi Linux supportati"].

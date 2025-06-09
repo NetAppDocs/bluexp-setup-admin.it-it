@@ -14,11 +14,11 @@ summary: Quando utilizzi la console basata sul web BlueXP fornita attraverso il 
 
 
 [role="lead"]
-Quando si accede e si utilizza la console basata sul Web di BlueXP , BlueXP  contatta diversi endpoint per completare le azioni avviate. I computer che accedono alla console di BlueXP  devono disporre di connessioni a questi endpoint.
+Quando si accede e si utilizza la console web, BlueXP contatta diversi endpoint per completare le azioni avviate. I computer che accedono alla console devono disporre di connessioni a questi endpoint.
 
 Questi endpoint vengono contattati in due scenari:
 
-* Dal computer di un utente durante il completamento di azioni specifiche da https://console.bluexp.netapp.com["Console BlueXP basata su web"^] che sono disponibili come Software as a Service (SaaS).
+* Dal computer di un utente quando completa le azioni dal  https://console.bluexp.netapp.com["Console BlueXP basata su web"^] disponibile come software come servizio (SaaS).
 * Dal computer di un utente quando si apre un browser Web, immettere l'indirizzo IP dell'host del connettore, quindi accedere e configurare il connettore. Questi passi sono necessari se si installa manualmente il connettore.
 
 
@@ -28,13 +28,13 @@ Questi endpoint vengono contattati in due scenari:
 
 
 | \https://console.bluexp.netapp.com
-\https://*.console.bluexp.netapp.com | Questo è l'endpoint inserito nel browser Web per utilizzare la console basata su Web di BlueXP . 
+\https://*.console.bluexp.netapp.com | Questo è l'endpoint che devi immettere nel tuo browser web per utilizzare la console basata sul web. 
 
 
-| \https://api.bluexp.netapp.com | La console basata sul Web di BlueXP  contatta questo endpoint per interagire con l'API BlueXP  per azioni relative ad autorizzazione, licenze, sottoscrizioni, credenziali, notifiche e altro ancora. 
+| \https://api.bluexp.netapp.com | La console basata sul Web contatta questo endpoint per interagire con l'API per azioni correlate ad autorizzazioni, licenze, abbonamenti, credenziali, notifiche e altro ancora. 
 
 
-| \https://aiq.netapp.com | Richieste per accedere al Digital Advisor di BlueXP. 
+| \https://aiq.netapp.com | Necessario per accedere al consulente digitale. 
 
 
  a| 
@@ -46,7 +46,7 @@ Servizi AWS (amazonaws.com):
 * Servizio token di sicurezza (STS)
 * S3 (Simple Storage Service)
 
-| Necessario per implementare un connettore da BlueXP in AWS. L'endpoint esatto dipende dalla regione in cui viene implementato il connettore. https://docs.aws.amazon.com/general/latest/gr/rande.html["Per ulteriori informazioni, fare riferimento alla documentazione AWS."^] 
+| Necessario per implementare un connettore da BlueXP in AWS. L'endpoint esatto dipende dalla regione in cui si distribuisce il connettore.  https://docs.aws.amazon.com/general/latest/gr/rande.html["Per maggiori dettagli, consultare la documentazione AWS."] Suggerimento:  https://docs.aws.amazon.com/general/latest/gr/rande.html["Per maggiori dettagli, consultare la documentazione AWS."] 
 
 
 | \https://management.azure.com
@@ -77,9 +77,9 @@ Servizi AWS (amazonaws.com):
 \https://services.cloud.netapp.com | Il browser Web si connette a questi endpoint per un'autenticazione utente centralizzata tramite BlueXP. 
 
 
-| \https://widget.intercom.io | Per chat in-product che ti consente di parlare con gli esperti cloud di NetApp. 
+| \https://widget.intercom.io | Per la chat all'interno del prodotto che ti consente di parlare con l'assistenza NetApp. 
 |===
-Oltre a questi endpoint, è anche necessario garantire che il connettore disponga dell'accesso a Internet in uscita per contattare endpoint specifici per le operazioni quotidiane. Puoi trovare l'elenco di questi endpoint seguendo i link nella sezione successiva.
+Assicurarsi che il connettore disponga di accesso a Internet in uscita per contattare gli endpoint per le operazioni quotidiane. Seguire i link nella sezione successiva per trovare l'elenco di questi endpoint.
 
 .Informazioni correlate
 * Preparare il collegamento in rete per il connettore
