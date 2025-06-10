@@ -16,13 +16,13 @@ summary: BlueXP offre diverse modalità di implementazione che consentono di uti
 [role="lead"]
 BlueXP offre diverse _modalità di distribuzione_ che ti consentono di soddisfare i requisiti aziendali e di sicurezza. La _modalità standard_ sfrutta un livello SaaS (Software as a Service) per fornire funzionalità complete, mentre la _modalità limitata_ e la _modalità privata_ sono disponibili per le organizzazioni con restrizioni di connettività.
 
-Mentre BlueXP  inibisce il flusso di traffico, comunicazioni e dati quando si utilizza la modalità limitata o la modalità privata, è tua responsabilità garantire che l'ambiente (on-premise e nel cloud) sia conforme alle normative richieste.
+Sebbene BlueXP inibisca il flusso di traffico, comunicazione e dati quando si utilizza la modalità riservata o privata, è tua responsabilità garantire che il tuo ambiente (in sede e nel cloud) sia conforme alle normative richieste per la tua azienda.
 
 
 
 == Panoramica
 
-Ogni modalità di distribuzione differisce in termini di requisiti di connettività in uscita, posizione di distribuzione, processo di installazione, metodo di autenticazione, servizi di dati e archiviazione disponibili e metodi di addebito.
+Ogni modalità di distribuzione differisce in termini di connettività in uscita, posizione, installazione, autenticazione, servizi dati e metodi di addebito.
 
 Modalità standard:: Utilizzi un servizio SaaS dalla console web. A seconda dei servizi dati e delle funzionalità che intendi utilizzare, un amministratore BlueXP crea uno o più connettori per gestire i dati all'interno del tuo ambiente cloud ibrido.
 +
@@ -30,7 +30,7 @@ Modalità standard:: Utilizzi un servizio SaaS dalla console web. A seconda dei 
 Questa modalità utilizza la trasmissione di dati crittografati su Internet pubblico.
 
 --
-Modalità limitata:: Si installa un BlueXP Connector nel cloud (in una regione governativa, in una regione cloud sovrana o in una regione commerciale) e si ha una connettività in uscita limitata al livello SaaS BlueXP. Gli utenti accedono a BlueXP localmente dalla console basata sul web disponibile dal connettore, non dal layer SaaS.
+Modalità limitata:: Si installa un BlueXP Connector nel cloud (in una regione governativa, sovrana o commerciale) e dispone di connettività in uscita limitata al livello SaaS BlueXP.
 +
 --
 Questa modalità viene generalmente utilizzata dagli enti pubblici statali e locali e dalle aziende regolamentate.
@@ -38,7 +38,7 @@ Questa modalità viene generalmente utilizzata dagli enti pubblici statali e loc
 <<Modalità limitata,Scopri di più sulla connettività in uscita al livello SaaS>>.
 
 --
-Modalità privata:: Si installa un BlueXP Connector in locale o nel cloud (in una regione sicura, in una regione cloud sovrana o in una regione commerciale) e non si ha alcuna connettività al livello SaaS BlueXP. Gli utenti accedono a BlueXP localmente dalla console basata sul web disponibile dal connettore, non dal layer SaaS.
+Modalità privata:: Si installa un BlueXP Connector in locale o nel cloud (in una regione sicura, in una regione cloud sovrana o in una regione commerciale) e non si ha alcuna connettività al livello SaaS BlueXP. Gli utenti accedono localmente alla console BlueXP fornita dal Connector, non al livello SaaS.
 +
 --
 Una regione sicura include https://aws.amazon.com/federal/secret-cloud/["Cloud segreto AWS"^], https://aws.amazon.com/federal/top-secret-cloud/["Cloud AWS top secret"^], e. https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
@@ -101,8 +101,8 @@ Comunicazione in uscita:: La connettività è necessaria dal connettore al layer
 
 --
 Posizione supportata per il connettore:: In modalità standard, il connettore è supportato nel cloud o on-premise.
-Installazione del connettore:: L'installazione del connettore è possibile da una procedura di installazione guidata in BlueXP, da AWS o Azure Marketplace, o utilizzando un programma di installazione per installare manualmente il connettore sul proprio host Linux nel data center o nel cloud.
-Aggiornamenti del connettore:: Gli aggiornamenti automatici del software del connettore sono disponibili da BlueXP con aggiornamenti mensili.
+Installazione del connettore:: Puoi installare il connettore tramite la procedura guidata di installazione di BlueXP, AWS o Azure Marketplace, Google Cloud SDK oppure tramite un programma di installazione manuale su un host Linux nel tuo data center o cloud.
+Aggiornamenti del connettore:: BlueXP fornisce aggiornamenti automatici del software Connector con aggiornamenti mensili.
 Accesso all'interfaccia utente:: L'interfaccia utente è accessibile dalla console basata sul web fornita attraverso il layer SaaS.
 Endpoint API:: Le chiamate API vengono effettuate al seguente endpoint:
 \https://cloudmanager.cloud.netapp.com
@@ -127,7 +127,7 @@ image:diagram-restricted-mode.png["Un'immagine concettuale che mostra la conness
 
 BlueXP funziona come segue in modalità limitata:
 
-Comunicazione in uscita:: La connettività in uscita è necessaria dal connettore al livello BlueXP SaaS per utilizzare i servizi dati BlueXP, per abilitare gli aggiornamenti software automatici del connettore, per utilizzare l'autenticazione basata su auth0 e per inviare metadati a scopo di addebito (nome della VM di storage, capacità allocata e UUID volume, tipo e IOPS).
+Comunicazione in uscita:: Il connettore richiede connettività in uscita al livello SaaS BlueXP per servizi dati, aggiornamenti software, autenticazione e trasmissione di metadati.
 +
 --
 Il layer BlueXP SaaS non avvia la comunicazione con il connettore. Tutte le comunicazioni vengono avviate dal connettore, che può estrarre o trasferire i dati da o verso il layer SaaS secondo necessità.
@@ -137,7 +137,7 @@ Il layer BlueXP SaaS non avvia la comunicazione con il connettore. Tutte le comu
 --
 Posizione supportata per il connettore:: In modalità limitata, il connettore è supportato nel cloud: In un'area governativa, in un'area sovrana o in un'area commerciale.
 Installazione del connettore:: L'installazione del connettore è possibile da AWS o Azure Marketplace o da un'installazione manuale sul proprio host Linux.
-Aggiornamenti del connettore:: Gli aggiornamenti automatici del software del connettore sono disponibili da BlueXP con aggiornamenti mensili.
+Aggiornamenti del connettore:: BlueXP fornisce aggiornamenti automatici del software Connector con aggiornamenti mensili.
 Accesso all'interfaccia utente:: L'interfaccia utente è accessibile dalla macchina virtuale del connettore implementata nella regione del cloud.
 Endpoint API:: Le chiamate API vengono effettuate alla macchina virtuale del connettore.
 Autenticazione:: L'autenticazione viene fornita tramite il servizio cloud di BlueXP utilizzando auth0. È disponibile anche la federazione delle identità.

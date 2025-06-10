@@ -34,7 +34,7 @@ Puoi modificare il tuo nome visualizzato nella console di BlueXP. Il nome visual
 
 == Configurare l'autenticazione a più fattori
 
-Puoi configurare l'autenticazione a più fattori (MFA) per il tuo account BlueXP. L'MFA migliora la sicurezza dell'account richiedendo un secondo metodo per verificare la tua identità, oltre alla password.
+Configura l'autenticazione a più fattori (MFA) per migliorare la sicurezza dell'account richiedendo un secondo metodo di verifica con la password.
 
 Gli utenti che utilizzano l'accesso Single Sign-On con un provider di identità esterno o il sito di supporto NetApp non possono abilitare l'MFA. Se una di queste condizioni si verifica, non vedrai l'opzione per abilitare l'MFA nelle impostazioni del tuo profilo.
 
@@ -52,9 +52,9 @@ NOTE: Se non hai accesso alla tua app di autenticazione o perdi il codice di rip
 . Selezionare l'icona del profilo nell'angolo in alto a destra della console BlueXP per visualizzare il pannello delle impostazioni utente.
 . Selezionare *Configura* accanto all'intestazione *Autenticazione a più fattori*.
 . Segui le istruzioni per impostare l'MFA per il tuo account.
-. Al termine, ti verrà chiesto di salvare il codice di recupero. Scegli se copiare il codice o scaricare un file di testo contenente il codice. Conserva questo codice in un luogo sicuro. Ti servirà se perdi l'accesso alla tua app di autenticazione.
+. Al termine, ti verrà chiesto di salvare il codice di recupero. Scegli se copiare il codice o scaricare un file di testo contenente il codice. Conserva questo codice in un luogo sicuro. Il codice di ripristino è necessario se perdi l'accesso all'app di autenticazione.
 +
-Dopo aver impostato l'MFA, ti verrà richiesto di immettere un codice monouso dall'app di autenticazione ogni volta che accedi a BlueXP.
+Dopo aver impostato l'MFA, ogni volta che accedi a BlueXP ti verrà richiesto di immettere un codice monouso dall'app di autenticazione.
 
 
 
@@ -73,9 +73,24 @@ Puoi utilizzare i codici di recupero una sola volta. Se ne usi o li perdi, crean
 
 
 
+== Elimina la tua configurazione MFA
+
+Per interrompere l'utilizzo dell'autenticazione a più fattori (MFA) per il tuo account BlueXP, elimina la configurazione MFA. In questo modo non dovrai più inserire un codice monouso dall'app di autenticazione al momento dell'accesso.
+
+
+NOTE: Se non riesci ad accedere all'app di autenticazione o al codice di ripristino, dovrai contattare l'amministratore BlueXP per reimpostare la configurazione MFA.
+
+.Fasi
+. Selezionare l'icona del profilo nell'angolo in alto a destra della console BlueXP per visualizzare il pannello delle impostazioni utente.
+. Selezionare image:icon-action.png["Un'icona con tre punti affiancati"] accanto all'intestazione *Autenticazione a più fattori*.
+. Selezionare *Delete* (Elimina).
+
+
+
+
 == Contatta l'amministratore della tua organizzazione
 
-Se hai bisogno di contattare l'amministratore della tua organizzazione, puoi inviargli un'e-mail direttamente da BlueXP. L'amministratore è responsabile della gestione degli account utente e delle autorizzazioni all'interno della tua organizzazione.
+Se hai bisogno di contattare l'amministratore della tua organizzazione, puoi inviargli un'e-mail direttamente da BlueXP. L'amministratore gestisce gli account utente e le autorizzazioni all'interno della tua organizzazione.
 
 
 NOTE: Per utilizzare la funzionalità *Contatta gli amministratori*, è necessario che sul tuo browser sia configurata un'applicazione di posta elettronica predefinita.

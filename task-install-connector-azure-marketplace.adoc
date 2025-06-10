@@ -18,14 +18,14 @@ Puoi creare un connettore in Azure direttamente da Azure Marketplace. Per creare
 
 .Prima di iniziare
 * Si dovrebbe avere un link:concept-connectors.html["Informazioni sui connettori"].
-* Dovresti rivedere link:reference-limitations.html["Limitazioni del connettore"].
+* Revisione link:reference-limitations.html["Limitazioni del connettore"] .
 
 
 
 
 == Fase 1: Configurare la rete
 
-Assicurarsi che la posizione di rete in cui si intende installare il connettore supporti i seguenti requisiti. Il connettore, che soddisfa questi requisiti, consente di gestire le risorse e i processi all'interno del tuo ambiente di cloud ibrido.
+Assicurati che il percorso di rete in cui intendi installare il connettore supporti i seguenti requisiti. Questi requisiti consentono al connettore di gestire le risorse nel tuo cloud ibrido.
 
 Regione di Azure:: Se si utilizza Cloud Volumes ONTAP, il connettore deve essere implementato nella stessa area Azure dei sistemi Cloud Volumes ONTAP gestiti o in https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Coppia di regioni Azure"^] Per i sistemi Cloud Volumes ONTAP. Questo requisito garantisce l'utilizzo di una connessione Azure Private link tra Cloud Volumes ONTAP e i relativi account di storage associati.
 +
@@ -143,7 +143,7 @@ Se i sistemi Cloud Volumes ONTAP non dispongono di una connessione a Internet in
 Enable NTP (attiva NTP):: Se stai pensando di utilizzare la classificazione BlueXP per analizzare le origini dati aziendali, dovresti attivare un servizio NTP (Network Time Protocol) sia sul sistema del connettore BlueXP che sul sistema di classificazione BlueXP in modo che l'ora venga sincronizzata tra i sistemi. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Scopri di più sulla classificazione BlueXP"^]
 +
 --
-Una volta creato il connettore, sarà necessario implementare questo requisito di rete.
+Dopo aver creato il connettore, implementare i requisiti di rete.
 
 --
 
@@ -152,7 +152,7 @@ Una volta creato il connettore, sarà necessario implementare questo requisito d
 
 == Fase 2: Esaminare i requisiti della VM
 
-Quando si crea il connettore, è necessario scegliere un tipo di macchina virtuale che soddisfi i seguenti requisiti.
+Quando crei il connettore, scegli un tipo di macchina virtuale che soddisfi i seguenti requisiti.
 
 CPU:: 8 core o 8 vCPU
 RAM:: 32 GB
@@ -369,9 +369,6 @@ A questo punto, si dispone di una chiave segreta del client che BlueXP può util
 
 
 
-.Risultato
-L'entità del servizio è ora impostata e l'ID dell'applicazione (client), l'ID della directory (tenant) e il valore del client secret dovrebbero essere stati copiati. Quando si aggiunge un account Azure, è necessario inserire queste informazioni in BlueXP.
-
 --
 ====
 
@@ -381,7 +378,7 @@ L'entità del servizio è ora impostata e l'ID dell'applicazione (client), l'ID 
 Avviare il connettore direttamente da Azure Marketplace.
 
 .A proposito di questa attività
-La creazione del connettore da Azure Marketplace implementa una macchina virtuale in Azure utilizzando una configurazione predefinita. link:reference-connector-default-config.html["Informazioni sulla configurazione predefinita del connettore"].
+La creazione del connettore da Azure Marketplace imposta una macchina virtuale con una configurazione predefinita. link:reference-connector-default-config.html["Informazioni sulla configurazione predefinita del connettore"].
 
 .Prima di iniziare
 Dovresti disporre di quanto segue:
@@ -430,7 +427,7 @@ Questa impostazione è importante perché un'identità gestita consente alla mac
 
 . Nella pagina *Review + create*, esaminare le selezioni e selezionare *Create* per avviare l'implementazione.
 +
-Azure implementa la macchina virtuale con le impostazioni specificate. La macchina virtuale e il software del connettore dovrebbero essere in esecuzione in circa cinque minuti.
+Azure implementa la macchina virtuale con le impostazioni specificate. Entro circa cinque minuti dovresti vedere la macchina virtuale e il software Connector in esecuzione.
 
 . Aprire un browser Web da un host connesso alla macchina virtuale Connector e immettere il seguente URL:
 +
@@ -442,7 +439,7 @@ https://_ipaddress_[]
 .. Immettere un nome per il sistema.
 .. In *stai eseguendo in un ambiente protetto?* Mantieni disattivata la modalità limitata.
 +
-La modalità limitata deve essere disattivata perché questa procedura descrive come utilizzare BlueXP in modalità standard. Attivare la modalità limitata solo se si dispone di un ambiente sicuro e si desidera disconnettere questo account dai servizi di back-end BlueXP. In tal caso, link:task-quick-start-restricted-mode.html["Segui i passaggi per iniziare a utilizzare BlueXP in modalità limitata"].
+Mantieni la modalità limitata disattivata per utilizzare BlueX in modalità standard. Attivare la modalità limitata solo se si dispone di un ambiente sicuro e si desidera disconnettere questo account dai servizi di back-end BlueXP. In tal caso, link:task-quick-start-restricted-mode.html["Segui i passaggi per iniziare a utilizzare BlueXP in modalità limitata"] .
 
 .. Selezionare *Let's start*.
 
@@ -450,7 +447,7 @@ La modalità limitata deve essere disattivata perché questa procedura descrive 
 
 
 .Risultato
-Il connettore è ora installato e configurato con l'organizzazione BlueXP .
+Hai installato il Connettore e lo hai configurato con la tua organizzazione BlueXP.
 
 Se disponi di storage Azure Blob nella stessa iscrizione di Azure in cui hai creato il connettore, visualizzerai automaticamente un ambiente di lavoro dello storage di Azure Blob su BlueXP Canvas. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Scopri come gestire lo storage BLOB di Azure da BlueXP"^]
 
