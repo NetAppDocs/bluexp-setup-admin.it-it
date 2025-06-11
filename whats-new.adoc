@@ -36,7 +36,7 @@ Al momento, la versione 3.9.53 è disponibile per la modalità standard e la mod
 
 ==== Autenticazione a più fattori (MFA)
 
-Gli utenti non federati possono ora abilitare l'autenticazione a più fattori (MFA) per i propri account BlueXP, migliorandone la sicurezza. Gli amministratori di BlueXP possono gestire le impostazioni MFA per i propri utenti, reimpostandole o disabilitandole per ciascun utente, se necessario.
+Gli utenti non federati possono ora abilitare l'autenticazione a più fattori (MFA) per i propri account BlueXP, migliorandone la sicurezza. Gli amministratori di BlueXP possono gestire le impostazioni MFA per i propri utenti, reimpostandole o disabilitandole per ciascun utente, se necessario. Questa funzionalità è supportata solo in modalità standard.
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#task-user-mfa["Scopri come configurare autonomamente l'autenticazione a più fattori."^] link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#manage-mfa["Scopri come gestire l'autenticazione a più fattori per gli utenti."^]
 
