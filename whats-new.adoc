@@ -26,7 +26,13 @@ Scopri le novità delle funzionalità di amministrazione di BlueXP : Gestione d
 
 Questa versione di BlueXP Connector include miglioramenti della sicurezza e correzioni di bug.
 
-Al momento, la versione 3.9.53 è disponibile per la modalità standard e la modalità limitata.
+La versione 3.9.53 è disponibile per la modalità standard e la modalità limitata.
+
+
+
+=== Avvisi sull'utilizzo dello spazio su disco
+
+Il Centro notifiche ora include avvisi sull'utilizzo dello spazio su disco sul Connettore. link:task-maintain-connectors.html#monitor-disk-space["Scopri di più."^]
 
 
 
