@@ -18,6 +18,20 @@ Il Centro notifiche ora include avvisi sull'utilizzo dello spazio su disco sul C
 
 
 
+=== Miglioramenti dell'audit
+
+La cronologia ora include gli eventi di accesso degli utenti. Questo consente di vedere quando gli utenti hanno effettuato l'accesso a BlueXP, il che può essere utile per il controllo e il monitoraggio della sicurezza. Gli utenti API con il ruolo di amministratore dell'organizzazione possono visualizzare l'indirizzo email dell'utente che ha effettuato l'accesso includendo  `includeUserData=true`` parametro come nel seguente:  `/audit/<account_id>?includeUserData=true` .
+
+
+
+=== Gestione degli abbonamenti Keystone disponibile in BlueXP
+
+Puoi gestire il tuo abbonamento NetApp Keystone da BlueXP.
+
+link:https://docs.netapp.com/us-en/keystone-staas/index.html["Scopri di più sulla gestione degli abbonamenti Keystone in BlueXP."^]
+
+
+
 === Gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP 
 
 
