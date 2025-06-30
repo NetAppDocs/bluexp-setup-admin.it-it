@@ -362,7 +362,7 @@ image:screenshot-credentials-with-subscription.png["Uno screenshot della pagina 
 Modifica le tue credenziali AWS cambiando il tipo di account (chiavi AWS o ruolo di assunzione), modificando il nome o aggiornando le credenziali stesse (le chiavi o l'ARN del ruolo).
 
 
-NOTE: Non è possibile modificare le credenziali per un profilo di istanza associato a un'istanza Connector o a un'istanza Amazon FSx for ONTAP.
+NOTE: Non è possibile modificare le credenziali per un profilo di istanza associato a un'istanza Connector o a un'istanza Amazon FSx for ONTAP. È possibile rinominare le credenziali solo per un'istanza FSx for ONTAP.
 
 .Fasi
 . Nell'angolo in alto a destra della console, seleziona l'icona Impostazioni e seleziona *Credenziali*.
