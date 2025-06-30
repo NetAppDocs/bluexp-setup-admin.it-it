@@ -92,7 +92,7 @@ Ubuntu
  a| 
 3.9.45 o versione successiva con BlueXP  in modalità standard o limitata
  a| 
-Docker Engine 26.0.0
+Docker Engine dalla versione 23.06 alla 28.0.0.
  a| 
 Non supportato
 
@@ -103,11 +103,7 @@ Non supportato
  a| 
 3.9.29 o versione successiva
  a| 
-Docker Engine da 23.0.6 a 26.0.0
-
-26.0.0 è supportato con _nuovo_ connettore 3.9.44 o installazioni successive
-
-27.0.0 e 28.0.0 sono supportati con _nuovo_ connettore 3.9.52 o installazioni successive
+Docker Engine dalla versione 23.0.6 alla 28.0.0.
  a| 
 Non supportato
 
