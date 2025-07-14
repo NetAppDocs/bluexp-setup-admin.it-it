@@ -87,7 +87,7 @@ NetApp supporta solo l'SSO avviato dal provider di servizi (SP). È necessario i
 
 
 [discrete]
-====== testare e abilitare la connessione
+====== Testare e abilitare la connessione
 
 . Selezionare *Avanti*.
 . Seleziona *Test connessione* per testare la tua connessione. Verrai indirizzato a una pagina di accesso per il tuo server IdP. Accedi con le tue credenziali IdP per completare il test e torna a BlueXP per abilitare la connessione.

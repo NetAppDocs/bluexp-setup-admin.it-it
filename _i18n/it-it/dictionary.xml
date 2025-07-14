@@ -5015,7 +5015,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="f7b353257b71afef5402701e6c93dc8a" category="doc">Connettore 3.9.54</block>
   <block id="98b6a9150dc84b6f02a11b49d3f18c05" category="paragraph">Questa versione di BlueXP Connector include miglioramenti della sicurezza, correzioni di bug e le seguenti nuove funzionalità:</block>
   <block id="0e0a4ccfeecf6ead97d3838c2dc57d40" category="inline-link-macro">Scopri di più sulla configurazione di un proxy trasparente.</block>
-  <block id="313ef52bd65a76709d5fc69694074f0c" category="list-text">Supporto per proxy trasparenti per i connettori dedicati al supporto dei servizi Cloud Volumes ONTAP . <block ref="139e9d43e4ebdf2d28d8a7ff0c85548a" category="inline-link-macro-rx"></block></block>
   <block id="4439ae12e6cc703b73c18fa22032bcff" category="list-text">Possibilità di utilizzare tag di rete per agevolare l'instradamento del traffico del connettore quando il connettore viene distribuito in un ambiente Google Cloud.</block>
   <block id="a72a5a23a9089a372f557a0032363d4e" category="list-text">Notifiche aggiuntive nel prodotto per il monitoraggio dello stato del connettore, incluso l'utilizzo di CPU e RAM.</block>
   <block id="86c10fecfc44ffe6d27d3e73e9158cad" category="paragraph">Al momento, la versione 3.9.54 è disponibile per la modalità standard e la modalità limitata.</block>
@@ -5031,18 +5030,15 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="a7cc903fc36eaee51a699d9d59b1496c" category="paragraph">BlueXP offre ora un'interfaccia più intuitiva per la gestione della federazione delle identità. Ciò include una navigazione più semplice, opzioni più chiare per la configurazione delle connessioni federate e una migliore visibilità sulle federazioni esistenti.</block>
   <block id="c06fd8d559af4ac97a50afd1857f0e4e" category="paragraph">Abilitando il Single Sign-On (SSO) tramite la federazione delle identità, gli utenti possono accedere a BlueXP con le proprie credenziali aziendali. Questo migliora la sicurezza, riduce l'uso delle password e semplifica l'onboarding.</block>
   <block id="62532a5520311cce692e8abb3a619189" category="inline-link-macro">Scopri di più sull'importazione della tua connessione federata esistente in BlueXP.</block>
-  <block id="09de16a2da9f0884c7445f0a40b10aa4" category="paragraph">Ti verrà richiesto di importare eventuali connessioni federate esistenti nella nuova interfaccia per accedere alle nuove funzionalità di gestione. Questo ti permetterà di sfruttare i più recenti miglioramenti senza dover ricreare le tue connessioni federate. <block ref="172066467f700483f74d71d92d89ce7c" category="inline-link-macro-rx"></block></block>
   <block id="35db97c0083a9f24d4de60744f2ae08c" category="paragraph">Una gestione migliorata della federazione consente di:</block>
   <block id="c7cfa37b557dec5d42fe4ae1f33a84a9" category="list-text">Aggiungi più di un dominio verificato a una connessione federata, consentendoti di utilizzare più domini con lo stesso provider di identità (IdP).</block>
   <block id="b4a4e2a03df0b0c5b7847629f778c654" category="list-text">Disattiva o elimina le connessioni federate quando necessario, per avere il controllo sull'accesso degli utenti e sulla sicurezza.</block>
   <block id="77f3e518793db250165393f568090955" category="list-text">Controlla l'accesso alla gestione della federazione con i ruoli IAM.</block>
   <block id="ac784304eb7a6a12a493cf93b5cef5a9" category="inline-link-macro">Scopri di più sulla federazione delle identità in BlueXP.</block>
-  <block id="7970bfbac6093d2cbee1b40bcff193c3" category="paragraph"><block ref="7970bfbac6093d2cbee1b40bcff193c3" category="inline-link-macro-rx"></block></block>
   <block id="e16a950fa56f1c93596e628653af0177" category="section-title">Nuovi ruoli di accesso per il BlueXP backup and recovery, il BlueXP disaster recovery e la gestione della federazione</block>
   <block id="f4b57a3793a05b2b72338f8e9fcc9496" category="paragraph">BlueXP ora supporta l'utilizzo dei ruoli IAM per le seguenti funzionalità e servizi dati:</block>
   <block id="43db2a9bc6b7310c67fd6873bb6ca7a4" category="list-text">Federazione</block>
   <block id="f52cf765b6d2324047bf70dbb3a134b2" category="inline-link-macro">Scopri di più sull'utilizzo dei ruoli di accesso.</block>
-  <block id="10bab6385b6290f87ce28199462adf76" category="paragraph"><block ref="10bab6385b6290f87ce28199462adf76" category="inline-link-macro-rx"></block></block>
   <block id="59d63e81aab85c8d960a9f1f13ec3a20" category="paragraph">Un _connettore_ è il software NetApp in esecuzione nella rete cloud o on-premise. Serve per connettere i servizi BlueXP ai tuoi ambienti di archiviazione.</block>
   <block id="8e3127f706f1e56c4038e102362daa9e" category="summary">Identity Federation consente il single sign-on con BlueXP, in modo che gli utenti possano accedere utilizzando le credenziali della propria identità aziendale. Per iniziare, rivedi la procedura di configurazione.</block>
   <block id="35da6b1009cfb85617a9cb6b76ca78b5" category="paragraph">Il Single Sign-On (federazione) semplifica il processo di accesso e migliora la sicurezza consentendo agli utenti di accedere a BlueXP utilizzando le proprie credenziali aziendali. È possibile abilitare il Single Sign-On (SSO) tramite il proprio provider di identità (IdP) o tramite il sito di supporto NetApp .</block>
@@ -5283,7 +5279,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="c3735d9c34fd4ed334e4dbdf6f9399bf" category="list-text">Quando si crea il Relying Trust Identifier, utilizzare il valore **YOUR_TENANT**: <block ref="54abc930040d4aaee039ddb6714c161b" prefix=" " category="inline-code"></block></block>
   <block id="5f1e9ae008e49ccbc1bb7bb997f7072d" category="list-text">Quando selezioni *Abilita supporto per WS-Federation*, usa il valore **YOUR_AUTH0_DOMAIN**: <block ref="fe93c33621416c4736b5beefec28d44e" prefix=" " category="inline-code"></block></block>
   <block id="bf7f21a3f0a9d15815e8898ab4b0d126" category="list-text">Dopo aver creato il trust, copia l'URL dei metadati dal server AD FS o scarica il file dei metadati della federazione. Questo URL o file sarà necessario per completare la connessione in BlueXP.</block>
-  <block id="84999323afead336ecc889d3b9f1f8b9" category="paragraph">+ NetApp consiglia di utilizzare l'URL dei metadati per consentire a BlueXP di recuperare automaticamente la configurazione AD FS più recente. Se scarichi il file dei metadati della federazione, dovrai aggiornarlo manualmente in BlueXP ogni volta che si verificano modifiche alla configurazione AD FS.</block>
   <block id="ca0d62b869f281351aeda2084ef067c3" category="list-text">Ritorna a BlueXP e seleziona *Avanti* per creare la connessione.</block>
   <block id="4b682b6bee53df811273a0bfbe611e45" category="list-text">Creare la connessione con AD FS.</block>
   <block id="c1b7d1f0d06c7cfb1404c3d5e03d6802" category="list-text">Immetti l'URL di AD FS copiato dal server AD FS nel passaggio precedente oppure carica il file di metadati della federazione scaricato dal server AD FS.</block>
@@ -5305,7 +5300,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="a31725e5a996167aefdc67c1628c7ebf" category="list-text">Inserisci l'ID client e il segreto client creati nel passaggio precedente.</block>
   <block id="56195ae93f466d39ec4d363a2fb1500e" category="list-text">Inserisci il nome di dominio dell'ID Microsoft Entra.</block>
   <block id="414584aec7c36f7a64ee722e65458b2f" category="list-text">Seleziona *Crea connessione*. Il sistema creerà la connessione in pochi secondi.</block>
-  <block id="a341e999958dd720d932630dc8e0be57" category="floating-title">testare e abilitare la connessione</block>
   <block id="085cc3c433cdddd132661c8498367dd3" category="summary">Importa la tua connessione federata esistente in BlueXP per gestirla nella nuova interfaccia. Questo ti permette di sfruttare i più recenti miglioramenti senza dover ricreare le tue connessioni federate.</block>
   <block id="c25a3e76b4346814957eaeaf7f21b29b" category="doc">Importa la tua federazione su BlueXP</block>
   <block id="e4ebb9b2ed3ade70212bc0487a5b0956" category="paragraph">I clienti esistenti che hanno già configurato connessioni federate a BlueXP possono importare le proprie federazioni nella nuova interfaccia. Questo consente di gestire le connessioni federate nella nuova pagina "Federazioni" senza doverle ricreare.</block>
@@ -5453,4 +5447,10 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="d00255b25e6ac270c154c1b88351cb61" category="sidebar">Gestire le federazioni</block>
   <block id="b738cb995b90e7ef0f6b53e82271107a" category="sidebar">Importa la tua connessione federata esistente</block>
   <block id="20bcff7d6fd558badea4ab3c38447c64" category="sidebar">Manutenzione del connettore onsole</block>
+  <block id="5e976f8888129db7a70ab686bfcc86b9" category="list-text">Supporto per proxy trasparenti per i connettori dedicati al supporto dei servizi Cloud Volumes ONTAP . <block ref="addeb9305f92d41fc2dd640d1ef810f0" category="inline-link-macro-rx"></block></block>
+  <block id="a930f8ca18589b33c946f81801d0bbf6" category="paragraph">Ti verrà richiesto di importare eventuali connessioni federate esistenti nella nuova interfaccia per accedere alle nuove funzionalità di gestione. Questo ti permetterà di sfruttare i più recenti miglioramenti senza dover ricreare le tue connessioni federate. <block ref="374020c220651e051317a80c1b5ae1db" category="inline-link-macro-rx"></block></block>
+  <block id="b658b3504fd725bf7abab622b28f1851" category="paragraph"><block ref="b658b3504fd725bf7abab622b28f1851" category="inline-link-macro-rx"></block></block>
+  <block id="12abdfb9ba5fcfe154c4363eb977b22b" category="paragraph"><block ref="12abdfb9ba5fcfe154c4363eb977b22b" category="inline-link-macro-rx"></block></block>
+  <block id="119ba48130d6c62c98b23ef445867ae0" category="paragraph">NetApp consiglia di utilizzare l'URL dei metadati per consentire a BlueXP di recuperare automaticamente la configurazione AD FS più recente. Se scarichi il file dei metadati della federazione, dovrai aggiornarlo manualmente in BlueXP ogni volta che si verificano modifiche alla configurazione AD FS.</block>
+  <block id="f7ad98daa7023cc12c8a8312a6fb794e" category="floating-title">Testare e abilitare la connessione</block>
 </blocks>
