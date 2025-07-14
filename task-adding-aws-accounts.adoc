@@ -279,12 +279,8 @@ Per tutte le altre organizzazioni o account, è necessario associare manualmente
 
 Quando ti abboni ad AWS Marketplace, l'ultimo passaggio del processo consiste nell'associare l'abbonamento alla tua organizzazione. Se non hai completato questo passaggio, non potrai utilizzare l'abbonamento con la tua organizzazione o il tuo account.
 
-
-TIP: Se utilizzi la modalità standard o limitata, avrai un'_organizzazione BlueXP_, che potrai gestire tramite la gestione delle identità e degli accessi (IAM) di BlueXP. Ma se utilizzi BlueXP  in modalità privata, avrai un _account BlueXP _.
-
 * link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"]
 * link:concept-identity-and-access-management.html["Informazioni sulla gestione delle identità e degli accessi di BlueXP "]
-* link:concept-netapp-accounts.html["Scopri di più sugli account BlueXP"]
 
 
 Segui i passaggi indicati di seguito se hai sottoscritto un abbonamento ai servizi dati intelligenti di NetApp da AWS Marketplace, ma hai saltato il passaggio per associare l'abbonamento al tuo account.

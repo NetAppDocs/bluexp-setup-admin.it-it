@@ -14,7 +14,7 @@ summary: 'Un connettore è il software NetApp in esecuzione nella rete cloud o o
 
 
 [role="lead"]
-Un _connettore_ è il software NetApp in esecuzione nella rete cloud o on-premise. Esegue le azioni che BlueXP deve eseguire per gestire l'infrastruttura dati. Il connettore interroga costantemente il livello SaaS (Software as a Service) di BlueXP  per individuare eventuali azioni da intraprendere. Non è necessario un connettore per iniziare a utilizzare BlueXP, ma è necessario creare un connettore per sbloccare tutte le funzionalità e i servizi di BlueXP.
+Un _connettore_ è il software NetApp in esecuzione nella rete cloud o on-premise. Serve per connettere i servizi BlueXP ai tuoi ambienti di archiviazione.
 
 
 

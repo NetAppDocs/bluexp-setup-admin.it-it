@@ -221,10 +221,12 @@ Dovresti disporre di quanto segue:
 +
 È possibile configurare un server proxy dopo l'installazione, ma per farlo è necessario riavviare il connettore.
 
-+
-BlueXP non supporta i server proxy trasparenti.
-
 * Un certificato firmato dalla CA, se il server proxy utilizza HTTPS o se il proxy è un proxy di intercettazione.
+
+
+
+NOTE: Non è possibile impostare un certificato per un server proxy trasparente durante l'installazione manuale del Connettore. Se è necessario impostare un certificato per un server proxy trasparente, è necessario utilizzare la Console di Manutenzione dopo l'installazione. Ulteriori informazioni su link:reference-connector-maint-console.html["Console di manutenzione del connettore"].
+
 * A seconda del sistema operativo in uso, prima di installare il connettore è necessario utilizzare Podman o Docker Engine.
 
 
@@ -262,10 +264,10 @@ Dove <version> è la versione del connettore scaricato.
  ./BlueXP-Connector-Cloud-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 ----
 +
-I parametri --proxy e --cakert sono facoltativi. Se si dispone di un server proxy, è necessario immettere i parametri come mostrato. Il programma di installazione non richiede di fornire informazioni su un proxy.
+Dovrai aggiungere le informazioni sul proxy se la tua rete ne richiede uno per l'accesso a internet. Puoi aggiungere un proxy trasparente o esplicito. I parametri --proxy e --cacert sono facoltativi e non ti verrà richiesto di aggiungerli. Se si dispone di un server proxy, è necessario immettere i parametri come mostrato.
 
 +
-Ecco un esempio del comando che utilizza entrambi i parametri facoltativi:
+Ecco un esempio di configurazione di un server proxy esplicito con un certificato firmato da una CA:
 
 +
 [source, cli]
@@ -296,13 +298,21 @@ Ad esempio:
 +
 \http://bxpproxyuser:netapp1\!@address:3128
 
-
++
+--cakert specifica un certificato firmato da CA da utilizzare per l'accesso HTTPS tra il connettore e il server proxy. Questo parametro è obbligatorio per i server proxy HTTPS, i server proxy di intercettazione e i server proxy trasparenti.
 
 
 
 +
---cakert specifica un certificato firmato da CA da utilizzare per l'accesso HTTPS tra il connettore e il server proxy. Questo parametro è necessario solo se si specifica un server proxy HTTPS o se il proxy è un proxy di intercettazione.
+Ecco un esempio di configurazione di un server proxy trasparente. Quando si configura un proxy trasparente, non è necessario definire il server proxy. È sufficiente aggiungere un certificato firmato da una CA all'host del connettore:
 
+
+
++
+[source, cli]
+----
+ ./BlueXP-Connector-Cloud-v3.9.40 --cacert /tmp/cacert/certificate.cer
+----
 . Se hai utilizzato Podman, dovrai modificare la porta aardvark-dns.
 +
 .. Eseguire l'SSH sulla macchina virtuale BlueXP Connector.

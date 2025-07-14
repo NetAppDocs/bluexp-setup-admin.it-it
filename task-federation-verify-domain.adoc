@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: task-federation-verify-domain.html 
+keywords: federation, active directory federation services, adfs, ad fs, single sign-on, microsoft, federate, federated connection, SSO, identity federation, identity management, corporate identity 
+summary: 'Federati con Active Directory Federation Services (AD FS) per abilitare il Single Sign-On (SSO) per BlueXP. Questo consente agli utenti di accedere utilizzando le proprie credenziali aziendali.' 
+---
+= Verifica il dominio email per la tua connessione federata
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se desideri federarti con un dominio diverso dal tuo dominio email, devi prima verificare di esserne il proprietario. Puoi utilizzare solo domini verificati per la federazione.
+
+.Ruoli richiesti
+Amministratore dell'organizzazione o amministratore della federazione. link:reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso."]
+
+La verifica del dominio comporta l'aggiunta di un record TXT alle impostazioni DNS del dominio. Questo record serve a dimostrare che sei il proprietario del dominio e consente a BlueXP di considerarlo attendibile per la federazione. Potrebbe essere necessario coordinarsi con l'amministratore IT o di rete per completare questo passaggio.
+
+.Fasi
+. Nella parte superiore destra della console di BlueXP , selezionare image:icon-settings-option.png["L'icona delle impostazioni che viene visualizzata nella parte superiore destra della console Web di BlueXP ."] > *Gestione identità e accessi*.
+. Selezionare la scheda *Federazione*.
+. Selezionare *Configura nuova federazione*.
+. Seleziona *Verifica la proprietà del dominio*.
+. Inserisci il dominio che vuoi verificare e seleziona *Continua*.
+. Copiare il record TXT fornito.
+. Accedi alle impostazioni DNS del tuo dominio e configura il valore TXT fornito come record TXT per il tuo dominio. Se necessario, rivolgiti al tuo amministratore IT o di rete.
+. Dopo aver aggiunto il record TXT, torna a BlueXP e seleziona *Verifica*.
+

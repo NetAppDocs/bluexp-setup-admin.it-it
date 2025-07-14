@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-iam-keystone-roles.html 
 keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
-summary: 'La gestione delle identità e degli accessi di BlueXP  fornisce due ruoli amministrativi che è possibile assegnare ai membri dell"organizzazione.' 
+summary: La gestione delle identità e degli accessi BlueXP fornisce due ruoli Keystone che puoi assegnare ai membri della tua organizzazione. 
 ---
 = Ruoli di accesso di Keystone per BlueXP 
 :hardbreaks:

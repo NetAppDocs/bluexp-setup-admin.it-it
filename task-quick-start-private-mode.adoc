@@ -18,7 +18,7 @@ Inizia a utilizzare BlueXP in modalità privata preparando l'ambiente e implemen
 
 La modalità privata viene generalmente utilizzata con ambienti on-premise che non dispongono di connessione a Internet e con aree cloud sicure, tra cui https://aws.amazon.com/federal/secret-cloud/["Cloud segreto AWS"^], https://aws.amazon.com/federal/top-secret-cloud/["Cloud AWS top secret"^], e. https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
 
-Prima di iniziare, dovresti avere una conoscenza di link:concept-netapp-accounts.html["BlueXP"], link:concept-connectors.html["Connettori"], e. link:concept-modes.html["modalità di distribuzione"].
+Prima di iniziare, è necessario conoscere link:concept-connectors.html["Connettori"] e link:concept-modes.html["modalità di distribuzione"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] link:task-prepare-private-mode.html["Prepararsi per l'implementazione"]
 [role="quick-margin-list"]

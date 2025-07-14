@@ -16,9 +16,6 @@ summary: 'La gestione delle identità e degli accessi (IAM, Identity and Access 
 [role="lead"]
 La gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP  consente di organizzare e controllare l'accesso alle risorse NetApp. È possibile organizzare le risorse in base alla gerarchia dell'organizzazione. Ad esempio, è possibile organizzare le risorse in base alla posizione geografica, al sito o all'unità aziendale. È quindi possibile assegnare i ruoli IAM ai membri in determinate parti della gerarchia, impedendo così l'accesso alle risorse presenti in altre parti della gerarchia.
 
-BlueXP  IAM è supportato quando si utilizza BlueXP  in modalità standard e limitata. Se utilizzi BlueXP  in modalità privata, utilizza un _account_ di BlueXP  per gestire utenti e risorse.
-
-* link:concept-netapp-accounts.html["Scopri di più sugli account BlueXP"]
 * link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"]
 
 
@@ -26,7 +23,7 @@ BlueXP  IAM è supportato quando si utilizza BlueXP  in modalità standard e l
 
 == Come funziona BlueXP  IAM
 
-BlueXP  IAM consente di concedere l'accesso alle risorse dell'organizzazione definendo quali membri dispongono delle autorizzazioni per parti specifiche della gerarchia dell'organizzazione. Ad esempio, un membro può disporre delle autorizzazioni di amministratore del progetto per un progetto che dispone di cinque risorse associate.
+BlueXP IAM consente di concedere l'accesso alle risorse assegnando agli utenti ruoli di accesso a parti specifiche della gerarchia. Ad esempio, a un membro può essere assegnato il ruolo di amministratore di cartella o di progetto per un progetto con cinque risorse.
 
 Quando si utilizza BlueXP  IAM, è possibile gestire i seguenti componenti:
 
@@ -57,17 +54,13 @@ image:diagram-iam-resource-hierarchy.png["Un diagramma concettuale che mostra la
 
 Un _organization_ è il livello superiore del sistema IAM di BlueXP  e rappresenta generalmente la vostra azienda. L'organizzazione è composta da cartelle, progetti, membri, ruoli e risorse. I connettori sono associati a progetti specifici nell'organizzazione.
 
-Quando ti registri, BlueXP ti chiede di creare una nuova organizzazione.
-
 
 
 === Cartelle
 
 Una _cartella_ consente di raggruppare i progetti correlati e separarli dagli altri progetti dell'organizzazione. Ad esempio, una cartella potrebbe rappresentare una posizione geografica (UE o USA Est), un sito (Londra o Toronto) o una business unit (ingegneria o marketing).
 
-Le cartelle possono contenere progetti, altre cartelle o entrambi.
-
-Non è necessario creare cartelle. Sono opzionali.
+Le cartelle possono contenere progetti, altre cartelle o entrambi. La creazione di cartelle è facoltativa.
 
 
 
@@ -96,7 +89,7 @@ TIP: È inoltre possibile associare un connettore a un'altra cartella o progetto
 
 È inoltre possibile associare una risorsa a una cartella, ma questa opzione è facoltativa e soddisfa le esigenze di un caso di utilizzo specifico.
 
-Un _amministratore di organizzazione_ potrebbe associare una risorsa a una cartella in modo che un _amministratore di cartella o progetto_ possa quindi associare tale risorsa ai progetti appropriati che risiedono nella cartella.
+Un _amministratore dell'organizzazione_ potrebbe associare una risorsa a una cartella per consentire a un _amministratore della cartella o del progetto_ di collegare tale risorsa ai progetti appropriati nella cartella.
 
 Ad esempio, supponiamo di avere una cartella che contiene due progetti:
 
@@ -106,7 +99,7 @@ L'amministratore _dell'organizzazione_ può associare una risorsa alla cartella:
 
 image:diagram-iam-resource-association-folder-2.png["Un diagramma che mostra una cartella, una risorsa associata alla cartella e due progetti che risiedono nella cartella: Progetto A e progetto B."]
 
-Quando si associa una risorsa a una cartella, questa non diventa automaticamente accessibile a tutti i progetti: solo l'amministratore della cartella o del progetto può visualizzarla. L'amministratore della cartella o del progetto decide quali progetti possono accedervi e associa la risorsa ai progetti appropriati.
+Associare una risorsa a una cartella non la rende accessibile a tutti i progetti: solo l'amministratore della cartella o del progetto può vederla. L'amministratore della cartella o del progetto decide quali progetti possono accedervi e associa la risorsa ai progetti appropriati.
 
 In questo esempio, l'amministratore associa la risorsa al progetto A:
 
@@ -128,7 +121,7 @@ Ogni organizzazione include almeno un utente con il ruolo di _Amministratore org
 
 In BlueXP  IAM, non si concedono autorizzazioni direttamente ai membri dell'organizzazione. Invece, si concede a ciascun membro un ruolo. Un ruolo contiene una serie di autorizzazioni che consente a un membro di eseguire azioni specifiche a un livello specifico della gerarchia delle risorse.
 
-Fornendo le autorizzazioni in una parte specifica della gerarchia delle risorse, è possibile limitare i diritti di accesso solo alle risorse necessarie a un membro per completare le proprie attività.
+Concedere autorizzazioni a un livello gerarchico specifico limita l'accesso alle risorse di cui un membro ha bisogno e ai servizi che può utilizzare con tali risorse.
 
 
 

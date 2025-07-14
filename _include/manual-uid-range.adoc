@@ -10,9 +10,6 @@ Dovresti disporre di quanto segue:
 +
 È possibile configurare un server proxy dopo l'installazione, ma per farlo è necessario riavviare il connettore.
 
-+
-BlueXP non supporta i server proxy trasparenti.
-
 * Un certificato firmato dalla CA, se il server proxy utilizza HTTPS o se il proxy è un proxy di intercettazione.
 
 

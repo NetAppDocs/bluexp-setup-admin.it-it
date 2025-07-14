@@ -1,0 +1,285 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-backup-rec-roles.html 
+keywords: backing up, restoring, back up, backup, restore, cloud volumes ontap, aws, azure, s3, blob, google cloud, storagegrid, back up volumes, cloud backup, restore volumes, cost, on-premises ontap, onprem, applications, virtual machines, backup and recovery, roles, permissions, access control, role-based access control, rbac, role-based access 
+summary: 'La gestione dell"identità e dell"accesso BlueXP offre diversi ruoli che puoi assegnare ai membri della tua organizzazione che utilizzano il servizio di backup e ripristino.' 
+---
+= Ruoli BlueXP backup and recovery
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile assegnare i seguenti ruoli agli utenti per consentire loro di accedere al servizio di backup e ripristino all'interno BlueXP. I ruoli di backup e ripristino offrono la flessibilità di assegnare agli utenti un ruolo specifico per le attività che devono svolgere all'interno dell'organizzazione. La modalità di assegnazione dei ruoli dipende dalle procedure aziendali e di gestione dello storage.
+
+Il backup e il ripristino utilizzano i seguenti ruoli:
+
+* *Super amministratore di backup e ripristino*: esegue qualsiasi azione.
+* *Amministratore di backup e ripristino*: esegue backup su snapshot locali, replica su storage secondario ed esegue backup su storage di oggetti.
+* *Amministratore del backup e del ripristino*: Ripristina i carichi di lavoro.
+* *Amministratore clone di backup e ripristino*: clona applicazioni e dati.
+* *Visualizzatore di backup e ripristino*: visualizza le informazioni di backup e ripristino.
+
+
+La tabella seguente indica le azioni che ciascun ruolo può eseguire.
+
+[cols="20,20,15,15a,15a,15a"]
+|===
+| Funzione e azione | Super amministratore di backup e ripristino | Amministratore del backup | Ripristina amministratore | Clona amministratore | Visualizzatore 
+
+
+| Aggiungi, modifica o elimina host | Sì | No  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Installa i plugin | Sì | No  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Aggiungi credenziali (host, istanza, vCenter) | Sì | No  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Visualizza dashboard e tutte le schede | Sì | Sì  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+| Inizia la prova gratuita | Sì | No  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Avvia il rilevamento dei carichi di lavoro | No | Sì  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+
+
+
+| Visualizza le informazioni sulla licenza | Sì | Sì  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+| Attiva la licenza | Sì | No  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Visualizza gli host | Sì | Sì  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+6+| *Orari*: 
+
+
+| Attivare gli orari | Sì | Sì  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+
+
+
+| Sospendi gli orari | Sì | Sì  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+
+
+
+6+| *Politiche e protezione*: 
+
+
+| Visualizza i piani di protezione | Sì | Sì  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+| Creare, modificare o eliminare piani di protezione | Sì | Sì  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Ripristinare i carichi di lavoro | Sì | No  a| 
+Sì
+ a| 
+No
+ a| 
+No
+
+
+
+| Crea, dividi o elimina cloni | Sì | No  a| 
+No
+ a| 
+Sì
+ a| 
+No
+
+
+
+| Crea, modifica o elimina una policy | Sì | Sì  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+6+| *Segnalazioni*: 
+
+
+| Visualizzare i report | Sì | Sì  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+| Creare report | Sì | Sì  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+
+
+
+| Eliminare i referti | Sì | No  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+6+| *Importa da SnapCenter e gestisci l'host*: 
+
+
+| Visualizza i dati SnapCenter importati | Sì | Sì  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+| Importa dati da SnapCenter | Sì | Sì  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+| Gestisci (migra) l'host | Sì | Sì  a| 
+No
+ a| 
+No
+ a| 
+No
+
+
+
+6+| *Configura impostazioni*: 
+
+
+| Configurare la directory del registro | Sì | Sì  a| 
+Sì
+ a| 
+No
+ a| 
+No
+
+
+
+| Associa o rimuovi le credenziali dell'istanza | Sì | Sì  a| 
+Sì
+ a| 
+No
+ a| 
+No
+
+
+
+6+| *Secchi*: 
+
+
+| Visualizza i bucket di archiviazione | Sì | Sì  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+| Crea, modifica o elimina bucket di archiviazione | Sì | Sì  a| 
+No
+ a| 
+No
+ a| 
+No
+
+|===

@@ -14,16 +14,12 @@ summary: 'Associare un account del sito di supporto NetApp all"organizzazione o 
 
 
 [role="lead"]
-Associare un account del sito di supporto NetApp all'organizzazione o all'account BlueXP  per abilitare i flussi di lavoro chiave per Cloud Volumes ONTAP. Queste credenziali NSS sono associate all'intera organizzazione o account BlueXP .
+Associa un account NetApp Support Site alla tua organizzazione BlueXP per abilitare i flussi di lavoro chiave per Cloud Volumes ONTAP. Queste credenziali NSS sono associate all'intera organizzazione BlueXP .
 
 BlueXP  supporta anche l'associazione di un account NSS per ogni account utente BlueXP . link:task-manage-user-credentials.html["Scopri come gestire le credenziali a livello utente"].
 
-
-TIP: Se utilizzi BlueXP  in modalità standard o limitata, avrai a disposizione un'organizzazione _BlueXP _, gestita tramite la gestione delle identità e degli accessi (IAM) di BlueXP . Ma se utilizzi BlueXP  in modalità privata, avrai un _account BlueXP _.
-
 * link:concept-modes.html["Scopri le modalità di implementazione di BlueXP"]
 * link:concept-identity-and-access-management.html["Informazioni sulla gestione delle identità e degli accessi di BlueXP "]
-* link:concept-netapp-accounts.html["Scopri di più sugli account BlueXP"]
 
 
 

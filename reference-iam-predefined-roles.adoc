@@ -14,7 +14,7 @@ summary: 'La gestione delle identità e degli accessi di BlueXP  include divers
 
 
 [role="lead"]
-BlueXP  Identity and Access Management (IAM) include diversi ruoli predefiniti che è possibile assegnare ai membri dell'organizzazione in diversi livelli della gerarchia delle risorse. Prima di assegnare questi ruoli, è necessario comprendere le autorizzazioni incluse in ciascun ruolo. I ruoli rientrano nelle seguenti categorie: Piattaforma, applicazione e servizio dati.
+La gestione delle identità e degli accessi (IAM) BlueXP include ruoli predefiniti che puoi assegnare ai membri della tua organizzazione nei diversi livelli della gerarchia delle risorse. Prima di assegnare questi ruoli, è necessario comprendere le autorizzazioni incluse in ciascun ruolo. I ruoli rientrano nelle seguenti categorie: Piattaforma, applicazione e servizio dati.
 
 
 
@@ -31,6 +31,12 @@ I ruoli della piattaforma concedono tutte le autorizzazioni per l'amministrazion
 
 
 | link:reference-iam-platform-roles.html["Amministratore cartella o progetto"] | Consente a un utente di accedere senza restrizioni a progetti e cartelle specifici a cui sono assegnati. Può aggiungere membri alle cartelle o ai progetti gestiti, nonché eseguire qualsiasi attività BlueXP  e utilizzare qualsiasi servizio dati o applicazione sulle risorse all'interno della cartella o del progetto a cui sono assegnati. Il ruolo di amministratore cartella o progetto NON PUÒ creare connettori. 
+
+
+| link:reference-iam-platform-roles.html["Amministratore della federazione"] | Consente all'utente di creare e gestire federazioni con BlueXP, che abilitano l'accesso singolo (SSO). 
+
+
+| link:reference-iam-platform-roles.html["Visualizzatore della federazione"] | Consente all'utente di visualizzare le federazioni esistenti con BlueXP. Non è possibile creare o gestire federazioni. 
 |===
 
 
@@ -66,6 +72,33 @@ Di seguito è riportato un elenco dei ruoli nella categoria del servizio dati. O
 [cols="10,24"]
 |===
 | Ruolo servizio dati | Responsabilità 
+
+
+| link:reference-iam-backup-rec-roles.html["Super amministratore di backup e ripristino"] | Eseguire qualsiasi azione nel servizio di backup e ripristino. 
+
+
+| link:reference-iam-backup-rec-roles.html["Amministratore di backup e ripristino"] | Esegui backup su snapshot locali, replica su storage secondario ed esegui backup su storage di oggetti. 
+
+
+| link:reference-iam-backup-rec-roles.html["Backup e ripristino ripristino amministratore"] | Ripristinare i carichi di lavoro nel servizio di backup e ripristino. 
+
+
+| link:reference-iam-backup-rec-roles.html["Amministratore clone di backup e ripristino"] | Clona applicazioni e dati nel servizio di backup e ripristino. 
+
+
+| link:reference-iam-backup-rec-roles.html["Visualizzatore di backup e ripristino"] | Visualizza le informazioni di backup e ripristino. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Amministratore del ripristino di emergenza"] | Eseguire qualsiasi azione nel servizio di ripristino di emergenza. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Amministratore del failover del ripristino di emergenza"] | Eseguire failover e migrazioni. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Amministratore dell'applicazione di ripristino di emergenza"] | Crea piani di replicazione, modifica i piani di replicazione e avvia i failover di prova. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Visualizzatore di ripristino di emergenza"] | Visualizza solo le informazioni. 
 
 
 | Amministratore classificazione | Consente di visualizzare i risultati delle scansioni di classificazione BlueXP . La classificazione non ha un ruolo di spettatore. Gli utenti con questo ruolo possono visualizzare le informazioni sulla conformità e generare report per le risorse a cui hanno l'autorizzazione di accedere. Questi utenti non possono abilitare o disabilitare la scansione di volumi, bucket o schemi di database. 

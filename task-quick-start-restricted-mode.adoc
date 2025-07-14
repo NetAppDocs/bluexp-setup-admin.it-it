@@ -16,7 +16,7 @@ summary: Inizia a utilizzare BlueXP in modalità limitata preparando il tuo ambi
 [role="lead"]
 Inizia a usare BlueXP in modalità limitata preparando l'ambiente e distribuendo il connettore.
 
-La modalità limitata viene generalmente utilizzata dai governi locali e statali e da società regolamentate, comprese le implementazioni nelle aree pubbliche di AWS GovCloud e Azure. Prima di iniziare, dovresti avere una conoscenza di link:concept-netapp-accounts.html["BlueXP"], link:concept-connectors.html["Connettori"], e. link:concept-modes.html["modalità di distribuzione"].
+La modalità limitata viene generalmente utilizzata dai governi locali e statali e da società regolamentate, comprese le implementazioni nelle aree pubbliche di AWS GovCloud e Azure. Prima di iniziare, assicurati di aver compreso link:concept-connectors.html["Connettori"] E link:concept-modes.html["modalità di distribuzione"] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] link:task-prepare-restricted-mode.html["Prepararsi per l'implementazione"]
 [role="quick-margin-list"]

@@ -95,12 +95,6 @@ sidebar:
         url: "/task-prepare-private-mode.html"
       - title: Implementare il connettore
         url: "/task-install-private-mode.html"
-      - title: BlueXP
-        entries:
-        - title: Scopri di più sugli account
-          url: "/concept-netapp-accounts.html"
-        - title: Gestisci il tuo account BlueXP
-          url: "/task-managing-netapp-accounts.html"
       - title: Cosa fare in seguito
         url: "/reference-whats-next-private-mode.html"
   - title: Usa BlueXP
@@ -147,16 +141,35 @@ sidebar:
             url: "/reference-iam-storage-roles.html"
         - title: Ruoli nei servizi dati
           entries:
+          - title: Ruoli di backup e ripristino
+            url: "/reference-iam-backup-rec-roles.html"
+          - title: Ruoli di ripristino in caso di disastro
+            url: "/reference-iam-disaster-rec-roles.html"
           - title: Ruoli di protezione dal ransomware
             url: "/reference-iam-ransomware-roles.html"
-    - title: Account BlueXP  (solo modalità privata)
-      entries:
-      - title: Scopri di più sugli account
-        url: "/concept-netapp-accounts.html"
-      - title: Gestisci il tuo account BlueXP
-        url: "/task-managing-netapp-accounts.html"
     - title: Federazione delle identità
-      url: "/concept-federation.html"
+      entries:
+      - title: Scopri di più sulla federazione delle identità
+        url: "/concept-federation.html"
+      - title: Verifica del dominio
+        entries:
+        - title: Verifica il tuo dominio
+          url: "/task-federation-verify-domain.html"
+      - title: Configurare le federazioni
+        entries:
+        - title: Federare con un provider di Active Directory Federation Services
+            (AD FS)
+          url: "/task-federation-adfs.html"
+        - title: Federati con il provider Microsoft Entra ID
+          url: "/task-federation-entra-id.html"
+        - title: Federati con PingFederate
+          url: "/task-federation-ping.html"
+        - title: Federarsi con un fornitore di identità SAML
+          url: "/task-federation-saml.html"
+      - title: Gestire le federazioni
+        url: "/task-federation-manage.html"
+      - title: Importa la tua connessione federata esistente
+        url: "/task-federation-import.html"
     - title: Connettori
       entries:
       - title: Gestire la VM e il sistema operativo
@@ -209,6 +222,10 @@ sidebar:
       url: "/task-monitor-cm-operations.html"
   - title: Riferimento
     entries:
+    - title: Console di manutenzione del connettore
+      entries:
+      - title: Manutenzione del connettore onsole
+        url: "/reference-connector-maint-console.html"
     - title: Permessi
       entries:
       - title: Riepilogo delle autorizzazioni

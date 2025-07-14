@@ -1,0 +1,12 @@
+= 
+:allow-uri-read: 
+
+
+. Selezionare *Avanti*.
+. Seleziona *Test connessione* per testare la tua connessione. Verrai indirizzato a una pagina di accesso per il tuo server IdP. Accedi con le tue credenziali IdP per completare il test e torna a BlueXP per abilitare la connessione.
+. Selezionare *Avanti*.
+. Nella pagina *Abilita federazione*, rivedi i dettagli della federazione e poi seleziona *Abilita federazione*.
+. Selezionare *Fine* per completare il processo.
+
+
+Dopo aver abilitato la federazione, gli utenti potranno accedere a BlueXP utilizzando le proprie credenziali aziendali.

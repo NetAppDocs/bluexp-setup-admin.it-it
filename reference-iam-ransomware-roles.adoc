@@ -14,7 +14,7 @@ summary: 'La gestione delle identità e degli accessi di BlueXP  fornisce due r
 
 
 [role="lead"]
-I ruoli ransomware forniscono agli utenti l'accesso al servizio di protezione ransomware. Agli utenti può essere assegnato un ruolo amministrativo, che consente loro di intervenire nella protezione ransomware, oppure un ruolo di visualizzatore, se hanno solo responsabilità di monitoraggio. I due ruoli sono: Amministratore di protezione ransomware e visualizzatore di protezione ransomware. La differenza principale tra i due ruoli consiste nelle azioni che possono intraprendere nella protezione ransomware.
+I ruoli ransomware forniscono agli utenti l'accesso al servizio di protezione ransomware. I due ruoli sono: Amministratore di protezione ransomware e visualizzatore di protezione ransomware. La differenza principale tra i due ruoli consiste nelle azioni che possono intraprendere nella protezione ransomware.
 
 Nella tabella seguente vengono illustrate le azioni che ciascun ruolo di protezione dal ransomware BlueXP può eseguire.
 
