@@ -112,7 +112,7 @@ Per configurare un connettore esistente in modo che utilizzi un server proxy tra
 Quando si configura un server proxy, il connettore si riavvia. Verificare che il connettore sia inattivo prima di procedere.
 
 .Fasi
-+ Assicurati di disporre di un file di certificato in formato PEM per il server proxy. Se non disponi di un certificato, contatta l'amministratore di rete per ottenerne uno.
+Assicurarsi di disporre di un file di certificato in formato PEM per il server proxy. Se non disponi di un certificato, contatta l'amministratore di rete per ottenerne uno.
 
 . Aprire un'interfaccia della riga di comando sull'host del connettore.
 . Passare alla directory dello strumento di manutenzione del connettore:  `/opt/application/netapp/service-manager-2/connector-maint-console`
