@@ -24,7 +24,7 @@ Scopri le novità delle funzionalità di amministrazione di BlueXP : Gestione d
 
 === Supporto per Google Cloud NetApp Volumes
 
-Ora puoi visualizzare Google Cloud NetApp Volumes in BlueXP. link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/index.html["Scopri di più su Google Cloud NetApp Volumes."]
+Ora puoi visualizzare Google Cloud NetApp Volumes in BlueXP. link:https://docs.netapp.com/us-en//bluexp-google-cloud-netapp-volumes/index.html/index.html["Scopri di più su Google Cloud NetApp Volumes."]
 
 
 
