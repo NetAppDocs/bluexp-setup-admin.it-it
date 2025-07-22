@@ -1811,7 +1811,6 @@ oppure</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">La registrazione di entrambi i tipi di numeri di serie offre funzionalità come l'apertura di ticket di supporto e la generazione automatica dei casi. La registrazione viene completata aggiungendo account del sito di supporto NetApp a BlueXP come descritto di seguito.</block>
   <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
-  <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">Cliente esistente con un account NSS</block>
   <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">Se sei un cliente NetApp con un account NSS, devi semplicemente registrarti per ricevere supporto tramite BlueXP.</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">Selezionare *Aggiungi credenziali NSS* e seguire la richiesta di autenticazione del sito di supporto NetApp.</block>
@@ -3781,7 +3780,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="bb0f4333667b84217bd737a0e3fc6024" category="list-text">Nella tabella *membri*, accedere a un account di servizio, selezionare <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> e quindi *Ricrea segreti*.</block>
   <block id="8de213850e1e3dc79a14014382d25163" category="list-text">Selezionare *Ricrea*.</block>
   <block id="4137654b2b560bb6af478553cbc120b2" category="section-title">Rimuovere un membro dall'organizzazione</block>
-  <block id="0479745abf593369ddbda5e8df849e57" category="list-text">Dalla pagina *membri*, selezionare un membro della tabella, quindi selezionare <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>*Elimina utente*.</block>
   <block id="6e49938f1c5b86ad879eeaf086442b08" category="list-text">Confermare che si desidera rimuovere il membro dall'organizzazione.</block>
   <block id="2fe6c9d572351b2d4e0b387a62bdf1e2" category="summary">Gestire la gerarchia delle risorse dell'organizzazione associando le risorse a progetti e cartelle specifici.</block>
   <block id="98ca801aa8933a24531043c30c475e2e" category="section-title">Visualizzare le risorse dell'organizzazione</block>
@@ -4621,7 +4619,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="5f04b1505df8c3795b59e8cd4a8e01e3" category="sidebar">Ulteriori informazioni sui ruoli di accesso di BlueXP </block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">Ruoli nei servizi dati</block>
   <block id="0310ff69ee2ad8b9fa1fbf2f23946a8e" category="sidebar">Ruoli di protezione dal ransomware</block>
-  <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">Gli utenti con il ruolo di visualizzatore Keystone NON POSSONO creare richieste di servizio. Permette agli utenti di monitorare e visualizzare i consumi, gli asset e le informazioni amministrative all'interno del tenant Keystone a cui accedono.</block>
   <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">Gli endpoint sicuri per i download dei connettori sono ora supportati per backup e recovery e protezione dal ransomware</block>
   <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">Ulteriori informazioni sugli endpoint sicuri per il download dei connettori.</block>
   <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">Se stai utilizzando backup e recovery o protezione ransomware, ora puoi utilizzare endpoint sicuri per il download dei connettori. <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
@@ -4693,7 +4690,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="f2822d5dedda5be93d6f6e298458878b" category="paragraph">Gli utenti con questo ruolo possono gestire solo i membri di una cartella o di un progetto designato</block>
   <block id="d0dc99396b7d861a7866a8e109f9b1c6" category="paragraph">Dopo la registrazione, gli utenti compilano la pagina di *Registrazione*, controllano la propria email e accedono. Se viene richiesto di creare un'organizzazione, devono chiudere BlueXP e informarti della creazione del loro account. È quindi possibile aggiungere l'utente all'organizzazione BlueXP  esistente.</block>
   <block id="08a2395e6fbea42394d928f53df9f3e7" category="paragraph">L'utente riceve un'e-mail da NetApp BlueXP contenente le informazioni che i membri utilizzano per accedere a BlueXP.</block>
-  <block id="00407d7a171d24d8741b64c4670528bc" category="paragraph">lueXP mostra il segreto del client solo una volta e non lo memorizza. Copia o scarica il segreto e conservalo in modo sicuro. Tenere presente che è possibile ricreare l'ID client e il segreto client in un secondo momento.</block>
   <block id="981e68aebbf5499db66d9a2b0c273b16" category="paragraph">Nella tabella *Membri* vengono visualizzati i membri della tua organizzazione.</block>
   <block id="e4cb5729a397d486706aec2c33ce4ea6" category="paragraph">Potrebbe essere necessario rimuovere un membro dalla tua organizzazione, ad esempio se abbandona l'azienda.</block>
   <block id="a8b5ca2eacd6c76f00fb50a8de358707" category="paragraph">La rimozione di un membro comporta la revoca delle autorizzazioni, ma mantiene i suoi account BlueXP e NetApp Support Site.</block>
@@ -5468,4 +5464,13 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">Fornisce la possibilità di visualizzare i risultati della scansione BlueXP classification . Gli utenti con questo ruolo possono visualizzare le informazioni sulla conformità e generare report per le risorse a cui hanno l'autorizzazione di accedere. Questi utenti non possono abilitare o disabilitare la scansione di volumi, bucket o schemi di database. La classificazione non ha un ruolo di spettatore.</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">21 luglio 2025</block>
   <block id="21af40e527b4a74ba2f5692e884472ba" category="paragraph">Ora puoi visualizzare Google Cloud NetApp Volumes in BlueXP. <block ref="8ecfd1740a85ce17a70e2419c5980488" category="inline-link-macro-rx"></block></block>
+  <block id="4ac442f979edeb4aaec2d297a7c152be" category="cell">Gli utenti con il ruolo di visualizzatore Keystone NON POSSONO creare richieste di servizio. Consente agli utenti di monitorare e visualizzare i consumi, le risorse e le informazioni amministrative all'interno del tenant Keystone a cui hanno accesso.</block>
+  <block id="5cc5248d8f5f2a5831a23c2c1c7ba338" category="cell">Ruolo di configurazione del mediatore ONTAP</block>
+  <block id="b3aa67ea8b077eb2b67ff9a0651b5426" category="inline-link-macro">Mediatore cloud ONTAP</block>
+  <block id="04799ba9193d1752205122631a125181" category="cell">Gli account di servizio con il ruolo di configurazione di Mediatore ONTAP possono creare richieste di servizio. Questo ruolo è necessario in un account di servizio per configurare un'istanza di <block ref="a95914b5fa4d5193b1ebdf5a17356faa" category="inline-link-macro-rx"></block> .</block>
+  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">Amministrare la salute e le funzioni di governance dello storage, rilevare le risorse di storage e modificare ed eliminare gli ambienti di lavoro esistenti.</block>
+  <block id="cb4bf32603c89d08cad17e7e7dd302f2" category="list-text"><block ref="cb4bf32603c89d08cad17e7e7dd302f2" category="inline-link-macro-rx"></block></block>
+  <block id="864ccda1428bb8cb646ce133e0de4547" category="list-text">*Seleziona una categoria*, quindi seleziona un *Ruolo* che fornisca al membro le autorizzazioni per le risorse associate all'organizzazione, alla cartella o al progetto selezionato.</block>
+  <block id="65c825984634823998b7cac205641007" category="paragraph">BlueXP mostra il segreto del client solo una volta e non lo memorizza. Copia o scarica il segreto e conservalo in modo sicuro. Tenere presente che è possibile ricreare l'ID client e il segreto client in un secondo momento.</block>
+  <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">Dalla pagina *Membri*, vai a un membro nella tabella, seleziona <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> quindi seleziona *Elimina utente*.</block>
 </blocks>

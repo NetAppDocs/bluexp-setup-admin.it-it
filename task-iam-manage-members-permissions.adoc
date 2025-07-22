@@ -108,7 +108,7 @@ Tenere presente quanto segue:
 *** Se si seleziona l'organizzazione o una cartella, il membro disporrà delle autorizzazioni per tutti gli elementi che risiedono all'interno dell'organizzazione o della cartella.
 
 
-** *Selezionare una categoria*, quindi un *ruolo* che fornisca al membro le autorizzazioni per le risorse associate all'organizzazione, alla cartella o al progetto selezionato.
+** *Seleziona una categoria*, quindi seleziona un *Ruolo* che fornisca al membro le autorizzazioni per le risorse associate all'organizzazione, alla cartella o al progetto selezionato.
 +
 *** Se è stata selezionata una cartella o un progetto, è possibile scegliere un ruolo diverso da *Amministratore organizzazione*.
 +
@@ -121,7 +121,7 @@ link:reference-iam-predefined-roles.html["Informazioni sui ruoli IAM predefiniti
 
 . Scaricare o copiare l'ID client e il segreto client.
 +
-lueXP mostra il segreto del client solo una volta e non lo memorizza. Copia o scarica il segreto e conservalo in modo sicuro. Tenere presente che è possibile ricreare l'ID client e il segreto client in un secondo momento.
+BlueXP mostra il segreto del client solo una volta e non lo memorizza. Copia o scarica il segreto e conservalo in modo sicuro. Tenere presente che è possibile ricreare l'ID client e il segreto client in un secondo momento.
 
 . Selezionare *Chiudi*.
 
@@ -157,7 +157,7 @@ Potrebbe essere necessario rimuovere un membro dalla tua organizzazione, ad esem
 La rimozione di un membro comporta la revoca delle autorizzazioni, ma mantiene i suoi account BlueXP e NetApp Support Site.
 
 .Fasi
-. Dalla pagina *membri*, selezionare un membro della tabella, quindi selezionare image:icon-action.png["Un'icona con tre punti affiancati"]*Elimina utente*.
+. Dalla pagina *Membri*, vai a un membro nella tabella, seleziona image:icon-action.png["Un'icona con tre punti affiancati"] quindi seleziona *Elimina utente*.
 . Confermare che si desidera rimuovere il membro dall'organizzazione.
 
 
