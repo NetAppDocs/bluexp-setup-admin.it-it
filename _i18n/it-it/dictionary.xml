@@ -5473,4 +5473,5 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="864ccda1428bb8cb646ce133e0de4547" category="list-text">*Seleziona una categoria*, quindi seleziona un *Ruolo* che fornisca al membro le autorizzazioni per le risorse associate all'organizzazione, alla cartella o al progetto selezionato.</block>
   <block id="65c825984634823998b7cac205641007" category="paragraph">BlueXP mostra il segreto del client solo una volta e non lo memorizza. Copia o scarica il segreto e conservalo in modo sicuro. Tenere presente che è possibile ricreare l'ID client e il segreto client in un secondo momento.</block>
   <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">Dalla pagina *Membri*, vai a un membro nella tabella, seleziona <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> quindi seleziona *Elimina utente*.</block>
+  <block id="fa37736e47ccc44e2228f573f9d2a303" category="paragraph"><block ref="fa37736e47ccc44e2228f573f9d2a303" category="inline-link-macro-rx"></block></block>
 </blocks>
