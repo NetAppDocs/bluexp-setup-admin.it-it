@@ -59,7 +59,7 @@ Se sei un cliente NetApp con un account NSS, devi semplicemente registrarti per 
 La pagina *risorse* dovrebbe mostrare che l'organizzazione BlueXP  è registrata per il supporto.
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-support-registration.png["Una schermata che mostra il numero di serie di un account, una casella di controllo verde e il testo registrato per il supporto."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-support-registration.png["Uno screenshot che mostra il numero di serie dell'account, una casella di controllo verde e il testo Registrato per supporto."]
 
 +
 Si noti che gli altri utenti di BlueXP non visualizzeranno lo stesso stato di registrazione del supporto se non hanno associato un account del sito di supporto NetApp al proprio login BlueXP. Tuttavia, ciò non significa che la tua organizzazione BlueXP  non sia registrata per il supporto. Finché un utente dell'organizzazione ha seguito questi passaggi, l'organizzazione è stata registrata.

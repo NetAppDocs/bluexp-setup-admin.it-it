@@ -173,6 +173,30 @@ Assicurarsi di effettuare le seguenti operazioni:
 +
 ** In *Trusted entity type*, selezionare *AWS account*.
 ** Selezionare *un altro account AWS* e inserire l'ID di BlueXP SaaS: 952013314444
+** Specificamente per Amazon FSx for NetApp ONTAP , modificare la policy *Relazioni di trust* per includere "AWS": "arn:aws:iam::952013314444:root".
++
+Ad esempio, la policy dovrebbe apparire così:
+
++
+[source, JSON]
+----
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::952013314444:root",
+        "Service": "ec2.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}
+----
++
+Fare riferimento a link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies-cross-account-resource-access.html["Documentazione di AWS Identity and Access Management (IAM)"^] per ulteriori informazioni sull'accesso alle risorse tra account in IAM.
+
 ** Creare un criterio che includa le autorizzazioni necessarie per creare un connettore.
 +
 *** https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Visualizzare le autorizzazioni necessarie per FSX per ONTAP"^]
