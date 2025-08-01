@@ -356,11 +356,7 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
 .17+| *Servizi* | Avvisi | No | No 
 
 
-| Backup e recovery | Sì
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["Visualizza l'elenco delle destinazioni di backup supportate per i dati dei volumi ONTAP"^] | Sì
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["Visualizza l'elenco delle destinazioni di backup supportate per i dati dei volumi ONTAP"^] 
+| Backup e recovery | SÌhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Visualizza l'elenco delle destinazioni di backup supportate per i dati dei volumi ONTAP"^] | SÌhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["Visualizza l'elenco delle destinazioni di backup supportate per i dati dei volumi ONTAP"^] 
 
 
 | Classificazione | Sì | Sì 
