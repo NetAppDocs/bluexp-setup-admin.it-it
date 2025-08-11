@@ -380,9 +380,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
 | Efficienza economica | No | No 
 
 
-| Resilienza operativa | No | No 
-
-
 | Protezione ransomware | No | No 
 
 
@@ -404,20 +401,20 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
 | Fabbrica dei carichi di lavoro | No | No 
 
 
-.7+| *Caratteristiche* | Gestione delle identità e degli accessi BlueXP  | Sì | Sì 
+.7+| *Caratteristiche* | Gestione delle identità e degli accessi BlueXP  | Sì 
 
 
-| Credenziali | Sì | Sì 
+| Sì | Credenziali | Sì 
 
 
-| Account NSS | Sì | No 
+| Sì | Account NSS | Sì 
 
 
-| Notifiche | Sì | No 
+| No | Notifiche | Sì 
 
 
-| Cerca | Sì | No 
+| No | Cerca | Sì 
 
 
-| Tempistiche | Sì | Sì 
+| No | Tempistiche | Sì 
 |===

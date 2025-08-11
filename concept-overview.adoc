@@ -87,7 +87,6 @@ BlueXP Digital Advisor:: Utilizza gli analytics predittivi e il supporto proatti
 Portafoglio digitale BlueXP:: Gestire e monitorare le licenze e le sottoscrizioni.
 Disaster recovery di BlueXP:: Proteggi i workload VMware on-premise utilizzando VMware Cloud su Amazon FSX per ONTAP come sito di disaster recovery.
 Efficienza economica di BlueXP:: Identificare i cluster con capacità bassa attuale o prevista e implementare il tiering dei dati o consigli aggiuntivi sulla capacità.
-Resilienza operativa BlueXP:: Implementazione di soluzioni automatizzate per il rischio di configurazione del firmware e del software per mantenere lo stato di salute dei cluster ONTAP.
 Protezione ransomware BlueXP:: Rileva le anomalie che potrebbero causare attacchi ransomware. Proteggi e ripristina i carichi di lavoro.
 Replica BlueXP:: Replica dei dati tra sistemi storage per supportare backup e disaster recovery.
 Aggiornamenti software BlueXP:: Automatizzare la valutazione, la pianificazione e l'esecuzione degli upgrade ONTAP.

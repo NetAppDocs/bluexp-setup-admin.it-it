@@ -3643,8 +3643,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="c7b1fe992423d57d0e492585ff631c02" category="list-text">Proteggi i workload VMware on-premise utilizzando VMware Cloud su Amazon FSX per ONTAP come sito di disaster recovery.</block>
   <block id="71bd4794c020a7645a4cfe74173f4058" category="list-text">Efficienza economica di BlueXP</block>
   <block id="068ff21264880d35ad4153fad90e3828" category="list-text">Identificare i cluster con capacità bassa attuale o prevista e implementare il tiering dei dati o consigli aggiuntivi sulla capacità.</block>
-  <block id="dd7c710b103a018a2046baa2f5052ed9" category="list-text">Resilienza operativa BlueXP</block>
-  <block id="00ac035a0893138aed2f04da8c8223d3" category="list-text">Implementazione di soluzioni automatizzate per il rischio di configurazione del firmware e del software per mantenere lo stato di salute dei cluster ONTAP.</block>
   <block id="67ecb6c0a19888100e5352d06f886856" category="list-text">Protezione ransomware BlueXP</block>
   <block id="a8dd42d088a97f32bf9a4c69abc2517a" category="list-text">Rileva le anomalie che potrebbero causare attacchi ransomware. Proteggi e ripristina i carichi di lavoro.</block>
   <block id="3ffe2e9dffcfea6ba0652c1f11e54fc1" category="list-text">Replica BlueXP</block>
@@ -3899,7 +3897,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="da48a166a29b8e248a3113d9bd6cba04" category="paragraph">Per aggiungere una licenza al portafoglio digitale è necessario un connettore solo per le licenze Cloud Volumes ONTAP _basate su nodo_. In questo caso, è necessario un connettore perché i dati provengono dalle licenze installate sui sistemi Cloud Volumes ONTAP.</block>
   <block id="bf2f35a1367a7ddb519a7dd3cedacfdd" category="paragraph">Quando si utilizza BlueXP in modalità standard, è necessario un connettore per le seguenti funzionalità e servizi in BlueXP:</block>
   <block id="c7a576f5db262c0475afa4a53822979e" category="list-text">Efficienza economica ^1^</block>
-  <block id="7713949d8f17ff00f9cdb21469da8a35" category="list-text">Resilienza operativa ^1^</block>
   <block id="6d95cfc501ca88bca8a0045681608071" category="paragraph">^1^ sebbene sia possibile accedere a questi servizi senza un connettore, è necessario un connettore per avviare azioni dai servizi.</block>
   <block id="ca61c00bb942882ff64e228d1e677f97" category="paragraph">Per utilizzare BlueXP in modalità limitata o privata è necessario un connettore.</block>
   <block id="dd42f0ca79b192af5e1f5734b490f194" category="paragraph">I connettori sono una parte fondamentale dell'architettura del servizio BlueXP. È tua responsabilità garantire che i connettori pertinenti siano sempre attivi, operativi e accessibili. Sebbene il servizio sia progettato per superare brevi interruzioni della disponibilità del connettore, è necessario intraprendere azioni immediate quando è necessario rimediare ai guasti dell'infrastruttura.</block>
@@ -4076,10 +4073,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="34153016d27f6bc08ca28afe350597f0" category="cell">Consente di visualizzare i dettagli dell'aggiornamento di un cluster</block>
   <block id="b9632e5402da95a15f8096dffe8fe849" category="cell">Eseguire controlli pre-aggiornamento e scaricare il piano di aggiornamento</block>
   <block id="26c438938da81386c731f3d387eda803" category="cell">Installare gli aggiornamenti software</block>
-  <block id="faf3b0fdd74f34bfe5b5e712fd212952" category="cell">*Resilienza operativa*</block>
-  <block id="71dfe4aa697335a7f919f97a8273c0b2" category="cell">Esaminare i problemi di rischio per la sicurezza</block>
-  <block id="0416203226164e8fc52087494d33b58d" category="cell">Scarica i playbook Ansible</block>
-  <block id="55ecbcc86c1df8e0bbccc58434b65675" category="cell">Risolvere i problemi automaticamente</block>
   <block id="c7c10204d64df7a89f6234e58c752612" category="cell">*Efficienza economica*</block>
   <block id="2dcdbb99022cfb6c4ef2bd327930b9d0" category="cell">Esaminare lo stato della pianificazione della capacità</block>
   <block id="a9857843d1ca1e121ff59133f171d8cf" category="cell">Scegli l'azione successiva (Best practice, livello)</block>
@@ -5007,4 +5000,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="a99608db4d85374403174f1119cac088" category="list-text">Spostare il cursore *Tema scuro* per abilitarlo.</block>
   <block id="b9d888f58b09c4007db0247286e392b5" category="section-title">11 agosto 2025</block>
   <block id="107d607a0fbcdbb5eddd688662ad90ca" category="sidebar">Analista di supporto alle operazioni</block>
+  <block id="63c109031bd5690629b7c9170bf3f4e8" category="section-title">Funzione di resilienza operativa</block>
+  <block id="873883e64c5f2d509253776eb02b66b4" category="paragraph">La funzionalità di resilienza operativa è stata rimossa da BlueXP.  In caso di problemi, contattare l'assistenza NetApp .</block>
 </blocks>

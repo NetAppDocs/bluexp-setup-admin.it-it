@@ -32,7 +32,6 @@ Funzionalità e servizi BlueXP :
 
 * Consulente digitale
 * Aggiornamenti software
-* Resilienza operativa
 * Efficienza economica
 * Sostenibilità
 
@@ -163,36 +162,6 @@ Sì
 
 
 | Installare gli aggiornamenti software  a| 
-Sì
- a| 
-Sì
- a| 
-No
-
-
-
-4+| *Resilienza operativa* 
-
-
-| Esaminare i problemi di rischio per la sicurezza  a| 
-Sì
- a| 
-Sì
- a| 
-Sì
-
-
-
-| Scarica i playbook Ansible  a| 
-Sì
- a| 
-Sì
- a| 
-No
-
-
-
-| Risolvere i problemi automaticamente  a| 
 Sì
  a| 
 Sì
