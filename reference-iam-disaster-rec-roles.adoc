@@ -12,7 +12,7 @@ summary: La gestione delle identità e degli accessi BlueXP offre diversi ruoli 
 
 
 [role="lead"]
-È possibile assegnare i seguenti ruoli agli utenti per consentire loro di accedere al servizio di backup e ripristino all'interno BlueXP. I ruoli di backup e ripristino offrono la flessibilità di assegnare agli utenti un ruolo specifico per le attività che devono svolgere all'interno dell'organizzazione. La modalità di assegnazione dei ruoli dipende dalle procedure aziendali e di gestione dello storage.
+È possibile assegnare i seguenti ruoli agli utenti per consentire loro di accedere al ripristino di emergenza in BlueXP.  I ruoli di disaster recovery offrono la flessibilità di assegnare agli utenti un ruolo specifico per le attività che devono svolgere all'interno della tua organizzazione.  Il modo in cui si assegnano i ruoli dipende dalle proprie pratiche aziendali e di gestione dell'archiviazione.
 
 Il ripristino di emergenza utilizza i seguenti ruoli:
 

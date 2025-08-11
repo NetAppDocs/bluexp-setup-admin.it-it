@@ -20,10 +20,10 @@ Quando si associa un membro alla propria organizzazione, si forniscono autorizza
 
 == Visualizzare le risorse dell'organizzazione
 
-È possibile visualizzare sia le risorse rilevate che quelle non rilevate associate all'organizzazione. Le risorse non scoperte sono risorse di archiviazione identificate dal consulente digitale ma non aggiunte come ambienti di lavoro.
+Puoi visualizzare sia le risorse scoperte che quelle non scoperte associate alla tua organizzazione.  Le risorse non scoperte sono risorse di archiviazione identificate dal consulente digitale ma non aggiunte come ambienti di lavoro.
 
 
-NOTE: La pagina delle risorse IAM non visualizza le risorse Amazon FSx for NetApp ONTAP perché non è possibile associarle a un ruolo IAM. Puoi visualizzare queste risorse sul rispettivo Canvas o dai workload.
+NOTE: La pagina delle risorse IAM esclude le risorse Amazon FSx for NetApp ONTAP perché non è possibile associarle a un ruolo IAM.  Visualizza queste risorse nelle rispettive aree di lavoro o dai carichi di lavoro.
 
 .Fasi
 . Nella parte superiore destra della console di BlueXP , selezionare image:icon-settings-option.png["L'icona delle impostazioni che viene visualizzata nella parte superiore destra della console Web di BlueXP ."] > *Gestione identità e accessi*.
@@ -44,7 +44,7 @@ NOTE: La pagina delle risorse IAM non visualizza le risorse Amazon FSx for NetAp
 
 == Associare una risorsa a cartelle e progetti
 
-Per rendere una risorsa disponibile per una cartella o un progetto, associa la risorsa alla cartella o al progetto.
+Associa una risorsa a una cartella o a un progetto per renderla disponibile.
 
 .Prima di iniziare
 È necessario comprendere il funzionamento dell'associazione delle risorse. link:concept-identity-and-access-management.html#resources["Informazioni sulle risorse, incluso quando associare una risorsa a una cartella"].
@@ -65,7 +65,7 @@ Nota: È possibile selezionare solo le cartelle e i progetti per i quali si disp
 
 
 .Al termine
-Se la risorsa associata viene rilevata utilizzando un connettore BlueXP  e sono presenti altri membri nell'organizzazione, è necessario associare il connettore al progetto a cui è ora associata la risorsa. In caso contrario, il connettore e la relativa risorsa associata non sono accessibili da BlueXP  Canvas da membri che non hanno il ruolo di _amministratore dell'organizzazione_.
+Se scopri una risorsa che utilizza un connettore BlueXP , associa il connettore al progetto per concedergli l'accesso.  In caso contrario, il connettore e la risorsa associata non saranno accessibili dalla tela BlueXP dai membri senza il ruolo di _Amministratore organizzazione_.
 
 link:task-iam-associate-connectors.html["Scopri come associare un connettore a una cartella o a un progetto"].
 
@@ -93,7 +93,7 @@ NOTE: Se è necessario determinare quali membri dell'organizzazione hanno access
 
 == Rimuovere una risorsa da una cartella o da un progetto
 
-Per rimuovere una risorsa da una cartella o da un progetto, è necessario rimuovere l'associazione tra la cartella o il progetto e la risorsa. La rimozione dell'associazione impedisce ai membri dell'organizzazione di gestire la risorsa nella cartella o nel progetto.
+Per rimuovere una risorsa da una cartella o da un progetto, è necessario rimuovere l'associazione tra la cartella o il progetto e la risorsa.  La rimozione dell'associazione impedisce ai membri di gestire la risorsa nella cartella o nel progetto.
 
 
 NOTE: Se si desidera rimuovere una risorsa scoperta dall'intera organizzazione, è necessario rimuovere l'ambiente di lavoro da BlueXP  Canvas.

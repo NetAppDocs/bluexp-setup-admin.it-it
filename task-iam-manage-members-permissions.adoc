@@ -17,7 +17,7 @@ summary: 'Gestire i membri dell"organizzazione per fornire autorizzazioni a dive
 BlueXP  Identity and Access Management (IAM) consente di aggiungere membri all'organizzazione e assegnare loro uno o più ruoli all'interno della gerarchia delle risorse. Un _ruolo_ contiene un insieme di autorizzazioni che consente a un membro di eseguire azioni specifiche a un livello specifico della gerarchia delle risorse. È possibile associare nuovi account utente e account di servizio, gestire i ruoli dei membri e altro ancora.
 
 
-TIP: Per evitare di perdere l'accesso all'organizzazione BlueXP, assicurati che due membri abbiano il ruolo di amministratore dell'organizzazione.
+NOTE: Per evitare di perdere l'accesso all'organizzazione BlueXP, assicurati che due membri abbiano il ruolo di amministratore dell'organizzazione.
 
 Per gestire gli utenti e le relative autorizzazioni, è necessario assegnare uno dei seguenti ruoli:
 
@@ -37,9 +37,9 @@ Gli utenti con questo ruolo possono gestire solo i membri di una cartella o di u
 
 == Aggiungere membri alla propria organizzazione
 
-È possibile aggiungere due tipi di membri all'organizzazione: Un account utente e un account di servizio. Un account di servizio viene in genere utilizzato da un'applicazione per completare attività specifiche senza l'intervento umano tramite l'API BlueXP. Un account utente viene in genere utilizzato da una persona per accedere a BlueXP e gestire le risorse.
+Puoi aggiungere due tipi di membri alla tua organizzazione: un account utente e un account di servizio.  Un account di servizio viene utilizzato dalle applicazioni per eseguire attività tramite l'API BlueXP senza intervento umano.  Un account utente viene solitamente utilizzato da una persona per accedere a BlueXP e gestire le risorse.
 
-Gli utenti devono prima registrarsi con un account BlueXP prima di poterli aggiungere a un'organizzazione o assegnare un ruolo. Tuttavia, è possibile creare account di servizio direttamente da BlueXP.
+Gli utenti devono registrarsi a BlueXP prima di essere aggiunti a un'organizzazione o di poter ottenere un ruolo.  Tuttavia, è possibile creare account di servizio direttamente da BlueXP.
 
 Per gestire gli utenti e le relative autorizzazioni, è necessario disporre del ruolo *Amministratore organizzazione* o del ruolo *cartella o Amministratore progetto*. Ricordare che gli utenti con il ruolo *cartella o project admin* possono gestire solo i membri per la cartella o i progetti di cui dispongono delle autorizzazioni di amministratore.
 
@@ -48,9 +48,9 @@ Per gestire gli utenti e le relative autorizzazioni, è necessario disporre del 
 .Account utente
 --
 .Fasi
-. Se l'utente non lo ha già fatto, chiedere di andare al https://bluexp.netapp.com/["Sito Web di NetApp BlueXP"^] e registrarsi.
+. Indirizzare l'utente a visitare https://bluexp.netapp.com/["Sito Web di NetApp BlueXP"^] per iscriversi.
 +
-Dopo la registrazione, gli utenti compilano la pagina di *Registrazione*, controllano la propria email e accedono. Se viene richiesto di creare un'organizzazione, devono chiudere BlueXP e informarti della creazione del loro account. È quindi possibile aggiungere l'utente all'organizzazione BlueXP  esistente.
+Una volta registrati, gli utenti completano la pagina di *Registrazione*, controllano la posta elettronica e accedono. Se BlueXP chiede agli utenti di creare un'organizzazione, la chiude e ti avvisa della creazione del loro account.  Puoi quindi aggiungere l'utente alla tua organizzazione BlueXP esistente.
 
 +
 link:task-sign-up-saas.html["Scopri come iscriverti a BlueXP "].
@@ -68,7 +68,7 @@ Tenere presente quanto segue:
 
 +
 *** È possibile selezionare solo le cartelle e i progetti per i quali si dispone delle autorizzazioni di amministratore.
-*** Se si seleziona l'organizzazione o una cartella, il membro disporrà delle autorizzazioni per tutti gli elementi che risiedono all'interno dell'organizzazione o della cartella.
+*** Selezionando un'organizzazione o una cartella, al membro vengono concesse autorizzazioni su tutti i suoi contenuti.
 
 
 ** *Selezionare una categoria*, quindi un *ruolo* che fornisca al membro le autorizzazioni per le risorse associate all'organizzazione, alla cartella o al progetto selezionato.
@@ -84,7 +84,7 @@ link:reference-iam-predefined-roles.html["Ulteriori informazioni sui ruoli di ac
 
 . Selezionare *Aggiungi*.
 +
-L'utente riceve un'e-mail da NetApp BlueXP contenente le informazioni che i membri utilizzano per accedere a BlueXP.
+NetApp BlueXP invia all'utente un'e-mail con le informazioni su come accedere a BlueXP.
 
 
 
@@ -105,7 +105,7 @@ Tenere presente quanto segue:
 
 +
 *** È possibile selezionare solo le cartelle e i progetti per i quali si dispone delle autorizzazioni di amministratore.
-*** Se si seleziona l'organizzazione o una cartella, il membro disporrà delle autorizzazioni per tutti gli elementi che risiedono all'interno dell'organizzazione o della cartella.
+*** Selezionando un'organizzazione o una cartella, al membro vengono concesse autorizzazioni su tutti i suoi contenuti.
 
 
 ** *Seleziona una categoria*, quindi seleziona un *Ruolo* che fornisca al membro le autorizzazioni per le risorse associate all'organizzazione, alla cartella o al progetto selezionato.
@@ -121,7 +121,7 @@ link:reference-iam-predefined-roles.html["Informazioni sui ruoli IAM predefiniti
 
 . Scaricare o copiare l'ID client e il segreto client.
 +
-BlueXP mostra il segreto del client solo una volta e non lo memorizza. Copia o scarica il segreto e conservalo in modo sicuro. Tenere presente che è possibile ricreare l'ID client e il segreto client in un secondo momento.
+BlueXP visualizza il segreto del client solo una volta.  Copialo o scaricalo e conservalo in modo sicuro. Tieni presente che puoi ricreare l'ID client e il segreto client in un secondo momento, se necessario.
 
 . Selezionare *Chiudi*.
 
@@ -143,7 +143,7 @@ NOTE: Puoi anche visualizzare tutti i membri associati a una cartella o a un pro
 . Nella parte superiore destra della console di BlueXP , selezionare image:icon-settings-option.png["L'icona delle impostazioni che viene visualizzata nella parte superiore destra della console Web di BlueXP ."] > *Gestione identità e accessi*.
 . Selezionare *membri*.
 +
-Nella tabella *Membri* vengono visualizzati i membri della tua organizzazione.
+Nella tabella *Membri* sono elencati i membri della tua organizzazione.
 
 . Dalla pagina *membri*, selezionare un membro della tabella, quindi selezionare image:icon-action.png["Un'icona con tre punti affiancati"]*Visualizza dettagli*.
 
@@ -154,7 +154,7 @@ Nella tabella *Membri* vengono visualizzati i membri della tua organizzazione.
 
 Potrebbe essere necessario rimuovere un membro dalla tua organizzazione, ad esempio se abbandona l'azienda.
 
-La rimozione di un membro comporta la revoca delle autorizzazioni, ma mantiene i suoi account BlueXP e NetApp Support Site.
+La rimozione di un membro comporta la rimozione delle sue autorizzazioni, ma mantiene i suoi account BlueXP e NetApp Support Site.
 
 .Fasi
 . Dalla pagina *Membri*, vai a un membro nella tabella, seleziona image:icon-action.png["Un'icona con tre punti affiancati"] quindi seleziona *Elimina utente*.
@@ -165,10 +165,10 @@ La rimozione di un membro comporta la revoca delle autorizzazioni, ma mantiene i
 
 == Ricreare le credenziali per un account di servizio
 
-Creare nuove credenziali in caso di smarrimento o quando è necessario aggiornare le credenziali di sicurezza.
+Creare nuove credenziali in caso di smarrimento o quando diventa necessario aggiornare le credenziali di sicurezza.
 
 .A proposito di questa attività
-La ricreazione delle credenziali elimina le credenziali esistenti per l'account del servizio, quindi crea nuove credenziali. Non è possibile utilizzare le credenziali precedenti.
+Quando si ricreano le credenziali, si eliminano le credenziali esistenti per l'account di servizio e ne vengono create di nuove.  Non è possibile utilizzare le credenziali precedenti.
 
 .Fasi
 . Nella parte superiore destra della console di BlueXP , selezionare image:icon-settings-option.png["L'icona delle impostazioni che viene visualizzata nella parte superiore destra della console Web di BlueXP ."] > *Gestione identità e accessi*.
@@ -177,7 +177,7 @@ La ricreazione delle credenziali elimina le credenziali esistenti per l'account 
 . Selezionare *Ricrea*.
 . Scaricare o copiare l'ID client e il segreto client.
 +
-BlueXP visualizza il segreto del client solo una volta e non lo memorizza da nessuna parte. Copia o scarica il segreto e conservalo in modo sicuro.
+BlueXP visualizza il segreto del client solo una volta.  Copialo o scaricalo e conservalo in modo sicuro.
 
 
 
@@ -185,14 +185,14 @@ BlueXP visualizza il segreto del client solo una volta e non lo memorizza da nes
 
 == Gestire l'autenticazione a più fattori (MFA) di un utente
 
-Se un utente ha perso l'accesso al proprio dispositivo MFA, è possibile rimuovere o disabilitare la sua configurazione MFA.
+Se un utente perde l'accesso al proprio dispositivo MFA, è possibile rimuovere o disabilitare la configurazione MFA.
 
 Se si rimuove la configurazione MFA, l'utente dovrà riconfigurarla quando accede a BlueXP. Se l'utente ha perso l'accesso al dispositivo MFA solo temporaneamente, può utilizzare il codice di ripristino salvato durante la configurazione di MFA per accedere a BlueXP.
 
-Se non hanno accesso al codice di recupero, è possibile disattivare temporaneamente l'MFA dell'utente, consentendogli di accedere senza MFA. Disattivando l'MFA per un utente, questa viene disattivata solo per otto ore e poi riattivata automaticamente. Durante questo periodo, all'utente è consentito un solo accesso senza MFA. Dopo le otto ore, l'utente deve utilizzare MFA per accedere a BlueXP.
+Se non hanno il codice di ripristino, disattivare temporaneamente l'MFA per consentire l'accesso.  Quando si disattiva l'MFA per un utente, questa viene disattivata solo per otto ore e poi riattivata automaticamente.  All'utente è consentito un solo accesso durante tale periodo senza MFA.  Dopo otto ore, l'utente deve utilizzare MFA per accedere a BlueXP.
 
 
-NOTE: Per poter gestire l'autenticazione a più fattori di quell'utente, è necessario disporre di un indirizzo email nello stesso dominio dell'utente interessato.
+NOTE: Per gestire l'autenticazione a più fattori di quell'utente, è necessario disporre di un indirizzo email nello stesso dominio dell'utente interessato.
 
 .Fasi
 . Nell'angolo in alto a destra della console, seleziona image:icon-settings-option.png["L'icona delle impostazioni che viene visualizzata nella parte superiore destra della console Web di BlueXP ."] > *Gestione identità e accessi*.

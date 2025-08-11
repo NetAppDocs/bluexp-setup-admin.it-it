@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-analyst-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
+summary: 'La gestione dell"identità e dell"accesso BlueXP prevede un ruolo di analista di supporto per assistere nel monitoraggio e nei casi di supporto.' 
+---
+= Ruolo di accesso per analista di supporto operativo per BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile assegnare agli utenti il seguente ruolo per consentire loro di accedere agli avvisi e al monitoraggio.  Gli utenti con questo ruolo possono anche aprire casi di supporto.
+
+
+
+== Analista di supporto operativo
+
+[cols="1,1"]
+|===
+| Attività | Può eseguire 
+
+
+| Gestisci le tue credenziali utente da Impostazioni > Credenziali | Sì 
+
+
+| Visualizzare le risorse rilevate | Sì 
+
+
+| Registrati per ricevere supporto e invia casi tramite BlueXP | Sì 
+
+
+| Sì | Visualizza la cronologia e le notifiche BlueXP 
+
+
+| Sì | Visualizza, scarica e configura gli avvisi 
+|===

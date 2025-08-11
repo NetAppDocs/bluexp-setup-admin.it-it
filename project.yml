@@ -136,6 +136,8 @@ sidebar:
           entries:
           - title: Ruoli Keystone
             url: "/reference-iam-keystone-roles.html"
+          - title: Analista di supporto alle operazioni
+            url: "/reference-iam-analyst-roles.html"
           - title: Ruoli di archiviazione
             url: "/reference-iam-storage-roles.html"
         - title: Ruoli nei servizi dati

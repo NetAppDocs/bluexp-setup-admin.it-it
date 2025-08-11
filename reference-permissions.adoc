@@ -259,5 +259,5 @@ BlueXP richiede autorizzazioni StorageGRID per due servizi.
 | Obiettivo | Descrizione | Collegamento 
 
 
-| Eseguire il Tier dei cluster ONTAP on-premise in StorageGRID | Quando si imposta il tiering BlueXP su StorageGRID, è necessario fornire il tiering BlueXP con una chiave di accesso S3 e una chiave segreta. BlueXP Tiering utilizza le chiavi per accedere ai bucket. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["Preparare il tiering a StorageGRID"^] 
+| Eseguire il Tier dei cluster ONTAP on-premise in StorageGRID | Quando si imposta il tiering BlueXP su StorageGRID, è necessario fornire il tiering BlueXP con una chiave di accesso S3 e una chiave segreta. BlueXP Tiering utilizza le chiavi per accedere ai bucket. | https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-onprem-storagegrid.html["Preparare il tiering a StorageGRID"^] 
 |===
