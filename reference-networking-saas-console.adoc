@@ -18,7 +18,7 @@ Quando si accede e si utilizza la console web, BlueXP contatta diversi endpoint 
 
 Questi endpoint vengono contattati in due scenari:
 
-* Dal computer di un utente quando completa le azioni dal  https://console.bluexp.netapp.com["Console BlueXP basata su web"^] disponibile come software come servizio (SaaS).
+* Dal computer di un utente quando si completano le sezioni dal https://console.bluexp.netapp.com["Console BlueXP basata su web"^] disponibile come software come servizio (SaaS).
 * Dal computer di un utente quando si apre un browser Web, immettere l'indirizzo IP dell'host del connettore, quindi accedere e configurare il connettore. Questi passi sono necessari se si installa manualmente il connettore.
 
 
