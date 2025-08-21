@@ -155,7 +155,7 @@ Servizi BlueXP supportati:: BlueXP supporta i seguenti servizi di storage e dati
 | Azure NetApp Files | Supporto completo 
 
 
-| Backup e recovery | Supportato nelle regioni governative e commerciali con modalità limitata.  Non supportato nelle regioni sovrane con modalità limitata.  In modalità limitata, il BlueXP backup and recovery supportano solo il backup e il ripristino dei dati del volume ONTAP . https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Consente di visualizzare l'elenco delle destinazioni di backup supportate per i dati ONTAP"^]  Il backup e il ripristino dei dati delle applicazioni e dei dati delle macchine virtuali non sono supportati. 
+| Backup e recovery | Supportato nelle regioni governative e commerciali con modalità limitata. Non supportato nelle regioni sovrane con modalità limitata. In modalità limitata, il BlueXP backup and recovery supportano solo il backup e il ripristino dei dati del volume ONTAP . https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Consente di visualizzare l'elenco delle destinazioni di backup supportate per i dati ONTAP"^] In modalità limitata, il BlueXP backup and recovery supportano solo il backup e il ripristino dei dati del volume ONTAP . https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Consente di visualizzare l'elenco delle destinazioni di backup supportate per i dati ONTAP"^] Il backup e il ripristino dei dati delle applicazioni e dei dati delle macchine virtuali non sono supportati. 
 
 
 | Classificazione  a| 
@@ -238,7 +238,7 @@ Servizi BlueXP supportati nelle implementazioni cloud:: BlueXP supporta i seguen
 | Servizi supportati | Note 
 
 
-| Backup e recovery | Supportato nelle regioni commerciali AWS e Azure.  Non supportato in Google Cloud o in https://aws.amazon.com/federal/secret-cloud/["Cloud segreto AWS"^] , https://aws.amazon.com/federal/top-secret-cloud/["Cloud AWS top secret"^] , O https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] In modalità privata, il BlueXP backup and recovery supportano solo il backup e il ripristino dei dati del volume ONTAP . https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Consente di visualizzare l'elenco delle destinazioni di backup supportate per i dati ONTAP"^]  Il backup e il ripristino dei dati delle applicazioni e dei dati delle macchine virtuali non sono supportati. 
+| Backup e recovery | Supportato nelle regioni commerciali AWS e Azure. Non supportato in Google Cloud o in https://aws.amazon.com/federal/secret-cloud/["Cloud segreto AWS"^] , https://aws.amazon.com/federal/top-secret-cloud/["Cloud AWS top secret"^] , O https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] In modalità privata, il BlueXP backup and recovery supportano solo il backup e il ripristino dei dati del volume ONTAP . https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["Consente di visualizzare l'elenco delle destinazioni di backup supportate per i dati ONTAP"^] Il backup e il ripristino dei dati delle applicazioni e dei dati delle macchine virtuali non sono supportati. 
 
 
 | Cloud Volumes ONTAP | Poiché non è disponibile l'accesso a Internet, non sono disponibili le seguenti funzioni: Aggiornamenti software automatici e AutoSupport. 
@@ -261,7 +261,7 @@ Servizi BlueXP supportati nelle distribuzioni on-premise:: BlueXP supporta i seg
 
 
 | Backup e recovery  a| 
-In modalità privata, il BlueXP backup and recovery supportano solo il backup e il ripristino dei dati del volume ONTAP . https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Visualizza l'elenco delle destinazioni di backup supportate per i dati dei volumi ONTAP"^]
+In modalità privata, il BlueXP backup and recovery supportano solo il backup e il ripristino dei dati del volume ONTAP . https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["Visualizza l'elenco delle destinazioni di backup supportate per i dati dei volumi ONTAP"^]
 
 Il backup e il ripristino dei dati delle applicazioni e dei dati delle macchine virtuali non sono supportati.
 
@@ -353,16 +353,13 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
 | StorageGRID | No | No 
 
 
-.17+| *Servizi* | Avvisi | No | No 
+.16+| *Servizi* | Avvisi | No | No 
 
 
-| Backup e recovery | SÌhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Visualizza l'elenco delle destinazioni di backup supportate per i dati dei volumi ONTAP"^] https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Visualizza l'elenco delle destinazioni di backup supportate per i dati dei volumi ONTAP"^] | SÌhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Visualizza l'elenco delle destinazioni di backup supportate per i dati dei volumi ONTAP"^] 
+| Backup e recovery | SÌhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivityView[] l'elenco delle destinazioni di backup supportate per i dati del volume ONTAP ^] | SÌhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["Visualizza l'elenco delle destinazioni di backup supportate per i dati dei volumi ONTAP"^] 
 
 
 | Classificazione | Sì | Sì 
-
-
-| Operazioni cloud | No | No 
 
 
 | Copia e sincronizzazione | No | No 

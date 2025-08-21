@@ -20,7 +20,7 @@ summary: 'La gestione dell"identità e dell"accesso BlueXP prevede un ruolo di a
 
 == Analista di supporto operativo
 
-[cols="1,1"]
+[cols="1,2"]
 |===
 | Attività | Può eseguire 
 
@@ -34,8 +34,8 @@ summary: 'La gestione dell"identità e dell"accesso BlueXP prevede un ruolo di a
 | Registrati per ricevere supporto e invia casi tramite BlueXP | Sì 
 
 
-| Sì | Visualizza la cronologia e le notifiche BlueXP 
+| Visualizza la cronologia e le notifiche BlueXP | Sì 
 
 
-| Sì | Visualizza, scarica e configura gli avvisi 
+| Visualizza, scarica e configura gli avvisi | Sì 
 |===
