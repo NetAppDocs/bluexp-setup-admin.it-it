@@ -398,7 +398,7 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
 | Fabbrica dei carichi di lavoro | No | No 
 
 
-.6+| *Caratteristiche* | Gestione delle identità e degli accessi BlueXP  | Sì 
+.6+| *Caratteristiche* | Gestione delle identità e degli accessi | Sì 
 
 
 | Sì | Credenziali | Sì 
