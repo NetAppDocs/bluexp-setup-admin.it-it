@@ -60,7 +60,7 @@ Un _organization_ è il livello superiore del sistema IAM di BlueXP  e rapprese
 
 Una _cartella_ consente di raggruppare i progetti correlati e separarli dagli altri progetti dell'organizzazione. Ad esempio, una cartella potrebbe rappresentare una posizione geografica (UE o USA Est), un sito (Londra o Toronto) o una business unit (ingegneria o marketing).
 
-Le cartelle possono contenere progetti, altre cartelle o entrambi. La creazione di cartelle è facoltativa.
+Le cartelle possono contenere progetti, altre cartelle o entrambi.  La creazione delle cartelle è facoltativa.
 
 
 

@@ -4094,7 +4094,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">Gli endpoint sicuri per i download dei connettori sono ora supportati per backup e recovery e protezione dal ransomware</block>
   <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">Ulteriori informazioni sugli endpoint sicuri per il download dei connettori.</block>
   <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">Se stai utilizzando backup e recovery o protezione ransomware, ora puoi utilizzare endpoint sicuri per il download dei connettori. <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
-  <block id="299e5505ce975112afaefec130cc83e0" category="paragraph">7,9</block>
   <block id="4d286ab7c41699ac1c0222a6a25c8ee6" category="list-text">Se hai utilizzato Podman, dovrai modificare la porta aardvark-dns.</block>
   <block id="6d6b1f0f1080ec2381bb912afda46e99" category="list-text">Eseguire l'SSH sulla macchina virtuale BlueXP Connector.</block>
   <block id="dbd4c3db8125866be9bb5a796f445d43" category="list-text">Aprire il file podman _/usr/share/containers/containers.conf_ e modificare la porta scelta per il servizio DNS di Aardvark. Ad esempio, impostarla su 54.</block>
@@ -4503,7 +4502,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="3f2aa4bd073d2458603c46bc293f8ade" category="inline-link-macro">Impostare una connessione federata con un provider di identità SAML</block>
   <block id="00aef0f14c29d451cdbf8446ce6b0b8e" category="list-text"><block ref="00aef0f14c29d451cdbf8446ce6b0b8e" category="inline-link-macro-rx"></block></block>
   <block id="89d483b606a77baabe08bc060a494729" category="paragraph">BlueXP IAM consente di concedere l'accesso alle risorse assegnando agli utenti ruoli di accesso a parti specifiche della gerarchia. Ad esempio, a un membro può essere assegnato il ruolo di amministratore di cartella o di progetto per un progetto con cinque risorse.</block>
-  <block id="2c6203bceaf797d85b477f5b84315d7e" category="paragraph">Le cartelle possono contenere progetti, altre cartelle o entrambi. La creazione di cartelle è facoltativa.</block>
   <block id="fe82a8e97a8582336b585b91be018051" category="paragraph">Un _amministratore dell'organizzazione_ potrebbe associare una risorsa a una cartella per consentire a un _amministratore della cartella o del progetto_ di collegare tale risorsa ai progetti appropriati nella cartella.</block>
   <block id="0e60822112467cb5794c648314aae8c1" category="paragraph">Associare una risorsa a una cartella non la rende accessibile a tutti i progetti: solo l'amministratore della cartella o del progetto può vederla. L'amministratore della cartella o del progetto decide quali progetti possono accedervi e associa la risorsa ai progetti appropriati.</block>
   <block id="7b83c7b722f59c1d116d59def3df05be" category="paragraph">Concedere autorizzazioni a un livello gerarchico specifico limita l'accesso alle risorse di cui un membro ha bisogno e ai servizi che può utilizzare con tali risorse.</block>
@@ -4739,7 +4737,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="a679ca81df887999afdb29cc812dba1a" category="section-title">Elimina una federazione</block>
   <block id="2e39c9a75c534c723834aef16604225c" category="paragraph">Se non hai più bisogno di una federazione, puoi eliminarla. Questo rimuove la federazione da BlueXP e impedisce agli utenti ad essa associati di accedere a BlueXP utilizzando le proprie credenziali aziendali. Ad esempio, se l'IdP viene dismesso o se la federazione non è più necessaria. Dopo aver eliminato una federazione, non è possibile recuperarla. È necessario crearne una nuova.</block>
   <block id="46e00d5f60a3c01d902dd137d055d6cb" category="summary">Dopo aver aggiunto una connessione federata, puoi gestirla in BlueXP. Puoi visualizzarne lo stato, attivarla o disattivarla a seconda delle tue esigenze.</block>
-  <block id="1b5bf5b8576a36a3f5b9e0e44e117c81" category="doc">Gestire le federazioni in BLueXP</block>
   <block id="da8dd0a914b02a392c9eda56004447a3" category="paragraph">Puoi gestire la tua federazione in BlueXP. Puoi disattivarla, aggiornare le credenziali scadute e disattivarla se non ti serve più.</block>
   <block id="22ae8cdedea46c7c71a0f34e66a726f1" category="paragraph">Puoi anche aggiungere un dominio verificato a una federazione esistente, il che ti consente di utilizzare più domini per la tua connessione federata.</block>
   <block id="92627f50638acf35c284d9f2b5e45cb5" category="inline-link-macro">Scopri di più sulle operazioni di monitoraggio in BlueXP.</block>
@@ -5059,4 +5056,6 @@ Questa parte della tabella elenca il supporto per la gestione dell'ambiente di l
   <block id="364a4ff52cd92f16374019cdedf6b91c" category="inline-link">Scopri di più sul supporto per le zone locali AWS</block>
   <block id="3b1699510f585646e0c8a73fa1b820ae" category="list-text"><block ref="3b1699510f585646e0c8a73fa1b820ae" category="inline-link-rx"></block></block>
   <block id="c1c35b571a8270f43bf6faa6757452f6" category="cell">SÌ<block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block></block>
+  <block id="4ebca8d078924ec17de1cf258147df0c" category="paragraph">Le cartelle possono contenere progetti, altre cartelle o entrambi.  La creazione delle cartelle è facoltativa.</block>
+  <block id="5c2b3c6d1859da2427f6c94e995cf39c" category="doc">Gestire le federazioni in BlueXP</block>
 </blocks>
