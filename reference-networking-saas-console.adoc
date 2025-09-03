@@ -70,11 +70,7 @@ Servizi AWS (amazonaws.com):
 | \https://signin.b2c.netapp.com | Necessario per aggiornare le credenziali NetApp Support Site (NSS) o per aggiungere nuove credenziali NSS a BlueXP. 
 
 
-| \https://netapp-cloud-account.auth0.com
-
-\https://cdn.auth0.com
-
-\https://services.cloud.netapp.com | Il browser Web si connette a questi endpoint per un'autenticazione utente centralizzata tramite BlueXP. 
+| \ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://cdn.auth0.com \ https://services.cloud.netapp.com | Il browser Web si connette a questi endpoint per un'autenticazione utente centralizzata tramite BlueXP. 
 
 
 | \https://widget.intercom.io | Per la chat all'interno del prodotto che ti consente di parlare con l'assistenza NetApp. 
